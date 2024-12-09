@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_perishable
+---@field inst idk
+---@field perishfn idk
+---@field perishtime idk
+---@field frozenfiremult idk
+---@field targettime idk
+---@field perishremainingtime idk
+---@field updatetask idk
+---@field dt idk
+---@field onperishreplacement idk
+---@field localPerishMultiplyer idk
+---@field start_dt idk

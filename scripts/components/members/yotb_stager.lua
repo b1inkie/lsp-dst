@@ -1,0 +1,23 @@
+---@meta
+
+---@class component_yotb_stager
+---@field inst idk
+---@field tasks idk
+---@field choice idk
+---@field queue idk
+---@field contest_ending idk
+---@field abort_task idk
+---@field temp_trainers idk
+---@field temp_beefalo idk
+---@field posts idk
+---@field voice idk
+---@field starter idk
+---@field current_post idk
+---@field target_values idk
+---@field light idk
+---@field victors idk
+---@field others idk
+---@field patterns idk
+---@field notvictors idk
+---@field prizes idk
+---@field doll_values idk

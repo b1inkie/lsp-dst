@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_updatelooper
+---@field inst idk
+---@field onupdatefns idk
+---@field longupdatefns idk
+---@field onwallupdatefns idk
+---@field postupdatefns idk
+---@field OnUpdatesToRemove idk
+---@field OnLongUpdatesToRemove idk
+---@field OnWallUpdatesToRemove idk

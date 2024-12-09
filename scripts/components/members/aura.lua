@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_aura
+---@field inst idk
+---@field radius idk
+---@field tickperiod idk
+---@field active idk
+---@field applying idk
+---@field pretickfn idk
+---@field auratestfn idk
+---@field auraexcludetags idk
+---@field _fn idk
+---@field task idk

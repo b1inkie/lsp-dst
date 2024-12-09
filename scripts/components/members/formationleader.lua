@@ -1,0 +1,19 @@
+---@meta
+
+---@class component_formationleader
+---@field formationleadersearchtags idk
+---@field formationsearchtags idk
+---@field inst idk
+---@field formation_type idk
+---@field max_formation_size idk
+---@field formation idk
+---@field target idk
+---@field searchradius idk
+---@field theta idk
+---@field thetaincrement idk
+---@field radius idk
+---@field reverse idk
+---@field makeotherformationssecondaryfn idk
+---@field age idk
+---@field onupdatefn idk
+---@field ondisbandfn idk

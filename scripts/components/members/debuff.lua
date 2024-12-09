@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_debuff
+---@field inst idk
+---@field name idk
+---@field target idk
+---@field onattachedfn idk
+---@field ondetachedfn idk
+---@field onextendedfn idk
+---@field onchangefollowsymbolfn idk
+---@field keepondespawn idk

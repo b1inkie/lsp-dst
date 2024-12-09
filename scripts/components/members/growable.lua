@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_growable
+---@field inst idk
+---@field stages idk
+---@field stage idk
+---@field pausereasons idk
+---@field loopstages idk
+---@field loopstages_start idk
+---@field growonly idk
+---@field springgrowth idk
+---@field growoffscreen idk
+---@field magicgrowable idk
+---@field usetimemultiplier idk
+---@field task idk
+---@field targettime idk
+---@field pausedremaining idk

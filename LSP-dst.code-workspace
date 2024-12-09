@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.tabSize": 4,
+		"workbench.editor.showTabs": "none",
+		"explorer.openEditors.sortOrder": "alphabetical",
+		"workbench.colorTheme": "Activate SCARLET protocol (beta)",
+		"Lua.runtime.version": "Lua 5.1",
+		"Lua.completion.requireSeparator": "/"
+	}
+}

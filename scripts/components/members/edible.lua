@@ -1,0 +1,22 @@
+---@meta
+
+---@class component_edible
+---@field inst idk
+---@field healthvalue idk
+---@field hungervalue idk
+---@field sanityvalue idk
+---@field foodtype idk
+---@field secondaryfoodtype idk
+---@field oneaten idk
+---@field degrades_with_spoilage idk
+---@field gethealthfn idk
+---@field getsanityfn idk
+---@field temperaturedelta idk
+---@field temperatureduration idk
+---@field chill idk
+---@field nochill idk
+---@field stale_hunger idk
+---@field stale_health idk
+---@field spoiled_hunger idk
+---@field spoiled_health idk
+---@field spice idk

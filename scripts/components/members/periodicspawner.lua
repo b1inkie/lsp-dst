@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_periodicspawner
+---@field inst idk
+---@field basetime idk
+---@field randtime idk
+---@field prefab idk
+---@field range idk
+---@field density idk
+---@field spacing idk
+---@field onspawn idk
+---@field spawntest idk
+---@field spawnoffscreen idk
+---@field getspawnpointfn idk
+---@field ignoreflotsamgenerator idk
+---@field target_time idk
+---@field task idk

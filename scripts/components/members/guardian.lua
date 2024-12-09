@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_guardian
+---@field inst idk
+---@field prefab idk
+---@field guardian idk
+---@field onsummonfn idk
+---@field onguardiandeathfn idk
+---@field threshold idk
+---@field summons idk
+---@field decaytime idk
+---@field decaytask idk
+---@field _onguardiandeath idk
+---@field _onguardianremove idk

@@ -1,0 +1,16 @@
+---@meta
+
+---@class component_talker
+---@field message idk
+---@field noanim idk
+---@field duration idk
+---@field inst idk
+---@field task idk
+---@field ignoring idk
+---@field mod_str_fn idk
+---@field offset idk
+---@field offset_fn idk
+---@field disablefollowtext idk
+---@field resolvechatterfn idk
+---@field chatter idk
+---@field widget idk

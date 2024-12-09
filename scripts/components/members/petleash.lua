@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_petleash
+---@field inst idk
+---@field petprefab idk
+---@field pets idk
+---@field maxpets idk
+---@field numpets idk
+---@field maxpetsperprefab idk
+---@field numpetsperprefab idk
+---@field onspawnfn idk
+---@field ondespawnfn idk
+---@field onpetremoved idk
+---@field _onremovepet idk

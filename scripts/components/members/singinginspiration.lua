@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_singinginspiration
+---@field inst idk
+---@field max idk
+---@field current idk
+---@field active_songs idk
+---@field attach_radius idk
+---@field detach_radius idk
+---@field available_slots idk
+---@field is_draining idk
+---@field max_enemy_health idk
+---@field inspiration_gain_bonus idk
+---@field gainratemultipliers idk
+---@field CalcAvailableSlotsForInspirationFn idk
+---@field last_attack_time idk
+---@field validvictimfn idk
+---@field display_fx_count idk
+---@field display_fx_task idk
+---@field inspire_refresh_task idk

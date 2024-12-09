@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_repairable
+---@field inst idk
+---@field repairmaterial idk
+---@field healthrepairable idk
+---@field workrepairable idk
+---@field finiteusesrepairable idk
+---@field noannounce idk
+---@field checkmaterialfn idk
+---@field testvalidrepairfn idk

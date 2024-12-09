@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_stewer
+---@field inst idk
+---@field done idk
+---@field targettime idk
+---@field task idk
+---@field product idk
+---@field product_spoilage idk
+---@field spoiledproduct idk
+---@field spoiltime idk
+---@field keepspoilage idk
+---@field cooktimemult idk
+---@field chef_id idk
+---@field ingredient_prefabs idk

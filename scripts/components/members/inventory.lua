@@ -1,0 +1,23 @@
+---@meta
+
+---@class component_inventory
+---@field inst idk
+---@field isopen idk
+---@field isvisible idk
+---@field ignoreoverflow idk
+---@field ignorefull idk
+---@field silentfull idk
+---@field ignoresound idk
+---@field itemslots idk
+---@field maxslots idk
+---@field equipslots idk
+---@field heavylifting idk
+---@field activeitem idk
+---@field acceptsstacks idk
+---@field ignorescangoincontainer idk
+---@field opencontainers idk
+---@field opencontainerproxies idk
+---@field dropondeath idk
+---@field isexternallyinsulated idk
+---@field noheavylifting idk
+---@field isloading idk

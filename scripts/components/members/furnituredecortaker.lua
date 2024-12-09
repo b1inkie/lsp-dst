@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_furnituredecortaker
+---@field inst idk
+---@field enabled idk
+---@field decor_item idk
+---@field abletoaccepttest idk
+---@field ondecorgiven idk
+---@field ondecortaken idk
+---@field _on_decor_item_removed idk
+---@field _on_decor_item_picked_up idk

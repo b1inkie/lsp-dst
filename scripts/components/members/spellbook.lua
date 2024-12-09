@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_spellbook
+---@field inst idk
+---@field tag idk
+---@field items idk
+---@field bgdata idk
+---@field radius idk
+---@field focus_radius idk
+---@field spell_id idk
+---@field spellname idk
+---@field spellfn idk
+---@field onopenfn idk
+---@field onclosefn idk
+---@field opensound idk
+---@field closesound idk
+---@field executesound idk

@@ -1,0 +1,16 @@
+---@meta
+
+---@class component_grue
+---@field inittask idk
+---@field inst idk
+---@field soundevent idk
+---@field warndelay idk
+---@field resistance idk
+---@field level idk
+---@field nextHitTime idk
+---@field nextSoundTime idk
+---@field immunity idk
+---@field nonlethal idk
+---@field nonlethal_pct idk
+---@field soundwarn idk
+---@field soundattack idk

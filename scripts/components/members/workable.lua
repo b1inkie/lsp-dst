@@ -1,0 +1,16 @@
+---@meta
+
+---@class component_workable
+---@field inst idk
+---@field onwork idk
+---@field onfinish idk
+---@field workleft idk
+---@field maxwork idk
+---@field action idk
+---@field savestate idk
+---@field workable idk
+---@field tough idk
+---@field workmultiplierfn idk
+---@field shouldrecoilfn idk
+---@field onloadfn idk
+---@field lastworktime idk

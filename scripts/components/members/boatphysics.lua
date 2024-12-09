@@ -1,0 +1,29 @@
+---@meta
+
+---@class component_boatphysics
+---@field inst idk
+---@field velocity_x idk
+---@field velocity_z idk
+---@field has_speed idk
+---@field damageable_velocity idk
+---@field max_velocity idk
+---@field rudder_turn_speed idk
+---@field masts idk
+---@field magnets idk
+---@field boatdraginstances idk
+---@field lastzoomtime idk
+---@field lastzoomwasout idk
+---@field target_rudder_direction_x idk
+---@field target_rudder_direction_z idk
+---@field rudder_direction_x idk
+---@field rudder_direction_z idk
+---@field boat_rotation_offset idk
+---@field steering_rotate idk
+---@field turn_vel idk
+---@field turn_acc idk
+---@field emergencybrakesources idk
+---@field startmovingfn idk
+---@field stopmovingfn idk
+---@field _recent_collisions idk
+---@field was_moving idk
+---@field halting idk

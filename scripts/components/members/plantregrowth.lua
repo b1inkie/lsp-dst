@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_plantregrowth
+---@field _bucket idk
+---@field inst idk
+---@field regrowthrate idk
+---@field product idk
+---@field searchtag idk
+---@field nextregrowth idk
+---@field area idk
+---@field fiveradius idk

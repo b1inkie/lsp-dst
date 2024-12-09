@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_follower
+---@field inst idk
+---@field leader idk
+---@field targettime idk
+---@field maxfollowtime idk
+---@field canaccepttarget idk
+---@field keepdeadleader idk
+---@field keepleaderonattacked idk
+---@field noleashing idk
+---@field OnLeaderRemoved idk
+---@field cached_player_join_fn idk
+---@field cached_new_player_spawned_fn idk
+---@field porttask idk
+---@field _onleaderwake idk
+---@field cached_player_leader_userid idk
+---@field cached_player_leader_timeleft idk
+---@field cached_player_leader_task idk
+---@field task idk

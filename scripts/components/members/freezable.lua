@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_freezable
+---@field state idk
+---@field coldness idk
+---@field damagetotal idk
+---@field inst idk
+---@field resistance idk
+---@field wearofftime idk
+---@field damagetobreak idk
+---@field fxlevel idk
+---@field fxdata idk
+---@field fxchildren idk
+---@field diminishingreturns idk
+---@field extraresist idk
+---@field diminishingtask idk
+---@field redirectfn idk
+---@field wearofftask idk

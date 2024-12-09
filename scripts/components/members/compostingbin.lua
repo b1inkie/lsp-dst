@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_compostingbin
+---@field inst idk
+---@field max_materials idk
+---@field greens idk
+---@field browns idk
+---@field materials_per_fertilizer idk
+---@field greens_ratio idk
+---@field composting_time_min idk
+---@field composting_time_max idk
+---@field current_composting_time idk
+---@field accepts_items idk
+---@field calcdurationmultfn idk
+---@field calcmaterialvalue idk
+---@field onaddcompostable idk
+---@field finishcyclefn idk
+---@field onstartcompostingfn idk
+---@field onstopcompostingfn idk
+---@field onrefreshfn idk

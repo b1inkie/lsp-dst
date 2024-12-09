@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_explosive
+---@field inst idk
+---@field explosiverange idk
+---@field explosivedamage idk
+---@field buildingdamage idk
+---@field lightonexplode idk
+---@field onexplodefn idk
+---@field attacker idk
+---@field pvpattacker idk

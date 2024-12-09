@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_friendlevels
+---@field inst idk
+---@field friendlytasks idk
+---@field annoytasks idk
+---@field enabled idk
+---@field level idk
+---@field levelrewards idk
+---@field defaultrewards idk
+---@field queuedrewards idk
+---@field specifictaskreward idk

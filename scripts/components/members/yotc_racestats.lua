@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_yotc_racestats
+---@field inst idk
+---@field speed idk
+---@field direction idk
+---@field reaction idk
+---@field stamina idk
+---@field baseline_speed idk
+---@field baseline_direction idk
+---@field baseline_reaction idk
+---@field baseline_stamina idk

@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_formationfollower
+---@field formationsearchtags idk
+---@field inst idk
+---@field in_formation idk
+---@field formationleader idk
+---@field formationpos idk
+---@field searchradius idk
+---@field leashdistance idk
+---@field formation_type idk
+---@field active idk
+---@field onupdatefn idk
+---@field onleaveformationfn idk
+---@field onenterformationfn idk

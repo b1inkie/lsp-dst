@@ -1,0 +1,24 @@
+---@meta
+
+---@class component_inventoryitem
+---@field inst idk
+---@field owner idk
+---@field canbepickedup idk
+---@field canbepickedupalive idk
+---@field onpickupfn idk
+---@field isnew idk
+---@field nobounce idk
+---@field cangoincontainer idk
+---@field canonlygoinpocket idk
+---@field keepondeath idk
+---@field atlasname idk
+---@field imagename idk
+---@field trappable idk
+---@field sinks idk
+---@field droprandomdir idk
+---@field isacidsizzling idk
+---@field pushlandedevents idk
+---@field ondropfn idk
+---@field onactiveitemfn idk
+---@field onputininventoryfn idk
+---@field is_landed idk

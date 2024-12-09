@@ -1,0 +1,19 @@
+---@meta
+
+---@class component_stageactingprop
+---@field inst idk
+---@field cast idk
+---@field script idk
+---@field performance_problem idk
+---@field costumes idk
+---@field current_act idk
+---@field generalscripts idk
+---@field scripts idk
+---@field _do_lines idk
+---@field time idk
+---@field enablefn idk
+---@field dissablefn idk
+---@field playtask idk
+---@field arch idk
+---@field bird1 idk
+---@field bird2 idk

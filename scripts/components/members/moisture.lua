@@ -1,0 +1,25 @@
+---@meta
+
+---@class component_moisture
+---@field inst idk
+---@field maxmoisture idk
+---@field moisture idk
+---@field numSegs idk
+---@field baseDryingRate idk
+---@field maxDryingRate idk
+---@field minDryingRate idk
+---@field maxPlayerTempDrying idk
+---@field optimalPlayerTempDrying idk
+---@field minPlayerTempDrying idk
+---@field maxMoistureRate idk
+---@field minMoistureRate idk
+---@field inherentWaterproofness idk
+---@field waterproofnessmodifiers idk
+---@field externalbonuses idk
+---@field waterproofinventory idk
+---@field forcedrysources idk
+---@field _onremoveforcedrysource idk
+---@field optimalDryingTemp idk
+---@field rate idk
+---@field ratescale idk
+---@field wet idk

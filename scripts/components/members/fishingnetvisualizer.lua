@@ -1,0 +1,22 @@
+---@meta
+
+---@class component_fishingnetvisualizer
+---@field inst idk
+---@field velocity idk
+---@field retrieve_velocity idk
+---@field collect_radius idk
+---@field collect_velocity idk
+---@field retrieve_distance idk
+---@field distance_to_play_open_anim idk
+---@field has_played_throw_pst idk
+---@field max_captured_entity_collect_distance idk
+---@field captured_entities idk
+---@field captured_entities_collect_distance idk
+---@field retrieve_distance_traveled idk
+---@field thrower idk
+---@field distance_remaining idk
+---@field total_distance idk
+---@field dir_z idk
+---@field target_x idk
+---@field target_z idk
+---@field last_dir_z idk

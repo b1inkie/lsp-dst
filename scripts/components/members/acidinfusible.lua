@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_acidinfusible
+---@field _initialize_task idk
+---@field inst idk
+---@field infused idk
+---@field userainimmunity idk
+---@field fxlevel idk
+---@field damagemult idk
+---@field damagetakenmult idk
+---@field speedmult idk
+---@field on_infuse_fn idk
+---@field on_uninfuse_fn idk
+---@field _fx idk

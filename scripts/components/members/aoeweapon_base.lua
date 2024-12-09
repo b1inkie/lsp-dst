@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_aoeweapon_base
+---@field inst idk
+---@field damage idk
+---@field onprehitfn idk
+---@field onhitfn idk
+---@field onmissfn idk
+---@field canpick idk
+---@field stimuli idk
+---@field tags idk
+---@field notags idk
+---@field combinedtags idk
+---@field workactions idk

@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_rideable
+---@field riddentask idk
+---@field inst idk
+---@field saddleable idk
+---@field canride idk
+---@field saddle idk
+---@field rider idk
+---@field requiredobedience idk
+---@field lastridetime idk
+---@field shouldsave idk
+---@field allowed_riders idk
+---@field custom_rider_test idk
+---@field _OnRiderDoAttackOtherCB idk

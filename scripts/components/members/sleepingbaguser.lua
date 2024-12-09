@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_sleepingbaguser
+---@field inst idk
+---@field healthsleep idk
+---@field dryingrate idk
+---@field sleeper idk
+---@field onsleep idk
+---@field onwake idk
+---@field hunger_bonus_mult idk
+---@field health_bonus_mult idk
+---@field sanity_bonus_mult idk
+---@field cansleepfn idk
+---@field bed idk
+---@field sleeptask idk

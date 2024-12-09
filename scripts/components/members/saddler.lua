@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_saddler
+---@field inst idk
+---@field swapsymbol idk
+---@field swapbuild idk
+---@field bonusdamage idk
+---@field speedmult idk
+---@field absorbpercent idk
+---@field skin_guid idk
+---@field discardedcb idk

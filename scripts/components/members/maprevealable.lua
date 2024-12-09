@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_maprevealable
+---@field inst idk
+---@field refreshperiod idk
+---@field iconname idk
+---@field iconpriority idk
+---@field iconprefab idk
+---@field icon idk
+---@field task idk
+---@field revealsources idk
+---@field _onremovesource idk

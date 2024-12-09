@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_trap
+---@field bait idk
+---@field inst idk
+---@field issprung idk
+---@field isset idk
+---@field range idk
+---@field targettag idk
+---@field checkperiod idk
+---@field onharvest idk
+---@field onbaited idk
+---@field onspring idk
+---@field task idk
+---@field lootprefabs idk
+---@field lootdata idk
+---@field numsouls idk
+---@field starvednumsouls idk
+---@field target idk
+---@field starvedlootprefabs idk

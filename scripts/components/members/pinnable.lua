@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_pinnable
+---@field attacks_since_pinned idk
+---@field inst idk
+---@field canbepinned idk
+---@field stuck idk
+---@field wearofftime idk
+---@field wearofftask idk
+---@field last_unstuck_time idk
+---@field last_stuck_time idk
+---@field fxlevel idk
+---@field fxdata idk
+---@field goo_build idk
+---@field splashfxlist idk

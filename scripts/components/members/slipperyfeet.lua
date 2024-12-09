@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_slipperyfeet
+---@field onicetile idk
+---@field inittask idk
+---@field checknearbyentitytask idk
+---@field inst idk
+---@field _sources idk
+---@field _updating idk
+---@field started idk
+---@field threshold idk
+---@field decay_accel idk
+---@field decay_spd idk
+---@field slippiness idk
+---@field OnInit idk
+---@field OnOceanIce idk
+---@field SlowUpdateCheck idk

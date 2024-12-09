@@ -1,0 +1,28 @@
+---@meta
+
+---@class component_reticule
+---@field inst idk
+---@field ease idk
+---@field smoothing idk
+---@field reticuleprefab idk
+---@field validcolour idk
+---@field invalidcolour idk
+---@field currentcolour idk
+---@field mouseenabled idk
+---@field fadealpha idk
+---@field blipalpha idk
+---@field targetpos idk
+---@field targetfn idk
+---@field mousetargetfn idk
+---@field updatepositionfn idk
+---@field reticule idk
+---@field twinstickmode idk
+---@field twinstickrange idk
+---@field followhandler idk
+---@field pingprefab idk
+---@field ispassableatallpoints idk
+---@field validfn idk
+---@field _oncameraupdate idk
+---@field twinstickx idk
+---@field twinstickz idk
+---@field twinstickoverride idk

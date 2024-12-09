@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_embarker
+---@field inst idk
+---@field embarkable idk
+---@field start_z idk
+---@field embark_speed idk
+---@field last_embark_x idk
+---@field last_embark_z idk
+---@field disembark_x idk
+---@field disembark_z idk
+---@field max_hop_dist_sq idk
+---@field hop_start_pt idk

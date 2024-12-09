@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_crop
+---@field inst idk
+---@field product_prefab idk
+---@field growthpercent idk
+---@field rate idk
+---@field task idk
+---@field matured idk
+---@field onmatured idk
+---@field onwithered idk
+---@field onharvest idk
+---@field cantgrowtime idk
+---@field grower idk

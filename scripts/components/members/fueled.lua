@@ -1,0 +1,27 @@
+---@meta
+
+---@class component_fueled
+---@field fueltype idk
+---@field secondaryfueltype idk
+---@field inst idk
+---@field consuming idk
+---@field maxfuel idk
+---@field currentfuel idk
+---@field rate idk
+---@field rate_modifiers idk
+---@field no_sewing idk
+---@field accepting idk
+---@field sections idk
+---@field sectionfn idk
+---@field period idk
+---@field firstperiod idk
+---@field firstperiodfull idk
+---@field firstperioddt idk
+---@field bonusmult idk
+---@field multfn idk
+---@field depleted idk
+---@field cantakefuelitemfn idk
+---@field ontakefuelitemfn idk
+---@field ontakefuelfn idk
+---@field updatefn idk
+---@field task idk

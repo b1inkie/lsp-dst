@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_teamattacker
+---@field teamsearchtags idk
+---@field inst idk
+---@field inteam idk
+---@field teamleader idk
+---@field formationpos idk
+---@field order idk
+---@field ignoreformation idk
+---@field searchradius idk
+---@field leashdistance idk
+---@field team_type idk
+---@field orders idk

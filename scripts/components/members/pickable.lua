@@ -1,0 +1,37 @@
+---@meta
+
+---@class component_pickable
+---@field inst idk
+---@field canbepicked idk
+---@field regentime idk
+---@field baseregentime idk
+---@field product idk
+---@field onregenfn idk
+---@field onpickedfn idk
+---@field makeemptyfn idk
+---@field makefullfn idk
+---@field cycles_left idk
+---@field max_cycles idk
+---@field transplanted idk
+---@field caninteractwith idk
+---@field numtoharvest idk
+---@field quickpick idk
+---@field jostlepick idk
+---@field wildfirestarter idk
+---@field droppicked idk
+---@field dropheight idk
+---@field paused idk
+---@field pause_time idk
+---@field targettime idk
+---@field protected_cycles idk
+---@field task idk
+---@field useexternaltimer idk
+---@field startregentimer idk
+---@field stopregentimer idk
+---@field pauseregentimer idk
+---@field resumeregentimer idk
+---@field getregentimertime idk
+---@field setregentimertime idk
+---@field regentimerexists idk
+---@field remove_when_picked idk
+---@field makebarrenfn idk

@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_domesticatable
+---@field inst idk
+---@field domesticated idk
+---@field domestication idk
+---@field domestication_latch idk
+---@field lastdomesticationgain idk
+---@field domestication_triggerfn idk
+---@field obedience idk
+---@field minobedience idk
+---@field maxobedience idk
+---@field domesticationdecaypaused idk
+---@field tendencies idk
+---@field decaytask idk

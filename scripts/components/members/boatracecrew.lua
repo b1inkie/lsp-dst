@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_boatracecrew
+---@field inst idk
+---@field members idk
+---@field membertag idk
+---@field captain idk
+---@field heading idk
+---@field target idk
+---@field status idk
+---@field _update_task idk
+---@field on_member_added idk
+---@field on_member_removed idk
+---@field on_crew_empty idk
+---@field _on_member_killed idk
+---@field _on_captain_removed idk
+---@field _on_target_removed idk

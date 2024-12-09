@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_weapon
+---@field inst idk
+---@field damage idk
+---@field attackrange idk
+---@field hitrange idk
+---@field onattack idk
+---@field onprojectilelaunch idk
+---@field onprojectilelaunched idk
+---@field projectile idk
+---@field stimuli idk
+---@field overridestimulifn idk
+---@field electric_damage_mult idk
+---@field electric_wet_damage_mult idk
+---@field attackwearmultipliers idk
+---@field projectile_offset idk

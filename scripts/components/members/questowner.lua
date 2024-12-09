@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_questowner
+---@field inst idk
+---@field on_begin_quest idk
+---@field on_abandon_quest idk
+---@field questing idk
+---@field questcomplete idk
+---@field CanBeginFn idk
+---@field CanAbandonFn idk
+---@field on_complete_quest idk

@@ -1,0 +1,24 @@
+---@meta
+
+---@class component_grogginess
+---@field inst idk
+---@field resistance idk
+---@field grog_amount idk
+---@field knockouttime idk
+---@field knockoutduration idk
+---@field wearofftime idk
+---@field wearoffduration idk
+---@field decayrate idk
+---@field speedmod idk
+---@field speedmodmult idk
+---@field enablespeedmod idk
+---@field isgroggy idk
+---@field knockedout idk
+---@field _resistance_sources idk
+---@field _disable_task idk
+---@field _disable_finish idk
+---@field knockouttestfn idk
+---@field cometotestfn idk
+---@field whilegroggyfn idk
+---@field whilewearingofffn idk
+---@field onwearofffn idk

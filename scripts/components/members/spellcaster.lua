@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_spellcaster
+---@field inst idk
+---@field onspellcast idk
+---@field canusefrominventory idk
+---@field canuseontargets idk
+---@field canuseondead idk
+---@field canonlyuseonrecipes idk
+---@field canonlyuseonlocomotors idk
+---@field canonlyuseonlocomotorspvp idk
+---@field canonlyuseonworkable idk
+---@field canonlyuseoncombat idk
+---@field canuseonpoint idk
+---@field canuseonpoint_water idk
+---@field spell idk
+---@field quickcast idk
+---@field veryquickcast idk
+---@field spelltype idk
+---@field can_cast_fn idk

@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_trader
+---@field inst idk
+---@field enabled idk
+---@field deleteitemonaccept idk
+---@field acceptnontradable idk
+---@field test idk
+---@field abletoaccepttest idk
+---@field acceptstacks idk
+---@field onaccept idk
+---@field onrefuse idk

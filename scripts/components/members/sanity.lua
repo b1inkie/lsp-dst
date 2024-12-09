@@ -1,0 +1,34 @@
+---@meta
+
+---@class component_sanity
+---@field inst idk
+---@field max idk
+---@field current idk
+---@field mode idk
+---@field _lunacy_sources idk
+---@field rate idk
+---@field ratescale idk
+---@field rate_modifier idk
+---@field sane idk
+---@field fxtime idk
+---@field dapperness idk
+---@field externalmodifiers idk
+---@field inducedinsanity idk
+---@field inducedinsanity_sources idk
+---@field night_drain_mult idk
+---@field neg_aura_mult idk
+---@field neg_aura_modifiers idk
+---@field neg_aura_absorb idk
+---@field neg_aura_immune idk
+---@field dapperness_mult idk
+---@field penalty idk
+---@field sanity_penalties idk
+---@field ghost_drain_mult idk
+---@field custom_rate_fn idk
+---@field sanity_aura_immune idk
+---@field sanity_aura_immunities idk
+---@field player_ghost_immune idk
+---@field light_drain_immune idk
+---@field _oldissane idk
+---@field _oldpercent idk
+---@field redirect idk

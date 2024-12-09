@@ -1,0 +1,21 @@
+---@meta
+
+---@class component_propagator
+---@field inst idk
+---@field flashpoint idk
+---@field currentheat idk
+---@field decayrate idk
+---@field propagaterange idk
+---@field heatoutput idk
+---@field damages idk
+---@field damagerange idk
+---@field pvp_damagemod idk
+---@field acceptsheat idk
+---@field pauseheating idk
+---@field spreading idk
+---@field delay idk
+---@field heat_this_update idk
+---@field max_heat_this_update idk
+---@field onflashpoint idk
+---@field task idk
+---@field source idk

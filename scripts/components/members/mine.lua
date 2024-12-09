@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_mine
+---@field inst idk
+---@field radius idk
+---@field onexplode idk
+---@field onreset idk
+---@field onsetsprung idk
+---@field testtimefn idk
+---@field target idk
+---@field inactive idk
+---@field issprung idk
+---@field testtask idk
+---@field alignment idk
+---@field ondeactivate idk

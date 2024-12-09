@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_highlight
+---@field inst idk
+---@field highlit idk
+---@field base_add_colour_red idk
+---@field base_add_colour_green idk
+---@field base_add_colour_blue idk
+---@field highlight_add_colour_red idk
+---@field highlight_add_colour_green idk
+---@field highlight_add_colour_blue idk
+---@field flashadd idk
+---@field flashtimein idk
+---@field flashtimeout idk
+---@field t idk
+---@field flashing idk
+---@field goingin idk
+---@field flash_val idk

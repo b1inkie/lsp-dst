@@ -1,0 +1,21 @@
+---@meta
+
+---@class component_blowinwind
+---@field inst idk
+---@field maxSpeedMult idk
+---@field minSpeedMult idk
+---@field averageSpeed idk
+---@field speed idk
+---@field windAngle idk
+---@field windVector idk
+---@field currentAngle idk
+---@field currentVector idk
+---@field velocity idk
+---@field speedVarTime idk
+---@field speedVarPeriod idk
+---@field soundParameter idk
+---@field soundName idk
+---@field sineMod idk
+---@field sine idk
+---@field velocMult idk
+---@field soundspeed idk

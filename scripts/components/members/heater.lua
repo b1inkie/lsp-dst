@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_heater
+---@field inst idk
+---@field heat idk
+---@field heatfn idk
+---@field equippedheat idk
+---@field equippedheatfn idk
+---@field carriedheat idk
+---@field carriedheatfn idk
+---@field carriedheatmultiplier idk
+---@field exothermic idk
+---@field endothermic idk
+---@field stop_falloff idk
+---@field radius_cutoff idk

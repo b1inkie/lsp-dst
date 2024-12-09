@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_stageactor
+---@field inst idk
+---@field storytelling_dist idk
+---@field storytelling_ticktime idk
+---@field stage idk
+---@field storyprop_onremove idk
+---@field previous_acts idk
+---@field onstorybeginfn idk
+---@field onstoryoverfn idk
+---@field onstoryticktask idk
+---@field story idk

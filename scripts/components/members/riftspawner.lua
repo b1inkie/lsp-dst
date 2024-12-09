@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_riftspawner
+---@field inst idk
+---@field _worldsettingstimer idk
+---@field _map idk
+---@field spawnmode idk
+---@field lunar_rifts_enabled idk
+---@field shadow_rifts_enabled idk
+---@field X_rifts_enabled idk
+---@field rifts idk
+---@field rifts_count idk

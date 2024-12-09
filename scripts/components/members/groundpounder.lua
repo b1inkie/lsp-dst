@@ -1,0 +1,25 @@
+---@meta
+
+---@class component_groundpounder
+---@field inst idk
+---@field numRings idk
+---@field ringDelay idk
+---@field initialRadius idk
+---@field radiusStepDistance idk
+---@field ringWidth idk
+---@field pointDensity idk
+---@field damageRings idk
+---@field destructionRings idk
+---@field platformPushingRings idk
+---@field fxRings idk
+---@field fxRadiusOffset idk
+---@field inventoryPushingRings idk
+---@field noTags idk
+---@field workefficiency idk
+---@field destroyer idk
+---@field burner idk
+---@field groundpoundfx idk
+---@field groundpoundringfx idk
+---@field groundpounddamagemult idk
+---@field groundpoundFn idk
+---@field usePointMode idk

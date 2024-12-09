@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_hatchable
+---@field inst idk
+---@field progress idk
+---@field discomfort idk
+---@field state idk
+---@field cracktime idk
+---@field hatchtime idk
+---@field hatchfailtime idk
+---@field heater_prefs idk
+---@field chiller_prefs idk
+---@field delay idk
+---@field onstatefn idk
+---@field task idk
+---@field toohot idk
+---@field toocold idk

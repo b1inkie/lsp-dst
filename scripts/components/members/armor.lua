@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_armor
+---@field inst idk
+---@field condition idk
+---@field maxcondition idk
+---@field tags idk
+---@field weakness idk
+---@field conditionlossmultipliers idk
+---@field onfinished idk
+---@field keeponfinished idk
+---@field absorb_percent idk
+---@field indestructible idk

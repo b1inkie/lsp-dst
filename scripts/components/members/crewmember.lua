@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_crewmember
+---@field inst idk
+---@field enabled idk
+---@field max_velocity idk
+---@field max_target_dsq idk
+---@field force idk
+---@field leavecrewfn idk
+---@field boat idk
+---@field _on_boat_removed idk

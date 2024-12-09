@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_minigame
+---@field inst idk
+---@field active idk
+---@field activate_fn idk
+---@field deactivate_fn idk
+---@field spectator_dist idk
+---@field participator_dist idk
+---@field watchdist_min idk
+---@field watchdist_target idk
+---@field watchdist_max idk
+---@field gametype idk
+---@field excitement_time idk
+---@field excitement_delay idk
+---@field state idk
+---@field active_pulse idk
+---@field _do_periodic_active_pulse idk

@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_lock
+---@field inst idk
+---@field onlocked idk
+---@field onunlocked idk
+---@field unlocktest idk
+---@field islocked idk
+---@field isstuck idk
+---@field key idk
+---@field locktype idk

@@ -1,0 +1,23 @@
+---@meta
+
+---@class component_inspectaclesparticipant
+---@field inst idk
+---@field ismastersim idk
+---@field GRIDSIZE idk
+---@field VALIDVALUEMAX idk
+---@field oninittask idk
+---@field cooldowntask idk
+---@field CLIENT_game idk
+---@field CLIENT_posx idk
+---@field CLIENT_posz idk
+---@field CLIENT_puzzle idk
+---@field CLIENT_puzzledata idk
+---@field game idk
+---@field posx idk
+---@field posz idk
+---@field puzzle idk
+---@field puzzledata idk
+---@field shardid idk
+---@field upgraded idk
+---@field box idk
+---@field hide idk

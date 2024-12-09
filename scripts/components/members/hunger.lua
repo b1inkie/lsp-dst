@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_hunger
+---@field inst idk
+---@field max idk
+---@field current idk
+---@field hungerrate idk
+---@field hurtrate idk
+---@field overridestarvefn idk
+---@field burning idk
+---@field burnrate idk
+---@field burnratemodifiers idk

@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_beard
+---@field daysgrowth idk
+---@field daysgrowthaccumulator idk
+---@field inst idk
+---@field callbacks idk
+---@field prize idk
+---@field bits idk
+---@field insulation_factor idk
+---@field pause idk
+---@field onreset idk
+---@field isgrowing idk
+---@field skinname idk

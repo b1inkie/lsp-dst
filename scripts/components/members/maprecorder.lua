@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_maprecorder
+---@field inst idk
+---@field mapdata idk
+---@field mapsession idk
+---@field maplocation idk
+---@field mapauthor idk
+---@field mapday idk
+---@field onteachfn idk
+---@field ondatachangedfn idk

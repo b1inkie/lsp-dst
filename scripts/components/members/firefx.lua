@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_firefx
+---@field inst idk
+---@field level idk
+---@field playingsound idk
+---@field playingsoundintensity idk
+---@field percent idk
+---@field levels idk
+---@field playignitesound idk
+---@field bigignitesoundthresh idk
+---@field usedayparamforsound idk
+---@field current_radius idk
+---@field lightsound idk
+---@field extinguishsound idk
+---@field extinguishsoundtest idk
+---@field light idk
+---@field _onremovelighttarget idk
+---@field isday idk
+---@field controlled_burn idk

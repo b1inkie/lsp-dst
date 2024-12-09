@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_attunable
+---@field inst idk
+---@field attuned_players idk
+---@field attuned_userids idk
+---@field attunable_tag idk
+---@field onattunecostfn idk
+---@field onlinkfn idk
+---@field onunlinkfn idk
+---@field onplayerattuned idk
+---@field onplayerremoved idk
+---@field onplayerjoined idk

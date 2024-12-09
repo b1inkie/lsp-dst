@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_positionalwarp
+---@field inst idk
+---@field showmarker idk
+---@field markers idk
+---@field cur_marker idk
+---@field marker_cache_size idk
+---@field history_x idk
+---@field history_y idk
+---@field history_z idk
+---@field history_rollback_dist idk
+---@field history_max idk
+---@field history_cur idk
+---@field history_back idk
+---@field update_dist_sq idk
+---@field updatetask idk
+---@field inittask idk

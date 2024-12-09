@@ -1,0 +1,14 @@
+---@meta
+
+---@class component_tackler
+---@field inst idk
+---@field onstarttacklefn idk
+---@field distance idk
+---@field radius idk
+---@field structure_damage_mult idk
+---@field work_actions idk
+---@field collide_tags idk
+---@field no_collide_tags idk
+---@field oncollidefn idk
+---@field ontramplefn idk
+---@field edgedistance idk

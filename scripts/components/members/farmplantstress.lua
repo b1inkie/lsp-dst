@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_farmplantstress
+---@field inst idk
+---@field stressors idk
+---@field stressors_testfns idk
+---@field stressor_fns idk
+---@field stress_points idk
+---@field num_stressors idk
+---@field final_stress_state idk
+---@field checkpoint_stress_points idk
+---@field max_stress_points idk

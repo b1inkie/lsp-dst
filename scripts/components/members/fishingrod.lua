@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_fishingrod
+---@field inst idk
+---@field target idk
+---@field fisherman idk
+---@field hookedfish idk
+---@field caughtfish idk
+---@field minwaittime idk
+---@field maxwaittime idk
+---@field minstraintime idk
+---@field maxstraintime idk
+---@field fishtask idk

@@ -1,0 +1,21 @@
+---@meta
+
+---@class component_sleeper
+---@field inst idk
+---@field isasleep idk
+---@field testperiod idk
+---@field lasttransitiontime idk
+---@field lasttesttime idk
+---@field sleeptestfn idk
+---@field waketestfn idk
+---@field resistance idk
+---@field sleepiness idk
+---@field wearofftime idk
+---@field hibernate idk
+---@field watchlight idk
+---@field diminishingreturns idk
+---@field extraresist idk
+---@field diminishingtask idk
+---@field testtask idk
+---@field wearofftask idk
+---@field testtime idk

@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_healthbar
+---@field bg idk
+---@field bar idk
+---@field inst idk
+---@field bar_atlas idk
+---@field bar_image idk
+---@field bar_width idk
+---@field bar_height idk
+---@field bar_border idk
+---@field bar_colour idk
+---@field bg_colour idk
+---@field bar_world_offset idk
+---@field bar_ui_offset idk
+---@field label_ui_offset idk
+---@field enabled idk
+---@field _healthpct idk

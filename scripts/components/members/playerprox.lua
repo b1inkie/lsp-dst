@@ -1,0 +1,19 @@
+---@meta
+
+---@class component_playerprox
+---@field alivemode idk
+---@field closeplayers idk
+---@field isclose idk
+---@field target idk
+---@field initialtargetmode idk
+---@field inst idk
+---@field near idk
+---@field far idk
+---@field period idk
+---@field onnear idk
+---@field onfar idk
+---@field task idk
+---@field losttargetfn idk
+---@field _ontargetleft idk
+---@field originaltargetmode idk
+---@field targetmode idk

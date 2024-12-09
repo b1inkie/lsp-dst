@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_stunnable
+---@field inst idk
+---@field damage idk
+---@field stun_threshold idk
+---@field stun_period idk
+---@field stun_duration idk
+---@field stun_resist idk
+---@field stun_cooldown idk
+---@field valid_stun_time idk

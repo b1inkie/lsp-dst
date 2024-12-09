@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_projectedeffects
+---@field inst idk
+---@field alpha idk
+---@field targetalpha idk
+---@field cutoffheight idk
+---@field intensity idk
+---@field decaytime idk
+---@field constructtime idk
+---@field onconstructcallback idk
+---@field ondecaycallback idk
+---@field permanentdecay idk
+---@field lockeddecay idk
+---@field paused idk

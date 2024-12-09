@@ -1,0 +1,22 @@
+---@meta
+
+---@class replica_component # 客机组件
+---@field builder replica_builder
+---@field combat replica_combat
+---@field constructionsite replica_constructionsite
+---@field container replica_container
+---@field equippable replica_equippable
+---@field fishingrod replica_fishingrod
+---@field follower replica_follower
+---@field health replica_health
+---@field hunger replica_hunger
+---@field inventoryitem replica_inventoryitem
+---@field inventory replica_inventory
+---@field moisture replica_moisture
+---@field named replica_named
+---@field oceanfishingrod replica_oceanfishingrod
+---@field rider replica_rider
+---@field sanity replica_sanity
+---@field sheltered replica_sheltered
+---@field stackable replica_stackable
+---@field writeable replica_writeable

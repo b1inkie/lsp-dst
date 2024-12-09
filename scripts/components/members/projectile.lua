@@ -1,0 +1,28 @@
+---@meta
+
+---@class component_projectile
+---@field inst idk
+---@field owner idk
+---@field target idk
+---@field start idk
+---@field dest idk
+---@field cancatch idk
+---@field speed idk
+---@field hitdist idk
+---@field homing idk
+---@field range idk
+---@field onthrown idk
+---@field onhit idk
+---@field onmiss idk
+---@field oncaught idk
+---@field stimuli idk
+---@field has_damage_set idk
+---@field delaytask idk
+---@field delayowner idk
+---@field delaypos idk
+---@field _ondelaycancel idk
+---@field overridestartpos idk
+---@field bounced idk
+---@field dozeOffTask idk
+---@field onprehit idk
+---@field launchoffset idk

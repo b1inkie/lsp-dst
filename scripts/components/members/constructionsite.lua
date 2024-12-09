@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_constructionsite
+---@field inst idk
+---@field materials idk
+---@field builder idk
+---@field constructionprefab idk
+---@field onstartconstructionfn idk
+---@field onstopconstructionfn idk
+---@field onconstructedfn idk
+---@field enabled idk

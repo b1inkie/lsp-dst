@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_raindome
+---@field _lastactiveradius idk
+---@field inst idk
+---@field ismastersim idk
+---@field _activeradius idk
+---@field radius idk
+---@field enabled idk
+---@field targets idk
+---@field newtargets idk
+---@field delay idk

@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_gym
+---@field inst idk
+---@field trainfn idk
+---@field trainee idk
+---@field traintime idk
+---@field onLoseTraineeFn idk
+---@field _removetrainee idk
+---@field perishcheck idk
+---@field montagemusic idk
+---@field resttask idk

@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_witherable
+---@field inst idk
+---@field enabled idk
+---@field withered idk
+---@field wither_temp idk
+---@field rejuvenate_temp idk
+---@field delay_to_time idk
+---@field task_to_time idk
+---@field task idk
+---@field restore_cycles idk
+---@field is_watching_rain idk
+---@field protect_to_time idk
+---@field protect_task idk

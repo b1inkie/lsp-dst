@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_diseaseable
+---@field _warningtask idk
+---@field _delaytask idk
+---@field inst idk
+---@field onDiseasedFn idk
+---@field diseased idk
+---@field _lastfx idk
+---@field _fxtask idk
+---@field _spreadtask idk

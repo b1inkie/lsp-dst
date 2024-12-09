@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_nis
+---@field inst idk
+---@field playing idk
+---@field skippable idk
+---@field data idk
+---@field name idk
+---@field inputhandlers idk
+---@field script idk
+---@field init idk
+---@field cancel idk
+---@field task idk

@@ -1,0 +1,24 @@
+---@meta
+
+---@class component_eater
+---@field inst idk
+---@field eater idk
+---@field strongstomach idk
+---@field preferseating idk
+---@field perferseatingtags idk
+---@field caneat idk
+---@field oneatfn idk
+---@field lasteattime idk
+---@field ignoresspoilage idk
+---@field eatwholestack idk
+---@field stale_hunger idk
+---@field stale_health idk
+---@field spoiled_hunger idk
+---@field spoiled_health idk
+---@field healthabsorption idk
+---@field hungerabsorption idk
+---@field sanityabsorption idk
+---@field cacheedibletags idk
+---@field preferseatingtags idk
+---@field eatsrawmeat idk
+---@field nospoiledfood idk

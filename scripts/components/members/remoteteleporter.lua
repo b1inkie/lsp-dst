@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_remoteteleporter
+---@field inst idk
+---@field canactivatefn idk
+---@field checkdestinationfn idk
+---@field onstartteleportfn idk
+---@field onteleportedfn idk
+---@field onstopteleportfn idk
+---@field itemteleportradius idk
+---@field nearbyitems idk

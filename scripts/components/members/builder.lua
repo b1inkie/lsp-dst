@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_builder
+---@field inst idk
+---@field recipes idk
+---@field station_recipes idk
+---@field accessible_tech_trees idk
+---@field accessible_tech_trees_no_temp idk
+---@field old_accessible_tech_trees idk
+---@field current_prototyper idk
+---@field buffered_builds idk
+---@field ingredientmod idk
+---@field last_hungry_build idk
+---@field last_hungry_build_pt idk
+---@field freebuildmode idk
+---@field exclude_tags idk
+---@field temptechbonus_count idk
+---@field override_current_prototyper idk

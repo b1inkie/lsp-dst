@@ -1,0 +1,22 @@
+---@meta
+
+---@class component_circler
+---@field inst idk
+---@field scale idk
+---@field speed idk
+---@field circleTarget idk
+---@field minSpeed idk
+---@field maxSpeed idk
+---@field minDist idk
+---@field maxDist idk
+---@field minScale idk
+---@field maxScale idk
+---@field onaccelerate idk
+---@field numAccelerates idk
+---@field sineMod idk
+---@field sine idk
+---@field distance idk
+---@field angleRad idk
+---@field offset idk
+---@field facingAngle idk
+---@field direction idk

@@ -1,0 +1,35 @@
+---@meta
+
+---@class component_health
+---@field inst idk
+---@field maxhealth idk
+---@field minhealth idk
+---@field currenthealth idk
+---@field invincible idk
+---@field vulnerabletoheatdamage idk
+---@field takingfiredamage idk
+---@field takingfiredamagetime idk
+---@field takingfiredamagelow idk
+---@field fire_damage_scale idk
+---@field externalfiredamagemultipliers idk
+---@field fire_timestart idk
+---@field firedamageinlastsecond idk
+---@field firedamagecaptimer idk
+---@field nofadeout idk
+---@field penalty idk
+---@field disable_penalty idk
+---@field absorb idk
+---@field playerabsorb idk
+---@field externalabsorbmodifiers idk
+---@field destroytime idk
+---@field canmurder idk
+---@field canheal idk
+---@field nonlethal_temperature idk
+---@field nonlethal_hunger idk
+---@field nonlethal_pct idk
+---@field takingfiredamagestarttime idk
+---@field lastfiredamagetime idk
+---@field regen idk
+---@field regensources idk
+---@field maxdamagetakenperhit idk
+---@field _ignore_maxdamagetakenperhit idk

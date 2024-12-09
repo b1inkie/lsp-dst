@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_mood
+---@field daystomoodchange idk
+---@field inst idk
+---@field enabled idk
+---@field moodtimeindays idk
+---@field forcemood idk
+---@field isinmood idk
+---@field onentermood idk
+---@field onleavemood idk
+---@field moodseasons idk
+---@field firstseasonadded idk
+---@field worldsettingsmultiplier_inmood idk
+---@field worldsettingsmultiplier_outmood idk
+---@field worldsettingsenabled idk
+---@field seasonmood idk

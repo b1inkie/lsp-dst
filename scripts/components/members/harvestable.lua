@@ -1,0 +1,16 @@
+---@meta
+
+---@class component_harvestable
+---@field inst idk
+---@field produce idk
+---@field growtime idk
+---@field product idk
+---@field ongrowfn idk
+---@field maxproduce idk
+---@field enabled idk
+---@field can_harvest_fn idk
+---@field domagicgrowthfn idk
+---@field onharvestfn idk
+---@field pausetime idk
+---@field task idk
+---@field targettime idk

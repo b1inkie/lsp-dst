@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_hauntable
+---@field inst idk
+---@field onhaunt idk
+---@field onunhaunt idk
+---@field haunted idk
+---@field hauntvalue idk
+---@field no_wipe_value idk
+---@field cooldowntimer idk
+---@field cooldown idk
+---@field cooldown_on_successful_haunt idk
+---@field panic idk
+---@field panictimer idk
+---@field usefx idk
+---@field flicker idk
+---@field flickering idk

@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_machine
+---@field inst idk
+---@field turnonfn idk
+---@field turnofffn idk
+---@field ison idk
+---@field cooldowntime idk
+---@field oncooldown idk
+---@field enabled idk
+---@field groundonly idk

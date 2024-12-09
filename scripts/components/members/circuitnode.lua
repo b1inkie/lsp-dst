@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_circuitnode
+---@field inst idk
+---@field range idk
+---@field footprint idk
+---@field onconnectfn idk
+---@field ondisconnectfn idk
+---@field nodes idk
+---@field numnodes idk
+---@field connectsacrossplatforms idk
+---@field rangeincludesfootprint idk

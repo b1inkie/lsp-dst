@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_complexprojectile
+---@field inst idk
+---@field velocity idk
+---@field gravity idk
+---@field horizontalSpeed idk
+---@field launchoffset idk
+---@field targetoffset idk
+---@field owningweapon idk
+---@field attacker idk
+---@field onlaunchfn idk
+---@field onhitfn idk
+---@field onmissfn idk
+---@field onupdatefn idk
+---@field usehigharc idk
+---@field ismeleeweapon idk

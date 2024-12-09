@@ -1,0 +1,15 @@
+---@meta
+
+---@class component_hideout
+---@field inst idk
+---@field storedcreatures idk
+---@field numstoredcreatures idk
+---@field onvacate idk
+---@field onoccupied idk
+---@field onspawned idk
+---@field ongohome idk
+---@field timetonextspawn idk
+---@field spawnperiod idk
+---@field spawnvariance idk
+---@field spawnoffscreen idk
+---@field task idk

@@ -1,0 +1,21 @@
+---@meta
+
+---@class component_lootdropper
+---@field inst idk
+---@field numrandomloot idk
+---@field randomloot idk
+---@field chancerandomloot idk
+---@field totalrandomweight idk
+---@field chanceloot idk
+---@field ifnotchanceloot idk
+---@field droppingchanceloot idk
+---@field loot idk
+---@field chanceloottable idk
+---@field trappable idk
+---@field droprecipeloot idk
+---@field lootfn idk
+---@field flingtargetpos idk
+---@field flingtargetvariance idk
+---@field lootsetupfn idk
+---@field randomhauntedloot idk
+---@field totalhauntedrandomweight idk

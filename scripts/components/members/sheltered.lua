@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_sheltered
+---@field inst idk
+---@field stoptime idk
+---@field presheltered idk
+---@field sheltered idk
+---@field announcecooldown idk
+---@field sheltered_level idk
+---@field mounted idk
+---@field waterproofness idk

@@ -1,0 +1,19 @@
+---@meta
+
+---@class component_teleporter
+---@field inst idk
+---@field targetTeleporter idk
+---@field onActivate idk
+---@field onActivateByOther idk
+---@field offset idk
+---@field enabled idk
+---@field numteleporting idk
+---@field teleportees idk
+---@field saveenabled idk
+---@field travelcameratime idk
+---@field travelarrivetime idk
+---@field items idk
+---@field _onremoveteleportee idk
+---@field targetTeleporterTemporary idk
+---@field stopcamerafades idk
+---@field migration_data idk

@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_playeractionpicker
+---@field inst idk
+---@field map idk
+---@field containers idk
+---@field leftclickoverride idk
+---@field rightclickoverride idk
+---@field pointspecialactionsfn idk
+---@field actionfilterstack idk
+---@field actionfilter idk
+---@field disable_right_click idk

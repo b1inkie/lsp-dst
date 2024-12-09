@@ -1,0 +1,29 @@
+---@meta
+
+---@class component_burnable
+---@field inst idk
+---@field flammability idk
+---@field fxdata idk
+---@field fxlevel idk
+---@field fxchildren idk
+---@field fxoffset idk
+---@field burning idk
+---@field burntime idk
+---@field extinguishimmediately idk
+---@field smoldertimeremaining idk
+---@field smoldering idk
+---@field onignite idk
+---@field onextinguish idk
+---@field onburnt idk
+---@field onsmoldering idk
+---@field onstopsmoldering idk
+---@field canlight idk
+---@field lightningimmune idk
+---@field nocharring idk
+---@field ignorefuel idk
+---@field fastextinguish idk
+---@field task idk
+---@field smolder_task idk
+---@field fxprefab idk
+---@field smoke idk
+---@field controlled_burn idk

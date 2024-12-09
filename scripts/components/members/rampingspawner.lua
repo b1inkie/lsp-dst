@@ -1,0 +1,17 @@
+---@meta
+
+---@class component_rampingspawner
+---@field inst idk
+---@field spawn_prefab idk
+---@field spawns idk
+---@field num_spawns idk
+---@field current_wave idk
+---@field wave_num idk
+---@field min_wave idk
+---@field max_wave idk
+---@field waves_to_max idk
+---@field wave_time idk
+---@field spawning_on idk
+---@field SpawnTask idk
+---@field _ondeathfn idk
+---@field _onremovefn idk

@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_equippable
+---@field inst idk
+---@field isequipped idk
+---@field equipslot idk
+---@field onequipfn idk
+---@field onunequipfn idk
+---@field onpocketfn idk
+---@field onequiptomodelfn idk
+---@field equipstack idk
+---@field walkspeedmult idk
+---@field retrictedtag idk
+---@field dapperness idk
+---@field dapperfn idk
+---@field insulated idk
+---@field equippedmoisture idk
+---@field maxequippedmoisture idk
+---@field preventunequipping idk
+---@field _onremovelistener idk

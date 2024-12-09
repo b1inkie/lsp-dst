@@ -1,0 +1,24 @@
+---@meta
+
+---@class component_pethealthbar
+---@field inst idk
+---@field ismastersim idk
+---@field _symbol idk
+---@field _status idk
+---@field _maxhealth idk
+---@field _pulse idk
+---@field _healthpct idk
+---@field _petskin idk
+---@field petskin_str idk
+---@field _onhealthdelta idk
+---@field corrosives idk
+---@field _onremovecorrosive idk
+---@field _onstartcorrsivedebuff idk
+---@field hots idk
+---@field _onremovehots idk
+---@field _onstarthealthregen idk
+---@field small_hots idk
+---@field _onremovesmallhots idk
+---@field _onstartsmallhealthregen idk
+---@field task idk
+---@field pet idk

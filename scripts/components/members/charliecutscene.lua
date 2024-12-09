@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_charliecutscene
+---@field inst idk
+---@field gate_pos idk
+---@field atrium_pillars idk
+---@field _iscameralocked idk
+---@field _cameraangle idk
+---@field _running idk
+---@field _gatefixed idk
+---@field _traderenabled idk
+---@field charlie idk
+---@field hand idk

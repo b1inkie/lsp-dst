@@ -1,0 +1,20 @@
+---@meta
+
+---@class component_herd
+---@field inst idk
+---@field maxsize idk
+---@field members idk
+---@field membercount idk
+---@field membertag idk
+---@field gatherrange idk
+---@field updaterange idk
+---@field nomerging idk
+---@field onempty idk
+---@field onfull idk
+---@field addmember idk
+---@field removemember idk
+---@field updatepos idk
+---@field updateposincombat idk
+---@field task idk
+---@field _onmemberkilled idk
+---@field membersearchtags idk

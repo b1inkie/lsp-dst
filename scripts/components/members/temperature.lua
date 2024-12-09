@@ -1,0 +1,27 @@
+---@meta
+
+---@class component_temperature
+---@field inst idk
+---@field settemp idk
+---@field current idk
+---@field maxtemp idk
+---@field mintemp idk
+---@field overheattemp idk
+---@field hurtrate idk
+---@field overheathurtrate idk
+---@field inherentinsulation idk
+---@field inherentsummerinsulation idk
+---@field shelterinsulation idk
+---@field bellytemperaturedelta idk
+---@field bellytime idk
+---@field bellytask idk
+---@field ignoreheatertags idk
+---@field usespawnlight idk
+---@field maxmoisturepenalty idk
+---@field totalmodifiers idk
+---@field externalheaterpower idk
+---@field delta idk
+---@field rate idk
+---@field sheltered idk
+---@field sheltered_level idk
+---@field temperature_modifiers idk

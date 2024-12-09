@@ -1,0 +1,126 @@
+---@meta
+
+---@class ent # 实体
+---@field AnimState idk # 动画
+---@field Transform idk # 变换
+---@field SoundEmitter idk # 声音
+---@field Physics idk # 物理
+---@field Network idk # 网络
+---@field Light idk # 光照
+---@field components components # 组件
+---@field replica replica_component # 客机组件
+---@field DynamicShadow idk
+---@field EnableLoadingProtection idk
+---@field inlimbo idk
+---@field GetMoistureRateScale idk
+---@field _lunarportalmax idk
+---@field CanSeePointOnMiniMap idk
+---@field skeleton_prefab idk
+---@field EnableBoatCamera idk
+---@field playercolour idk
+---@field MakeGenericCommander idk
+---@field wallupdatecomponents idk
+---@field IsActing idk
+---@field killtask idk
+---@field _isrezattuned idk
+---@field OnRemoveEntity idk
+---@field _PostActivateHandshakeState_Client idk
+---@field pendingtasks idk
+---@field ApplySkinOverrides idk
+---@field ResetMinimapOffset idk
+---@field sg idk
+---@field IsHUDVisible idk
+---@field ApplyScale idk
+---@field SetCameraDistance idk
+---@field SetGhostMode idk
+---@field ShowActions idk
+---@field HUD idk
+---@field SetGymStartState idk
+---@field ScreenFlash idk
+---@field player_classified idk
+---@field SaveForReroll idk
+---@field event_listening idk
+---@field children idk
+---@field actioncomponents idk
+---@field CloseMinimap idk
+---@field lower_components_shadow idk
+---@field SwapAllCharacteristics idk
+---@field OnPostActivateHandshake_Server idk
+---@field cameradistancebonuses idk
+---@field IsOverheating idk
+---@field prefab string
+---@field updatecomponents idk
+---@field xpgeneration_task idk
+---@field ShakeCamera idk
+---@field OnDespawn idk
+---@field YOTB_isskinunlocked idk
+---@field SetClientAuthoritativeSetting idk
+---@field MiniMapEntity idk
+---@field IsFreezing idk
+---@field IsChannelCastingItem idk
+---@field _PICKUPSOUNDS idk
+---@field ShowHUD idk
+---@field OnWakeUp idk
+---@field IsInAnyStormOrCloud idk
+---@field actionreplica idk
+---@field SynchronizeOneClientAuthoritativeSetting idk
+---@field GetTemperature idk
+---@field OnSleepIn idk
+---@field _serverpauseddirtyfn idk
+---@field _hermit_music idk
+---@field GetMaxMoisture idk
+---@field ghostenabled idk
+---@field _underleafcanopy idk
+---@field IsChannelCasting idk
+---@field EnableMovementPrediction idk
+---@field worldstatewatching idk
+---@field RemoveCameraExtraDistance idk
+---@field SetCameraZoomed idk
+---@field TargetForceAttackOnly idk
+---@field CanSeeTileOnMiniMap idk
+---@field HostileTest idk
+---@field ChangeFromMonkey idk
+---@field CanUseTouchStone idk
+---@field DisableLoadingProtection idk
+---@field IsInMiasma idk
+---@field AddCameraExtraDistance idk
+---@field YOTB_issetunlocked idk
+---@field PostActivateHandshake idk
+---@field OnPreLoad idk
+---@field LightWatcher idk
+---@field OnPostActivateHandshake_Client idk
+---@field ShowPopUp idk
+---@field spawntime idk
+---@field event_listeners idk
+---@field SnapCamera idk
+---@field name idk
+---@field IsNearDanger idk
+---@field SetGymStopState idk
+---@field LoadForReroll idk
+---@field GUID idk
+---@field GetMoisture idk
+---@field ScreenFade idk
+---@field inherentactions idk
+---@field OnLoad idk
+---@field persists idk
+---@field _shadowportalmax idk
+---@field OnSave idk
+---@field entity idk
+---@field customidleanim idk
+---@field ChangeToMonkey idk
+---@field IsCarefulWalking idk
+---@field _PostActivateHandshakeState_Server idk
+---@field AttachClassified idk
+---@field isplayer idk
+---@field GetStormLevel idk
+---@field _sharksoundparam idk
+---@field ApplyAnimScale idk
+---@field _winters_feast_music idk
+---@field userid idk
+---@field IsActionsVisible idk
+---@field _skilltreeactivatedany idk
+---@field YOTB_unlockskinset idk
+---@field DetachClassified idk
+---@field talker_path_override idk
+---@field _piratemusicstate idk
+

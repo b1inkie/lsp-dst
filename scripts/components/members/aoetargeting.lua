@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_aoetargeting
+---@field inst idk
+---@field reticule idk
+---@field targetprefab idk
+---@field alwaysvalid idk
+---@field allowwater idk
+---@field allowriding idk
+---@field deployradius idk
+---@field range idk
+---@field shouldrepeatcastfn idk
+---@field enabled idk

@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_disappears
+---@field inst idk
+---@field delay idk
+---@field disappearsFn idk
+---@field sound idk
+---@field anim idk
+---@field disappeartask idk
+---@field tasktotime idk
+---@field isdisappear idk

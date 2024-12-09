@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_boatleak
+---@field inst idk
+---@field has_leaks idk
+---@field leak_build idk
+---@field leak_build_override idk
+---@field isdynamic idk
+---@field _repaired_timeout_task idk
+---@field current_state idk
+---@field boat idk

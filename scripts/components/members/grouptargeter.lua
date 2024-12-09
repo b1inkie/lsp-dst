@@ -1,0 +1,13 @@
+---@meta
+
+---@class component_grouptargeter
+---@field inst idk
+---@field targets idk
+---@field total_weight idk
+---@field weight_change idk
+---@field num_targets idk
+---@field min_chance idk
+---@field max_chance idk
+---@field chance_delta idk
+---@field current_chance idk
+---@field _ontargetremoved idk

@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_spell
+---@field inst idk
+---@field active idk
+---@field spellname idk
+---@field onstartfn idk
+---@field onfinishfn idk
+---@field ontargetfn idk
+---@field fn idk
+---@field resumefn idk
+---@field target idk
+---@field duration idk
+---@field lifetime idk
+---@field period idk
+---@field timer idk
+---@field removeonfinish idk
+---@field variables idk

@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_anchor
+---@field boat idk
+---@field is_boat_moving idk
+---@field inst idk
+---@field is_anchor_lowered idk
+---@field raisers idk
+---@field numberofraisers idk
+---@field raiseunits idk
+---@field currentraiseunits idk
+---@field autolowerunits idk
+---@field OnBoatRemoved idk
+---@field OnBoatStopMoving idk
+---@field OnBoatStartMoving idk
+---@field max_velocity_mod idk
+---@field is_anchor_transitioning idk
+---@field rasing idk

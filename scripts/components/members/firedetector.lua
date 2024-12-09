@@ -1,0 +1,26 @@
+---@meta
+
+---@class component_firedetector
+---@field inst idk
+---@field range idk
+---@field detectPeriod idk
+---@field onfindfire idk
+---@field onbeginemergency idk
+---@field onendemergency idk
+---@field onbeginwarning idk
+---@field onupdatewarning idk
+---@field onendwarning idk
+---@field detectedItems idk
+---@field detectTask idk
+---@field fireOnly idk
+---@field emergencyResponsePeriod idk
+---@field emergencyShutdownPeriod idk
+---@field emergencyLevelMax idk
+---@field emergencyLevelFireThreshold idk
+---@field emergencyLevel idk
+---@field emergency idk
+---@field emergencyWatched idk
+---@field emergencyBurnt idk
+---@field emergencyShutdownTask idk
+---@field emergencyShutdownTime idk
+---@field warningStartTime idk

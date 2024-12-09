@@ -1,0 +1,24 @@
+---@meta
+
+---@class component_container
+---@field inst idk
+---@field slots idk
+---@field numslots idk
+---@field canbeopened idk
+---@field skipopensnd idk
+---@field skipclosesnd idk
+---@field skipautoclose idk
+---@field acceptsstacks idk
+---@field usespecificslotsforitems idk
+---@field issidewidget idk
+---@field type idk
+---@field widget idk
+---@field itemtestfn idk
+---@field priorityfn idk
+---@field openlist idk
+---@field opencount idk
+---@field droponopen idk
+---@field currentuser idk
+---@field ignoresound idk
+---@field ignoreoverstacked idk
+---@field openlimit idk

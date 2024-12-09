@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_spectatorcorpse
+---@field updating idk
+---@field lasttarget idk
+---@field str idk
+---@field active idk
+---@field inst idk
+---@field maxrange idk
+---@field startspeed idk
+---@field priority idk
+---@field _isspectating idk

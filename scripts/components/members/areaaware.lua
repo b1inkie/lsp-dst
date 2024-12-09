@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_areaaware
+---@field inst idk
+---@field current_area idk
+---@field current_area_data idk
+---@field lastpt idk
+---@field updatedistsq idk
+---@field watch_tiles idk
+---@field _ForceUpdate idk
+---@field checkpositiontask idk

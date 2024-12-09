@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_oldager
+---@field inst idk
+---@field base_rate idk
+---@field rate idk
+---@field year_timer idk
+---@field damage_remaining idk
+---@field damage_per_second idk
+---@field valid_healing_causes idk
+---@field _taking_time_damage idk

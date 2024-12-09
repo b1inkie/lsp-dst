@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_lunarplant_tentacle_weapon
+---@field inst idk
+---@field spawn_chance idk
+---@field tentacle_prefab idk
+---@field should_do_tentacles_fn idk
+---@field _on_attack idk
+---@field owner idk
+---@field _erase_owner idk
+---@field _equipped_callback idk
+---@field _unequipped_callback idk

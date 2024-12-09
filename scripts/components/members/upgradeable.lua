@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_upgradeable
+---@field inst idk
+---@field onstageadvancefn idk
+---@field onupgradefn idk
+---@field upgradetype idk
+---@field stage idk
+---@field numstages idk
+---@field upgradesperstage idk
+---@field numupgrades idk
+---@field canupgradefn idk

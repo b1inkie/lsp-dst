@@ -1,0 +1,18 @@
+---@meta
+
+---@class component_battleborn
+---@field inst idk
+---@field battleborn idk
+---@field battleborn_time idk
+---@field battleborn_trigger_threshold idk
+---@field battleborn_decay_time idk
+---@field battleborn_store_time idk
+---@field battleborn_bonus idk
+---@field clamp_min idk
+---@field clamp_max idk
+---@field allow_zero idk
+---@field RepairEquipment idk
+---@field ontriggerfn idk
+---@field sanity_enabled idk
+---@field health_enabled idk
+---@field validvictimfn idk

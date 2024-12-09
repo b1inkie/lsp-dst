@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_storyteller
+---@field inst idk
+---@field storytotellfn idk
+---@field storytelling_dist idk
+---@field storytelling_ticktime idk
+---@field storyprop_onremove idk
+---@field onstorybeginfn idk
+---@field onstoryoverfn idk
+---@field onstoryticktask idk
+---@field story idk

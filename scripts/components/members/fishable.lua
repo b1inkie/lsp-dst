@@ -1,0 +1,12 @@
+---@meta
+
+---@class component_fishable
+---@field inst idk
+---@field fish idk
+---@field maxfish idk
+---@field fishleft idk
+---@field hookedfish idk
+---@field fishrespawntime idk
+---@field respawntask idk
+---@field frozen idk
+---@field getfishfn idk

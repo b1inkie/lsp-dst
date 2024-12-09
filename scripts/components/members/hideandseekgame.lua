@@ -1,0 +1,19 @@
+---@meta
+
+---@class component_hideandseekgame
+---@field inst idk
+---@field seekers idk
+---@field hiding_spots idk
+---@field hiding_range idk
+---@field hiding_range_toofar idk
+---@field num_hiders_found idk
+---@field seeker_too_far_return_announce idk
+---@field seeker_return_announce idk
+---@field gameaborted_announce idk
+---@field OnAddSeeker idk
+---@field OnHidingSpotFound idk
+---@field OnHideAndSeekOver idk
+---@field onremove_hiding_spot idk
+---@field onremove_seeker idk
+---@field dounregisterhidingspot idk
+---@field pulse_task idk

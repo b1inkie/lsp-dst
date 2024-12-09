@@ -1,0 +1,11 @@
+---@meta
+
+---@class component_rechargeable
+---@field inst idk
+---@field total idk
+---@field current idk
+---@field chargetimemod idk
+---@field chargetime idk
+---@field ondischargedfn idk
+---@field onchargedfn idk
+---@field updating idk

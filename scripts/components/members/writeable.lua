@@ -1,0 +1,16 @@
+---@meta
+
+---@class component_writeable
+---@field inst idk
+---@field writeable_by_default idk
+---@field text idk
+---@field writer idk
+---@field screen idk
+---@field onclosepopups idk
+---@field generatorfn idk
+---@field automatic_description idk
+---@field writeable_distance idk
+---@field onwritten idk
+---@field onwritingended idk
+---@field writer_netid idk
+---@field writer_userid idk
