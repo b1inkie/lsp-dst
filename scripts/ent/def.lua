@@ -1,10 +1,10 @@
 ---@meta
 
 ---@class ent # 实体
----@field AnimState idk # 动画
----@field Transform idk # 变换
----@field SoundEmitter idk # 声音
----@field Physics idk # 物理
+---@field AnimState AnimState # 动画
+---@field Transform Transform # 变换
+---@field SoundEmitter SoundEmitter # 声音
+---@field Physics Physics # 物理
 ---@field Network idk # 网络
 ---@field Light idk # 光照
 ---@field components components # 组件
