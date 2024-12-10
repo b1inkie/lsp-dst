@@ -173,7 +173,7 @@ end
 ---@param msg string # 内容
 ---@param idk1 idk # 
 ---@param idk2 idk # 
----@param icon string # 显示的图标
+---@param icon string|nil # 显示的图标
 ---author: lan
 function TheNet:Announce(msg,idk1,idk2,icon)
 end
