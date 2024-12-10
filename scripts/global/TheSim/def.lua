@@ -3,6 +3,7 @@
 ---@class TheSim
 TheSim = {}
 
+WorldSim = TheSim -- @月: WorldSim 和 TheSim 是相对应的，前者在modworldgenmain.lua里可以用到
 
 ---
 ---UNKNOWN
