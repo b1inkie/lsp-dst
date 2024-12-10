@@ -12787,14 +12787,13 @@ end
 ---
 ---生成预制物
 ---
----@param name idk 
+---@param name PrefabID 
 ---@param skin idk 
 ---@param skin_id idk 
 ---@param creator idk 
 ---@return ent
 ---所在文件: scripts/mainfunctions.lua
 function SpawnPrefab(name,skin,skin_id,creator)
-    return {}
 end
 
 ---
