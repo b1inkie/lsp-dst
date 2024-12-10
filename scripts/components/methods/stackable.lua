@@ -58,9 +58,10 @@ end
 function stackable:SetIgnoreMaxSize(ignoremaxsize)
 end
 
----
----@param num idk # 
----author: 
+---从当前堆叠中获取指定数量的物品
+---@param num number|nil # 请求的数量
+---@return ent # 如果请求的数量小于当前堆叠中的数量，返回新实体, 否则返回当前的堆的实体
+---author: lan
 function stackable:Get(num)
 end
 

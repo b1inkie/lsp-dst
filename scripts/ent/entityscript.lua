@@ -214,6 +214,7 @@ function entityscript:ReturnToScene()
 end
 
 ---EntityScript: 实体移除
+---
 ---author: lan
 function entityscript:Remove()
 end

@@ -5311,7 +5311,7 @@ end
 ---修改已有的组件的初始化API
 ---
 ---@param component string 组件名
----@param fn fun(self: class)
+---@param fn fun(self)
 ---所在文件: scripts/modutil.lua
 function AddComponentPostInit(component,fn)
 end
@@ -5379,7 +5379,7 @@ end
 ---修改已有的预制物的初始化API
 ---
 ---@param prefab string 
----@param fn fun(inst: ent) 
+---@param fn fun(inst: ent):...
 ---所在文件: scripts/modutil.lua
 function AddPrefabPostInit(prefab,fn)
 end
