@@ -3,17 +3,17 @@
 ---@class component_equippable
 ---@field inst idk
 ---@field isequipped idk
----@field equipslot idk
----@field onequipfn idk
----@field onunequipfn idk
+---@field equipslot EQUIPSLOTS|string # 设置装备槽位
+---@field onequipfn fun(inst: ent,owner: ent,from_ground: any) # 穿戴回调函数
+---@field onunequipfn fun(inst: ent,owner: ent) # 卸除回调函数
 ---@field onpocketfn idk
----@field onequiptomodelfn idk
+---@field onequiptomodelfn fun(inst: ent,owner: ent,from_ground: any) # 假人穿戴回调函数
 ---@field equipstack idk
----@field walkspeedmult idk
+---@field walkspeedmult number # 设置移速倍率,例如+20%移速就是,1.2,注意这里的移速只能有1位小数(忘了一位还是两位了)
 ---@field retrictedtag idk
----@field dapperness idk
+---@field dapperness number # 显示 `+多少精神/min`, 这里填的时候注意要 `/54`
 ---@field dapperfn idk
----@field insulated idk
+---@field insulated boolean # 是 则100%防雷
 ---@field equippedmoisture idk
 ---@field maxequippedmoisture idk
 ---@field preventunequipping idk

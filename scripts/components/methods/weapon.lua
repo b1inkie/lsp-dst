@@ -4,8 +4,8 @@
 local weapon = {}
 
 ---组件.combat:DoAttack中调用
----@param attacker idk # 
----@param target idk # 
+---@param attacker ent # 
+---@param target ent # 
 ---@param projectile idk # 
 ---author: lan(触发回调函数,扣耐久等)
 function weapon:OnAttack(attacker,target,projectile)
@@ -19,8 +19,8 @@ function weapon:SetRange(attack,hit)
 end
 
 ---获取攻击者装备此武器时对目标的伤害
----@param attacker table # 攻击者的inst
----@param target table # 攻击目标的inst
+---@param attacker ent # 攻击者的inst
+---@param target ent # 攻击目标的inst
 ---@return number # 通常伤害
 ---@return number # 特殊伤害
 ---author: Runar
@@ -28,14 +28,14 @@ function weapon:GetDamage(attacker,target)
 end
 
 ---设置武器击中回调函数, 同SetAttackCallback
----@param fn fun(inst: table,attacker: table,target: table) # 击中后执行的函数
+---@param fn fun(inst: ent,attacker: ent,target: ent) # 击中后执行的函数
 ---author: Runar
 function weapon:SetOnAttack(fn)
 end
 
 ---发射投掷物(需先设置投射物)
----@param attacker idk # 攻击者
----@param target idk # 目标
+---@param attacker ent # 攻击者
+---@param target ent # 目标
 ---author: lan
 function weapon:LaunchProjectile(attacker,target)
 end
@@ -47,19 +47,19 @@ function weapon:SetDamage(dmg)
 end
 
 ---发射投射物造成伤害前的回调函数
----@param fn fun(inst: idk,attacker: idk,target: idk) # 回调函数
+---@param fn fun(inst: ent,attacker: ent,target: ent) # 回调函数
 ---author: lan
 function weapon:SetOnProjectileLaunch(fn)
 end
 
 ---设置武器击中回调函数
----@param fn fun(inst: table,attacker: table,target: table) # 击中后执行的函数
+---@param fn fun(inst: ent,attacker: ent,target: ent) # 击中后执行的函数
 ---author: Runar
 function weapon:SetAttackCallback(fn)
 end
 
 ---发射投射物造成伤害后的回调函数
----@param fn fun(inst: idk,attacker: idk,target: idk,proj: idk) # 回调函数
+---@param fn fun(inst: ent,attacker: ent,target: ent,proj: idk) # 回调函数
 ---author: lan
 function weapon:SetOnProjectileLaunched(fn)
 end

@@ -39,9 +39,9 @@ end
 function equippable:SetDappernessFn(fn)
 end
 
----
----@param fn idk # 
----author: 
+---设置穿戴回调函数
+---@param fn fun(inst: ent,owner: ent,from_ground: any) # 穿戴回调函数
+---author: lan
 function equippable:SetOnEquip(fn)
 end
 
@@ -85,25 +85,29 @@ end
 function equippable:ToPocket(owner)
 end
 
----
----author: 
+---当前物品是否正被装备
+---@return boolean # 物品正被装备
+---@nodiscard
+---author: lan
 function equippable:IsEquipped()
 end
 
----
----@param fn idk # 
----author: 
+---设置卸除回调函数
+---@param fn fun(inst: ent,owner: ent) # 卸除回调函数
+---author: lan
 function equippable:SetOnUnequip(fn)
 end
 
----
----@param fn idk # 
----author: 
+---设置穿戴到假人身上时的回调函数(当 `owner:HasTag("equipmentmodel")` 时, 才会调用)(注意,给假人穿戴时,onequip回调函数也是会触发的)
+---@param fn fun(inst: ent,owner: ent,from_ground: any) # 假人穿戴回调函数
+---author: lan
 function equippable:SetOnEquipToModel(fn)
 end
 
----
----author: 
+---装备是否防雷(100%防雷)
+---@return boolean # 是防雷
+---@nodiscard
+---author: lan
 function equippable:IsInsulated()
 end
 
