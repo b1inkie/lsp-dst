@@ -1,2 +1,4 @@
+---@meta
 
+GLOBAL = _G
 
