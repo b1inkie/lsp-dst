@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class TheNet
-local TheNet = {}
+TheNet = {}
 
 ---UNKNOWN
 ---author: 

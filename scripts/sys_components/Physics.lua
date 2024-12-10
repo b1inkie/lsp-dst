@@ -136,9 +136,12 @@ end
 function Physics:Stop()
 end
 
----UNKNOWN
----author: 
-function Physics:SetVel()
+---设置物理对象的速度
+---@param vx number # x 轴方向的速度
+---@param vy number # y 轴方向的速度
+---@param vz number # z 轴方向的速度
+---author: lan
+function Physics:SetVel(vx,vy,vz)
 end
 
 ---设置三角形网格

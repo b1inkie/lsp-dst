@@ -180,7 +180,7 @@ end
 ---
 ---UNKNOWN
 ---
----@param base idk 
+---@param base fun(self,inst) 
 ---@param _ctor idk 
 ---@param props idk 
 ---@return table
@@ -601,11 +601,13 @@ function sortedKeys(dict)
 end
 
 ---
----UNKNOWN
+--- 获取一个在基准值附近带有随机变化的数值
 ---
----@param baseval idk 
----@param randomval idk 
+---@param baseval number # 基准值
+---@param randomval number # 随机变化的最大范围（正负值）
+---@return number # 在 [baseval - randomval, baseval + randomval] 范围内的随机数值
 ---所在文件: scripts/util.lua
+---author: lan
 function GetRandomWithVariance(baseval,randomval)
 end
 

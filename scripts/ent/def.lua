@@ -1,12 +1,15 @@
 ---@meta
 
 ---@class ent # 实体
----@field AnimState AnimState # 动画
----@field Transform Transform # 变换
----@field SoundEmitter SoundEmitter # 声音
----@field Physics Physics # 物理
----@field Network idk # 网络
----@field Light idk # 光照
+---@field AnimState AnimState # 动画 <br> 需要 `inst.entity:AddAnimState()`
+---@field Transform Transform # 变换 <br> 需要 `inst.entity:AddTransform()`
+---@field SoundEmitter SoundEmitter # 声音 <br> 需要 `inst.entity:AddSoundEmitter()`
+---@field Physics Physics # 物理 <br> 需要 `inst.entity:AddPhysics()`
+---@field Network Network # 网络 <br> 需要 `inst.entity:AddNetwork()`
+---@field Light Light # 光照 <br> 需要 `inst.entity:AddLight()`
+---@field Label Label # 文字 <br> 需要 `inst.entity:AddLabel()`
+---@field Follower Follower # 跟随者 <br> 需要 `inst.entity:AddFollower()`
+---@field MiniMapEntity MiniMapEntity # 有小地图图标的实体 <br> 需要 `inst.entity:AddMiniMapEntity()`
 ---@field components components # 组件
 ---@field replica replica_components # 客机组件
 ---@field DynamicShadow idk
@@ -55,7 +58,6 @@
 ---@field OnDespawn idk
 ---@field YOTB_isskinunlocked idk
 ---@field SetClientAuthoritativeSetting idk
----@field MiniMapEntity idk
 ---@field IsFreezing idk
 ---@field IsChannelCastingItem idk
 ---@field _PICKUPSOUNDS idk
