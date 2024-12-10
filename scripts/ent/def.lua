@@ -8,7 +8,7 @@
 ---@field Network idk # 网络
 ---@field Light idk # 光照
 ---@field components components # 组件
----@field replica replica_component # 客机组件
+---@field replica replica_components # 客机组件
 ---@field DynamicShadow idk
 ---@field EnableLoadingProtection idk
 ---@field inlimbo idk

@@ -1,6 +1,6 @@
 ---@meta
 
----@class replica_component # 客机组件
+---@class replica_components # 客机组件
 ---@field builder replica_builder
 ---@field combat replica_combat
 ---@field constructionsite replica_constructionsite
