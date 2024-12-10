@@ -613,7 +613,7 @@ end
 
 ---EntityScript: 推送事件
 ---@param event string # 推送的事件
----@param data table # 推送时传入的表,可不填
+---@param data nil|table # 推送时传入的表,可不填
 ---author: lan
 function entityscript:PushEvent(event,data)
 end

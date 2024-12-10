@@ -155,12 +155,20 @@ function TheSim:GetAmbientColour(...) end
 ---@param ... any
 ---author:
 function TheSim:DuplicateSlot(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function TheSim:FindEntities(...) end
+
+---获取圆形范围内的实体
+---@param x number # x坐标
+---@param y number # y坐标
+---@param z number # z坐标
+---@param radius number # 搜索半径
+---@param must_have_tags nil|string[] # 必须包含的标签
+---@param cant_have_tags nil|string[] # 不能包含的标签
+---@param must_have_one_of_tags nil|string[] # 必须包含一个标签
+---@return ent[] # 找到的实体
+---@nodiscard
+---author: lan
+function TheSim:FindEntities(x, y, z, radius, must_have_tags, cant_have_tags, must_have_one_of_tags) end
+
 ---
 ---UNKNOWN
 ---
