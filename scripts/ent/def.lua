@@ -7,9 +7,11 @@
 ---@field Physics Physics # 物理 <br> 需要 `inst.entity:AddPhysics()`
 ---@field Network Network # 网络 <br> 需要 `inst.entity:AddNetwork()`
 ---@field Light Light # 光照 <br> 需要 `inst.entity:AddLight()`
+---@field LightWatcher LightWatcher # 光照监视器 <br> 需要 `inst.entity:AddLightWatcher()`
 ---@field Label Label # 文字 <br> 需要 `inst.entity:AddLabel()`
 ---@field Follower Follower # 跟随者 <br> 需要 `inst.entity:AddFollower()`
 ---@field MiniMapEntity MiniMapEntity # 有小地图图标的实体 <br> 需要 `inst.entity:AddMiniMapEntity()`
+---@field VFXEffect VFXEffect # 粒子专用 <br> 需要 `inst.entity:AddVFXEffect()` <br> 其实还有一个叫 `ParticleEmitter` 是旧版的,这两个只能设置一个,旧版的就不写出来了 
 ---@field components components # 组件
 ---@field replica replica_components # 客机组件
 ---@field DynamicShadow idk
@@ -89,7 +91,6 @@
 ---@field YOTB_issetunlocked idk
 ---@field PostActivateHandshake idk
 ---@field OnPreLoad idk
----@field LightWatcher idk
 ---@field OnPostActivateHandshake_Client idk
 ---@field ShowPopUp idk
 ---@field spawntime idk
