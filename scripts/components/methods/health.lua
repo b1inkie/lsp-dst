@@ -204,3 +204,9 @@ end
 function health:SetMaxHealth(amount)
 end
 
+---设置无敌
+---@param val boolean # 
+---author: lan
+function health:SetInvincible(val)
+end
+

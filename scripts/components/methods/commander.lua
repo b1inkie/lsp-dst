@@ -21,6 +21,7 @@ end
 
 ---
 ---@param prefab idk # 
+---@return ent[]
 ---author: 
 function commander:GetAllSoldiers(prefab)
 end
