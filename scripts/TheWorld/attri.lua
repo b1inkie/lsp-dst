@@ -1,0 +1,55 @@
+---@meta
+
+---@class TheWorld
+---@field ismastersim boolean # 是 则为服务器
+---@field GUID idk
+---@field tile_id_conversion_map idk
+---@field inlimbo idk
+---@field Pathfinder idk
+---@field worldstatewatching idk
+---@field spawntask idk
+---@field worldprefab idk
+---@field spawnwaveyjones idk
+---@field ismastershard idk
+---@field CreateTilePhysics idk
+---@field OnRemoveEntity idk
+---@field pendingtasks idk
+---@field GetPocketDimensionContainer idk
+---@field state idk
+---@field spawntime idk
+---@field SetPocketDimensionContainer idk
+---@field watchingcycles idk
+---@field shard idk
+---@field net idk
+---@field reservewaveyjonestarget idk
+---@field moonstormwindowovertask idk
+---@field Transform idk
+---@field event_listeners idk
+---@field PocketDimensionContainers idk
+---@field generated idk
+---@field event_listening idk
+---@field checkwaveyjonestarget idk
+---@field PostInit idk
+---@field hideminimap idk
+---@field lower_components_shadow idk
+---@field _GoodOceanArenaPoints_Task idk
+---@field wallupdatecomponents idk
+---@field entity idk
+---@field has_ocean idk
+---@field prefab idk
+---@field updatecomponents idk
+---@field GroundCreep idk
+---@field removewaveyjonestarget idk
+---@field persists idk
+---@field meta idk
+---@field actioncomponents idk
+---@field SoundEmitter idk
+---@field name idk
+---@field tile_physics_init idk
+---@field Map idk
+---@field WaveComponent idk
+---@field replica idk
+---@field topology idk
+---@field components idk
+---@field minimap idk
+
