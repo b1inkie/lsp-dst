@@ -28,7 +28,7 @@ function trader:SetOnRefuse(fn)
 end
 
 ---在AbleToAccept通过后执行，用于进一步判断是否接受某个物品
----@param fn 判断函数 # 判断物品是否可交易
+---@param fn function # 判断物品是否可交易
 ---author: 超能力拓芙铁拳
 function trader:SetAcceptTest(fn)
 end

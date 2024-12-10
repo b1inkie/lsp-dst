@@ -162,7 +162,7 @@ end
 
 ---从容器中丢弃物品直到达到指定的最大堆数
 ---@param maxstacks number # 最大堆数
----@param drop_pos V3 # 掉落位置
+---@param drop_pos Vector3 # 掉落位置
 ---author: lan
 function container:DropEverythingUpToMaxStacks(maxstacks,drop_pos)
 end
@@ -218,7 +218,7 @@ function container:PutOneOfActiveItemInSlot(slot,opener)
 end
 
 ---丢出所有物品
----@param drop_pos V3 # 掉落位置
+---@param drop_pos Vector3 # 掉落位置
 ---@param keepoverstacked boolean # 保持物品堆叠状态
 ---author: lan(多在容器被摧毁时调用)
 function container:DropEverything(drop_pos,keepoverstacked)
@@ -414,7 +414,7 @@ end
 
 ---丢出所有具有指定tag的物品
 ---@param tag string # 物品拥有的tag
----@param drop_pos V3 # 掉落位置
+---@param drop_pos Vector3 # 掉落位置
 ---@param keepoverstacked boolean # 保持物品堆叠状态
 ---author: lan
 function container:DropEverythingWithTag(tag,drop_pos,keepoverstacked)
