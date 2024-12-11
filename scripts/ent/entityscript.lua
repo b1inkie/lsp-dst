@@ -105,7 +105,7 @@ function entityscript:GetDisplayName()
 end
 
 ---EntityScript: 
----@param tag idk # 
+---@param tag tagID # 
 ---@param condition idk # 
 ---author: 
 function entityscript:AddOrRemoveTag(tag,condition)
@@ -282,7 +282,7 @@ function entityscript:PutBackOnGround(radius)
 end
 
 ---EntityScript: 
----@param tag idk # 
+---@param tag tagID # 
 ---author: 
 function entityscript:RemoveTag(tag)
 end
@@ -306,7 +306,7 @@ function entityscript:IsLightGreaterThan(lightThresh)
 end
 
 ---EntityScript: 实体是否有某个标签
----@param tag string # 标签
+---@param tag tagID # 标签
 ---@return boolean # 是否有标签
 ---author: lan
 function entityscript:HasTag(tag)
@@ -508,7 +508,7 @@ function entityscript:SetPrefabName(name)
 end
 
 ---EntityScript: 
----@param tag idk # 
+---@param tag tagID # 
 ---author: 
 function entityscript:AddTag(tag)
 end

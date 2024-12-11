@@ -14,6 +14,7 @@
 ---@field VFXEffect VFXEffect # 粒子专用 <br> 需要 `inst.entity:AddVFXEffect()` <br> 其实还有一个叫 `ParticleEmitter` 是旧版的,这两个只能设置一个,旧版的就不写出来了 
 ---@field components components # 组件
 ---@field replica replica_components # 客机组件
+---@field prefab PrefabID # 预制物的Prefab ID
 ---@field DynamicShadow idk
 ---@field EnableLoadingProtection idk
 ---@field inlimbo idk
@@ -53,7 +54,6 @@
 ---@field OnPostActivateHandshake_Server idk
 ---@field cameradistancebonuses idk
 ---@field IsOverheating idk
----@field prefab string
 ---@field updatecomponents idk
 ---@field xpgeneration_task idk
 ---@field ShakeCamera idk
