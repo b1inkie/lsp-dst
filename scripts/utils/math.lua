@@ -168,8 +168,8 @@ function math.tan(x)
 end
 
 ---生成随机数。
----@param m number # 最小值（可选）
----@param n number # 最大值（可选）
+---@param m nil|number # 最小值（可选）
+---@param n nil|number # 最大值（可选）
 ---@return number # 随机数
 ---author: lan
 function math.random(m,n)

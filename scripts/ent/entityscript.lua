@@ -325,8 +325,8 @@ function entityscript:RunScript(name)
 end
 
 ---EntityScript: 监听事件
----@param event string # 事件
----@param fn fun(inst: idk,data: table) # 
+---@param event eventID # 事件
+---@param fn fun(inst: idk,data: nil|table) # 
 ---@param source idk # 监听对象,不填则监听自身
 ---author: lan
 function entityscript:ListenForEvent(event,fn,source)
@@ -462,7 +462,7 @@ end
 
 ---EntityScript: 
 ---@param time idk # 
----@param eventname idk # 
+---@param eventname eventID # 
 ---@param data idk # 
 ---author: 
 function entityscript:PushEventInTime(time,eventname,data)
@@ -612,7 +612,7 @@ function entityscript:GetDistanceSqToPoint(x,y,z)
 end
 
 ---EntityScript: 推送事件
----@param event string # 推送的事件
+---@param event eventID # 推送的事件
 ---@param data nil|table # 推送时传入的表,可不填
 ---author: lan
 function entityscript:PushEvent(event,data)
@@ -664,7 +664,7 @@ function entityscript:GetBrainString()
 end
 
 ---EntityScript: 移除监听器
----@param event string # 事件
+---@param event eventID # 事件
 ---@param fn idk # 函数名
 ---@param source idk # 移除的对象,不填则是自身
 ---author: lan(显而易见,如果ListenForEvent中使用的是匿名函数,则无法移除)
