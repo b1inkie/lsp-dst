@@ -172,6 +172,7 @@ end
 ---@param n nil|number # 最大值（可选）
 ---@return number # 随机数
 ---author: lan
+---@diagnostic disable-next-line: redundant-parameter
 function math.random(m,n)
 end
 
