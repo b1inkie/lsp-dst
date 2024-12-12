@@ -3,12 +3,12 @@
 ---@class component_inventory
 local inventory = {}
 
----
----@param inst idk # 
+---给予库存物品
+---@param item ent # 物品
 ---@param slot idk # 
 ---@param src_pos idk # 
 ---author: 
-function inventory:GiveItem(inst,slot,src_pos)
+function inventory:GiveItem(item,slot,src_pos)
 end
 
 ---
@@ -139,9 +139,11 @@ end
 function inventory:CanTakeItemInSlot(item,slot)
 end
 
----
----@param fn idk # 
----author: 
+---获取库存中的物品
+---@param fn fun(item: ent):boolean # 筛选函数
+---@return ent|nil # 获取到的物品
+---@nodiscard
+---author: lan
 function inventory:FindItem(fn)
 end
 

@@ -18,9 +18,9 @@ end
 
 ---播放音效
 ---@param soundpath string # 路径
----@param loopname string # 起一个音效名
----@param volume number # 音量
----author: 
+---@param loopname string|nil # 起一个音效名
+---@param volume number|nil # 音量
+---author: lan
 function SoundEmitter:PlaySound(soundpath,loopname,volume)
 end
 

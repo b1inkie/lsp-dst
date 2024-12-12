@@ -1,6 +1,6 @@
 ---@meta
 
----@class TheWorld
+---@class TheWorld : ent
 ---@field ismastersim boolean # 是 则为服务器
 ---@field GUID idk
 ---@field tile_id_conversion_map idk

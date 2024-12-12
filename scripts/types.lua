@@ -1,7 +1,17 @@
 ---@meta
 
----@alias Vector3 table # 三维向量
----| {x:number,y:number,z:number}
+---@class Vector3
+---@field x number
+---@field y number
+---@field z number
+
+---@class Vector3
+local Vector3 = {}
+
+---comment
+---@return number,number,number
+---@nodiscard
+function Vector3:Get()end
 
 ---@alias idk any # 暂不清楚的
 

@@ -90,10 +90,11 @@ end
 function inventoryitem:IsHeldBy(guy)
 end
 
+---丢下物品,这个方法不好用 <br> 建议用 `owner.components.inventory:DropItem`
 ---
 ---@param randomdir idk # 
 ---@param speedmult idk # 
----author: 
+---author: lan
 function inventoryitem:OnDropped(randomdir,speedmult)
 end
 

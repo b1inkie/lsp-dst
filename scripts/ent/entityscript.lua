@@ -21,7 +21,9 @@ end
 function entityscript:RemoveChild(child)
 end
 
----EntityScript: 
+---EntityScript: 获取坐标
+---@return Vector3
+---@nodiscard
 ---author: 
 function entityscript:GetPosition()
 end
@@ -326,7 +328,7 @@ end
 
 ---EntityScript: 监听事件
 ---@param event eventID # 事件
----@param fn fun(inst: idk,data: nil|table) # 
+---@param fn fun(inst: ent,data: nil|table) # 
 ---@param source idk # 监听对象,不填则监听自身
 ---author: lan
 function entityscript:ListenForEvent(event,fn,source)

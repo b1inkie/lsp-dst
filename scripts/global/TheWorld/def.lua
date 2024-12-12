@@ -1,4 +1,4 @@
 ---@meta
 
----@class TheWorld
+---@class TheWorld : ent
 TheWorld = {}

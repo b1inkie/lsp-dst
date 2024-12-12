@@ -5378,7 +5378,7 @@ end
 ---
 ---修改已有的预制物的初始化API
 ---
----@param prefab string 
+---@param prefab PrefabID 
 ---@param fn fun(inst: ent):...
 ---所在文件: scripts/modutil.lua
 function AddPrefabPostInit(prefab,fn)
