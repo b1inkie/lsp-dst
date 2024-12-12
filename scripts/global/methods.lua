@@ -13666,3 +13666,16 @@ end
 ---所在文件: scripts/prefabs.lua
 function Prefab(name, fn, assets, deps, force_path_search)
 end
+
+
+---
+---配方用生成原料函数
+---@param ingredienttype PrefabID # 除了预制物,还有其他类型,例如 `CHARACTER_INGREDIENT`
+---@param amount number 
+---@param atlas string|nil # 图集路径
+---@param deconstruct idk
+---@param imageoverride string|nil # tex名
+---所在文件: scripts/recipe.lua
+---author: lan
+function Ingredient(ingredienttype, amount, atlas, deconstruct, imageoverride)
+end

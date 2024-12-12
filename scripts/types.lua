@@ -27,3 +27,4 @@ function Vector3:Get()end
 ---| '"SHADER"' # .ksh
 
 
+---@alias GUID string # GUID 注意重载世界会变化

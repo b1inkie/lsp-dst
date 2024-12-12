@@ -100,7 +100,7 @@
 ---@field IsNearDanger idk
 ---@field SetGymStopState idk
 ---@field LoadForReroll idk
----@field GUID idk
+---@field GUID GUID
 ---@field GetMoisture idk
 ---@field ScreenFade idk
 ---@field inherentactions idk
