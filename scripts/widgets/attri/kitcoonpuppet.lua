@@ -1,0 +1,20 @@
+---@meta
+
+---@class widget_kitcoonpuppet: widget_widget
+---@field chance_to_show idk #
+---@field anim idk #
+---@field animstate idk #
+---@field nametag_anim idk #
+---@field nametag_as idk #
+---@field interactable idk #
+---@field onclick idk #
+---@field positions idk #
+---@field size idk #
+---@field hunger idk #
+---@field happiness idk #
+---@field kit_active idk #
+---@field poops idk #
+---@field shadow idk #
+---@field intention_task idk #
+---@field home_vec idk #
+---@field eat_queued idk #

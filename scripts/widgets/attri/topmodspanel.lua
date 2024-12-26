@@ -1,0 +1,22 @@
+---@meta
+
+---@class widget_topmodspanel: widget_widget
+---@field servercreationscreen idk #
+---@field topmods_panel idk #
+---@field topmodsbg idk #
+---@field topmodsgreybg idk #
+---@field morebutton idk #
+---@field title idk #
+---@field modlinks idk #
+---@field featuredtitle idk #
+---@field featuredtitleunderline idk #
+---@field featuredbutton idk #
+---@field featuredbuttonunderline idk #
+---@field default_focus idk #
+---@field current_speed idk #
+---@field current_x_pos idk #
+---@field settled idk #
+---@field started idk #
+---@field start_x_pos idk #
+---@field target_x_pos idk #
+---@field mods_tab idk #

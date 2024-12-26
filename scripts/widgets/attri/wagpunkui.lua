@@ -1,0 +1,14 @@
+---@meta
+
+---@class widget_wagpunkui: widget_widget
+---@field owner idk #
+---@field target idk #
+---@field hat idk #
+---@field level idk #
+---@field overlay idk #
+---@field crosshair idk #
+---@field crosshairDist idk #
+---@field synch idk #
+---@field distmeter idk #
+---@field soundtime idk #
+---@field lastdist idk #

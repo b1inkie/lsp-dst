@@ -1,0 +1,12 @@
+---@meta
+
+---@class widget_minigametile: widget_widget
+---@field screen idk #
+---@field index idk #
+---@field exploded idk #
+---@field tile idk #
+---@field view_state idk #
+---@field tile_num idk #
+---@field number idk #
+---@field tile_type idk #
+---@field clicked idk #

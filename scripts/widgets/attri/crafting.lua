@@ -1,0 +1,24 @@
+---@meta
+
+---@class widget_crafting: widget_widget
+---@field owner idk #
+---@field bg idk #
+---@field max_slots idk #
+---@field current_slots idk #
+---@field craftslots idk #
+---@field downconnector idk #
+---@field upconnector idk #
+---@field downendcapbg idk #
+---@field upendcapbg idk #
+---@field downbutton idk #
+---@field upbutton idk #
+---@field but_w idk #
+---@field but_h idk #
+---@field idx idk #
+---@field scrolldir idk #
+---@field horizontal idk #
+---@field filter idk #
+---@field open idk #
+---@field num_recipes idk #
+---@field use_idx idk #
+---@field valid_recipes idk #

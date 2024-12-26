@@ -1,0 +1,12 @@
+---@meta
+
+---@class widget_pagedlist: widget_widget
+---@field static_widgets idk #
+---@field items_per_page idk #
+---@field updatefn idk #
+---@field page_number idk #
+---@field repeat_time idk #
+---@field left_button idk #
+---@field right_button idk #
+---@field items idk #
+---@field num_pages idk #

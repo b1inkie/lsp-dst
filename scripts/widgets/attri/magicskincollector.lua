@@ -1,0 +1,15 @@
+---@meta
+
+---@class widget_magicskincollector: widget_widget
+---@field root idk #
+---@field innkeeper idk #
+---@field speech_bubble idk #
+---@field text idk #
+---@field hand idk #
+---@field last_speech_time idk #
+---@field exit_callback idk #
+---@field text_string idk #
+---@field display_text_time idk #
+---@field talking idk #
+---@field sound_started idk #
+---@field intro_done idk #

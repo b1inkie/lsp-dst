@@ -1,0 +1,13 @@
+---@meta
+
+---@class widget_grid: widget_widget
+---@field h_offset idk #
+---@field v_offset idk #
+---@field items_by_coords idk #
+---@field rows idk #
+---@field cols idk #
+---@field layout_left_to_right_top_to_bottom idk #
+---@field h_loop idk #
+---@field v_loop idk #
+---@field children idk #
+---@field num_rows idk #

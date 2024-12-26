@@ -1,0 +1,17 @@
+---@meta
+
+---@class widget_skinannouncement: widget_widget
+---@field root idk #
+---@field img_btn idk #
+---@field skin_txt idk #
+---@field icon idk #
+---@field font idk #
+---@field size idk #
+---@field focus_size idk #
+---@field lifetime idk #
+---@field fadetime idk #
+---@field general_alpha idk #
+---@field skin_name idk #
+---@field skin_announcement idk #
+---@field user_colour idk #
+---@field user_name idk #

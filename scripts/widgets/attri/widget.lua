@@ -1,0 +1,32 @@
+---@meta
+
+---@class widget_widget
+---@field children idk #
+---@field callbacks idk #
+---@field name idk #
+---@field inst idk #
+---@field enabled idk #
+---@field shown idk #
+---@field focus idk #
+---@field focus_target idk #
+---@field can_fade_alpha idk #
+---@field focus_flow idk #
+---@field focus_flow_args idk #
+---@field parent idk #
+---@field parent_scroll_list idk #
+---@field parent_screen idk #
+---@field tooltip idk #
+---@field tooltip_pos idk #
+---@field tooltipcolour idk #
+---@field followhandler idk #
+---@field ongainfocusfn idk #
+---@field onlosefocusfn idk #
+---@field next_in_tab_order idk #
+---@field hovertext_root idk #
+---@field hovertext_bg idk #
+---@field hovertext idk #
+---@field hover idk #
+---@field _OnGainFocus idk #
+---@field _OnLoseFocus idk #
+---@field OnGainFocus idk #
+---@field OnLoseFocus idk #

@@ -1,0 +1,15 @@
+---@meta
+
+---@class widget_dropdown: widget_widget
+---@field start_text idk #
+---@field allowMultipleSelections idk #
+---@field onselectfn idk #
+---@field onunselectfn idk #
+---@field fixed_root idk #
+---@field drop_list idk #
+---@field list_widgets idk #
+---@field items_data idk #
+---@field selection_box idk #
+---@field down_arrow idk #
+---@field up_arrow idk #
+---@field isopen idk #

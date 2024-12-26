@@ -1,0 +1,27 @@
+---@meta
+
+---@class widget_truescrollarea: widget_widget
+---@field context idk #
+---@field scrollbar_v idk #
+---@field bg idk #
+---@field scissored_root idk #
+---@field context_root idk #
+---@field repeat_time idk #
+---@field current_scroll_pos idk #
+---@field target_scroll_pos idk #
+---@field scroll_pos_end idk #
+---@field scroll_per_click idk #
+---@field scrollbar_offset idk #
+---@field scrollbar_height idk #
+---@field focus_forward idk #
+---@field scroll_bar_container idk #
+---@field up_button idk #
+---@field last_up_button_time idk #
+---@field down_button idk #
+---@field last_down_button_time idk #
+---@field scroll_bar_line idk #
+---@field scroll_bar idk #
+---@field position_marker idk #
+---@field dragging idk #
+---@field saved_scroll_pos idk #
+---@field displayed_start_index idk #

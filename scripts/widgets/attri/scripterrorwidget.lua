@@ -1,0 +1,14 @@
+---@meta
+
+---@class widget_scripterrorwidget: widget_widget
+---@field is_screen idk #
+---@field special_general_control idk #
+---@field special_mouse_control idk #
+---@field black idk #
+---@field root idk #
+---@field title idk #
+---@field text idk #
+---@field additionaltext idk #
+---@field version idk #
+---@field menu idk #
+---@field default_focus idk #

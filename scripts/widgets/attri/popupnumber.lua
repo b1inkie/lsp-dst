@@ -1,0 +1,17 @@
+---@meta
+
+---@class widget_popupnumber: widget_widget
+---@field owner idk #
+---@field text idk #
+---@field pos idk #
+---@field colour idk #
+---@field xoffs idk #
+---@field yoffs idk #
+---@field xoffs2 idk #
+---@field yoffs2 idk #
+---@field dir idk #
+---@field rise idk #
+---@field drop idk #
+---@field speed idk #
+---@field progress idk #
+---@field burst idk #

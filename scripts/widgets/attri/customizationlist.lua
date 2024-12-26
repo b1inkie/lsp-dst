@@ -1,0 +1,15 @@
+---@meta
+
+---@class widget_customizationlist: widget_widget
+---@field location idk #
+---@field options idk #
+---@field allowEdit idk #
+---@field spinnerCB idk #
+---@field presetvalues idk #
+---@field spinners idk #
+---@field title idk #
+---@field focused_column idk #
+---@field default_focus idk #
+---@field focus_forward idk #
+---@field optionwidgets idk #
+---@field scroll_list idk #

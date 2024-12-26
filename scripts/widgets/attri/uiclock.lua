@@ -1,0 +1,24 @@
+---@meta
+
+---@class widget_uiclock: widget_widget
+---@field _cave idk #
+---@field _caveopen idk #
+---@field _lastsinkhole idk #
+---@field _moonanim idk #
+---@field _anim idk #
+---@field _face idk #
+---@field _segs idk #
+---@field _daysegs idk #
+---@field _rim idk #
+---@field _hands idk #
+---@field _text idk #
+---@field _showingcycles idk #
+---@field _cycles idk #
+---@field _phase idk #
+---@field _moonphase idk #
+---@field _mooniswaxing idk #
+---@field _time idk #
+---@field _moon_builds idk #
+---@field _alteractive_states idk #
+---@field _moonphasebuild idk #
+---@field trans_out_anim idk #

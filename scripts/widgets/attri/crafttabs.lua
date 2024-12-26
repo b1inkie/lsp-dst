@@ -1,0 +1,19 @@
+---@meta
+
+---@class widget_crafttabs: widget_widget
+---@field hint_update_check idk #
+---@field crafting idk #
+---@field controllercrafting idk #
+---@field tabs idk #
+---@field owner idk #
+---@field base_scale idk #
+---@field craft_idx_by_tab idk #
+---@field isquagmire idk #
+---@field bg idk #
+---@field bg_cover idk #
+---@field tabbyfilter idk #
+---@field preventautoclose idk #
+---@field needtoupdate idk #
+---@field openhint idk #
+---@field controllercraftingopen idk #
+---@field tabs_to_highlight idk #

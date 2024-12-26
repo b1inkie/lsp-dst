@@ -1,0 +1,34 @@
+---@meta
+
+---@class widget_scrollablelist: widget_widget
+---@field height idk #
+---@field width idk #
+---@field bg idk #
+---@field items idk #
+---@field item_height idk #
+---@field item_padding idk #
+---@field x_offset idk #
+---@field yInitial idk #
+---@field always_show_static_widgets idk #
+---@field focused_index idk #
+---@field focus_children idk #
+---@field scrollbar_style idk #
+---@field updatefn idk #
+---@field static_widgets idk #
+---@field view_offset idk #
+---@field widget_bg idk #
+---@field scroll_bar_container idk #
+---@field up_button idk #
+---@field last_up_button_time idk #
+---@field down_button idk #
+---@field last_down_button_time idk #
+---@field scroll_bar_line idk #
+---@field scroll_bar idk #
+---@field page_jump idk #
+---@field position_marker idk #
+---@field do_dragging idk #
+---@field y_adjustment idk #
+---@field dragging idk #
+---@field widgets_per_view idk #
+---@field max_step idk #
+---@field step_size idk #

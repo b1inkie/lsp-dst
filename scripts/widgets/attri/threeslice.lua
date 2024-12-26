@@ -1,0 +1,13 @@
+---@meta
+
+---@class widget_threeslice: widget_widget
+---@field atlas idk #
+---@field filler idk #
+---@field flip_end_cap idk #
+---@field root idk #
+---@field startcap idk #
+---@field endcap idk #
+---@field parts idk #
+---@field start_cap_size idk #
+---@field end_cap_size idk #
+---@field filler_size idk #

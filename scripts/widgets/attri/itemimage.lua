@@ -1,0 +1,15 @@
+---@meta
+
+---@class widget_itemimage: widget_widget
+---@field screen idk #
+---@field type idk #
+---@field name idk #
+---@field item_id idk #
+---@field clickFn idk #
+---@field frame idk #
+---@field new_tag idk #
+---@field warning idk #
+---@field warn_marker idk #
+---@field disable_selecting idk #
+---@field rarity idk #
+---@field clicked idk #

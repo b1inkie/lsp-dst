@@ -1,0 +1,28 @@
+---@meta
+
+---@class widget_skinspuppet: widget_button
+---@field emote_min_time idk #
+---@field emote_max_time idk #
+---@field anim idk #
+---@field animstate idk #
+---@field currentanimbank idk #
+---@field current_idle_anim idk #
+---@field default_build idk #
+---@field last_skins idk #
+---@field enable_idle_emotes idk #
+---@field time_to_change_emote idk #
+---@field queued_change_slot idk #
+---@field play_non_idle_emotes idk #
+---@field add_change_emote_for_idle idk #
+---@field sitting idk #
+---@field shadow idk #
+---@field looping idk #
+---@field prefabname idk #
+---@field override_build idk #
+---@field item_equip idk #
+---@field time_to_idle_emote idk #
+---@field current_skinmode idk #
+---@field scarecrow_pose idk #
+---@field beard_length idk #
+---@field beard idk #
+---@field character idk #

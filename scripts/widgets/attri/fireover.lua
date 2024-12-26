@@ -1,0 +1,12 @@
+---@meta
+
+---@class widget_fireover: widget_widget
+---@field owner idk #
+---@field anim idk #
+---@field targetalpha idk #
+---@field startalpha idk #
+---@field alpha idk #
+---@field alphamult idk #
+---@field alphamultdir idk #
+---@field ease_time idk #
+---@field t idk #

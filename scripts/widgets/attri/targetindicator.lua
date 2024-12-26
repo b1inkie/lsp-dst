@@ -1,0 +1,25 @@
+---@meta
+
+---@class widget_targetindicator: widget_widget
+---@field colour idk #
+---@field owner idk #
+---@field isFE idk #
+---@field root idk #
+---@field icon idk #
+---@field userflags idk #
+---@field isGhost idk #
+---@field isCharacterState1 idk #
+---@field isCharacterState2 idk #
+---@field isCharacterState3 idk #
+---@field is_mod_character idk #
+---@field config_data idk #
+---@field target idk #
+---@field headbg idk #
+---@field head idk #
+---@field headframe idk #
+---@field arrow idk #
+---@field name idk #
+---@field name_label idk #
+---@field x idk #
+---@field y idk #
+---@field angle idk #

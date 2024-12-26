@@ -1,0 +1,13 @@
+---@meta
+
+---@class widget_uianimbutton: widget_button
+---@field uianim idk #
+---@field animstate idk #
+---@field loops idk #
+---@field down idk #
+---@field onfocus idk #
+---@field idleanimation idk #
+---@field focusanimation idk #
+---@field disabledanimation idk #
+---@field downanimation idk #
+---@field selectedanimation idk #

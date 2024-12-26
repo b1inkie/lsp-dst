@@ -1,0 +1,13 @@
+---@meta
+
+---@class widget_recipelist: widget_widget
+---@field root idk #
+---@field clickFn idk #
+---@field days_remaining idk #
+---@field recipes_spinner idk #
+---@field specials_root idk #
+---@field specials idk #
+---@field data idk #
+---@field num_needed idk #
+---@field prev_hint idk #
+---@field next_hint idk #

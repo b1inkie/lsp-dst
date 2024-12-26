@@ -1,0 +1,14 @@
+---@meta
+
+---@class widget_boatmeter: widget_widget
+---@field backing idk #
+---@field badge idk #
+---@field icon idk #
+---@field leak_anim idk #
+---@field anim idk #
+---@field num idk #
+---@field previous_health_percent idk #
+---@field refresh_health_cb idk #
+---@field is_leaking idk #
+---@field boat idk #
+---@field pulsetask idk #

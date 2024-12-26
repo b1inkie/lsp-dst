@@ -1,0 +1,27 @@
+---@meta
+
+---@class widget_customizationtab: widget_widget
+---@field current_level_locations idk #
+---@field slotoptions idk #
+---@field slot idk #
+---@field currentmultilevel idk #
+---@field allowEdit idk #
+---@field servercreationscreen idk #
+---@field current_option_settings idk #
+---@field max_custom_presets idk #
+---@field presetpanel idk #
+---@field multileveltabs idk #
+---@field multileveltabs_bg idk #
+---@field multileveltabs_bg_2 idk #
+---@field left_line idk #
+---@field middle_line idk #
+---@field presettitle idk #
+---@field presetdesc idk #
+---@field presetspinner idk #
+---@field revertbutton idk #
+---@field savepresetbutton idk #
+---@field removemultilevel idk #
+---@field current_option_settingspanel idk #
+---@field default_focus idk #
+---@field focus_forward idk #
+---@field customizationlist idk #
