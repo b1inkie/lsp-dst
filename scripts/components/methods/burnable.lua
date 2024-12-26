@@ -19,9 +19,11 @@ end
 function burnable:SetBurningFX(name)
 end
 
+---设置点燃火焰特效
+---@param immediate nil|boolean # 是否立刻点燃
+---注意如果想要控制火焰的大小, 则需要对 `controlled_burn` 这个属性传参
 ---
----@param immediate idk # 
----author: 
+---author: lan
 function burnable:SpawnFX(immediate)
 end
 

@@ -128,8 +128,11 @@ end
 function health:Kill()
 end
 
+---获取当前血量百分比
+---@return number
+---@nodiscard
 ---
----author: 
+---author: lan
 function health:GetPercent()
 end
 

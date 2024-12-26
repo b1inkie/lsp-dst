@@ -57,8 +57,11 @@ end
 function temperature:SetFreezingHurtRate(rate)
 end
 
+---获取当前温度
+---@return number # 返回的是temperature.current
+---@nodiscard
 ---
----author: 
+---author: lan
 function temperature:GetCurrent()
 end
 

@@ -2,7 +2,7 @@
 
 ---@class component_inventoryitem
 ---@field inst idk
----@field owner idk
+---@field owner ent|nil
 ---@field canbepickedup idk
 ---@field canbepickedupalive idk
 ---@field onpickupfn idk

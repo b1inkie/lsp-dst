@@ -26,4 +26,4 @@
 ---@field smolder_task idk
 ---@field fxprefab idk
 ---@field smoke idk
----@field controlled_burn idk
+---@field controlled_burn { duration_creature: number, damage: number } # 在 `SpawnFX` 之前,传这个参数表,设置 `duration_creature` 为 `3` , 就可以和火女一样 用较小的火势点燃敌人, `damage` 传 `0` 就行, 一定要在 `SpawnFX` 之后置空这个表,注意是置空,也就是 `nil` ,而不是置成空表 `{}`, 否则生物死亡时,会点燃附近

@@ -161,9 +161,9 @@ function TheSim:DuplicateSlot(...) end
 ---@param y number # y坐标
 ---@param z number # z坐标
 ---@param radius number # 搜索半径
----@param must_have_tags nil|string[] # 必须包含的标签
----@param cant_have_tags nil|string[] # 不能包含的标签
----@param must_have_one_of_tags nil|string[] # 必须包含一个标签
+---@param must_have_tags nil|tagID[] # 必须包含的标签
+---@param cant_have_tags nil|tagID[] # 不能包含的标签
+---@param must_have_one_of_tags nil|tagID[] # 必须包含一个标签
 ---@return ent[] # 找到的实体
 ---@nodiscard
 ---author: lan

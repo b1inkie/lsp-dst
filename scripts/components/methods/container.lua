@@ -118,7 +118,7 @@ function container:RemoveItem_Internal(item,slot,wholestack,keepoverstacked)
 end
 
 ---获取容器内所有物品的表
----@return table # 容器内所有物品
+---@return ent[] # 容器内所有物品
 ---author: Runar
 function container:GetAllItems()
 end
@@ -192,7 +192,7 @@ end
 
 ---绑定容器UI
 ---@param prefab string # 需要绑定的容器UI
----@param data table # 不用填(容器UI信息,不填则在params[prefab]里找)
+---@param data nil|table # 不用填(容器UI信息,不填则在params[prefab]里找)
 ---author: lan
 function container:WidgetSetup(prefab,data)
 end
