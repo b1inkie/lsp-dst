@@ -162,8 +162,9 @@ function Physics:SetCollisionCallback(fn)
 end
 
 ---UNKNOWN
+---@param COLLISION number
 ---author: 
-function Physics:ClearCollidesWith()
+function Physics:ClearCollidesWith(COLLISION)
 end
 
 ---UNKNOWN

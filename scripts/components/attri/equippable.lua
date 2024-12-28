@@ -4,10 +4,10 @@
 ---@field inst idk
 ---@field isequipped idk
 ---@field equipslot EQUIPSLOTS|string # 设置装备槽位
----@field onequipfn fun(inst: ent,owner: ent,from_ground: any) # 穿戴回调函数
----@field onunequipfn fun(inst: ent,owner: ent) # 卸除回调函数
+---@field onequipfn fun(inst: ent,owner: ent,from_ground: any,...: any): any # 穿戴回调函数
+---@field onunequipfn fun(inst: ent,owner: ent,...: any): any # 卸除回调函数
 ---@field onpocketfn idk
----@field onequiptomodelfn fun(inst: ent,owner: ent,from_ground: any) # 假人穿戴回调函数
+---@field onequiptomodelfn fun(inst: ent,owner: ent,from_ground: any,...: any): any # 假人穿戴回调函数
 ---@field equipstack idk
 ---@field walkspeedmult number # 设置移速倍率,例如+20%移速就是,1.2,注意这里的移速只能有1位小数(忘了一位还是两位了)
 ---@field restrictedtag string # 有这个tag的玩家才能装备 <br> klei还有个 `self.retrictedtag` 单词拼错了,所以废弃了 <br> 我当时怎么用怎么不生效,我说我脚本扫出来的怎么会有问题呢,没想到吧

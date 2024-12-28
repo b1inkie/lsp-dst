@@ -560,9 +560,13 @@ end
 function TheNet:SetCurrentSnapshot()
 end
 
----UNKNOWN
----author: 
-function TheNet:Say()
+---客机宣告
+---@param content string
+---@param whisper boolean|nil
+---@param talk boolean|nil
+---
+---author: lan
+function TheNet:Say(content,whisper,talk)
 end
 
 ---UNKNOWN

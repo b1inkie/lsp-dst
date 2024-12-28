@@ -391,7 +391,7 @@ end
 ---贴图缩放
 ---@param x number # 
 ---@param y number # 
----@param z number # 
+---@param z nil|number # 
 ---author: 
 function AnimState:SetScale(x,y,z)
 end

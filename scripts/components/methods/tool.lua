@@ -35,7 +35,7 @@ end
 
 ---设置工作类型和效率，工具类型有:ACTIONS.CHOP、ACTIONS.DIG、ACTIONS.HAMMER、ACTIONS.MINE、ACTIONS.NET、ACTIONS.PLAY、ACTIONS.UNSADDLE、ACTIONS.REACH_HIGH、ACTIONS.SCYTHE, 比如粗壮常青树需要砍15次，普通斧效率为1，月光玻璃斧效率为2.5，普通斧头要砍15次，月光玻璃斧只要6次。
 ---@param action table # 工具动作类型
----@param effectiveness number # 效率
+---@param effectiveness nil|number # 效率
 ---author: 御坂十七号
 function tool:SetAction(action,effectiveness)
 end

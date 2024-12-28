@@ -3990,12 +3990,16 @@ function GetWanderAwayPoint(pt)
 end
 
 ---
----UNKNOWN
+---线性插值
 ---
----@param a idk 
----@param b idk 
----@param t idk 
+---@param a number # 起始值
+---@param b number # 结束值
+---@param t number # 插值比例，范围通常在 0 到 1 之间
+---@return number # 插值后的值
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function Lerp(a,b,t)
 end
 
@@ -4904,7 +4908,7 @@ end
 ---添加修改类API通用函数片段
 ---
 ---@param package string 
----@param fn fun(self: class)
+---@param fn fun(self: class, ...: any)
 ---所在文件: scripts/modutil.lua
 function AddClassPostConstruct(package,fn)
 end
@@ -13678,4 +13682,15 @@ end
 ---所在文件: scripts/recipe.lua
 ---author: lan
 function Ingredient(ingredienttype, amount, atlas, deconstruct, imageoverride)
+end
+
+---Vector3 构造函数
+---@param a number
+---@param b number
+---@param c number
+---@return Vector3
+---@nodiscard
+---
+---author:lan
+function Vector3(a,b,c)
 end
