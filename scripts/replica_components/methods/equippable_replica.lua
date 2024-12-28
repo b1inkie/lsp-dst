@@ -31,8 +31,11 @@ end
 function replica_equippable:SetEquipSlot(eslot)
 end
 
+---是否被装备着
+---@return boolean
+---@nodiscard
 ---
----author: 
+---author: lan
 function replica_equippable:IsEquipped()
 end
 

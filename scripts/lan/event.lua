@@ -37,7 +37,7 @@
 ---| "arrive" # ※事件 ID: arrive <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "atriumpowered" # ※事件 ID: atriumpowered <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "attackdodged" # ※事件 ID: attackdodged <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "attacked" # ※事件 ID: attacked <br>※直译名: 挨打 <br>※详述: combat组件中,挨打时推的事件<br>※data表: {attacker = '加害者', weapon = '使用的武器', }<br>※author: lan<br>※拉取时间: 2024-12-11 18:27
+---| "attacked" # ※事件 ID: attacked <br>※直译名: 挨打 <br>※详述: combat组件中,挨打时推的事件<br>※data表: {attacker = 'attacker', damage = '有些mod不判空,所以没伤害也要传个0', damageresolved = '填这个就可以被一些显示伤害数字的mod读取', original_damage = '可填可不填', weapon = 'weapon', stimuli = 'stimuli', spdamage = '键名为伤害类型 如planar 值为number', redirected = damageredirecttarget, noimpactsound = self.noimpactsound}<br>※author: lan<br>※拉取时间: 2024-12-11 18:27
 ---| "attackedbygrue" # ※事件 ID: attackedbygrue <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "attackstart" # ※事件 ID: attackstart <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "attuned" # ※事件 ID: attuned <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

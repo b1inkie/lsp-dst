@@ -22,10 +22,11 @@ end
 function temperature:SetOverheatHurtRate(rate)
 end
 
+---设置温度buff
+---@param name string # buff名
+---@param value number # 温度值
 ---
----@param name idk # 
----@param value idk # 
----author: 
+---author: lan
 function temperature:SetModifier(name,value)
 end
 
@@ -76,9 +77,10 @@ end
 function temperature:DoDelta(delta)
 end
 
+---移除温度buff
+---@param name string # buff名 
 ---
----@param name idk # 
----author: 
+---author: lan
 function temperature:RemoveModifier(name)
 end
 
