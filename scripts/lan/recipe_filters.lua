@@ -1,0 +1,29 @@
+---@meta
+
+---@alias recipe.filter string # 配方过滤器
+---| "FAVORITES" # 配方过滤器 <br> ![FAVORITES](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/FAVORITES.png) <br>- 当前分类: 收藏夹
+---| "CRAFTING_STATION" # 配方过滤器 <br> ![CRAFTING_STATION](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/CRAFTING_STATION.png) <br>- 当前分类: 所有制作站
+---| "SPECIAL_EVENT" # 配方过滤器 <br> ![SPECIAL_EVENT](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/SPECIAL_EVENT.png) <br>- 当前分类: 特别活动
+---| "MODS" # 配方过滤器 <br> ![MODS](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/MODS.png) <br>- 当前分类: 模组物品
+---| "CHARACTER" # 配方过滤器 <br> ![CHARACTER](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/CHARACTER.png) <br>- 当前分类: 冒险家物品
+---| "TOOLS" # 配方过滤器 <br> ![TOOLS](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/TOOLS.png) <br>- 当前分类: 工具
+---| "LIGHT" # 配方过滤器 <br> ![LIGHT](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/LIGHT.png) <br>- 当前分类: 光源
+---| "PROTOTYPERS" # 配方过滤器 <br> ![PROTOTYPERS](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/PROTOTYPERS.png) <br>- 当前分类: 原型工具和制作站
+---| "REFINE" # 配方过滤器 <br> ![REFINE](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/REFINE.png) <br>- 当前分类: 精炼材料
+---| "WEAPONS" # 配方过滤器 <br> ![WEAPONS](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/WEAPONS.png) <br>- 当前分类: 武器
+---| "ARMOUR" # 配方过滤器 <br> ![ARMOUR](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/ARMOUR.png) <br>- 当前分类: 盔甲
+---| "CLOTHING" # 配方过滤器 <br> ![CLOTHING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/CLOTHING.png) <br>- 当前分类: 服装
+---| "RESTORATION" # 配方过滤器 <br> ![RESTORATION](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/RESTORATION.png) <br>- 当前分类: 治疗
+---| "MAGIC" # 配方过滤器 <br> ![MAGIC](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/MAGIC.png) <br>- 当前分类: 魔法
+---| "DECOR" # 配方过滤器 <br> ![DECOR](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/DECOR.png) <br>- 当前分类: 装饰
+---| "STRUCTURES" # 配方过滤器 <br> ![STRUCTURES](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/STRUCTURES.png) <br>- 当前分类: 建筑
+---| "CONTAINERS" # 配方过滤器 <br> ![CONTAINERS](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/CONTAINERS.png) <br>- 当前分类: 储物方案
+---| "COOKING" # 配方过滤器 <br> ![COOKING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/COOKING.png) <br>- 当前分类: 烹饪
+---| "GARDENING" # 配方过滤器 <br> ![GARDENING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/GARDENING.png) <br>- 当前分类: 食物和耕种
+---| "FISHING" # 配方过滤器 <br> ![FISHING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/FISHING.png) <br>- 当前分类: 钓鱼
+---| "SEAFARING" # 配方过滤器 <br> ![SEAFARING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/SEAFARING.png) <br>- 当前分类: 航行
+---| "RIDING" # 配方过滤器 <br> ![RIDING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/RIDING.png) <br>- 当前分类: 骑乘皮弗娄牛
+---| "WINTER" # 配方过滤器 <br> ![WINTER](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/WINTER.png) <br>- 当前分类: 冬季物品
+---| "SUMMER" # 配方过滤器 <br> ![SUMMER](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/SUMMER.png) <br>- 当前分类: 夏季物品
+---| "RAIN" # 配方过滤器 <br> ![RAIN](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/RAIN.png) <br>- 当前分类: 雨具
+---| "EVERYTHING" # 配方过滤器 <br> ![EVERYTHING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/EVERYTHING.png) <br>- 当前分类: 所有
