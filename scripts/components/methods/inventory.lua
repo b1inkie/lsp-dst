@@ -383,9 +383,11 @@ end
 function inventory:InspectItemFromInvTile(item)
 end
 
----
----@param tag idk # 
----author: 
+---装备的物品中是否有该tag的装备
+---@param tag tagID # 
+---@return boolean 
+---@nodiscard
+---author: lan
 function inventory:EquipHasTag(tag)
 end
 

@@ -934,7 +934,7 @@
 ---| "bookcabinet_item" # ※标签ID: bookcabinet_item<br>※直译名: <br>※详述: 物品可放入书架<br>※分类: 物品 | Inventory Item<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
 ---| "wet" # ※标签ID: wet<br>※直译名: 永久潮湿单位<br>※详述: 像鱼人、蠕虫那样无论下雨不下雨都永远潮湿。<br>※分类: <br>※author: lulu<br>※拉取时间: 2024-12-11 15:04
 ---| "shadecanopysmall" # ※标签ID: shadecanopysmall<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "regal" # ※标签ID: regal<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "regal" # ※标签ID: regal<br>※直译名: 帝王的<br>※详述: 只有 `蜂王冠` 有这个tag <br>※分类: 物品 | Inventory Item <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "sewingmachine" # ※标签ID: sewingmachine<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "selfstacker" # ※标签ID: selfstacker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "self_fertilizable" # ※标签ID: self_fertilizable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04

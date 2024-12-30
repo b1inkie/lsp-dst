@@ -1235,3 +1235,5 @@
 ---| "yotc_ratraceprizechange" # ※事件 ID: yotc_ratraceprizechange <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "yotd_ratraceprizechange" # ※事件 ID: yotd_ratraceprizechange <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "zoomcamera" # ※事件 ID: zoomcamera <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "enterdark" # ※事件 ID: enterdark <br>※直译名: 进入黑暗 <br>※详述: 可以监听这个事件判断玩家是不是完全处于黑暗 <br>※data表: <br>※author: lan
+---| "enterlight" # ※事件 ID: enterlight <br>※直译名: 进入光照 <br>※详述: 可以监听这个事件判断玩家是不是处于光照 <br>※data表: <br>※author: lan

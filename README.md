@@ -28,4 +28,4 @@ local spider
 
 6. `eventID` -> 事件名类型 -> `string`
 
-
+7. `event_data_事件名` -> 事件表类型 -> `table`  哎 为什么lls不支持类型名拼接啊 有没有人能去提个issue啊(
