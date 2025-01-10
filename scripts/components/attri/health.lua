@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_health
----@field inst idk
+---@field inst ent
 ---@field maxhealth idk
 ---@field minhealth idk
 ---@field currenthealth idk

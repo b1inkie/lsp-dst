@@ -15,9 +15,9 @@ end
 function book:SetPeruseSanity(sanity)
 end
 
----
----@param fn idk # 
----author: 
+---设置读书回调函数
+---@param fn fun(inst:ent,reader:ent):boolean # 读书回调函数,返回布尔,决定是读成功还是失败
+---author: lan
 function book:SetOnRead(fn)
 end
 
@@ -32,16 +32,20 @@ end
 function book:OnPeruse(reader)
 end
 
----
----@param fn idk # 
----@param reader idk # 
----author: 
+---互动 也算是内部方法
+---@param fn nil|fun(inst:ent,reader:ent):boolean, string # 
+---@param reader ent # 
+---@return boolean success # 是否成功阅读
+---@return string reason # 成功或失败的原因
+---author: lan
 function book:Interact(fn,reader)
 end
 
----
----@param reader idk # 
----author: 
+---书被读 算是个内部方法, 一般用reader组件读book
+---@param reader ent # 
+---@return boolean success # 是否成功阅读
+---@return string reason # 成功或失败的原因
+---author: lan
 function book:OnRead(reader)
 end
 

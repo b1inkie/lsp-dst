@@ -439,13 +439,13 @@ end
 function combat:TryRetarget()
 end
 
----
----@param attacker idk # 
----@param damage idk # 
----@param weapon idk # 
----@param stimuli idk # 
----@param spdamage idk # 
----author: 
+---挨打函数 常用的很 注意判空
+---@param attacker ent|nil # 
+---@param damage number|nil # 
+---@param weapon ent|nil # 
+---@param stimuli string|nil # 
+---@param spdamage table<string,number>|nil # 
+---author: lan
 function combat:GetAttacked(attacker,damage,weapon,stimuli,spdamage)
 end
 

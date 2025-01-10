@@ -27,11 +27,11 @@ end
 function health:SetMaxDamageTakenPerHit(maxdamagetakenperhit)
 end
 
----
----@param val idk # 
+---变动血量 死亡也是在这里推的 
+---@param val number # 伤害值
 ---@param cause idk # 
----@param afflicter idk # 
----author: 
+---@param afflicter ent|nil # 造成伤害的实体
+---author: lan
 function health:SetVal(val,cause,afflicter)
 end
 

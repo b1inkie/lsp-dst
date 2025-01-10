@@ -24,7 +24,7 @@
 ---@field penalty idk
 ---@field sanity_penalties idk
 ---@field ghost_drain_mult idk
----@field custom_rate_fn idk
+---@field custom_rate_fn nil|fun(inst:ent,dt:idk):number
 ---@field sanity_aura_immune idk
 ---@field sanity_aura_immunities idk
 ---@field player_ghost_immune idk

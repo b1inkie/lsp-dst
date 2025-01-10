@@ -5238,7 +5238,7 @@ end
 ---
 ---修改玩家
 ---
----@param fn idk 
+---@param fn fun(inst:ent) 
 ---所在文件: scripts/modutil.lua
 function AddPlayerPostInit(fn)
 end

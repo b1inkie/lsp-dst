@@ -15,9 +15,11 @@ end
 function reader:SetAspiringBookworm(bookworm)
 end
 
----
----@param book idk # 
----author: 
+---阅读一本书
+---@param book ent # 
+---@return boolean success # 是否成功阅读
+---@return string reason # 成功或失败的原因
+---author: lan
 function reader:Read(book)
 end
 

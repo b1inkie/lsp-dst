@@ -231,13 +231,14 @@ function widget:Kill() end
 function widget:GetWorldPosition() end
 
 ---
----
+---@return Vector3
+---@nodiscard
 ---author: 
 function widget:GetPosition() end
 
 ---
 ---
----author: 
+---author: lan
 function widget:GetPositionXYZ() end
 
 ---
