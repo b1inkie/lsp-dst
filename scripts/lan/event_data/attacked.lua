@@ -1,12 +1,12 @@
 ---@meta
 
----@class event_data_attacked
+---@class event_data_attacked # 挨打事件表
 ---@field attacker ent 
 ---@field damage number # 有些mod不判空,所以没伤害也要传个0
 ---@field damageresolved number|nil # 填这个就可以被一些显示伤害数字的mod读取
 ---@field original_damage number|nil # 可填可不填
 ---@field weapon ent|nil
 ---@field stimuli string|nil # 这个官方写的真得不好, 这个尽量留nil, 要伤害类型 建议填 `spdamage`
----@field spdamage table<string, number>|nil # 键名为伤害类型 如planar 值为number
+---@field spdamage table<spdamage_type, number>|nil # 键名为伤害类型 如planar 值为number
 ---@field redirected ent|nil # 伤害转移对象
 ---@field noimpactsound boolean|nil
