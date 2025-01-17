@@ -1,8 +1,8 @@
 ---@meta
 
 ---@class component_container
----@field inst idk
----@field slots idk
+---@field inst ent
+---@field slots ent[]
 ---@field numslots idk
 ---@field canbeopened idk
 ---@field skipopensnd idk

@@ -26,6 +26,8 @@ function Vector3:Get()end
 ---| '"SOUNDPACKAGE"' # .fev
 ---| '"SHADER"' # .ksh
 
+---@class asset # 资源
+
 
 ---@alias GUID string # GUID 注意重载世界会变化
 

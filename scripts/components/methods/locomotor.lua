@@ -4,9 +4,9 @@
 local locomotor = {}
 
 ---
----@param source idk # 
----@param key idk # 
----@param m idk # 
+---@param source ent # 
+---@param key string # 
+---@param m number # 
 ---author: 
 function locomotor:SetExternalSpeedMultiplier(source,key,m)
 end

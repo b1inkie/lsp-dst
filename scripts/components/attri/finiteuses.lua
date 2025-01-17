@@ -1,9 +1,9 @@
 ---@meta
 
 ---@class component_finiteuses
----@field inst idk
----@field total idk
----@field current idk
+---@field inst ent
+---@field total number
+---@field current number
 ---@field consumption idk
 ---@field ignorecombatdurabilityloss idk
 ---@field doesnotstartfull idk

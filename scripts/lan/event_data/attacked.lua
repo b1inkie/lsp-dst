@@ -1,8 +1,8 @@
 ---@meta
 
 ---@class event_data_attacked # 挨打事件表
----@field attacker ent 
----@field damage number # 有些mod不判空,所以没伤害也要传个0
+---@field attacker ent|nil
+---@field damage number|nil # 有些mod不判空,所以没伤害也要传个0
 ---@field damageresolved number|nil # 填这个就可以被一些显示伤害数字的mod读取
 ---@field original_damage number|nil # 可填可不填
 ---@field weapon ent|nil

@@ -2,7 +2,7 @@
 
 ---@class component_health
 ---@field inst ent
----@field maxhealth idk
+---@field maxhealth number # 最大生命值
 ---@field minhealth idk
 ---@field currenthealth idk
 ---@field invincible idk

@@ -474,6 +474,7 @@ end
 ---@param time number # 倒计时多少秒
 ---@param fn function # 
 ---@param ... idk # 
+---@return Periodic
 ---author: lan
 function entityscript:DoTaskInTime(time,fn,...)
 end
@@ -726,6 +727,7 @@ end
 ---@param fn function # 
 ---@param initialdelay number|nil # 计时器创建多少秒后执行,默认为1
 ---@param ... idk # 
+---@return Periodic
 ---author: lan
 function entityscript:DoPeriodicTask(time,fn,initialdelay,...)
 end

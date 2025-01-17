@@ -2391,6 +2391,8 @@ end
 ---
 ---@param asset_type asset_type 资源类型
 ---@param path string 路径
+---@return asset # 资源
+---@nodiscard
 ---所在文件: scripts/i_dont_know_path.lua
 function Asset(asset_type,path)
 end
@@ -5314,7 +5316,7 @@ end
 ---
 ---修改已有的组件的初始化API
 ---
----@param component string 组件名
+---@param component componentID 组件名
 ---@param fn fun(self)
 ---所在文件: scripts/modutil.lua
 function AddComponentPostInit(component,fn)

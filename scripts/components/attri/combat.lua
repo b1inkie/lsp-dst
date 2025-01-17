@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_combat
----@field inst idk
+---@field inst ent
 ---@field nextbattlecrytime idk
 ---@field battlecryenabled idk
 ---@field attackrange idk

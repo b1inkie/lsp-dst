@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_inventoryitem
----@field inst idk
+---@field inst ent
 ---@field owner ent|nil
 ---@field canbepickedup idk
 ---@field canbepickedupalive idk
@@ -22,3 +22,4 @@
 ---@field onactiveitemfn idk
 ---@field onputininventoryfn idk
 ---@field is_landed idk
+---@field foleysound string|nil # 拟音,填的是声音路径
