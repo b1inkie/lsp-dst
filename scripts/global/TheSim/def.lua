@@ -836,11 +836,14 @@ function TheSim:SetReverbPreset(...) end
 ---author:
 function TheSim:FinalizeSaveString(...) end
 ---
----UNKNOWN
+---屏幕坐标转换世界坐标
 ---
----@param ... any
----author:
-function TheSim:ProjectScreenPos(...) end
+---@param x number
+---@param y number
+---@return number,number,number # 转换后的世界坐标
+---@nodiscard
+---author: lan
+function TheSim:ProjectScreenPos(x,y) end
 ---
 ---UNKNOWN
 ---

@@ -1355,10 +1355,14 @@ function c_setwereness(n)
 end
 
 ---
----UNKNOWN
+---通过GUID查找并获取实体
 ---
----@param guid idk 
+---@param guid number # GUID 
+---@return ent|nil # 实体
+---@nodiscard
 ---所在文件: scripts/consolecommands.lua
+---
+---author: lan
 function c_inst(guid)
 end
 
@@ -5240,7 +5244,7 @@ end
 ---
 ---修改玩家
 ---
----@param fn fun(inst:ent) 
+---@param fn fun(inst: ent):...
 ---所在文件: scripts/modutil.lua
 function AddPlayerPostInit(fn)
 end

@@ -392,8 +392,8 @@ end
 function locomotor:GetDebugString()
 end
 
----
----@param pt idk # 
+---移动至目标地点
+---@param pt Vector3 # 目标点坐标
 ---@param bufferedaction idk # 
 ---@param run idk # 
 ---@param overridedest idk # 
