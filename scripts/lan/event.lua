@@ -272,8 +272,8 @@
 ---| "entitysleep" # ※事件 ID: entitysleep <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "entitywake" # ※事件 ID: entitywake <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "epicscare" # ※事件 ID: epicscare <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "equip" # ※事件 ID: equip <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "equipped" # ※事件 ID: equipped <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "equip" # ※事件 ID: equip <br>※直译名: 装备物品 <br>※详述: 装备了一件物品 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
+---| "equipped" # ※事件 ID: equipped <br>※直译名: 物品被装备 <br>※详述: 物品被装备 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "equipskinneditem" # ※事件 ID: equipskinneditem <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "exit" # ※事件 ID: exit <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "exitlimbo" # ※事件 ID: exitlimbo <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
@@ -1155,8 +1155,8 @@
 ---| "twitchstatusupdate" # ※事件 ID: twitchstatusupdate <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "umbrellaranout" # ※事件 ID: umbrellaranout <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "underraindomes" # ※事件 ID: underraindomes <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "unequip" # ※事件 ID: unequip <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "unequipped" # ※事件 ID: unequipped <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "unequip" # ※事件 ID: unequip <br>※直译名: 卸下装备 <br>※详述: 卸下装备 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
+---| "unequipped" # ※事件 ID: unequipped <br>※直译名: 装备被卸下 <br>※详述: 装备被卸下 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "unequipskinneditem" # ※事件 ID: unequipskinneditem <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "unevengrounddetected" # ※事件 ID: unevengrounddetected <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "unfreeze" # ※事件 ID: unfreeze <br>※直译名: 解冻完 <br>※详述: freezable组件中，解冻（调用Unfreeze）时PushEvent，没有传递的data表<br>※data表: {}<br>※author: <br>※拉取时间: 2024-12-11 18:27

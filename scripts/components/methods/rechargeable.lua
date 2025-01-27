@@ -89,9 +89,9 @@ end
 function rechargeable:GetPercent()
 end
 
----
----@param chargetime idk # 
----author: 
+---开始充能(可以理解成开始进入cd)
+---@param chargetime number # cd时间
+---author: lan
 function rechargeable:Discharge(chargetime)
 end
 

@@ -5129,9 +5129,9 @@ end
 ---UNKNOWN
 ---
 ---@param atlas idk 
----@param prefabname idk 
+---@param imagename idk 
 ---所在文件: scripts/modutil.lua
-function RegisterInventoryItemAtlas(atlas,prefabname)
+function RegisterInventoryItemAtlas(atlas,imagename)
 end
 
 ---

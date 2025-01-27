@@ -26,11 +26,11 @@ function Light:GetRadius(...) end
 function Light:SetColour(...) end
 
 ---
----UNKNOWN
+---启用光照,注意如果仅手持发光,则需在 `inventoryitem:SetOnDroppedFn` 中,也调用此方法
 ---
----@param ... any
----author:
-function Light:Enable(...) end
+---@param enable boolean
+---author: lan
+function Light:Enable(enable) end
 
 ---
 ---UNKNOWN

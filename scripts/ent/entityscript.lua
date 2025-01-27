@@ -581,9 +581,11 @@ end
 function entityscript:FacePoint(x,y,z)
 end
 
----EntityScript: 
----@param default idk # 
----author: 
+---EntityScript: 获取物理半径
+---@param default number # 如果没有物理半径则用这个半径
+---@return number
+---@nodiscard
+---author: lan
 function entityscript:GetPhysicsRadius(default)
 end
 

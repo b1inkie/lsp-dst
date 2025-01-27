@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_workable
----@field inst idk
+---@field inst ent
 ---@field onwork idk
 ---@field onfinish idk
 ---@field workleft idk
