@@ -1016,3 +1016,9 @@ end
 function TheNet:CallShardRPC()
 end
 
+---服务器是否暂停,如OnUpdate中,用于暂停
+---@nodiscard
+---author: lan
+function TheNet:IsServerPaused()
+end
+

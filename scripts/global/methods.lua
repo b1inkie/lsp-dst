@@ -4020,111 +4020,159 @@ function Clamp(num,min,max)
 end
 
 ---
----UNKNOWN
+---映射（Mapping），将一个范围 `[a, b]` 中的值 `i` 映射到另一个范围 `[x, y]`
 ---
----@param i idk 
----@param a idk 
----@param b idk 
----@param x idk 
----@param y idk 
+---@param i number 
+---@param a number 
+---@param b number 
+---@param x number 
+---@param y number 
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function Remap(i,a,b,x,y)
 end
 
 ---
----UNKNOWN
+---弧度差值计算（Radian Difference Calculation），计算两个弧度值之间的绝对差值，并标准化到 `-π` 到 `π` 范围内
 ---
----@param rot1 idk 
----@param rot2 idk 
+---@param rot1 number
+---@param rot2 number
+---@return number
+---@nodiscard 
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function DiffAngleRad(rot1,rot2)
 end
 
 ---
----UNKNOWN
+---角度差值计算（Angle Difference Calculation），计算两个角度之间的绝对差值，并标准化到 `-180` 到 `180` 度范围
 ---
----@param rot1 idk 
----@param rot2 idk 
+---@param rot1 number
+---@param rot2 number
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function DiffAngle(rot1,rot2)
 end
 
 ---
----UNKNOWN
+---向上偏置舍入（Biased Rounding Up），将数值四舍五入到指定的小数位
 ---
----@param num idk 
----@param idp idk 
+---@param num number # 要四舍五入的数值
+---@param idp number # 小数位数，默认为 0
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function RoundBiasedUp(num,idp)
 end
 
 ---
----UNKNOWN
+---最接近倍数舍入（Rounding to Nearest Multiple），将数值四舍五入到最接近的倍数
 ---
----@param numToRound idk 
----@param multiple idk 
+---@param numToRound number # 要四舍五入的数值
+---@param multiple number # 倍数
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function RoundToNearest(numToRound,multiple)
 end
 
 ---
----UNKNOWN
+---二维平方距离计算（Squared Distance Calculation in XY Plane），计算两个点在 XY 平面上的平方距离
 ---
----@param p1 idk 
----@param p2 idk 
+---@param p1 {x:number,y:number} 
+---@param p2 {x:number,y:number} 
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function DistXYSq(p1,p2)
 end
 
 ---
----UNKNOWN
+---弧度差值计算（Radian Difference Calculation），计算两个弧度值之间的绝对差值，并标准化到 `-π` 到 `π` 范围内
 ---
----@param rot idk 
+---@param rot number # 要标准化的弧度值
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function ReduceAngleRad(rot)
 end
 
 ---
----UNKNOWN
+---向下偏置舍入（Biased Rounding Down），将数值四舍五入到指定的小数位
 ---
----@param num idk 
----@param idp idk 
+---@param num number # 要四舍五入的数值
+---@param idp number # 小数位数，默认为 0
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function RoundBiasedDown(num,idp)
 end
 
 ---
----UNKNOWN
+---根据游戏时间生成一个正弦波。`mod` 参数用于调整波的周期，`abs` 参数决定是否取绝对值
 ---
----@param mod idk 
----@param abs idk 
----@param inst idk 
+---@param mod number|nil # 周期调整因子，默认为 `1`
+---@param abs boolean|nil # 决定是否取绝对值
+---@param inst ent|nil # 实例对象，用于获取实体生存时间
+---@return number # 返回生成的正弦波值
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function GetSineVal(mod,abs,inst)
 end
 
 ---
----UNKNOWN
+---角度标准化（Angle Normalization），将角度值标准化到 `-180` 到 `180` 度范围内
 ---
----@param rot idk 
+---@param rot number # 要标准化的角度值
+---@return number
+---@nodiscard 
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function ReduceAngle(rot)
 end
 
 ---
----UNKNOWN
+---二维平方距离计算（Squared Distance Calculation in XZ Plane），计算两个点在 XZ 平面上的平方距离
 ---
----@param p1 idk 
----@param p2 idk 
+---@param p1 {x:number,y:number}  
+---@param p2 {x:number,y:number}  
+---@return number
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function DistXZSq(p1,p2)
 end
 
 ---
----UNKNOWN
+---偶数检测（Even Number Detection），判断数值是否为偶数
 ---
----@param num idk 
+---@param num number # 要判断的数值
+---@return boolean
+---@nodiscard
 ---所在文件: scripts/mathutil.lua
+---
+---author: lan
 function IsNumberEven(num)
 end
 

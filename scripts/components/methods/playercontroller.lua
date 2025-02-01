@@ -834,9 +834,11 @@ end
 function playercontroller:GetControllerAttackTarget()
 end
 
----
----author: 
-function playercontroller:RepeatHeldAction()
+---重复执行动作
+---@param ... any # 
+---@return ... any
+---author: lan
+function playercontroller:RepeatHeldAction(...)
 end
 
 ---

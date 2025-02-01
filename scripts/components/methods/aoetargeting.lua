@@ -71,8 +71,10 @@ end
 function aoetargeting:GetRange()
 end
 
----
----author: 
+---是否可以使用技能
+---@return boolean
+---@nodiscard
+---author: lan
 function aoetargeting:IsEnabled()
 end
 
