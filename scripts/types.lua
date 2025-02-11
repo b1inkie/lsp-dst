@@ -32,4 +32,7 @@ function Vector3:Get()end
 ---@alias GUID number # GUID 注意重载世界会变化
 
 ---@alias spdamage_type string # 特殊伤害类型
----| '"planar"' # 位面伤害
+---| "planar" # 位面伤害
+
+---@class spdamage_type_table # 特殊伤害类型表
+---@field planar number|nil

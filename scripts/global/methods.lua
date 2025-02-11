@@ -868,12 +868,17 @@ function metarawset(t,k,v)
 end
 
 ---
----UNKNOWN
+---范围内随机数
 ---
----@param min idk 
----@param max idk 
+---@param min number 
+---@param max number 
+---@return number
+---@nodiscard
 ---所在文件: scripts/util.lua
+---
+---author: lan
 function GetRandomMinMax(min,max)
+    return min + math.random()*(max - min)
 end
 
 ---
@@ -1424,9 +1429,10 @@ end
 ---
 ---UNKNOWN
 ---
----@param prefab idk 
+---@param prefab PrefabID 
 ---@param count idk 
 ---@param dontselect idk 
+---@return ent
 ---所在文件: scripts/consolecommands.lua
 function c_spawn(prefab,count,dontselect)
 end
@@ -4065,7 +4071,7 @@ end
 ---向上偏置舍入（Biased Rounding Up），将数值四舍五入到指定的小数位
 ---
 ---@param num number # 要四舍五入的数值
----@param idp number # 小数位数，默认为 0
+---@param idp number|nil # 小数位数，默认为 0
 ---@return number
 ---@nodiscard
 ---所在文件: scripts/mathutil.lua
@@ -4116,7 +4122,7 @@ end
 ---向下偏置舍入（Biased Rounding Down），将数值四舍五入到指定的小数位
 ---
 ---@param num number # 要四舍五入的数值
----@param idp number # 小数位数，默认为 0
+---@param idp number|nil # 小数位数，默认为 0
 ---@return number
 ---@nodiscard
 ---所在文件: scripts/mathutil.lua

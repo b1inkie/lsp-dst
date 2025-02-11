@@ -10,7 +10,7 @@ function lightningblocker:DoLightningStrike(pos)
 end
 
 ---
----@param fn idk # 
+---@param fn function # 
 ---author: 
 function lightningblocker:SetOnLightningStrike(fn)
 end
@@ -20,9 +20,9 @@ end
 function lightningblocker:OnRemoveFromEntity()
 end
 
----
----@param newrange idk # 
----author: 
+---设置范围
+---@param newrange number # 
+---author: lan
 function lightningblocker:SetBlockRange(newrange)
 end
 

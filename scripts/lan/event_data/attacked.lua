@@ -7,6 +7,6 @@
 ---@field original_damage number|nil # 可填可不填
 ---@field weapon ent|nil
 ---@field stimuli string|nil # 这个官方写的真得不好, 这个尽量留nil, 要伤害类型 建议填 `spdamage`
----@field spdamage table<spdamage_type, number>|nil # 键名为伤害类型 如planar 值为number
+---@field spdamage spdamage_type_table|nil # 键名为伤害类型 如planar 值为number, 一般伤害显示MOD, 读取的都是 `damageresolved`
 ---@field redirected ent|nil # 伤害转移对象
 ---@field noimpactsound boolean|nil

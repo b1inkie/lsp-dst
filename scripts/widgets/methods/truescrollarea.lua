@@ -24,9 +24,9 @@ function truescrollarea:GetListWidgets() end
 ---author: 
 function truescrollarea:OnUpdate(dt) end
 
+---重置滚动条到顶端(一般切换滚动条内容后,调用一次这个)
 ---
----
----author: 
+---author: lan
 function truescrollarea:ResetScroll() end
 
 ---

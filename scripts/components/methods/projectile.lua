@@ -3,9 +3,9 @@
 ---@class component_projectile
 local projectile = {}
 
----
----@param fn idk # 
----author: 
+---miss回调函数
+---@param fn function # 一般填 `inst.Remove` 
+---author: lan
 function projectile:SetOnMissFn(fn)
 end
 
@@ -33,9 +33,9 @@ end
 function projectile:Miss(target)
 end
 
----
----@param offset idk # 
----author: 
+---设置投射物抛射偏移量
+---@param offset Vector3 # x 为半径, y 为高度, z 填0即可 
+---author: lan
 function projectile:SetLaunchOffset(offset)
 end
 

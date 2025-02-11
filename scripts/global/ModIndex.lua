@@ -82,7 +82,8 @@ function ModIndex:GetForceEnabledMods() end
 
 ---
 ---@param usecached idk #
----
+---@return table
+---@nodiscard
 ---author: 
 function ModIndex:GetModsToLoad(usecached) end
 

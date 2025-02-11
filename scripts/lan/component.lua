@@ -309,7 +309,7 @@
 ---| "lavaarenamusic"
 ---| "leader"
 ---| "lighter"
----| "lightningblocker"
+---| "lightningblocker" # 避雷组件,这个优先级比避雷针tag高
 ---| "lighttweener"
 ---| "lock"
 ---| "locomotor"

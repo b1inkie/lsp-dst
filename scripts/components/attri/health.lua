@@ -20,7 +20,7 @@
 ---@field disable_penalty idk
 ---@field absorb idk
 ---@field playerabsorb idk
----@field externalabsorbmodifiers idk
+---@field externalabsorbmodifiers SourceModifierList # 加算, 特别要注意, 如果需要10%易伤, 那么这里要 `m` 要传负数: `-0.1`
 ---@field destroytime idk
 ---@field canmurder idk
 ---@field canheal idk

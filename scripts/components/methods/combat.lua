@@ -222,9 +222,11 @@ end
 function combat:DropTarget(hasnexttarget)
 end
 
----
----@param guy idk # 
----author: 
+---是否是友军
+---@param guy ent|nil # 
+---@return boolean #
+---@nodiscard
+---author: lan
 function combat:IsAlly(guy)
 end
 

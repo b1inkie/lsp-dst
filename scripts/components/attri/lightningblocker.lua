@@ -1,6 +1,6 @@
 ---@meta
 
 ---@class component_lightningblocker
----@field inst idk
----@field block_rsq idk
----@field on_strike idk
+---@field inst ent
+---@field block_rsq number
+---@field on_strike nil|function

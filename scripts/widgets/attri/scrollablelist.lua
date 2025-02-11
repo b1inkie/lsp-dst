@@ -18,14 +18,14 @@
 ---@field view_offset idk #
 ---@field widget_bg idk #
 ---@field scroll_bar_container idk #
----@field up_button idk #
+---@field up_button widget_imagebutton # 滚动条的上按钮
 ---@field last_up_button_time idk #
----@field down_button idk #
+---@field down_button widget_imagebutton # 滚动条的下按钮
 ---@field last_down_button_time idk #
----@field scroll_bar_line idk #
+---@field scroll_bar_line widget_image # 滚动条
 ---@field scroll_bar idk #
 ---@field page_jump idk #
----@field position_marker idk #
+---@field position_marker widget_imagebutton # 滚动控件
 ---@field do_dragging idk #
 ---@field y_adjustment idk #
 ---@field dragging idk #

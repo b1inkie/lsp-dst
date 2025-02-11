@@ -418,7 +418,7 @@
 ---| "itemplanted" # ※事件 ID: itemplanted <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "itemranout" # ※事件 ID: itemranout <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "jump" # ※事件 ID: jump <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "killed" # ※事件 ID: killed <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "killed" # ※事件 ID: killed <br>※直译名: 击杀 <br>※详述: 攻击者推送的事件 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "kitcoonplaywithme" # ※事件 ID: kitcoonplaywithme <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "knockback" # ※事件 ID: knockback <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "knockbackdropped" # ※事件 ID: knockbackdropped <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

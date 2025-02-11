@@ -3,10 +3,10 @@
 ---@class component_armor
 local armor = {}
 
----
----@param amount idk # 
----@param absorb_percent idk # 
----author: 
+---初始化耐久和吸收率, 若想要无限耐久 请用 `InitIndestructible`
+---@param amount number # 
+---@param absorb_percent number # 
+---author: lan
 function armor:InitCondition(amount,absorb_percent)
 end
 
@@ -29,9 +29,9 @@ end
 function armor:SetKeepOnFinished(keep)
 end
 
----
----@param absorb_percent idk # 
----author: 
+---初始化无限耐久的护甲
+---@param absorb_percent number # 吸收率
+---author: lan
 function armor:InitIndestructible(absorb_percent)
 end
 

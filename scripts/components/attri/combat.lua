@@ -22,8 +22,8 @@
 ---@field shouldavoidaggro idk
 ---@field forbiddenaggrotags idk
 ---@field lastwasattackedbytargettime idk
----@field externaldamagemultipliers idk
----@field externaldamagetakenmultipliers idk
+---@field externaldamagemultipliers SourceModifierList
+---@field externaldamagetakenmultipliers SourceModifierList
 ---@field min_attack_period idk
 ---@field onhitfn idk
 ---@field onhitotherfn idk

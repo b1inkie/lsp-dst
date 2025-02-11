@@ -29,7 +29,10 @@ function rechargeable:SetMaxCharge(val)
 end
 
 ---
----author: 
+---获取当前充能了多少秒 (如果要获取当前cd来进行cd调整,就用这个方法, 然后使用 `SetCharge(new,true)` 来设置新的cd)
+---@return number
+---@nodiscard
+---author: lan
 function rechargeable:GetCharge()
 end
 
@@ -40,7 +43,10 @@ function rechargeable:SetOnDischargedFn(fn)
 end
 
 ---
----author: 
+---获取当前还有多少秒充能完毕 (不要用这个方法, 用 `GetCharge()`)
+---@return number
+---@nodiscard
+---author: lan
 function rechargeable:GetTimeToCharge()
 end
 
@@ -80,7 +86,10 @@ function rechargeable:OnSave()
 end
 
 ---
----author: 
+---获取充能时间(固定值)
+---@return number
+---@nodiscard
+---author: lan
 function rechargeable:GetChargeTime()
 end
 
@@ -96,19 +105,26 @@ function rechargeable:Discharge(chargetime)
 end
 
 ---
----author: 
+---是否在充能(CD)中
+---@return boolean
+---@nodiscard
+---author: lan
 function rechargeable:IsCharged()
 end
 
 ---
----author: 
+---获取修饰后的充能时间(固定值)
+---@return number
+---@nodiscard
+---author: lan
 function rechargeable:GetRechargeTime()
 end
 
 ---
----@param val idk # 
----@param overtime idk # 
----author: 
+---设置并进入新cd
+---@param val number # 
+---@param overtime boolean # 填true就行
+---author: lan
 function rechargeable:SetCharge(val,overtime)
 end
 

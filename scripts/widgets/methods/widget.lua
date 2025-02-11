@@ -204,8 +204,9 @@ function widget:RemoveChild(child) end
 function widget:KillAllChildren() end
 
 ---
----@param child idk #
----@return unknown
+---@generic T
+---@param child T #
+---@return T
 ---
 ---author: 
 function widget:AddChild(child) end

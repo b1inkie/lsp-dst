@@ -104,14 +104,15 @@ end
 function health:GetFireDamageScale()
 end
 
----
----@param amount idk # 
----@param overtime idk # 
+---DoDelta
+---@param amount number # 
+---@param overtime boolean|nil # 
 ---@param cause idk # 
----@param ignore_invincible idk # 
+---@param ignore_invincible boolean|nil # 
 ---@param afflicter idk # 
----@param ignore_absorb idk # 
----author: 
+---@param ignore_absorb boolean|nil # 
+---@return number # 返回伤害值,注意 `符号`
+---author: lan
 function health:DoDelta(amount,overtime,cause,ignore_invincible,afflicter,ignore_absorb)
 end
 

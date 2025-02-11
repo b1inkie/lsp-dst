@@ -5,6 +5,6 @@
 ---@field damage number|nil
 ---@field damageresolved number|nil
 ---@field stimuli string|nil
----@field spdamage table<spdamage_type,number>|nil
+---@field spdamage spdamage_type_table|nil
 ---@field weapon ent|nil
 ---@field redirected idk

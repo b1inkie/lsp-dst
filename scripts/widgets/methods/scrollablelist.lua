@@ -88,13 +88,13 @@ function scrollablelist:SetListItemPadding(pad) end
 ---author: 
 function scrollablelist:SetListItemHeight(ht) end
 
+---滚动条切换成员组,用于替换当前组
+---@param list table # 新的成员数组
+---@param keepitems nil|boolean # 是否保留现有项目
+---@param scrollto nil|integer # 指定滚动到哪个位置
+---@param keeprelativefocusindex nil|boolean # 是否保持相对焦点索引
 ---
----@param list idk #
----@param keepitems idk #
----@param scrollto idk #
----@param keeprelativefocusindex idk #
----
----author: 
+---author: lan
 function scrollablelist:SetList(list, keepitems, scrollto, keeprelativefocusindex) end
 
 ---
