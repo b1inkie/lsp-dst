@@ -447,8 +447,10 @@ end
 ---@param weapon ent|nil # 
 ---@param stimuli string|nil # 
 ---@param spdamage table<string,number>|nil # 
+---@param ... any
+---@return ...
 ---author: lan
-function combat:GetAttacked(attacker,damage,weapon,stimuli,spdamage)
+function combat:GetAttacked(attacker,damage,weapon,stimuli,spdamage,...)
 end
 
 ---

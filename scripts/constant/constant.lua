@@ -1099,15 +1099,15 @@ TECH =
 {
     NONE = 'idk',
 
-    SCIENCE_ONE = { SCIENCE = 1 },
-    SCIENCE_TWO = { SCIENCE = 2 },
-    SCIENCE_THREE = { SCIENCE = 3 },
+    SCIENCE_ONE = { SCIENCE = 1 }, --- ### 科学机器 <br> 一本科技 <br> ![researchlab1](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/researchlab.png)
+    SCIENCE_TWO = { SCIENCE = 2 }, --- ### 炼金引擎 <br> 二本科技 <br> ![researchlab2](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/researchlab2.png)
+    SCIENCE_THREE = { SCIENCE = 3 }, --- ### 不知道是啥
 
     MAGIC_TWO = { MAGIC = 2 }, --- ### 灵子分解器 <br> 魔法是从2开始的,这是 一本魔法 <br> ![researchlab4](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/researchlab4.png)
     MAGIC_THREE = { MAGIC = 3 }, --- ### 暗影操控器 <br> 魔法是从2开始的,这是 二本魔法 <br> ![researchlab3](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/researchlab3.png)
 
-    ANCIENT_TWO = { ANCIENT = 2 },
-    ANCIENT_THREE = { ANCIENT = 3 },
+    ANCIENT_TWO = { ANCIENT = 2 }, --- ### 残塔(远古结构)
+    ANCIENT_THREE = { ANCIENT = 3 }, --- ### 完整塔(完整远古结构)
     ANCIENT_FOUR = { ANCIENT = 4 },
 
     CELESTIAL_ONE = { CELESTIAL = 1 },

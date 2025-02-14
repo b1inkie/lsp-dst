@@ -15,13 +15,13 @@ function text:__tostring() end
 ---author: 
 function text:DebugDraw_AddSection(dbui, panel) end
 
+---文本颜色
+---@param r number # 0~1
+---@param g number # 0~1
+---@param b number # 0~1
+---@param a number # 0~1
 ---
----@param r idk #
----@param g idk #
----@param b idk #
----@param a idk #
----
----author: 
+---author: lan
 function text:SetColour(r, g, b, a) end
 
 ---

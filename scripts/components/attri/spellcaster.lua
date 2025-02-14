@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_spellcaster
----@field inst idk
+---@field inst ent
 ---@field onspellcast idk
 ---@field canusefrominventory idk
 ---@field canuseontargets idk
@@ -13,7 +13,7 @@
 ---@field canonlyuseoncombat idk
 ---@field canuseonpoint idk
 ---@field canuseonpoint_water idk
----@field spell idk
+---@field spell fun(inst:ent,target:ent|nil,pos:Vector3|nil,doer:ent|nil):...
 ---@field quickcast idk
 ---@field veryquickcast idk
 ---@field spelltype idk

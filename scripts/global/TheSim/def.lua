@@ -836,7 +836,7 @@ function TheSim:SetReverbPreset(...) end
 ---author:
 function TheSim:FinalizeSaveString(...) end
 ---
----屏幕坐标转换世界坐标
+---屏幕坐标转换世界坐标(此方法似乎 `仅客机` 使用)
 ---
 ---@param x number
 ---@param y number

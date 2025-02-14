@@ -18,11 +18,11 @@ function scrollablelist:DebugDraw_AddSection(dbui, panel) end
 ---author: 
 function scrollablelist:OnControl(control, down, force) end
 
+---这个方法一般不在外面调用,但是有时我们滚动条有多个页面切换时,旧页面内容多我们滚动到了下面,再切换到内容少的页面时,内容会显示不全,此时调用此方法`Scroll(0,true)`会解决这个问题
+---@param amt number #
+---@param movemarker boolean|nil #
 ---
----@param amt idk #
----@param movemarker idk #
----
----author: 
+---author: lan
 function scrollablelist:Scroll(amt, movemarker) end
 
 ---
@@ -88,7 +88,7 @@ function scrollablelist:SetListItemPadding(pad) end
 ---author: 
 function scrollablelist:SetListItemHeight(ht) end
 
----滚动条切换成员组,用于替换当前组
+---滚动条切换成员组,用于替换当前组(完事最好再调用一次`Scroll(0,true)`)
 ---@param list table # 新的成员数组
 ---@param keepitems nil|boolean # 是否保留现有项目
 ---@param scrollto nil|integer # 指定滚动到哪个位置

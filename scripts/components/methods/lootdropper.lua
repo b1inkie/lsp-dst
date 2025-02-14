@@ -46,13 +46,13 @@ end
 function lootdropper:SetLootSetupFn(fn)
 end
 
----
----@param lootprefab idk # 
----@param pt idk # 
+---spawn一个战利品
+---@param lootprefab PrefabID # 
+---@param pt Vector3|nil # 
 ---@param linked_skinname idk # 
 ---@param skin_id idk # 
 ---@param userid idk # 
----author: 
+---author: lan
 function lootdropper:SpawnLootPrefab(lootprefab,pt,linked_skinname,skin_id,userid)
 end
 

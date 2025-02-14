@@ -183,8 +183,10 @@ end
 function replica_container:TakeActiveItemFromAllOfSlot(slot)
 end
 
----
----author: 
+---容器是否为空(不开洞穴,这个直接用的是component那边的方法,但是如果开了洞穴,这个方法只会在容器打开的时候才能用,同样,如果你想遍历容器,也需要打开容器)
+---@return boolean
+---@nodiscard
+---author: lan
 function replica_container:IsEmpty()
 end
 

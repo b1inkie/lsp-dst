@@ -14,7 +14,7 @@
 ---@field defaultdamage idk
 ---@field playerdamagepercent idk
 ---@field pvp_damagemod idk
----@field damagemultiplier idk
+---@field damagemultiplier nil|number # 人物基础伤害倍率
 ---@field damagebonus idk
 ---@field ignorehitrange idk
 ---@field noimpactsound idk

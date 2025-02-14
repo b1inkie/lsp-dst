@@ -9,7 +9,7 @@
 ---@field repeat_time idk #
 ---@field current_scroll_pos idk #
 ---@field target_scroll_pos idk #
----@field scroll_pos_end idk #
+---@field scroll_pos_end idk # math.max(0, `context.size.height` - scissor.height) 只要更改 高亮的 值 ,重设一次, 就可以修改滚动区域高度了
 ---@field scroll_per_click idk #
 ---@field scrollbar_offset idk #
 ---@field scrollbar_height idk #
