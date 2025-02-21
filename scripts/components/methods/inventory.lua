@@ -27,9 +27,11 @@ end
 function inventory:IsHeavyLifting()
 end
 
----
----@param fn idk # 
----author: 
+---寻找所有符合条件的物品
+---@param fn fun(itm:ent) # 
+---@return ent[]
+---@nodiscard
+---author: lan
 function inventory:FindItems(fn)
 end
 
@@ -96,11 +98,13 @@ end
 function inventory:IsHolding(item,checkcontainer)
 end
 
----
----@param item idk # 
----@param amount idk # 
----@param checkallcontainers idk # 
----author: 
+---按prefab ID 找物品
+---@param item PrefabID # 
+---@param amount integer # 
+---@param checkallcontainers boolean|nil # 
+---@return table<ent,integer>
+---@nodiscard
+---author: lan
 function inventory:GetItemByName(item,amount,checkallcontainers)
 end
 

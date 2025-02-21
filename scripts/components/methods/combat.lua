@@ -446,7 +446,7 @@ end
 ---@param damage number|nil # 
 ---@param weapon ent|nil # 
 ---@param stimuli string|nil # 
----@param spdamage table<string,number>|nil # 
+---@param spdamage spdamage_type_table|nil # 
 ---@param ... any
 ---@return ...
 ---author: lan

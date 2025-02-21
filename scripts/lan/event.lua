@@ -761,14 +761,14 @@
 ---| "onopenother" # ※事件 ID: onopenother <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onownerdropped" # ※事件 ID: onownerdropped <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onownerputininventory" # ※事件 ID: onownerputininventory <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "onpickup" # ※事件 ID: onpickup <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "onpickup" # ※事件 ID: onpickup <br>※直译名: <br>※详述: <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "onpickupitem" # ※事件 ID: onpickupitem <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onplaced" # ※事件 ID: onplaced <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onplacerhidden" # ※事件 ID: onplacerhidden <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onplayernear" # ※事件 ID: onplayernear <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onprefabswaped" # ※事件 ID: onprefabswaped <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onpresink" # ※事件 ID: onpresink <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "onputininventory" # ※事件 ID: onputininventory <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "onputininventory" # ※事件 ID: onputininventory <br>※直译名: 放入库存 <br>※详述: 捡起物品到库存中|在库存中拿起再放回去|装备物品 都会触发这个事件 <br>建议同时监听`ondropped`,设置标志位,来保证放入库存的物品是从地上捡起来的 <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onreachdestination" # ※事件 ID: onreachdestination <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onrecipescanned" # ※事件 ID: onrecipescanned <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "onreflectdamage" # ※事件 ID: onreflectdamage <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

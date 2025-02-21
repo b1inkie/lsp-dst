@@ -1,11 +1,11 @@
 ---@meta
 
----@class component_rechargeable
----@field inst idk
----@field total idk
----@field current idk
----@field chargetimemod idk
----@field chargetime idk
----@field ondischargedfn idk
----@field onchargedfn idk
+---@class component_rechargeable # 充能(或者理解成CD)
+---@field inst ent
+---@field total number # 这个值,代表充能条的总长度,和倒计时没有关系,
+---@field current number # 当前充能了多少量 
+---@field chargetimemod SourceModifierList # 加算修饰
+---@field chargetime number # CD的倒计时总时间,这个是固定值,即使一开始不设置,在调用 `Discharge` 时,也会自动设置
+---@field ondischargedfn fun(this:ent,...:any):... # 进入充能的回调函数
+---@field onchargedfn fun(this:ent,...:any):... # 充能完毕回调函数
 ---@field updating idk

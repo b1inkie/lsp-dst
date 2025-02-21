@@ -89,8 +89,10 @@ end
 function health:DeltaPenalty(delta)
 end
 
----
----author: 
+---是否无敌
+---@return boolean
+---@nodiscard
+---author: lan
 function health:IsInvincible()
 end
 

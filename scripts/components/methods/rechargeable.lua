@@ -3,10 +3,11 @@
 ---@class component_rechargeable
 local rechargeable = {}
 
----
----@param pct idk # 
----author: 
+---设置充能百分比
+---@param pct number # 
+---author: lan
 function rechargeable:SetPercent(pct)
+    self:SetCharge(self.total * pct)
 end
 
 ---
@@ -16,38 +17,40 @@ end
 function rechargeable:RemoveChargeTimeMod(source,key)
 end
 
----
----@param fn idk # 
----author: 
+---设置充能完毕回调函数
+---@param fn fun(this:ent,...:any):... # 
+---author: lan
 function rechargeable:SetOnChargedFn(fn)
 end
 
----
----@param val idk # 
+---设置充能条总量 `total`
+---@param val number # 
 ---author: 
 function rechargeable:SetMaxCharge(val)
 end
 
 ---
----获取当前充能了多少秒 (如果要获取当前cd来进行cd调整,就用这个方法, 然后使用 `SetCharge(new,true)` 来设置新的cd)
+---获取当前充能的量
 ---@return number
 ---@nodiscard
 ---author: lan
 function rechargeable:GetCharge()
+    return self.current
 end
 
----
----@param fn idk # 
----author: 
+---设置进入充能的回调函数
+---@param fn fun(this:ent,...:any):... # 
+---author: lan
 function rechargeable:SetOnDischargedFn(fn)
 end
 
 ---
----获取当前还有多少秒充能完毕 (不要用这个方法, 用 `GetCharge()`)
+---获取当前还有多少时间充能完毕
 ---@return number
 ---@nodiscard
 ---author: lan
 function rechargeable:GetTimeToCharge()
+    return self:IsCharged() and 0 or (1 - self:GetPercent()) * self:GetRechargeTime()
 end
 
 ---
@@ -91,6 +94,7 @@ end
 ---@nodiscard
 ---author: lan
 function rechargeable:GetChargeTime()
+    return self.chargetime
 end
 
 ---
@@ -105,32 +109,34 @@ function rechargeable:Discharge(chargetime)
 end
 
 ---
----是否在充能(CD)中
+---是否充能(CD)完毕
 ---@return boolean
 ---@nodiscard
 ---author: lan
 function rechargeable:IsCharged()
+    return self.current >= self.total
 end
 
 ---
----获取修饰后的充能时间(固定值)
+---获取修饰后的`chargetime`
 ---@return number
 ---@nodiscard
 ---author: lan
 function rechargeable:GetRechargeTime()
+    return math.max(0, self.chargetime * (1 + self.chargetimemod:Get()))
 end
 
 ---
----设置并进入新cd
----@param val number # 
----@param overtime boolean # 填true就行
+---设置当前的充能量,最大值是 `total`, 如果你想设置当前剩余cd的话: `total`*(`1`-(`剩余cd`/`chargetime`))
+---@param val number # 如果你想设置当前剩余cd的话: `total`*(`1`-(`剩余cd`/`chargetime`))
+---@param overtime boolean|nil # 填true就行
 ---author: lan
 function rechargeable:SetCharge(val,overtime)
 end
 
----
----@param t idk # 
----author: 
+---设置`chargetime`,并开始`OnUpdate`
+---@param t number # 设置cd
+---author: lan
 function rechargeable:SetChargeTime(t)
 end
 
