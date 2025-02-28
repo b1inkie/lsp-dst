@@ -4508,9 +4508,11 @@ function CalledFrom()
 end
 
 ---
----UNKNOWN
+---获取图鉴图集
 ---
----@param imagename idk 
+---@param imagename string # 要带`.tex`后缀
+---@return string # 图集路径
+---@nodiscard 
 ---所在文件: scripts/simutil.lua
 function GetScrapbookIconAtlas(imagename)
 end
@@ -13723,7 +13725,7 @@ end
 ---
 ---注册预制物
 ---@param name string # 预制物id
----@param fn function # 预制物主函数
+---@param fn fun():ent # 预制物主函数
 ---@param assets nil|table # 预制物资源表
 ---@param deps idk
 ---@param force_path_search idk

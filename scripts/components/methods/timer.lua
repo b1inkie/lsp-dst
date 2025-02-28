@@ -40,9 +40,11 @@ end
 function timer:OnSave()
 end
 
----
----@param name idk # 
----author: 
+---获取计时器剩余时间
+---@param name string # 计时器名字
+---@return number
+---@nodiscard
+---author: lan
 function timer:GetTimeLeft(name)
 end
 
@@ -58,10 +60,10 @@ end
 function timer:GetTimeElapsed(name)
 end
 
----
----@param name idk # 
----@param time idk # 
----author: 
+---设置计时器剩余时间
+---@param name string # 计时器名字
+---@param time number # 
+---author: lan
 function timer:SetTimeLeft(name,time)
 end
 

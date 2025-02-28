@@ -25,7 +25,7 @@
 ---| "gestalt_possessable" # ※标签ID: gestalt_possessable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pigelite" # ※标签ID: pigelite<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "rangedlighter" # ※标签ID: rangedlighter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "groggy" # ※标签ID: groggy<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "groggy" # ※标签ID: groggy<br>※直译名: 酒醉的 <br>※详述: 酒醉的, 东歪西倒的, 摇摇晃晃的 , 吃完曼德拉草醒来就会有这个状态, 加这个tag 顺带设置一下移速, 就看起来像个宿醉debuff了 <br>※分类: 角色 | Character<br>※author: lan<br>※拉取时间: 2024-12-11 15:04
 ---| "giftmachine" # ※标签ID: giftmachine<br>※直译名: <br>※详述: 玩家可以在拥有该标签的实体附近开礼物<br>※分类: 实体 | Prefab<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
 ---| "hedgespawner" # ※标签ID: hedgespawner<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "angry_when_rowed" # ※标签ID: angry_when_rowed<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04

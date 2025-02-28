@@ -20,6 +20,7 @@ end
 ---@param doer idk # 
 ---@param target idk # 
 ---@param pos idk # 
+---@return boolean
 ---author: 
 function pocketwatch:CastSpell(doer,target,pos)
 end

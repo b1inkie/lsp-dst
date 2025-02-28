@@ -28,9 +28,8 @@ function inventory:IsHeavyLifting()
 end
 
 ---寻找所有符合条件的物品
----@param fn fun(itm:ent) # 
+---@param fn fun(itm:ent):boolean # 
 ---@return ent[]
----@nodiscard
 ---author: lan
 function inventory:FindItems(fn)
 end

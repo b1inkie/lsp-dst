@@ -29,7 +29,7 @@ end
 function armor:SetKeepOnFinished(keep)
 end
 
----初始化无限耐久的护甲
+---初始化无限耐久的护甲(使用这个方法,还要给prefab `AddTag('hide_percentage')`)
 ---@param absorb_percent number # 吸收率
 ---author: lan
 function armor:InitIndestructible(absorb_percent)

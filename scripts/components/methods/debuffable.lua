@@ -70,9 +70,11 @@ end
 function debuffable:Enable(enable)
 end
 
----
----@param name idk # 
----author: 
+---获取buff实体
+---@param name string # buff名字, 如果用的是官方模板 一般名字前面还有个 `buff_` 前缀
+---@return ent|nil
+---@nodiscard
+---author: lan
 function debuffable:GetDebuff(name)
 end
 
