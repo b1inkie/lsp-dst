@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class SourceModifierList
----@overload fun(inst:ent, base_value:number, fn:fun(m:number,v:number):number)
+---@overload fun(inst:ent, base_value:number, fn:fun(m:number,v:number):number):SourceModifierList
 local SourceModifierList = {}
 
 ---
