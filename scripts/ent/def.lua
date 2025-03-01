@@ -34,7 +34,7 @@
 ---@field pendingtasks idk
 ---@field ApplySkinOverrides idk
 ---@field ResetMinimapOffset idk
----@field sg idk
+---@field sg StateGraphInstance|nil
 ---@field IsHUDVisible idk
 ---@field ApplyScale idk
 ---@field SetCameraDistance idk
