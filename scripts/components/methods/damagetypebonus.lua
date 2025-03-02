@@ -8,12 +8,12 @@ local damagetypebonus = {}
 function damagetypebonus:GetDebugString()
 end
 
----
----@param tag idk # 
----@param src idk # 
----@param pct idk # 
----@param key idk # 
----author: 
+---添加伤害加成
+---@param tag tagID # 
+---@param src ent|string # 
+---@param pct number # 
+---@param key string|nil # 
+---author: lan
 function damagetypebonus:AddBonus(tag,src,pct,key)
 end
 
