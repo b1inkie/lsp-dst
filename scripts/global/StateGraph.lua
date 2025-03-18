@@ -7,97 +7,106 @@
 ---@field hibernaters idk #
 ---@field haveEvents idk #
 ---@overload fun():...
-StateGraphWrangler = {}
+local _StateGraphWrangler = {}
 
 ---
 ---@param inst idk #
 ---@param list idk #
 ---
 ---author: 
-function StateGraphWrangler:SendToList(inst, list) end
+function _StateGraphWrangler:SendToList(inst, list) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:OnSetTimeout(inst) end
+function _StateGraphWrangler:OnSetTimeout(inst) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:OnPushEvent(inst) end
+function _StateGraphWrangler:OnPushEvent(inst) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:Hibernate(inst) end
+function _StateGraphWrangler:Hibernate(inst) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:Wake(inst) end
+function _StateGraphWrangler:Wake(inst) end
 
 ---
 ---@param inst idk #
 ---@param time_to_wait idk #
 ---
 ---author: 
-function StateGraphWrangler:Sleep(inst, time_to_wait) end
+function _StateGraphWrangler:Sleep(inst, time_to_wait) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:OnRemoveEntity(inst) end
+function _StateGraphWrangler:OnRemoveEntity(inst) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:RemoveInstance(inst) end
+function _StateGraphWrangler:RemoveInstance(inst) end
 
 ---
 ---@param inst idk #
 ---
 ---author: 
-function StateGraphWrangler:AddInstance(inst) end
+function _StateGraphWrangler:AddInstance(inst) end
 
 ---
 ---@param current_tick idk #
 ---
 ---author: 
-function StateGraphWrangler:Update(current_tick) end
+function _StateGraphWrangler:Update(current_tick) end
 
 ---
 ---
 ---author: 
-function StateGraphWrangler:UpdateEvents() end
+function _StateGraphWrangler:UpdateEvents() end
 
+StateGraphWrangler = _StateGraphWrangler
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+---@class ActionHandler
 ---@overload fun(action, state, condition):...
-ActionHandler = {}
+local _ActionHandler = {}
+
+ActionHandler = _ActionHandler
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+---@class EventHandler
 ---@overload fun(name, fn):...
-EventHandler = {}
+local _EventHandler = {}
+
+EventHandler = _EventHandler
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 ---------------------------------------------------------
 
----sg timeline 用的时间点
+---@class TimeEvent # sg timeline 用的时间点
 ---@overload fun(time: number, fn:fun(inst:ent)):...
-TimeEvent = {}
+local _TimeEvent = {}
+
+TimeEvent = _TimeEvent
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -114,8 +123,10 @@ TimeEvent = {}
 ---@field onupdate nil|function # 
 ---@field ontimeout nil|function # 
 
+---@class State
+---@field inst ent
 ---@overload fun(args: State_args):...
-State = {}
+local _State = {}
 
 ---
 ---@param sg idk #
@@ -123,20 +134,24 @@ State = {}
 ---@param data idk #
 ---
 ---author: 
-function State:HandleEvent(sg, eventname, data) end
+function _State:HandleEvent(sg, eventname, data) end
+
+State = _State
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+---@class StateGraph
 ---@overload fun(name, states, events, defaultstate, actionhandlers):...
-StateGraph = {}
+local _StateGraph = {}
 
 ---
 ---
 ---author: 
-function StateGraph:__tostring() end
+function _StateGraph:__tostring() end
 
+StateGraph = _StateGraph
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -155,156 +170,157 @@ function StateGraph:__tostring() end
 ---@field mem idk #
 ---@field statestarttime idk #
 ---@overload fun(stategraph, inst):...
-local StateGraphInstance = {}
+local _StateGraphInstance = {}
 
 ---
 ---@param ui idk #
 ---@param panel idk #
 ---
 ---author: 
-function StateGraphInstance:RenderDebugUI(ui, panel) end
+function _StateGraphInstance:RenderDebugUI(ui, panel) end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:GetDebugTable() end
+function _StateGraphInstance:GetDebugTable() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:__tostring() end
+function _StateGraphInstance:__tostring() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:GetTimeInState() end
+function _StateGraphInstance:GetTimeInState() end
 
 ---
 ---@param anims idk #
 ---@param loop idk #
 ---
 ---author: 
-function StateGraphInstance:PlayRandomAnim(anims, loop) end
+function _StateGraphInstance:PlayRandomAnim(anims, loop) end
 
 ---
 ---@param event idk #
 ---@param data idk #
 ---
 ---author: 
-function StateGraphInstance:PushEvent(event, data) end
+function _StateGraphInstance:PushEvent(event, data) end
 
 ---
 ---@param event idk #
 ---
 ---author: 
-function StateGraphInstance:IsListeningForEvent(event) end
+function _StateGraphInstance:IsListeningForEvent(event) end
 
 ---
 ---@param bufferedaction idk #
 ---
 ---author: 
-function StateGraphInstance:PreviewAction(bufferedaction) end
+function _StateGraphInstance:PreviewAction(bufferedaction) end
 
 ---
 ---@param bufferedaction idk #
 ---
 ---author: 
-function StateGraphInstance:StartAction(bufferedaction) end
+function _StateGraphInstance:StartAction(bufferedaction) end
 
 ---
 ---@param eventname idk #
 ---@param data idk #
 ---
 ---author: 
-function StateGraphInstance:HandleEvent(eventname, data) end
+function _StateGraphInstance:HandleEvent(eventname, data) end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:HandleEvents() end
+function _StateGraphInstance:HandleEvents() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:ClearBufferedEvents() end
+function _StateGraphInstance:ClearBufferedEvents() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:InNewState() end
+function _StateGraphInstance:InNewState() end
 
 ---
 ---@param statename idk #
 ---
 ---author: 
-function StateGraphInstance:HasState(statename) end
+function _StateGraphInstance:HasState(statename) end
 
 ---
 ---@param statename idk #
 ---@param params idk #
 ---
 ---author: 
-function StateGraphInstance:GoToState(statename, params) end
+function _StateGraphInstance:GoToState(statename, params) end
 
 ---
 ---@param tag idk #
 ---
 ---author: 
-function StateGraphInstance:AddStateTag(tag) end
+function _StateGraphInstance:AddStateTag(tag) end
 
 ---
 ---@param tag idk #
 ---
 ---author: 
-function StateGraphInstance:RemoveStateTag(tag) end
+function _StateGraphInstance:RemoveStateTag(tag) end
 
 ---
 ---@param tag idk #
 ---
 ---author: 
-function StateGraphInstance:HasStateTag(tag) end
+function _StateGraphInstance:HasStateTag(tag) end
 
 ---
 ---@param ... idk #
 ---
 ---author: 
-function StateGraphInstance:HasAnyStateTag(...) end
+function _StateGraphInstance:HasAnyStateTag(...) end
 
 ---
 ---@param time idk #
 ---
 ---author: 
-function StateGraphInstance:SetTimeout(time) end
+function _StateGraphInstance:SetTimeout(time) end
 
 ---
 ---@param dt idk #
 ---
 ---author: 
-function StateGraphInstance:UpdateState(dt) end
+function _StateGraphInstance:UpdateState(dt) end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:Start() end
+function _StateGraphInstance:Start() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:Stop() end
+function _StateGraphInstance:Stop() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:Update() end
+function _StateGraphInstance:Update() end
 
 ---
 ---
 ---author: 
-function StateGraphInstance:ServerStateMatches() end
+function _StateGraphInstance:ServerStateMatches() end
 
 ---
 ---@param time idk #
 ---
 ---author: 
-function StateGraphInstance:FastForward(time) end
+function _StateGraphInstance:FastForward(time) end
 
+StateGraphInstance = _StateGraphInstance
