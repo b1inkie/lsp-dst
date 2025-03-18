@@ -1,6 +1,6 @@
 ---@meta
 
 ---@class replica_equippable
----@field inst idk
+---@field inst ent
 ---@field _equipslot idk
 ---@field _preventunequipping idk

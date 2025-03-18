@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_aoetargeting
----@field inst idk
+---@field inst ent
 ---@field reticule idk
 ---@field targetprefab idk
 ---@field alwaysvalid idk

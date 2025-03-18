@@ -5,7 +5,7 @@
 ---@field flammability idk
 ---@field fxdata idk
 ---@field fxlevel idk
----@field fxchildren idk
+---@field fxchildren ent[] # `SpawnFX` 生成火焰都会在这个表里
 ---@field fxoffset idk
 ---@field burning idk
 ---@field burntime idk

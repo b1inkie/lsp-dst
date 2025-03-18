@@ -190,9 +190,11 @@ end
 function inventory:ReturnActiveItem(slot,stack_mod)
 end
 
----
+---获取某个装备槽中的物品
 ---@param eslot idk # 
----author: 
+---@return ent|nil
+---@nodiscard
+---author: lan
 function inventory:GetEquippedItem(eslot)
 end
 

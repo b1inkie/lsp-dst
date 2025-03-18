@@ -4,9 +4,10 @@
 ---@overload fun(inst:ent, base_value:number, fn:fun(m:number,v:number):number):SourceModifierList
 local SourceModifierList = {}
 
----
----
----author: 
+---获取修饰后的值
+---@return number|boolean
+---@nodiscard
+---author: lan
 function SourceModifierList:Get() end
 
 ---

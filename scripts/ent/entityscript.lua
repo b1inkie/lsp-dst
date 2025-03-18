@@ -761,3 +761,6 @@ end
 function entityscript:IsInLight()
 end
 
+-----------------------------------
+
+EntityScript = entityscript

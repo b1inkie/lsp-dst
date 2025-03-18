@@ -8,7 +8,7 @@
 ---@field maxfuel idk
 ---@field currentfuel idk
 ---@field rate idk
----@field rate_modifiers idk
+---@field rate_modifiers SourceModifierList
 ---@field no_sewing idk
 ---@field accepting idk
 ---@field sections idk

@@ -11,9 +11,9 @@ local spellcaster = {}
 function spellcaster:CastSpell(target,pos,doer)
 end
 
----
----@param fn idk # 
----author: 
+---设置是否允许施法
+---@param fn fun(doer:ent,target:ent|nil,pos:Vector3):boolean,string|nil # 返回是否释放成功,以及失败原因
+---author: lan
 function spellcaster:SetCanCastFn(fn)
 end
 

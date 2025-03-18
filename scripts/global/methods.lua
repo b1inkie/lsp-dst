@@ -1007,6 +1007,7 @@ end
 ---UNKNOWN
 ---
 ---@param choices idk 
+---@return idk
 ---所在文件: scripts/util.lua
 function weighted_random_choice(choices)
 end
@@ -2199,9 +2200,10 @@ end
 ---
 ---UNKNOWN
 ---
----@param prefab idk 
----@param count idk 
+---@param prefab PrefabID 
+---@param count integer 
 ---@param dontselect idk 
+---@return ent
 ---所在文件: scripts/consolecommands.lua
 function c_give(prefab,count,dontselect)
 end

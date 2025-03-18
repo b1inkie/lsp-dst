@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_equippable
----@field inst idk
+---@field inst ent
 ---@field isequipped idk
 ---@field equipslot EQUIPSLOTS|string # 设置装备槽位
 ---@field onequipfn fun(inst: ent,owner: ent,from_ground: any,...: any): any # 穿戴回调函数
