@@ -328,7 +328,7 @@ end
 
 ---EntityScript: 监听事件
 ---@param event eventID # 事件
----@param fn fun(inst: ent,data: nil|table) # 
+---@param fn fun(this: ent,data: nil|table) # 
 ---@param source idk # 监听对象,不填则监听自身
 ---author: lan
 function entityscript:ListenForEvent(event,fn,source)
