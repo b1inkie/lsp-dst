@@ -10,22 +10,22 @@ local armor = {}
 function armor:InitCondition(amount,absorb_percent)
 end
 
----
----@param amount idk # 
----author: 
+---设置当前耐久百分比
+---@param amount number # 
+---author: mango
 function armor:SetPercent(amount)
 end
 
----
----@param attacker idk # 
----@param weapon idk # 
----author: 
+---计算并返回攻击者或其武器对当前护甲的弱点伤害加成
+---@param attacker ent # 攻击者
+---@param weapon ent # 武器
+---author: mango
 function armor:GetBonusDamage(attacker,weapon)
 end
 
----
----@param keep idk # 
----author: 
+---设置护甲耐久耗尽时是否保留物品实例（默认为true)
+---@param keep boolean # 
+---author: mango
 function armor:SetKeepOnFinished(keep)
 end
 
@@ -35,97 +35,99 @@ end
 function armor:InitIndestructible(absorb_percent)
 end
 
----
----@param absorb_percent idk # 
----author: 
+---设置护甲伤害吸收率
+---@param absorb_percent number # 
+---author: mango
 function armor:SetAbsorption(absorb_percent)
 end
 
----
----author: 
+---护甲是否不可破坏
+---author: mango
 function armor:IsIndestructible()
 end
 
----
----@param amount idk # 
----author: 
+---设置护甲耐久值
+---@param amount number # 
+---author: mango
 function armor:SetCondition(amount)
 end
 
----
----@param damage_amount idk # 
----author: 
+---处理护甲受到伤害时的耐久损失和事件触发
+---@param damage_amount number # 对护甲造成的伤害
+---author: mango
 function armor:TakeDamage(damage_amount)
 end
 
----
----@param tags idk # 
----author: 
+---设置护甲能抵抗的攻击标签数组
+---@param tags table # 
+---author: mango
 function armor:SetTags(tags)
 end
 
----
----author: 
+---获取当前耐久百分比
+---author: mango
 function armor:GetPercent()
 end
 
----
----author: 
+---调试信息：当前耐久/最大耐久
+---author: mango
 function armor:GetDebugString()
 end
 
----
----@param data idk # 
----author: 
+---加载耐久
+---@param data table # 
+---author: mango
 function armor:OnLoad(data)
 end
 
----
----@param attacker idk # 
----@param weapon idk # 
----author: 
+---获取抵抗攻击的吸收比例（若不能抵抗返回nil）
+---@param attacker ent # 攻击者
+---@param weapon ent # 武器
+---@return number|nil
+---author: mango
 function armor:GetAbsorption(attacker,weapon)
 end
 
----
----@param attacker idk # 
----@param weapon idk # 
----author: 
+---是否能抵抗此类型攻击
+---@param attacker ent # 
+---@param weapon ent
+---@return boolean
+---author mango
 function armor:CanResist(attacker,weapon)
 end
 
----
----@param amount idk # 
----author: 
+---修复护甲耐久
+---@param amount number # 修复的耐久度量
+---author: mango
 function armor:Repair(amount)
 end
 
----
----author: 
+---保存耐久数据
+---author: mango
 function armor:OnSave()
 end
 
----
----@param tag idk # 
----@param bonus_damage idk # 
----author: 
+---添加弱点标签附加的伤害
+---@param tag string # 弱点标签
+---@param bonus_damage number # 该弱点造成的伤害
+---author: mango
 function armor:AddWeakness(tag,bonus_damage)
 end
 
----
----@param tag idk # 
----author: 
+---移除弱点标签
+---@param tag string # 
+---author: mango
 function armor:RemoveWeakness(tag)
 end
 
----
----@param fn idk # 
----author: 
+---设置护甲耐久耗尽时的回调函数
+---@param fn function # 
+---author: mango
 function armor:SetOnFinished(fn)
 end
 
----
----author: 
+---护甲是否受损（耐久小于最大耐久值）
+---author: mango
 function armor:IsDamaged()
 end
 
