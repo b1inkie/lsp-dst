@@ -366,6 +366,8 @@ end
 
 ---隐藏通道
 ---@param symbol string # 通道名
+---如果你要隐藏头发,要同时hide这俩: `hair_hat` `hair`, 我也不知道为什么只hide一个hide不掉
+---
 ---author: Runar
 function AnimState:HideSymbol(symbol)
 end
