@@ -42,6 +42,8 @@ function armor:SetAbsorption(absorb_percent)
 end
 
 ---护甲是否不可破坏
+---@return boolean
+---@nodiscard
 ---author: mango
 function armor:IsIndestructible()
 end
@@ -65,6 +67,8 @@ function armor:SetTags(tags)
 end
 
 ---获取当前耐久百分比
+---@return number
+---@nodiscard
 ---author: mango
 function armor:GetPercent()
 end
@@ -84,6 +88,7 @@ end
 ---@param attacker ent # 攻击者
 ---@param weapon ent # 武器
 ---@return number|nil
+---@nodiscard
 ---author: mango
 function armor:GetAbsorption(attacker,weapon)
 end
@@ -92,6 +97,7 @@ end
 ---@param attacker ent # 
 ---@param weapon ent
 ---@return boolean
+---@nodiscard
 ---author mango
 function armor:CanResist(attacker,weapon)
 end
@@ -127,6 +133,8 @@ function armor:SetOnFinished(fn)
 end
 
 ---护甲是否受损（耐久小于最大耐久值）
+---@return boolean
+---@nodiscard
 ---author: mango
 function armor:IsDamaged()
 end
