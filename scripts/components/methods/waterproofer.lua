@@ -15,6 +15,8 @@ function waterproofer:OnRemoveFromEntity()
 end
 
 ---获取防水效率
+---@return number
+---@nodiscard
 ---author: mango
 function waterproofer:GetEffectiveness()
 end
