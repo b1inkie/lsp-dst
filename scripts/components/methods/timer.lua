@@ -3,18 +3,19 @@
 ---@class component_timer
 local timer = {}
 
----
----@param name idk # 
----author: 
+--- 将传入的计时器恢复运转
+---@param name string # 计时器名字
+---@return boolean 
+---author: KP
 function timer:ResumeTimer(name)
 end
 
----
----@param name idk # 
----@param time idk # 
----@param paused idk # 
----@param initialtime_override idk # 
----author: 
+--- 启用一个计时器并根据传入的参数设置该计时器的相关属性  
+---@param name string # 计时器的名字
+---@param time number # 计时器的持续时间
+---@param paused boolean # 计时器是否在此时设定为暂停状态
+---@param initialtime_override number # 计时器此时的初始时间
+---author: KP
 function timer:StartTimer(name,time,paused,initialtime_override)
 end
 
@@ -54,9 +55,11 @@ end
 function timer:TransferComponent(newinst)
 end
 
----
----@param name idk # 
----author: 
+--- 获取计时器已经走过的时间
+---@param name string # 计时器名字
+---@return number
+---@nodiscard 
+---author: KP
 function timer:GetTimeElapsed(name)
 end
 
@@ -67,21 +70,25 @@ end
 function timer:SetTimeLeft(name,time)
 end
 
----
----@param name idk # 
----author: 
+--- 删除传入的计时器（与 Pause/暂停 不同）
+---@param name string # 计时器名字
+---author: KP
 function timer:StopTimer(name)
 end
 
----
----@param name idk # 
----author: 
+--- 判断传入的计时器是否存在
+---@param name string # 计时器名字
+---@return boolean
+---@nodiscard 
+---author: KP
 function timer:TimerExists(name)
 end
 
----
----@param name idk # 
----author: 
+--- 判断传入的计时器是否存在并且正处于暂停状态
+---@param name string # 计时器名字 
+---@return boolean
+---@nodiscard
+---author: KP
 function timer:IsPaused(name)
 end
 
@@ -90,9 +97,9 @@ end
 function timer:OnRemoveFromEntity()
 end
 
----
----@param name idk # 
----author: 
+--- 暂停传入的计时器并存储该计时器的剩余时间至 timeleft
+---@param name string # 计时器名字
+---author: KP
 function timer:PauseTimer(name)
 end
 
