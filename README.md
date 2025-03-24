@@ -31,3 +31,41 @@ local spider
 7. `event_data_事件名` -> 事件表类型 -> `table`  哎 为什么lls不支持类型名拼接啊 有没有人能去提个issue啊(
 
 8. `widget_xxx` -> widget类 -> `class`
+
+## 贡献指南
+
+#### 如果你愿意了解luaCATS
+
+1. [luaCATS](https://luals.github.io/wiki/annotations/)
+2. 为什么我推荐你看luaCATS呢?
+- lua是弱类型语言, 新手在学习时容易对类型这个概念模糊, 而通过学习luaCATS, 当你可以准确的对一个参数的类型进行约束时, 你得coding水平也会完全脱离新手阶段, 相信我, 你得代码会写的又漂亮又易维护!
+
+#### 如果你不愿意了解luaCATS
+
+ 那么你只需要了解以下几点即可进行贡献:
+
+```lua
+---此处我们举一个例子:这里是简要的写出函数的用途
+---@param amount number # 变化量
+---@param overtime boolean|nil # 忘了
+---@param cause idk # 造成伤害的原因
+---@param ignore_invincible boolean|nil # 无视无敌
+---@param afflicter idk # 造成伤害的实体
+---@param ignore_absorb boolean|nil # 无视吸收
+---@return number # 返回伤害值,注意 `符号`
+---author: lan
+function health:DoDelta(amount,overtime,cause,ignore_invincible,afflicter,ignore_absorb)
+end
+```
+
+以上是某一个组件中的一个方法:
+
+- 第一行写函数用途
+- 参数以及返回值注释:
+```---@param 参数名(已自动生成) 类型 # 注释```
+```---@return 类型```
+- 当参数不可以丢弃时,请紧跟着return另起一行帮我加上:
+```---@nodiscard```
+- 当参数类型有多个时,请用 `|` 分割
+```---@param cause string|ent|nil # 可以是字符串,实体或者nil```
+- 注释在 `#` 后面写,支持简单的markdown格式, 换行请用 `<br>`
