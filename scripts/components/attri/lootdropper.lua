@@ -1,21 +1,21 @@
 ---@meta
 
 ---@class component_lootdropper
----@field inst idk
----@field numrandomloot idk
----@field randomloot idk
----@field chancerandomloot idk
----@field totalrandomweight idk
----@field chanceloot idk
----@field ifnotchanceloot idk
----@field droppingchanceloot idk
----@field loot idk
----@field chanceloottable idk
----@field trappable idk
----@field droprecipeloot idk
----@field lootfn idk
----@field flingtargetpos idk
----@field flingtargetvariance idk
----@field lootsetupfn idk
----@field randomhauntedloot idk
----@field totalhauntedrandomweight idk
+---@field inst ent #组件所挂载的实体
+---@field numrandomloot number|nil #默认nil,加权随机掉落的触发次数,大于0时才启用随机掉落
+---@field randomloot table|nil #默认nil,加权随机掉落表 { {prefab=string, weight=number}, ... }
+---@field chancerandomloot number|nil #默认nil,0~1概率值，触发随机掉落的几率
+---@field totalrandomweight number|nil #默认nil,加权随机掉落总权重
+---@field chanceloot table|nil #默认nil,概率随机掉落表 { {prefab=string, chance=number}, ... }
+---@field ifnotchanceloot table|nil #默认nil,没有触发概率随机掉落时使用的掉落表 { {prefab=string}, ... }
+---@field droppingchanceloot boolean #默认false,是否已触发概率掉落
+---@field loot table|nil #默认nil,固定掉落列表 {prefab1, prefab2, ...}
+---@field chanceloottable string|nil #默认nil,全局共享掉落表名称
+---@field trappable boolean #默认true,是否可被陷阱捕获?,坦白的说我也不知道这个干嘛用的
+---@field droprecipeloot boolean #默认true,是否启用根据配方掉落材料
+---@field lootfn function|nil #默认是nil,疑似是lootsetupfn写错了,建议不要管这个字段
+---@field flingtargetpos Vector3|nil #默认nil,物品抛射目标的坐标,默认向全圆周抛射
+---@field flingtargetvariance number|nil #默认nil,抛射角度随机偏移弧度值
+---@field lootsetupfn function|nil #默认nil,用于动态配置掉落参数的回调函数
+---@field randomhauntedloot table|nil #默认nil,被作祟时的掉落表{ prefab = prefab, weight = weight }
+---@field totalhauntedrandomweight number #默认0,幽灵形态掉落总权重
