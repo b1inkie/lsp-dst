@@ -2,14 +2,14 @@
 
 ---@class component_lootdropper
 ---@field inst ent #组件所挂载的实体
----@field numrandomloot number|nil #默认nil,加权随机掉落的触发次数,大于0时才启用随机掉落
----@field randomloot table|nil #默认nil,加权随机掉落表 { {prefab=string, weight=number}, ... }
----@field chancerandomloot number|nil #默认nil,0~1概率值，触发随机掉落的几率
+---@field numrandomloot number|nil #默认nil,触发加权随机掉落后抽取随机掉落物的次数,大于0时才启用随机掉落
+---@field randomloot nil|{prefab:PrefabID, weight:number}[] #默认nil,加权随机掉落表
+---@field chancerandomloot number|nil #默认nil,0~1概率值，触发加权随机掉落的几率
 ---@field totalrandomweight number|nil #默认nil,加权随机掉落总权重
----@field chanceloot nil|{prefab: PrefabID, chance: number}[] #默认nil,概率随机掉落表 { {prefab=string, chance=number}, ... }
----@field ifnotchanceloot nil|{prefab: PrefabID}[] #默认nil,没有触发概率随机掉落时使用的掉落表 { {prefab=string}, ... }
+---@field chanceloot nil|{prefab:PrefabID, chance:number}[] #默认nil,概率随机掉落表
+---@field ifnotchanceloot nil|{prefab:PrefabID}[] #默认nil,没有触发概率随机掉落时使用的掉落表
 ---@field droppingchanceloot boolean #默认false,是否已触发概率掉落
----@field loot nil|PrefabID[] #默认nil,固定掉落列表 {prefab1, prefab2, ...}
+---@field loot nil|{prefab:PrefabID} #默认nil,固定掉落列表
 ---@field chanceloottable string|nil #默认nil,全局共享掉落表名称
 ---@field trappable boolean #默认true,是否可被陷阱捕获?,坦白的说我也不知道这个干嘛用的
 ---@field droprecipeloot boolean #默认true,是否启用根据配方掉落材料
@@ -17,5 +17,5 @@
 ---@field flingtargetpos Vector3|nil #默认nil,物品抛射目标的坐标,默认向全圆周抛射
 ---@field flingtargetvariance number|nil #默认nil,抛射角度随机偏移弧度值
 ---@field lootsetupfn function|nil #默认nil,用于动态配置掉落参数的回调函数
----@field randomhauntedloot nil|{prefab: PrefabID, weight: number}[] #默认nil,被作祟时的掉落表{ prefab = prefab, weight = weight }
----@field totalhauntedrandomweight number #默认0,幽灵形态掉落总权重
+---@field randomhauntedloot nil|{prefab:PrefabID, weight:number}[] #默认nil,被作祟时的掉落表
+---@field totalhauntedrandomweight number #默认0,被作祟时掉落总权重
