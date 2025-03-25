@@ -11,6 +11,7 @@ end
 
 ---检查机器是否处于开启状态
 ---@return boolean
+---@nodiscard
 ---author: mango
 function machine:IsOn()
 end
@@ -37,6 +38,7 @@ end
 
 ---检查机器是否可以交互
 ---@return boolean
+---@nodiscard
 ---author: mango
 function machine:CanInteract()
 end

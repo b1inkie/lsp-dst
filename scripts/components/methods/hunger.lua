@@ -10,6 +10,7 @@ end
 
 ---检查是否处于饥饿状态(饥饿度为0)
 ---@return boolean # 是否饥饿
+---@nodiscard 
 ---author: mango
 function hunger:IsStarving()
 end
@@ -72,6 +73,7 @@ end
 
 ---获取当前饥饿度百分比
 ---@return number # 0-1之间的值
+---@nodiscard
 ---author: mango
 function hunger:GetPercent()
 end
@@ -91,6 +93,7 @@ end
 
 ---检查饥饿度是否暂停下降
 ---@return boolean # 是否暂停
+---@nodiscard
 ---author: mango
 function hunger:IsPaused()
 end

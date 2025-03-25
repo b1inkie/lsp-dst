@@ -48,12 +48,14 @@ end
 
 ---获取法术名称
 ---@return string|nil #
+---@nodiscard
 ---author: mango
 function spellbook:GetSpellName()
 end
 
 ---检查是否有法术执行函数
 ---@return boolean
+---@nodiscard
 ---author: mango
 function spellbook:HasSpellFn()
 end
@@ -72,6 +74,7 @@ end
 
 ---获取当前选择的法术编号
 ---@return number|nil #法术编号
+---@nodiscard
 ---author: mango
 function spellbook:GetSelectedSpell()
 end
@@ -91,6 +94,8 @@ end
 
 ---检查spellbook是否可被玩家使用
 ---@param user ent # 使用者
+---@return boolean
+---@nodiscard
 ---author: mango
 function spellbook:CanBeUsedBy(user)
 end
@@ -108,6 +113,7 @@ end
 
 ---获取法术对应动作
 ---@return string|nil #ACTIONS
+---@nodiscard
 function spellbook:GetSpellAction()
 end
 
@@ -124,5 +130,6 @@ end
 ---检查spellbook是否应该打开
 ---@param user ent #使用者
 ---@return boolean #是否应该打开
+---@nodiscard
 function spellbook:ShouldOpen(user)
 end
