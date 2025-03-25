@@ -38,7 +38,7 @@ end
 function groundpounder:GetDebugString()
 end
 
----根据传入的位置信息在每个撞击环上生成数个随机的点
+---根据传入的位置信息在每个撞击环上生成数个点
 ---<br>点的作用：1.特效的生成2.实体的摧毁、弹开、攻击（点模式）
 ---@param pt Vector3 # 震地攻击每个环上的撞击点
 ---@return Vector3
