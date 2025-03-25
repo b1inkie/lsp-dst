@@ -11,6 +11,7 @@ end
 
 ---设置理智模式（已弃用，有定义但函数体为空）
 ---@param mode idk #
+---@deprecated
 ---author:nullptr
 function sanity:SetSanityMode(mode)
 end
