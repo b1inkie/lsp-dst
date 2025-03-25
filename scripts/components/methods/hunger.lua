@@ -3,102 +3,114 @@
 ---@class component_hunger
 local hunger = {}
 
----
----author: 
+---恢复饥饿度下降
+---author: mango
 function hunger:Resume()
 end
 
----
----author: 
+---检查是否处于饥饿状态(饥饿度为0)
+---@return boolean # 是否饥饿
+---@nodiscard 
+---author: mango
 function hunger:IsStarving()
 end
 
----
----@param amount idk # 
----author: 
+---设置最大饥饿度并重置当前值
+---@param amount number # 
+---author: mango
 function hunger:SetMax(amount)
 end
 
----
----@param rate idk # 
----author: 
+---设置饥饿下降速率
+---@param rate number # 每秒下降值
+---author: mango
 function hunger:SetRate(rate)
 end
 
----
----@param fn idk # 
----author: 
+---设置自定义饥饿函数，替代默认的健康伤害
+---@param fn function # 自定义函数，参数为(inst, dt)
+---author: mango
 function hunger:SetOverrideStarveFn(fn)
 end
 
----
----@param p idk # 
----@param overtime idk # 
----author: 
+---设置饥饿度百分比
+---@param p number # 0-1之间的百分比值 
+---@param overtime boolean|nil # 是否为随时间变化 
+---author: mango
 function hunger:SetPercent(p,overtime)
 end
 
----
----@param data idk # 
----author: 
+---加载组件状态
+---@param data table # 
+---author: mango
 function hunger:OnLoad(data)
 end
 
----
----@param rate idk # 
----author: 
+---设置饥饿状态下受到的伤害
+---@param rate number # 每秒伤害值
+---author: mango
 function hunger:SetKillRate(rate)
 end
 
----
----@param dt idk # 
----@param ignore_damage idk # 
----author: 
+---按时间减少饥饿度
+---@param dt number # 时间差(秒) 
+---@param ignore_damage boolean|nil # 是否忽略饥饿伤害
+---author: mango
 function hunger:DoDec(dt,ignore_damage)
 end
 
----
----@param newinst idk # 
----author: 
+---将饥饿度状态转移到新实体
+---@param newinst ent # 
+---author: mango
 function hunger:TransferComponent(newinst)
 end
 
----
----@param dt idk # 
----author: 
+---处理长时间更新
+---@param dt number # 时间差(秒) 
+---author: mango
 function hunger:LongUpdate(dt)
 end
 
----
----author: 
+---获取当前饥饿度百分比
+---@return number # 0-1之间的值
+---@nodiscard
+---author: mango
 function hunger:GetPercent()
 end
 
----
----@param delta idk # 
----@param overtime idk # 
----@param ignore_invincible idk # 
----author: 
+---增加或减少饥饿度
+---@param delta number # 饥饿度变化量
+---@param overtime boolean|nil # 是否为随时间变化 
+---@param ignore_invincible boolean|nil # 是否忽略无敌状态 
+---author: mango
 function hunger:DoDelta(delta,overtime,ignore_invincible)
 end
 
----
----author: 
+---保存组件状态
+---author: mango
 function hunger:OnSave()
 end
 
----
----author: 
+---检查饥饿度是否暂停下降
+---@return boolean # 是否暂停
+---@nodiscard
+---author: mango
 function hunger:IsPaused()
 end
 
----
----author: 
+---获取调试信息字符串
+---@return string # 调试信息
+---author: mango
 function hunger:GetDebugString()
 end
 
----
----author: 
+---暂停饥饿度下降
+---author: mango
 function hunger:Pause()
 end
 
+---设置具体饥饿度值
+---@param current number # 新的饥饿度值
+---@param overtime boolean|nil # 是否为随时间变化
+function hunger:SetCurrent(current, overtime)
+end
