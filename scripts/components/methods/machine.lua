@@ -3,53 +3,54 @@
 ---@class component_machine
 local machine = {}
 
----组件如何加载数据的方法
----@param data any #你要保存的数据 
----author: 观测分析思考
+---加载组件状态
+---@param data table # 
+---author: mango
 function machine:OnLoad(data)
 end
 
----检查机器是否开启的方法
+---检查机器是否处于开启状态
 ---@return boolean
----author: 观测分析思考
+---@nodiscard
+---author: mango
 function machine:IsOn()
 end
 
----开启机器的方法
----author: 观测分析思考
+---打开机器，启动冷却时间,调用回调函数并触发事件
+---author: mango
 function machine:TurnOn()
 end
 
----关闭机器的方法
----author: 观测分析思考
+---关闭机器，启动冷却时间，调用回调函数并触发事件
+---author: mango
 function machine:TurnOff()
 end
 
----获取调试信息的方法
----@return string #具体返回信息："on=%s, cooldowntime=%2.2f, oncooldown=%s"
----author: 观测分析思考
+---获取调试信息字符串：冷却时间+是否处于冷却状态
+---author: mango
 function machine:GetDebugString()
 end
 
----保存数据的方法
----author: 观测分析思考
+---保存组件状态
+---author: mango
 function machine:OnSave()
 end
 
----检查是否可以交互的方法
+---检查机器是否可以交互
 ---@return boolean
----author: 观测分析思考
+---@nodiscard
+---author: mango
 function machine:CanInteract()
 end
 
----当组件从实体移除时调用的方法
----author: 观测分析思考
+---从实体移除组件时清理相关标签
+---author: mango
 function machine:OnRemoveFromEntity()
 end
 
----设置地面使用限制
----@param groundonly boolean # ture为限制在地面，false为不限制(应该?)
----author: 观测分析思考
+---设置机器是否只能在地面使用
+---@param groundonly boolean # 
+---author: mango
 function machine:SetGroundOnlyMachine(groundonly)
 end
 
