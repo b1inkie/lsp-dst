@@ -63,13 +63,14 @@ end
 function entityscript:GetDebuff(name)
 end
 
----EntityScript: 
+---EntityScript: 施加buff
 ---@param name idk # 
 ---@param prefab idk # 
 ---@param data idk # 
 ---@param skip_test idk # 
 ---@param pre_buff_fn idk # 
----author: 
+---如果你用的是插件生成的模版,那么名字前面还要加上 `buff_` 前缀, 这一点和官方是一致的<br>
+---author: lan
 function entityscript:AddDebuff(name,prefab,data,skip_test,pre_buff_fn)
 end
 
