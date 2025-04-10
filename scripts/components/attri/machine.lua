@@ -1,11 +1,11 @@
 ---@meta
 
 ---@class component_machine
----@field inst idk
----@field turnonfn idk
----@field turnofffn idk
----@field ison idk
----@field cooldowntime idk
----@field oncooldown idk
----@field enabled idk
----@field groundonly idk
+---@field inst ent
+---@field turnonfn nil|fun(inst: ent) 开机回调
+---@field turnofffn nil|fun(inst: ent) 关机回调
+---@field ison boolean 默认false 开关机状态指示
+---@field cooldowntime number 默认3，开关机冷却时间
+---@field oncooldown boolean 默认false,处于冷却状态的标志符
+---@field enabled boolean 默认true，是否启用机器的标志符
+---@field groundonly boolean 无默认值，是否只能在地面使用的标志符
