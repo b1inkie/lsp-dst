@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_wereness
----@field inst idk
+---@field inst ent
 ---@field max idk
 ---@field current idk
 ---@field _old idk

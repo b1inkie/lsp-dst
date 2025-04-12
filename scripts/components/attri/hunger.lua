@@ -9,4 +9,4 @@
 ---@field overridestarvefn idk
 ---@field burning idk
 ---@field burnrate idk
----@field burnratemodifiers idk
+---@field burnratemodifiers SourceModifierList
