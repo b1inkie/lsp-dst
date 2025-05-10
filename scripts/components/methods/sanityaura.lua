@@ -12,6 +12,7 @@ end
 ---获取对observer的理智光环，具体计算详见此函数
 ---<br>影响因素：距离平方distsq、动态光环函数aurafn、动态衰减函数fallofffn
 ---@param observer ent # 观察者，一般为有sanity组件的实体，如人物
+---@return number # 最终observer受到的理智光环值
 ---author:nullptr
 function sanityaura:GetAura(observer)
 end
