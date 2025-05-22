@@ -86,7 +86,7 @@
 ---| "brushed" # ※事件 ID: brushed <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "bucked" # ※事件 ID: bucked <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "bufferedcastaoe" # ※事件 ID: bufferedcastaoe <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "builditem" # ※事件 ID: builditem <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "builditem" # ※事件 ID: builditem <br>※直译名: 制作东西 <br>※详述: 玩家制作东西 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "buildstructure" # ※事件 ID: buildstructure <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "buildsuccess" # ※事件 ID: buildsuccess <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "burnt" # ※事件 ID: burnt <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
@@ -290,7 +290,7 @@
 ---| "fencerotated" # ※事件 ID: fencerotated <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "finish_rift" # ※事件 ID: finish_rift <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "finished_leaving" # ※事件 ID: finished_leaving <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "finishedwork" # ※事件 ID: finishedwork <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "finishedwork" # ※事件 ID: finishedwork <br>※直译名: 完成work <br>※详述: 玩家完成work时(例如凿完一座矿) <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "finishplowing" # ※事件 ID: finishplowing <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "finishseamlessplayerswap" # ※事件 ID: finishseamlessplayerswap <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "firedamage" # ※事件 ID: firedamage <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

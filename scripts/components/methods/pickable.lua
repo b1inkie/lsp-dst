@@ -96,7 +96,7 @@ function pickable:SetOnRegenFn(fn)
 end
 
 ---
----@param picker idk # 
+---@param picker ent|nil # 
 ---author: 
 function pickable:Pick(picker)
 end

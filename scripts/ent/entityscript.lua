@@ -411,7 +411,7 @@ function entityscript:GetPositionAdjacentTo(target,distance)
 end
 
 ---EntityScript: 实体是否有其中一个标签
----@param ... string # 标签
+---@param ... PrefabID # 标签
 ---author: lan
 function entityscript:HasOneOfTags(...)
 end

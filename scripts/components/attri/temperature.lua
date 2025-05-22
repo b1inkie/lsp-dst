@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_temperature
----@field inst idk
+---@field inst ent
 ---@field settemp idk
 ---@field current idk
 ---@field maxtemp idk

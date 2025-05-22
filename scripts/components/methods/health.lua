@@ -1,6 +1,6 @@
 ---@meta
 
----@class component_health
+---@class component_health # 生命值组件
 local health = {}
 
 ---设置伤害吸收值

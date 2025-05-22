@@ -16,9 +16,9 @@ function SourceModifierList:Get() end
 function SourceModifierList:IsEmpty() end
 
 ---
----@param source idk #
----@param m idk #
----@param key idk #
+---@param source ent|string #
+---@param m number #
+---@param key string #
 ---
 ---author: 
 function SourceModifierList:SetModifier(source, m, key) end

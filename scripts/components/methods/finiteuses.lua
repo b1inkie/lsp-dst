@@ -15,7 +15,7 @@ function finiteuses:IgnoresCombatDurabilityLoss()
 end
 
 ---设置特定动作的耐久消耗
----@param action string # 动作类型
+---@param action any # 动作类型
 ---@param uses number # 该动作消耗量
 ---author: mango
 function finiteuses:SetConsumption(action,uses)
