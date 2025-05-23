@@ -15,7 +15,7 @@ function grouptargeter:IsTargeting(target)
 end
 
 ---获取当前实体拥有的目标表
----@return table
+---@return table<ent,number> # 整个表里所有角色的权重加起来是1
 ---@nodiscard
 ---author: KP
 function grouptargeter:GetTargets()

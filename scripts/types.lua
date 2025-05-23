@@ -19,7 +19,7 @@ function Vector3:Get()end
 
 ---@alias asset_type string # 资源类型
 ---| '"ANIM"' # .zip
----| '"ALTAS"' # .xml
+---| '"ATLAS"' # .xml
 ---| '"IMAGE"' # .tex
 ---| '"SCRIPT"' # .lua
 ---| '"SOUND"' # .fsb
