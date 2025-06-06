@@ -443,9 +443,7 @@
 ---@class event_data_question # 
 
 ---@class event_data_cheer # 
----@field text idk # 
----@field {winner idk # 
----@field say idk # 
+---@field text idk #
 
 ---@class event_data_hide # 
 
