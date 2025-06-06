@@ -1,3 +1,5 @@
+---@meta
+
 ---@class event_data_onpickupitem # 
 ---@field item idk # 
 
