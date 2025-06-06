@@ -2842,9 +2842,11 @@ function CreateAreaEmitter(polygon,centroid)
 end
 
 ---
----UNKNOWN
+---随机点生成器: 圆形(返回的是一个随机点生成函数)
 ---
----@param radius idk 
+---@param radius number 
+---@return fun():number,number
+---@nodiscard
 ---所在文件: scripts/emitters.lua
 function CreateCircleEmitter(radius)
 end

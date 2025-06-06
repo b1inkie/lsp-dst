@@ -2,7 +2,7 @@
 
 ---@class component_pinnable
 ---@field attacks_since_pinned idk
----@field inst idk
+---@field inst ent
 ---@field canbepinned idk
 ---@field stuck idk
 ---@field wearofftime idk

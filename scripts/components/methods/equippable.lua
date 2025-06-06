@@ -40,7 +40,7 @@ function equippable:SetDappernessFn(fn)
 end
 
 ---设置穿戴回调函数
----@param fn fun(inst: ent,owner: ent,from_ground: any) # 穿戴回调函数
+---@param fn fun(this: ent,owner: ent,from_ground: any) # 穿戴回调函数
 ---author: lan
 function equippable:SetOnEquip(fn)
 end
@@ -93,7 +93,7 @@ function equippable:IsEquipped()
 end
 
 ---设置卸除回调函数
----@param fn fun(inst: ent,owner: ent) # 卸除回调函数
+---@param fn fun(this: ent,owner: ent) # 卸除回调函数
 ---author: lan
 function equippable:SetOnUnequip(fn)
 end

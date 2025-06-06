@@ -9,7 +9,7 @@ function inventoryitem:IsWet()
 end
 
 ---设置放入库存时的回调函数
----@param fn fun(inst: ent,owner: ent) # 放入库存时的回调函数
+---@param fn fun(this: ent,owner: ent) # 放入库存时的回调函数
 ---author: lan
 function inventoryitem:SetOnPutInInventoryFn(fn)
 end

@@ -476,7 +476,7 @@ end
 function AnimState:GetHistoryData()
 end
 
----设置通道叠加颜色
+---设置通道叠加颜色,会受原色的影响,恢复原来的颜色 只要设置RGBA都为`0`即可
 ---@param symbol string # 通道名
 ---@param r number # 红色通道(0~1)
 ---@param g number # 绿色通道(0~1)

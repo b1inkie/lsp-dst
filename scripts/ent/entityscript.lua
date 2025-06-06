@@ -64,8 +64,8 @@ function entityscript:GetDebuff(name)
 end
 
 ---EntityScript: 施加buff
----@param name idk # 
----@param prefab idk # 
+---@param name string # 
+---@param prefab string # 
 ---@param data idk # 
 ---@param skip_test idk # 
 ---@param pre_buff_fn idk # 
@@ -80,9 +80,11 @@ end
 function entityscript:RemoveDebuff(name)
 end
 
----EntityScript: 
----@param name idk # 
----author: 
+---EntityScript: 是否有某个buff
+---@param name string # 
+---@return boolean
+---@nodiscard
+---author: lan
 function entityscript:HasDebuff(name)
 end
 

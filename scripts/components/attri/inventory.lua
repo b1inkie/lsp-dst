@@ -8,7 +8,7 @@
 ---@field ignorefull idk
 ---@field silentfull idk
 ---@field ignoresound idk
----@field itemslots idk
+---@field itemslots table<number,ent>
 ---@field maxslots idk
 ---@field equipslots table<EQUIPSLOTS, ent|nil>
 ---@field heavylifting idk

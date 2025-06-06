@@ -28,7 +28,7 @@ function weapon:GetDamage(attacker,target)
 end
 
 ---设置武器击中回调函数, 同SetAttackCallback
----@param fn fun(inst: ent,attacker: ent,target: ent) # 击中后执行的函数
+---@param fn fun(this: ent,attacker: ent,target: ent) # 击中后执行的函数
 ---author: Runar
 function weapon:SetOnAttack(fn)
 end
@@ -84,7 +84,7 @@ function weapon:SetElectric(damage_mult,wet_damage_mult)
 end
 
 ---设置投射物(添加远程攻击)
----@param projectile string # 投射物prefab
+---@param projectile string|nil # 投射物prefab
 ---author: lan
 function weapon:SetProjectile(projectile)
 end

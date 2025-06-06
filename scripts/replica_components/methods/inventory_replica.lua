@@ -253,9 +253,11 @@ end
 function replica_inventory:GetItems()
 end
 
----
----@param eslot idk # 
----author: 
+---通过槽位获取装备
+---@param eslot EQUIPSLOTS # 
+---@return ent|nil
+---@nodiscard
+---author: lan
 function replica_inventory:GetEquippedItem(eslot)
 end
 
