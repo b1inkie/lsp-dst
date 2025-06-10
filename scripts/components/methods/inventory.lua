@@ -5,8 +5,8 @@ local inventory = {}
 
 ---给予库存物品
 ---@param item ent # 物品
----@param slot idk # 
----@param src_pos idk # 
+---@param slot integer|nil # 放入
+---@param src_pos Vector3|nil # 来源坐标 箱子里的物品到背包会有一个动画显示物品移动轨迹。
 ---author: 
 function inventory:GiveItem(item,slot,src_pos)
 end

@@ -160,9 +160,11 @@ end
 function replica_container:PutAllOfActiveItemInSlot(slot)
 end
 
----
----@param slot idk # 
----author: 
+---根据槽位获取物品
+---@param slot integer|nil # 槽位
+---@return ent|nil # 物品
+---@nodiscard
+---author: lan
 function replica_container:GetItemInSlot(slot)
 end
 

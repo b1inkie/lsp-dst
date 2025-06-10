@@ -9,9 +9,9 @@ local complexprojectile = {}
 function complexprojectile:SetHorizontalSpeed(speed)
 end
 
----
----@param fn idk # 
----author: 
+---设置击中回调函数
+---@param fn fun(this:ent,attacker:ent|nil,target:ent|nil) # 
+---author: lan
 function complexprojectile:SetOnHit(fn)
 end
 

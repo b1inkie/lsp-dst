@@ -4,7 +4,7 @@
 local locomotor = {}
 
 ---
----@param source ent # 
+---@param source ent # 这里的source必须是实体 不能是string
 ---@param key string # 
 ---@param m number # 
 ---author: 
@@ -221,7 +221,7 @@ function locomotor:RunForward(direct)
 end
 
 ---
----@param source idk # 
+---@param source ent # 
 ---@param key idk # 
 ---author: 
 function locomotor:RemoveExternalSpeedMultiplier(source,key)

@@ -168,9 +168,10 @@ function container:DropEverythingUpToMaxStacks(maxstacks,drop_pos)
 end
 
 ---根据栏号获取物品
----@param slot number # 栏序号
----@return ent # 物品
----author: Runar
+---@param slot integer|nil # 栏序号
+---@return ent|nil # 物品
+---@nodiscard
+---author: Runar , fixed by lan
 function container:GetItemInSlot(slot)
 end
 

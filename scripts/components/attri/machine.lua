@@ -5,7 +5,7 @@
 ---@field turnonfn nil|fun(inst: ent) 开机回调
 ---@field turnofffn nil|fun(inst: ent) 关机回调
 ---@field ison boolean 默认false 开关机状态指示
----@field cooldowntime number 默认3，开关机冷却时间
+---@field cooldowntime number 默认3，开关机冷却时间, 当处于cd时,会有`cooldown`这个tag <br> 由于组件动作的testfn会判断有没有`cooldown`这个tag,因此可以将这个值设为0,在耐久永久时添加这个tag,修复时移除这个tag,来实现无耐久不允许开机的功能
 ---@field oncooldown boolean 默认false,处于冷却状态的标志符
 ---@field enabled boolean 默认true，是否启用机器的标志符
 ---@field groundonly boolean 无默认值，是否只能在地面使用的标志符

@@ -4940,7 +4940,7 @@ end
 ---
 ---@param namespace string 命名空间(写mod名即可)
 ---@param name string 当前命名空间下的rpc名字
----@param fn fun(player: ent,...: any)
+---@param fn fun(...: any) # 客机的玩家为 ThePlayer
 ---所在文件: scripts/modutil.lua
 function AddClientModRPCHandler(namespace,name,fn)
 end
@@ -6615,12 +6615,17 @@ function GetLine(inst,line,modifier,nil_missing)
 end
 
 ---
----UNKNOWN
+---格式化字符串 <br> usage: <br> subfmt("this is my {adjective} string, read it {number} times!", {adjective="cool", number="five"}) <br> => "this is my cool string, read it five times"
 ---
----@param s idk 
----@param tab idk 
+---@param s string # 待格式化的字符串, 用 `{key}` 作为占位符
+---@param dict table # 字典, `key` 为占位符, `value` 为替换的值
+---@return string
+---@nodiscard
 ---所在文件: scripts/stringutil.lua
-function subfmt(s,tab)
+---
+---author: lan
+function subfmt(s,dict)
+    return (s:gsub('(%b{})', function(w) return dict[w:sub(2, -2)] or w end))
 end
 
 ---

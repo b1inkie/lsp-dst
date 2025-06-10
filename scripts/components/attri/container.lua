@@ -9,7 +9,7 @@
 ---@field skipclosesnd idk
 ---@field skipautoclose idk
 ---@field acceptsstacks idk
----@field usespecificslotsforitems idk
+---@field usespecificslotsforitems boolean|nil 是否使用特定的槽位,不填默认为false <br> 这个填true的时候,`container:GetSpecificSlotForItem` 会在 `shift+左键` 时触发, 返回的数值就是物品应该去的槽位 <br> 可以通过勾上述方法或者写itemtestfn, 来实现对槽位的控制, 比如写翻页容器时会用到这一点
 ---@field issidewidget idk
 ---@field type idk
 ---@field widget idk
