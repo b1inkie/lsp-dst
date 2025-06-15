@@ -7083,9 +7083,11 @@ function RailUserCommandRemove(name)
 end
 
 ---
----UNKNOWN
+---通过玩家userid获取玩家
 ---
----@param input idk 
+---@param input string # userid, 字符串, 只有player有 
+---@return ent|nil # 玩家
+---@nodiscard
 ---所在文件: scripts/usercommands.lua
 function UserToPlayer(input)
 end

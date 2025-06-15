@@ -9,8 +9,8 @@
 ---@class event_data_opencontainer # 
 ---@field container idk # 
 
----@class event_data_working # 
----@field target idk # 
+---@class event_data_working # worker推的事件, 每次work的时候推, 比如砍树
+---@field target ent # 被work的目标
 
 ---@class event_data_talkedto # 
 

@@ -1208,7 +1208,7 @@
 ---| "wonteatfood" # ※事件 ID: wonteatfood <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "worked" # ※事件 ID: worked <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "workfinished" # ※事件 ID: workfinished <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "working" # ※事件 ID: working <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "working" # ※事件 ID: working <br>※直译名:  <br>※详述: worker推的事件, 每次work的时候推, 比如砍树 <br>※data表: <br>※author: lan <br>※拉取时间: 2024-12-11 18:27
 ---| "workinghit" # ※事件 ID: workinghit <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "workmoonbase" # ※事件 ID: workmoonbase <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "worldmapsetsize" # ※事件 ID: worldmapsetsize <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

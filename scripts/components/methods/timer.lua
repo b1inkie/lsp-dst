@@ -13,8 +13,8 @@ end
 --- 启用一个计时器并根据传入的参数设置该计时器的相关属性  
 ---@param name string # 计时器的名字
 ---@param time number # 计时器的持续时间
----@param paused boolean # 计时器是否在此时设定为暂停状态
----@param initialtime_override number # 计时器此时的初始时间
+---@param paused boolean|nil # 计时器是否在此时设定为暂停状态
+---@param initialtime_override number|nil # 计时器此时的初始时间
 ---author: KP
 function timer:StartTimer(name,time,paused,initialtime_override)
 end

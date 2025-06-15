@@ -34,7 +34,7 @@
 ---@field hiteffectsymbol idk
 ---@field canattack idk
 ---@field lasttargetGUID idk
----@field target idk
+---@field target ent|nil
 ---@field panic_thresh idk
 ---@field forcefacing idk
 ---@field bonusdamagefn idk
