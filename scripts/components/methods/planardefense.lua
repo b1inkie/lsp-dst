@@ -3,64 +3,68 @@
 ---@class component_planardefense
 local planardefense = {}
 
----
----author: 
+---获取基础位面防御值
+---author:星璃
+---@return number #基础位面防御
 function planardefense:GetBaseDefense()
 end
 
----
----@param src idk # 
----@param key idk # 
----author: 
-function planardefense:RemoveBonus(src,key)
+---移除外部加成（加法）
+---@param src any #来源
+---@param key any #标识
+---author:星璃
+function planardefense:RemoveBonus(src, key)
 end
 
----
----author: 
+---获取调试字符串
+---author:星璃
+---@return string #调试信息
 function planardefense:GetDebugString()
 end
 
----
----@param src idk # 
----@param mult idk # 
----@param key idk # 
----author: 
-function planardefense:AddMultiplier(src,mult,key)
+---添加外部乘法加成
+---@param src any #来源
+---@param mult number #倍率
+---@param key any #标识
+---author:星璃
+function planardefense:AddMultiplier(src, mult, key)
 end
 
----
----author: 
+---获取所有外部加成（加法）
+---author:星璃
+---@return number #加成总和
 function planardefense:GetBonus()
 end
 
----
----@param src idk # 
----@param bonus idk # 
----@param key idk # 
----author: 
-function planardefense:AddBonus(src,bonus,key)
+---添加外部加成（加法）
+---@param src any #来源
+---@param bonus number #加成值
+---@param key any #标识
+---author:星璃
+function planardefense:AddBonus(src, bonus, key)
 end
 
----
----author: 
+---获取所有外部乘法加成
+---author:星璃
+---@return number #乘法倍率
 function planardefense:GetMultiplier()
 end
 
----
----@param defense idk # 
----author: 
+---设置基础位面防御值
+---@param defense number #基础位面防御
+---author:星璃
 function planardefense:SetBaseDefense(defense)
 end
 
----
----@param src idk # 
----@param key idk # 
----author: 
-function planardefense:RemoveMultiplier(src,key)
+---移除外部乘法加成
+---@param src any #来源
+---@param key any #标识
+---author:星璃
+function planardefense:RemoveMultiplier(src, key)
 end
 
----
----author: 
+---获取最终位面防御值
+---author:星璃
+---@return number #最终位面防御
 function planardefense:GetDefense()
 end
-
