@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_stewer
----@field inst idk
+---@field inst ent
 ---@field done idk
 ---@field targettime idk
 ---@field task idk

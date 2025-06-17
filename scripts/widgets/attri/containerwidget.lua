@@ -12,5 +12,5 @@
 ---@field onitemlosefn idk #
 ---@field onitemgetfn idk #
 ---@field onrefreshfn idk #
----@field container idk #
+---@field container ent|nil #
 ---@field should_close_widget idk #
