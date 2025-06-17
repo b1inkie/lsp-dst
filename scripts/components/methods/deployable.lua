@@ -3,60 +3,67 @@
 ---@class component_deployable
 local deployable = {}
 
----
----@param pt idk # 
----@param mouseover idk # 
----@param deployer idk # 
----@param rot idk # 
----author: 
-function deployable:CanDeploy(pt,mouseover,deployer,rot)
+---判断当前位置是否可部署
+---@param pt Vector3 #目标点
+---@param mouseover boolean|nil #是否鼠标悬停
+---@param deployer ent|nil #部署者
+---@param rot number|nil #旋转角度
+---author:星璃
+---@return boolean #是否可部署
+---@nodiscard
+function deployable:CanDeploy(pt, mouseover, deployer, rot)
 end
 
----
----@param usegridplacer idk # 
----author: 
+---设置是否使用网格放置器
+---@param usegridplacer boolean #是否使用网格放置器
+---author:星璃
 function deployable:SetUseGridPlacer(usegridplacer)
 end
 
----
----@param spacing idk # 
----author: 
+---设置部署间距
+---@param spacing number #部署间距（DEPLOYSPACIN里的一个常量）
+---author:星璃
 function deployable:SetDeploySpacing(spacing)
 end
 
----
----@param pt idk # 
----@param deployer idk # 
----@param rot idk # 
----author: 
-function deployable:Deploy(pt,deployer,rot)
+---执行部署操作
+---@param pt Vector3 #目标点
+---@param deployer ent|nil #部署者
+---@param rot number|nil #旋转角度
+---author:星璃
+function deployable:Deploy(pt, deployer, rot)
 end
 
----
----@param mode idk # 
----author: 
+---设置部署模式
+---@param mode number #部署模式（DEPLOYMODE里的一个常量）
+---author:星璃
 function deployable:SetDeployMode(mode)
 end
 
----
----author: 
+---获取部署间距半径
+---author:星璃
+---@return number #部署半径
+---@nodiscard
 function deployable:DeploySpacingRadius()
 end
 
----
----@param deployer idk # 
----author: 
+---判断是否可被指定实体部署
+---@param deployer ent|nil #部署者
+---author:星璃
+---@return boolean #是否可部署
+---@nodiscard
 function deployable:IsDeployable(deployer)
 end
 
----
----author: 
+---组件被移除时的回调
+---author:星璃
 function deployable:OnRemoveFromEntity()
 end
 
----
----@param data idk # 
----author: 
+---设置部署动画覆盖
+---@param data any #动画数据
+---author:星璃
 function deployable:SetDeployTossSymbolOverride(data)
 end
+
 
