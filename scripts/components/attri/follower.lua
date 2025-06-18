@@ -1,20 +1,20 @@
 ---@meta
 
 ---@class component_follower
----@field inst idk
----@field leader idk
----@field targettime idk
----@field maxfollowtime idk
----@field canaccepttarget idk
----@field keepdeadleader idk
----@field keepleaderonattacked idk
----@field noleashing idk
----@field OnLeaderRemoved idk
----@field cached_player_join_fn idk
----@field cached_new_player_spawned_fn idk
----@field porttask idk
----@field _onleaderwake idk
----@field cached_player_leader_userid idk
----@field cached_player_leader_timeleft idk
----@field cached_player_leader_task idk
----@field task idk
+---@field inst ent #组件挂载的实体
+---@field leader ent|nil #当前跟随的跟随者实体
+---@field targettime number|nil #雇佣到期时间
+---@field maxfollowtime number|nil #最大雇佣时间
+---@field canaccepttarget boolean #是否可接受目标
+---@field keepdeadleader boolean|nil #死亡后是否仍然追随
+---@field keepleaderonattacked boolean|nil #被攻击时是否保持雇佣
+---@field noleashing boolean|nil #是否禁用跟随
+---@field OnLeaderRemoved fun()|nil #跟随者移除回调
+---@field cached_player_join_fn fun(world:ent, player:ent)|nil #缓存的玩家加入回调
+---@field cached_new_player_spawned_fn fun(world:ent, player:ent)|nil #缓存的新玩家生成回调
+---@field porttask thread|nil #传送任务
+---@field _onleaderwake fun()|nil #跟随者唤醒回调
+---@field cached_player_leader_userid string|nil #缓存的雇佣者（玩家）的用户名
+---@field cached_player_leader_timeleft number|nil #缓存的玩家雇佣剩余时间
+---@field cached_player_leader_task thread|nil #缓存的玩家雇佣任务
+---@field task thread|nil #雇佣倒计时任务
