@@ -288,7 +288,7 @@
 ---@field inspectable component_inspectable
 ---@field inspectaclesparticipant component_inspectaclesparticipant
 ---@field instrument component_instrument
----@field insulator component_insulator
+---@field insulator component_insulator # 这个组件是用于 夏天隔热 冬天防寒的, 翻译过来是绝缘
 ---@field inventory component_inventory
 ---@field inventoryitem component_inventoryitem
 ---@field inventoryitemholder component_inventoryitemholder

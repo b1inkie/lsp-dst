@@ -585,7 +585,7 @@
 ---| "spat" # ※标签ID: spat<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fishinghook" # ※标签ID: fishinghook<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ediblefish_meat" # ※标签ID: ediblefish_meat<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "gestaltprotection" # ※标签ID: gestaltprotection<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "gestaltprotection" # ※标签ID: gestaltprotection<br>※直译名: 不会被虚影(月灵)攻击 <br>※详述: 装备tag 不会被虚影(月灵)攻击 <br>※分类: 物品 | Inventory Item<br>※author: lan<br>※拉取时间: 2024-12-11 15:04
 ---| "sleeper" # ※标签ID: sleeper<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "berrythief" # ※标签ID: berrythief<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "telebase" # ※标签ID: telebase<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04

@@ -3,12 +3,12 @@
 ---@class component_insulator
 local insulator = {}
 
----设置为夏季绝缘类型
+---设置为夏季绝缘类型(夏天保持凉爽)
 ---author:星璃
 function insulator:SetSummer()
 end
 
----设置为冬季绝缘类型
+---设置为冬季绝缘类型(冬天防寒)
 ---author:星璃
 function insulator:SetWinter()
 end
@@ -20,7 +20,7 @@ function insulator:SetInsulation(val)
 end
 
 ---判断绝缘类型
----@param type string #绝缘类型
+---@param type 'winter'|'summer'|string #绝缘类型
 ---author:星璃
 ---@return boolean #是否为该类型
 ---@nodiscard
