@@ -3,35 +3,40 @@
 ---@class component_insulator
 local insulator = {}
 
----
----author: 
+---设置为夏季绝缘类型
+---author:星璃
 function insulator:SetSummer()
 end
 
----
----@param val idk # 
----author: 
-function insulator:SetInsulation(val)
-end
-
----
----@param type idk # 
----author: 
-function insulator:IsType(type)
-end
-
----
----author: 
-function insulator:GetInsulation()
-end
-
----
----author: 
+---设置为冬季绝缘类型
+---author:星璃
 function insulator:SetWinter()
 end
 
----
----author: 
-function insulator:GetType()
+---设置绝缘值
+---@param val number #绝缘值
+---author:星璃
+function insulator:SetInsulation(val)
 end
 
+---判断绝缘类型
+---@param type string #绝缘类型
+---author:星璃
+---@return boolean #是否为该类型
+---@nodiscard
+function insulator:IsType(type)
+end
+
+---获取绝缘值和类型
+---author:星璃
+---@return number, string #绝缘值, 绝缘类型
+---@nodiscard
+function insulator:GetInsulation()
+end
+
+---获取绝缘类型
+---author:星璃
+---@return string #绝缘类型,一般返回'summer'或'winter'
+---@nodiscard
+function insulator:GetType()
+end
