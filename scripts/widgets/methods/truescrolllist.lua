@@ -1,6 +1,48 @@
 ---@meta
 
 ---@class widget_truescrolllist: widget_widget
+---@overload fun(context:idk, create_widgets_fn:idk, update_fn:idk, scissor_x:idk, scissor_y:idk, scissor_width:idk, scissor_height:idk, scrollbar_offset:idk, scrollbar_height_offset:idk, scroll_per_click:idk): widget_truescrolllist
+---@field _ctor function #
+---@field context idk #
+---@field scroll_per_click idk #
+---@field control_up idk #
+---@field control_down idk #
+---@field control_scroll_repeat_time idk #
+---@field bg idk #
+---@field scissored_root idk #
+---@field scissor_preview idk #
+---@field list_root idk #
+---@field scissor_width idk #
+---@field scissor_height idk #
+---@field end_offset idk #
+---@field update_fn idk #
+---@field items_per_view idk #
+---@field repeat_time idk #
+---@field current_scroll_pos idk #
+---@field target_scroll_pos idk #
+---@field end_pos idk #
+---@field focused_widget_row idk #
+---@field focused_widget_index idk #
+---@field displayed_start_index idk #
+---@field scrollbar_offset idk #
+---@field scrollbar_height idk #
+---@field getnextitemindex idk #
+---@field focus_forward idk #
+---@field scroll_bar_container idk #
+---@field up_button idk #
+---@field last_up_button_time idk #
+---@field down_button idk #
+---@field last_down_button_time idk #
+---@field up_button_controllerhint idk #
+---@field down_button_controllerhint idk #
+---@field scroll_bar_line idk #
+---@field scroll_bar idk #
+---@field position_marker idk #
+---@field dragging idk #
+---@field saved_scroll_pos idk #
+---@field items idk #
+---@field total_rows idk #
+---@field itemfocus idk #
 local truescrolllist = {}
 
 ---

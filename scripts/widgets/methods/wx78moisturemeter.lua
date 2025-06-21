@@ -1,6 +1,23 @@
 ---@meta
 
 ---@class widget_wx78moisturemeter: widget_widget
+---@overload fun(owner:idk): widget_wx78moisturemeter
+---@field _ctor function #
+---@field owner idk #
+---@field moisture idk #
+---@field moisturedelta idk #
+---@field active idk #
+---@field backing idk #
+---@field anim idk #
+---@field circleframe idk #
+---@field arrowdir idk #
+---@field arrow idk #
+---@field marker idk #
+---@field right_sparks idk #
+---@field left_sparks idk #
+---@field ondorobotspark idk #
+---@field num idk #
+---@field animtime idk #
 local wx78moisturemeter = {}
 
 ---

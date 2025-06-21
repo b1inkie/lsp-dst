@@ -1,6 +1,8 @@
 ---@meta
 
 ---@class widget_widget
+---@overload fun(): widget_widget
+---@field _ctor function #
 local widget = {}
 
 ---

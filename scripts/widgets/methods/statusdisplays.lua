@@ -1,6 +1,57 @@
 ---@meta
 
 ---@class widget_statusdisplays: widget_widget
+---@overload fun(owner:idk): widget_statusdisplays
+---@field _ctor function #
+---@field modetask idk #
+---@field onhealthdelta idk #
+---@field onhungerdelta idk #
+---@field onsanitydelta idk #
+---@field onmoisturedelta idk #
+---@field ongotonplatform idk #
+---@field instantboatmeterclose idk #
+---@field ongotoffplatform idk #
+---@field onwerenessdelta idk #
+---@field oninspirationdelta idk #
+---@field oninspirationsongchanged idk #
+---@field onmightinessdelta idk #
+---@field onpethealthdirty idk #
+---@field onheartbuffdirty idk #
+---@field onavengetimedirty idk #
+---@field onpetskindirty idk #
+---@field onpethungerdelta idk #
+---@field onpethungerflags idk #
+---@field onpethungerbuild idk #
+---@field onshowpethunger idk #
+---@field onupgrademodulesenergylevelupdated idk #
+---@field onheartbonusdirty idk #
+---@field rezbutton_new_task idk #
+---@field rezbutton_lost_task idk #
+---@field owner idk #
+---@field column1 idk #
+---@field column2 idk #
+---@field column3 idk #
+---@field column4 idk #
+---@field column5 idk #
+---@field wereness idk #
+---@field inspirationbadge idk #
+---@field brain idk #
+---@field stomach idk #
+---@field heart idk #
+---@field healthpenalty idk #
+---@field moisturemeter idk #
+---@field boatmeter idk #
+---@field resurrectbutton idk #
+---@field resurrectbuttonfx idk #
+---@field isghostmode idk #
+---@field avengingghostbadge idk #
+---@field pethealthbadge idk #
+---@field mightybadge idk #
+---@field pethungerbadge idk #
+---@field layer idk #
+---@field isbig idk #
+---@field build idk #
+---@field previous_pulse idk #
 local statusdisplays = {}
 
 ---

@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_kitcoonpoop: widget_widget
+---@overload fun(kit:idk, gamescreen:idk, profile:idk): widget_kitcoonpoop
+---@field _ctor function #
+---@field kit idk #
+---@field gamescreen idk #
+---@field anim idk #
+---@field animstate idk #
+---@field onclick idk #
 local kitcoonpoop = {}
 
 ---

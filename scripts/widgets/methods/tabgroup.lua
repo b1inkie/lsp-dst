@@ -1,6 +1,15 @@
 ---@meta
 
 ---@class widget_tabgroup: widget_widget
+---@overload fun(): widget_tabgroup
+---@field _ctor function #
+---@field tabs idk #
+---@field spacing idk #
+---@field offset idk #
+---@field hideoffset idk #
+---@field selected idk #
+---@field base_pos idk #
+---@field shown idk #
 local tabgroup = {}
 
 ---

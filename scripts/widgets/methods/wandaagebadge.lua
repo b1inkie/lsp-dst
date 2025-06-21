@@ -1,6 +1,30 @@
 ---@meta
 
 ---@class widget_wandaagebadge: widget_badge
+---@overload fun(owner:idk): widget_wandaagebadge
+---@field _ctor function #
+---@field OVERRIDE_SYMBOL_BUILD idk #
+---@field default_symbol_build idk #
+---@field rate_time idk #
+---@field warning_precent idk #
+---@field health_precent idk #
+---@field year_hand idk #
+---@field days_hand idk #
+---@field effigyanim idk #
+---@field gravestoneeffigyanim idk #
+---@field effigy idk #
+---@field effigybreaksound idk #
+---@field bufficon idk #
+---@field buffsymbol idk #
+---@field corrosives idk #
+---@field _onremovecorrosive idk #
+---@field playing_pulse_loop idk #
+---@field acidsizzling idk #
+---@field hots idk #
+---@field _onremovehots idk #
+---@field healthpenalty idk #
+---@field pulsing idk #
+---@field turnofftask idk #
 local wandaagebadge = {}
 
 ---

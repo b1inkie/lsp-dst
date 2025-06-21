@@ -1,6 +1,16 @@
 ---@meta
 
 ---@class widget_inspectaclesover: widget_uianim
+---@overload fun(owner:idk): widget_inspectaclesover
+---@field _ctor function #
+---@field owner idk #
+---@field tz idk #
+---@field pinger idk #
+---@field pingtask idk #
+---@field BUFFEROVERRIDES idk #
+---@field PingerStop idk #
+---@field shown idk #
+---@field hidetask idk #
 local inspectaclesover = {}
 
 ---

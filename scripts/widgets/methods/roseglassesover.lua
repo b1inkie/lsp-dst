@@ -1,6 +1,11 @@
 ---@meta
 
 ---@class widget_roseglassesover: widget_uianim
+---@overload fun(owner:idk): widget_roseglassesover
+---@field _ctor function #
+---@field owner idk #
+---@field shown idk #
+---@field hidetask idk #
 local roseglassesover = {}
 
 ---

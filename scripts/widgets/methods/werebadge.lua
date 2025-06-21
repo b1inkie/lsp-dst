@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_werebadge: widget_badge
+---@overload fun(owner:idk): widget_werebadge
+---@field _ctor function #
+---@field circleframe2 idk #
+---@field sanityarrow idk #
+---@field val idk #
+---@field arrowdir idk #
+---@field mode idk #
 local werebadge = {}
 
 ---

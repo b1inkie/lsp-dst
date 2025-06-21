@@ -1,6 +1,9 @@
 ---@meta
 
 ---@class widget_video: widget_widget
+---@overload fun(): widget_video
+---@field _ctor function #
+---@field tint idk #
 local video = {}
 
 ---

@@ -1,6 +1,40 @@
 ---@meta
 
 ---@class widget_friendsmanager: widget_widget
+---@overload fun(manager:idk): widget_friendsmanager
+---@field _ctor function #
+---@field manager idk #
+---@field console idk #
+---@field btns idk #
+---@field refreshperiod idk #
+---@field numchatlines idk #
+---@field maxchatlines idk #
+---@field maxchatlinechars idk #
+---@field delay idk #
+---@field party idk #
+---@field invite idk #
+---@field chatbar idk #
+---@field chathistory idk #
+---@field chathistory2 idk #
+---@field checkediting idk #
+---@field friends idk #
+---@field windowwidth idk #
+---@field windowheight idk #
+---@field margin idk #
+---@field padding idk #
+---@field lineheight idk #
+---@field buttonheight idk #
+---@field contentwidth idk #
+---@field contentheight idk #
+---@field rootx idk #
+---@field rooty idk #
+---@field root idk #
+---@field bg idk #
+---@field friendstab idk #
+---@field partytab idk #
+---@field friendsbtn idk #
+---@field partybtn idk #
+---@field tab idk #
 local friendsmanager = {}
 
 ---

@@ -1,6 +1,19 @@
 ---@meta
 
 ---@class widget_moisturemeter: widget_widget
+---@overload fun(owner:idk): widget_moisturemeter
+---@field _ctor function #
+---@field owner idk #
+---@field moisture idk #
+---@field moisturedelta idk #
+---@field active idk #
+---@field backing idk #
+---@field anim idk #
+---@field circleframe idk #
+---@field arrowdir idk #
+---@field arrow idk #
+---@field num idk #
+---@field animtime idk #
 local moisturemeter = {}
 
 ---

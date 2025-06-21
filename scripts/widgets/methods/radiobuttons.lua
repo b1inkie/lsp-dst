@@ -1,6 +1,18 @@
 ---@meta
 
 ---@class widget_radiobuttons: widget_widget
+---@overload fun(options:idk, width:idk, height:idk, buttonsettings:idk, horizontal_layout:idk, onbuttonconstruct:idk): widget_radiobuttons
+---@field _ctor function #
+---@field options idk #
+---@field width idk #
+---@field height idk #
+---@field buttonsettings idk #
+---@field horizontal_layout idk #
+---@field onbuttonconstruct idk #
+---@field buttonwidgets idk #
+---@field selectedIndex idk #
+---@field focus_forward idk #
+---@field onchangedfn idk #
 local radiobuttons = {}
 
 ---

@@ -1,6 +1,21 @@
 ---@meta
 
 ---@class widget_speechbubble: widget_widget
+---@overload fun(params:idk): widget_speechbubble
+---@field _ctor function #
+---@field max_width idk #
+---@field world_offset idk #
+---@field target idk #
+---@field target_symbol idk #
+---@field face_size idk #
+---@field face_offset idk #
+---@field root idk #
+---@field face idk #
+---@field dialog_bg idk #
+---@field tail idk #
+---@field tailsize idk #
+---@field text idk #
+---@field symbol idk #
 local speechbubble = {}
 
 ---

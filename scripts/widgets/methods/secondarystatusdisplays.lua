@@ -1,6 +1,17 @@
 ---@meta
 
 ---@class widget_secondarystatusdisplays: widget_widget
+---@overload fun(owner:idk): widget_secondarystatusdisplays
+---@field _ctor function #
+---@field modetask idk #
+---@field onmodulesdirty idk #
+---@field onpopallmodulesevent idk #
+---@field onupgrademodulesenergylevelupdated idk #
+---@field owner idk #
+---@field column1 idk #
+---@field isghostmode idk #
+---@field side_inv idk #
+---@field upgrademodulesdisplay idk #
 local secondarystatusdisplays = {}
 
 ---

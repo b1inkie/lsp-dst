@@ -1,6 +1,22 @@
 ---@meta
 
 ---@class widget_playerbadge: widget_widget
+---@overload fun(prefab:idk, colour:idk, ishost:idk, userflags:idk): widget_playerbadge
+---@field _ctor function #
+---@field isFE idk #
+---@field root idk #
+---@field icon idk #
+---@field userflags idk #
+---@field headbg idk #
+---@field loading_icon idk #
+---@field headframe idk #
+---@field head idk #
+---@field head_anim idk #
+---@field head_animstate idk #
+---@field ishost idk #
+---@field base_skin idk #
+---@field prefabname idk #
+---@field is_mod_character idk #
 local playerbadge = {}
 
 ---

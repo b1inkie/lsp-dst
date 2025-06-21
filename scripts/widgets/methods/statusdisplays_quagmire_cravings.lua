@@ -1,6 +1,21 @@
 ---@meta
 
 ---@class widget_statusdisplays_quagmire_cravings: widget_widget
+---@overload fun(owner:idk): widget_statusdisplays_quagmire_cravings
+---@field _ctor function #
+---@field owner idk #
+---@field bar idk #
+---@field bar2 idk #
+---@field meter idk #
+---@field frame idk #
+---@field level idk #
+---@field nextlevel idk #
+---@field fx idk #
+---@field mouthlevel idk #
+---@field nextmouthlevel idk #
+---@field nextmouthanim idk #
+---@field mouth idk #
+---@field blink idk #
 local statusdisplays_quagmire_cravings = {}
 
 ---

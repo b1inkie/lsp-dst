@@ -1,6 +1,11 @@
 ---@meta
 
 ---@class widget_mazegametile: widget_widget
+---@overload fun(screen:idk): widget_mazegametile
+---@field _ctor function #
+---@field tile idk #
+---@field tile_type idk #
+---@field clicked idk #
 local mazegametile = {}
 
 ---

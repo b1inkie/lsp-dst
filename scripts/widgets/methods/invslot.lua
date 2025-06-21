@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_invslot: widget_itemslot
+---@overload fun(num:idk, atlas:idk, bgim:idk, owner:idk, container:idk): widget_invslot
+---@field _ctor function #
+---@field owner idk #
+---@field container idk #
+---@field num idk #
+---@field highlight_scale idk #
+---@field base_scale idk #
 local invslot = {}
 
 ---

@@ -1,6 +1,23 @@
 ---@meta
 
 ---@class widget_badge: widget_widget
+---@overload fun(anim:idk, owner:idk, tint:idk, iconbuild:idk, circular_meter:idk, use_clear_bg:idk, dont_update_while_paused:idk, bonustint:idk): widget_badge
+---@field _ctor function #
+---@field owner idk #
+---@field percent idk #
+---@field pulse idk #
+---@field warning idk #
+---@field warningstarted idk #
+---@field warningdelaytask idk #
+---@field anim idk #
+---@field backing idk #
+---@field anim_bonus idk #
+---@field circular_meter idk #
+---@field circleframe idk #
+---@field dont_animate_circleframe idk #
+---@field iconbuild idk #
+---@field underNumber idk #
+---@field num idk #
 local badge = {}
 
 ---

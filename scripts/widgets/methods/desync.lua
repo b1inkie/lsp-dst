@@ -1,6 +1,18 @@
 ---@meta
 
 ---@class widget_desync: widget_widget
+---@overload fun(owner:idk): widget_desync
+---@field _ctor function #
+---@field owner idk #
+---@field _icon idk #
+---@field _state idk #
+---@field _perf idk #
+---@field _statedirty idk #
+---@field _showhostperf idk #
+---@field _step idk #
+---@field _blinkspeed idk #
+---@field _delay idk #
+---@field _perfdelay idk #
 local desync = {}
 
 ---

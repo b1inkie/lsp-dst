@@ -1,6 +1,20 @@
 ---@meta
 
 ---@class widget_customizationlist: widget_widget
+---@overload fun(location:idk, options:idk, spinnerCB:idk): widget_customizationlist
+---@field _ctor function #
+---@field location idk #
+---@field options idk #
+---@field allowEdit idk #
+---@field spinnerCB idk #
+---@field presetvalues idk #
+---@field spinners idk #
+---@field title idk #
+---@field focused_column idk #
+---@field default_focus idk #
+---@field focus_forward idk #
+---@field optionwidgets idk #
+---@field scroll_list idk #
 local customizationlist = {}
 
 ---

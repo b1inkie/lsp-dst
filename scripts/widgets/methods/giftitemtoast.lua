@@ -1,6 +1,20 @@
 ---@meta
 
 ---@class widget_giftitemtoast: widget_widget
+---@overload fun(owner:idk, controls:idk): widget_giftitemtoast
+---@field _ctor function #
+---@field controls idk #
+---@field owner idk #
+---@field root idk #
+---@field tab_gift idk #
+---@field do_instant idk #
+---@field numitems idk #
+---@field controller_hide idk #
+---@field craft_hide idk #
+---@field opened idk #
+---@field enabled idk #
+---@field hud_focus idk #
+---@field controller_help idk #
 local giftitemtoast = {}
 
 ---

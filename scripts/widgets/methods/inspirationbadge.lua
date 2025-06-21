@@ -1,6 +1,12 @@
 ---@meta
 
 ---@class widget_inspirationbadge: widget_badge
+---@overload fun(owner:idk, colour:idk): widget_inspirationbadge
+---@field _ctor function #
+---@field _clientpredicteddraining idk #
+---@field slots idk #
+---@field buffs idk #
+---@field num_active_slots idk #
 local inspirationbadge = {}
 
 ---

@@ -1,6 +1,14 @@
 ---@meta
 
 ---@class widget_text: widget_widget
+---@overload fun(font:idk, size:idk, text:idk, colour:idk): widget_text
+---@field _ctor function #
+---@field font idk #
+---@field colour idk #
+---@field size idk #
+---@field string idk #
+---@field original_size idk #
+---@field target_font_size idk #
 local text = {}
 
 ---

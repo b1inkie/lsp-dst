@@ -1,6 +1,35 @@
 ---@meta
 
 ---@class widget_itemtile: widget_widget
+---@overload fun(invitem:idk): widget_itemtile
+---@field _ctor function #
+---@field item idk #
+---@field ismastersim idk #
+---@field isactivetile idk #
+---@field ispreviewing idk #
+---@field movinganim idk #
+---@field ignore_stacksize_anim idk #
+---@field onquantitychangedfn idk #
+---@field updatingflags idk #
+---@field bg idk #
+---@field basescale idk #
+---@field spoilage idk #
+---@field wetness idk #
+---@field rechargepct idk #
+---@field rechargetime idk #
+---@field rechargeframe idk #
+---@field imagebg idk #
+---@field image idk #
+---@field recharge idk #
+---@field quantity idk #
+---@field percent idk #
+---@field dragging idk #
+---@field hasspoilage idk #
+---@field updateshadowdelay idk #
+---@field shadowfx idk #
+---@field showequipshadowfx idk #
+---@field acidsizzling idk #
+---@field freecastpanflute idk #
 local itemtile = {}
 
 ---

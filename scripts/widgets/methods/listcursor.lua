@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_listcursor: widget_button
+---@overload fun(atlas:idk, normal:idk, focus:idk, disabled:idk): widget_listcursor
+---@field _ctor function #
+---@field selectedimage idk #
+---@field highlight idk #
+---@field scroll_list idk #
+---@field down idk #
+---@field selected idk #
 local listcursor = {}
 
 ---

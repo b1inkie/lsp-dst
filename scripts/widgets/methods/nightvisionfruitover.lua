@@ -1,6 +1,11 @@
 ---@meta
 
 ---@class widget_nightvisionfruitover: widget_uianim
+---@overload fun(owner:idk): widget_nightvisionfruitover
+---@field _ctor function #
+---@field owner idk #
+---@field shown idk #
+---@field hidetask idk #
 local nightvisionfruitover = {}
 
 ---

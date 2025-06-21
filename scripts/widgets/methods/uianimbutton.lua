@@ -1,6 +1,18 @@
 ---@meta
 
 ---@class widget_uianimbutton: widget_button
+---@overload fun(bank:idk, build:idk, idle_anim:idk, focus_anim:idk, disabled_anim:idk, down_anim:idk, selected_anim:idk): widget_uianimbutton
+---@field _ctor function #
+---@field uianim idk #
+---@field animstate idk #
+---@field loops idk #
+---@field down idk #
+---@field onfocus idk #
+---@field idleanimation idk #
+---@field focusanimation idk #
+---@field disabledanimation idk #
+---@field downanimation idk #
+---@field selectedanimation idk #
 local uianimbutton = {}
 
 ---

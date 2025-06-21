@@ -1,6 +1,17 @@
 ---@meta
 
 ---@class widget_fumeover: widget_widget
+---@overload fun(owner:idk): widget_fumeover
+---@field _ctor function #
+---@field _updateperiod idk #
+---@field _updatetask idk #
+---@field owner idk #
+---@field over idk #
+---@field top idk #
+---@field debuffs idk #
+---@field _onremovedebuff idk #
+---@field corrosives idk #
+---@field _onremovecorrosive idk #
 local fumeover = {}
 
 ---

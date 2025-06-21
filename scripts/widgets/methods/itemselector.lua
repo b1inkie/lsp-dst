@@ -1,6 +1,22 @@
 ---@meta
 
 ---@class widget_itemselector: widget_widget
+---@overload fun(parent:idk, owner:idk, profile:idk): widget_itemselector
+---@field _ctor function #
+---@field owner idk #
+---@field parent idk #
+---@field profile idk #
+---@field root idk #
+---@field title_group idk #
+---@field banner idk #
+---@field title idk #
+---@field focus_forward idk #
+---@field inventory_list idk #
+---@field show_hover_text idk #
+---@field scroll_list idk #
+---@field list_widgets idk #
+---@field full_skins_list idk #
+---@field skins_list idk #
 local itemselector = {}
 
 ---

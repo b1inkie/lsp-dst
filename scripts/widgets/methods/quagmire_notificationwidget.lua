@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_quagmire_notificationwidget: widget_widget
+---@overload fun(owner:idk, centered_layout:idk): widget_quagmire_notificationwidget
+---@field _ctor function #
+---@field owner idk #
+---@field NUM_SLOTS idk #
+---@field centered_layout idk #
+---@field slots idk #
+---@field queue idk #
 local quagmire_notificationwidget = {}
 
 ---

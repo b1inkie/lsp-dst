@@ -1,6 +1,32 @@
 ---@meta
 
 ---@class widget_imagebutton: widget_button
+---@overload fun(atlas:idk, normal:idk, focus:idk, disabled:idk, down:idk, selected:idk, scale:idk, offset:idk): widget_imagebutton
+---@field _ctor function #
+---@field image idk #
+---@field scale_on_focus idk #
+---@field move_on_click idk #
+---@field focus_scale idk #
+---@field normal_scale idk #
+---@field focus_sound idk #
+---@field size_x idk #
+---@field size_y idk #
+---@field atlas idk #
+---@field image_normal idk #
+---@field image_focus idk #
+---@field image_disabled idk #
+---@field image_down idk #
+---@field image_selected idk #
+---@field has_image_down idk #
+---@field image_scale idk #
+---@field image_offset idk #
+---@field hover_overlay idk #
+---@field o_pos idk #
+---@field down idk #
+---@field imagenormalcolour idk #
+---@field imagefocuscolour idk #
+---@field imagedisabledcolour idk #
+---@field imageselectedcolour idk #
 local imagebutton = {}
 
 ---

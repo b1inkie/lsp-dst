@@ -1,6 +1,25 @@
 ---@meta
 
 ---@class widget_teammatehealthbadge: widget_badge
+---@overload fun(owner:idk): widget_teammatehealthbadge
+---@field _ctor function #
+---@field name_root idk #
+---@field arrow idk #
+---@field name_banner_center idk #
+---@field name_banner_center_width idk #
+---@field name_banner_left idk #
+---@field name_banner_left_width idk #
+---@field name_banner_right idk #
+---@field name_banner_right_width idk #
+---@field playername idk #
+---@field _onclienthealthdirty idk #
+---@field _onclienthealthstatusdirty idk #
+---@field _onpethealthdirty idk #
+---@field player idk #
+---@field userid idk #
+---@field arrowdir idk #
+---@field percent idk #
+---@field pet_heart idk #
 local teammatehealthbadge = {}
 
 ---

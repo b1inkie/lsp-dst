@@ -1,6 +1,17 @@
 ---@meta
 
 ---@class widget_fireover: widget_widget
+---@overload fun(owner:idk): widget_fireover
+---@field _ctor function #
+---@field owner idk #
+---@field anim idk #
+---@field targetalpha idk #
+---@field startalpha idk #
+---@field alpha idk #
+---@field alphamult idk #
+---@field alphamultdir idk #
+---@field ease_time idk #
+---@field t idk #
 local fireover = {}
 
 ---

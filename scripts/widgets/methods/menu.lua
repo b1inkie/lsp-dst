@@ -1,6 +1,16 @@
 ---@meta
 
 ---@class widget_menu: widget_widget
+---@overload fun(menuitems:idk, offset:idk, horizontal:idk, style:idk, wrap:idk, text_size:idk): widget_menu
+---@field _ctor function #
+---@field offset idk #
+---@field style idk #
+---@field textSize idk #
+---@field items idk #
+---@field horizontal idk #
+---@field wrap_focus idk #
+---@field controller_id idk #
+---@field last_focused_index idk #
 local menu = {}
 
 ---

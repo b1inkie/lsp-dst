@@ -1,6 +1,17 @@
 ---@meta
 
 ---@class widget_lobbychatqueue: widget_widget
+---@overload fun(owner:idk, chatbox:idk, onReceiveNewMessage:idk, nextWidget:idk): widget_lobbychatqueue
+---@field _ctor function #
+---@field owner idk #
+---@field list_items idk #
+---@field chat_font idk #
+---@field chat_size idk #
+---@field chatbox idk #
+---@field new_message_fn idk #
+---@field nextWidget idk #
+---@field scroll_list idk #
+---@field default_focus idk #
 local lobbychatqueue = {}
 
 ---

@@ -1,6 +1,20 @@
 ---@meta
 
 ---@class widget_itemimage: widget_widget
+---@overload fun(screen:idk, type:idk, name:idk, item_id:idk, timestamp:idk, clickFn:idk): widget_itemimage
+---@field _ctor function #
+---@field screen idk #
+---@field type idk #
+---@field name idk #
+---@field item_id idk #
+---@field clickFn idk #
+---@field frame idk #
+---@field new_tag idk #
+---@field warning idk #
+---@field warn_marker idk #
+---@field disable_selecting idk #
+---@field rarity idk #
+---@field clicked idk #
 local itemimage = {}
 
 ---

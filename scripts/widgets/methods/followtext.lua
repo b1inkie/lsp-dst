@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_followtext: widget_widget
+---@overload fun(font:idk, size:idk, text:idk): widget_followtext
+---@field _ctor function #
+---@field text idk #
+---@field offset idk #
+---@field screen_offset idk #
+---@field hashud idk #
+---@field target idk #
 local followtext = {}
 
 ---

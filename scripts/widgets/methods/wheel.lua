@@ -1,6 +1,20 @@
 ---@meta
 
 ---@class widget_wheel: widget_widget
+---@overload fun(name:idk, owner:idk, options:idk): widget_wheel
+---@field _ctor function #
+---@field owner idk #
+---@field selected_label idk #
+---@field items idk #
+---@field isopen idk #
+---@field iscontroller idk #
+---@field ignoreleftstick idk #
+---@field ignorerightstick idk #
+---@field numspacers idk #
+---@field cur_cell_index idk #
+---@field activeitems idk #
+---@field activeitemscount idk #
+---@field lastmagsq idk #
 local wheel = {}
 
 ---

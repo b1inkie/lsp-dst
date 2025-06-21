@@ -1,6 +1,9 @@
 ---@meta
 
 ---@class widget_teamstatusbars: widget_widget
+---@overload fun(owner:idk): widget_teamstatusbars
+---@field _ctor function #
+---@field healthbars idk #
 local teamstatusbars = {}
 
 ---

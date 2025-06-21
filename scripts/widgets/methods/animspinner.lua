@@ -1,6 +1,17 @@
 ---@meta
 
 ---@class widget_animspinner: widget_spinner
+---@overload fun(options:idk, width:idk, height:idk, textinfo:idk, editable:idk, atlas:idk, textures:idk, lean:idk, textwidth:idk, textheight:idk): widget_animspinner
+---@field _ctor function #
+---@field fganim idk #
+---@field arrow_scale idk #
+---@field old_symbol idk #
+---@field bank idk #
+---@field anim idk #
+---@field skin idk #
+---@field new_anim idk #
+---@field updating idk #
+---@field selectedIndex idk #
 local animspinner = {}
 
 ---

@@ -1,6 +1,10 @@
 ---@meta
 
 ---@class widget_craftslots: widget_widget
+---@overload fun(num:idk, owner:idk): widget_craftslots
+---@field _ctor function #
+---@field owner idk #
+---@field slots idk #
 local craftslots = {}
 
 ---

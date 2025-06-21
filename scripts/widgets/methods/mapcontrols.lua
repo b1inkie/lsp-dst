@@ -1,6 +1,12 @@
 ---@meta
 
 ---@class widget_mapcontrols: widget_widget
+---@overload fun(): widget_mapcontrols
+---@field _ctor function #
+---@field minimapBtn idk #
+---@field pauseBtn idk #
+---@field rotleft idk #
+---@field rotright idk #
 local mapcontrols = {}
 
 ---

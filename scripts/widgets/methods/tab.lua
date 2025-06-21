@@ -1,6 +1,29 @@
 ---@meta
 
 ---@class widget_tab: widget_widget
+---@overload fun(tabgroup:idk, name:idk, atlas:idk, icon_atlas:idk, icon:idk, imnorm:idk, imselected:idk, imhighlight:idk, imalthighlight:idk, imoverlay:idk, selectfn:idk, deselectfn:idk, collapsed:idk): widget_tab
+---@field _ctor function #
+---@field group idk #
+---@field atlas idk #
+---@field icon_atlas idk #
+---@field selectfn idk #
+---@field deselectfn idk #
+---@field collapsed idk #
+---@field imnormal idk #
+---@field imselected idk #
+---@field imhighlight idk #
+---@field imalthighlight idk #
+---@field basescale idk #
+---@field selected idk #
+---@field highlighted idk #
+---@field bg idk #
+---@field icon idk #
+---@field overlay idk #
+---@field disable_scaling idk #
+---@field overlay_scaling idk #
+---@field overlayshow idk #
+---@field highlightnum idk #
+---@field alternatehighlighted idk #
 local tab = {}
 
 ---

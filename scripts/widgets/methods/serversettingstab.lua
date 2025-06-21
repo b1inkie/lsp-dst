@@ -1,6 +1,33 @@
 ---@meta
 
 ---@class widget_serversettingstab: widget_widget
+---@overload fun(slotdata:idk, servercreationscreen:idk): widget_serversettingstab
+---@field _ctor function #
+---@field slotdata idk #
+---@field servercreationscreen idk #
+---@field server_settings_page idk #
+---@field left_line idk #
+---@field intentions_overlay idk #
+---@field server_intention idk #
+---@field server_name idk #
+---@field server_desc idk #
+---@field server_pw idk #
+---@field privacy_type idk #
+---@field clan_id idk #
+---@field clan_only idk #
+---@field clan_admins idk #
+---@field game_mode idk #
+---@field max_players idk #
+---@field pvp idk #
+---@field online_mode idk #
+---@field page_widgets idk #
+---@field clan_widgets idk #
+---@field scroll_list idk #
+---@field default_focus idk #
+---@field focus_forward idk #
+---@field encode_user_path idk #
+---@field _cached_privacy_setting idk #
+---@field newhost_overlay idk #
 local serversettingstab = {}
 
 ---

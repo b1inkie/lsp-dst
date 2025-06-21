@@ -1,6 +1,50 @@
 ---@meta
 
 ---@class widget_dressuppanel: widget_widget
+---@overload fun(owner_screen:idk, profile:idk, playerdata:idk, onChanged:idk, recent_item_types:idk, recent_item_ids:idk, include_random_options:idk): widget_dressuppanel
+---@field _ctor function #
+---@field owner_screen idk #
+---@field profile idk #
+---@field playerdata idk #
+---@field include_random_options idk #
+---@field currentcharacter idk #
+---@field recent_item_types idk #
+---@field onChanged idk #
+---@field root idk #
+---@field bg_group idk #
+---@field dressup_bg idk #
+---@field dressup_hanger idk #
+---@field spinners idk #
+---@field dressup_frame idk #
+---@field outline idk #
+---@field puppet_group idk #
+---@field glow idk #
+---@field puppet idk #
+---@field shadow idk #
+---@field random_avatar idk #
+---@field upper_horizontal_line idk #
+---@field mid_horizontal_line1 idk #
+---@field mid_horizontal_line2 idk #
+---@field mid_horizontal_line3 idk #
+---@field mid_horizontal_line4 idk #
+---@field left_vertical_line idk #
+---@field right_vertical_line idk #
+---@field base_spinner idk #
+---@field body_spinner idk #
+---@field hand_spinner idk #
+---@field legs_spinner idk #
+---@field feet_spinner idk #
+---@field all_spinners idk #
+---@field lower_horizontal_line idk #
+---@field default_focus idk #
+---@field focus_forward idk #
+---@field underlines idk #
+---@field mid_horizontal_line0 idk #
+---@field mid_horizontal_line5 idk #
+---@field skins_list idk #
+---@field timestamp idk #
+---@field clothing_options idk #
+---@field repeat_time idk #
 local dressuppanel = {}
 
 ---

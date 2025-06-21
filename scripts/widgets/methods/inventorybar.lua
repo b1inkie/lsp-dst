@@ -1,6 +1,49 @@
 ---@meta
 
 ---@class widget_inventorybar: widget_widget
+---@overload fun(owner:idk): widget_inventorybar
+---@field _ctor function #
+---@field owner idk #
+---@field out_pos idk #
+---@field in_pos idk #
+---@field base_scale idk #
+---@field selected_scale idk #
+---@field inv idk #
+---@field backpackinv idk #
+---@field equip idk #
+---@field equipslotinfo idk #
+---@field root idk #
+---@field hudcompass idk #
+---@field hand_inv idk #
+---@field bg idk #
+---@field bgcover idk #
+---@field hovertile idk #
+---@field cursortile idk #
+---@field repeat_time idk #
+---@field reps idk #
+---@field actionstring idk #
+---@field actionstringtitle idk #
+---@field actionstringbody idk #
+---@field rebuild_snapping idk #
+---@field actionstringtime idk #
+---@field openhint idk #
+---@field hint_update_check idk #
+---@field controller_build idk #
+---@field integrated_backpack idk #
+---@field force_single_drop idk #
+---@field autopaused idk #
+---@field autopause_delay idk #
+---@field rebuild_pending idk #
+---@field inspectcontrol idk #
+---@field backpack idk #
+---@field integrated_arrow idk #
+---@field cursor idk #
+---@field toprow idk #
+---@field bottomrow idk #
+---@field current_list idk #
+---@field active_slot idk #
+---@field open idk #
+---@field pin_nav idk #
 local inventorybar = {}
 
 ---

@@ -1,6 +1,18 @@
 ---@meta
 
 ---@class widget_upgrademodulesdisplay: widget_widget
+---@overload fun(owner:idk, reversed:idk): widget_upgrademodulesdisplay
+---@field _ctor function #
+---@field owner idk #
+---@field energy_level idk #
+---@field slots_in_use idk #
+---@field reversed idk #
+---@field battery_frame idk #
+---@field energy_backing idk #
+---@field energy_blinking idk #
+---@field anim idk #
+---@field chip_objectpool idk #
+---@field chip_poolindex idk #
 local upgrademodulesdisplay = {}
 
 ---

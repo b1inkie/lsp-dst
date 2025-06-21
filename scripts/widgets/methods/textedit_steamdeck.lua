@@ -1,6 +1,39 @@
 ---@meta
 
 ---@class widget_textedit_steamdeck: widget_text
+---@overload fun(font:idk, size:idk, text:idk, colour:idk): widget_textedit_steamdeck
+---@field _ctor function #
+---@field limit idk #
+---@field regionlimit idk #
+---@field editing idk #
+---@field editing_enter_down idk #
+---@field allow_newline idk #
+---@field enable_accept_control idk #
+---@field validrawkeys idk #
+---@field force_edit idk #
+---@field pasting idk #
+---@field pass_controls_to_screen idk #
+---@field ignore_controls idk #
+---@field idle_text_color idk #
+---@field edit_text_color idk #
+---@field idle_tint idk #
+---@field hover_tint idk #
+---@field selected_tint idk #
+---@field edit_helptext idk #
+---@field cancel_helptext idk #
+---@field apply_helptext idk #
+---@field conversions idk #
+---@field validchars idk #
+---@field invalidchars idk #
+---@field format idk #
+---@field nextTextEditWidget idk #
+---@field focusimage idk #
+---@field atlas idk #
+---@field focusedtex idk #
+---@field unfocusedtex idk #
+---@field activetex idk #
+---@field prediction_widget idk #
+---@field prompt idk #
 local textedit_steamdeck = {}
 
 ---

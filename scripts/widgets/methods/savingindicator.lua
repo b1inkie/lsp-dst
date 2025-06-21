@@ -1,6 +1,12 @@
 ---@meta
 
 ---@class widget_savingindicator: widget_widget
+---@overload fun(owner:idk): widget_savingindicator
+---@field _ctor function #
+---@field owner idk #
+---@field anim idk #
+---@field _scale idk #
+---@field text idk #
 local savingindicator = {}
 
 ---

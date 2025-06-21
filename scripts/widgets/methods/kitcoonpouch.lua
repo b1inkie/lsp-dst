@@ -1,6 +1,12 @@
 ---@meta
 
 ---@class widget_kitcoonpouch: widget_widget
+---@overload fun(): widget_kitcoonpouch
+---@field _ctor function #
+---@field anim idk #
+---@field animstate idk #
+---@field onclick idk #
+---@field kit idk #
 local kitcoonpouch = {}
 
 ---

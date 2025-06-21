@@ -1,6 +1,9 @@
 ---@meta
 
 ---@class widget_textbutton: widget_button
+---@overload fun(name:idk): widget_textbutton
+---@field _ctor function #
+---@field image idk #
 local textbutton = {}
 
 ---

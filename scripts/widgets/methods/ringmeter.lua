@@ -1,6 +1,19 @@
 ---@meta
 
 ---@class widget_ringmeter: widget_widget
+---@overload fun(owner:idk): widget_ringmeter
+---@field _ctor function #
+---@field owner idk #
+---@field meter idk #
+---@field pos idk #
+---@field t idk #
+---@field duration idk #
+---@field fadetime idk #
+---@field fade idk #
+---@field flash idk #
+---@field flashtime idk #
+---@field scaletime idk #
+---@field scale idk #
 local ringmeter = {}
 
 ---

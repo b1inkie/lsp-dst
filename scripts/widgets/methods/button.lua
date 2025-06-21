@@ -1,6 +1,30 @@
 ---@meta
 
 ---@class widget_button: widget_widget
+---@overload fun(): widget_button
+---@field _ctor function #
+---@field font idk #
+---@field fontdisabled idk #
+---@field textcolour idk #
+---@field textfocuscolour idk #
+---@field textdisabledcolour idk #
+---@field textselectedcolour idk #
+---@field text idk #
+---@field clickoffset idk #
+---@field selected idk #
+---@field control idk #
+---@field mouseonly idk #
+---@field help_message idk #
+---@field o_pos idk #
+---@field down idk #
+---@field onclick idk #
+---@field onselect idk #
+---@field onunselect idk #
+---@field ondown idk #
+---@field whiledown idk #
+---@field size idk #
+---@field name idk #
+---@field text_shadow idk #
 local button = {}
 
 ---

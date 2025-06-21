@@ -1,6 +1,51 @@
 ---@meta
 
 ---@class widget_modstab: widget_widget
+---@overload fun(servercreationscreen:idk): widget_modstab
+---@field _ctor function #
+---@field mods_page idk #
+---@field slotnum idk #
+---@field servercreationscreen idk #
+---@field currentmodtype idk #
+---@field infoprefabs idk #
+---@field nav_bar idk #
+---@field servermodsbutton idk #
+---@field clientmodsbutton idk #
+---@field left_line idk #
+---@field middle_line idk #
+---@field mainmenu idk #
+---@field modconfigbutton idk #
+---@field modconfigable idk #
+---@field modupdatebutton idk #
+---@field modupdateable idk #
+---@field modlinkbutton idk #
+---@field cleanallbutton idk #
+---@field updateallbutton idk #
+---@field default_focus idk #
+---@field focus_forward idk #
+---@field options_scroll_list_client idk #
+---@field last_client_modname idk #
+---@field last_server_modname idk #
+---@field detailpanel idk #
+---@field detailimage idk #
+---@field detailtitle idk #
+---@field detailtitle2 idk #
+---@field detailauthor idk #
+---@field detailcompatibility idk #
+---@field detaildesc idk #
+---@field detailwarning idk #
+---@field updatetask idk #
+---@field modnames_client idk #
+---@field modnames_server idk #
+---@field modnames_client_dl idk #
+---@field modnames_server_dl idk #
+---@field optionwidgets_client idk #
+---@field last_mod_click_time idk #
+---@field optionwidgets_server idk #
+---@field options_scroll_list_server idk #
+---@field updateallenabled idk #
+---@field currentmodname idk #
+---@field top_mods_panel idk #
 local modstab = {}
 
 ---

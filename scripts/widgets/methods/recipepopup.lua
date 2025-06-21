@@ -1,6 +1,29 @@
 ---@meta
 
 ---@class widget_recipepopup: widget_widget
+---@overload fun(horizontal:idk): widget_recipepopup
+---@field _ctor function #
+---@field smallfonts idk #
+---@field horizontal idk #
+---@field bg idk #
+---@field contents idk #
+---@field lines idk #
+---@field name idk #
+---@field desc idk #
+---@field spinner_bg idk #
+---@field ing idk #
+---@field button idk #
+---@field recipe_held idk #
+---@field last_recipe_click idk #
+---@field skins_spinner idk #
+---@field amulet idk #
+---@field teaser idk #
+---@field skins_list idk #
+---@field skins_options idk #
+---@field recipe idk #
+---@field owner idk #
+---@field timestamp idk #
+---@field spinner_empty idk #
 local recipepopup = {}
 
 ---

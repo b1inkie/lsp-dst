@@ -180,7 +180,7 @@ end
 ---
 ---UNKNOWN
 ---
----@param base fun(self,inst) 
+---@param base idk 
 ---@param _ctor idk 
 ---@param props idk 
 ---@return table

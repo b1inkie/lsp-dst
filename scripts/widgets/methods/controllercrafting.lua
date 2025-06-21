@@ -1,6 +1,25 @@
 ---@meta
 
 ---@class widget_controllercrafting: widget_crafting
+---@overload fun(owner:idk): widget_controllercrafting
+---@field _ctor function #
+---@field tabidx idk #
+---@field selected_recipe_by_tab_idx idk #
+---@field repeat_time idk #
+---@field in_pos idk #
+---@field out_pos idk #
+---@field groupname idk #
+---@field groupimg1 idk #
+---@field groupimg2 idk #
+---@field recipepopup idk #
+---@field use_idx idk #
+---@field recipe_held idk #
+---@field control_held idk #
+---@field control_held_time idk #
+---@field accept_down idk #
+---@field oldslot idk #
+---@field idx idk #
+---@field last_recipe_click idk #
 local controllercrafting = {}
 
 ---

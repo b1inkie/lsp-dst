@@ -1,6 +1,19 @@
 ---@meta
 
 ---@class widget_wagpunkui: widget_widget
+---@overload fun(owner:idk): widget_wagpunkui
+---@field _ctor function #
+---@field owner idk #
+---@field target idk #
+---@field hat idk #
+---@field level idk #
+---@field overlay idk #
+---@field crosshair idk #
+---@field crosshairDist idk #
+---@field synch idk #
+---@field distmeter idk #
+---@field soundtime idk #
+---@field lastdist idk #
 local wagpunkui = {}
 
 ---

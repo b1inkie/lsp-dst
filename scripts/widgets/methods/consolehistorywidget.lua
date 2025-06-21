@@ -1,6 +1,20 @@
 ---@meta
 
 ---@class widget_consolehistorywidget: widget_widget
+---@overload fun(text_edit:idk, remote_execute:idk, max_width:idk, mode:idk): widget_consolehistorywidget
+---@field _ctor function #
+---@field text_edit idk #
+---@field console_remote_execute idk #
+---@field enter_complete idk #
+---@field tab_complete idk #
+---@field sizey idk #
+---@field max_width idk #
+---@field backing idk #
+---@field history_root idk #
+---@field starting_offset_x idk #
+---@field selection_btns idk #
+---@field active_selection_btn idk #
+---@field start_offset idk #
 local consolehistorywidget = {}
 
 ---

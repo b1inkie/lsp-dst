@@ -1,6 +1,8 @@
 ---@meta
 
 ---@class widget_uianim: widget_widget
+---@overload fun(): widget_uianim
+---@field _ctor function #
 local uianim = {}
 
 ---

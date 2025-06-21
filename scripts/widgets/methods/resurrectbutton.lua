@@ -1,6 +1,12 @@
 ---@meta
 
 ---@class widget_resurrectbutton: widget_widget
+---@overload fun(owner:idk): widget_resurrectbutton
+---@field _ctor function #
+---@field owner idk #
+---@field hud_focus idk #
+---@field button idk #
+---@field text idk #
 local resurrectbutton = {}
 
 ---

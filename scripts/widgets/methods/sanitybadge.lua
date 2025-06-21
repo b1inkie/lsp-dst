@@ -1,6 +1,19 @@
 ---@meta
 
 ---@class widget_sanitybadge: widget_badge
+---@overload fun(owner:idk): widget_sanitybadge
+---@field _ctor function #
+---@field sanitymode idk #
+---@field topperanim idk #
+---@field circleframe2 idk #
+---@field sanityarrow idk #
+---@field ghostanim idk #
+---@field val idk #
+---@field max idk #
+---@field penaltypercent idk #
+---@field ghost idk #
+---@field transition_task idk #
+---@field arrowdir idk #
 local sanitybadge = {}
 
 ---

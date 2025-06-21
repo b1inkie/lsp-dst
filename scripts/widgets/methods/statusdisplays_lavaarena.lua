@@ -1,6 +1,20 @@
 ---@meta
 
 ---@class widget_statusdisplays_lavaarena: widget_widget
+---@overload fun(owner:idk): widget_statusdisplays_lavaarena
+---@field _ctor function #
+---@field modetask idk #
+---@field onhealthdelta idk #
+---@field healthmax idk #
+---@field queuedhealthmax idk #
+---@field onpethealthdirty idk #
+---@field owner idk #
+---@field heart idk #
+---@field healthpenalty idk #
+---@field isghostmode idk #
+---@field craft_hide idk #
+---@field visiblemode idk #
+---@field pet_heart idk #
 local statusdisplays_lavaarena = {}
 
 ---

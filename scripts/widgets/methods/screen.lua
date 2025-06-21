@@ -1,6 +1,13 @@
 ---@meta
 
 ---@class widget_screen: widget_widget
+---@overload fun(name:idk): widget_screen
+---@field _ctor function #
+---@field focusstack idk #
+---@field focusindex idk #
+---@field handlers idk #
+---@field is_screen idk #
+---@field last_focus idk #
 local screen = {}
 
 ---

@@ -1,6 +1,26 @@
 ---@meta
 
 ---@class widget_worldresettimer: widget_widget
+---@overload fun(owner:idk): widget_worldresettimer
+---@field _ctor function #
+---@field root idk #
+---@field y_pos idk #
+---@field started idk #
+---@field owner idk #
+---@field bg idk #
+---@field title idk #
+---@field countdown_message idk #
+---@field leftroot idk #
+---@field avatar idk #
+---@field survived_message idk #
+---@field reset_hold_time idk #
+---@field _oncontinuefrompause idk #
+---@field _oncycleschanged idk #
+---@field _onworldresettick idk #
+---@field _lastshowntime idk #
+---@field default_focus idk #
+---@field reset_button idk #
+---@field reset_text idk #
 local worldresettimer = {}
 
 ---

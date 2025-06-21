@@ -1,6 +1,11 @@
 ---@meta
 
 ---@class widget_texteditlinked: widget_textedit
+---@overload fun(font:idk, size:idk, text:idk, colour:idk): widget_texteditlinked
+---@field _ctor function #
+---@field next_text_edit idk #
+---@field last_text_edit idk #
+---@field pasting idk #
 local texteditlinked = {}
 
 ---

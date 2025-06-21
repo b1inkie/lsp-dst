@@ -1,6 +1,11 @@
 ---@meta
 
 ---@class widget_numericspinner: widget_spinner
+---@overload fun(min:idk, max:idk, width:idk, height:idk, textinfo:idk, atlas:idk, textures:idk, editable:idk, lean:idk, textwidth:idk, textheight:idk): widget_numericspinner
+---@field _ctor function #
+---@field min idk #
+---@field max idk #
+---@field selectedIndex idk #
 local numericspinner = {}
 
 ---

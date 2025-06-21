@@ -1,6 +1,14 @@
 ---@meta
 
 ---@class widget_image: widget_widget
+---@overload fun(atlas:idk, tex:idk, default_tex:idk): widget_image
+---@field _ctor function #
+---@field tint idk #
+---@field region_preview idk #
+---@field atlas idk #
+---@field texture idk #
+---@field mouseovertex idk #
+---@field disabledtex idk #
 local image = {}
 
 ---

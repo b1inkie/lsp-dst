@@ -1,6 +1,17 @@
 ---@meta
 
 ---@class widget_minigametile: widget_widget
+---@overload fun(screen:idk, index:idk, mover:idk): widget_minigametile
+---@field _ctor function #
+---@field screen idk #
+---@field index idk #
+---@field exploded idk #
+---@field tile idk #
+---@field view_state idk #
+---@field tile_num idk #
+---@field number idk #
+---@field tile_type idk #
+---@field clicked idk #
 local minigametile = {}
 
 ---

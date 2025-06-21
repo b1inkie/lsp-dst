@@ -1,6 +1,11 @@
 ---@meta
 
 ---@class widget_recipetile: widget_widget
+---@overload fun(recipe:idk): widget_recipetile
+---@field _ctor function #
+---@field img idk #
+---@field recipe idk #
+---@field fxover idk #
 local recipetile = {}
 
 ---

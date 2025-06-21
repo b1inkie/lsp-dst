@@ -1,6 +1,18 @@
 ---@meta
 
 ---@class widget_itemslot: widget_widget
+---@overload fun(atlas:idk, bgim:idk, owner:idk): widget_itemslot
+---@field _ctor function #
+---@field owner idk #
+---@field bgimage idk #
+---@field tile idk #
+---@field highlight_scale idk #
+---@field base_scale idk #
+---@field highlight idk #
+---@field big idk #
+---@field ontilechangedfn idk #
+---@field bgimage2 idk #
+---@field label idk #
 local itemslot = {}
 
 ---
