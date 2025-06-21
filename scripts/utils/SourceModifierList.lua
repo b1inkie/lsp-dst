@@ -17,7 +17,7 @@ function SourceModifierList:IsEmpty() end
 
 ---
 ---@param source ent|string #
----@param m number #
+---@param m number|boolean #
 ---@param key string #
 ---
 ---author: 
@@ -62,9 +62,9 @@ SourceModifierList.additive = function(a, b)
 end
 
 ---boolean
----@param a number
----@param b number
----@return number
+---@param a boolean
+---@param b boolean
+---@return boolean
 ---@nodiscard
 SourceModifierList.boolean = function(a, b)
     return a or b

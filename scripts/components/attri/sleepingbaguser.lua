@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_sleepingbaguser
----@field inst idk
+---@field inst ent
 ---@field healthsleep idk
 ---@field dryingrate idk
 ---@field sleeper idk

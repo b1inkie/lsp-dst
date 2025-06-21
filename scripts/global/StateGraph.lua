@@ -202,8 +202,8 @@ function _StateGraphInstance:GetTimeInState() end
 function _StateGraphInstance:PlayRandomAnim(anims, loop) end
 
 ---
----@param event idk #
----@param data idk #
+---@param event eventID #
+---@param data table #
 ---
 ---author: 
 function _StateGraphInstance:PushEvent(event, data) end

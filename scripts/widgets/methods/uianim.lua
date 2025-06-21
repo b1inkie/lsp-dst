@@ -4,8 +4,9 @@
 local uianim = {}
 
 ---
----
----author: 
+---@return AnimState
+---@nodiscard
+---author: lan
 function uianim:GetAnimState() end
 
 ---

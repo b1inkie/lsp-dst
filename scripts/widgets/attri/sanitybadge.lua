@@ -2,7 +2,7 @@
 
 ---@class widget_sanitybadge: widget_badge
 ---@field sanitymode idk #
----@field topperanim idk #
+---@field topperanim widget_uianim #
 ---@field circleframe2 idk #
 ---@field sanityarrow idk #
 ---@field ghostanim idk #

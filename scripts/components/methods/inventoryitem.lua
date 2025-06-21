@@ -192,7 +192,9 @@ function inventoryitem:SetLanded(is_landed,should_poll_for_landing)
 end
 
 ---
----author: 
+---@return ent|nil #
+---@nodiscard
+---author: lan
 function inventoryitem:GetGrandOwner()
 end
 

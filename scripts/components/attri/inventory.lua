@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_inventory
----@field inst idk
+---@field inst ent
 ---@field isopen idk
 ---@field isvisible idk
 ---@field ignoreoverflow idk
