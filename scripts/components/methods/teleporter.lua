@@ -3,129 +3,146 @@
 ---@class component_teleporter
 local teleporter = {}
 
----
----@param item idk # 
----@param source idk # 
----author: 
-function teleporter:ReceiveItem(item,source)
+---物品到达传送门时的处理
+---@param item ent #传送的物品实体
+---@param source ent #传送门实体
+---author: 星璃
+function teleporter:ReceiveItem(item, source)
 end
 
----
----@param otherTeleporter idk # 
----author: 
+---设置目标传送门
+---@param otherTeleporter ent #目标传送门实体
+---author: 星璃
 function teleporter:Target(otherTeleporter)
 end
 
----
----@param doer idk # 
----author: 
+---注册即将传送的对象，防止重复传送
+---@param doer ent #即将传送的对象
+---author: 星璃
 function teleporter:RegisterTeleportee(doer)
 end
 
----
----@param obj idk # 
----author: 
+---推送传送完成事件
+---@param obj ent #传送完成的对象
+---author: 星璃
 function teleporter:PushDoneTeleporting(obj)
 end
 
----
----@param doer idk # 
----author: 
+---注销即将传送的对象
+---@param doer ent #即将传送的对象
+---author: 星璃
 function teleporter:UnregisterTeleportee(doer)
 end
 
----
----author: 
+---判断传送门是否可用
+---@return boolean #是否处于激活状态
+---@nodiscard
+---author: 星璃
 function teleporter:IsActive()
 end
 
----
----author: 
+---移除组件时调用，移除tag
+---author: 星璃
 function teleporter:OnRemoveFromEntity()
 end
 
----
----@param newents idk # 
----@param savedata idk # 
----author: 
-function teleporter:LoadPostPass(newents,savedata)
+---存档后处理目标传送门
+---@param newents table #新实体表
+---@param savedata table #存档数据
+---author: 星璃
+function teleporter:LoadPostPass(newents, savedata)
 end
 
----
----author: 
+---判断是否有对象正在传送
+---@return boolean #是否有对象正在传送
+---@nodiscard
+---author: 星璃
 function teleporter:IsBusy()
 end
 
----
----author: 
+---获取调试字符串
+---@return string #调试字符串
+---@nodiscard
+---author: 星璃
 function teleporter:GetDebugString()
 end
 
----
----@param data idk # 
----@param newents idk # 
----author: 
-function teleporter:OnLoad(data,newents)
+---读取存档
+---@param data table #存档数据
+---@param newents table #新实体表
+---author: 星璃
+function teleporter:OnLoad(data, newents)
 end
 
----
----@param doer idk # 
----author: 
+---激活传送门，执行传送流程
+---@param doer ent #触发传送的对象
+---@return boolean #是否激活成功
+---@nodiscard
+---author: 星璃
 function teleporter:Activate(doer)
 end
 
----
----author: 
+---保存存档
+---@return table,table #存档数据,引用表
+---@nodiscard
+---author: 星璃
 function teleporter:OnSave()
 end
 
----
----author: 
+---获取传送门启用状态
+---@return boolean #传送门启用状态
+---@nodiscard
+---author: 星璃
 function teleporter:GetEnabled()
 end
 
----
----@param enabled idk # 
----author: 
+---设置传送门启用状态
+---@param enabled boolean #是否启用
+---author: 星璃
 function teleporter:SetEnabled(enabled)
 end
 
----
----@param obj idk # 
----author: 
+---直接传送对象到目标传送门
+---@param obj ent #传送对象
+---author: 星璃
 function teleporter:Teleport(obj)
 end
 
----
----@param worldid idk # 
----@param x idk # 
----@param y idk # 
----@param z idk # 
----author: 
-function teleporter:MigrationTarget(worldid,x,y,z)
+---设置跨世界传送目标
+---@param worldid number #目标世界ID
+---@param x number #目标X坐标
+---@param y number #目标Y坐标
+---@param z number #目标Z坐标
+---author: 星璃
+function teleporter:MigrationTarget(worldid, x, y, z)
 end
 
----
----author: 
+---判断目标传送门是否正忙
+---@return boolean #目标传送门是否正忙
+---@nodiscard
+---author: 星璃
 function teleporter:IsTargetBusy()
 end
 
----
----@param doer idk # 
----@param source idk # 
----author: 
-function teleporter:ReceivePlayer(doer,source)
+---接收玩家传送到达
+---@param doer ent #玩家
+---@param source ent #来源传送门
+---author: 星璃
+function teleporter:ReceivePlayer(doer, source)
 end
 
----
----author: 
+---获取目标传送门
+---@return ent|nil #目标传送门实体
+---@nodiscard
+---author: 星璃
 function teleporter:GetTarget()
 end
 
----
----@param doer idk # 
----@param temporaryexit idk # 
----author: 
-function teleporter:UseTemporaryExit(doer,temporaryexit)
+---使用临时目标传送门进行一次性传送
+---@param doer ent #传送对象
+---@param temporaryexit ent #临时目标传送门
+---@return boolean #是否激活成功
+---@nodiscard
+---author: 星璃
+function teleporter:UseTemporaryExit(doer, temporaryexit)
 end
-
