@@ -4,40 +4,41 @@
 local petrifiable = {}
 
 ---
----author: 
+---author:
 function petrifiable:GetDebugString()
 end
 
----
----author: 
+---判断是否已经石化
+---@return boolean #
+---author: nullptr
 function petrifiable:IsPetrified()
 end
 
----
----@param immediate idk # 
----author: 
+---执行石化
+---@param immediate boolean # 是否立即石化
+---author: nullptr
 function petrifiable:Petrify(immediate)
 end
 
 ---
----author: 
+---author:
 function petrifiable:OnSave()
 end
 
 ---
----@param data idk # 
----author: 
+---@param data idk #
+---author:
 function petrifiable:OnLoad(data)
 end
 
 ---
----author: 
+---author:
 function petrifiable:OnRemoveFromEntity()
 end
 
----
----@param fn idk # 
----author: 
+---注册石化回调函数
+---@param fn function(inst: ent) # 实体石化时执行的函数
+---author: nullptr
 function petrifiable:SetPetrifiedFn(fn)
 end
 
