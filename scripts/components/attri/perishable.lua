@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_perishable
----@field inst idk
+---@field inst ent
 ---@field perishfn idk
 ---@field perishtime idk
 ---@field frozenfiremult idk

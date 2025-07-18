@@ -59,8 +59,8 @@ function hauntable:DoHaunt(doer)
 end
 
 ---
----@param fn idk # 
----author: 
+---@param fn fun(this:ent,doer:ent) # 
+---author: lan
 function hauntable:SetOnHauntFn(fn)
 end
 

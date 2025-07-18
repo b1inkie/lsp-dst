@@ -2795,9 +2795,11 @@ function UnitRand()
 end
 
 ---
----UNKNOWN
+---随机点生成器: 球面(返回的是一个随机点生成函数)
 ---
----@param radius idk 
+---@param radius number 
+---@return fun():number,number,number
+---@nodiscard
 ---所在文件: scripts/emitters.lua
 function CreateSphereEmitter(radius)
 end
@@ -2825,9 +2827,11 @@ function Create2DTriEmitter(tris,scale)
 end
 
 ---
----UNKNOWN
+---随机点生成器: 环上(返回的是一个随机点生成函数)
 ---
----@param radius idk 
+---@param radius number 
+---@return fun():number,number
+---@nodiscard
 ---所在文件: scripts/emitters.lua
 function CreateRingEmitter(radius)
 end
@@ -5042,7 +5046,7 @@ function RemoveRemapSoundEvent(name)
 end
 
 ---
----UNKNOWN
+---只有第一次世界启动时执行
 ---
 ---@param fn idk 
 ---所在文件: scripts/modutil.lua
@@ -5431,7 +5435,7 @@ end
 ---
 ---UNKNOWN
 ---
----@param fn idk 
+---@param fn fun(inst: ent):...
 ---所在文件: scripts/modutil.lua
 function AddPrefabPostInitAny(fn)
 end
@@ -5638,7 +5642,7 @@ function RegisterTileRange(range_name,range_start,range_end)
 end
 
 ---
----UNKNOWN
+---每次重载世界时都会执行
 ---
 ---@param fn idk 
 ---所在文件: scripts/modutil.lua

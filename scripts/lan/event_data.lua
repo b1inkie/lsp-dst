@@ -1194,6 +1194,12 @@
 ---@field afflicter idk # 
 
 ---@class event_data_healthdelta # 
+---@field oldpercent number # 
+---@field newpercent number # 
+---@field overtime boolean|nil # 
+---@field cause string|nil #
+---@field afflicter ent|nil #
+---@field amount number #
 
 ---@class event_data_clienthealthstatusdirty # 
 

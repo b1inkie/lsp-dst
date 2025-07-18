@@ -1,6 +1,6 @@
 ---@meta
 
-GLOBAL = _G
+GLOBAL = {}
 MODROOT = './'
 
 ---@type ent[]

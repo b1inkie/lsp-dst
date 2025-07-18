@@ -18,8 +18,8 @@
 ---@field droprandomdir idk
 ---@field isacidsizzling idk
 ---@field pushlandedevents idk
----@field ondropfn fun(this:ent)
+---@field ondropfn fun(this:ent):...
 ---@field onactiveitemfn idk
----@field onputininventoryfn fun(this:ent,owner:ent)
+---@field onputininventoryfn fun(this:ent,owner:ent):...
 ---@field is_landed idk
 ---@field foleysound string|nil # 拟音,填的是声音路径

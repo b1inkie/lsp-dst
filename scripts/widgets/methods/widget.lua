@@ -3,6 +3,7 @@
 ---@class widget_widget
 ---@overload fun(): widget_widget
 ---@field _ctor function #
+---@field focus boolean # 
 local widget = {}
 
 ---
@@ -428,7 +429,7 @@ function widget:FollowMouse() end
 function widget:StopFollowMouse() end
 
 ---
----
+---@return Vector3
 ---author: 
 function widget:GetScale() end
 

@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_builder
----@field inst idk
+---@field inst ent
 ---@field recipes idk
 ---@field station_recipes idk
 ---@field accessible_tech_trees idk
@@ -16,3 +16,4 @@
 ---@field exclude_tags idk
 ---@field temptechbonus_count idk
 ---@field override_current_prototyper idk
+---@field science_bonus integer|nil # 自带科技, 例如老奶奶这个就为 `1`

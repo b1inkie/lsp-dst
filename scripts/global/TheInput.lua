@@ -236,8 +236,9 @@ function Input:OnControlMapped(deviceId, controlId, inputId, hasChanged) end
 function Input:OnFrameStart() end
 
 ---
----
----author: 
+---获取指针的屏幕坐标
+---@return Vector3
+---author: lan
 function Input:GetScreenPosition() end
 
 ---
