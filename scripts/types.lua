@@ -28,7 +28,6 @@ function Vector3:Get()end
 
 ---@class asset # 资源
 
-
 ---@alias GUID number # GUID 注意重载世界会变化
 
 ---@alias spdamage_type string # 特殊伤害类型
@@ -36,3 +35,5 @@ function Vector3:Get()end
 
 ---@class spdamage_type_table # 特殊伤害类型表
 ---@field planar number|nil
+
+---@alias userid string # 玩家的克雷id, 如果是离线游玩, 则是steam id

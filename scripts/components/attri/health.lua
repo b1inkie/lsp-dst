@@ -26,7 +26,7 @@
 ---@field canheal boolean|true # 是否可被治疗，此属性无对应的Set方法，只能直接修改。<br>为false时影响的是食物以外的回血手段
 ---@field nonlethal_temperature boolean|false # 温度不致命，此属性无对应的Set方法，只能直接修改。<br>为true时当生命百分比小于nonlethal_pct时，不受温度伤害
 ---@field nonlethal_hunger boolean|false # 饥饿不致命，此属性无对应的Set方法，只能直接修改。<br>为true时当生命百分比小于nonlethal_pct时，不受饥饿伤害
----@field nonlethal_pct number|0.2 # 不致命启动的阈值，此属性无对应的Set方法，只能直接修改。<br>当前生命值百分比小于此值时，才会进一步判断是否温度/饥饿不致命
+---@field nonlethal_pct number # 不致命启动的阈值，此属性无对应的Set方法，只能直接修改。<br>当前生命值百分比小于此值0.2时，才会进一步判断是否温度/饥饿不致命
 ---@field takingfiredamagestarttime number # 应该理解为靠近火源的时刻？此属性无对应的Set方法，也不建议直接修改。<br>在DoFireDamage方法逻辑中，总是将最新的时刻与此作差值，得到的结果大于fire_timestart则执行受到火伤的逻辑
 ---@field lastfiredamagetime number # 应该理解为上一次火伤结束的时刻？此属性无对应的Set方法，也不建议直接修改。
 ---@field regen table|nil # 此表是StartRegen方法的产物，代表单个生命值回复任务，不建议直接修改。<br>表中主要有三个成员，amount代表单次回复量(number)，period代表回血间隔(number)，task代表一个周期任务(DoPeriodicTask)<br>从源码上看，这个属性只能代表一个回血任务，所以官方推荐用同组件的另一方法AddRegenSource

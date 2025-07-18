@@ -129,7 +129,7 @@ function inventory:CastSpellBookFromInv(item,spell_id)
 end
 
 ---获取body栏的容器组件【这函数名...】
----@return component|nil # 容器组件container
+---@return component_container|nil # 容器组件container
 ---@nodiscard
 ---author: nullptr
 function inventory:GetOverflowContainer()
@@ -252,7 +252,7 @@ end
 
 ---获取拥有指定ID物品的情况
 ---<br>范围：物品栏、背包栏、鼠标上的、你正在打开的容器如箱子(由形参3决定)
----@param item prefabID # 字符串ID
+---@param item PrefabID # 字符串ID
 ---@param amount number # 下限数量
 ---@param checkallcontainers boolean # 是否扫描所有打开的容器
 ---@return boolean,number # num_found >= amount, num_found。是否至少有，以及有多少

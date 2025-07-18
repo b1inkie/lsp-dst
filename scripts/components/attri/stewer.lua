@@ -9,7 +9,7 @@
 ---@field product_spoilage number # 烹饪完成时，料理的新鲜度
 ---@field spoiledproduct string|"spoiled_food" # 锅上的食物不采集的腐烂产物
 ---@field spoiltime number # 烹饪完成的料理的腐烂时长
----@field keepspoilage bool|nil # 默认新鲜度损坏一半，设置为true不会
+---@field keepspoilage boolean|nil # 默认新鲜度损坏一半，设置为true不会
 ---@field cooktimemult number|1 # 烹饪时长倍率，如大厨锅为0.8
 ---@field chef_id userid # 做饭角色的userid
 ---@field ingredient_prefabs table<string> # 食材表，即放入锅中的四个食材

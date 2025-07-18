@@ -28,7 +28,7 @@ function battleborn:SetOnTriggerFn(ontriggerfn)
 end
 
 ---设置战斗回复的下限，如女武神触发战斗回复，回复值不会低于0.33，(这是默认值，不设置就是0.33)
----@param min number|0.33 # 战斗回复的下限，触发战斗回复时，回复量不会低于此，保底
+---@param min number # 战斗回复的下限0.33，触发战斗回复时，回复量不会低于此，保底
 ---author: nullptr
 function battleborn:SetClampMin(min)
 end
@@ -39,7 +39,7 @@ function battleborn:OnDeath()
 end
 
 ---设置战斗回复的下限，如女武神触发战斗回复，回复值不会高于2.0，(这也是默认值，不设置就是2.0)
----@param max number|2.0 # 战斗回复的上限，触发战斗回复时，回复量不会高于此，封顶
+---@param max number # 战斗回复的上限2.0，触发战斗回复时，回复量不会高于此，封顶
 ---author: nullptr
 function battleborn:SetClampMax(max)
 end
