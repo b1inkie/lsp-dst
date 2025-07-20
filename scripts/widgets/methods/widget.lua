@@ -4,6 +4,7 @@
 ---@overload fun(): widget_widget
 ---@field _ctor function #
 ---@field focus boolean # 
+---@field shown boolean # 该ui是否在显示中
 local widget = {}
 
 ---
@@ -448,7 +449,7 @@ function widget:OnGainFocus() end
 ---author: 
 function widget:OnLoseFocus() end
 
----
+---设置聚焦时回调函数 <br> `痛点`: 当我们写了很多按钮,然后用text类写了一个聚焦提示hint. 当我们鼠标从一个按钮迅速移动到另一个按钮时,会先执行第二个按钮的聚焦,再执行第一个按钮的失去聚焦,从而导致hint不显示. <br> `解决方案`: 你可以在失去聚焦时判断其他按钮的聚焦状态: `self.other_btn.focus`. 当然你也可以写一个计数器: <br> local focus = 0 <br> self.btn:SetOnGainFocus(function () print('你的聚焦逻辑') focus = focus + 1 end) <br> self.btn:SetOnLoseFocus(function () <br>   focus = focus - 1 <br>   if focus <= 0 then self.hint:Hide() end <br> end)
 ---@param fn idk #
 ---
 ---author: 

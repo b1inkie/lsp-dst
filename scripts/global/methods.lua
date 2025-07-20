@@ -4336,10 +4336,10 @@ function SpringGrowthMod(amount,forced)
 end
 
 ---
----UNKNOWN
+---获取`xxx.tex`所在的图集路径
 ---
----@param imagename idk 
----@param no_fallback idk 
+---@param imagename string 
+---@param no_fallback boolean|nil # 这个不填,则不会返回nil,如果你xml找不到,这里也会返回一个错误的路径, 官方为了省一点性能才这样写的 <br> 如果你是MOD物品, 建议一律填`true`, 这样如果没找到, 会返回nil <br> 
 ---所在文件: scripts/simutil.lua
 function GetInventoryItemAtlas(imagename,no_fallback)
 end

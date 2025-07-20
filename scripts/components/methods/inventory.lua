@@ -275,8 +275,9 @@ function inventory:BurnNonpotatableInContainer(container)
 end
 
 ---
----@param item idk #
----author:
+---将物品给到玩家鼠标指针上拿着 <br> `注意:` 需要先 `GiveItem` , 然后再设置
+---@param item ent # 
+---author: lan
 function inventory:SetActiveItem(item)
 end
 

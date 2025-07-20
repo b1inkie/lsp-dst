@@ -16,6 +16,7 @@
 ---@field onrefreshfn idk #
 ---@field container idk #
 ---@field should_close_widget idk #
+---@field OnUpdate fun(self,dt:idk)|nil # 
 local containerwidget = {}
 
 ---
