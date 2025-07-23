@@ -535,8 +535,9 @@ function playercontroller:ControllerTargetLock(enable)
 end
 
 ---
----@param val idk # 
----author: 
+---启用/禁用 玩家控制 <br> `注意:` 这个方法只有在服务器调用才生效 <br> 客机请用: `ThePlayer.components.playercontroller.classified.iscontrollerenabled:set_local(false)`
+---@param val boolean # boolean
+---author: lan
 function playercontroller:Enable(val)
 end
 

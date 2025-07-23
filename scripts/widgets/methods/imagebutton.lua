@@ -3,7 +3,7 @@
 ---@class widget_imagebutton: widget_button
 ---@overload fun(atlas:idk, normal:idk, focus:idk, disabled:idk, down:idk, selected:idk, scale:idk, offset:idk): widget_imagebutton
 ---@field _ctor function #
----@field image widget_image #
+---@field image widget_image # 按钮使用的图片
 ---@field scale_on_focus idk #
 ---@field move_on_click idk #
 ---@field focus_scale idk #

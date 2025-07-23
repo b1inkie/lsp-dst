@@ -275,7 +275,7 @@ function inventory:BurnNonpotatableInContainer(container)
 end
 
 ---
----将物品给到玩家鼠标指针上拿着 <br> `注意:` 需要先 `GiveItem` , 然后再设置
+---`注意:` `不要调用这个方法 !!!` <br> 想直接给玩家到指针上, 请调用 `GiveActiveItem` . 想把库存物品移动到指针上, 请调用 `SelectActiveItemFromSlot` .
 ---@param item ent # 
 ---author: lan
 function inventory:SetActiveItem(item)
@@ -471,9 +471,10 @@ function inventory:DropEverything(ondeath,keepequip)
 end
 
 ---
----@param inst idk #
----author:
-function inventory:GiveActiveItem(inst)
+---将物品给到玩家的指针上
+---@param item ent #
+---author: lan
+function inventory:GiveActiveItem(item)
 end
 
 ---

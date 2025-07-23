@@ -407,9 +407,10 @@ function widget:SetFadeAlpha(alpha, skipChildren) end
 function widget:SetCanFadeAlpha(fade, skipChildren) end
 
 ---
----@param val idk #
+---设置不能被点击, 此时可以透过该控件聚焦到下面的控件
+---@param val boolean #
 ---
----author: 
+---author: lan
 function widget:SetClickable(val) end
 
 ---
