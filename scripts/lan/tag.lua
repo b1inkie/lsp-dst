@@ -537,7 +537,7 @@
 ---| "pet_hound" # ※标签ID: pet_hound<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "murderable" # ※标签ID: murderable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ammoloaded" # ※标签ID: ammoloaded<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "portableitem" # ※标签ID: portableitem<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "portableitem" # ※标签ID: portableitem<br>※直译名: 便携物品 <br>※详述: 有`deploy`组件的物品,要加这个tag,部署时,才会显示`放置`,不然会显示`栽种` <br>※分类: 物品 | Inventory Item <br>※author: lan <br>※拉取时间: 2024-12-11 15:04
 ---| "farmplantfastpicker" # ※标签ID: farmplantfastpicker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "deployedplant" # ※标签ID: deployedplant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "beefalo_groomer" # ※标签ID: beefalo_groomer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04

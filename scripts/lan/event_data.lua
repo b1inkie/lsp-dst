@@ -635,6 +635,7 @@
 ---@field armor idk # 
 
 ---@class event_data_percentusedchange # 
+---@field percent number # 0~1 当前耐久百分比
 
 ---@class event_data_armordamaged # 
 
@@ -1082,6 +1083,7 @@
 ---@class event_data_fishingcatch # 
 
 ---@class event_data_fishingcollect # 
+---@field fish ent # 鱼
 
 ---@class event_data_on_caught_in_net # 
 
@@ -1477,7 +1479,7 @@
 ---@class event_data_ms_unregisterpetrifiable # 
 
 ---@class event_data_picksomething # 
----@field object idk # 
+---@field object ent # 
 ---@field loot idk # 
 
 ---@class event_data_picked # 

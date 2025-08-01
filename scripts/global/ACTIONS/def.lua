@@ -51,6 +51,7 @@ ACTIONS = {
     PLAY = {},
     CREATE = {},
     JOIN = {},
+    ---捕虫网
     NET = {},
     CATCH = {},
     FISH_OCEAN = {},

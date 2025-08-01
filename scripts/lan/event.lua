@@ -413,7 +413,7 @@
 ---| "ipecacpoop" # ※事件 ID: ipecacpoop <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "isacidsizzling" # ※事件 ID: isacidsizzling <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "isfeasting" # ※事件 ID: isfeasting <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
----| "itemget" # ※事件 ID: itemget <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
+---| "itemget" # ※事件 ID: itemget <br>※直译名: 获得物品  <br>※详述: 特别注意: 玩家背包中的东西,被 `shift+右键` 丢下时, 并不会推 `itemget` 和 `itemlose`, 需要监听 `dropitem`. <br> 如果你希望监听玩家库存变化,应该监听以上三个事件,并延迟一帧确保是变化后的,同时性能也更好 <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "itemlose" # ※事件 ID: itemlose <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "itemplanted" # ※事件 ID: itemplanted <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "itemranout" # ※事件 ID: itemranout <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

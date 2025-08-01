@@ -13772,3 +13772,24 @@ end
 ---author:lan
 function Vector3(a,b,c)
 end
+
+---为可以建造的建筑添加一个预测用的绿色虚影
+---@param name any
+---@param bank any
+---@param build any
+---@param anim any
+---@param onground any
+---@param snap any
+---@param metersnap any
+---@param scale any
+---@param fixedcameraoffset any
+---@param facing any
+---@param postinit_fn any
+---@param offset any
+---@param onfailedplacement any
+---
+---所在文件: scripts/prefabutil.lua
+---
+---author:lan
+function MakePlacer(name, bank, build, anim, onground, snap, metersnap, scale, fixedcameraoffset, facing, postinit_fn, offset, onfailedplacement)
+end

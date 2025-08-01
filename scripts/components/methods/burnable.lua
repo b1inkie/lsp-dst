@@ -176,3 +176,9 @@ end
 function burnable:AddBurnFX(prefab,offset,followsymbol,followaschild,scale,followlayered)
 end
 
+---
+---@param fn fun(this:ent)
+---author: 
+function burnable:SetOnBurntFn(fn)
+end
+

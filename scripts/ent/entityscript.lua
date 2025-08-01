@@ -104,8 +104,9 @@ end
 function entityscript:Show()
 end
 
----EntityScript: 
----author: 
+---EntityScript: 获取预制物应当展示的名字
+---@return string
+---author: lan
 function entityscript:GetDisplayName()
 end
 
@@ -597,11 +598,11 @@ end
 function entityscript:GetDebugString()
 end
 
----EntityScript: 
----@param x idk # 
----@param y idk # 
----@param z idk # 
----author: 
+---EntityScript: 强制朝向点 <br>(贴地动画,例如飞刀,请在spriter中,将红点调至飞刀最左侧,放置原点,水平朝向x轴正方向) <br> 注意: 先设置位置,再设置朝向
+---@param x number # 
+---@param y number # 
+---@param z number # 
+---author: lan
 function entityscript:ForceFacePoint(x,y,z)
 end
 
