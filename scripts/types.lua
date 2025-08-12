@@ -4,8 +4,8 @@
 ---@overload fun(x: number, y: number, z: number):Vector3
 ---@operator add(Vector3): Vector3
 ---@operator sub(Vector3): Vector3
----@operator mul(number): number
----@operator div(number): number
+---@operator mul(number): Vector3
+---@operator div(number): Vector3
 ---@field x number
 ---@field y number
 ---@field z number
