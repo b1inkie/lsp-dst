@@ -65,7 +65,10 @@ function inventory:GetEquippedMoistureRate(slot)
 end
 
 ---
----author:
+---获取所有物品,包括overflowcontainer
+---@return ent[]
+---
+---author: lan
 function inventory:ReferenceAllItems()
 end
 

@@ -61,8 +61,8 @@ function edible:GetSanity(eater)
 end
 
 ---设置【食物被吃】回调（例：夜莓被吃==>人物获得夜视）
----@param fn function(inst, eater) # 诸如此类的回调函数(inst, eater:食用者) !! 一般回调函数的首参都代表【具有此组件的实体】
----author:nullptr
+---@param fn fun(this:ent, eater:ent) # 诸如此类的回调函数(inst, eater:食用者) !! 一般回调函数的首参都代表【具有此组件的实体】
+---author:nullptr, lan
 function edible:SetOnEatenFn(fn)
 end
 

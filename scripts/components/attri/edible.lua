@@ -5,9 +5,9 @@
 ---@field healthvalue idk
 ---@field hungervalue idk
 ---@field sanityvalue idk
----@field foodtype idk
+---@field foodtype string # 想让牛可以吃: `FOODTYPE.ROUGHAGE` <br> 想让沃比可以吃 `secondaryfoodtype = FOODTYPE.MONSTER`
 ---@field secondaryfoodtype idk
----@field oneaten idk
+---@field oneaten fun(this:ent, eater:ent) # `SetOnEatenFn` 设置的
 ---@field degrades_with_spoilage idk
 ---@field gethealthfn idk
 ---@field getsanityfn idk

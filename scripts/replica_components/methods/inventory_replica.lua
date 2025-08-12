@@ -85,8 +85,9 @@ function replica_inventory:OnRemoveEntity()
 end
 
 ---
----@param tag idk # 
----author: 
+---@param tag tagID # 
+---@return boolean
+---author: lan
 function replica_inventory:EquipHasTag(tag)
 end
 

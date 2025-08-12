@@ -13762,17 +13762,6 @@ end
 function Ingredient(ingredienttype, amount, atlas, deconstruct, imageoverride)
 end
 
----Vector3 构造函数
----@param a number
----@param b number
----@param c number
----@return Vector3
----@nodiscard
----
----author:lan
-function Vector3(a,b,c)
-end
-
 ---为可以建造的建筑添加一个预测用的绿色虚影
 ---@param name any
 ---@param bank any
