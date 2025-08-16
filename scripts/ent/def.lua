@@ -108,7 +108,7 @@
 ---@field persists idk
 ---@field _shadowportalmax idk
 ---@field OnSave idk
----@field entity idk
+---@field entity ent_sys # C层的东西,部分方法已在 `EntityScript` 进行封装
 ---@field customidleanim idk
 ---@field ChangeToMonkey idk
 ---@field IsCarefulWalking idk
