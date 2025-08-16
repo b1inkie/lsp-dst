@@ -203,7 +203,7 @@ function _StateGraphInstance:PlayRandomAnim(anims, loop) end
 
 ---
 ---@param event eventID #
----@param data table #
+---@param data table|nil #
 ---
 ---author: 
 function _StateGraphInstance:PushEvent(event, data) end
