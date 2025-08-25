@@ -254,9 +254,3 @@ end
 function math.pow(x,y)
 end
 
----返回最大的浮点数。
----@return number # 最大的浮点数
----author: lan
-function math.huge()
-end
-
