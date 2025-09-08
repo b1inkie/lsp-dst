@@ -15,9 +15,9 @@ end
 function entityscript:StackableSkinHack(target)
 end
 
----EntityScript: 
----@param child idk # 
----author: 
+---EntityScript: 解除与另一实体的双向子绑定
+---@param child ent # 
+---author: Runar
 function entityscript:RemoveChild(child)
 end
 
@@ -183,9 +183,9 @@ end
 function entityscript:GetRotation()
 end
 
----EntityScript: 
----@param child idk # 
----author: 
+---EntityScript: 添加与另一实体的双向子绑定
+---@param child ent # 
+---author: Runar
 function entityscript:AddChild(child)
 end
 
@@ -214,8 +214,8 @@ end
 function entityscript:SetStateGraph(name)
 end
 
----EntityScript: 
----author: 
+---EntityScript: 恢复被隐藏的实体
+---author: Runar
 function entityscript:ReturnToScene()
 end
 
@@ -395,9 +395,9 @@ end
 function entityscript:LongUpdate(dt)
 end
 
----EntityScript: 
----@param builder idk # 
----author: 
+---EntityScript: 玩家制作/建造时的回调方法, 同时调用所有组件的建造回调
+---@param builder ent # 
+---author: Runar
 function entityscript:OnBuilt(builder)
 end
 
@@ -508,9 +508,9 @@ end
 function entityscript:FaceAwayFromPoint(dest,force)
 end
 
----EntityScript: 
----@param name idk # 
----author: 
+---EntityScript: 修改实体的prefab, 保存后将以被设置的prefab加载
+---@param name string # 
+---author: Runar
 function entityscript:SetPrefabName(name)
 end
 
@@ -627,14 +627,14 @@ end
 function entityscript:PushEvent(event,data)
 end
 
----EntityScript: 
----author: 
+---EntityScript: 获取当前皮肤所在的dyn包名, 可以获取同名贴图
+---author: Runar
 function entityscript:GetSkinBuild()
 end
 
----EntityScript: 
----@param nameoverride idk # 
----author: 
+---EntityScript: 指定展示用的覆盖prefab, 不影响真实prefab
+---@param nameoverride string # 
+---author: Runar
 function entityscript:SetPrefabNameOverride(nameoverride)
 end
 
@@ -711,8 +711,8 @@ end
 function entityscript:GetPlatformFollowers()
 end
 
----EntityScript: 
----author: 
+---EntityScript: 停止并将实体从世界上隐藏, 可以恢复
+---author: Runar
 function entityscript:RemoveFromScene()
 end
 
