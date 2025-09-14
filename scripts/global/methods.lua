@@ -12987,10 +12987,11 @@ function SetCraftingAutopaused(autopause)
 end
 
 ---
----UNKNOWN
+---生成由`GetSaveRecord`保存的实体
 ---
 ---@param saved idk 
 ---@param newents idk 
+---@return ent
 ---所在文件: scripts/mainfunctions.lua
 function SpawnSaveRecord(saved,newents)
 end

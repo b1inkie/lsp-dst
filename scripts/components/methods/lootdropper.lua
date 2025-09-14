@@ -25,7 +25,7 @@ function lootdropper:ClearRandomLoot()
 end
 
 ---设置固定掉落物表loot
----@param loots {prefab:PrefabID}[] # 掉落物名称表
+---@param loots PrefabID[] # 掉落物名称表
 ---author: 观测分析思考
 ---<br>调用此方法会置空chanceloot(概率随机掉落表)、randomloot(加权随机掉落表)和numrandomloot(加权随机掉落触发次数)
 ---<br>除此之外会在正常掉落后面追加这个表里面的物品，不是重新设置所有的掉落物!
