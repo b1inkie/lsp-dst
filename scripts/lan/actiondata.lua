@@ -1,0 +1,37 @@
+---@meta
+
+---@class actiondata # ACTIONS的参数表
+---@field priority number|nil 动作优先级，数字类型，默认值0
+---@field mount_valid boolean|nil 控制动作是否在玩家骑乘状态下可用，默认值false <br> 很多动画都是没有骑乘状态的
+---@field distance number|nil 执行该动作时玩家与目标之间的最大允许距离，默认值nil
+---@field instant idk 决定动作是否立即执行，不需要移动或等待状态图完成，默认值false
+---@field rmb idk 标识这个动作是否通过右键触发，默认值nil
+---@field mindistance idk 最小执行距离，默认值nil
+---@field arrivedist idk 到达距离，默认值nil
+---@field ghost_valid idk 制动作是否在玩家死亡变为幽灵状态时可用，默认值false
+---@field ghost_exclusive idk 制动作是否仅在幽灵状态下可用，活着时不可用，默认值false
+---@field encumbered_valid idk 控制动作是否在玩家负重状态下可用，默认值false
+---@field floating_valid idk 是否对漂浮状态有效，默认值false
+---@field paused_valid idk 控制动作是否在游戏暂停状态下可用，默认值false
+---@field canforce idk 控制动作是否可以被强制执行，默认值nil
+---@field rangecheckfn idk 自定义范围检查函数，默认值nil
+---@field silent_fail idk 是否静默失败，默认值nil
+---@field actionmeter idk 是否显示动作进度条，默认值nil
+---@field invalid_hold_action idk 是否为无效的持续动作，默认值nil
+---@field customarrivecheck idk 自定义到达检查函数，默认值nil
+---@field is_relative_to_platform idk 是否相对于平台，默认值nil
+---@field disable_platform_hopping idk 是否禁用平台跳跃，默认值nil
+---@field skip_locomotor_facing idk 是否跳过移动朝向，默认值nil
+---@field do_not_locomote idk 是否不移动，默认值nil
+---@field extra_arrive_dist idk 为特定动作添加额外的到达距离计算，默认值nil
+---@field tile_placer idk 指定要使用的瓦片放置器prefab名称，默认值nil
+---@field show_tile_placer_fn idk 显示瓦片放置器的函数，默认值nil
+---@field show_primary_input_left idk 在hover提示中显示主要输入按键的提示，默认值nil
+---@field show_secondary_input_right idk 在hover提示中显示次要输入按键的提示，默认值nil
+---@field theme_music idk 执行动作时播放的音乐，默认值nil
+---@field theme_music_fn idk 客户端主题音乐函数，默认值nil
+---@field pre_action_cb idk 动作前回调函数，默认值nil
+---@field map_action idk 是否为地图动作，默认值nil
+---@field closes_map idk 是否关闭地图，默认值nil
+---@field map_only idk 是否仅在地图上存在，默认值nil
+---@field map_works_on_unexplored idk 是否对未探索区域生效，默认值nil
