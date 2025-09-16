@@ -445,6 +445,12 @@ function AnimState:SetDepthWriteEnabled()
 end
 
 ---UNKNOWN
+---@param parallax boolean #
+---author:
+function AnimState:SetErosionParallax(parallax)
+end
+
+---UNKNOWN
 ---@param param1 number # 
 ---@param param2 number # 
 ---@param param3 number # 
@@ -464,6 +470,12 @@ end
 ---@param param3 number # 
 ---author: 
 function AnimState:SetFloatParams(param1,param2,param3)
+end
+
+---UNKNOWN
+---@param force boolean
+---author:
+function AnimState:SetForceSinglePass(force)
 end
 
 ---设置动画到第多少帧

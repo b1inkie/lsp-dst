@@ -515,12 +515,14 @@ function MergeKeyValueList(...)
 end
 
 ---
----UNKNOWN
+---将实体生成在指定实体或坐标处，然后设置尺寸与偏移
 ---
----@param prefab idk 
----@param loc idk 
----@param scale idk 
----@param offset idk 
+---@param prefab string # 实体prefab
+---@param loc ent|Vector3 # 实体或者Vector3坐标
+---@param scale Vector3|nil
+---@param offset Vector3|nil
+---@return ent
+---Author: Runar  
 ---所在文件: scripts/util.lua
 function SpawnAt(prefab,loc,scale,offset)
 end
