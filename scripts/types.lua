@@ -81,6 +81,7 @@ function Vector3:IsVector3() end
 ---@alias asset_type string # 资源类型
 ---| '"ANIM"' # .zip
 ---| '"ATLAS"' # .xml
+---| '"ATLAS_BUILD"' # .xml, 参数3固定为256
 ---| '"IMAGE"' # .tex
 ---| '"SCRIPT"' # .lua
 ---| '"SOUND"' # .fsb
@@ -98,3 +99,5 @@ function Vector3:IsVector3() end
 ---@field planar number|nil
 
 ---@alias userid string # 玩家的克雷id, 如果是离线游玩, 则是steam id
+
+---@alias task class # 通过StartThread创建的任务
