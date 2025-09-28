@@ -28,11 +28,11 @@ end
 function entityscript:GetPosition()
 end
 
----EntityScript: 
----@param cmp idk # 
----@param do_static_update idk # 
----author: 
-function entityscript:StartUpdatingComponent(cmp,do_static_update)
+---EntityScript: 启用组件更新
+---@param cmp componentID # 
+---@param do_static_update boolean|nil # 执行静态更新
+---author: Runar
+function entityscript:StartUpdatingComponent(cmp, do_static_update)
 end
 
 ---EntityScript: 移除所有监听
@@ -106,6 +106,7 @@ end
 
 ---EntityScript: 获取预制物应当展示的名字
 ---@return string
+---@nodiscard
 ---author: lan
 function entityscript:GetDisplayName()
 end
@@ -509,7 +510,7 @@ function entityscript:FaceAwayFromPoint(dest,force)
 end
 
 ---EntityScript: 修改实体的prefab, 保存后将以被设置的prefab加载
----@param name string # 
+---@param name PrefabID # 
 ---author: Runar
 function entityscript:SetPrefabName(name)
 end
@@ -633,7 +634,7 @@ function entityscript:GetSkinBuild()
 end
 
 ---EntityScript: 指定展示用的覆盖prefab, 不影响真实prefab
----@param nameoverride string # 
+---@param nameoverride PrefabID # 
 ---author: Runar
 function entityscript:SetPrefabNameOverride(nameoverride)
 end
@@ -700,9 +701,10 @@ end
 function entityscript:StopBrain()
 end
 
----EntityScript: 
----@param fn idk # 
----author: 
+---EntityScript: 创建线程，线程事务崩溃不影响游戏进程
+---@param fn function # 
+---@return task #线程任务
+---author: Runar
 function entityscript:StartThread(fn)
 end
 
