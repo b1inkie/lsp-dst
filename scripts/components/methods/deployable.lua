@@ -34,7 +34,7 @@ end
 function deployable:Deploy(pt, deployer, rot)
 end
 
----设置部署模式
+---设置部署模式<br>`lan`: 不调用这个方法设置一下的话,能种到船上去,会出bug
 ---@param mode number #部署模式（DEPLOYMODE里的一个常量）
 ---author:星璃
 function deployable:SetDeployMode(mode)

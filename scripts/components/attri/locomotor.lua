@@ -33,7 +33,7 @@
 ---@field tempgroundtile idk
 ---@field isrunning idk
 ---@field _externalspeedmultipliers idk
----@field externalspeedmultiplier idk
+---@field externalspeedmultiplier number
 ---@field wasoncreep idk
 ---@field triggerscreep idk
 ---@field is_prediction_enabled idk

@@ -5338,7 +5338,7 @@ end
 ---
 ---服务器向客户端发RPC
 ---
----@param id_table idk MOD_RPC[命名空间][rpcID]
+---@param id_table idk # `GetClientModRPC`
 ---@param user_id userid # 玩家userid, 注意userid在线和离线不一样
 ---@param ... any 要传到客户端的数据,不可以是表,可不填
 ---所在文件: scripts/modutil.lua
