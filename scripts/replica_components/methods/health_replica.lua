@@ -96,6 +96,8 @@ function replica_health:SetIsDead(isdead)
 end
 
 ---
+---@return boolean
+---@nodiscard
 ---author: 
 function replica_health:IsDead()
 end

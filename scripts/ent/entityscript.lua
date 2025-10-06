@@ -302,6 +302,8 @@ end
 
 ---EntityScript: 实体是否有这些标签
 ---@param ... string # 标签
+---@return boolean
+---@nodiscard
 ---author: lan
 function entityscript:HasTags(...)
 end
@@ -360,8 +362,9 @@ end
 function entityscript:CanInteractWith(inst)
 end
 
----EntityScript: 
----author: 
+---EntityScript: 获取当前实体所站的平台(例如船只,目前我只知道船,总之可以用来判断玩家是不是在陆地)
+---@return ent|nil
+---author: lan
 function entityscript:GetCurrentPlatform()
 end
 

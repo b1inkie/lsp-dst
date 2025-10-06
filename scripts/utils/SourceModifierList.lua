@@ -19,27 +19,27 @@ function SourceModifierList:IsEmpty() end
 ---
 ---@param source ent|string #
 ---@param m number|boolean #
----@param key string #
+---@param key string|'key'|nil # 不填的话, 默认为字符串 `key`
 ---
 ---author: 
 function SourceModifierList:SetModifier(source, m, key) end
 
 ---
----@param source idk #
----@param key idk #
+---@param source ent|string #
+---@param key string|nil #
 ---
 ---author: 
 function SourceModifierList:RemoveModifier(source, key) end
 
 ---
 ---@param source idk #
----@param key idk #
+---@param key string|nil # 不填的话, 就移除来源的所有modifier
 ---
 ---author: 
 function SourceModifierList:CalculateModifierFromSource(source, key) end
 
 ---
----@param key idk #
+---@param key string #
 ---
 ---author: 
 function SourceModifierList:CalculateModifierFromKey(key) end
