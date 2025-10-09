@@ -1334,7 +1334,7 @@ COLLISION =
 {
     GROUND            = 32,
 	BOAT_LIMITS       = 64,
-	LAND_OCEAN_LIMITS = 128,             -- physics wall between water and land
+	LAND_OCEAN_LIMITS = 128,             -- 陆地和海洋连接处的空气墙 <br> physics wall between water and land
     LIMITS            = 128 + 64,        -- BOAT_LIMITS + LAND_OCEAN_LIMITS
     WORLD             = 128 + 64 + 32,   -- BOAT_LIMITS + LAND_OCEAN_LIMITS + GROUND
     ITEMS             = 256,
