@@ -186,9 +186,12 @@ end
 function Physics:SetMass(mass)
 end
 
----UNKNOWN
----author: 
-function Physics:SetMotorVel()
+---设置机动速率
+---@param x number # 正面方向速率
+---@param y number # 高度方向速率
+---@param z number # 侧面方向速率
+---author: Runar
+function Physics:SetMotorVel(x, y, z)
 end
 
 ---物理运行覆盖
