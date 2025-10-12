@@ -11,6 +11,7 @@
 ---@field amorphous component_amorphous
 ---@field amphibiouscreature component_amphibiouscreature
 ---@field anchor component_anchor
+---@field aoecharging component_aoecharging
 ---@field aoespell component_aoespell
 ---@field aoetargeting component_aoetargeting
 ---@field aoeweapon_base component_aoeweapon_base

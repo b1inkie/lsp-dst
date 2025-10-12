@@ -11,6 +11,7 @@
 ---| "amorphous"
 ---| "amphibiouscreature"
 ---| "anchor"
+---| "aoecharging"
 ---| "aoespell"
 ---| "aoetargeting"
 ---| "aoeweapon_base"
