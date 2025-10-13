@@ -95,7 +95,7 @@ function weapon:OnRemoveFromEntity()
 end
 
 ---设置投射物偏移
----@param offset Vector3 # 偏移向量
+---@param offset Vector3|number # 偏移向量
 ---author: lan(攻击者到目标的方向向量乘以这个offset)
 function weapon:SetProjectileOffset(offset)
 end
