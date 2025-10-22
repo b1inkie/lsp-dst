@@ -178,21 +178,23 @@ function SetHeroNameTexture_Grey(image_widget,character)
 end
 
 ---
----UNKNOWN
+---创建或继承一个类
 ---
----@param base idk 
----@param _ctor idk 
----@param props idk 
----@return table
+---@param base_or_ctor class|fun(t:class,...)
+---@param _ctor fun(t:class,...)|nil
+---@param props table<val,fun(t:class,new_val:any,old_val:any)>
+---@return class
+---author: Runar
 ---所在文件: scripts/class.lua
-function Class(base,_ctor,props)
+function Class(base_or_ctor,_ctor,props)
 end
 
 ---
----UNKNOWN
+---将实例的键设置为只读
 ---
----@param t idk 
----@param k idk 
+---@param t class
+---@param k any
+---author: Runar
 ---所在文件: scripts/class.lua
 function makereadonly(t,k)
 end
@@ -213,20 +215,22 @@ function HandleClassInstanceTracking()
 end
 
 ---
----UNKNOWN
+---设置实例中键被赋值的行为
 ---
----@param t idk 
----@param k idk 
----@param fn idk 
+---@param t class
+---@param k any
+---@param fn fun(t:class,new_val:any,old_val:any)
+---author: Runar
 ---所在文件: scripts/class.lua
 function addsetter(t,k,fn)
 end
 
 ---
----UNKNOWN
+---移除实例中键被赋值的行为
 ---
----@param t idk 
----@param k idk 
+---@param t class
+---@param k any
+---author: Runar
 ---所在文件: scripts/class.lua
 function removesetter(t,k)
 end
@@ -586,10 +590,12 @@ function rawstring(t)
 end
 
 ---
----UNKNOWN
+---浅拷贝
 ---
----@param orig idk 
----@param dest idk 
+---@param orig table
+---@param dest table
+---@return table
+---author: Runar
 ---所在文件: scripts/util.lua
 function shallowcopy(orig,dest)
 end
@@ -642,18 +648,21 @@ function StringContainsAnyInArray(input,array)
 end
 
 ---
----UNKNOWN
+---根据值移除元素
 ---
----@param t idk 
----@param value idk 
+---@param t table
+---@param value any
+---author: Runar
 ---所在文件: scripts/util.lua
 function RemoveByValue(t,value)
 end
 
 ---
----UNKNOWN
+---深拷贝
 ---
----@param object idk 
+---@param object table
+---@return table
+---author: Runar
 ---所在文件: scripts/util.lua
 function deepcopy(object)
 end
@@ -1294,8 +1303,10 @@ function c_printtextureinfo(filename)
 end
 
 ---
----UNKNOWN
+---返回上一个c_select()选中的目标
 ---
+---@return ent|nil
+---author: Runar
 ---所在文件: scripts/consolecommands.lua
 function c_sel()
 end
@@ -2602,11 +2613,13 @@ function DumpComponent(comp)
 end
 
 ---
----UNKNOWN
+---开始一个线程
 ---
----@param fn idk 
----@param id idk 
----@param param idk 
+---@param fn function 
+---@param id number|nil
+---@param param table|nil 
+---@return task
+---author: Runar
 ---所在文件: scripts/scheduler.lua
 function StartThread(fn,id,param)
 end
@@ -2628,9 +2641,10 @@ function KillThreadsWithID(id)
 end
 
 ---
----UNKNOWN
+---终止一个线程
 ---
----@param task idk 
+---@param task task
+---author: Runar
 ---所在文件: scripts/scheduler.lua
 function KillThread(task)
 end
@@ -2644,18 +2658,21 @@ function RunScheduler(tick)
 end
 
 ---
----UNKNOWN
+---终止所有线程
 ---
+---author: Runar
 ---所在文件: scripts/scheduler.lua
 function StopAllThreads()
 end
 
 ---
----UNKNOWN
+---开始一个无视游戏暂停的静态线程
 ---
----@param fn idk 
----@param id idk 
----@param param idk 
+---@param fn function 
+---@param id number|nil
+---@param param table|nil 
+---@return task
+---author: Runar
 ---所在文件: scripts/scheduler.lua
 function StartStaticThread(fn,id,param)
 end
@@ -2676,22 +2693,24 @@ function WakeTask(task)
 end
 
 ---
----UNKNOWN
+---将线程挂起1帧
 ---
+---author: Runar
 ---所在文件: scripts/scheduler.lua
 function Yield()
 end
 
 ---
----UNKNOWN
+---将线程挂起time秒
 ---
----@param time idk 
+---@param time number # s
+---author: Runar
 ---所在文件: scripts/scheduler.lua
 function Sleep(time)
 end
 
 ---
----UNKNOWN
+---以原因HIBERNATE挂起线程(待补充)
 ---
 ---所在文件: scripts/scheduler.lua
 function Hibernate()
