@@ -1,0 +1,109 @@
+---@meta
+
+---@alias room_name string # 房间名，例如 "PigKingdom"
+
+---@class room_colour # 颜色（调试用）
+---@field r number
+---@field g number
+---@field b number
+---@field a number
+
+---@alias world_tile_key # 实际传参请使用 `WORLD_TILES.<key>` 常量，例如 `value = WORLD_TILES.GRASS`
+---| 'GRASS'         # 草地
+---| 'SAVANNA'       # 稀树草原
+---| 'FOREST'        # 森林
+---| 'ROCKY'         # 岩地
+---| 'MARSH'         # 沼泽
+---| 'DIRT'          # 泥地
+---| 'DESERT_DIRT'   # 沙漠泥地
+---| 'METEOR'        # 陨石地
+---| 'CARPET'        # 地毯
+---| 'WOODFLOOR'     # 木地板
+---| 'CAVE'          # 洞穴
+---| 'FUNGUS'        # 真菌地
+---| 'CHECKER'       # 棋盘地
+---| 'MOON'          # 月岛地皮
+
+---@alias room_node_type integer # 传入 `NODE_TYPE` 中的常量。
+---| `NODE_TYPE.Default` (0): 默认，可与范围内的任何其他默认节点相连。
+---| `NODE_TYPE.Blank` (1): 空白，地面不可通行。
+---| `NODE_TYPE.Background` (2): 背景，不直接参与主要逻辑。
+---| `NODE_TYPE.Random` (3): 随机，可能表示动态生成的房间。
+---| `NODE_TYPE.Blocker` (4): 阻挡，添加两个空白节点在其旁边。
+---| `NODE_TYPE.Room` (5): 房间，只能通过图结构连接，周围有不可通行区域，只有一条陆地桥相连。
+---| `NODE_TYPE.BackgroundRoom` (6): 背景房间，通常在背景或海湾中使用。
+---| `NODE_TYPE.SeparatedRoom` (7): 分隔房间，边界完全被不可通行障碍隔离。
+
+---@alias room_internal_conn_type integer # 节点与其他节点的连接方式。传入 `NODE_INTERNAL_CONNECTION_TYPE` 中的常量，通常为 `EdgeSite` (1)。
+
+---@alias room_tag
+---| 'Town'              # 镇/聚落
+---| 'RoadPoison'        # 不生成道路（鹅卵石路）
+---| 'ForceConnected'    # 迷宫生成相关：强制连接
+---| 'ForceDisconnected' # 迷宫生成相关：强制断开
+---| 'OneshotWormhole'   # 虫洞标签（已废弃）
+---| 'ExitPiece'         # 官方标注为废弃
+---| 'Nightmare'         # 噩梦/洞穴机关区/噩梦效果
+---| 'Atrium'            # 中庭
+---| 'Mist'              # 薄雾区域（客户端加雾效）
+---| 'sandstorm'         # 沙尘暴（夏季湿度低）
+---| 'nohunt'            # 不生成猎狗（例如猴岛）
+---| 'moonhunt'          # 不生成猎狗
+---| 'nohasslers'        # 不生成巨鹿/熊大
+---| 'not_mainland'      # 非大陆，不生成旧神归来相关科技
+---| 'lunacyarea'        # 精神反转区域
+---| 'GrottoWarEntrance' # 洞穴月蘑林（月灵/影怪战斗相关）
+
+---@class room_custom_tiles_data_item # `translate` 和 `centroid` 的子项结构
+---@field tile integer # 地皮常量，例如 `WORLD_TILES.GRASS`
+---@field items string[] # 物品/预制体列表
+---@field item_count integer # 物品数量
+
+---@class room_custom_tiles_data # `RUNCA.GeneratorFunction` 所需的 data 结构
+---@field iterations integer|nil # 迭代次数
+---@field seed_mode integer|nil # 种子模式，例如 `CA_SEED_MODE.SEED_RANDOM`
+---@field num_random_points integer|nil # 随机点数量
+---@field translate room_custom_tiles_data_item[]|nil # 遍历节点地皮，若地块地皮符合条件，则替换地皮，并在 item_count > 0 时放置 items[1]
+---@field centroid room_custom_tiles_data_item[]|nil # 替换节点质心地皮，并放置一个 items[1] 预制体
+
+---@class room_custom_tiles # 自定义地皮生成
+---@field GeneratorFunction fun(nodeid:integer, entities:table, data:any)|nil # 通常为 `RUNCA.GeneratorFunction` <br> 在所有节点生成后，遍历并执行 `GeneratorFunction(nodeid, entities, data)`
+---@field data room_custom_tiles_data|any|nil # 传递给 `GeneratorFunction` 的参数
+
+---@class room_set_piece # 固定布局片段
+---@field name string                # 布局名（StaticLayout 名称）
+---@field count integer|nil          # 布置数量
+---@field chance number|nil          # 概率 0~1
+---@field tasks string[]|nil         # 限定任务
+---@field restrict_to_tags string[]|nil # 限定房间标签
+
+---@class room_distribute_group # 分布预制体组
+---@field weight number # 权重
+---@field prefabs string[] # 从此列表中随机选择一个预制体
+
+---@class room_contents # 房间内生成内容
+---@field fn fun(self:room_contents)|nil # 在创建room实例时执行的回调函数
+---@field countstaticlayouts table<string,integer|fun():integer>|nil # 静态布局及数量，值可以是整数或返回整数的函数
+---@field countprefabs table<string,integer|fun():integer>|nil      # 固定的预制物及数量，值可以是整数或返回整数的函数
+---@field distributepercent number|nil # 预制物散布区域占房间面积的百分比
+---@field distributeprefabs table<string,number|room_distribute_group>|nil  # 散布的预制物及其权重。支持 {weight=, prefabs={}} 结构进行随机选择
+---@field prefabdata table<string,table|fun():table>|nil # 为生成的预制物（来自countprefabs/distributeprefabs/tags等）附加额外数据
+
+---@class data_room # AddRoom 第二个参数
+---@field colour room_colour                         # 调试颜色（地图上显示）
+---@field value integer                              # 房间的填充地皮，传 `WORLD_TILES.<key>`
+---@field tags room_tag[]|nil                        # 房间标签
+---@field type room_node_type|nil                    # 节点类型 (传 `NODE_TYPE.<key>`)
+---@field internal_type room_internal_conn_type|nil  # 节点内部连接方式 (传 `NODE_INTERNAL_CONNECTION_TYPE.<key>`)
+---@field name string|nil                            # 特殊房间名（入口房默认 `name = "START"`）
+---@field entrance boolean|nil                       # 是否作为入口房。为true时，下面的权重参数无效
+---@field random_node_entrance_weight number|nil     # 随机入口权重（>0 有效；若任务已指定入口房则无效）
+---@field random_node_exit_weight number|nil         # 随机出口权重（>0 有效）
+---@field required_prefabs string[]|nil              # 世界生成后检查必须存在的预制体，不满足则重开。例如 "pigking"
+---@field custom_tiles room_custom_tiles|nil         # 自定义地皮生成
+---@field contents room_contents                     # 具体生成内容
+
+---注册房间
+---@param name room_name # 房间名
+---@param def data_room # 房间定义
+function AddRoom(name, def) end
