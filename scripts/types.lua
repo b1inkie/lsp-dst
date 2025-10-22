@@ -101,3 +101,9 @@ function Vector3:IsVector3() end
 ---@alias userid string # 玩家的克雷id, 如果是离线游玩, 则是steam id
 
 ---@alias task class # 通过StartThread创建的任务
+
+---@class (exact) RGBA # rgba color
+---@field [1] number # R [0~1]
+---@field [2] number # G [0~1]
+---@field [3] number # B [0~1]
+---@field [4] number # A [0~1]

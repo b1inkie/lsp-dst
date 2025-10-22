@@ -1,11 +1,5 @@
 ---@meta
 
----@class task_colour # 颜色（调试用）
----@field r number
----@field g number
----@field b number
----@field a number
-
 ---@class task_maze_tiles # 迷宫地形相关设置
 ---@field rooms string[] # 构成迷宫的普通房间列表
 ---@field bosses string[] # 迷宫中的Boss房间列表
@@ -23,7 +17,7 @@
 ---@field cove_room_name string|nil # 海湾房间名。用于将地形边缘变为弯曲形状
 ---@field cove_room_chance number|nil # 海湾房间生成概率
 ---@field cove_room_max_edges integer|nil # 房间能被选为海湾房间的最大连接边数
----@field colour task_colour # [必须] 调试颜色，在地图上显示任务区域。
+---@field colour RGBA # [必须] 调试颜色，在地图上显示任务区域。
 ---@field maze_tiles task_maze_tiles|nil # 迷宫地形设置。
 ---@field maze_tile_size integer|nil # (用途不明) 迷宫地块大小
 ---@field crosslink_factor integer|nil # 交叉连接因子。所有房间创建后，额外随机连接内部两个房间的次数。
