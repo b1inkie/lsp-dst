@@ -182,7 +182,7 @@ end
 ---
 ---@param base_or_ctor class|fun(t:class,...)
 ---@param _ctor fun(t:class,...)|nil
----@param props table<val,fun(t:class,new_val:any,old_val:any)>
+---@param props table<val,fun(t:class,new_val:any,old_val:any)>|nil
 ---@return class
 ---author: Runar
 ---所在文件: scripts/class.lua
