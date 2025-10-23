@@ -1,6 +1,9 @@
 ---@meta
 
 ---@class util_math
+---@field pi # 圆周率
+---@field huge # HUGE_VAL,大于或等于当前实现的所有数值
+---@field inf # 1/0(非标准库)
 math = {}
 
 ---计算两数相除的余数。
@@ -66,12 +69,6 @@ end
 function math.clamp(value,minValue,maxValue)
 end
 
----圆周率 π 的值。
----@return number # 圆周率 π 的值
----author: lan
-function math.pi()
-end
-
 ---计算双曲正弦值。
 ---@param x number # 数值
 ---@return number # 双曲正弦值
@@ -101,12 +98,12 @@ end
 function math.atan2(y,x)
 end
 
----计算最小值。
+---计算一系列数值中的最小值
 ---@param x number # 数值
----@param y number # 数值
+---@vararg number # 数值
 ---@return number # 最小值
----author: lan
-function math.min(x,y)
+---author: Runar
+function math.min(x, ...)
 end
 
 ---计算双曲正切值。
@@ -131,12 +128,12 @@ end
 function math.frexp(x)
 end
 
----计算最大值。
+---计算一系列数值中的最大值
 ---@param x number # 数值
----@param y number # 数值
+---@vararg number # 数值
 ---@return number # 最大值
----author: lan
-function math.max(x,y)
+---author: Runar
+function math.max(x, ...)
 end
 
 ---计算给定角度的余弦值。
@@ -182,11 +179,6 @@ end
 ---@return number # 差值的绝对值
 ---author: lan
 function math.diff(a,b)
-end
-
----1/0(非标准库)
----author: lan
-function math.inf()
 end
 
 ---向上取整。
