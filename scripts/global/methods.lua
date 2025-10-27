@@ -593,7 +593,7 @@ end
 ---浅拷贝
 ---
 ---@param orig table
----@param dest table
+---@param dest table|nil
 ---@return table
 ---author: Runar
 ---所在文件: scripts/util.lua

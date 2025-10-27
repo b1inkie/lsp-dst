@@ -533,7 +533,7 @@
 ---| "globalmapicon" # ※标签ID: globalmapicon<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "jab" # ※标签ID: jab<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "boatrace_proximitychecker" # ※标签ID: boatrace_proximitychecker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "reader" # ※标签ID: reader<br>※直译名: 读者<br>※详述: 拥有此标签的人物可读书，但也只是右键不再是检查，而是阅读，实际如果没有reader组件的话依然不能读书（毕竟组件是功能的集成体）<br>※分类: 角色 | Character<br>※author: 小右<br>※拉取时间: 2024-12-11 15:04
+---| "reader" # ※标签ID: reader<br>※直译名: 读者<br>※详述: 拥有此标签的人物可读书，但也只是右键不再是检查，而是阅读，实际如果没有reader组件的话依然不能读书（毕竟组件是功能的集成体）<br>```if inst.components.reader == nil then```<br>```inst:AddComponent('reader')```<br>```end ``` <br>※分类: 角色 | Character<br>※author: 小右<br>※拉取时间: 2024-12-11 15:04
 ---| "pet_hound" # ※标签ID: pet_hound<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "murderable" # ※标签ID: murderable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ammoloaded" # ※标签ID: ammoloaded<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
