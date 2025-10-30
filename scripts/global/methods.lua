@@ -2416,10 +2416,11 @@ end
 ---
 ---@param asset_type asset_type 资源类型
 ---@param path string 路径
+---@param scale number|nil # 256 only if "ATLAS_BUILD"
 ---@return asset # 资源
 ---@nodiscard
 ---所在文件: scripts/i_dont_know_path.lua
-function Asset(asset_type,path)
+function Asset(asset_type,path,scale)
 end
 
 ---
@@ -2615,13 +2616,13 @@ end
 ---
 ---开始一个线程
 ---
----@param fn function 
+---@param fn fun(params:any)
 ---@param id number|nil
----@param param table|nil 
+---@param params any
 ---@return task
 ---author: Runar
 ---所在文件: scripts/scheduler.lua
-function StartThread(fn,id,param)
+function StartThread(fn,id,params)
 end
 
 ---
