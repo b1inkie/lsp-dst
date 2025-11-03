@@ -23,15 +23,13 @@ function entity:AddMiniMap(...)end
 ---author: 
 function entity:AddMiniMapEntity(...)end
 
----
----@param ... idk
----author: 
-function entity:AddFollower(...)end
+---@return Follower
+---author: Runar
+function entity:AddFollower()end
 
----
----@param ... idk
----author: 
-function entity:AddAnimState(...)end
+---@return AnimState
+---author: Runar
+function entity:AddAnimState()end
 
 ---
 ---@param ... idk
@@ -88,10 +86,9 @@ function entity:FlattenMovementPrediction(...)end
 ---author: 
 function entity:AddLabel(...)end
 
----
----@param ... idk
----author: 
-function entity:AddPhysics(...)end
+---@return Physics
+---author: Runar
+function entity:AddPhysics()end
 
 ---
 ---@param ... idk
@@ -128,10 +125,9 @@ function entity:IsValid(...)end
 ---author: 
 function entity:SetCanSleep(...)end
 
----
----@param ... idk
----author: 
-function entity:AddLight(...)end
+---@return Light
+---author: Runar
+function entity:AddLight()end
 
 ---
 ---@param ... idk
@@ -223,15 +219,13 @@ function entity:GetName(...)end
 ---author: 
 function entity:AddMapGenSim(...)end
 
----
----@param ... idk
----author: 
+---@return Transform
+---author: Runar
 function entity:AddTransform(...)end
 
----
----@param ... idk
----author: 
-function entity:GetParent(...)end
+---@return Entity
+---author: Runar
+function entity:GetParent()end
 
 ---
 ---@param ... idk
