@@ -14,7 +14,7 @@
 ---@field onitemlosefn idk #
 ---@field onitemgetfn idk #
 ---@field onrefreshfn idk #
----@field container idk #
+---@field container ent|nil # 引用容器本身
 ---@field should_close_widget idk #
 ---@field OnUpdate fun(self,dt:idk)|nil # 
 local containerwidget = {}
