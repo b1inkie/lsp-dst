@@ -41,8 +41,8 @@ function weapon:LaunchProjectile(attacker,target)
 end
 
 ---设置武器伤害值。如果dmg为函数型参数，show me等信息模组无法显示正确的攻击力
----@param dmg number|function # 伤害值或伤害函数
----author: Runar
+---@param dmg number|(fun(damage:number,this:ent,attacker:ent|nil,target:ent|string):number) # 伤害值或伤害函数
+---author: Runar,lan
 function weapon:SetDamage(dmg)
 end
 
