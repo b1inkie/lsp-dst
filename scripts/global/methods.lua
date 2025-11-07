@@ -377,9 +377,10 @@ end
 ---
 ---UNKNOWN
 ---
----@param filepath idk 
+---@param filepath string
 ---@param force_path_search idk 
 ---@param search_first_path idk 
+---@return string
 ---所在文件: scripts/util.lua
 function resolvefilepath_soft(filepath,force_path_search,search_first_path)
 end
@@ -1161,9 +1162,10 @@ end
 ---
 ---UNKNOWN
 ---
----@param filepath idk 
+---@param filepath string
 ---@param force_path_search idk 
 ---@param search_first_path idk 
+---@return string
 ---所在文件: scripts/util.lua
 function softresolvefilepath(filepath,force_path_search,search_first_path)
 end
@@ -1221,7 +1223,7 @@ end
 ---
 ---UNKNOWN
 ---
----@param filepath idk 
+---@param filepath string
 ---@param force_path_search idk 
 ---@param search_first_path idk 
 ---@return string
@@ -5088,7 +5090,7 @@ end
 ---
 ---@param id string 动作id
 ---@param str string 动作译名
----@param fn fun(act: table)
+---@param fn fun(act: table):boolean
 ---所在文件: scripts/modutil.lua
 function AddAction(id,str,fn)
 end
@@ -5447,10 +5449,10 @@ end
 ---UNKNOWN
 ---
 ---@param name idk 
----@param ingredients idk 
----@param tech idk 
----@param config idk 
----@param filters idk 
+---@param ingredients Ingredient[]
+---@param tech TECH
+---@param config recipe.config|nil
+---@param filters recipe.filter[]
 ---所在文件: scripts/modutil.lua
 function AddRecipe2(name,ingredients,tech,config,filters)
 end
@@ -13761,29 +13763,19 @@ end
 function GetSoundDebugString()
 end
 
----
----注册预制物
----@param name string # 预制物id
----@param fn fun():ent # 预制物主函数
----@param assets nil|table # 预制物资源表
----@param deps idk
----@param force_path_search idk
+---@class Prefab:ent # 注册预制物
+---@overload fun(name:string,fn:(fun():ent),assets:(nil|table),deps:(nil|table)):Prefab
+---@nodiscard
+---@field _ctor function
 ---所在文件: scripts/prefabs.lua
-function Prefab(name, fn, assets, deps, force_path_search)
-end
+Prefab = {}
 
-
----
----配方用生成原料函数
----@param ingredienttype PrefabID # 除了预制物,还有其他类型,例如 `CHARACTER_INGREDIENT`
----@param amount number 
----@param atlas string|nil # 图集路径
----@param deconstruct idk
----@param imageoverride string|nil # tex名
+---@class Ingredient # 配方用生成原料函数
+---@overload fun(ingredienttype:PrefabID|CHARACTER_INGREDIENT, amount:number, atlas:string|nil, deconstruct:idk, imageoverride:string|nil):Ingredient
+---@nodiscard
 ---所在文件: scripts/recipe.lua
 ---author: lan
-function Ingredient(ingredienttype, amount, atlas, deconstruct, imageoverride)
-end
+Ingredient = {}
 
 ---为可以建造的建筑添加一个预测用的绿色虚影
 ---@param name any
