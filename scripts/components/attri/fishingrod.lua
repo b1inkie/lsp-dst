@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_fishingrod
----@field inst idk
+---@field inst ent
 ---@field target idk
 ---@field fisherman idk
 ---@field hookedfish idk

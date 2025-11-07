@@ -5,7 +5,7 @@
 ---@field damage idk
 ---@field attackrange idk
 ---@field hitrange idk
----@field onattack fun(inst:ent,attacker:ent|nil,target:ent|nil,...:any):...
+---@field onattack fun(this:ent,attacker:ent|nil,target:ent|nil,...:any):...
 ---@field onprojectilelaunch idk
 ---@field onprojectilelaunched idk
 ---@field projectile idk

@@ -22,3 +22,7 @@
 ---@field ignoresound idk
 ---@field ignoreoverstacked idk
 ---@field openlimit idk
+---@field onopenfn fun(this:ent,data:{doer:ent})
+---@field onanyopenfn fun(this:ent,data:{doer:ent})
+---@field onclosefn fun(this:ent,data:{doer:ent})
+---@field onanyclosefn fun(this:ent,data:{doer:ent})
