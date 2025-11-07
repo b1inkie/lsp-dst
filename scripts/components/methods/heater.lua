@@ -36,10 +36,10 @@ end
 function heater:SetHeatRadiusCutoff(radius_cutoff)
 end
 
----
----@param exo idk # 
----@param endo idk # 
----author: 
+---设置发热吸热
+---@param exo boolean|nil # 是否发热
+---@param endo boolean|nil # 是否吸热
+---author: lan
 function heater:SetThermics(exo,endo)
 end
 

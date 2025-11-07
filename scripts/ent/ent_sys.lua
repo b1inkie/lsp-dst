@@ -223,7 +223,7 @@ function entity:AddMapGenSim(...)end
 ---author: Runar
 function entity:AddTransform(...)end
 
----@return Entity
+---@return ent
 ---author: Runar
 function entity:GetParent()end
 
