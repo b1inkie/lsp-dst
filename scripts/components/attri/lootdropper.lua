@@ -12,7 +12,7 @@
 ---@field loot nil|{prefab:PrefabID} #默认nil,固定掉落列表
 ---@field chanceloottable string|nil #默认nil,全局共享掉落表名称
 ---@field trappable boolean #默认true,是否可被陷阱捕获?,坦白的说我也不知道这个干嘛用的
----@field droprecipeloot boolean #默认true,是否启用根据配方掉落材料
+---@field droprecipeloot boolean #默认true,是否启用根据配方掉落材料 <br>@lan: 当你不想按照配方掉落并设置了自己的loots表时,在`DropLoot`前,设置为`false`,就可以按照你自己的掉落逻辑来了
 ---@field lootfn function|nil #默认是nil,疑似是lootsetupfn写错了,建议不要管这个字段
 ---@field flingtargetpos Vector3|nil #默认nil,物品抛射目标的坐标,默认向全圆周抛射
 ---@field flingtargetvariance number|nil #默认nil,抛射角度随机偏移弧度值
