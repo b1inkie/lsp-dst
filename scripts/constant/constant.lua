@@ -1941,6 +1941,7 @@ FARM_PLANT_STRESS = {
 	HIGH = 4,
 }
 
+---@enum CHARACTER_INGREDIENT
 CHARACTER_INGREDIENT =
 {
     --NOTE: Value is used as key for NAME string and inventory image
