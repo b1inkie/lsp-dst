@@ -5091,6 +5091,7 @@ end
 ---@param id string 动作id
 ---@param str string 动作译名
 ---@param fn fun(act: table):boolean
+---@return table
 ---所在文件: scripts/modutil.lua
 function AddAction(id,str,fn)
 end

@@ -42,6 +42,7 @@ function TheFrontEnd:CreateDebugPanel() end
 ---
 ---UNKNOWN
 ---
+---@return table
 ---author:
 function TheFrontEnd:GetActiveScreen() end
 
