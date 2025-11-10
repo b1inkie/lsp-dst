@@ -128,3 +128,4 @@
 ---@field _piratemusicstate idk
 ---@field chargeleft nil|number # 避雷针,电羊会有的属性,代表充能层数
 ---@field foleysound nil|string # 一些可穿戴物品,移动时的声效,填的是声音路径
+---@field parent ent|nil
