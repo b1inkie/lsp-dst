@@ -399,7 +399,7 @@
 ---@field pinnable component_pinnable
 ---@field piratespawner component_piratespawner
 ---@field placer component_placer
----@field planardamage component_planardamage # 位面伤害组件
+---@field planardamage component_planardamage
 ---@field planardefense component_planardefense
 ---@field planarentity component_planarentity
 ---@field plantable component_plantable

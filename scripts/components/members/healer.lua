@@ -1,0 +1,42 @@
+---@meta
+
+---@class component_healer: component_base
+---@field inst idk
+---@field health idk
+---@field canhealfn idk
+---@field onhealfn idk
+local healer = {}
+
+---传入一个方法，用于判断是否可以触发治疗。例如：SetCanHealFn(function (inst, target, doer) return false,"不准治疗他") inst是有该组件的预制物，target是治疗目标,doer是使用者
+---@param fn function # 方法
+---author: 御坂十七号
+function healer:SetCanHealFn(fn)
+end
+
+---设置一个方法，在触发治疗时，会触发该方法，例如：SetOnHealFn(function (inst, target,doer)  end)，inst是有该组件的预制物，target是治疗目标,doer是使用者
+---@param fn function # 方法
+---author: 御坂十七号
+function healer:SetOnHealFn(fn)
+end
+
+---设置一个治疗量x，在触发治疗后，恢复玩家血量x 治疗量默认值为 TUNING.HEALING_SMALL = 3
+---@param health number # 治疗量
+---author: 御坂十七号
+function healer:SetHealthAmount(health)
+end
+
+---该方法在触发治疗时调用，该方法内会依次触发SetCanHealFn设置的判断和SetOnHealFn设置的触发方法，还会判断治疗目标本身的target.components.health.canheal，如果canheal=false,则依然会触发整个治疗流程并扣除治疗预制物，但目标不会加血。
+---@param target ent # 治疗目标
+---@param doer ent # 使用者(触发治疗的对象，一般是玩家。)
+---author: 御坂十七号
+function healer:Heal(target,doer)
+end
+
+
+---@param var string
+---@param fn fun(inst: ent, ...):any
+function healer:WatchWorldState(var, fn) end
+
+---@param var string
+---@param fn fun(inst: ent, ...):any
+function healer:StopWatchingWorldState(var, fn) end
