@@ -1,9 +1,9 @@
 ---@meta
 
 ---@class util_math
----@field pi # 圆周率
----@field huge # HUGE_VAL,大于或等于当前实现的所有数值
----@field inf # 1/0(非标准库)
+---@field pi number # 圆周率
+---@field huge number # HUGE_VAL,大于或等于当前实现的所有数值
+---@field inf number # 1/0(非标准库)
 math = {}
 
 ---计算两数相除的余数。
