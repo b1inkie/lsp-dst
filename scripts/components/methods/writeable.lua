@@ -20,7 +20,8 @@ function writeable:Write(doer, text) end
 
 ---获取当前文本内容
 ---author:星璃
----@return string|nil #当前文本内容 ---@nodiscard
+---@return string|nil #当前文本内容 
+---@nodiscard
 function writeable:GetText() end
 
 ---设置文本内容
@@ -30,12 +31,14 @@ function writeable:SetText(text) end
 
 ---是否已被书写
 ---author:星璃
----@return boolean #是否已书写 ---@nodiscard
+---@return boolean #是否已书写 
+---@nodiscard
 function writeable:IsWritten() end
 
 ---是否正在被书写
 ---author:星璃
----@return boolean #是否正在被书写 ---@nodiscard
+---@return boolean #是否正在被书写 
+---@nodiscard
 function writeable:IsBeingWritten() end
 
 ---设置默认可书写状态
@@ -65,7 +68,8 @@ function writeable:SetOnWritingEndedFn(fn) end
 
 ---保存组件数据
 ---author:星璃
----@return table #保存的数据 ---@nodiscard
+---@return table #保存的数据 
+---@nodiscard
 function writeable:OnSave() end
 
 ---加载组件数据
