@@ -1,37 +1,38 @@
 ---@meta
 
----@class component_pickable
----@field inst idk
----@field canbepicked idk
----@field regentime idk
----@field baseregentime idk
----@field product idk
----@field onregenfn idk
----@field onpickedfn idk
----@field makeemptyfn idk
----@field makefullfn idk
----@field cycles_left idk
----@field max_cycles idk
----@field transplanted idk
----@field caninteractwith idk
----@field numtoharvest idk
----@field quickpick idk
----@field jostlepick idk
----@field wildfirestarter idk
----@field droppicked idk
----@field dropheight idk
----@field paused idk
----@field pause_time idk
----@field targettime idk
----@field protected_cycles idk
----@field task idk
----@field useexternaltimer idk
----@field startregentimer idk
----@field stopregentimer idk
----@field pauseregentimer idk
----@field resumeregentimer idk
----@field getregentimertime idk
----@field setregentimertime idk
----@field regentimerexists idk
----@field remove_when_picked idk
----@field makebarrenfn idk
+---@class component_pickable # 可采集物组件
+---@field inst ent #实体对象
+---@field canbepicked boolean #是否可采集
+---@field regentime number|nil #再生时间
+---@field baseregentime number|nil #基础再生时间
+---@field product string|nil #采集产物prefab名
+---@field onregenfn fun(inst:ent)|nil #再生回调函数
+---@field onpickedfn fun(inst:ent, picker:ent, loot:any)|nil #采集回调函数
+---@field makeemptyfn fun(inst:ent)|nil #变为空回调
+---@field makefullfn fun(inst:ent)|nil #变为满回调
+---@field cycles_left number|nil #剩余采集次数
+---@field max_cycles number|nil #最大采集次数
+---@field transplanted boolean #是否被移植
+---@field caninteractwith boolean #是否可交互
+---@field numtoharvest number #每次采集数量
+---@field quickpick boolean #是否快速采集
+---@field jostlepick boolean #是否可摇晃采集 例如多汁浆果丛
+---@field wildfirestarter boolean #是否为野火起因
+---@field droppicked boolean #采集时是否掉落
+---@field dropheight number|nil #掉落高度
+---@field paused boolean #是否暂停再生
+---@field pause_time number|nil #暂停剩余时间
+---@field targettime number|nil #目标再生时间点
+---@field protected_cycles number|nil #受保护采集次数
+---@field task any #定时器任务
+---@field useexternaltimer boolean #是否使用外部计时器
+---@field startregentimer fun(inst:ent, time:number)|nil #开始再生计时器
+---@field stopregentimer fun(inst:ent)|nil #停止再生计时器
+---@field pauseregentimer fun(inst:ent)|nil #暂停再生计时器
+---@field resumeregentimer fun(inst:ent)|nil #恢复再生计时器
+---@field getregentimertime fun(inst:ent):number|nil #获取再生剩余时间
+---@field setregentimertime fun(inst:ent, time:number)|nil #设置再生剩余时间
+---@field regentimerexists fun(inst:ent):boolean|nil #是否存在再生计时器
+---@field remove_when_picked boolean|nil #采集后是否移除
+---@field makebarrenfn fun(inst:ent, wasempty:boolean)|nil #变为贫瘠回调
+---@field stuck boolean|nil #是否卡住
