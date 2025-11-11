@@ -1,6 +1,6 @@
 ---@meta
 
----@class component_pickable_methods
+---@class component_pickable
 local pickable = {}
 
 ---恢复再生计时器
