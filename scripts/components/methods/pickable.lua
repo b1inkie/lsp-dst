@@ -9,11 +9,12 @@ function pickable:Resume() end
 
 ---是否贫瘠（不可采集且无果实）
 ---author:星璃
----@return boolean #是否贫瘠 ---@nodiscard
+---@return boolean #是否贫瘠 
+---@nodiscard
 function pickable:IsBarren() end
 
 ---设置采集回调函数
----@param fn fun(inst:ent, picker:ent, loot:ent|table) #采集回调，loot可为实体或实体列表
+---@param fn fun(this:ent, picker:ent, loot:ent|table) #采集回调，loot可为实体或实体列表
 ---author:星璃
 function pickable:SetOnPickedFn(fn) end
 
@@ -28,11 +29,12 @@ function pickable:ConsumeCycles(cycles) end
 
 ---是否可施肥
 ---author:星璃
----@return boolean #是否可施肥 ---@nodiscard
+---@return boolean #是否可施肥 
+---@nodiscard
 function pickable:CanBeFertilized() end
 
 ---设置变为贫瘠回调函数
----@param fn fun(inst:ent, wasempty:boolean) #变为贫瘠回调
+---@param fn fun(this:ent, wasempty:boolean) #变为贫瘠回调
 ---author:星璃
 function pickable:SetMakeBarrenFn(fn) end
 
@@ -56,7 +58,8 @@ function pickable:OnLoad(data) end
 
 ---是否可采集
 ---author:星璃
----@return boolean #是否可采集 ---@nodiscard
+---@return boolean #是否可采集 
+---@nodiscard
 function pickable:CanBePicked() end
 
 ---再生果实
@@ -69,24 +72,26 @@ function pickable:OnTransplant() end
 
 ---获取调试信息字符串
 ---author:星璃
----@return string #调试信息 ---@nodiscard
+---@return string #调试信息 
+---@nodiscard
 function pickable:GetDebugString() end
 
 ---设置变为空回调函数
----@param fn fun(inst:ent) #变为空回调
+---@param fn fun(this:ent) #变为空回调
 ---author:星璃
 function pickable:SetMakeEmptyFn(fn) end
 
 ---设置再生回调函数
----@param fn fun(inst:ent) #再生回调
+---@param fn fun(this:ent) #再生回调
 ---author:星璃
 function pickable:SetOnRegenFn(fn) end
 
 ---采集操作
 ---@param picker ent|nil #采集者实体
 ---author:星璃
----@return boolean #是否采集成功 ---@nodiscard
----@return ent|string|table|nil #采集获得的物品（实体、字符串或表） ---@nodiscard
+---@return boolean #是否采集成功 
+---@return ent|string|table|nil #采集获得的物品（实体、字符串或表） 
+---@nodiscard
 function pickable:Pick(picker) end
 
 ---长时间更新（如季节变化）
@@ -98,17 +103,20 @@ function pickable:LongUpdate(dt) end
 ---@param fertilizer ent #肥料
 ---@param doer ent #施肥者
 ---author:星璃
----@return boolean #是否施肥成功 ---@nodiscard
+---@return boolean #是否施肥成功 
+---@nodiscard
 function pickable:Fertilize(fertilizer, doer) end
 
 ---完成生长
 ---author:星璃
----@return boolean #是否完成生长 ---@nodiscard
+---@return boolean #是否完成生长 
+---@nodiscard
 function pickable:FinishGrowing() end
 
 ---保存存档数据
 ---author:星璃
----@return table|nil #存档数据 ---@nodiscard
+---@return table|nil #存档数据 
+---@nodiscard
 function pickable:OnSave() end
 
 ---初始化设置
@@ -124,6 +132,7 @@ function pickable:Pause() end
 
 ---是否为野火起因
 ---author:星璃
----@return boolean #是否为野火起因 ---@nodiscard
+---@return boolean #是否为野火起因 
+---@nodiscard
 function pickable:IsWildfireStarter() end
 
