@@ -5,7 +5,7 @@
 ---@field done boolean # 是否完成烹饪
 ---@field targettime number|nil # 一个时刻，可用于表示烹饪完成的时刻，也可用于表示锅上食物腐烂的时刻
 ---@field task idk # 烹饪任务，腐烂任务等
----@field product ent # 产物，即料理实体
+---@field product PrefabID # 产物prefab
 ---@field product_spoilage number # 烹饪完成时，料理的新鲜度
 ---@field spoiledproduct string|"spoiled_food" # 锅上的食物不采集的腐烂产物
 ---@field spoiltime number # 烹饪完成的料理的腐烂时长
