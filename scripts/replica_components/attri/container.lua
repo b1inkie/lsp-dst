@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class replica_container
----@field inst idk
+---@field inst ent
 ---@field _cannotbeopened idk
 ---@field _skipopensnd idk
 ---@field _skipclosesnd idk

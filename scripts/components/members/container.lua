@@ -352,8 +352,8 @@ function container:MoveItemFromHalfOfSlot(slot,container,opener)
 end
 
 ---由doer关闭容器
----@param doer ent # 执行者
----author: Runar
+---@param doer ent|nil # 执行者
+---author: Runar, lan
 function container:Close(doer)
 end
 
