@@ -7,10 +7,10 @@
 ---@field inv idk #
 ---@field owner idk #
 ---@field slotsperrow idk #
----@field bganim idk #
+---@field bganim widget_uianim # 容器的背景动画
 ---@field bgimage idk #
 ---@field isopen idk #
----@field button idk #
+---@field button widget_imagebutton|nil # 容器的按钮(如果有)
 ---@field onitemlosefn idk #
 ---@field onitemgetfn idk #
 ---@field onrefreshfn idk #
