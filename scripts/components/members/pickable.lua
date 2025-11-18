@@ -156,9 +156,9 @@ function pickable:OnSave() end
 
 ---初始化设置
 ---@param product string #产物prefab名
----@param regen number #再生时间
----@param number number #采集数量
----author:星璃
+---@param regen number|nil #再生时间
+---@param number integer|nil #可采集数|无限
+---author:星璃|Runar
 function pickable:SetUp(product, regen, number) end
 
 ---暂停再生计时器

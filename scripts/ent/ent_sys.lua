@@ -206,6 +206,9 @@ function entity:Retire(...)end
 
 ---
 ---@param ... idk
+---@return number
+---@return number
+---@return number
 ---author: 
 function entity:LocalToWorldSpace(...)end
 

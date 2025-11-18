@@ -107,3 +107,6 @@ function Vector3:IsVector3() end
 ---@field [2] number # G [0~1]
 ---@field [3] number # B [0~1]
 ---@field [4] number # A [0~1]
+
+---@class DynamicPosition
+DynamicPosition = {}
