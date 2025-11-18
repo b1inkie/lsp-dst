@@ -1,6 +1,11 @@
 ---@meta
 
----@class replica_writeable
+---@class replica_writeable: replica_base
+---@field inst idk
+---@field screen idk
+---@field opentask idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_writeable = {}
 
 ---
@@ -47,4 +52,3 @@ end
 ---author: 
 function replica_writeable:AttachClassified(classified)
 end
-

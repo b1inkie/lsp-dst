@@ -1,6 +1,12 @@
 ---@meta
 
----@class replica_rider
+---@class replica_rider: replica_base
+---@field inst idk
+---@field _isriding idk
+---@field classified idk
+---@field _onmounthealthdelta idk
+---@field _onisriding idk
+---@field ondetachclassified idk
 local replica_rider = {}
 
 ---
@@ -78,4 +84,3 @@ end
 ---author: 
 function replica_rider:IsRiding()
 end
-

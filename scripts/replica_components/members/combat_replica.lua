@@ -1,6 +1,13 @@
 ---@meta
 
----@class replica_combat
+---@class replica_combat: replica_base
+---@field inst idk
+---@field _target idk
+---@field _ispanic idk
+---@field _attackrange idk
+---@field _laststartattacktime idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_combat = {}
 
 ---
@@ -158,4 +165,3 @@ end
 ---author: 
 function replica_combat:SetLastTarget(target)
 end
-

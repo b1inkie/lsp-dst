@@ -1,6 +1,10 @@
 ---@meta
 
----@class replica_constructionsite
+---@class replica_constructionsite: replica_base
+---@field inst idk
+---@field _enabled idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_constructionsite = {}
 
 ---
@@ -64,4 +68,3 @@ end
 ---author: 
 function replica_constructionsite:GetIngredients()
 end
-

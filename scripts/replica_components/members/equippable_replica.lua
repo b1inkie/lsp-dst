@@ -1,6 +1,9 @@
 ---@meta
 
----@class replica_equippable
+---@class replica_equippable: replica_base
+---@field inst ent
+---@field _equipslot idk
+---@field _preventunequipping idk
 local replica_equippable = {}
 
 ---
@@ -38,4 +41,3 @@ end
 ---author: lan
 function replica_equippable:IsEquipped()
 end
-

@@ -1,6 +1,8 @@
 ---@meta
 
----@class replica_moisture
+---@class replica_moisture: replica_base
+---@field inst idk
+---@field _iswet idk
 local replica_moisture = {}
 
 ---
@@ -13,4 +15,3 @@ end
 ---author: 
 function replica_moisture:IsWet()
 end
-

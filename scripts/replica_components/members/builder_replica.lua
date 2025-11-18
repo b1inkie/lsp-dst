@@ -1,6 +1,9 @@
 ---@meta
 
----@class replica_builder
+---@class replica_builder: replica_base
+---@field inst idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_builder = {}
 
 ---
@@ -188,4 +191,3 @@ end
 ---author: 
 function replica_builder:GetTechTreesNoTemp()
 end
-

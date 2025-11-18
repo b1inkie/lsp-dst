@@ -1,6 +1,13 @@
 ---@meta
 
----@class replica_inventoryitem
+---@class replica_inventoryitem: replica_base
+---@field inst idk
+---@field overrideimage idk
+---@field _cannotbepickedup idk
+---@field _iswet idk
+---@field _isacidsizzling idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_inventoryitem = {}
 
 ---
@@ -254,4 +261,3 @@ end
 ---author: 
 function replica_inventoryitem:SerializeUsage()
 end
-

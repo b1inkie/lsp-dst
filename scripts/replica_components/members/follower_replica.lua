@@ -1,6 +1,8 @@
 ---@meta
 
----@class replica_follower
+---@class replica_follower: replica_base
+---@field inst idk
+---@field _leader idk
 local replica_follower = {}
 
 ---
@@ -13,4 +15,3 @@ end
 ---author: 
 function replica_follower:SetLeader(leader)
 end
-

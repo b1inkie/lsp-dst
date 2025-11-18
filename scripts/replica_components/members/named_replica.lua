@@ -1,6 +1,9 @@
 ---@meta
 
----@class replica_named
+---@class replica_named: replica_base
+---@field inst idk
+---@field _name idk
+---@field _author_netid idk
 local replica_named = {}
 
 ---
@@ -9,4 +12,3 @@ local replica_named = {}
 ---author: 
 function replica_named:SetName(name,author)
 end
-

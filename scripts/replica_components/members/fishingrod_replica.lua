@@ -1,6 +1,10 @@
 ---@meta
 
----@class replica_fishingrod
+---@class replica_fishingrod: replica_base
+---@field inst idk
+---@field _target idk
+---@field _hashookedfish idk
+---@field _hascaughtfish idk
 local replica_fishingrod = {}
 
 ---
@@ -35,4 +39,3 @@ end
 ---author: 
 function replica_fishingrod:SetHookedFish(hookedfish)
 end
-

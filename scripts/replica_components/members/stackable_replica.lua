@@ -1,6 +1,13 @@
 ---@meta
 
----@class replica_stackable
+---@class replica_stackable: replica_base
+---@field inst idk
+---@field _stacksize idk
+---@field _stacksizeupper idk
+---@field _ignoremaxsize idk
+---@field _maxsize idk
+---@field _previewstacksize idk
+---@field _previewtimeouttask idk
 local replica_stackable = {}
 
 ---
@@ -65,4 +72,3 @@ end
 ---author: 
 function replica_stackable:SetIgnoreMaxSize(ignoremaxsize)
 end
-

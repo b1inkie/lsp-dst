@@ -1,6 +1,9 @@
 ---@meta
 
----@class replica_hunger
+---@class replica_hunger: replica_base
+---@field inst idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_hunger = {}
 
 ---
@@ -50,4 +53,3 @@ end
 ---author: 
 function replica_hunger:SetMax(max)
 end
-

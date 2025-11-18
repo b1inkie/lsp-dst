@@ -1,6 +1,9 @@
 ---@meta
 
----@class replica_health
+---@class replica_health: replica_base
+---@field inst idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_health = {}
 
 ---
@@ -128,4 +131,3 @@ end
 ---author: 
 function replica_health:SetMax(max)
 end
-

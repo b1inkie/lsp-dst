@@ -1,6 +1,13 @@
 ---@meta
 
----@class replica_sanity
+---@class replica_sanity: replica_base
+---@field inst idk
+---@field _oldissane idk
+---@field _oldisinsanitymode idk
+---@field _issane idk
+---@field _isinsanitymode idk
+---@field classified idk
+---@field ondetachclassified idk
 local replica_sanity = {}
 
 ---
@@ -140,4 +147,3 @@ end
 ---author: 
 function replica_sanity:SetMax(max)
 end
-
