@@ -406,9 +406,9 @@ end
 function entityscript:OnBuilt(builder)
 end
 
----EntityScript: 
----author: 
-function entityscript:RestartBrain()
+---EntityScript: 取消以原因reason的StopBrain
+---author: Runar
+function entityscript:RestartBrain(reason)
 end
 
 ---EntityScript: 

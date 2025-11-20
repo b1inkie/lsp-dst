@@ -13798,3 +13798,7 @@ Ingredient = {}
 ---author:lan
 function MakePlacer(name, bank, build, anim, onground, snap, metersnap, scale, fixedcameraoffset, facing, postinit_fn, offset, onfailedplacement)
 end
+
+---@param str any
+---@return integer
+function hash(str) end

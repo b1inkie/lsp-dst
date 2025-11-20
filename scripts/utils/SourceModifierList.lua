@@ -17,18 +17,16 @@ function SourceModifierList:Get() end
 function SourceModifierList:IsEmpty() end
 
 ---
----@param source ent|string #
+---@param source any #
 ---@param m number|boolean #
----@param key string|'key'|nil # 不填的话, 默认为字符串 `key`
----
----author: 
+---@param key any|nil # 不填的话, 默认为字符串 `key`
+---author: Runar
 function SourceModifierList:SetModifier(source, m, key) end
 
 ---
----@param source ent|string #
----@param key string|nil #
----
----author: 
+---@param source any #
+---@param key any|nil #
+---author: Runar
 function SourceModifierList:RemoveModifier(source, key) end
 
 ---

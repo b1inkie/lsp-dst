@@ -59,10 +59,10 @@
 local locomotor = {}
 
 ---
----@param source ent # 这里的source必须是实体 不能是string
----@param key string # 
+---@param source any #
+---@param key any|nil # 如果为nil,则需要全部移除source下
 ---@param m number # 
----author: 
+---author: Runar
 function locomotor:SetExternalSpeedMultiplier(source,key,m)
 end
 
@@ -276,9 +276,9 @@ function locomotor:RunForward(direct)
 end
 
 ---
----@param source ent # 
----@param key idk # 
----author: 
+---@param source any # 
+---@param key any|nil # 如果为nil,则source下全部移除
+---author: Runar
 function locomotor:RemoveExternalSpeedMultiplier(source,key)
 end
 
