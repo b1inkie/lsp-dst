@@ -1,15 +1,15 @@
 ---@meta
 
 ---@class Vector3
----@overload fun(x: number, y: number, z: number):Vector3
+---@overload fun(x: number|nil, y: number|nil, z: number|nil):Vector3
 ---@operator add(Vector3): Vector3
 ---@operator sub(Vector3): Vector3
 ---@operator mul(number): Vector3
 ---@operator div(number): Vector3
 ---@operator unm(Vector3): Vector3
----@field x number
----@field y number
----@field z number
+---@field x number|nil
+---@field z number|nil
+---@field y number|nil
 ---运算符 `==` 比较的是三维向量,而不是表本身  
 ---元方法转换为`string`时,只保留小数后两位`(12.07,  3.30, 10.00)`  
 Vector3 = {}

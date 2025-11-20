@@ -29,7 +29,7 @@ function entityscript:GetPosition()
 end
 
 ---EntityScript: 启用组件更新
----@param cmp componentID # 
+---@param cmp table # 
 ---@param do_static_update boolean|nil # 执行静态更新
 ---author: Runar
 function entityscript:StartUpdatingComponent(cmp, do_static_update)
@@ -621,6 +621,7 @@ end
 ---@param x idk # 
 ---@param y idk # 
 ---@param z idk # 
+---@return number
 ---author: 
 function entityscript:GetDistanceSqToPoint(x,y,z)
 end
@@ -700,9 +701,10 @@ end
 function entityscript:__tostring()
 end
 
----EntityScript: 
----author: 
-function entityscript:StopBrain()
+---EntityScript: 以原因reason停止Brain
+---@param reason string #
+---author: Runar
+function entityscript:StopBrain(reason)
 end
 
 ---EntityScript: 创建线程，线程事务崩溃不影响游戏进程
