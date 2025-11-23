@@ -12,6 +12,7 @@
 ---@field Follower Follower # 跟随者 <br> 需要 `inst.entity:AddFollower()`
 ---@field MiniMapEntity MiniMapEntity # 有小地图图标的实体 <br> 需要 `inst.entity:AddMiniMapEntity()`
 ---@field VFXEffect VFXEffect # 粒子专用 <br> 需要 `inst.entity:AddVFXEffect()` <br> 其实还有一个叫 `ParticleEmitter` 是旧版的,这两个只能设置一个,旧版的就不写出来了 
+---@field GroundCreepEntity GroundCreepEntity # 造成减速的地面实体 <br> 需要 `inst.entity:AddGroundCreepEntity()`
 ---@field components components # 组件
 ---@field replica replica_components # 客机组件
 ---@field prefab PrefabID # 预制物的Prefab ID

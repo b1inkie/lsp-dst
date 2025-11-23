@@ -194,10 +194,10 @@ function entity:AddGroundCreep(...)end
 ---author: 
 function entity:IsVisible(...)end
 
----
----@param ... idk
----author: 
-function entity:AddGroundCreepEntity(...)end
+---添加减速地面实体组件
+---@return GroundCreepEntity
+---author: Runar
+function entity:AddGroundCreepEntity()end
 
 ---
 ---@param ... idk
