@@ -5087,13 +5087,13 @@ end
 
 ---
 ---添加动作API
----
----@param id string 动作id
----@param str string 动作译名
----@param fn fun(act: table):boolean
+---TODO: Action类待完善
+---@param id_or_act string|table 动作id或动作Action
+---@param str string|nil 动作译名,如果参数1为Action则不需要
+---@param fn fun(act: table):(boolean)|nil 如果参数1为Action则不需要
 ---@return table
 ---所在文件: scripts/modutil.lua
-function AddAction(id,str,fn)
+function AddAction(id_or_act,str,fn)
 end
 
 ---
