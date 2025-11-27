@@ -232,3 +232,13 @@ function net_bytearray(GUID, var_name, event_name) end
 ---@nodiscard
 function net_ushortarray(GUID, var_name, event_name) end
 
+---@class net_event
+---@field push fun(self) # **网络事件** 推事件
+---@field _bool net_bool
+
+--- **网络事件**
+---@param GUID GUID # 实体的GUID
+---@param event_name string # 网络事件名称
+---@return net_event
+---@nodiscard
+function net_event(GUID, event_name) end

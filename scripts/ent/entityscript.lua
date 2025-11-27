@@ -739,7 +739,7 @@ end
 ---EntityScript: 周期定时器
 ---@param time number # 间隔/s
 ---@param fn function # 
----@param initialdelay number|nil # 计时器创建多少秒后执行,默认为1
+---@param initialdelay number|nil # 计时器创建多少秒后执行, 默认为1帧后
 ---@param ... idk # 
 ---@return Periodic
 ---author: lan
