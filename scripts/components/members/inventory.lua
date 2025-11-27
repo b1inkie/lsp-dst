@@ -624,7 +624,7 @@ function inventory:RemoveItemBySlot(slot,keepoverstacked)
 end
 
 ---
----@param item idk #
+---@param item ent #
 ---@param old_to_active idk #
 ---@param no_animation idk #
 ---@param force_ui_anim idk #

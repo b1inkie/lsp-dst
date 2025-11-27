@@ -16,7 +16,6 @@
 ---@field components components # 组件
 ---@field replica replica_components # 客机组件
 ---@field prefab PrefabID # 预制物的Prefab ID
----@field DynamicShadow idk
 ---@field EnableLoadingProtection idk
 ---@field inlimbo idk
 ---@field GetMoistureRateScale idk
@@ -130,3 +129,24 @@
 ---@field chargeleft nil|number # 避雷针,电羊会有的属性,代表充能层数
 ---@field foleysound nil|string # 一些可穿戴物品,移动时的声效,填的是声音路径
 ---@field parent ent|nil
+---@field AccountManager nil|AccountManager
+---@field DebugRender nil|DebugRender
+---@field DynamicShadow nil|DynamicShadow
+---@field FontManager nil|FontManager
+---@field GraphicsOptions nil|GraphicsOptions
+---@field GroundCreep nil|GroundCreep
+---@field ImageWidget nil|ImageWidget
+---@field Map nil|Map
+---@field MapExplorer nil|MapExplorer
+---@field MapLayerManager nil|MapLayerManager
+---@field MiniMap nil|MiniMap
+---@field PhysicsWaker nil|PhysicsWaker
+---@field PostProcessor nil|PostProcessor
+---@field RoadManager nil|RoadManager
+---@field ShadowManager nil|ShadowManager
+---@field TextEditWidget nil|TextEditWidget
+---@field TextWidget nil|TextWidget
+---@field TwitchOptions nil|TwitchOptions
+---@field UITransform nil|UITransform
+---@field VideoWidget nil|VideoWidget
+---@field WaveComponent nil|WaveComponent
