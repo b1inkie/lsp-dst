@@ -420,3 +420,7 @@ function entity:IsAwake(...)end
 ---author: 
 function entity:AddVFXEffect(...)end
 
+---
+---@param ... idk
+---author:
+function entity:AddMap(...)end
