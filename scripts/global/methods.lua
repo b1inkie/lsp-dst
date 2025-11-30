@@ -2418,7 +2418,7 @@ end
 ---
 ---@param asset_type asset_type 资源类型
 ---@param path string 路径
----@param scale number|nil # 256 only if "ATLAS_BUILD"
+---@param scale number|nil # 256 for "ATLAS_BUILD", 192 for "ATLAS_BUILD" dynamic
 ---@return asset # 资源
 ---@nodiscard
 ---所在文件: scripts/i_dont_know_path.lua

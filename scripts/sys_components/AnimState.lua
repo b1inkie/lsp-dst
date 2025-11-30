@@ -150,8 +150,14 @@ end
 function AnimState:GetCurrentFacing()
 end
 
----UNKNOWN
----author: 
+---获取动画历史数据
+---@return string # bank
+---@return string # animation
+---@return integer # current_frame
+---@return integer # unknown
+---@return integer # unknown
+---@return integer # unknown
+---author: Runar
 function AnimState:GetHistoryData()
 end
 
