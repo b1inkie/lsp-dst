@@ -81,12 +81,15 @@ function Vector3:IsVector3() end
 ---@alias asset_type string # 资源类型
 ---| '"ANIM"' # .zip
 ---| '"ATLAS"' # .xml
----| '"ATLAS_BUILD"' # .xml, 参数3固定为256
+---| '"ATLAS_BUILD"' # .xml, 参数3为256或192
 ---| '"IMAGE"' # .tex
 ---| '"SCRIPT"' # .lua
 ---| '"SOUND"' # .fsb
 ---| '"SOUNDPACKAGE"' # .fev
 ---| '"SHADER"' # .ksh
+---| '"INV_IMAGE"' # - image_dyn
+---| '"DYNAMIC_ANIM"' # .zip build_dyn
+---| '"PKGREF"' # .dyn tex_dyn
 
 ---@class asset # 资源
 
