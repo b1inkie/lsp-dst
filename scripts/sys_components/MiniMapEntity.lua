@@ -6,108 +6,70 @@ local MiniMapEntity = {}
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:GetTextureHandle(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetPriority(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:ResetOffset(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:CopyIcon(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:ShowArea(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetRestriction(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:GetZoom(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetEnabled(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:AddRenderLayer(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetIcon(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:AddAtlas(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetCanUseCache(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:ToggleVisibility(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetDrawOverFogOfWar(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:ClearRevealedAreas(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetIsProxy(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:Offset(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:EntityHasRestriction(...) end
+
 ---
 ---UNKNOWN
 ---
----@param ... any
----author:
-function MiniMapEntity:Zoom(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:EnableFogOfWar(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:SetEffects(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:WorldPosToMapPos(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:IsVisible(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:MapPosToWorldPos(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:RebuildLayer(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:DrawForgottenFogOfWar(...) end
----
----UNKNOWN
----
----@param ... any
----author:
-function MiniMapEntity:ContinuouslyClearRevealedAreas(...) end
+---@param ... idk
+---author: 
+function MiniMapEntity:SetIsFogRevealer(...) end
+
