@@ -43,12 +43,12 @@ end
 function AnimState:ClearAllOverrideSymbols()
 end
 
----清除泛光效果句柄
+---移除着色器
 ---author: Runar
 function AnimState:ClearBloomEffectHandle()
 end
 
----清除默认效果句柄
+---移除默认着色器
 ---author: Runar
 function AnimState:ClearDefaultEffectHandle()
 end
@@ -390,14 +390,15 @@ end
 function AnimState:SetBankAndPlayAnimation(bankname,animname)
 end
 
----设置泛光效果句柄
----@param path string # 句柄文件相对根目录的完整路径
----author: Runar
+---设置着色器 `GLSL`
+---@param path string # 着色器路径 `.ksh`
+---author: Runar \
+---模组着色器路径需要应用 `resolvefilepath`
 function AnimState:SetBloomEffectHandle(path)
 end
 
 ---设置动画光度,0为亏曝,2为过曝
----@param brightness number # 光度(0~2)
+---@param brightness number # 光度 `[0,2]`
 ---author: Runar
 function AnimState:SetBrightness(brightness)
 end
@@ -423,9 +424,10 @@ end
 function AnimState:SetClientSideBuildOverrideFlag(name,flag)
 end
 
----设置默认效果句柄
----@param path string # 相对根目录的完整路径
----author: Runar
+---设置默认着色器 `GLSL`
+---@param path string # 着色器路径 `.ksh`
+---author: Runar \
+---模组着色器路径需要应用 `resolvefilepath`
 function AnimState:SetDefaultEffectHandle(path)
 end
 
@@ -470,11 +472,11 @@ end
 function AnimState:SetFinalOffset(param)
 end
 
----UNKNOWN
+---调试着色器参数
 ---@param param1 number # 
 ---@param param2 number # 
 ---@param param3 number # 
----author: 
+---author: Runar
 function AnimState:SetFloatParams(param1,param2,param3)
 end
 

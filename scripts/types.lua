@@ -87,13 +87,14 @@ function Vector3:IsVector3() end
 ---| '"SOUND"' # .fsb
 ---| '"SOUNDPACKAGE"' # .fev
 ---| '"SHADER"' # .ksh
----| '"INV_IMAGE"' # - image_dyn
+---| '"INV_IMAGE"' #
+---| '"MINIMAP_IMAGE"' #
 ---| '"DYNAMIC_ANIM"' # .zip build_dyn
----| '"PKGREF"' # .dyn tex_dyn
+---| '"PKGREF"' # .dyn | .fev | .ogv , tex_dyn | unknown | unknown
 
 ---@class asset # 资源
 
----@alias GUID number # GUID 注意重载世界会变化
+---@alias GUID integer # GUID 注意重载世界会变化
 
 ---@alias spdamage_type string # 特殊伤害类型
 ---| "planar" # 位面伤害
@@ -113,3 +114,21 @@ function Vector3:IsVector3() end
 
 ---@class DynamicPosition
 DynamicPosition = {}
+
+---@class EmitterManager
+EmitterManager = {}
+
+
+function EmitterManager:AddEmitter(inst, lifetime, updateFunc) end
+
+
+function EmitterManager:RemoveEmitter(inst) end
+
+
+function EmitterManager:PostUpdate() end
+
+
+function EmitterManager:Hibernate(inst) end
+
+
+function EmitterManager:Wake(inst) end
