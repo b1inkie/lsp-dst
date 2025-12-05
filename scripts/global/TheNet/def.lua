@@ -861,8 +861,9 @@ function TheNet:GetUserSessionFile()
 end
 
 ---UNKNOWN
+---@param param boolean
 ---author: 
-function TheNet:Disconnect()
+function TheNet:Disconnect(param)
 end
 
 ---UNKNOWN

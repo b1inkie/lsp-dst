@@ -458,12 +458,12 @@ end
 function AnimState:SetErosionParallax(parallax)
 end
 
----UNKNOWN
----@param param1 number # 
----@param param2 number # 
----@param param3 number # 
----author: 
-function AnimState:SetErosionParams(param1,param2,param3)
+---设置侵蚀效果参数
+---@param erode_amount number # 侵蚀程度`[0,1]`
+---@param param2 number # ?`[0,1]`
+---@param param3 number # 锐度?`[0,5]`
+---author: Runar
+function AnimState:SetErosionParams(erode_amount,param2,param3)
 end
 
 ---UNKNOWN
@@ -473,11 +473,12 @@ function AnimState:SetFinalOffset(param)
 end
 
 ---调试着色器参数
----@param param1 number # 
----@param param2 number # 
----@param param3 number # 
----author: Runar
-function AnimState:SetFloatParams(param1,param2,param3)
+---@param x number # FLOAT_PARAMS.x
+---@param y number # FLOAT_PARAMS.y
+---@param z number # FLOAT_PARAMS.z
+---author: Runar \
+---对应着色器变量 `uniform vec3 FLOAT_PARAMS;`
+function AnimState:SetFloatParams(x, y, z)
 end
 
 ---UNKNOWN
@@ -585,7 +586,7 @@ function AnimState:SetRayTestOnBB(bool)
 end
 
 ---设置动画饱和度
----@param saturation number # 饱和度(0~1)
+---@param saturation number # 饱和度`[0,1]`
 ---author: Runar
 function AnimState:SetSaturation(saturation)
 end
@@ -619,10 +620,10 @@ end
 
 ---设置通道叠加颜色,会受原色的影响,恢复原来的颜色 只要设置RGBA都为`0`即可
 ---@param symbol string # 通道名
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---@param r number # 红色通道`[0,1]`
+---@param g number # 绿色通道`[0,1]`
+---@param b number # 蓝色通道`[0,1]`
+---@param a number # 不透明度`[0,1]`
 ---author: Runar
 function AnimState:SetSymbolAddColour(symbol,r,g,b,a)
 end
@@ -635,7 +636,7 @@ end
 
 ---设置通道光度,0为亏曝,2为过曝
 ---@param symbol string # 通道名
----@param brightness number # 光度(0~2)
+---@param brightness number # 光度`[0,2]`
 ---author: Runar
 function AnimState:SetSymbolBrightness(symbol,brightness)
 end
@@ -663,10 +664,10 @@ end
 
 ---设置通道叠乘颜色
 ---@param symbol string # 通道名
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---@param r number # 红色通道`[0,1]`
+---@param g number # 绿色通道`[0,1]`
+---@param b number # 蓝色通道`[0,1]`
+---@param a number # 不透明度`[0,1]`
 ---author: Runar
 function AnimState:SetSymbolMultColour(symbol,r,g,b,a)
 end

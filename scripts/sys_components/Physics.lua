@@ -186,7 +186,7 @@ end
 function Physics:SetMass(mass)
 end
 
----设置机动速率
+---设置相对于方向的速率
 ---@param x number # 正面方向速率
 ---@param y number # 高度方向速率
 ---@param z number # 侧面方向速率
@@ -225,7 +225,7 @@ end
 function Physics:SetTriangleMesh(PLAYER_COLLISION_MESH)
 end
 
----设置物理对象的速度
+---设置绝对坐标系速率
 ---@param vx number # x 轴方向的速度
 ---@param vy number # y 轴方向的速度
 ---@param vz number # z 轴方向的速度
