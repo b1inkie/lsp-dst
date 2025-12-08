@@ -132,3 +132,7 @@ function EmitterManager:Hibernate(inst) end
 
 
 function EmitterManager:Wake(inst) end
+
+---@alias hashed_code integer # 哈希值
+
+---@alias num_string number # 会被转换为字符串的数值

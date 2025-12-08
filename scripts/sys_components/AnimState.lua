@@ -4,7 +4,7 @@
 local AnimState = {}
 
 ---添加新build
----@param buildname string # build名
+---@param buildname string|hashed_code # build名
 ---author: Runar
 function AnimState:AddOverrideBuild(buildname)
 end
@@ -98,8 +98,9 @@ end
 function AnimState:GetAddColour()
 end
 
----UNKNOWN
----author: 
+---获取bank的哈希
+---@return hashed_code #
+---author: Runar
 function AnimState:GetBankHash()
 end
 
@@ -350,7 +351,7 @@ function AnimState:Pause()
 end
 
 ---播放动画，animname：动画名，loop：是否循环播放，默认是 false
----@param animname string # 
+---@param animname string|num_string # 
 ---@param loop boolean|nil # 
 ---author: 
 function AnimState:PlayAnimation(animname,loop)
@@ -378,14 +379,14 @@ function AnimState:SetAddColour(r,g,b,a)
 end
 
 ---Spriter 里动画的父级节点的名字
----@param name string # 动画父节点名
+---@param name string|hashed_code # 动画父节点名
 ---author: Runar
 function AnimState:SetBank(name)
 end
 
 ---看名字能猜到是 SetBank()与PlayAnimation()两个方法的结合
----@param bankname string # 动画父节点名
----@param animname string # 动画名
+---@param bankname string|hashed_code # 动画父节点名
+---@param animname string|hashed_code|num_string # 动画名
 ---author: Runar
 function AnimState:SetBankAndPlayAnimation(bankname,animname)
 end
@@ -404,15 +405,15 @@ function AnimState:SetBrightness(brightness)
 end
 
 ---buildname 就是 scml 文件的名字
----@param buildname string # build名
+---@param buildname string|hashed_code # build名
 ---author: Runar
 function AnimState:SetBuild(buildname)
 end
 
 ---替换客户端显示的build
 ---@param state string # 
----@param build string # 
----@param overridebuild string # 
+---@param build string|hashed_code # 
+---@param overridebuild string|hashed_code # 
 ---author: 
 function AnimState:SetClientsideBuildOverride(state,build,overridebuild)
 end
