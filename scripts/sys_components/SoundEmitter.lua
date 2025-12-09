@@ -33,7 +33,7 @@ end
 
 ---UNKNOWN
 ---author: 
-function SoundEmitter:SetParameter()
+function SoundEmitter:SetParameter(...)
 end
 
 ---关闭指定音效

@@ -11,11 +11,13 @@ local Map = {}
 function Map:FindBestSpawningPointForArena(...) end
 
 ---
----UNKNOWN
+---将世界坐标或地皮坐标转换为地皮中心世界坐标
 ---
----@param ... idk
----author: 
-function Map:GetTileCenterPoint(...) end
+---@param x_or_tx number # 世界坐标X或者地皮坐标X
+---@param y_or_ty number # 世界坐标Y或者地皮坐标Y
+---@param z number|nil # 世界坐标Z
+---author: Runar
+function Map:GetTileCenterPoint(x_or_tx, y_or_ty, z) end
 
 ---
 ---UNKNOWN

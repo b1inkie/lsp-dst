@@ -141,7 +141,7 @@ end
 
 ---UNKNOWN
 ---author: 
-function Physics:SetCollisionMask()
+function Physics:SetCollisionMask(...)
 end
 
 ---设置碰撞关闭 设定坐标后再开启碰撞
