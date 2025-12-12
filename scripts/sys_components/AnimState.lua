@@ -369,11 +369,11 @@ end
 function AnimState:Resume()
 end
 
----颜色叠加，几乎不受原图颜色影响，参数 0-1
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---颜色叠加
+---@param r number # 红色通道`[0, 1]`
+---@param g number # 绿色通道`[0, 1]`
+---@param b number # 蓝色通道`[0, 1]`
+---@param a number # 不透明度`[0, 1]`
 ---author: Runar
 function AnimState:SetAddColour(r,g,b,a)
 end
@@ -545,11 +545,11 @@ end
 function AnimState:SetManualBB()
 end
 
----颜色叠乘，受原图颜色影响
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---颜色叠乘(衰减)
+---@param r number # 红色通道`[0, 1]`
+---@param g number # 绿色通道`[0, 1]`
+---@param b number # 蓝色通道`[0, 1]`
+---@param a number # 不透明度`[0, 1]`
 ---author: Runar
 function AnimState:SetMultColour(r,g,b,a)
 end
