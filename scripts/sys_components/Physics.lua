@@ -128,8 +128,8 @@ function Physics:SetCapsule(rad,num)
 end
 
 ---设置碰撞回调函数
----@param fn fun(inst: ent,other: ent) # 
----author: 不知名笔记
+---@param fn fun(inst:ent, other:ent, inst_x:(number|nil), inst_y:(number|nil), inst_z:(number|nil), other_x:(number|nil), other_y:(number|nil), other_z:(number|nil), other_unknown_x:(number|nil), other_unknown_y:(number|nil), other_unknown_z:(number|nil), frames:(number|nil)) #
+---author: Runar
 function Physics:SetCollisionCallback(fn)
 end
 

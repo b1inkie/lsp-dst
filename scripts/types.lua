@@ -79,18 +79,18 @@ function Vector3:IsVector3() end
 ---@alias class table # dst伪类
 
 ---@alias asset_type string # 资源类型
----| '"ANIM"' # .zip
----| '"ATLAS"' # .xml
----| '"ATLAS_BUILD"' # .xml, 参数3为256或192
----| '"IMAGE"' # .tex
----| '"SCRIPT"' # .lua
----| '"SOUND"' # .fsb
----| '"SOUNDPACKAGE"' # .fev
----| '"SHADER"' # .ksh
----| '"INV_IMAGE"' #
----| '"MINIMAP_IMAGE"' #
----| '"DYNAMIC_ANIM"' # .zip build_dyn
----| '"PKGREF"' # .dyn | .fev | .ogv , tex_dyn | unknown | unknown
+---| '"ANIM"' # `.zip`
+---| '"ATLAS"' # `.xml`
+---| '"ATLAS_BUILD"' # `.xml`, 参数3为256或192
+---| '"IMAGE"' # `.tex`
+---| '"SCRIPT"' # `.lua`
+---| '"SOUND"' # `.fsb`
+---| '"SOUNDPACKAGE"' # `.fev`
+---| '"SHADER"' # `.ksh`
+---| '"INV_IMAGE"' # (nosuffix)
+---| '"MINIMAP_IMAGE"' # (nosuffix)
+---| '"DYNAMIC_ANIM"' # `.zip` build_dyn
+---| '"PKGREF"' # `.dyn | .fev | .ogv` , tex_dyn | unknown | unknown
 
 ---@class asset # 资源
 
