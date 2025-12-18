@@ -136,3 +136,83 @@ function EmitterManager:Wake(inst) end
 ---@alias hashed_code integer # 哈希值
 
 ---@alias num_string number # 会被转换为字符串的数值
+
+---@class ScrapbookData # 图鉴数据
+---@field name string #
+---@field tex string # `.tex`
+---@field prefab string #
+---@field type "POI"|"food"|"item"|"giant"|"thing"|"creature"|"unknown"
+---@field bank string #
+---@field anim string #
+---@field build string #
+---@field absorb_percent number|nil # 通常伤害减免
+---@field activatable string|nil
+---@field alpha number|nil
+---@field animoffsetbgx number|nil
+---@field animoffsetbgy number|nil
+---@field animoffsetx number|nil
+---@field animoffsety number|nil
+---@field animpercent number|nil
+---@field areadamage number|nil
+---@field armor number|nil # 护甲耐久
+---@field armor_planardefense number|nil
+---@field bb_x_extra number|nil
+---@field bb_y_extra number|nil
+---@field burnable boolean|nil
+---@field craftingprefab string|nil
+---@field damage number|string|nil
+---@field dapperness number|nil
+---@field deps table|nil
+---@field facing number|nil
+---@field finiteuses number|nil
+---@field fishable boolean|nil
+---@field float_accuracy number|nil
+---@field float_range number|nil
+---@field floater table|nil
+---@field foodtype string|nil
+---@field forgerepairable table|nil
+---@field fueledmax number|nil
+---@field fueledrate number|nil
+---@field fueledtype1 string|nil
+---@field fueledtype2 string|nil
+---@field fueleduses boolean|nil
+---@field fueltype string|nil
+---@field fuelvalue number|nil
+---@field harvestable boolean|nil
+---@field health number|string|nil
+---@field healthvalue number|nil
+---@field hide table|nil
+---@field hidesymbol table|nil
+---@field hungervalue number|nil
+---@field insulator number|nil
+---@field insulator_type "winter"|"summer"|nil
+---@field lightbattery boolean|nil
+---@field lure_charm number|nil
+---@field lure_dist number|nil
+---@field lure_radius number|nil
+---@field multcolour table|nil
+---@field notes table|nil
+---@field oar_force number|nil
+---@field oar_velocity number|nil
+---@field overridebuild string|table|nil
+---@field overridesymbol table|nil
+---@field perishable number|nil
+---@field pickable boolean|nil
+---@field planardamage number|string|nil
+---@field repairitems table|nil
+---@field sanityaura number|nil
+---@field sanityvalue number|nil
+---@field scale number|nil
+---@field sewable boolean|nil
+---@field snowmandecor boolean|nil
+---@field specialinfo string|nil
+---@field speechname string|nil
+---@field stacksize number|nil
+---@field stewer boolean|nil
+---@field subcat string|nil
+---@field symbolcolours table|nil
+---@field toolactions table|nil
+---@field waterproofer number|nil
+---@field weapondamage number|string|nil
+---@field weaponrange number|nil
+---@field workable string|nil
