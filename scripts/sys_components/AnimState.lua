@@ -4,7 +4,7 @@
 local AnimState = {}
 
 ---添加新build
----@param buildname string # build名
+---@param buildname string|hashed_code # build名
 ---author: Runar
 function AnimState:AddOverrideBuild(buildname)
 end
@@ -43,12 +43,12 @@ end
 function AnimState:ClearAllOverrideSymbols()
 end
 
----清除泛光效果句柄
+---移除着色器
 ---author: Runar
 function AnimState:ClearBloomEffectHandle()
 end
 
----清除默认效果句柄
+---移除默认着色器
 ---author: Runar
 function AnimState:ClearDefaultEffectHandle()
 end
@@ -98,8 +98,9 @@ end
 function AnimState:GetAddColour()
 end
 
----UNKNOWN
----author: 
+---获取bank的哈希
+---@return hashed_code #
+---author: Runar
 function AnimState:GetBankHash()
 end
 
@@ -350,7 +351,7 @@ function AnimState:Pause()
 end
 
 ---播放动画，animname：动画名，loop：是否循环播放，默认是 false
----@param animname string # 
+---@param animname string|num_string # 
 ---@param loop boolean|nil # 
 ---author: 
 function AnimState:PlayAnimation(animname,loop)
@@ -368,50 +369,51 @@ end
 function AnimState:Resume()
 end
 
----颜色叠加，几乎不受原图颜色影响，参数 0-1
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---颜色叠加
+---@param r number # 红色通道`[0, 1]`
+---@param g number # 绿色通道`[0, 1]`
+---@param b number # 蓝色通道`[0, 1]`
+---@param a number # 不透明度`[0, 1]`
 ---author: Runar
 function AnimState:SetAddColour(r,g,b,a)
 end
 
 ---Spriter 里动画的父级节点的名字
----@param name string # 动画父节点名
+---@param name string|hashed_code # 动画父节点名
 ---author: Runar
 function AnimState:SetBank(name)
 end
 
 ---看名字能猜到是 SetBank()与PlayAnimation()两个方法的结合
----@param bankname string # 动画父节点名
----@param animname string # 动画名
+---@param bankname string|hashed_code # 动画父节点名
+---@param animname string|hashed_code|num_string # 动画名
 ---author: Runar
 function AnimState:SetBankAndPlayAnimation(bankname,animname)
 end
 
----设置泛光效果句柄
----@param path string # 句柄文件相对根目录的完整路径
----author: Runar
+---设置着色器 `GLSL`
+---@param path string # 着色器路径 `.ksh`
+---author: Runar \
+---模组着色器路径需要应用 `resolvefilepath`
 function AnimState:SetBloomEffectHandle(path)
 end
 
 ---设置动画光度,0为亏曝,2为过曝
----@param brightness number # 光度(0~2)
+---@param brightness number # 光度 `[0,2]`
 ---author: Runar
 function AnimState:SetBrightness(brightness)
 end
 
 ---buildname 就是 scml 文件的名字
----@param buildname string # build名
+---@param buildname string|hashed_code # build名
 ---author: Runar
 function AnimState:SetBuild(buildname)
 end
 
 ---替换客户端显示的build
 ---@param state string # 
----@param build string # 
----@param overridebuild string # 
+---@param build string|hashed_code # 
+---@param overridebuild string|hashed_code # 
 ---author: 
 function AnimState:SetClientsideBuildOverride(state,build,overridebuild)
 end
@@ -423,9 +425,10 @@ end
 function AnimState:SetClientSideBuildOverrideFlag(name,flag)
 end
 
----设置默认效果句柄
----@param path string # 相对根目录的完整路径
----author: Runar
+---设置默认着色器 `GLSL`
+---@param path string # 着色器路径 `.ksh`
+---author: Runar \
+---模组着色器路径需要应用 `resolvefilepath`
 function AnimState:SetDefaultEffectHandle(path)
 end
 
@@ -456,12 +459,12 @@ end
 function AnimState:SetErosionParallax(parallax)
 end
 
----UNKNOWN
----@param param1 number # 
----@param param2 number # 
----@param param3 number # 
----author: 
-function AnimState:SetErosionParams(param1,param2,param3)
+---设置侵蚀效果参数
+---@param erode_amount number # 侵蚀程度`[0,1]`
+---@param param2 number # ?`[0,1]`
+---@param param3 number # 锐度?`[0,5]`
+---author: Runar
+function AnimState:SetErosionParams(erode_amount,param2,param3)
 end
 
 ---UNKNOWN
@@ -470,12 +473,13 @@ end
 function AnimState:SetFinalOffset(param)
 end
 
----UNKNOWN
----@param param1 number # 
----@param param2 number # 
----@param param3 number # 
----author: 
-function AnimState:SetFloatParams(param1,param2,param3)
+---调试着色器参数
+---@param x number # FLOAT_PARAMS.x
+---@param y number # FLOAT_PARAMS.y
+---@param z number # FLOAT_PARAMS.z
+---author: Runar \
+---对应着色器变量 `uniform vec3 FLOAT_PARAMS;`
+function AnimState:SetFloatParams(x, y, z)
 end
 
 ---UNKNOWN
@@ -541,11 +545,11 @@ end
 function AnimState:SetManualBB()
 end
 
----颜色叠乘，受原图颜色影响
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---颜色叠乘(衰减)
+---@param r number # 红色通道`[0, 1]`
+---@param g number # 绿色通道`[0, 1]`
+---@param b number # 蓝色通道`[0, 1]`
+---@param a number # 不透明度`[0, 1]`
 ---author: Runar
 function AnimState:SetMultColour(r,g,b,a)
 end
@@ -583,7 +587,7 @@ function AnimState:SetRayTestOnBB(bool)
 end
 
 ---设置动画饱和度
----@param saturation number # 饱和度(0~1)
+---@param saturation number # 饱和度`[0,1]`
 ---author: Runar
 function AnimState:SetSaturation(saturation)
 end
@@ -617,10 +621,10 @@ end
 
 ---设置通道叠加颜色,会受原色的影响,恢复原来的颜色 只要设置RGBA都为`0`即可
 ---@param symbol string # 通道名
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---@param r number # 红色通道`[0,1]`
+---@param g number # 绿色通道`[0,1]`
+---@param b number # 蓝色通道`[0,1]`
+---@param a number # 不透明度`[0,1]`
 ---author: Runar
 function AnimState:SetSymbolAddColour(symbol,r,g,b,a)
 end
@@ -633,7 +637,7 @@ end
 
 ---设置通道光度,0为亏曝,2为过曝
 ---@param symbol string # 通道名
----@param brightness number # 光度(0~2)
+---@param brightness number # 光度`[0,2]`
 ---author: Runar
 function AnimState:SetSymbolBrightness(symbol,brightness)
 end
@@ -661,10 +665,10 @@ end
 
 ---设置通道叠乘颜色
 ---@param symbol string # 通道名
----@param r number # 红色通道(0~1)
----@param g number # 绿色通道(0~1)
----@param b number # 蓝色通道(0~1)
----@param a number # 不透明度(0~1)
+---@param r number # 红色通道`[0,1]`
+---@param g number # 绿色通道`[0,1]`
+---@param b number # 蓝色通道`[0,1]`
+---@param a number # 不透明度`[0,1]`
 ---author: Runar
 function AnimState:SetSymbolMultColour(symbol,r,g,b,a)
 end

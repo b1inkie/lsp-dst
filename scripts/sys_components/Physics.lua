@@ -128,8 +128,8 @@ function Physics:SetCapsule(rad,num)
 end
 
 ---设置碰撞回调函数
----@param fn fun(inst: ent,other: ent) # 
----author: 不知名笔记
+---@param fn fun(inst:ent, other:ent, inst_x:(number|nil), inst_y:(number|nil), inst_z:(number|nil), other_x:(number|nil), other_y:(number|nil), other_z:(number|nil), other_unknown_x:(number|nil), other_unknown_y:(number|nil), other_unknown_z:(number|nil), frames:(number|nil)) #
+---author: Runar
 function Physics:SetCollisionCallback(fn)
 end
 
@@ -141,7 +141,7 @@ end
 
 ---UNKNOWN
 ---author: 
-function Physics:SetCollisionMask()
+function Physics:SetCollisionMask(...)
 end
 
 ---设置碰撞关闭 设定坐标后再开启碰撞
@@ -186,7 +186,7 @@ end
 function Physics:SetMass(mass)
 end
 
----设置机动速率
+---设置相对于方向的速率
 ---@param x number # 正面方向速率
 ---@param y number # 高度方向速率
 ---@param z number # 侧面方向速率
@@ -225,7 +225,7 @@ end
 function Physics:SetTriangleMesh(PLAYER_COLLISION_MESH)
 end
 
----设置物理对象的速度
+---设置绝对坐标系速率
 ---@param vx number # x 轴方向的速度
 ---@param vy number # y 轴方向的速度
 ---@param vz number # z 轴方向的速度

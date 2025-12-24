@@ -11,11 +11,15 @@ local Map = {}
 function Map:FindBestSpawningPointForArena(...) end
 
 ---
----UNKNOWN
+---将世界坐标或地皮坐标转换为地皮中心世界坐标
 ---
----@param ... idk
----author: 
-function Map:GetTileCenterPoint(...) end
+---@param x_or_tx number # 世界坐标X或者地皮坐标X
+---@param y_or_ty number # 世界坐标Y或者地皮坐标Y
+---@param z number|nil # 世界坐标Z
+---@return number, number, number
+---@nodiscard
+---author: Runar
+function Map:GetTileCenterPoint(x_or_tx, y_or_ty, z) end
 
 ---
 ---UNKNOWN
@@ -153,9 +157,13 @@ function Map:IsDeployPointClear(...) end
 ---
 ---UNKNOWN
 ---
----@param ... idk
+---@param x number #
+---@param y number #
+---@param z number #
+---@return ent[]|nil
+---@nodiscard
 ---author: 
-function Map:GetEntitiesOnTileAtPoint(...) end
+function Map:GetEntitiesOnTileAtPoint(x, y, z) end
 
 ---
 ---UNKNOWN
@@ -389,11 +397,14 @@ function Map:FindBestSpawningPointForOceanArena(...) end
 function Map:Fill(...) end
 
 ---
----UNKNOWN
+---世界坐标转换地皮坐标
 ---
----@param ... idk
----author: 
-function Map:GetTileCoordsAtPoint(...) end
+---@param x number
+---@param y number
+---@param z number
+---@return number, number
+---author: Runar
+function Map:GetTileCoordsAtPoint(x, y, z) end
 
 ---
 ---UNKNOWN
@@ -1145,18 +1156,23 @@ function Map:CanDeployBoatAtPointInWater(...) end
 function Map:CanDeployWalkablePeripheralAtPoint(...) end
 
 ---
----UNKNOWN
+---世界坐标转换地皮坐标
 ---
----@param ... idk
----author: 
-function Map:GetTileXYAtPoint(...) end
+---@param x number
+---@param y number
+---@param z number
+---@return number, number
+---author: Runar
+function Map:GetTileXYAtPoint(x, y, z) end
 
 ---
 ---UNKNOWN
 ---
----@param ... idk
+---@param x number
+---@param y number
+---@param z number
 ---author: 
-function Map:CanDeployAtPoint(...) end
+function Map:CanDeployAtPoint(x, y, z) end
 
 ---
 ---UNKNOWN

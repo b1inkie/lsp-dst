@@ -416,9 +416,9 @@ function entity:FlushLocalDirtyNetVars(...)end
 function entity:IsAwake(...)end
 
 ---
----@param ... idk
----author: 
-function entity:AddVFXEffect(...)end
+---@return VFXEffect
+---author: Runar
+function entity:AddVFXEffect()end
 
 ---
 ---@param ... idk

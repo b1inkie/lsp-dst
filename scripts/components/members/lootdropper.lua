@@ -21,6 +21,11 @@
 ---@field totalhauntedrandomweight number #默认0,被作祟时掉落总权重
 local lootdropper = {}
 
+---设置共享掉落表
+---@param name string
+---@param table {prefab:PrefabID, weight:number}[]
+function SetSharedLootTable(name, table) end
+
 ---添加加权随机掉落物
 ---@param prefab PrefabID #物品名称 
 ---@param weight number # 权重
@@ -157,6 +162,11 @@ end
 function lootdropper:AddIfNotChanceLoot(prefab)
 end
 
+---设置共享触发概率掉落物表名
+---@param name string
+---author: Runar
+function lootdropper:SetChanceLootTable(name)
+end
 
 ---@param var string
 ---@param fn fun(inst: ent, ...):any

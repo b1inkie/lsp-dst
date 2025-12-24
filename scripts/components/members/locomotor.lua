@@ -59,8 +59,8 @@
 local locomotor = {}
 
 ---
----@param source any #
----@param key any|nil # 如果为nil,则需要全部移除source下
+---@param source ent #
+---@param key any|nil # key为nil只能通过全部移除来移除
 ---@param m number # 
 ---author: Runar
 function locomotor:SetExternalSpeedMultiplier(source,key,m)
@@ -89,8 +89,8 @@ function locomotor:SetFasterOnGroundTile(ground_tile,is_faster)
 end
 
 ---
----@param source idk # 
----@param key idk # 
+---@param source ent # 
+---@param key any # 
 ---author: 
 function locomotor:GetExternalSpeedMultiplier(source,key)
 end
@@ -115,8 +115,8 @@ function locomotor:Stop(sgparams)
 end
 
 ---
----@param source idk # 
----@param key idk # 
+---@param source ent # 
+---@param key any # 
 ---author: 
 function locomotor:RemovePredictExternalSpeedMultiplier(source,key)
 end
@@ -142,9 +142,9 @@ function locomotor:ResetPath()
 end
 
 ---
----@param source idk # 
----@param key idk # 
----@param m idk # 
+---@param source ent # 
+---@param key any|nil # 
+---@param m number # 
 ---author: 
 function locomotor:SetPredictExternalSpeedMultiplier(source,key,m)
 end

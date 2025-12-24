@@ -30,3 +30,5 @@ NumEnts = 0
 prefabs = nil -- this is here so mods dont crash because one of our prefab scripts missed the local and a number of mods were erroneously abusing it
 
 TheGlobalInstance = nil
+
+IsDynamicCloudShutdown = false

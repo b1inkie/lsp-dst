@@ -3,6 +3,7 @@
 ---@class widget_widget
 ---@overload fun(): widget_widget
 ---@field _ctor function #
+---@field inst ent #
 ---@field focus boolean # 
 ---@field shown boolean # 该ui是否在显示中
 local widget = {}

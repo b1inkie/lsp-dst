@@ -18,13 +18,13 @@ end
 
 ---播放音效
 ---@param soundpath string # 路径
----@param loopname string|nil # 起一个音效名
+---@param event string|nil # 事件名
 ---@param volume number|nil # 音量
 ---author: lan
-function SoundEmitter:PlaySound(soundpath,loopname,volume)
+function SoundEmitter:PlaySound(soundpath, event, volume)
 end
 
----带参播放音效
+---带参播放音效(仅对有参音效有效)
 ---@param path string # 音效路径
 ---@param params table # {speed = 1, size = 1, intensity = 0.8, start = math.random()}
 ---author: lan
@@ -33,13 +33,13 @@ end
 
 ---UNKNOWN
 ---author: 
-function SoundEmitter:SetParameter()
+function SoundEmitter:SetParameter(...)
 end
 
 ---关闭指定音效
----@param name string # 指定音效名
+---@param event string # 音效事件名
 ---author: lan
-function SoundEmitter:KillSound(name)
+function SoundEmitter:KillSound(event)
 end
 
 ---关闭所有音乐
@@ -52,13 +52,18 @@ end
 function SoundEmitter:SetMute()
 end
 
----UNKNOWN
----author: 
+---获取实体实例
+---@return ent
+---@nodiscard
+---author: Runar
 function SoundEmitter:GetEntity()
 end
 
----UNKNOWN
----author: 
-function SoundEmitter:PlayingSound()
+---检测一个事件是否正在播放
+---@param event string # 音效事件名
+---@return boolean
+---@nodiscard
+---author: Runar
+function SoundEmitter:PlayingSound(event)
 end
 
