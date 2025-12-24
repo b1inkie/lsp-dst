@@ -6,7 +6,7 @@
 ---@field spacing number #部署间距（DEPLOYSPACING里的一个常量）
 ---@field restrictedtag tagID|nil #限制部署的标签
 ---@field usegridplacer boolean|nil #是否使用网格放置器
----@field ondeploy fun(inst:ent, pt:Vector3, deployer:ent, rot:number)|nil #部署回调
+---@field ondeploy nil|(fun(this:ent, pt:Vector3, deployer:ent, rot:number, ...:any):...) #部署回调
 ---@field deploytoss_symbol_override any #部署动画覆盖
 local deployable = {}
 

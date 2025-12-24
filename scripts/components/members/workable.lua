@@ -3,7 +3,7 @@
 ---@class component_workable: component_base
 ---@field inst ent
 ---@field onwork idk
----@field onfinish idk
+---@field onfinish nil|(fun(this:ent,worker:ent,...:any):...)
 ---@field workleft idk
 ---@field maxwork idk
 ---@field action idk
@@ -83,8 +83,8 @@ function workable:GetDebugString()
 end
 
 ---设置一个方法，当全部次数消耗完毕后会触发，比如，一个箱子被锤两次后破坏掉，那锤两次后就会触发fn。例如：SetOnFinishCallback(function(inst,worker)end) inst是自身，worker是触发最后一次操作的对象。
----@param fn function # 方法
----author: 御坂十七号
+---@param fn fun(this:ent,worker:ent,...:any):... # 方法
+---author: 御坂十七号, lan
 function workable:SetOnFinishCallback(fn)
 end
 

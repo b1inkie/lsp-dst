@@ -2,11 +2,11 @@
 
 ---@class component_portablestructure: component_base
 ---@field inst idk
----@field ondismantlefn idk
+---@field ondismantlefn nil|(fun(this: ent, doer: ent, ...: any):...)
 local portablestructure = {}
 
 ---
----@param fn idk # 
+---@param fn fun(this: ent, doer: ent, ...: any):... # 
 ---author: 
 function portablestructure:SetOnDismantleFn(fn)
 end

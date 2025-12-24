@@ -125,8 +125,7 @@ function pickable:SetOnRegenFn(fn) end
 ---@param picker ent|nil #采集者实体
 ---author:星璃
 ---@return boolean #是否采集成功 
----@return ent|string|table|nil #采集获得的物品（实体、字符串或表） 
----@nodiscard
+---@return ent|string|table|nil #采集获得的物品（实体、字符串或表）
 function pickable:Pick(picker) end
 
 ---长时间更新（如季节变化）

@@ -43,7 +43,7 @@
 ---@field SoundEmitter idk
 ---@field name idk
 ---@field tile_physics_init idk
----@field Map idk
+---@field Map Map
 ---@field WaveComponent idk
 ---@field replica idk
 ---@field topology idk
