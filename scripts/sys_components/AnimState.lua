@@ -391,10 +391,9 @@ end
 function AnimState:SetBankAndPlayAnimation(bankname,animname)
 end
 
----设置是否参与泛光后处理效果，并设置着色器 `GLSL`
+---设置是否参与泛光后处理效果，并设置着色器 `GLSL` <br> 模组着色器路径需要应用 `resolvefilepath`
 ---@param path string # 着色器路径 `.ksh`
 ---author: Runar, 亚丹
----模组着色器路径需要应用 `resolvefilepath`
 function AnimState:SetBloomEffectHandle(path)
 end
 
@@ -495,9 +494,9 @@ function AnimState:SetFrame(frame)
 end
 
 ---设置hat symbol的偏移，用于优化头型奇怪的角色（如沃特）戴着帽子的视觉效果，不影响鼠标选中区域
----@param param1 xoffset # 
----@param param2 yoffset # 
----author:
+---@param param1 number # 
+---@param param2 number # 
+---author: 亚丹
 function AnimState:SetHatOffset(param1,param2)
 end
 
@@ -529,7 +528,7 @@ function AnimState:SetInheritsSortKey(bool)
 end
 
 ---设置显示层级，显示层级数字高的物体必定显示在显示层级数字低的物体之上
----@param const layer # 
+---@param const any # layer 
 ---author: 亚丹
 function AnimState:SetLayer(const)
 end
@@ -606,8 +605,8 @@ function AnimState:SetSkin()
 end
 
 ---设置排序层级，在同一显示层级内，排序层级高的物体必定显示在排序层级低的物体之上
----@param int order # 该值范围为[-3, 3]
----author: 亚丹
+---@param order integer # 该值范围为[-3, 3]
+---author: 亚丹, lan
 function AnimState:SetSortOrder(order)
 end
 
