@@ -6,7 +6,7 @@ TheNet = {}
 ---
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月
 function TheNet:GetIsHosting()
 end
@@ -14,7 +14,7 @@ end
 ---
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月
 function TheNet:GetIsServer()
 end
@@ -22,7 +22,7 @@ end
 ---
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月
 function TheNet:GetIsClient()
 end
@@ -30,7 +30,7 @@ end
 ---判定是否为专服
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月
 function TheNet:IsDedicated()
 end
@@ -38,7 +38,7 @@ end
 ---UNKNOWN
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月
 function TheNet:GetServerIsDedicated()
 end
@@ -46,7 +46,7 @@ end
 ---UNKNOWN
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月
 function TheNet:GetServerIsClientHosted()
 end
@@ -54,7 +54,7 @@ end
 ---UNKNOWN
 ---@return boolean # 
 ---@nodiscard
----![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.png) <br>
 ---author: Runar, lan, 月 
 function TheNet:GetIsMasterSimulation()
 end
