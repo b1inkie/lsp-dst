@@ -3,14 +3,65 @@
 ---@class TheNet
 TheNet = {}
 
+---
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月
+function TheNet:GetIsHosting()
+end
+
+---
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月
+function TheNet:GetIsServer()
+end
+
+---
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月
+function TheNet:GetIsClient()
+end
+
+---判定是否为专服
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月
+function TheNet:IsDedicated()
+end
+
 ---UNKNOWN
----author: 
-function TheNet:GetDefaultFriendsOnlyServer()
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月
+function TheNet:GetServerIsDedicated()
+end
+
+---UNKNOWN
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月
+function TheNet:GetServerIsClientHosted()
+end
+
+---UNKNOWN
+---@return boolean # 
+---@nodiscard
+---![preview](https://gitee.com/b1inkie/lsp-dst/raw/master/resource/images/thenet.jpg) <br>
+---author: Runar, lan, 月 
+function TheNet:GetIsMasterSimulation()
 end
 
 ---UNKNOWN
 ---author: 
-function TheNet:GetIsHosting()
+function TheNet:GetDefaultFriendsOnlyServer()
 end
 
 ---UNKNOWN
@@ -288,12 +339,6 @@ end
 function TheNet:SetDefaultGameMode()
 end
 
----判定是否为专服
----@return boolean # 
----author: lan
-function TheNet:IsDedicated()
-end
-
 ---UNKNOWN
 ---author: 
 function TheNet:GetItemsBranch()
@@ -431,11 +476,6 @@ end
 
 ---UNKNOWN
 ---author: 
-function TheNet:GetIsMasterSimulation()
-end
-
----UNKNOWN
----author: 
 function TheNet:GetCloudServerId()
 end
 
@@ -529,11 +569,7 @@ end
 function TheNet:SetDefaultServerName()
 end
 
----判定是否为客户端
----@return boolean # 是客户端
----author: lan
-function TheNet:GetIsClient()
-end
+
 
 ---UNKNOWN
 ---author: 
@@ -817,11 +853,6 @@ end
 
 ---UNKNOWN
 ---author: 
-function TheNet:GetServerIsClientHosted()
-end
-
----UNKNOWN
----author: 
 function TheNet:JoinParty()
 end
 
@@ -913,11 +944,6 @@ end
 
 ---UNKNOWN
 ---author: 
-function TheNet:GetServerIsDedicated()
-end
-
----UNKNOWN
----author: 
 function TheNet:GetServerClanID()
 end
 
@@ -959,12 +985,6 @@ end
 ---UNKNOWN
 ---author: 
 function TheNet:IsNetOverlayEnabled()
-end
-
----判定是否为服务器
----@return boolean # 是服务器
----author: lan
-function TheNet:GetIsServer()
 end
 
 ---UNKNOWN
