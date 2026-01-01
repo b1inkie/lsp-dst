@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_locomotor: component_base
----@field inst idk
+---@field inst ent
 ---@field pt idk
 ---@field buffered_action idk
 ---@field ismastersim idk

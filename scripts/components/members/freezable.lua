@@ -1,10 +1,10 @@
 ---@meta
 
 ---@class component_freezable: component_base
+---@field inst ent
 ---@field state idk
 ---@field coldness idk
 ---@field damagetotal idk
----@field inst idk
 ---@field resistance idk
 ---@field wearofftime idk
 ---@field damagetobreak idk

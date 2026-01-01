@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_hauntable: component_base
----@field inst idk
+---@field inst ent
 ---@field onhaunt idk
 ---@field onunhaunt idk
 ---@field haunted idk
@@ -15,6 +15,7 @@
 ---@field usefx idk
 ---@field flicker idk
 ---@field flickering idk
+---@field panicable boolean|nil # 是否可被惊吓
 local hauntable = {}
 
 ---

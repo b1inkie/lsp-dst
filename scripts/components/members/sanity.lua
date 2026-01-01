@@ -138,8 +138,9 @@ end
 
 ---设置是否免疫怪物（如各种boss）的掉san光环
 ---@param immunity boolean # true为免疫，false|nil不免疫
----author:nullptr
-function sanity:SetNegativeAuraImmunity(immunity)
+---@param source ent|string|nil # 来源, 默认为 `self.inst`
+---author:nullptr, lan
+function sanity:SetNegativeAuraImmunity(immunity,source)
 end
 
 ---根据指定key移除理智上限惩罚表self.sanity_penalties

@@ -863,7 +863,7 @@
 ---| "gnarwail_horn" # ※标签ID: gnarwail_horn<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "structure" # ※标签ID: structure<br>※直译名: 结构、建筑<br>※详述: 属于建筑<br>※分类: 建筑 | Structure<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "walrus" # ※标签ID: walrus<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "stronggrip" # ※标签ID: stronggrip<br>※直译名: <br>※详述: 防止手部装备因潮湿、吼叫、击飞而脱手。溺水后不丢失库存中的物品<br>※分类: 物品 | Inventory Item<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "stronggrip" # ※标签ID: stronggrip<br>※直译名: <br>※详述: 防止手部装备因潮湿、吼叫、击飞而脱手。溺水后不丢失库存中的物品<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lighter" # ※标签ID: lighter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wave" # ※标签ID: wave<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pocketdimension_container" # ※标签ID: pocketdimension_container<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
