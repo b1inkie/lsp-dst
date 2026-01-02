@@ -620,11 +620,13 @@ function TheSim:RegisterPrefab(...) end
 ---author:
 function TheSim:StashPlayInstance(...) end
 ---
----UNKNOWN
+---保存字符串到文件
 ---
----@param ... any
----author:
-function TheSim:SetPersistentString(...) end
+---@param path string
+---@param data string
+---@param idk boolean|nil
+---author: Runar
+function TheSim:SetPersistentString(path, data, idk) end
 ---
 ---UNKNOWN
 ---

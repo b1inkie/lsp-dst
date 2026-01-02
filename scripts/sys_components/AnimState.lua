@@ -345,26 +345,27 @@ end
 function AnimState:OverrideSymbol(oldsymbol,newbuild,newsymbol)
 end
 
----暂停动画，无参
+---暂停动画
 ---author: Runar
 function AnimState:Pause()
 end
 
----播放动画，animname：动画名，loop：是否循环播放，默认是 false
+---播放动画
 ---@param animname string|num_string # 
 ---@param loop boolean|nil # 
----author: 
+---author: Runar
 function AnimState:PlayAnimation(animname,loop)
 end
 
----推动画到播放列表里，与PlayAnimation不同的是，PlayAnimation执行后动画会立即执行，但PushAnimation执行后会等当前动画执行完，然后再播放Push的动画
----@param animname string # 
+---推送动画, 仅当上一个动画完播一次后才播放 \
+---`loop == nil`时继承上一个动画的循环状态
+---@param animname string|num_string # 
 ---@param loop boolean|nil # 
----author: 
+---author: Runar
 function AnimState:PushAnimation(animname,loop)
 end
 
----恢复暂停的动画，无参
+---恢复暂停的动画
 ---author: Runar
 function AnimState:Resume()
 end
