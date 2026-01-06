@@ -2791,3 +2791,12 @@ CHARLIERESIDUE_MAP_ACTIONS = {
 CLIENTAUTHORITATIVESETTINGS = {
     PLATFORMHOPDELAY = 0,
 }
+
+---@class _crafting_filter
+---@field name string # upper string
+---@field atlas string # `.xml`
+---@field image string # `.tex`
+
+---@type table<string, _crafting_filter>
+---`scripts/recipe_filter.lua`, line 28
+CRAFTING_FILTERS = {}
