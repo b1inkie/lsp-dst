@@ -1,8 +1,8 @@
 ---@meta
 
 ---@class component_growable: component_base
----@field inst idk
----@field stages idk
+---@field inst ent
+---@field stages table
 ---@field stage idk
 ---@field pausereasons idk
 ---@field loopstages idk

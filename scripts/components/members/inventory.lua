@@ -135,8 +135,8 @@ function inventory:GetItemByName(item,amount,checkallcontainers)
 end
 
 ---
----@param item idk #
----@param wholestack idk #
+---@param item ent|nil #
+---@param wholestack boolean|nil #
 ---@param randomdir idk #
 ---@param pos idk #
 ---@param keepoverstacked idk #

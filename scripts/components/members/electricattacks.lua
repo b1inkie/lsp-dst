@@ -2,7 +2,7 @@
 
 ---@class component_electricattacks: component_base
 ---@field inst idk
----@field _sources idk
+---@field _sources SourceModifierList
 local electricattacks = {}
 
 ---

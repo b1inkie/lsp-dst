@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_weapon: component_base
----@field inst idk
+---@field inst ent
 ---@field damage idk
 ---@field attackrange idk
 ---@field hitrange idk

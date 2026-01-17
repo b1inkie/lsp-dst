@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_moistureimmunity: component_base
----@field inst idk
+---@field inst ent
 ---@field sources idk
 ---@field _onremovesource idk
 local moistureimmunity = {}
@@ -12,9 +12,9 @@ local moistureimmunity = {}
 function moistureimmunity:RemoveSource_Internal(src)
 end
 
----
----@param src idk # 
----author: 
+---移除来源
+---@param src ent # 
+---author: lan
 function moistureimmunity:RemoveSource(src)
 end
 
@@ -23,9 +23,9 @@ end
 function moistureimmunity:OnRemoveFromEntity()
 end
 
----
----@param src idk # 
----author: 
+---添加来源
+---@param src ent # !!!不能填`字符串`
+---author: lan
 function moistureimmunity:AddSource(src)
 end
 

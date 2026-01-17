@@ -420,6 +420,8 @@ end
 
 ---EntityScript: 实体是否有其中一个标签
 ---@param ... tagID # 标签
+---@return boolean
+---@nodiscard
 ---author: lan
 function entityscript:HasOneOfTags(...)
 end

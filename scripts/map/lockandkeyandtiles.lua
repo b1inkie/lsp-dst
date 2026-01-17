@@ -138,7 +138,7 @@ LOCKS = {
     ISLAND_TIER4 = 62,           -- 岛屿第4层 (可被 ISLAND_TIER4 解锁)
 }
 
---- 地皮类型和编号
+---@enum WORLD_TILES # 地皮类型和编号
 WORLD_TILES = {
     INVALID = 65535,             -- 虚空 (地图边角外)
     IMPASSABLE = 1,              -- 云海

@@ -74,8 +74,10 @@ function replica_combat:CancelAttack()
 end
 
 ---
----@param guy idk # 
----author: 
+---@param guy ent # 
+---@return boolean
+---@nodiscard
+---author: lan
 function replica_combat:IsAlly(guy)
 end
 

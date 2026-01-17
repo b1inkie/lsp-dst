@@ -53,7 +53,7 @@ function foodaffinity:SortAffinitiesByBonus(affinities)
 end
 
 ---
----@param prefab idk # 
+---@param prefab PrefabID # 
 ---@param bonus idk # 
 ---author: 
 function foodaffinity:AddPrefabAffinity(prefab,bonus)

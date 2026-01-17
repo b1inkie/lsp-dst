@@ -3,7 +3,7 @@
 ---@class component_fishingrod: component_base
 ---@field inst ent
 ---@field target idk
----@field fisherman idk
+---@field fisherman ent|nil
 ---@field hookedfish idk
 ---@field caughtfish idk
 ---@field minwaittime idk

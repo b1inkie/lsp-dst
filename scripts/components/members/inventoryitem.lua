@@ -139,8 +139,8 @@ function inventoryitem:AddMoisture(delta)
 end
 
 ---
----@param fn idk # 
----author: 
+---@param fn fun(this: ent) # 
+---author: lan
 function inventoryitem:SetOnDroppedFn(fn)
 end
 

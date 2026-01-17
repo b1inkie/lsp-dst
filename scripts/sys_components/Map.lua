@@ -416,9 +416,11 @@ function Map:RegisterTerraformExtraSpacing(...) end
 ---
 ---UNKNOWN
 ---
----@param ... idk
+---@param x number
+---@param z number
+---@return WORLD_TILES
 ---author: 
-function Map:GetTile(...) end
+function Map:GetTile(x,z) end
 
 ---
 ---UNKNOWN
@@ -1058,11 +1060,16 @@ function Map:GetSize(...) end
 function Map:RetrofitNavGrid(...) end
 
 ---
----UNKNOWN
+---坐标处是否可以锄地
 ---
----@param ... idk
----author: 
-function Map:CanTillSoilAtPoint(...) end
+---@param x number
+---@param y number
+---@param z number
+---@param ignore_tile_type boolean|nil
+---@return boolean
+---@nodiscard
+---author: lan
+function Map:CanTillSoilAtPoint(x, y, z, ignore_tile_type) end
 
 ---
 ---UNKNOWN

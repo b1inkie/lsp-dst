@@ -1,6 +1,6 @@
 ---@meta
 
----@class component_aoeweapon_lunge: component_base
+---@class component_aoeweapon_lunge: component_aoeweapon_base
 ---@field siderange idk
 ---@field physicspadding idk
 ---@field fxprefab idk

@@ -21,7 +21,7 @@
 ---@field GetMoistureRateScale idk
 ---@field _lunarportalmax idk
 ---@field CanSeePointOnMiniMap idk
----@field skeleton_prefab idk
+---@field skeleton_prefab boolean|nil # 角色死亡留下骨架
 ---@field EnableBoatCamera idk
 ---@field playercolour idk
 ---@field MakeGenericCommander idk

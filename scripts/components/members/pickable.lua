@@ -136,15 +136,13 @@ function pickable:LongUpdate(dt) end
 ---施肥操作
 ---@param fertilizer ent #肥料
 ---@param doer ent #施肥者
----author:星璃
----@return boolean #是否施肥成功 
----@nodiscard
+---author:星璃,lan
+---@return boolean #是否施肥成功
 function pickable:Fertilize(fertilizer, doer) end
 
 ---完成生长
----author:星璃
+---author:星璃,lan
 ---@return boolean #是否完成生长 
----@nodiscard
 function pickable:FinishGrowing() end
 
 ---保存存档数据
@@ -178,3 +176,8 @@ function pickable:WatchWorldState(var, fn) end
 ---@param var string
 ---@param fn fun(inst: ent, ...):any
 function pickable:StopWatchingWorldState(var, fn) end
+
+---comment
+---@param picker ent|nil
+---@return nil|ent|ent[]
+function pickable:SpawnProductLoot(picker) end

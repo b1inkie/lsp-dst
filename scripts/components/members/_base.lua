@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class component_base
+---@field _ctor any # 构造函数
 ---@field inst ent
 local Base = {}
 

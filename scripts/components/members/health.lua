@@ -259,6 +259,12 @@ end
 function health:SetInvincible(val)
 end
 
+---可以fadeout(消散)
+---@return boolean
+---@nodiscard
+---author: lan
+function health:CanFadeOut(val)
+end
 
 ---@param var string
 ---@param fn fun(inst: ent, ...):any

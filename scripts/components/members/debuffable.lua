@@ -5,7 +5,7 @@
 ---@field enable idk
 ---@field followsymbol idk
 ---@field followoffset idk
----@field debuffs idk
+---@field debuffs table<string,{inst:ent,onremove:fun(debuff)}>
 local debuffable = {}
 
 ---

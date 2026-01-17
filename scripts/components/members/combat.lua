@@ -311,9 +311,11 @@ end
 function combat:BattleCry()
 end
 
----
----@param target idk # 
----author: 
+---目标是否有效
+---@param target ent|nil # 
+---@return boolean #
+---@nodiscard
+---author: lan
 function combat:IsValidTarget(target)
 end
 
@@ -403,9 +405,11 @@ end
 function combat:LocomotorCanAttack(reached_dest,target)
 end
 
----
----@param target idk # 
----author: 
+---是否可以将target视作目标
+---@param target ent # 
+---@return boolean #
+---@nodiscard
+---author: lan
 function combat:CanTarget(target)
 end
 

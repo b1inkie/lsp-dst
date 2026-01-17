@@ -4630,12 +4630,12 @@ end
 ---
 ---UNKNOWN
 ---
----@param inst idk 
----@param radius idk 
----@param fn idk 
----@param musttags idk 
----@param canttags idk 
----@param mustoneoftags idk 
+---@param inst ent|nil 
+---@param radius number 
+---@param fn nil|(fun(tar:ent,inst:ent):boolean) # 筛选函数
+---@param musttags nil|tagID[] 
+---@param canttags nil|tagID[] 
+---@param mustoneoftags nil|tagID[] 
 ---所在文件: scripts/simutil.lua
 function FindEntity(inst,radius,fn,musttags,canttags,mustoneoftags)
 end
