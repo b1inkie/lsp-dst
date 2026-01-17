@@ -234,7 +234,9 @@ end
 
 ---获取覆盖通道名
 ---@param symbol string # 通道名
----@return string # 覆盖通道名
+---@return hashed_code|nil # overridebuild
+---@return hashed_code|nil # overridesymbol
+---@nodiscard
 ---author: Runar
 function AnimState:GetSymbolOverride(symbol)
 end
@@ -459,12 +461,12 @@ end
 function AnimState:SetErosionParallax(parallax)
 end
 
----设置侵蚀效果参数
----@param erode_amount number # 侵蚀程度`[0,1]`
----@param param2 number # ?`[0,1]`
----@param param3 number # 锐度?`[0,5]`
----author: Runar
-function AnimState:SetErosionParams(erode_amount,param2,param3)
+---设置消融/侵蚀/淡入淡出效果参数
+---@param progress number # 消融进度(不消融`0-1`完全消融)`[0,1]`
+---@param direction number # 消融方向`[0,1]`
+---@param edge_softness number # 边缘锐度(常用1)`[0,5]`
+---author: 小星, Runar
+function AnimState:SetErosionParams(progress,direction,edge_softness)
 end
 
 ---UNKNOWN
