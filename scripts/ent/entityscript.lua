@@ -124,8 +124,9 @@ function entityscript:GetCurrentTileType()
 end
 
 ---EntityScript: 实体添加组件
----@param name componentID # 组件名
----@return class # 组件
+---@generic T
+---@param name component_`T` # 组件名
+---@return T # 组件
 ---author: lan
 function entityscript:AddComponent(name)
 end

@@ -1,6 +1,7 @@
 ---@meta
 
----@alias componentID string # 组件名
+---@diagnostic disable-next-line: undefined-doc-name
+---@alias componentID string|componentID_mod # 组件名
 ---| "acidbatwavemanager"
 ---| "acidinfusible"
 ---| "acidlevel"
