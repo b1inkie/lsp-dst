@@ -1,6 +1,6 @@
 ---@meta
 
----@alias PrefabID string # prefab ID
+---@alias PrefabID string|PrefabID_mod # prefab ID
 ---| "turf_savanna" # ※Prefab ID: turf_savanna<br>※译名(中): 热带草原地皮<br>※译名(英): Savanna Turf<br>※制作配方: <br>&nbsp;&nbsp;&nbsp;&nbsp;+ 1 个: 采下的草/Cut Grass<br>&nbsp;&nbsp;&nbsp;&nbsp;+ 1 个: 粪肥/Manure<br>※所需科技: <br>&nbsp;&nbsp;&nbsp;&nbsp;LV.2 : 景观设计/Landscaping<br>![turf_savanna](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/turf_savanna.png) <br>※prefab查询版本:  DST-639083
 ---| "ghostlyelixir_attack" # ※Prefab ID: ghostlyelixir_attack<br>※译名(中): 夜影万金油<br>※译名(英): Nightshade Nostrum<br>※制作配方: <br>&nbsp;&nbsp;&nbsp;&nbsp;+ 1 个: 针刺/Stinger<br>&nbsp;&nbsp;&nbsp;&nbsp;+ 3 个: 哀悼荣耀/Mourning Glory<br>![ghostlyelixir_attack](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/ghostlyelixir_attack.png) <br>※prefab查询版本:  DST-639083
 ---| "minotaurhorn" # ※Prefab ID: minotaurhorn<br>※译名(中): 守护者之角<br>※译名(英): Guardian's Horn<br>![minotaurhorn](https://gitee.com/b1inkie/imgbed/raw/master/dst/invimgs/minotaurhorn.png) <br>※prefab查询版本:  DST-639083

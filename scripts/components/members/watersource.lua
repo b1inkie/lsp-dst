@@ -3,7 +3,7 @@
 ---@class component_watersource: component_base
 ---@field inst idk
 ---@field available idk
----@field onusefn idk
+---@field onusefn fun(this:ent) # 当水源被使用时执行,例如`fillable`组件
 ---@field override_fill_uses idk
 local watersource = {}
 

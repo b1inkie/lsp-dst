@@ -3,7 +3,7 @@
 ---@class component_fertilizer: component_base
 ---@field inst idk
 ---@field fertilizervalue idk
----@field soil_cycles idk
+---@field soil_cycles integer # 使用次数
 ---@field withered_cycles idk
 ---@field fertilize_sound idk
 ---@field nutrients idk

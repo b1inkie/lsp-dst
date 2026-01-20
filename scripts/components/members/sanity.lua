@@ -15,7 +15,7 @@
 ---@field externalmodifiers idk
 ---@field inducedinsanity idk
 ---@field inducedinsanity_sources idk
----@field night_drain_mult idk
+---@field night_drain_mult number # 夜晚掉san乘数,填`0`则不掉san
 ---@field neg_aura_mult idk
 ---@field neg_aura_modifiers idk
 ---@field neg_aura_absorb idk

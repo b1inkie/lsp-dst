@@ -1,6 +1,6 @@
 ---@meta
 
----@alias tagID string # 标签ID
+---@alias tagID string|tagID_mod # 标签ID
 ---| "prechop" # ※标签ID: prechop<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "rook" # ※标签ID: rook<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "plantkin" # ※标签ID: plantkin<br>※直译名: <br>※详述: 不会被杂草困住<br>※分类: 通用 | Universal<br>※author: <br>※拉取时间: 2024-12-11 15:04

@@ -29,10 +29,10 @@ function edible:AddChill(delta)
 end
 
 ---获取食物能回复的饱食度（此值由挺多因素决定，深入了解请翻阅此函数）
----@param eater ent # 食用者
+---@param eater ent|nil # 食用者(可能为空)
 ---@return number # 能回复的饱食度（相对eater来说）
 ---@nodiscard
----author:nullptr
+---author:nullptr, lan
 function edible:GetHunger(eater)
 end
 

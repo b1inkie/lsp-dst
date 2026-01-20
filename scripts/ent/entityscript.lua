@@ -125,10 +125,11 @@ end
 
 ---EntityScript: 实体添加组件
 ---@generic T
----@param name component_`T` # 组件名
+---@param name componentID # 组件名
+---@param _ignore `T`|nil # 只是为了返回对应的类型,以后再想其他解决办法
 ---@return T # 组件
 ---author: lan
-function entityscript:AddComponent(name)
+function entityscript:AddComponent(name,_ignore)
 end
 
 ---EntityScript: 
