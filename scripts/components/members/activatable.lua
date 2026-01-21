@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_activatable: component_base
----@field inst idk
+---@field inst ent
 ---@field OnActivate idk
 ---@field inactive idk
 ---@field standingaction idk
