@@ -3,7 +3,7 @@
 ---@class widget_itemtile: widget_widget
 ---@overload fun(invitem:idk): widget_itemtile
 ---@field _ctor function #
----@field item idk #
+---@field item ent #
 ---@field ismastersim idk #
 ---@field isactivetile idk #
 ---@field ispreviewing idk #
