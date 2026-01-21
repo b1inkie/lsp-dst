@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class component_acidlevel: component_base
----@field inst idk
+---@field inst ent
 ---@field max idk
 ---@field current idk
 ---@field ignoreacidrainticks idk
