@@ -2,7 +2,7 @@
 
 ---@class component_acidinfusible: component_base
 ---@field _initialize_task idk
----@field inst idk
+---@field inst ent
 ---@field infused idk
 ---@field userainimmunity idk
 ---@field fxlevel idk
