@@ -1,258 +1,257 @@
 ---@meta
 
-ACTIONS = {
-    REPAIR = {},
-    READ = {},
-    DROP = {},
-    TRAVEL = {},
-    CHOP = {},
-    ATTACK = {},
-    EAT = {},
-    PICK = {},
-    PICKUP = {},
-    MINE = {},
-    DIG = {},
-    GIVE = {},
-    GIVETOPLAYER = {},
-    GIVEALLTOPLAYER = {},
-    FEEDPLAYER = {},
-    DECORATEVASE = {},
-    COOK = {},
-    FILL = {},
-    FILL_OCEAN = {},
-    DRY = {},
-    ADDFUEL = {},
-    ADDWETFUEL = {},
-    LIGHT = {},
-    EXTINGUISH = {},
-    LOOKAT = {},
-    TALKTO = {},
-    WALKTO = {},
-    INTERACT_WITH = {},
-    BAIT = {},
-    CHECKTRAP = {},
-    BUILD = {},
-    PLANT = {},
-    HARVEST = {},
-    GOHOME = {},
-    SLEEPIN = {},
-    CHANGEIN = {},
-    HITCHUP = {},
-    MARK = {},
-    UNHITCH = {},
-    HITCH = {},
-    EQUIP = {},
-    UNEQUIP = {},
-    SHAVE = {},
-    STORE = {},
-    RUMMAGE = {},
-    DEPLOY = {},
-    DEPLOY_TILEARRIVE = {},
-    PLAY = {},
-    CREATE = {},
-    JOIN = {},
-    ---捕虫网
-    NET = {},
-    CATCH = {},
-    FISH_OCEAN = {},
-    FISH = {},
-    REEL = {},
-    OCEAN_FISHING_POND = {},
-    OCEAN_FISHING_CAST = {},
-    OCEAN_FISHING_REEL = {},
-    OCEAN_FISHING_STOP = {},
-    OCEAN_FISHING_CATCH = {},
-    CHANGE_TACKLE = {},
-    POLLINATE = {},
-    FERTILIZE = {},
-    SMOTHER = {},
-    MANUALEXTINGUISH = {},
-    LAYEGG = {},
-    HAMMER = {},
-    TERRAFORM = {},
-    JUMPIN = {},
-    JUMPIN_MAP = {},
-    TELEPORT = {},
-    RESETMINE = {},
-    ACTIVATE = {},
-    OPEN_CRAFTING = {},
-    MURDER = {},
-    HEAL = {},
-    INVESTIGATE = {},
-    UNLOCK = {},
-    USEKLAUSSACKKEY = {},
-    TEACH = {},
-    TURNON = {},
-    TURNOFF = {},
-    SEW = {},
-    STEAL = {},
-    USEITEM = {},
-    USEITEMON = {},
-    STOPUSINGITEM = {},
-    TAKEITEM = {},
-    MAKEBALLOON = {},
-    CASTSPELL = {},
-    CAST_POCKETWATCH = {},
-    BLINK = {},
-    BLINK_MAP = {},
-    COMBINESTACK = {},
-    TOGGLE_DEPLOY_MODE = {},
-    SUMMONGUARDIAN = {},
-    HAUNT = {},
-    UNPIN = {},
-    STEALMOLEBAIT = {},
-    MAKEMOLEHILL = {},
-    MOLEPEEK = {},
-    FEED = {},
-    UPGRADE = {},
-    HAIRBALL = {},
-    CATPLAYGROUND = {},
-    CATPLAYAIR = {},
-    FAN = {},
-    ERASE_PAPER = {},
-    DRAW = {},
-    BUNDLE = {},
-    BUNDLESTORE = {},
-    WRAPBUNDLE = {},
-    UNWRAP = {},
-    BREAK = {},
-    CONSTRUCT = {},
-    STOPCONSTRUCTION = {},
-    APPLYCONSTRUCTION = {},
-    STARTCHANNELING = {},
-    STOPCHANNELING = {},
-    START_CHANNELCAST = {},
-    STOP_CHANNELCAST = {},
-    APPLYPRESERVATIVE = {},
-    COMPARE_WEIGHABLE = {},
-    WEIGH_ITEM = {},
-    START_CARRAT_RACE = {},
-    CASTSUMMON = {},
-    CASTUNSUMMON = {},
-    COMMUNEWITHSUMMONED = {},
-    TELLSTORY = {},
-    PERFORM = {},
-    TOSS = {},
-    TOSS_MAP = {},
-    NUZZLE = {},
-    WRITE = {},
-    ATTUNE = {},
-    REMOTERESURRECT = {},
-    REVIVE_CORPSE = {},
-    MIGRATE = {},
-    MOUNT = {},
-    DISMOUNT = {},
-    SADDLE = {},
-    UNSADDLE = {},
-    BRUSH = {},
-    ABANDON = {},
-    PET = {},
-    DISMANTLE = {},
-    TACKLE = {},
-    GIVE_TACKLESKETCH = {},
-    REMOVE_FROM_TROPHYSCALE = {},
-    CYCLE = {},
-    CASTAOE = {},
-    HALLOWEENMOONMUTATE = {},
-    WINTERSFEAST_FEAST = {},
-    BEGIN_QUEST = {},
-    ABANDON_QUEST = {},
-    SING = {},
-    SING_FAIL = {},
-    TILL = {},
-    PLANTSOIL = {},
-    INSTALL = {},
-    TAPTREE = {},
-    SLAUGHTER = {},
-    REPLATE = {},
-    SALT = {},
-    BATHBOMB = {},
-    COMMENT = {},
-    WATER_TOSS = {},
-    RAISE_SAIL = {},
-    LOWER_SAIL = {},
-    LOWER_SAIL_BOOST = {},
-    LOWER_SAIL_FAIL = {},
-    RAISE_ANCHOR = {},
-    LOWER_ANCHOR = {},
-    EXTEND_PLANK = {},
-    RETRACT_PLANK = {},
-    ABANDON_SHIP = {},
-    MOUNT_PLANK = {},
-    DISMOUNT_PLANK = {},
-    REPAIR_LEAK = {},
-    STEER_BOAT = {},
-    SET_HEADING = {},
-    STOP_STEERING_BOAT = {},
-    CAST_NET = {},
-    ROW_FAIL = {},
-    ROW = {},
-    ROW_CONTROLLER = {},
-    BOARDPLATFORM = {},
-    OCEAN_TOSS = {},
-    UNPATCH = {},
-    POUR_WATER = {},
-    POUR_WATER_GROUNDTILE = {},
-    PLANTREGISTRY_RESEARCH_FAIL = {},
-    PLANTREGISTRY_RESEARCH = {},
-    ASSESSPLANTHAPPINESS = {},
-    ATTACKPLANT = {},
-    PLANTWEED = {},
-    ADDCOMPOSTABLE = {},
-    WAX = {},
-    APPRAISE = {},
-    UNLOAD_WINCH = {},
-    USE_HEAVY_OBSTACLE = {},
-    ADVANCE_TREE_GROWTH = {},
-    ROTATE_BOAT_CLOCKWISE = {},
-    ROTATE_BOAT_COUNTERCLOCKWISE = {},
-    ROTATE_BOAT_STOP = {},
-    BOAT_MAGNET_ACTIVATE = {},
-    BOAT_MAGNET_DEACTIVATE = {},
-    BOAT_MAGNET_BEACON_TURN_ON = {},
-    BOAT_MAGNET_BEACON_TURN_OFF = {},
-    BOAT_CANNON_LOAD_AMMO = {},
-    BOAT_CANNON_START_AIMING = {},
-    BOAT_CANNON_SHOOT = {},
-    BOAT_CANNON_STOP_AIMING = {},
-    OCEAN_TRAWLER_LOWER = {},
-    OCEAN_TRAWLER_RAISE = {},
-    OCEAN_TRAWLER_FIX = {},
-    EMPTY_CONTAINER = {},
-    CARNIVAL_HOST_SUMMON = {},
-    YOTB_SEW = {},
-    YOTB_STARTCONTEST = {},
-    YOTB_UNLOCKSKIN = {},
-    CARNIVALGAME_FEED = {},
-    RETURN_FOLLOWER = {},
-    HIDEANSEEK_FIND = {},
-    MUTATE_SPIDER = {},
-    HERD_FOLLOWERS = {},
-    REPEL = {},
-    BEDAZZLE = {},
-    DISMANTLE_POCKETWATCH = {},
-    LIFT_DUMBBELL = {},
-    STOP_LIFT_DUMBBELL = {},
-    ENTER_GYM = {},
-    UNLOAD_GYM = {},
-    LEAVE_GYM = {},
-    LIFT_GYM_SUCCEED_PERFECT = {},
-    LIFT_GYM_SUCCEED = {},
-    LIFT_GYM_FAIL = {},
-    APPLYMODULE = {},
-    APPLYMODULE_FAIL = {},
-    REMOVEMODULES = {},
-    REMOVEMODULES_FAIL = {},
-    CHARGE_FROM = {},
-    ROTATE_FENCE = {},
-    USEMAGICTOOL = {},
-    STOPUSINGMAGICTOOL = {},
-    USESPELLBOOK = {},
-    CLOSESPELLBOOK = {},
-    CAST_SPELLBOOK = {},
-    USE_WEREFORM_SKILL = {},
-    REMOTE_TELEPORT = {},
-    SCYTHE = {},
-    SITON = {},
-    INCINERATE = {},
-}
+---@class ACTIONS
+---@field ABANDON actiondata
+---@field ABANDON_QUEST actiondata
+---@field ABANDON_SHIP actiondata
+---@field ACTIVATE actiondata
+---@field ADDCOMPOSTABLE actiondata
+---@field ADDFUEL actiondata
+---@field ADDWETFUEL actiondata
+---@field ADVANCE_TREE_GROWTH actiondata
+---@field APPLYCONSTRUCTION actiondata
+---@field APPLYMODULE actiondata
+---@field APPLYMODULE_FAIL actiondata
+---@field APPLYPRESERVATIVE actiondata
+---@field APPRAISE actiondata
+---@field ASSESSPLANTHAPPINESS actiondata
+---@field ATTACK actiondata
+---@field ATTACKPLANT actiondata
+---@field ATTUNE actiondata
+---@field BAIT actiondata
+---@field BATHBOMB actiondata
+---@field BEDAZZLE actiondata
+---@field BEGIN_QUEST actiondata
+---@field BLINK actiondata
+---@field BLINK_MAP actiondata
+---@field BOARDPLATFORM actiondata
+---@field BOAT_CANNON_LOAD_AMMO actiondata
+---@field BOAT_CANNON_SHOOT actiondata
+---@field BOAT_CANNON_START_AIMING actiondata
+---@field BOAT_CANNON_STOP_AIMING actiondata
+---@field BOAT_MAGNET_ACTIVATE actiondata
+---@field BOAT_MAGNET_BEACON_TURN_OFF actiondata
+---@field BOAT_MAGNET_BEACON_TURN_ON actiondata
+---@field BOAT_MAGNET_DEACTIVATE actiondata
+---@field BREAK actiondata
+---@field BRUSH actiondata
+---@field BUILD actiondata
+---@field BUNDLE actiondata
+---@field BUNDLESTORE actiondata
+---@field CARNIVAL_HOST_SUMMON actiondata
+---@field CARNIVALGAME_FEED actiondata
+---@field CAST_NET actiondata
+---@field CAST_POCKETWATCH actiondata
+---@field CAST_SPELLBOOK actiondata
+---@field CASTAOE actiondata
+---@field CASTSPELL actiondata
+---@field CASTSUMMON actiondata
+---@field CASTUNSUMMON actiondata
+---@field CATCH actiondata
+---@field CATPLAYAIR actiondata
+---@field CATPLAYGROUND actiondata
+---@field CHANGE_TACKLE actiondata
+---@field CHANGEIN actiondata
+---@field CHARGE_FROM actiondata
+---@field CHECKTRAP actiondata
+---@field CHOP actiondata
+---@field CLOSESPELLBOOK actiondata
+---@field COMBINESTACK actiondata
+---@field COMMENT actiondata
+---@field COMMUNEWITHSUMMONED actiondata
+---@field COMPARE_WEIGHABLE actiondata
+---@field CONSTRUCT actiondata
+---@field COOK actiondata
+---@field CREATE actiondata
+---@field CYCLE actiondata
+---@field DECORATEVASE actiondata
+---@field DEPLOY actiondata
+---@field DEPLOY_TILEARRIVE actiondata
+---@field DIG actiondata
+---@field DISMANTLE actiondata
+---@field DISMANTLE_POCKETWATCH actiondata
+---@field DISMOUNT actiondata
+---@field DISMOUNT_PLANK actiondata
+---@field DRAW actiondata
+---@field DROP actiondata
+---@field DRY actiondata
+---@field EAT actiondata
+---@field EMPTY_CONTAINER actiondata
+---@field ENTER_GYM actiondata
+---@field EQUIP actiondata
+---@field ERASE_PAPER actiondata
+---@field EXTEND_PLANK actiondata
+---@field EXTINGUISH actiondata
+---@field FAN actiondata
+---@field FEED actiondata
+---@field FEEDPLAYER actiondata
+---@field FERTILIZE actiondata
+---@field FILL actiondata
+---@field FILL_OCEAN actiondata
+---@field FISH actiondata
+---@field FISH_OCEAN actiondata
+---@field GIVE actiondata
+---@field GIVE_TACKLESKETCH actiondata
+---@field GIVEALLTOPLAYER actiondata
+---@field GIVETOPLAYER actiondata
+---@field GOHOME actiondata
+---@field HAIRBALL actiondata
+---@field HALLOWEENMOONMUTATE actiondata
+---@field HAMMER actiondata
+---@field HARVEST actiondata
+---@field HAUNT actiondata
+---@field HEAL actiondata
+---@field HERD_FOLLOWERS actiondata
+---@field HIDEANSEEK_FIND actiondata
+---@field HITCH actiondata
+---@field HITCHUP actiondata
+---@field INCINERATE actiondata
+---@field INSTALL actiondata
+---@field INTERACT_WITH actiondata
+---@field INVESTIGATE actiondata
+---@field JOIN actiondata
+---@field JUMPIN actiondata
+---@field JUMPIN_MAP actiondata
+---@field LAYEGG actiondata
+---@field LEAVE_GYM actiondata
+---@field LIFT_DUMBBELL actiondata
+---@field LIFT_GYM_FAIL actiondata
+---@field LIFT_GYM_SUCCEED actiondata
+---@field LIFT_GYM_SUCCEED_PERFECT actiondata
+---@field LIGHT actiondata
+---@field LOOKAT actiondata
+---@field LOWER_ANCHOR actiondata
+---@field LOWER_SAIL actiondata
+---@field LOWER_SAIL_BOOST actiondata
+---@field LOWER_SAIL_FAIL actiondata
+---@field MAKEBALLOON actiondata
+---@field MAKEMOLEHILL actiondata
+---@field MANUALEXTINGUISH actiondata
+---@field MARK actiondata
+---@field MIGRATE actiondata
+---@field MINE actiondata
+---@field MOLEPEEK actiondata
+---@field MOUNT actiondata
+---@field MOUNT_PLANK actiondata
+---@field MURDER actiondata
+---@field MUTATE_SPIDER actiondata
+---@field NET actiondata
+---@field NUZZLE actiondata
+---@field OCEAN_FISHING_CAST actiondata
+---@field OCEAN_FISHING_CATCH actiondata
+---@field OCEAN_FISHING_POND actiondata
+---@field OCEAN_FISHING_REEL actiondata
+---@field OCEAN_FISHING_STOP actiondata
+---@field OCEAN_TOSS actiondata
+---@field OCEAN_TRAWLER_FIX actiondata
+---@field OCEAN_TRAWLER_LOWER actiondata
+---@field OCEAN_TRAWLER_RAISE actiondata
+---@field OPEN_CRAFTING actiondata
+---@field PERFORM actiondata
+---@field PET actiondata
+---@field PICK actiondata
+---@field PICKUP actiondata
+---@field PLANT actiondata
+---@field PLANTREGISTRY_RESEARCH actiondata
+---@field PLANTREGISTRY_RESEARCH_FAIL actiondata
+---@field PLANTSOIL actiondata
+---@field PLANTWEED actiondata
+---@field PLAY actiondata
+---@field POLLINATE actiondata
+---@field POUR_WATER actiondata
+---@field POUR_WATER_GROUNDTILE actiondata
+---@field RAISE_ANCHOR actiondata
+---@field RAISE_SAIL actiondata
+---@field READ actiondata
+---@field REEL actiondata
+---@field REMOTE_TELEPORT actiondata
+---@field REMOTERESURRECT actiondata
+---@field REMOVE_FROM_TROPHYSCALE actiondata
+---@field REMOVEMODULES actiondata
+---@field REMOVEMODULES_FAIL actiondata
+---@field REPAIR actiondata
+---@field REPAIR_LEAK actiondata
+---@field REPEL actiondata
+---@field REPLATE actiondata
+---@field RESETMINE actiondata
+---@field RETRACT_PLANK actiondata
+---@field RETURN_FOLLOWER actiondata
+---@field REVIVE_CORPSE actiondata
+---@field ROTATE_BOAT_CLOCKWISE actiondata
+---@field ROTATE_BOAT_COUNTERCLOCKWISE actiondata
+---@field ROTATE_BOAT_STOP actiondata
+---@field ROTATE_FENCE actiondata
+---@field ROW actiondata
+---@field ROW_CONTROLLER actiondata
+---@field ROW_FAIL actiondata
+---@field RUMMAGE actiondata
+---@field SADDLE actiondata
+---@field SALT actiondata
+---@field SCYTHE actiondata
+---@field SET_HEADING actiondata
+---@field SEW actiondata
+---@field SHAVE actiondata
+---@field SING actiondata
+---@field SING_FAIL actiondata
+---@field SITON actiondata
+---@field SLAUGHTER actiondata
+---@field SLEEPIN actiondata
+---@field SMOTHER actiondata
+---@field START_CARRAT_RACE actiondata
+---@field START_CHANNELCAST actiondata
+---@field STARTCHANNELING actiondata
+---@field STEAL actiondata
+---@field STEALMOLEBAIT actiondata
+---@field STEER_BOAT actiondata
+---@field STOP_CHANNELCAST actiondata
+---@field STOP_LIFT_DUMBBELL actiondata
+---@field STOP_STEERING_BOAT actiondata
+---@field STOPCHANNELING actiondata
+---@field STOPCONSTRUCTION actiondata
+---@field STOPUSINGITEM actiondata
+---@field STOPUSINGMAGICTOOL actiondata
+---@field STORE actiondata
+---@field SUMMONGUARDIAN actiondata
+---@field TACKLE actiondata
+---@field TAKEITEM actiondata
+---@field TALKTO actiondata
+---@field TAPTREE actiondata
+---@field TEACH actiondata
+---@field TELEPORT actiondata
+---@field TELLSTORY actiondata
+---@field TERRAFORM actiondata
+---@field TILL actiondata
+---@field TOGGLE_DEPLOY_MODE actiondata
+---@field TOSS actiondata
+---@field TOSS_MAP actiondata
+---@field TRAVEL actiondata
+---@field TURNOFF actiondata
+---@field TURNON actiondata
+---@field UNEQUIP actiondata
+---@field UNHITCH actiondata
+---@field UNLOAD_GYM actiondata
+---@field UNLOAD_WINCH actiondata
+---@field UNLOCK actiondata
+---@field UNPATCH actiondata
+---@field UNPIN actiondata
+---@field UNSADDLE actiondata
+---@field UNWRAP actiondata
+---@field UPGRADE actiondata
+---@field USE_HEAVY_OBSTACLE actiondata
+---@field USE_WEREFORM_SKILL actiondata
+---@field USEITEM actiondata
+---@field USEITEMON actiondata
+---@field USEKLAUSSACKKEY actiondata
+---@field USEMAGICTOOL actiondata
+---@field USESPELLBOOK actiondata
+---@field WALKTO actiondata
+---@field WATER_TOSS actiondata
+---@field WAX actiondata
+---@field WEIGH_ITEM actiondata
+---@field WINTERSFEAST_FEAST actiondata
+---@field WRAPBUNDLE actiondata
+---@field WRITE actiondata
+---@field YOTB_SEW actiondata
+---@field YOTB_STARTCONTEST actiondata
+---@field YOTB_UNLOCKSKIN actiondata
+ACTIONS = {}

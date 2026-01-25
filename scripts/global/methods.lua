@@ -5085,13 +5085,17 @@ end
 function AddPopup(id)
 end
 
+---@class Action: actiondata
+---@overload fun(data:actiondata, instant, rmb, distance, ghost_valid, ghost_exclusive, canforce, rangecheckfn):actiondata
+Action = {}
+
 ---
 ---添加动作API
----TODO: Action类待完善
----@param id_or_act string|table 动作id或动作Action
----@param str string|nil 动作译名,如果参数1为Action则不需要
----@param fn fun(act: table):(boolean)|nil 如果参数1为Action则不需要
----@return table
+---@param id_or_act string|actiondata 动作id或动作Action
+---@param str string|nil 动作名,如果参数1为Action则不需要
+---@param fn fun(act: actiondata):(boolean)|nil 如果参数1为Action则不需要
+---@return actiondata
+---author: Runar \
 ---所在文件: scripts/modutil.lua
 function AddAction(id_or_act,str,fn)
 end
@@ -5831,15 +5835,25 @@ end
 function GetSelectableCharacterList()
 end
 
----
----组件绑定动作
----
----@param actiontype string 动作类型
----@param component string 组件
----@param fn fun(inst: ent,doer: ent,pos: Vector3,target: ent,actions: table,right: boolean)
----@param modname idk 
----所在文件: scripts/componentactions.lua
-function AddComponentAction(actiontype,component,fn,modname)
+---@alias componentaction_type string
+---| "SCENE" # 与世界实体交互, inst是世界实体
+---| "USEITEM" # 物品与世界实体交互, inst是物品
+---| "POINT" # 与世界坐标点交互
+---| "EQUIPPED" # 手部装备时与世界实体交互, inst是手部装备
+---| "INVENTORY" # 与物品栏物品交互, inst是物品栏物品
+
+---@overload fun(actiontype: "SCENE", component, fn:fun(inst:ent, doer:ThePlayer, actions:actiondata[], right:boolean), modname)
+---@overload fun(actiontype: "USEITEM", component, fn:fun(inst:ent, doer:ThePlayer, target:ent, actions:actiondata[], right:boolean), modname)
+---@overload fun(actiontype: "POINT", component, fn:fun(inst:ent, doer:ThePlayer, pos:Vector3, actions:actiondata[], right:boolean, target:ent), modname)
+---@overload fun(actiontype: "EQUIPPED", component, fn:fun(inst:ent, doer:ThePlayer, target:ent, actions:actiondata[], right:boolean), modname)
+---@overload fun(actiontype: "INVENTORY", component, fn:fun(inst:ent, doer:ThePlayer, actions:actiondata[], right:ent), modname)
+---@param actiontype componentaction_type
+---@param component componentID
+---@param fn function
+---@param modname any
+---author: Runar \
+---所在文件: `scripts/componentactions.lua`
+function AddComponentAction(actiontype, component, fn, modname)
 end
 
 ---
