@@ -1,45 +1,46 @@
 ---@meta
 
 ---@class actiondata # ACTIONS的参数表
----@field actionmeter boolean|nil 是否显示动作进度条
----@field arrivedist number|nil 到达距离
----@field canforce boolean|nil 控制动作是否可以被强制执行
----@field closes_map boolean|nil 是否关闭地图
----@field code number|nil
----@field customarrivecheck function|nil 自定义到达检查函数
----@field disable_platform_hopping boolean|nil 是否禁用平台跳跃
----@field distance number|nil 执行该动作时玩家与目标之间的最大允许距离
----@field do_not_locomote boolean|nil 是否不移动
----@field encumbered_valid boolean|nil 控制动作是否在玩家负重状态下可用，默认值false
----@field extra_arrive_dist function|nil 为特定动作添加额外的到达距离计算
----@field floating_valid boolean|nil 是否对漂浮状态有效，默认值false
----@field fn function
----@field ghost_exclusive boolean|nil 制动作是否仅在幽灵状态下可用，活着时不可用，默认值false
----@field ghost_valid boolean|nil 制动作是否在玩家死亡变为幽灵状态时可用，默认值false
----@field id string
----@field instant boolean|nil 决定动作是否立即执行，不需要移动或等待状态图完成，默认值false
----@field invalid_hold_action boolean|nil 是否为无效的持续动作
----@field is_relative_to_platform boolean|nil 是否相对于平台
----@field map_action boolean|nil 是否为地图动作
----@field map_only boolean|nil 是否仅在地图上存在
----@field map_works_on_unexplored boolean|nil 是否对未探索区域生效
----@field maponly_checkvalidpos_fn function|nil
----@field mindistance number|nil 最小执行距离
----@field mount_valid boolean|nil 控制动作是否在玩家骑乘状态下可用，默认值false <br> 很多动画都是没有骑乘状态的
----@field paused_valid boolean|nil 控制动作是否在游戏暂停状态下可用，默认值false
----@field pre_action_cb function|nil 动作前回调函数
----@field priority number|nil 动作优先级，数字类型，默认值0
----@field rangecheckfn function|nil 自定义范围检查函数
----@field rmb boolean|nil 标识这个动作是否通过右键触发
----@field show_primary_input_left boolean|nil 在hover提示中显示主要输入按键的提示
----@field show_secondary_input_right boolean|nil 在hover提示中显示次要输入按键的提示
----@field show_tile_placer_fn function|nil 显示瓦片放置器的函数
----@field silent_fail boolean|nil 是否静默失败
----@field skip_locomotor_facing boolean|nil 是否跳过移动朝向
----@field str string|table
----@field strfn function|nil
----@field stroverridefn function|nil
----@field theme_music string|nil 执行动作时播放的音乐
----@field theme_music_fn function|nil 客户端主题音乐函数
----@field tile_placer string|nil 指定要使用的瓦片放置器prefab名称
----@field validfn function|nil
+---@field actionmeter boolean|nil # 是否显示动作进度条
+---@field arrivedist number|nil # 到达距离
+---@field canforce boolean|nil # 控制动作是否可以被强制执行
+---@field closes_map boolean|nil # 是否关闭地图
+---@field code number|nil #
+---@field customarrivecheck function|nil # 自定义到达检查函数
+---@field disable_platform_hopping boolean|nil # 是否禁用平台跳跃
+---@field distance number|nil # 执行该动作时玩家与目标之间的最大允许距离
+---@field do_not_locomote boolean|nil # 是否不移动
+---@field encumbered_valid boolean|nil # 控制动作是否在玩家负重状态下可用，默认值false
+---@field extra_arrive_dist function|nil # 为特定动作添加额外的到达距离计算
+---@field floating_valid boolean|nil # 是否对漂浮状态有效，默认值false
+---@field fn function #
+---@field ghost_exclusive boolean|nil # 制动作是否仅在幽灵状态下可用，活着时不可用，默认值false
+---@field ghost_valid boolean|nil # 制动作是否在玩家死亡变为幽灵状态时可用，默认值false
+---@field id string #
+---@field instant boolean|nil # 决定动作是否立即执行，不需要移动或等待状态图完成，默认值false
+---@field invalid_hold_action boolean|nil # 是否为无效的持续动作
+---@field is_relative_to_platform boolean|nil # 是否相对于平台
+---@field map_action boolean|nil # 是否为地图动作
+---@field map_only boolean|nil # 是否仅在地图上存在
+---@field map_works_on_unexplored boolean|nil # 是否对未探索区域生效
+---@field maponly_checkvalidpos_fn function|nil #
+---@field mindistance number|nil # 最小执行距离
+---@field mod_name string|nil # env.mod_name, 仅限模组添加的动作
+---@field mount_valid boolean|nil # 控制动作是否在玩家骑乘状态下可用，默认值false <br> 很多动画都是没有骑乘状态的
+---@field paused_valid boolean|nil # 控制动作是否在游戏暂停状态下可用，默认值false
+---@field pre_action_cb function|nil # 动作前回调函数
+---@field priority number|nil # 动作优先级，数字类型，默认值0
+---@field rangecheckfn function|nil # 自定义范围检查函数
+---@field rmb boolean|nil # 标识这个动作是否通过右键触发
+---@field show_primary_input_left boolean|nil # 在hover提示中显示主要输入按键的提示
+---@field show_secondary_input_right boolean|nil # 在hover提示中显示次要输入按键的提示
+---@field show_tile_placer_fn function|nil # 显示瓦片放置器的函数
+---@field silent_fail boolean|nil # 是否静默失败
+---@field skip_locomotor_facing boolean|nil # 是否跳过移动朝向
+---@field str string|table #
+---@field strfn function|nil #
+---@field stroverridefn function|nil #
+---@field theme_music string|nil # 执行动作时播放的音乐
+---@field theme_music_fn function|nil # 客户端主题音乐函数
+---@field tile_placer string|nil # 指定要使用的瓦片放置器prefab名称
+---@field validfn function|nil #
