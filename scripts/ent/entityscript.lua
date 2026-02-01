@@ -575,6 +575,8 @@ function entityscript:SetPhysicsRadiusOverride(radius)
 end
 
 ---EntityScript: 
+---@return table, table
+---@nodiscard
 ---author: 
 function entityscript:GetSaveRecord()
 end

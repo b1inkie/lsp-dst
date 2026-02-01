@@ -85,6 +85,8 @@ function TheFrontEnd:ClearScreens() end
 
 ---
 ---UNKNOWN
+---@return SoundEmitter
+---@nodiscard
 ---
 ---author:
 function TheFrontEnd:GetSound() end

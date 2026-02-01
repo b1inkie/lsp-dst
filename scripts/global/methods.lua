@@ -12829,8 +12829,10 @@ function OnAccountEvent(success,event_code,custom_message)
 end
 
 ---
----UNKNOWN
----
+---返回游戏时间`/s`
+---@return number
+---@nodiscard
+---author: Runar
 ---所在文件: scripts/mainfunctions.lua
 function GetTime()
 end
@@ -13554,13 +13556,6 @@ end
 ---
 ---所在文件: scripts/worldgen_main.lua
 function IsSteamDeck()
-end
-
----
----UNKNOWN
----
----所在文件: scripts/worldgen_main.lua
-function GetTime()
 end
 
 ---
