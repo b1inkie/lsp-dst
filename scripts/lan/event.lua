@@ -1,6 +1,6 @@
 ---@meta
 
----@alias eventID string # 事件名
+---@alias eventID string|eventID_mod # 事件名
 ---| "CHEVO_fertilized" # ※事件 ID: CHEVO_fertilized <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "CHEVO_growfrombutterfly" # ※事件 ID: CHEVO_growfrombutterfly <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27
 ---| "CHEVO_heavyobject_winched" # ※事件 ID: CHEVO_heavyobject_winched <br>※直译名:  <br>※详述: <br>※data表: <br>※author: <br>※拉取时间: 2024-12-11 18:27

@@ -1211,3 +1211,4 @@
 ---| "small_livestock" # ※标签ID: small_livestock<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "beaverchewable" # ※标签ID: beaverchewable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "bearded" # ※标签ID: bearded<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "stickygrip" # ※标签ID: stickygrip<br>※直译名: <br>※详述: 防脱手 <br>※分类: 物品 | Inventory Item<br>※author: lan

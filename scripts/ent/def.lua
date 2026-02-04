@@ -105,6 +105,7 @@
 ---@field ScreenFade idk
 ---@field inherentactions idk
 ---@field OnLoad idk
+---@field OnNewSpawn idk
 ---@field persists idk
 ---@field _shadowportalmax idk
 ---@field OnSave idk
@@ -150,3 +151,5 @@
 ---@field UITransform nil|UITransform
 ---@field VideoWidget nil|VideoWidget
 ---@field WaveComponent nil|WaveComponent
+---@field starting_inventory nil|table
+---@field soundsname nil|string

@@ -196,17 +196,19 @@ function builder:OnSave()
 end
 
 ---从角色身上移除制作配方所需的材料，并处理特殊材料（如健康、理智消耗）
----@param ingredients table #材料表
+---@param ingredients table<PrefabID,table<ent,integer>> #材料表
 ---@param recname string #配方名
 ---@param discounted boolean #是否有折扣
----author:星璃
+---author:星璃, lan
 function builder:RemoveIngredients(ingredients, recname, discounted)
 end
 
 ---获取制作某配方所需的材料（考虑材料折扣）
 ---@param recname string #配方名
----author:星璃
----@return table, boolean #材料表, 是否有折扣
+---@return table<PrefabID,table<ent,integer>> ingredients #材料表: 
+---@return boolean discounted # 是否有折扣
+---@nodiscard
+---author:星璃, lan
 function builder:GetIngredients(recname)
 end
 

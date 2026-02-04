@@ -315,16 +315,16 @@ function widget:HookCallback(event, fn) end
 ---author: 
 function widget:UnhookCallback(event) end
 
+---设置垂直方向上的锚点
+---@param anchor ANCHOR #
 ---
----@param anchor idk #
----
----author: 
+---author: lan
 function widget:SetVAnchor(anchor) end
 
+---设置水平方向上的锚点
+---@param anchor ANCHOR #
 ---
----@param anchor idk #
----
----author: 
+---author: lan
 function widget:SetHAnchor(anchor) end
 
 ---

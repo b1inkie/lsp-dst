@@ -35,3 +35,4 @@
 ---@field closes_map idk 是否关闭地图，默认值nil
 ---@field map_only idk 是否仅在地图上存在，默认值nil
 ---@field map_works_on_unexplored idk 是否对未探索区域生效，默认值nil
+---@field fn fun(act: { doer: ent|nil, target: ent|nil, invobject: ent|nil, GetActionPoint: fun(): Vector3})|nil

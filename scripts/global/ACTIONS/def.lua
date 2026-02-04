@@ -1,5 +1,6 @@
 ---@meta
 
+---@enum ACTIONS
 ACTIONS = {
     REPAIR = {},
     READ = {},

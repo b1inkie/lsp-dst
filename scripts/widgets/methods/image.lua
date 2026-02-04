@@ -99,16 +99,16 @@ function image:SetTint(r,g,b,a) end
 ---author: 
 function image:SetFadeAlpha(a, skipChildren) end
 
+---(图片)设置垂直方向上的锚点
+---@param anchor ANCHOR #
 ---
----@param anchor idk #
----
----author: 
+---author: lan
 function image:SetVRegPoint(anchor) end
 
+---(图片)设置水平方向上的锚点
+---@param anchor ANCHOR #
 ---
----@param anchor idk #
----
----author: 
+---author: lan
 function image:SetHRegPoint(anchor) end
 
 ---

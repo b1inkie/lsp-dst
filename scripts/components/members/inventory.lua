@@ -592,6 +592,7 @@ end
 ---@param wholestack idk #
 ---@param checkallcontainers idk #
 ---@param keepoverstacked idk #
+---@return ent|nil
 ---author:
 function inventory:RemoveItem(item,wholestack,checkallcontainers,keepoverstacked)
 end
@@ -679,3 +680,9 @@ function inventory:WatchWorldState(var, fn) end
 ---@param var string
 ---@param fn fun(inst: ent, ...):any
 function inventory:StopWatchingWorldState(var, fn) end
+
+---这个函数 制作的时候自定调用 <br> 返回的 crafting_items 包含以下来源的物品: <br> - 打开容器中的物品 <br> - OverflowContainer <br> - activeitem
+---@param item PrefabID
+---@param amount integer
+---@return table<ent,integer> # 
+function inventory:GetCraftingIngredient(item, amount) end

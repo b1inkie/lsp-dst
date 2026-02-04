@@ -116,7 +116,7 @@ TimeEvent = _TimeEvent
 ---@field name string #
 ---@field tags nil|string[] #
 ---@field server_states nil|string[] # #V2C client_prediction
----@field onenter function # 
+---@field onenter nil|function # 
 ---@field timeline table|nil # 请使用 `TimeEvent`, 来构造表内的元素
 ---@field events table|nil # 请使用 `EventHandler`, 来构造表内的元素
 ---@field onexit nil|function # 

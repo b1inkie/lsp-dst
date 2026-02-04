@@ -175,10 +175,12 @@ end
 function combat:SuggestTarget(target)
 end
 
----
----@param target idk # 
----@param weapon idk # 
----author: 
+---这个函数在`DoAttack` 中用于判断是否可以攻击
+---@param target ent|nil # 
+---@param weapon ent|nil # 
+---@return boolean
+---@nodiscard
+---author: lan
 function combat:CanHitTarget(target,weapon)
 end
 

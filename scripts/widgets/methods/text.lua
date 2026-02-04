@@ -158,16 +158,16 @@ function text:SetAutoSizingString(str, max_width, allow_scaling_up) end
 ---author: 
 function text:RemoveAutoSizing() end
 
+---(文字)设置垂直对齐方式
+---@param anchor ANCHOR #
 ---
----@param anchor idk #
----
----author: 
+---author: lan
 function text:SetVAlign(anchor) end
 
+---(文字)设置水平对齐方式
+---@param anchor ANCHOR #
 ---
----@param anchor idk #
----
----author: 
+---author: lan
 function text:SetHAlign(anchor) end
 
 ---
