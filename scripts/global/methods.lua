@@ -5453,11 +5453,11 @@ end
 ---
 ---UNKNOWN
 ---
----@param name idk 
+---@param name string
 ---@param ingredients Ingredient[]
 ---@param tech TECH
----@param config recipe.config|nil
----@param filters recipe.filter[]
+---@param config recipe_config|nil
+---@param filters recipe_filter[]|nil
 ---所在文件: scripts/modutil.lua
 function AddRecipe2(name,ingredients,tech,config,filters)
 end

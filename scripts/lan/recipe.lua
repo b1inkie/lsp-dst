@@ -1,6 +1,49 @@
 ---@meta
 
----@alias recipe.filter string # 配方过滤器
+---@class recipe_config
+---@field actionstr string|nil
+---@field always_allow_buffered_placer boolean|nil
+---@field atlas string|nil
+---@field build_distance number|nil
+---@field build_mode number|nil
+---@field builder_skill string|nil
+---@field builder_tag string|nil
+---@field canbuild function|nil
+---@field character_ingredients table|nil
+---@field decon_ignores_finiteuses boolean|nil
+---@field description string|nil
+---@field dropitem boolean|nil
+---@field force_hint boolean|nil
+---@field forward_ingredients table|nil
+---@field fxover table|nil
+---@field hint_msg string|nil
+---@field image string|nil
+---@field ingredients table|nil
+---@field is_deconstruction_recipe boolean|nil
+---@field level table|nil
+---@field limitedamount boolean|nil
+---@field manufactured boolean|nil
+---@field min_spacing number|nil
+---@field name string|nil
+---@field nameoverride string|nil
+---@field no_builder_skill string|nil
+---@field no_builder_tag string|nil
+---@field no_deconstruction boolean|function|nil
+---@field nounlock boolean|nil
+---@field numtogive number|nil
+---@field override_numtogive_fn function|nil
+---@field placer string|nil
+---@field product string|nil
+---@field rpc_id number|nil
+---@field sg_state function|string|nil
+---@field sortkey number|nil
+---@field source_recipename string|nil
+---@field station_tag string|nil
+---@field tab table|nil
+---@field tech_ingredients table|nil
+---@field testfn function|nil
+
+---@alias recipe_filter string|recipe_filter_mod # 配方过滤器
 ---| "FAVORITES" # 配方过滤器 <br> ![FAVORITES](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/FAVORITES.png) <br>- 当前分类: 收藏夹
 ---| "CRAFTING_STATION" # 配方过滤器 <br> ![CRAFTING_STATION](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/CRAFTING_STATION.png) <br>- 当前分类: 所有制作站
 ---| "SPECIAL_EVENT" # 配方过滤器 <br> ![SPECIAL_EVENT](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/SPECIAL_EVENT.png) <br>- 当前分类: 特别活动

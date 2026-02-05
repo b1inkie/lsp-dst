@@ -610,10 +610,10 @@ function inventory:IgnoresCanGoInContainer()
 end
 
 ---获取物品栏中指定下标索引的物品
----@param slot number # 物品栏格子下标索引(1-15)
+---@param slot number|equiptype # 物品栏格子有序索引`[1,15]`/类型键`EQUIPSLOTS[]`
 ---@return ent # 物品栏中指定下标索引的物品，无则nil
 ---@nodiscard
----author: nullptr
+---author: nullptr, Runar
 function inventory:GetItemInSlot(slot)
 end
 

@@ -14,7 +14,13 @@ MAXUINT = 4294967295
 RESOLUTION_X = 1280
 RESOLUTION_Y = 720
 
----@alias EQUIPSLOTS EQUIPSLOTS
+---@alias equiptype string|equiptype_mod
+---|"hands"
+---|"head"
+---|"body"
+---|"beard"
+
+---@type table<string, equiptype>
 EQUIPSLOTS =
 {
     HANDS = "hands",
