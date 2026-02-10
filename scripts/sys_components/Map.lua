@@ -16,7 +16,7 @@ function Map:FindBestSpawningPointForArena(...) end
 ---@param x_or_tx number # 世界坐标X或者地皮坐标X
 ---@param y_or_ty number # 世界坐标Y或者地皮坐标Y
 ---@param z number|nil # 世界坐标Z
----@return number, number, number
+---@return number, number, number # 
 ---@nodiscard
 ---author: Runar
 function Map:GetTileCenterPoint(x_or_tx, y_or_ty, z) end
@@ -773,11 +773,15 @@ function Map:SetOverlayColor1(...) end
 function Map:GetNearestPlatformInDirection(...) end
 
 ---
----UNKNOWN
+---坐标位置所在的地皮是不是耕地
 ---
----@param ... idk
----author: 
-function Map:IsFarmableSoilAtPoint(...) end
+---@param x number
+---@param y number
+---@param z number
+---@return boolean
+---@nodiscard
+---author: lan
+function Map:IsFarmableSoilAtPoint(x,y,z) end
 
 ---
 ---UNKNOWN

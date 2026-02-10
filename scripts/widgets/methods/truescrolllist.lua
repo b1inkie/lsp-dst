@@ -15,7 +15,7 @@
 ---@field scissor_width idk #
 ---@field scissor_height idk #
 ---@field end_offset idk #
----@field update_fn idk #
+---@field update_fn fun(context: table, widget :widget_widget, data: table, index: integer) # 这个用于更新成员widget的函数, 而 `create_widgets_fn` 只会在传入时调用一次, 要勾就勾这个
 ---@field items_per_view idk #
 ---@field repeat_time idk #
 ---@field current_scroll_pos idk #

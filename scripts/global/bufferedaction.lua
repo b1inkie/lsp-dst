@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class BufferedAction
----@overload fun(doer:ent, target:ent|nil, action:ACTIONS, invobject:ent|nil, pos:Vector3|nil, recipe, distance:number|nil, forced:boolean|nil, rotation:number|nil, arrivedist:number|nil)
+---@overload fun(doer:ent, target:ent|nil, action:actiondata, invobject:ent|nil, pos:Vector3|nil, recipe, distance:number|nil, forced:boolean|nil, rotation:number|nil, arrivedist:number|nil):BufferedAction
 ---@field doer idk #
 ---@field target idk #
 ---@field initialtargetowner idk #

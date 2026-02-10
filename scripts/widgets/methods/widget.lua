@@ -6,6 +6,8 @@
 ---@field inst ent #
 ---@field focus boolean # 
 ---@field shown boolean # 该ui是否在显示中
+---@field ongainfocusfn fun()|nil # 焦点获得时的回调函数
+---@field onlosefocusfn fun()|nil # 焦点丢失时的回调函数
 local widget = {}
 
 ---
