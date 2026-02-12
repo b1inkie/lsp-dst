@@ -487,9 +487,9 @@ function inventory:EquipActiveItem()
 end
 
 ---掉落所有物品
----@param ondeath boolean # 这个值不管是true,false,nil均会掉落所有物品(不涉及装备栏)。<br>但原函数注释中提到了旺达钟表与荒野模式，具体是否与旺达死亡不掉表相关还未验证
+---@param ondeath boolean|nil # 这个值不管是true,false,nil均会掉落所有物品(不涉及装备栏)。<br>但原函数注释中提到了旺达钟表与荒野模式，具体是否与旺达死亡不掉表相关还未验证
 ---@param keepequip boolean # 是否保留装备
----author: nullptr
+---author: nullptr, lan
 function inventory:DropEverything(ondeath,keepequip)
 end
 

@@ -2809,6 +2809,7 @@ CLIENTAUTHORITATIVESETTINGS = {
 ---@field name string # upper string
 ---@field atlas string # `.xml`
 ---@field image string # `.tex`
+---@field recipes idk # 
 
 ---@type table<string, _crafting_filter>
 ---`scripts/recipe_filter.lua`, line 28

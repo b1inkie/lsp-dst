@@ -764,6 +764,8 @@ end
 ---@param v2 idk 
 ---@param v3 idk 
 ---@param v4 idk 
+---@return number
+---@nodiscard
 ---所在文件: scripts/util.lua
 function distsq(v1,v2,v3,v4)
 end
