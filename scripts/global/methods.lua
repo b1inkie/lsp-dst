@@ -1041,6 +1041,8 @@ end
 ---
 ---@param func_or_val idk 
 ---@param ... idk 
+---@return any
+---@nodiscard
 ---所在文件: scripts/util.lua
 function FunctionOrValue(func_or_val,...)
 end

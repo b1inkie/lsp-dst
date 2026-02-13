@@ -12,7 +12,7 @@
 ---@field GetSpeedMultiplier idk
 ---@field IsFasterOnGroundTile idk
 ---@field dest idk
----@field atdestfn idk
+---@field atdestfn fun(this:ent)|nil
 ---@field bufferedaction idk
 ---@field arrive_step_dist idk
 ---@field arrive_dist idk
@@ -188,9 +188,9 @@ end
 function locomotor:GetTimeMoving()
 end
 
----
----@param fn idk # 
----author: 
+---再到达目的地后执行,在事件`onreachdestination`后执行
+---@param fn fun(this:ent) # 
+---author: lan
 function locomotor:SetReachDestinationCallback(fn)
 end
 

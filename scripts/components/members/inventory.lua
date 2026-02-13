@@ -345,10 +345,10 @@ function inventory:NumItems()
 end
 
 ---根据标签获取所有符合的物品【范围：物品栏、背包栏、拿在鼠标上的】
----@param tag string # 标签
----@return table # 所有具有tag标签的物品，以无键表(数组)的形式返回
+---@param tag tagID # 标签
+---@return ent[] # 实体数组
 ---@nodiscard
----author: nullptr
+---author: nullptr, lan
 function inventory:GetItemsWithTag(tag)
 end
 
@@ -665,10 +665,10 @@ end
 
 ---是否具有amount个指定标签tag的物品
 ---@param tag tagID # 标签ID，字符串类型
----@param amount number # 数量
+---@param amount integer # 数量
 ---@return boolean,number # num_found >= amount, num_found。是否至少有，以及有多少
 ---@nodiscard
----author: nullptr
+---author: nullptr, lan
 function inventory:HasItemWithTag(tag,amount)
 end
 

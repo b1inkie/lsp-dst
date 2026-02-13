@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BufferedAction # 缓存动作
+---@overload fun(doer:ent, target:ent|nil, action:actiondata, invobject:ent|nil, pos:Vector3|nil, recipe, distance:number|nil, forced:boolean|nil, rotation:number|nil, arrivedist:number|nil):BufferedAction
 ---@field doer ent #
 ---@field target ent|nil #
 ---@field initialtargetowner idk #
@@ -18,7 +19,8 @@
 ---@field forced boolean|nil #
 ---@field autoequipped idk #
 ---@field skin idk #
----@overload fun(doer:ent, target:(ent|nil), action:actiondata, invobject:(ent|nil), pos:Vector3, recipe, distance, forced, rotation, arrivedist):BufferedAction
+---@field validfn idk #
+---@field silent_fail boolean|nil # 
 BufferedAction = {}
 
 ---
