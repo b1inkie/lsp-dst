@@ -1,6 +1,6 @@
 ---@meta
 
----@class components
+---@class components: { [componentID]: component_base }
 ---@field acidbatwavemanager component_acidbatwavemanager
 ---@field acidinfusible component_acidinfusible
 ---@field acidlevel component_acidlevel

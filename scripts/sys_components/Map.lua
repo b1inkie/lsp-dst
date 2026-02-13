@@ -13,12 +13,13 @@ function Map:FindBestSpawningPointForArena(...) end
 ---
 ---将世界坐标或地皮坐标转换为地皮中心世界坐标
 ---
----@param x_or_tx number # 世界坐标X或者地皮坐标X
----@param y_or_ty number # 世界坐标Y或者地皮坐标Y
----@param z number|nil # 世界坐标Z
----@return number, number, number # 
+---@param x_or_tx number # 世界坐标x或者地皮坐标tx
+---@param y_or_ty number # 世界坐标y或者地皮坐标ty
+---@param z number|nil # 世界坐标z<sup>[*]</sup>
+---@return number, number, number
 ---@nodiscard
----author: Runar
+---author: Runar \
+---[*] 非nil时解释为世界坐标,否则为地皮坐标
 function Map:GetTileCenterPoint(x_or_tx, y_or_ty, z) end
 
 ---

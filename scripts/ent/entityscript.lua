@@ -781,5 +781,41 @@ end
 
 -----------------------------------
 
+---EntityScript(EntityReplica):
+---检验复制组件合法性
+---@generic T: replica_base
+---@param name componentID # 组件名
+---@param cmp T #
+---@return T|nil # 复制组件
+---@nodiscard
+---author: Runar
+function EntityScript:ValidateReplicaComponent(name, cmp) end
+
+---EntityScript(EntityReplica):
+---初始化复制组件
+---@param name componentID #
+---author: Runar
+function entityscript:ReplicateComponent(name) end
+
+---EntityScript(EntityReplica):
+---取消复制组件
+---author: Runar
+function entityscript:UnreplicateComponent(name) end
+
+---EntityScript(EntityReplica):
+---预始化复制组件
+---@param name componentID # 
+---author: Runar
+function entityscript:PrereplicateComponent(name) end
+
+---EntityScript(EntityReplica):
+---初始化复制实体
+---author: Runar
+function entityscript:ReplicateEntity() end
+
+---EntityScript(EntityReplica):
+---author:
+function entityscript:TryAttachClassifiedToReplicaComponent(classified, name) end
+
 EntityScript = entityscript
 
