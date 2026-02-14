@@ -33,6 +33,7 @@
 ---@field regensources table|nil # 此表是AddRegenSource方法的产物，代表多个生命值回复任务，不建议直接修改。<br>self.regensources[source].tasks[key]相当于同组件的regen表，同一source可以有多个key。
 ---@field maxdamagetakenperhit number|nil # 单次受击最大扣血，建议使用SetMaxDamageTakenPerHit方法对其赋值。<br>需要注意：若选择直接修改，则应赋值一个负数，这样才能保持和对应Set方法的逻辑一致
 ---@field _ignore_maxdamagetakenperhit boolean|nil # 无视单次受击最大扣血，此属性无对应的Set方法，只能直接修改。<br>true为无视，maxdamagetakenperhit属性无效，false和nil为不无视。
+---@field redirect fun(inst:ent, amount:number, overtime:(number|nil), cause, ignore_invincible:boolean, afflicter, ignore_absorb:boolean):(idk)|nil # 重定向
 local health = {}
 
 ---设置伤害吸收值
