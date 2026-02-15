@@ -708,8 +708,8 @@ function entityscript:__tostring()
 end
 
 ---EntityScript: 以原因reason停止Brain
----@param reason string #
----author: Runar
+---@param reason string|nil #
+---author: Runar, lan
 function entityscript:StopBrain(reason)
 end
 

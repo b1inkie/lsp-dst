@@ -155,3 +155,4 @@
 ---@field soundsname nil|string
 ---@field CreateHealthBadge nil|widget_badge # 替换health的badge
 ---@field resurrect_multiplier nil|number # 最终承伤比
+---@field brain idk # 

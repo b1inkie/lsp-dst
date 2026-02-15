@@ -70,3 +70,5 @@
 ---| "SUMMER" # 配方过滤器 <br> ![SUMMER](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/SUMMER.png) <br>- 当前分类: 夏季物品
 ---| "RAIN" # 配方过滤器 <br> ![RAIN](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/RAIN.png) <br>- 当前分类: 雨具
 ---| "EVERYTHING" # 配方过滤器 <br> ![EVERYTHING](https://gitee.com/b1inkie/imgbed/raw/master/dst/img_filters/EVERYTHING.png) <br>- 当前分类: 所有
+
+---@alias recipe.filter recipe_filter
