@@ -33,6 +33,7 @@
 ---@field _oldpercent idk
 ---@field redirect idk
 ---@field no_moisture_penalty boolean|nil # 没有潮湿扣san惩罚
+---@field get_equippable_dappernessfn fun(...):(number)|nil # 装备惩罚
 local sanity = {}
 
 ---

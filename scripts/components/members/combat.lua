@@ -49,6 +49,7 @@
 ---@field lastattacker idk
 ---@field temppos idk
 ---@field lastdoattacktime idk
+---@field customdamagemultfn fun(inst:ent, target:(ent|nil), weapon:(ent|nil), multiplier, mount:(boolean|nil)):(number)|nil # 战斗倍率修正
 local combat = {}
 
 ---

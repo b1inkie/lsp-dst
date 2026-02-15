@@ -3,7 +3,7 @@
 ---@class component_equippable: component_base
 ---@field inst ent
 ---@field isequipped idk
----@field equipslot EQUIPSLOTS|string # 设置装备槽位
+---@field equipslot integer|equiptype # 设置装备槽位
 ---@field onequipfn fun(this: ent,owner: ent,from_ground: any,...: any): any # 穿戴回调函数
 ---@field onunequipfn fun(this: ent,owner: ent,...: any): any # 卸除回调函数
 ---@field onpocketfn idk

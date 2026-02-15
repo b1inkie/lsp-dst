@@ -259,7 +259,7 @@ function replica_inventory:GetItems()
 end
 
 ---通过槽位获取装备
----@param eslot EQUIPSLOTS # 
+---@param eslot equiptype # 
 ---@return ent|nil
 ---@nodiscard
 ---author: lan
