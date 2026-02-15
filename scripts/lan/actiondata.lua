@@ -8,10 +8,10 @@
 ---@field code number|nil #
 ---@field customarrivecheck function|nil # 自定义到达检查函数
 ---@field disable_platform_hopping boolean|nil # 是否禁用平台跳跃
----@field distance number|nil # 执行该动作时玩家与目标之间的最大允许距离
+---@field distance number|nil # 执行该动作时玩家与目标之间的最大允许距离, 如果有 `arrivedist`,填这个就没用了
 ---@field do_not_locomote boolean|nil # 是否不移动
 ---@field encumbered_valid boolean|nil # 控制动作是否在玩家负重状态下可用，默认值false
----@field extra_arrive_dist function|nil # 为特定动作添加额外的到达距离计算
+---@field extra_arrive_dist (fun(doer:ent,dest:Vector3,ba:BufferedAction):number)|nil # 为特定动作添加额外的到达距离计算 , 如果有 `arrivedist` 或 `distance` ,填这个就没用了
 ---@field floating_valid boolean|nil # 是否对漂浮状态有效，默认值false
 ---@field fn function #
 ---@field ghost_exclusive boolean|nil # 制动作是否仅在幽灵状态下可用，活着时不可用，默认值false
@@ -30,7 +30,7 @@
 ---@field paused_valid boolean|nil # 控制动作是否在游戏暂停状态下可用，默认值false
 ---@field pre_action_cb function|nil # 动作前回调函数
 ---@field priority number|nil # 动作优先级，数字类型，默认值0
----@field rangecheckfn function|nil # 自定义范围检查函数
+---@field rangecheckfn (fun():(fun(doer:ent,target:ent|nil):boolean))|nil # 自定义范围检查函数,只有当 `canforce ~= nil` 时才生效
 ---@field rmb boolean|nil # 标识这个动作是否通过右键触发
 ---@field show_primary_input_left boolean|nil # 在hover提示中显示主要输入按键的提示
 ---@field show_secondary_input_right boolean|nil # 在hover提示中显示次要输入按键的提示

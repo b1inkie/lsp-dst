@@ -12,7 +12,7 @@
 ---@field homing idk
 ---@field range idk
 ---@field onthrown idk
----@field onhit idk
+---@field onhit nil|fun(proj:ent,attacker:ent,victim:ent)
 ---@field onmiss idk
 ---@field oncaught idk
 ---@field stimuli idk
@@ -148,9 +148,9 @@ end
 function projectile:Stop()
 end
 
----
----@param fn idk # 
----author: 
+---击中回调
+---@param fn fun(proj:ent,attacker:ent,victim:ent) # 
+---author: lan
 function projectile:SetOnHitFn(fn)
 end
 

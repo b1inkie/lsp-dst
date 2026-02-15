@@ -12,7 +12,7 @@
 ---@field sane idk
 ---@field fxtime idk
 ---@field dapperness idk
----@field externalmodifiers idk
+---@field externalmodifiers SourceModifierList # 加算修饰san变化
 ---@field inducedinsanity idk
 ---@field inducedinsanity_sources idk
 ---@field night_drain_mult number # 夜晚掉san乘数,填`0`则不掉san
