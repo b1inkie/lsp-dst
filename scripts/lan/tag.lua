@@ -3,22 +3,22 @@
 ---@alias tagID string|tagID_mod # 标签ID
 ---| "prechop" # ※标签ID: prechop<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "rook" # ※标签ID: rook<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "plantkin" # ※标签ID: plantkin<br>※直译名: <br>※详述: 不会被杂草困住<br>※分类: 通用 | Universal<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "plantkin" # ※标签ID: plantkin<br>※直译名: <br>※详述: 植物人专属tag,不会被杂草困住，采花不加san，可以像植物人一样直接种地，同时也是builder_tag能够制造植物人的4种专属物品<br>※分类: 通用 | Universal<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "aspiring_bookworm" # ※标签ID: aspiring_bookworm<br>※直译名: 有抱负的书虫<br>※详述: 将使用书变为沃特的阅读书，以前有用，现在已被简化<br>※分类: 角色 | Character<br>※author: 月下踏歌行<br>※拉取时间: 2024-12-11 15:04
 ---| "mushroom" # ※标签ID: mushroom<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "scarytooceanprey" # ※标签ID: scarytooceanprey<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "stone" # ※标签ID: stone<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "allow_action_on_impassable" # ※标签ID: allow_action_on_impassable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "allow_action_on_impassable" # ※标签ID: allow_action_on_impassable<br>※直译名: <br>※详述: 有这个标签的手持物可以在海面和陆地上触发动作<br>※分类: 物品 | Inventory Item<br>※author: 星璃
 ---| "fence" # ※标签ID: fence<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "statue" # ※标签ID: statue<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "book" # ※标签ID: book<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "cursed" # ※标签ID: cursed<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pointy" # ※标签ID: pointy<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "crewmember" # ※标签ID: crewmember<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "dualsoul" # ※标签ID: dualsoul<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "dualsoul" # ※标签ID: dualsoul<br>※直译名: 双倍灵魂<br>※详述: 原版中仅韦伯有此标签。韦伯死后会掉落两个灵魂给恶魔（角色和蜘蛛）<br>※分类: 角色 | Character<br>※author: 小右
 ---| "quagmire_shopper" # ※标签ID: quagmire_shopper<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "boat_health_buffer" # ※标签ID: boat_health_buffer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "minesprung" # ※标签ID: minesprung<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "minesprung" # ※标签ID: minesprung<br>※直译名: 地雷弹起<br>※详述: 作用于mine组件实体。如荆棘陷阱，陷阱触发时被添加此标签<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "offering_pot" # ※标签ID: offering_pot<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "engineeringbattery" # ※标签ID: engineeringbattery<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "dustable" # ※标签ID: dustable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -48,7 +48,7 @@
 ---| "knight" # ※标签ID: knight<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "deploykititem" # ※标签ID: deploykititem<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "moonstorm_static" # ※标签ID: moonstorm_static<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beequeen" # ※标签ID: beequeen<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "beequeen" # ※标签ID: beequeen<br>※直译名: 蜂后<br>※详述: 原版中仅蜂后有此标签。除了标记标签的作用外，从源码看，蜜蜂书召唤的蜜蜂在攻击目标时会判断目标有无该标签，如果有，那就已经不是你的蜜蜂了。所以蜜蜂书叫的蜜蜂不能打蜂后<br>※分类: 生物 | Mobs<br>※author: 小右
 ---| "battlesong" # ※标签ID: battlesong<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "mermking" # ※标签ID: mermking<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "rotatableobject" # ※标签ID: rotatableobject<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -62,7 +62,7 @@
 ---| "meleeweapon" # ※标签ID: meleeweapon<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "buzzard" # ※标签ID: buzzard<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "isdead" # ※标签ID: isdead<br>※直译名: <br>※详述: 生物死亡<br>※分类: 实体 | Prefab<br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "polite" # ※标签ID: polite<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "polite" # ※标签ID: polite<br>※直译名: 有礼貌的<br>※详述: 原版中仅伍迪有此标签。有此标签的角色雇佣（猪兔虾）生物的忠诚度会比正常角色长，能跟随角色更长时间，具体时长请看源码<br>※分类: 角色 | Character<br>※author: 小右
 ---| "woby" # ※标签ID: woby<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "anchor_raised" # ※标签ID: anchor_raised<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "farmplantidentifier" # ※标签ID: farmplantidentifier<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -116,13 +116,13 @@
 ---| "oceanfish" # ※标签ID: oceanfish<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "blowpipe" # ※标签ID: blowpipe<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "houndmound" # ※标签ID: houndmound<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "NOBLOCK" # ※标签ID: NOBLOCK<br>※直译名: <br>※详述: 不占三维空间（不影响建筑物摆放和种植），常用于特效<br>※分类: 特效 | Fx<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "NOBLOCK" # ※标签ID: NOBLOCK<br>※直译名: 无碰撞 <br>※详述: 不占三维空间（不影响建筑物摆放和种植），常用于特效<br>※分类: 特效 | Fx<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "explosive" # ※标签ID: explosive<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "herdmember" # ※标签ID: herdmember<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "inventoryitemholder_give" # ※标签ID: inventoryitemholder_give<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "plantedsoil" # ※标签ID: plantedsoil<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "lunarplant_target" # ※标签ID: lunarplant_target<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "nowormholesanityloss" # ※标签ID: nowormholesanityloss<br>※直译名: <br>※详述: 穿越虫洞不会掉san<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "lunarplant_target" # ※标签ID: lunarplant_target<br>※直译名: 亮茄寄生目标<br>※详述: 如草丛，树苗等会被亮茄寄生的植物<br>※分类: 实体 | Prefab<br>※author: 小右
+---| "nowormholesanityloss" # ※标签ID: nowormholesanityloss<br>※直译名: 免疫虫洞掉san<br>※详述: 穿越虫洞不会掉san。原版中仅沃尔特有此标签，符合其无畏少年的设定<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "strongstomach" # ※标签ID: strongstomach<br>※直译名: 强壮的胃<br>※详述: 单机版中韦伯具有此标签，效果是吃怪物肉无负面，但在联机版中似乎没有韦伯中找到，想必效果应该相似<br>※分类: 通用 | Universal<br>※author: 小右<br>※拉取时间: 2024-12-11 15:04
 ---| "saltpond" # ※标签ID: saltpond<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "NPC_contestant" # ※标签ID: NPC_contestant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -130,10 +130,10 @@
 ---| "werehuman" # ※标签ID: werehuman<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "dogrider" # ※标签ID: dogrider<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "DECOR" # ※标签ID: DECOR<br>※直译名: <br>※详述: 有这个标签的物品说明它是个装饰物<br>※分类: 通用 | Universal<br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "player_shadow_aligned" # ※标签ID: player_shadow_aligned<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "player_shadow_aligned" # ※标签ID: player_shadow_aligned<br>※直译名: 角色暗影亲和<br>※详述: 技能树标签。一般在有技能树的角色激活对应阵营技能后会添加上，然后就是相同阵营减伤，对立阵营增伤……<br>※分类: 角色 | Character<br>※author: 小右
 ---| "oceanwhirlportal" # ※标签ID: oceanwhirlportal<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ignoretalking" # ※标签ID: ignoretalking<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "absorbpoison" # ※标签ID: absorbpoison<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "absorbpoison" # ※标签ID: absorbpoison<br>※直译名: <br>※详述: 毒菌蟾蜍带有的标签，这个标签控制金丝雀（中毒）爆炸的时候会传染毒菌蟾蜍<br>※分类: <br>※author: alt
 ---| "has_no_prize" # ※标签ID: has_no_prize<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "quickactivation" # ※标签ID: quickactivation<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "slurper" # ※标签ID: slurper<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -145,7 +145,7 @@
 ---| "fire" # ※标签ID: fire<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "moontrader" # ※标签ID: moontrader<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "oceanfishing_bobber" # ※标签ID: oceanfishing_bobber<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "LA_mob" # ※标签ID: LA_mob<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "LA_mob" # ※标签ID: LA_mob<br>※直译名: <br>※详述: 熔炉模式里面的可攻击的怪物会有这个标签 <br>※分类: 生物 | Mobs <br>※author: alt
 ---| "knockbackdelayinteraction" # ※标签ID: knockbackdelayinteraction<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "plantinspector" # ※标签ID: plantinspector<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "soulstealer" # ※标签ID: soulstealer<br>※直译名: 灵魂拾取<br>※详述: 标签拥有者能够自动收集一定范围内的灵魂，并且能够使用灵魂跳跃和灵魂回声；小恶魔沃拓克斯拥有此标签<br>※分类: 角色 | Character<br>※author: 小右<br>※拉取时间: 2024-12-11 15:04
@@ -180,9 +180,9 @@
 ---| "groundtile" # ※标签ID: groundtile<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "canbestartled" # ※标签ID: canbestartled<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "locomotor" # ※标签ID: locomotor<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "occupied" # ※标签ID: occupied<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "occupied" # ※标签ID: occupied<br>※直译名: 已占用<br>※详述: 应用于组件occupiable实体中，如鸟笼，当其中有鸟儿时具有此标签，否则移除之<br>※分类: 建筑 | Structure<br>※author: 小右
 ---| "bodypillow" # ※标签ID: bodypillow<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beard_sack_2" # ※标签ID: beard_sack_2<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "beard_sack_2" # ※标签ID: beard_sack_2<br>※直译名: <br>※详述: 二格胡子容器带有的标签<br>※分类: <br>※author: alt
 ---| "moonbase" # ※标签ID: moonbase<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "highfriendlevel" # ※标签ID: highfriendlevel<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "takeshelfitem" # ※标签ID: takeshelfitem<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -209,7 +209,7 @@
 ---| "slingshot" # ※标签ID: slingshot<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "birchnutroot" # ※标签ID: birchnutroot<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "notaunt" # ※标签ID: notaunt<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "canlight" # ※标签ID: canlight<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "canlight" # ※标签ID: canlight<br>※直译名: 可点燃<br>※详述: 有此标签的物品可能可被点燃。源码举例：薇洛点亮技能【燃烧伯尼】后，属于该薇洛的大伯尼（这样表达是因为：伯尼的变大变小，活化惰化其实是新预制物的生成与原预制物的移除）会被加上此标签，因此可点燃<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "charged" # ※标签ID: charged<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "domesticatable" # ※标签ID: domesticatable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "inspectaclesvision" # ※标签ID: inspectaclesvision<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -217,7 +217,7 @@
 ---| "nonpotatable" # ※标签ID: nonpotatable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "applied_curse" # ※标签ID: applied_curse<br>※直译名: 生效了的诅咒<br>※详述: 标记诅咒物品（目前只有猴子诅咒）为生效状态<br>※分类: 物品 | Inventory Item<br>※author: 小右<br>※拉取时间: 2024-12-11 15:04
 ---| "oceanfishingfocus" # ※标签ID: oceanfishingfocus<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beebox" # ※标签ID: beebox<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "beebox" # ※标签ID: beebox<br>※直译名: 蜂箱<br>※详述: 原版中仅蜂箱有此标签。除了出现在蜂箱中作为标记标签外，还出现在熊大的觅食逻辑中，即熊大会盯上有此标签的物体<br>※分类: 建筑 | Structure<br>※author: 小右
 ---| "_sanity" # ※标签ID: _sanity<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "cancycle" # ※标签ID: cancycle<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "boatleak" # ※标签ID: boatleak<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -240,7 +240,7 @@
 ---| "NPCcanaggro" # ※标签ID: NPCcanaggro<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "deerantler" # ※标签ID: deerantler<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "__constructionsite" # ※标签ID: __constructionsite<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "quickpick" # ※标签ID: quickpick<br>※直译名: <br>※详述: 快速采摘的植物<br>※分类: 实体 | Prefab<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
+---| "quickpick" # ※标签ID: quickpick<br>※直译名: <br>※详述: 植物会被快速采摘<br>※分类: 实体 | Prefab<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
 ---| "lava" # ※标签ID: lava<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "cage" # ※标签ID: cage<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "prehammer" # ※标签ID: prehammer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -248,7 +248,7 @@
 ---| "confetti_cloud" # ※标签ID: confetti_cloud<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "grave" # ※标签ID: grave<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "purehorror" # ※标签ID: purehorror<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "HASHEATER" # ※标签ID: HASHEATER<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "HASHEATER" # ※标签ID: HASHEATER<br>※直译名: <br>※详述: Heater组件附属tag,有这个标签的物品可以看作冷源或热源 <br>※分类: 通用 | Universal <br>※author: alt 
 ---| "beefalo_doll" # ※标签ID: beefalo_doll<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fishingrod" # ※标签ID: fishingrod<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "teleportato_part" # ※标签ID: teleportato_part<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -269,7 +269,7 @@
 ---| "blinkfocus" # ※标签ID: blinkfocus<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "nocrafting" # ※标签ID: nocrafting<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "cansit" # ※标签ID: cansit<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "petrifiable" # ※标签ID: petrifiable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "petrifiable" # ※标签ID: petrifiable<br>※直译名: 可石化<br>※详述: 应用于组件petrifiable实体，如常青树<br>※分类: 实体 | Prefab<br>※author: 小右
 ---| "retaliates" # ※标签ID: retaliates<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pollen" # ※标签ID: pollen<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lunarthrall_plant_segment" # ※标签ID: lunarthrall_plant_segment<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -285,7 +285,7 @@
 ---| "fertile" # ※标签ID: fertile<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "brightmare_gestalt" # ※标签ID: brightmare_gestalt<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "magician" # ※标签ID: magician<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "ChaseAndRam" # ※标签ID: ChaseAndRam<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "ChaseAndRam" # ※标签ID: ChaseAndRam<br>※直译名: <br>※详述: 犀牛,熊,战车这些生物冲撞的时候会有这个标签 <br>※分类: 生物 | Mobs <br>※author: alt
 ---| "meltable" # ※标签ID: meltable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lightcontainer" # ※标签ID: lightcontainer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "yotc_racefinishline" # ※标签ID: yotc_racefinishline<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -298,7 +298,7 @@
 ---| "cookable" # ※标签ID: cookable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wintersfeastcookedfood" # ※标签ID: wintersfeastcookedfood<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pirate" # ※标签ID: pirate<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "bird_mutant" # ※标签ID: bird_mutant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "bird_mutant" # ※标签ID: bird_mutant<br>※直译名: 奇异鸟<br>※详述: 应用于月后的奇异鸟，喂鸟的产物与普通鸟不同<br>※分类: 生物 | Mobs<br>※author: 小右
 ---| "hitcher" # ※标签ID: hitcher<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lightningtarget" # ※标签ID: lightningtarget<br>※直译名: 闪电目标<br>※详述: 会被雷劈<br>※分类: 实体 | Prefab<br>※author: Albe<br>※拉取时间: 2024-12-11 15:04
 ---| "weed_forgetmelots_respawner" # ※标签ID: weed_forgetmelots_respawner<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -309,8 +309,8 @@
 ---| "plant" # ※标签ID: plant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "crabking" # ※标签ID: crabking<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "playerlight" # ※标签ID: playerlight<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "barren" # ※标签ID: barren<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beard_sack_1" # ※标签ID: beard_sack_1<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "barren" # ※标签ID: barren<br>※直译名: 枯萎<br>※详述: 来自pickable组件，如草枯萎后无剩余收获次数具有此标签<br>※分类: 实体 | Prefab<br>※author: 小右
+---| "beard_sack_1" # ※标签ID: beard_sack_1<br>※直译名: <br>※详述: 一格胡子容器带有的标签<br>※分类: <br>※author: alt
 ---| "herd" # ※标签ID: herd<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "teleporter" # ※标签ID: teleporter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "baby" # ※标签ID: baby<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -320,7 +320,7 @@
 ---| "decoratable" # ※标签ID: decoratable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "stalker" # ※标签ID: stalker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "daylight" # ※标签ID: daylight<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "houndfriend" # ※标签ID: houndfriend<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "houndfriend" # ※标签ID: houndfriend<br>※直译名: 猎狗友好<br>※详述: 有这标签大概不会被猎狗攻击吧，也HasTag出现在猎狗的攻击和受击回调中，当猎狗触发回调时会呼唤周围有hound或houndfriend的实体锁定攻击/受攻者为目标<br>※分类: 生物 | Mobs<br>※author: 小右
 ---| "trader" # ※标签ID: trader<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fillable_showoceanaction" # ※标签ID: fillable_showoceanaction<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "nosteal" # ※标签ID: nosteal<br>※直译名: <br>※详述: 猴子不会偷走这个目标（库存物品）<br>※分类: 实体 | Prefab<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
@@ -353,9 +353,9 @@
 ---| "aoeblowdart_long" # ※标签ID: aoeblowdart_long<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "quagmire_cheapskate" # ※标签ID: quagmire_cheapskate<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "spider" # ※标签ID: spider<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "forcefield" # ※标签ID: forcefield<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "forcefield" # ※标签ID: forcefield<br>※直译名: <br>※详述: 应用于铥头中。当触发了护盾时，铥头被添加上此标签，护盾消失移除之<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "oceanfishinghookable" # ※标签ID: oceanfishinghookable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "WORM_DANGER" # ※标签ID: WORM_DANGER<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "WORM_DANGER" # ※标签ID: WORM_DANGER<br>※直译名: <br>※详述: 虫洞激活的时候会删除带有这个标签的实体(范围15) 目前触手和杀人蜂蜂窝有这个标签 <br>※分类: <br>※author: alt
 ---| "extinguisher" # ※标签ID: extinguisher<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "weapon" # ※标签ID: weapon<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "storyteller" # ※标签ID: storyteller<br>※直译名: <br>※详述: 能讲故事<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -370,7 +370,7 @@
 ---| "lowered_ground" # ※标签ID: lowered_ground<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "gestaltnoloot" # ※标签ID: gestaltnoloot<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "brightmare" # ※标签ID: brightmare<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "bernie_reviver" # ※标签ID: bernie_reviver<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "bernie_reviver" # ※标签ID: bernie_reviver<br>※直译名: 可修复伯尼者<br>※详述: 在熔炉模式（lavaarena）下薇洛有此标签，然后伯尼仅能由有此标签的角色修复？<br>※分类: 角色 | Character<br>※author: 小右
 ---| "fish" # ※标签ID: fish<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "quagmire_cookwaretrader" # ※标签ID: quagmire_cookwaretrader<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "boat_accessory" # ※标签ID: boat_accessory<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -383,7 +383,7 @@
 ---| "liftingdumbbell" # ※标签ID: liftingdumbbell<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "blocker" # ※标签ID: blocker<br>※直译名: 阻滞剂；阻挡队员<br>※详述: 碰撞体，有实体的东西都有这个，例如墙<br>※分类: 实体 | Prefab<br>※author: Mr船蛸<br>※拉取时间: 2024-12-11 15:04
 ---| "crab_mob_knight" # ※标签ID: crab_mob_knight<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "mineactive" # ※标签ID: mineactive<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "mineactive" # ※标签ID: mineactive<br>※直译名: 地雷激活<br>※详述: 作用于mine组件实体。如荆棘陷阱，陷阱被布下但未触发时被添加此标签<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "flower" # ※标签ID: flower<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "domesticated" # ※标签ID: domesticated<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "masterchef" # ※标签ID: masterchef<br>※直译名: <br>※详述: 主厨标签 能够使用便携锅，能够制作大厨料理<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -405,7 +405,7 @@
 ---| "personal_possession" # ※标签ID: personal_possession<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fishable" # ※标签ID: fishable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "archive_waypoint" # ※标签ID: archive_waypoint<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "UI" # ※标签ID: UI<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "UI" # ※标签ID: UI<br>※直译名: <br>※详述: 所有Widget都有这个标签 <br>※分类: <br>※author: alt 
 ---| "healerbuffs" # ※标签ID: healerbuffs<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lunar_aligned" # ※标签ID: lunar_aligned<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "channelable" # ※标签ID: channelable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -422,7 +422,7 @@
 ---| "emergency" # ※标签ID: emergency<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "mech" # ※标签ID: mech<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pickable_harvest_str" # ※标签ID: pickable_harvest_str<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "dumbbell" # ※标签ID: dumbbell<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "dumbbell" # ※标签ID: dumbbell<br>※直译名: 哑铃<br>※详述: 物品增加此标签；力量数值自然不减少<br>※分类: 物品 | Inventory Item<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "unwrappable" # ※标签ID: unwrappable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "waxedplant" # ※标签ID: waxedplant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "souleater" # ※标签ID: souleater<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -484,11 +484,11 @@
 ---| "pigshrine" # ※标签ID: pigshrine<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "oceanvine" # ※标签ID: oceanvine<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "security_powerpoint" # ※标签ID: security_powerpoint<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "birdblocker" # ※标签ID: birdblocker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "birdblocker" # ※标签ID: birdblocker<br>※直译名: 鸟落点阻碍物<br>※详述: 有此标签的物品可限制鸟生成的落点（半径4单位）。小偷工厂用到的海星有此标签<br>※分类: 实体 | Prefab<br>※author: 小右
 ---| "anchor_transitioning" # ※标签ID: anchor_transitioning<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "heavy" # ※标签ID: heavy<br>※直译名: 重的<br>※详述: 重物，雕像，巨星植物，其他，可配合_equippable标签判断是否，是否搬运的东西<br>※分类: 实体 | Prefab<br>※author: Mr船蛸<br>※拉取时间: 2024-12-11 15:04
 ---| "catcoonshrine" # ※标签ID: catcoonshrine<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "_combat" # ※标签ID: _combat<br>※直译名: <br>※详述: 有攻击手段<br>※分类: 生物 | Mobs<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "_combat" # ※标签ID: _combat<br>※直译名: <br>※详述: 单下划线加tag的说明：_combat表示这个生物当前存在combat组件<br>※分类: 生物 | Mobs<br>※author: alt,lan
 ---| "diviningrod" # ※标签ID: diviningrod<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "acidrainimmune" # ※标签ID: acidrainimmune<br>※直译名: 防酸雨<br>※详述: 手持物品防酸雨<br>※分类: 物品 | Inventory Item<br>※author: lan<br>※拉取时间: 2024-12-11 15:04
 ---| "turnedoff" # ※标签ID: turnedoff<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -506,7 +506,7 @@
 ---| "pig_house" # ※标签ID: pig_house<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ghostkid" # ※标签ID: ghostkid<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "multiplayer_portal" # ※标签ID: multiplayer_portal<br>※直译名: <br>※详述: 玩家出生点，绚丽之门的<br>※分类: 实体 | Prefab<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
----| "slowbuilder" # ※标签ID: slowbuilder<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "slowbuilder" # ※标签ID: slowbuilder<br>※直译名: 低速制作<br>※详述: 有此标签的角色制作物品需要花费更长时间。源码举例：旺达进入老年状态后会被加上此标签，退出老年状态后移除，老旺达制作物品比正常角色要慢<br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "bird" # ※标签ID: bird<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "balloonomancer" # ※标签ID: balloonomancer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "rainimmunity" # ※标签ID: rainimmunity<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -516,7 +516,7 @@
 ---| "expertchef" # ※标签ID: expertchef<br>※直译名: <br>※详述: 烹饪专家 在火上烤熟东西只花一半时间（0.5s）<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "groundonlymachine" # ※标签ID: groundonlymachine<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fishing_idle" # ※标签ID: fishing_idle<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "woodcutter" # ※标签ID: woodcutter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "woodcutter" # ※标签ID: woodcutter<br>※直译名: 伐木工<br>※详述: 原版中仅伍迪有此标签。大致分析了下，此标签应该跟砍树（效率，动画）有关，因此伍迪砍树效率高，动画时间也短<br>※分类: 角色 | Character<br>※author: 小右
 ---| "whackable" # ※标签ID: whackable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "reviving" # ※标签ID: reviving<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "squid" # ※标签ID: squid<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -542,7 +542,7 @@
 ---| "deployedplant" # ※标签ID: deployedplant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "beefalo_groomer" # ※标签ID: beefalo_groomer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wolfgang_overbuff_5" # ※标签ID: wolfgang_overbuff_5<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "__combat" # ※标签ID: __combat<br>※直译名: <br>※详述: <br>※分类: 生物 | Mobs<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "__combat" # ※标签ID: __combat<br>※直译名: <br>※详述: 双下划线加tag的说明：__combat和_combat相辅相成 前者表示这个生物没有combat 后者反之 ， 适用于加过combat组件的生物 这个标签用于客户端在初始化的时候添加对应组件的replica组件 <br>※分类: 生物 | Mobs<br>※author: alt
 ---| "freezable" # ※标签ID: freezable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "superjump" # ※标签ID: superjump<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "merm_npc" # ※标签ID: merm_npc<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -552,7 +552,7 @@
 ---| "allergictobees" # ※标签ID: allergictobees<br>※直译名: <br>※详述: 对蜜蜂过敏，受到带有蜜蜂标签的生物攻击额外受到10点伤害<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "yotc_racestart" # ※标签ID: yotc_racestart<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "canbeslaughtered" # ※标签ID: canbeslaughtered<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "MONKEY_CURSE_1" # ※标签ID: MONKEY_CURSE_1<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "MONKEY_CURSE_1" # ※标签ID: MONKEY_CURSE_1<br>※直译名: <br>※详述: 玩家接收猴子诅咒后的三个状态中的第一个状态，这个状态下玩家会有猴子腿，关键词monkeyfeet <br>※分类: 角色 | Character <br>※author: alt
 ---| "saddleable" # ※标签ID: saddleable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "winter_tree" # ※标签ID: winter_tree<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "minimap" # ※标签ID: minimap<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -570,7 +570,7 @@
 ---| "peacefulmount" # ※标签ID: peacefulmount<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "chester_eyebone" # ※标签ID: chester_eyebone<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "burnt" # ※标签ID: burnt<br>※直译名: <br>※详述: 被烧毁的建筑物<br>※分类: 建筑 | Structure<br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "readytocook" # ※标签ID: readytocook<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "readytocook" # ※标签ID: readytocook<br>※直译名: 准备烹饪<br>※详述: 应用于烹饪锅中。当锅被打开并且填满四个食材时，会被添加上此标签，否则移除此标签<br>※分类: 建筑 | Structure<br>※author: 小右
 ---| "minion" # ※标签ID: minion<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "grower" # ※标签ID: grower<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lunarhaildebris" # ※标签ID: lunarhaildebris<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -594,10 +594,10 @@
 ---| "carnivalgame_herding_station" # ※标签ID: carnivalgame_herding_station<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fedbyall" # ※标签ID: fedbyall<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ghostlyelixir" # ※标签ID: ghostlyelixir<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beefalo" # ※标签ID: beefalo<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "beefalo" # ※标签ID: beefalo<br>※直译名: 皮弗娄牛<br>※详述: 标记标签。有此标签视为皮弗娄牛或牛认为的友好生物（戴上牛帽）。此标签还与牛的群体仇恨有关，牛受击后会与半径30单位的最多5头牛共享仇恨目标<br>※分类: 生物 | Mobs<br>※author: 小右
 ---| "groundspike" # ※标签ID: groundspike<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "bell" # ※标签ID: bell<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "MONKEY_CURSE_3" # ※标签ID: MONKEY_CURSE_3<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "MONKEY_CURSE_3" # ※标签ID: MONKEY_CURSE_3<br>※直译名: <br>※详述: 玩家接收猴子诅咒后的三个状态中的第三个状态，这个状态下玩家会有猴子尾巴，关键词monkeytail <br>※分类: 角色 | Character <br>※author: alt
 ---| "carnivalgame_canfeed" # ※标签ID: carnivalgame_canfeed<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "birchnut" # ※标签ID: birchnut<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "bird_mutant_spitter" # ※标签ID: bird_mutant_spitter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -644,7 +644,7 @@
 ---| "boatmagnetbeacon" # ※标签ID: boatmagnetbeacon<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wateringcan" # ※标签ID: wateringcan<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "beehive" # ※标签ID: beehive<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "accepts_oceanfishingtackle" # ※标签ID: accepts_oceanfishingtackle<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "accepts_oceanfishingtackle" # ※标签ID: accepts_oceanfishingtackle<br>※直译名: <br>※详述: 海钓杆带有的标签 <br>※分类: <br>※author: alt
 ---| "lunarminion" # ※标签ID: lunarminion<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "trawler_fish_escaped" # ※标签ID: trawler_fish_escaped<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "chest" # ※标签ID: chest<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -655,7 +655,7 @@
 ---| "deployedfarmplant" # ※标签ID: deployedfarmplant<br>※直译名: 种子<br>※详述: 种子标签<br>※分类: 物品 | Inventory Item<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "smalloceancreature" # ※标签ID: smalloceancreature<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fireimmune" # ※标签ID: fireimmune<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beebeacon" # ※标签ID: beebeacon<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "beebeacon" # ※标签ID: beebeacon<br>※直译名: 吸引蜜蜂<br>※详述: 原版中仅开花期的沃姆伍德有此标签（败花则会被移除）。在蜜蜂的brain中有寻找该标签的逻辑，因此确定此标签有吸引蜜蜂的效果<br>※分类: 角色 | Character<br>※author: 小右
 ---| "beaverness" # ※标签ID: beaverness<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "invincible" # ※标签ID: invincible<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "__follower" # ※标签ID: __follower<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -688,7 +688,7 @@
 ---| "carnival_prizebooth" # ※标签ID: carnival_prizebooth<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "blowpipeammo" # ※标签ID: blowpipeammo<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "smallcreature" # ※标签ID: smallcreature<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "donecooking" # ※标签ID: donecooking<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "donecooking" # ※标签ID: donecooking<br>※直译名: 烹饪完成<br>※详述: 应用于烹饪锅中，烹饪完成时添加此标签，食物被取走时移除此标签<br>※分类: 建筑 | Structure<br>※author: 小右
 ---| "rangedweapon" # ※标签ID: rangedweapon<br>※直译名: 远程武器<br>※详述: 为武器添加此tag，可以骑牛使用武器<br>※分类: 物品 | Inventory Item<br>※author: 乱码<br>※拉取时间: 2024-12-11 15:04
 ---| "special_action_toss" # ※标签ID: special_action_toss<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "AIboat" # ※标签ID: AIboat<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -697,8 +697,8 @@
 ---| "groundhole" # ※标签ID: groundhole<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "dangerouscooker" # ※标签ID: dangerouscooker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "fertilizerresearchable" # ※标签ID: fertilizerresearchable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "stump" # ※标签ID: stump<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "ember_master" # ※标签ID: ember_master<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "stump" # ※标签ID: stump<br>※直译名: 树桩<br>※详述: 应用于各种树的实体，砍伐后被添加上此标签，意为树桩<br>※分类: 实体 | Prefab<br>※author: 小右
+---| "ember_master" # ※标签ID: ember_master<br>※直译名: 余烬专家<br>※详述: 技能树标签。薇洛点亮技能【余烬照料者】后，会被加上此标签。有此标签的角色才能右键余烬进行施法<br>※分类: 角色 | Character<br>※author: 小右
 ---| "smallbird" # ※标签ID: smallbird<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "engineeringbatteryuser" # ※标签ID: engineeringbatteryuser<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "hassleeper" # ※标签ID: hassleeper<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -709,10 +709,10 @@
 ---| "marble" # ※标签ID: marble<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "yotc_racecheckpoint" # ※标签ID: yotc_racecheckpoint<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "writeable" # ※标签ID: writeable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "abigail" # ※标签ID: abigail<br>※直译名: 疑似NPC<br>※详述: 阿比盖尔<br>※分类: 实体 | Prefab<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "abigail" # ※标签ID: abigail<br>※直译名: 阿比盖尔专属标签<br>※详述: 阿比盖尔专属标签(熔炉里面的那个阿比也有这个标签)<br>※分类: 生物 | Mobs<br>※author: alt,lan
 ---| "merm" # ※标签ID: merm<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "batteryuser" # ※标签ID: batteryuser<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "hungrybuilder" # ※标签ID: hungrybuilder<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "hungrybuilder" # ※标签ID: hungrybuilder<br>※直译名: 可消耗饱食加速制作<br>※详述: 原版中薇诺娜有此标签。大致作用是：如果饱食充足，则可消耗一定饱食获得一定时间内的加速制作。如果直接给角色加上此标签，应该能实现此效果吧，尚未验证<br>※分类: 角色 | Character<br>※author: 小右
 ---| "farm_debris" # ※标签ID: farm_debris<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "bat" # ※标签ID: bat<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "yotr_arena" # ※标签ID: yotr_arena<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -727,7 +727,7 @@
 ---| "critterlab" # ※标签ID: critterlab<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "waxspray" # ※标签ID: waxspray<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "kelp" # ※标签ID: kelp<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "silviculture" # ※标签ID: silviculture<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "silviculture" # ※标签ID: silviculture<br>※直译名: 造林学作用目标<br>※详述: 如草丛，树苗等，能被造林学扫描到的目标<br>※分类: 实体 | Prefab<br>※author: 小右
 ---| "umbrella" # ※标签ID: umbrella<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wormhole" # ※标签ID: wormhole<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "battlehelm" # ※标签ID: battlehelm<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -748,7 +748,7 @@
 ---| "winch_ready" # ※标签ID: winch_ready<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "brightmareboss" # ※标签ID: brightmareboss<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wildfireprotected" # ※标签ID: wildfireprotected<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "bigbernie" # ※标签ID: bigbernie<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "bigbernie" # ※标签ID: bigbernie<br>※直译名: 大伯尼<br>※详述: 原版中仅大伯尼有此标签。点亮技能【燃烧伯尼】后，此标签生效，限制薇洛只能点燃大伯尼（其他形态的不能点燃）<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "usesdepleted" # ※标签ID: usesdepleted<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "firefly" # ※标签ID: firefly<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "tendable_farmplant" # ※标签ID: tendable_farmplant<br>※直译名: <br>※详述: <br>※分类: 实体 | Prefab<br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -794,7 +794,7 @@
 ---| "wall" # ※标签ID: wall<br>※直译名: 墙<br>※详述: 属于墙体<br>※分类: 建筑 | Structure<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "walking" # ※标签ID: walking<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "workrepairable" # ※标签ID: workrepairable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "hound" # ※标签ID: hound<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "hound" # ※标签ID: hound<br>※直译名: 猎狗<br>※详述: 猎狗具有此标签，也HasTag用于该生物的攻击和受击回调中，实现群体仇恨<br>※分类: 生物 | Mobs<br>※author: 小右
 ---| "untrappable" # ※标签ID: untrappable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "steeringwheel" # ※标签ID: steeringwheel<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "walkableperipheral" # ※标签ID: walkableperipheral<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -806,7 +806,7 @@
 ---| "vase" # ※标签ID: vase<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "moon_altar_marker" # ※标签ID: moon_altar_marker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "candry" # ※标签ID: candry<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "abigail_flower" # ※标签ID: abigail_flower<br>※直译名: 阿比盖尔的花<br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "abigail_flower" # ※标签ID: abigail_flower<br>※直译名: 阿比盖尔的花<br>※详述: 阿比盖尔之花专属标签，这个标签控制ACTIONS.USESPELLBOOK的动作显示为低语 <br>※分类: <br>※author: alt
 ---| "use_channel_longaction" # ※标签ID: use_channel_longaction<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "event_trigger" # ※标签ID: event_trigger<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "uncomfortable_chair" # ※标签ID: uncomfortable_chair<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -819,7 +819,7 @@
 ---| "moistureimmunity" # ※标签ID: moistureimmunity<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lamp" # ※标签ID: lamp<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ignoremouseover" # ※标签ID: ignoremouseover<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "NOCLICK" # ※标签ID: NOCLICK<br>※直译名: <br>※详述: 不可被点击，常用于特效<br>※分类: 特效 | Fx<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "NOCLICK" # ※标签ID: NOCLICK<br>※直译名: 不可被点击 <br>※详述: 不可被点击，常用于特效<br>※分类: 特效 | Fx<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "trapdamage" # ※标签ID: trapdamage<br>※直译名: 陷阱伤害<br>※详述: 有伤害的物品或装备，发现于荆棘甲反伤特效（这是个有伤害的实体）<br>※分类: 物品 | Inventory Item<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "trap_vines" # ※标签ID: trap_vines<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "trap" # ※标签ID: trap<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -849,7 +849,7 @@
 ---| "cooker" # ※标签ID: cooker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "gemsocket" # ※标签ID: gemsocket<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "trawler_lowered" # ※标签ID: trawler_lowered<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "eyeplant" # ※标签ID: eyeplant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "eyeplant" # ※标签ID: eyeplant<br>※直译名: 眼球草<br>※详述: 标记标签。原版中仅眼球草有此标签，别处也没有HasTag进行标签判断，因此是实打实的标记标签，仅仅标记有此标签的预制物为眼球草<br>※分类: 生物 | Mobs<br>※author: 小右
 ---| "playerowned" # ※标签ID: playerowned<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lightninggoat" # ※标签ID: lightninggoat<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "inherentshadowdominance" # ※标签ID: inherentshadowdominance<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -861,16 +861,16 @@
 ---| "shadowhand" # ※标签ID: shadowhand<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "stunnedbybomb" # ※标签ID: stunnedbybomb<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "gnarwail_horn" # ※标签ID: gnarwail_horn<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "structure" # ※标签ID: structure<br>※直译名: 结构、建筑<br>※详述: 属于建筑<br>※分类: 建筑 | Structure<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "structure" # ※标签ID: structure<br>※直译名: 建筑<br>※详述: 属于建筑<br>※分类: 建筑 | Structure<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "walrus" # ※标签ID: walrus<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "stronggrip" # ※标签ID: stronggrip<br>※直译名: <br>※详述: 防止手部装备因潮湿、吼叫、击飞而脱手。溺水后不丢失库存中的物品<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "stronggrip" # ※标签ID: stronggrip<br>※直译名: 极强的握力<br>※详述: 防止手部装备因潮湿、吼叫、击飞而脱手。溺水后不丢失库存中的物品<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lighter" # ※标签ID: lighter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "wave" # ※标签ID: wave<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pocketdimension_container" # ※标签ID: pocketdimension_container<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "stewer" # ※标签ID: stewer<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "beard_sack_3" # ※标签ID: beard_sack_3<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "beard_sack_3" # ※标签ID: beard_sack_3<br>※直译名: <br>※详述: 三格胡子容器带有的标签<br>※分类: <br>※author: alt
 ---| "catcoonden" # ※标签ID: catcoonden<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "mine_not_reusable" # ※标签ID: mine_not_reusable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "mine_not_reusable" # ※标签ID: mine_not_reusable<br>※直译名: 地雷不可重置<br>※详述: 作用于mine组件实体。如海星陷阱触发后不可被玩家手动重置<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "steeringboat" # ※标签ID: steeringboat<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "stargate" # ※标签ID: stargate<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "stalkerminion" # ※标签ID: stalkerminion<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -900,7 +900,7 @@
 ---| "inactive" # ※标签ID: inactive<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "snotbomb" # ※标签ID: snotbomb<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "smolder" # ※标签ID: smolder<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "bernieowner" # ※标签ID: bernieowner<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "bernieowner" # ※标签ID: bernieowner<br>※直译名: 伯尼归属者<br>※详述: 原版中仅薇洛有此标签。伯尼只能装备在有此标签角色的手部栏，同时伯尼变大也需要在有此标签角色的附近<br>※分类: 角色 | Character<br>※author: 小右
 ---| "sporecloud" # ※标签ID: sporecloud<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "slingshot_sharpshooter" # ※标签ID: slingshot_sharpshooter<br>※直译名: <br>※详述: 能使用弹弓<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "sketch" # ※标签ID: sketch<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -942,7 +942,7 @@
 ---| "koalefant" # ※标签ID: koalefant<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "magicweapon" # ※标签ID: magicweapon<br>※直译名: 魔法武器<br>※详述: 不会受到沃尔夫冈技能树威力武器加点的位面伤害增加<br>※分类: 物品 | Inventory Item<br>※author: 月下踏歌行<br>※拉取时间: 2024-12-11 15:04
 ---| "scrapbook_page" # ※标签ID: scrapbook_page<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "scarytoprey" # ※标签ID: scarytoprey<br>※直译名: <br>※详述: 会吓跑兔子之类的小动物<br>※分类: 物品 | Inventory Item<br>※author: Albe<br>※拉取时间: 2024-12-11 15:04
+---| "scarytoprey" # ※标签ID: scarytoprey<br>※直译名: <br>※详述: 会吓跑兔子之类的小动物<br>※分类: 生物 | Mobs<br>※author: Albe<br>※拉取时间: 2024-12-11 15:04
 ---| "scarecrow" # ※标签ID: scarecrow<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "debugnoattack" # ※标签ID: debugnoattack<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "confetti_buff" # ※标签ID: confetti_buff<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -994,7 +994,7 @@
 ---| "quagmire_altar" # ※标签ID: quagmire_altar<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "purebrilliance" # ※标签ID: purebrilliance<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "heatrock" # ※标签ID: heatrock<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "acting" # ※标签ID: acting<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "acting" # ※标签ID: acting<br>※直译名: <br>※详述: 在部分SG里面，玩家会有acting标签，然后被克雷同步为tag，有这个标签可以理解为玩家正在做动作<br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "shelter" # ※标签ID: shelter<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "prey" # ※标签ID: prey<br>※直译名: 猎物？<br>※详述: 发现于女武神获取灵感值的排除标签用于大量生物的仇恨<br>※分类: 实体 | Prefab<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "no_force_grow" # ※标签ID: no_force_grow<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1013,10 +1013,10 @@
 ---| "insomniac" # ※标签ID: insomniac<br>※直译名: 失眠<br>※详述: 薇克巴顿有这个标签<br>※分类: 角色 | Character<br>※author: Albe<br>※拉取时间: 2024-12-11 15:04
 ---| "quickcast" # ※标签ID: quickcast<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "playermerm" # ※标签ID: playermerm<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "player_lunar_aligned" # ※标签ID: player_lunar_aligned<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "player_lunar_aligned" # ※标签ID: player_lunar_aligned<br>※直译名: 角色月亮亲和<br>※详述: 技能树标签。一般在有技能树的角色激活对应阵营技能后会添加上，然后就是相同阵营减伤，对立阵营增伤……<br>※分类: 角色 | Character<br>※author: 小右
 ---| "play_in_progress" # ※标签ID: play_in_progress<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "halloween_ornament" # ※标签ID: halloween_ornament<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "hasstrongman" # ※标签ID: hasstrongman<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "hasstrongman" # ※标签ID: hasstrongman<br>※直译名: 强壮的人<br>※详述: 沃尔夫冈拥有此标签，也是builder_tag。拥有此标签的人物能够制作沃尔夫冈的专属物品；此标签在componentactions文件中也有出现，与人物动作有关，这里疏于对人物的了解，就不多写了<br>※分类: 角色 | Character<br>※author: 小右
 ---| "monkeyqueen" # ※标签ID: monkeyqueen<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "plantresearchable" # ※标签ID: plantresearchable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "nutrientsvision" # ※标签ID: nutrientsvision<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1036,7 +1036,7 @@
 ---| "penguin" # ※标签ID: penguin<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "peck_attack" # ※标签ID: peck_attack<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "pebblemaker" # ※标签ID: pebblemaker<br>※直译名: <br>※详述: 可以制作沃尔特弹弓子弹<br>※分类: 角色 | Character<br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "oversized_veggie" # ※标签ID: oversized_veggie<br>※直译名: <br>※详述: 超大的蔬菜<br>※分类: 实体 | Prefab<br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "oversized_veggie" # ※标签ID: oversized_veggie<br>※直译名: <br>※详述: 巨大作物<br>※分类: 实体 | Prefab<br>※author: lan
 ---| "ghost" # ※标签ID: ghost<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "overriderowaction" # ※标签ID: overriderowaction<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "caveindebris" # ※标签ID: caveindebris<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1056,7 +1056,7 @@
 ---| "nopunch" # ※标签ID: nopunch<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "nomusic" # ※标签ID: nomusic<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "nointerpolate" # ※标签ID: nointerpolate<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "preparedfood" # ※标签ID: preparedfood<br>※直译名: <br>※详述: 成品料理，大厨进食的食物必备<br>※分类: 物品 | Inventory Item<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
+---| "preparedfood" # ※标签ID: preparedfood<br>※直译名: <br>※详述: 成品料理<br>※分类: 物品 | Inventory Item<br>※author: yuanmeng<br>※拉取时间: 2024-12-11 15:04
 ---| "_health" # ※标签ID: _health<br>※直译名: <br>※详述: 有血量（{'_health','_combat')经常组合使用）<br>※分类: 生物 | Mobs<br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "cannontower" # ※标签ID: cannontower<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "asleep" # ※标签ID: asleep<br>※直译名: <br>※详述: 表示一个生物或物品处于睡眠状态<br>※分类: 生物 | Mobs<br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1093,7 +1093,7 @@
 ---| "mermprince" # ※标签ID: mermprince<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "maxwellnottalking" # ※标签ID: maxwellnottalking<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "merm_builder" # ※标签ID: merm_builder<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "controlled_burner" # ※标签ID: controlled_burner<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "controlled_burner" # ※标签ID: controlled_burner<br>※直译名: 可控燃烧<br>※详述: 技能树标签。薇洛点亮技能【可控燃烧】后，会被加上此标签。此标签见名知义，有此标签的角色放的火不会蔓延等。如果直接给你的角色加上此标签，则越过技能树拥有了薇洛的可控燃烧能力<br>※分类: 角色 | Character<br>※author: 小右
 ---| "crabking_claw" # ※标签ID: crabking_claw<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "meat_carcass" # ※标签ID: meat_carcass<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "mermbuffcast" # ※标签ID: mermbuffcast<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1119,7 +1119,7 @@
 ---| "readytosew" # ※标签ID: readytosew<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "boatrace_proximitybeacon" # ※标签ID: boatrace_proximitybeacon<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lightningblocker" # ※标签ID: lightningblocker<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "handyperson" # ※标签ID: handyperson<br>※直译名: 手巧的人<br>※详述: 有这个就可以搓胶布? 猜的<br>※分类: 角色 | Character<br>※author: lan<br>※拉取时间: 2024-12-11 15:04
+---| "handyperson" # ※标签ID: handyperson<br>※直译名: 手巧的人<br>※详述: 有这个就可以搓胶布? 猜的。【补充】你猜对了，此标签确实也用作builder_tag，薇诺娜有五个物品都需要建造者有此标签才可制作（专属物品其实并不专属，只是你标签不够）。另外此标签在挺多地方出现，估计和人物能力有关，能使用遥控器之类的？我对薇诺娜也不是很熟悉<br>※分类: 角色 | Character<br>※author: lan, ?
 ---| "lightflier" # ※标签ID: lightflier<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "lightbattery" # ※标签ID: lightbattery<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "evergreens" # ※标签ID: evergreens<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1142,7 +1142,7 @@
 ---| "maxwell" # ※标签ID: maxwell<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "hitched" # ※标签ID: hitched<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "_builder" # ※标签ID: _builder<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "nightmare" # ※标签ID: nightmare<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "nightmare" # ※标签ID: nightmare<br>※直译名: 梦魇<br>※详述: 梦魇生物具有该标签<br>※分类: 生物 | Mobs<br>※author: ♪
 ---| "kitcoonden" # ※标签ID: kitcoonden<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "crab" # ※标签ID: crab<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "heal_fertilize" # ※标签ID: heal_fertilize<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1152,7 +1152,7 @@
 ---| "drop_inventory_onpickup" # ※标签ID: drop_inventory_onpickup<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "halloweencandy" # ※标签ID: halloweencandy<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "guard" # ※标签ID: guard<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "MONKEY_CURSE_2" # ※标签ID: MONKEY_CURSE_2<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "MONKEY_CURSE_2" # ※标签ID: MONKEY_CURSE_2<br>※直译名: <br>※详述: 玩家接收猴子诅咒后的三个状态中的第二个状态，这个状态下玩家会有猴子手，关键词monkeyhands <br>※分类: 角色 | Character <br>※author: alt
 ---| "groundtargetblocker" # ※标签ID: groundtargetblocker<br>※直译名: <br>※详述: 阻止某个区域的地面目标被放置或使用<br>※分类: <br>※author: chihiro<br>※拉取时间: 2024-12-11 15:04
 ---| "dustmothfood" # ※标签ID: dustmothfood<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "inspectacleshatuser" # ※标签ID: inspectacleshatuser<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
@@ -1206,8 +1206,8 @@
 ---| "nightvision" # ※标签ID: nightvision<br>※直译名: 夜视<br>※详述: 鼹鼠帽的夜视效果<br>※分类: 物品 | Inventory Item<br>※author: Albe<br>※拉取时间: 2024-12-11 15:04
 ---| "canrepeatcast" # ※标签ID: canrepeatcast<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "ice_crack_fx" # ※标签ID: ice_crack_fx<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "bishop" # ※标签ID: bishop<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
----| "birdfeather" # ※标签ID: birdfeather<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
+---| "bishop" # ※标签ID: bishop<br>※直译名: 主教<br>※详述: 标记标签。原版中仅主教/远古主教有此标签。没分析错的话应该只有标记作用了<br>※分类: 生物 | Mobs<br>※author: 小右
+---| "birdfeather" # ※标签ID: birdfeather<br>※直译名: 鸟的羽毛<br>※详述: 标记标签。4种鸟毛，鸭毛，邪天翁毛有此标签。有此标签的物品还可与浣猫神龛交易（应该说供奉更准确，然后wiki说浣猫神龛将会成为一个制作站，允许玩家制作供奉分类中的部分物品）<br>※分类: 物品 | Inventory Item<br>※author: 小右
 ---| "small_livestock" # ※标签ID: small_livestock<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "beaverchewable" # ※标签ID: beaverchewable<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
 ---| "bearded" # ※标签ID: bearded<br>※直译名: <br>※详述: <br>※分类: <br>※author: <br>※拉取时间: 2024-12-11 15:04
