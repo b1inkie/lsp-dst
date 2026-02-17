@@ -673,3 +673,5 @@
 ---@field yotc_racestart component_yotc_racestart
 ---@field yotc_racestats component_yotc_racestats
 ---@field yotd_raceprizemanager component_yotd_raceprizemanager
+---@field luckitem component_luckitem
+---@field luckuser component_luckuser

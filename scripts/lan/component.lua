@@ -674,3 +674,5 @@
 ---| "yotc_racestart"
 ---| "yotc_racestats"
 ---| "yotd_raceprizemanager"
+---| "luckitem"
+---| "luckuser"
