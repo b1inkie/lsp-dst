@@ -83,7 +83,10 @@ StateGraphWrangler = _StateGraphWrangler
 ---------------------------------------------------------
 
 ---@class ActionHandler
----@overload fun(action, state, condition):...
+---@field action actiondata
+---@field state string|fun(inst:ent, action):(string|nil)
+---@field condition any
+---@overload fun(action:actiondata, state:string|fun(inst:ent, action):(string|nil), condition):...
 local _ActionHandler = {}
 
 ActionHandler = _ActionHandler
@@ -93,7 +96,10 @@ ActionHandler = _ActionHandler
 ---------------------------------------------------------
 
 ---@class EventHandler
----@overload fun(name, fn):...
+---@field event string
+---@field fn fun(inst:ent, data:table|nil, ...):...
+---@field processoer any
+---@overload fun(event:string, fn:fun(inst:ent, data:table|nil, ...), processor):...
 local _EventHandler = {}
 
 EventHandler = _EventHandler
@@ -103,7 +109,10 @@ EventHandler = _EventHandler
 ---------------------------------------------------------
 
 ---@class TimeEvent # sg timeline 用的时间点
----@overload fun(time: number, fn:fun(inst:ent)):...
+---@field time number
+---@field fn fun(inst:ent, ...)
+---@field defline string
+---@overload fun(time: number, fn:fun(inst:ent, ...)):...
 local _TimeEvent = {}
 
 TimeEvent = _TimeEvent
@@ -116,12 +125,12 @@ TimeEvent = _TimeEvent
 ---@field name string #
 ---@field tags nil|string[] #
 ---@field server_states nil|string[] # #V2C client_prediction
----@field onenter nil|function # 
----@field timeline table|nil # 请使用 `TimeEvent`, 来构造表内的元素
----@field events table|nil # 请使用 `EventHandler`, 来构造表内的元素
----@field onexit nil|function # 
----@field onupdate nil|function # 
----@field ontimeout nil|function # 
+---@field onenter nil|fun(inst:ent, ...) # 
+---@field timeline TimeEvent[]|nil #
+---@field events EventHandler[]|nil #
+---@field onexit nil|fun(inst:ent, ...) # 
+---@field onupdate nil|fun(inst:ent, ...) # 
+---@field ontimeout nil|fun(inst:ent, ...) # 
 
 ---@class State
 ---@field inst ent
@@ -143,11 +152,16 @@ State = _State
 ---------------------------------------------------------
 
 ---@class StateGraph
----@overload fun(name, states, events, defaultstate, actionhandlers):...
+---@field states table<string, State_args>
+---@field events table<string, EventHandler>
+---@field actionhandlers table<string, ActionHandler>
+---@overload fun(name:string, states:State_args[]|nil, events:EventHandler[]|nil, defaultstate:string|nil, actionhandlers:ActionHandler[]|nil):...
 local _StateGraph = {}
 
 ---
 ---
+---@return string
+---@nodiscard
 ---author: 
 function _StateGraph:__tostring() end
 

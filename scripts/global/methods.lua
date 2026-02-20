@@ -5171,8 +5171,8 @@ end
 ---
 ---添加修改修改状态图(SG)API通用函数片段,初始化时最后执行
 ---
----@param stategraph idk 
----@param fn idk 
+---@param stategraph string
+---@param fn fun(sg: StateGraph)
 ---所在文件: scripts/modutil.lua
 function AddStategraphPostInit(stategraph,fn)
 end
