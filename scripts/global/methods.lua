@@ -5097,7 +5097,7 @@ Action = {}
 ---添加动作API
 ---@param id_or_act string|actiondata 动作id或动作Action
 ---@param str string|nil 动作名,如果参数1为Action则不需要
----@param fn fun(act: actiondata):(boolean)|nil 如果参数1为Action则不需要
+---@param fn fun(act: BufferedAction):(boolean|nil)|nil 如果参数1为Action则不需要
 ---@return actiondata
 ---author: Runar \
 ---所在文件: scripts/modutil.lua
@@ -13815,3 +13815,5 @@ end
 ---@param str any
 ---@return integer
 function hash(str) end
+
+ACTIONS_MAP_REMAP = {}

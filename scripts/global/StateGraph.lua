@@ -86,7 +86,7 @@ StateGraphWrangler = _StateGraphWrangler
 ---@field action actiondata
 ---@field state string|fun(inst:ent, action):(string|nil)
 ---@field condition any
----@overload fun(action:actiondata, state:string|fun(inst:ent, action):(string|nil), condition):...
+---@overload fun(action:actiondata, state:string|fun(inst:ent, action):(string|nil)|nil, condition):...
 local _ActionHandler = {}
 
 ActionHandler = _ActionHandler

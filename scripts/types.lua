@@ -112,8 +112,15 @@ function Vector3:IsVector3() end
 ---@field [3] number # B [0~1]
 ---@field [4] number # A [0~1]
 
----@class DynamicPosition
+---@class DynamicPosition # 动态位置 //TODO: 待补充
+---@field local_pt Vector3
+---@field walkable_platform any
+---@operator eq(DynamicPosition):boolean
+---@operator tostring():string
 DynamicPosition = {}
+
+---@return Vector3
+function DynamicPosition:GetPosition() end
 
 ---@class EmitterManager
 EmitterManager = {}
