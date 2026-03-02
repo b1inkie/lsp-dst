@@ -1355,6 +1355,7 @@ LUABIT =
 
 
 -- keep up to date with COLLISION_GROUP in simconstants.h
+---@enum COLLISION_MASK
 COLLISION =
 {
     GROUND            = 32,

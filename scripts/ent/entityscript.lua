@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ent
+---@field bufferedaction BufferedAction|nil
 local entityscript = {}
 
 ---EntityScript: 
