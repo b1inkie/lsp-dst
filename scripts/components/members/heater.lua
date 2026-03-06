@@ -2,7 +2,7 @@
 
 ---@class component_heater: component_base
 ---@field inst idk
----@field heat idk
+---@field heat number|nil # 
 ---@field heatfn fun(this:ent,observer:ent|nil):number
 ---@field equippedheat idk
 ---@field equippedheatfn idk

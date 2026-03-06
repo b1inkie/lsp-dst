@@ -234,11 +234,14 @@ end
 function replica_inventory:ReturnActiveItem()
 end
 
----
----@param prefab idk # 
----@param amount idk # 
----@param checkallcontainers idk # 
----author: 
+---检查库存是否有足够的物品,以及获取物品数量
+---@param prefab PrefabID # 
+---@param amount integer # 
+---@param checkallcontainers boolean|nil # 
+---@return boolean enough # 是否有足够的物品
+---@return integer num_found # 物品数量
+---@nodiscard
+---author: lan
 function replica_inventory:Has(prefab,amount,checkallcontainers)
 end
 

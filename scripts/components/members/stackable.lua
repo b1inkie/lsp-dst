@@ -17,8 +17,10 @@ end
 function stackable:RoomLeft()
 end
 
----
----author: 
+---返回当前堆叠数量
+---@return integer # 
+---@nodiscard
+---author: lan
 function stackable:StackSize()
 end
 

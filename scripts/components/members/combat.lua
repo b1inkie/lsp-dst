@@ -50,6 +50,7 @@
 ---@field temppos idk
 ---@field lastdoattacktime idk
 ---@field customdamagemultfn fun(inst:ent, target:(ent|nil), weapon:(ent|nil), multiplier, mount:(boolean|nil)):(number)|nil # 战斗倍率修正
+---@field onkilledbyother fun(this:ent,attacker:ent)|nil # 被kill时回调,在`GetAttacked`内调用 <br> 幽默klei程序员, 有的地方是监听的killed 有的地方是写这个函数的, 纯傻比
 local combat = {}
 
 ---

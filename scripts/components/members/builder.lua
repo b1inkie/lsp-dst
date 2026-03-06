@@ -16,7 +16,8 @@
 ---@field exclude_tags idk
 ---@field temptechbonus_count idk
 ---@field override_current_prototyper idk
----@field science_bonus integer|nil # 自带科技, 例如老奶奶这个就为 `1`
+---@field science_bonus integer|nil # 自带科技, 1本为`1`
+---@field magic_bonus integer|nil # 自带魔法, 1本为`3`
 local builder = {}
 
 ---获取角色的永久科技加成

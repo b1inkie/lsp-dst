@@ -4,7 +4,7 @@
 ---@overload fun(atlas:idk, normal:idk, focus:idk, disabled:idk, down:idk, selected:idk, scale:idk, offset:idk): widget_imagebutton
 ---@field _ctor function #
 ---@field image widget_image # 按钮使用的图片
----@field scale_on_focus idk #
+---@field scale_on_focus boolean # 聚焦时,是否缩放图片
 ---@field move_on_click idk #
 ---@field focus_scale idk #
 ---@field normal_scale idk #
