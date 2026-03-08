@@ -13,8 +13,10 @@
 ---@field fxtime idk
 ---@field dapperness idk
 ---@field externalmodifiers SourceModifierList # 加算修饰san变化
----@field inducedinsanity idk
+---@field inducedinsanity boolean|nil
 ---@field inducedinsanity_sources idk
+---@field inducedlunacy boolean|nil
+---@field inducedlunacy_sources idk
 ---@field night_drain_mult number # 夜晚掉san乘数,填`0`则不掉san
 ---@field neg_aura_mult idk
 ---@field neg_aura_modifiers idk

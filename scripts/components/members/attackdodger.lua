@@ -9,9 +9,9 @@
 ---@field cooldowntask idk
 local attackdodger = {}
 
----
----@param n idk # 
----author: 
+---设置闪避冷却
+---@param n number # 
+---author: Runar
 function attackdodger:SetCooldownTime(n)
 end
 
@@ -21,9 +21,15 @@ end
 function attackdodger:CanDodge(attacker)
 end
 
----
----@param fn idk # 
----author: 
+---设置闪避回调
+---@param fn fun(inst:ent, attacker:(ent|nil)) #
+---author: Runar
+function attackdodger:SetOnDodgeFn(fn)
+end
+
+---设置闪避检查
+---@param fn fun(inst:ent, attacker:(ent|nil)):(boolean|nil) #
+---author: Runar
 function attackdodger:SetCanDodgeFn(fn)
 end
 
