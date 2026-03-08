@@ -13817,3 +13817,9 @@ end
 function hash(str) end
 
 ACTIONS_MAP_REMAP = {}
+
+---实体是否免疫电击 \
+---@param inst ent
+---@return boolean
+---author: Runar
+function IsEntityElectricImmune(inst) end

@@ -640,6 +640,21 @@ end
 function entityscript:PushEvent(event,data)
 end
 
+---EntityScript: 推送事件
+---@param event eventID # 推送的事件
+---@param data nil|table # 推送时传入的表,可不填
+---@param immdiate boolean|nil # 是否立即处理
+---author: Runar
+function entityscript:PushEvent_Internal(event,data,immdiate)
+end
+
+---EntityScript: 推送事件(立即处理)
+---@param event eventID # 推送的事件
+---@param data nil|table # 推送时传入的表,可不填
+---author: Runar
+function entityscript:PushEventImmediate(event, data)
+end
+
 ---EntityScript: 获取当前皮肤所在的dyn包名, 可以获取同名贴图
 ---author: Runar
 function entityscript:GetSkinBuild()
