@@ -144,7 +144,7 @@ function EmitterManager:Wake(inst) end
 
 ---@alias num_string number # 会被转换为字符串的数值
 
----@class ScrapbookData # 图鉴数据
+---@class ScrapbookData # 图鉴数据 \
 ---@field name string #
 ---@field tex string # `.tex`
 ---@field prefab string #
@@ -223,3 +223,31 @@ function EmitterManager:Wake(inst) end
 ---@field weapondamage number|string|nil
 ---@field weaponrange number|nil
 ---@field workable string|nil
+---author: Runar
+
+---@class skill_def # 技能树技能类型 \
+---@field title string|nil # Can't be nil
+---@field desc string|nil # Can't be nil
+---@field icon string|nil # skill_node_only
+---@field pos number[]
+---@field group string
+---@field tags string[]|nil # skill_node_only
+---@field root boolean|nil
+---@field lock_open fun(prefabname:string, activatedskills:string[], readonly:boolean|nil):(boolean)|nil
+---@field onactivate fun(inst:ent, fromload:boolean|nil)|nil
+---@field ondeactivate fun(inst:ent, fromload:boolean|nil)|nil
+---@field connects string[]|nil
+---@field defaultfocus boolean|nil
+---author: Runar
+
+---@class SkillTreeFns # 技能树公共方法表 \
+---@field CountSkills fun(prefabname:string, activatedskills:string[]):integer
+---@field HasTag fun(prefab:string, targettag:string, activatedskills:string[]):boolean
+---@field CountTags  fun(prefab:string, targettag:string, activatedskills):integer
+---@field SkillHasTags  fun(skill, tag:string, prefabname:string):boolean
+---@field MakeFuelWeaverLock  fun(extra_data, not_root):skill_def
+---@field MakeNoShadowLock  fun(extra_data:table, not_root:(boolean|nil)):skill_def
+---@field MakeCelestialChampionLock  fun(extra_data:table, not_root:(boolean|nil)):skill_def
+---@field MakeNoLunarLock  fun(extra_data:table, not_root:(boolean|nil)):skill_def
+---@field MakePurelyVisualLock  fun(skills, locknametoreplicate, locknamesuffix):skill_def
+---author: Runar

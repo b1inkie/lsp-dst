@@ -2,66 +2,66 @@
 
 ---@class ent
 ---@field bufferedaction BufferedAction|nil
-local entityscript = {}
+EntityScript = {}
 
 ---EntityScript: 
 ---@param action idk # 
 ---author: 
-function entityscript:SetInherentSceneAction(action)
+function EntityScript:SetInherentSceneAction(action)
 end
 
 ---EntityScript: 
 ---@param target idk # 
 ---author: 
-function entityscript:StackableSkinHack(target)
+function EntityScript:StackableSkinHack(target)
 end
 
 ---EntityScript: 解除与另一实体的双向子绑定
 ---@param child ent # 
 ---author: Runar
-function entityscript:RemoveChild(child)
+function EntityScript:RemoveChild(child)
 end
 
 ---EntityScript: 获取坐标
 ---@return Vector3
 ---@nodiscard
 ---author: 
-function entityscript:GetPosition()
+function EntityScript:GetPosition()
 end
 
 ---EntityScript: 启用组件更新
 ---@param cmp table # 
 ---@param do_static_update boolean|nil # 执行静态更新
 ---author: Runar
-function entityscript:StartUpdatingComponent(cmp, do_static_update)
+function EntityScript:StartUpdatingComponent(cmp, do_static_update)
 end
 
 ---EntityScript: 移除所有监听
 ---author: lan
-function entityscript:RemoveAllEventCallbacks()
+function EntityScript:RemoveAllEventCallbacks()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetIsWet()
+function EntityScript:GetIsWet()
 end
 
 ---EntityScript: 
 ---@param include_water idk # 
 ---@param floating_platforms_are_not_passable idk # 
 ---author: 
-function entityscript:IsOnPassablePoint(include_water,floating_platforms_are_not_passable)
+function EntityScript:IsOnPassablePoint(include_water,floating_platforms_are_not_passable)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:PerformBufferedAction()
+function EntityScript:PerformBufferedAction()
 end
 
 ---EntityScript: 
 ---@param name idk # 
 ---author: 
-function entityscript:GetDebuff(name)
+function EntityScript:GetDebuff(name)
 end
 
 ---EntityScript: 施加buff
@@ -72,13 +72,13 @@ end
 ---@param pre_buff_fn idk # 
 ---如果你用的是插件生成的模版,那么名字前面还要加上 `buff_` 前缀, 这一点和官方是一致的<br>
 ---author: lan
-function entityscript:AddDebuff(name,prefab,data,skip_test,pre_buff_fn)
+function EntityScript:AddDebuff(name,prefab,data,skip_test,pre_buff_fn)
 end
 
 ---EntityScript: 
 ---@param name idk # 
 ---author: 
-function entityscript:RemoveDebuff(name)
+function EntityScript:RemoveDebuff(name)
 end
 
 ---EntityScript: 是否有某个buff
@@ -86,42 +86,42 @@ end
 ---@return boolean
 ---@nodiscard
 ---author: lan
-function entityscript:HasDebuff(name)
+function EntityScript:HasDebuff(name)
 end
 
 ---EntityScript: 
 ---@param radius idk # 
 ---author: 
-function entityscript:SetDeploySmartRadius(radius)
+function EntityScript:SetDeploySmartRadius(radius)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:DebuffsEnabled()
+function EntityScript:DebuffsEnabled()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:Show()
+function EntityScript:Show()
 end
 
 ---EntityScript: 获取预制物应当展示的名字
 ---@return string
 ---@nodiscard
 ---author: lan
-function entityscript:GetDisplayName()
+function EntityScript:GetDisplayName()
 end
 
 ---EntityScript: 
 ---@param tag tagID # 
 ---@param condition idk # 
 ---author: 
-function entityscript:AddOrRemoveTag(tag,condition)
+function EntityScript:AddOrRemoveTag(tag,condition)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetCurrentTileType()
+function EntityScript:GetCurrentTileType()
 end
 
 ---EntityScript: 实体添加组件
@@ -130,43 +130,43 @@ end
 ---@param _ignore `T`|nil # 只是为了返回对应的类型,以后再想其他解决办法
 ---@return T # 组件
 ---author: lan
-function entityscript:AddComponent(name,_ignore)
+function EntityScript:AddComponent(name,_ignore)
 end
 
 ---EntityScript: 
 ---@param cmp idk # 
 ---author: 
-function entityscript:StopUpdatingComponent_Deferred(cmp)
+function EntityScript:StopUpdatingComponent_Deferred(cmp)
 end
 
 ---EntityScript: 
 ---@param state idk # 
 ---author: 
-function entityscript:ForceOutOfLimbo(state)
+function EntityScript:ForceOutOfLimbo(state)
 end
 
 ---EntityScript: 
 ---@param name idk # 
 ---@param value idk # 
 ---author: 
-function entityscript:SetClientSideInventoryImageOverrideFlag(name,value)
+function EntityScript:SetClientSideInventoryImageOverrideFlag(name,value)
 end
 
 ---EntityScript: 
 ---@param imagenamehash idk # 
 ---author: 
-function entityscript:GetClientSideInventoryImageOverride(imagenamehash)
+function EntityScript:GetClientSideInventoryImageOverride(imagenamehash)
 end
 
 ---EntityScript: 判断实体是否有效
 ---@return boolean # 实体是有效的
 ---author: lan(非常非常重要且常用的判断,无论是扫实体,还是判断对象存活,等等都应该加上这个判断)
-function entityscript:IsValid()
+function EntityScript:IsValid()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:IsAsleep()
+function EntityScript:IsAsleep()
 end
 
 ---EntityScript: 
@@ -174,34 +174,34 @@ end
 ---@param doer idk # 
 ---@param target idk # 
 ---author: 
-function entityscript:OnUsedAsItem(action,doer,target)
+function EntityScript:OnUsedAsItem(action,doer,target)
 end
 
 ---EntityScript: 
 ---@param taskinfo idk # 
 ---author: 
-function entityscript:TimeRemainingInTask(taskinfo)
+function EntityScript:TimeRemainingInTask(taskinfo)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetRotation()
+function EntityScript:GetRotation()
 end
 
 ---EntityScript: 添加与另一实体的双向子绑定
 ---@param child ent # 
 ---author: Runar
-function entityscript:AddChild(child)
+function EntityScript:AddChild(child)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:StopAllWatchingWorldStates()
+function EntityScript:StopAllWatchingWorldStates()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:HasClientSideInventoryImageOverrides()
+function EntityScript:HasClientSideInventoryImageOverrides()
 end
 
 ---EntityScript: 
@@ -210,24 +210,24 @@ end
 ---@param destinventoryimage idk # 
 ---@param destatlas idk # 
 ---author: 
-function entityscript:SetClientSideInventoryImageOverride(flagname,srcinventoryimage,destinventoryimage,destatlas)
+function EntityScript:SetClientSideInventoryImageOverride(flagname,srcinventoryimage,destinventoryimage,destatlas)
 end
 
 ---EntityScript: 
 ---@param name idk # 
 ---author: 
-function entityscript:SetStateGraph(name)
+function EntityScript:SetStateGraph(name)
 end
 
 ---EntityScript: 恢复被隐藏的实体
 ---author: Runar
-function entityscript:ReturnToScene()
+function EntityScript:ReturnToScene()
 end
 
 ---EntityScript: 实体移除
 ---
 ---author: lan
-function entityscript:Remove()
+function EntityScript:Remove()
 end
 
 ---EntityScript: 
@@ -235,41 +235,41 @@ end
 ---@param fn idk # 
 ---@param ... idk # 
 ---author: 
-function entityscript:DoStaticTaskInTime(time,fn,...)
+function EntityScript:DoStaticTaskInTime(time,fn,...)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetBasicDisplayName()
+function EntityScript:GetBasicDisplayName()
 end
 
 ---EntityScript: 
 ---@param data idk # 
 ---@param newents idk # 
 ---author: 
-function entityscript:SetPersistData(data,newents)
+function EntityScript:SetPersistData(data,newents)
 end
 
 ---EntityScript: 
 ---@param spacing idk # 
 ---author: 
-function entityscript:SetDeployExtraSpacing(spacing)
+function EntityScript:SetDeployExtraSpacing(spacing)
 end
 
 ---EntityScript: 
 ---@param inst idk # 
 ---author: 
-function entityscript:GetDistanceSqToInst(inst)
+function EntityScript:GetDistanceSqToInst(inst)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetPersistData()
+function EntityScript:GetPersistData()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:ClearBufferedAction()
+function EntityScript:ClearBufferedAction()
 end
 
 ---EntityScript: 
@@ -277,31 +277,31 @@ end
 ---@param y idk # 
 ---@param z idk # 
 ---author: 
-function entityscript:GetAngleToPoint(x,y,z)
+function EntityScript:GetAngleToPoint(x,y,z)
 end
 
 ---EntityScript: 
 ---@param spacing idk # 
 ---author: 
-function entityscript:SetTerraformExtraSpacing(spacing)
+function EntityScript:SetTerraformExtraSpacing(spacing)
 end
 
 ---EntityScript: 
 ---@param radius idk # 
 ---author: 
-function entityscript:PutBackOnGround(radius)
+function EntityScript:PutBackOnGround(radius)
 end
 
 ---EntityScript: 
 ---@param tag tagID # 
 ---author: 
-function entityscript:RemoveTag(tag)
+function EntityScript:RemoveTag(tag)
 end
 
 ---EntityScript: 
 ---@param act idk # 
 ---author: 
-function entityscript:RemoveInherentAction(act)
+function EntityScript:RemoveInherentAction(act)
 end
 
 ---EntityScript: 实体是否有这些标签
@@ -309,32 +309,32 @@ end
 ---@return boolean
 ---@nodiscard
 ---author: lan
-function entityscript:HasTags(...)
+function EntityScript:HasTags(...)
 end
 
 ---EntityScript: 
 ---@param lightThresh idk # 
 ---author: 
-function entityscript:IsLightGreaterThan(lightThresh)
+function EntityScript:IsLightGreaterThan(lightThresh)
 end
 
 ---EntityScript: 实体是否有某个标签
 ---@param tag tagID # 标签
 ---@return boolean # 是否有标签
 ---author: lan
-function entityscript:HasTag(tag)
+function EntityScript:HasTag(tag)
 end
 
 ---EntityScript: 
 ---@param act idk # 
 ---author: 
-function entityscript:AddInherentAction(act)
+function EntityScript:AddInherentAction(act)
 end
 
 ---EntityScript: 
 ---@param name idk # 
 ---author: 
-function entityscript:RunScript(name)
+function EntityScript:RunScript(name)
 end
 
 ---EntityScript: 监听事件
@@ -342,83 +342,83 @@ end
 ---@param fn fun(this: ent,data: nil|table) # 
 ---@param source idk # 监听对象,不填则监听自身
 ---author: lan
-function entityscript:ListenForEvent(event,fn,source)
+function EntityScript:ListenForEvent(event,fn,source)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:IsInLimbo()
+function EntityScript:IsInLimbo()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetBufferedAction()
+function EntityScript:GetBufferedAction()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetAdjectivedName()
+function EntityScript:GetAdjectivedName()
 end
 
 ---EntityScript: 
 ---@param inst idk # 
 ---author: 
-function entityscript:CanInteractWith(inst)
+function EntityScript:CanInteractWith(inst)
 end
 
 ---EntityScript: 获取当前实体所站的平台(例如船只,目前我只知道船,总之可以用来判断玩家是不是在陆地)
 ---@return ent|nil
 ---author: lan
-function entityscript:GetCurrentPlatform()
+function EntityScript:GetCurrentPlatform()
 end
 
 ---EntityScript: 
 ---@param allow_boats idk # 
 ---author: 
-function entityscript:IsOnOcean(allow_boats)
+function EntityScript:IsOnOcean(allow_boats)
 end
 
 ---EntityScript: 
 ---@param var idk # 
 ---@param fn idk # 
 ---author: 
-function entityscript:StopWatchingWorldState(var,fn)
+function EntityScript:StopWatchingWorldState(var,fn)
 end
 
 ---EntityScript: 实体移除组件
 ---@param name string # 组件名
 ---author: lan
-function entityscript:RemoveComponent(name)
+function EntityScript:RemoveComponent(name)
 end
 
 ---EntityScript: 
 ---@param action idk # 
 ---author: 
-function entityscript:CanDoAction(action)
+function EntityScript:CanDoAction(action)
 end
 
 ---EntityScript: 
 ---@param dt idk # 
 ---author: 
-function entityscript:LongUpdate(dt)
+function EntityScript:LongUpdate(dt)
 end
 
 ---EntityScript: 玩家制作/建造时的回调方法, 同时调用所有组件的建造回调
 ---@param builder ent # 
 ---author: Runar
-function entityscript:OnBuilt(builder)
+function EntityScript:OnBuilt(builder)
 end
 
 ---EntityScript: 取消以原因reason的StopBrain
 ---author: Runar
-function entityscript:RestartBrain(reason)
+function EntityScript:RestartBrain(reason)
 end
 
 ---EntityScript: 
 ---@param target idk # 
 ---@param distance idk # 
 ---author: 
-function entityscript:GetPositionAdjacentTo(target,distance)
+function EntityScript:GetPositionAdjacentTo(target,distance)
 end
 
 ---EntityScript: 实体是否有其中一个标签
@@ -426,34 +426,34 @@ end
 ---@return boolean
 ---@nodiscard
 ---author: lan
-function entityscript:HasOneOfTags(...)
+function EntityScript:HasOneOfTags(...)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetSkinName()
+function EntityScript:GetSkinName()
 end
 
 ---EntityScript: 
 ---@param bufferedaction idk # 
 ---author: 
-function entityscript:PushBufferedAction(bufferedaction)
+function EntityScript:PushBufferedAction(bufferedaction)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:PerformPreviewBufferedAction()
+function EntityScript:PerformPreviewBufferedAction()
 end
 
 ---EntityScript: 
 ---@param cmp idk # 
 ---author: 
-function entityscript:GetComponentName(cmp)
+function EntityScript:GetComponentName(cmp)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetBoatIntersectingPhysics()
+function EntityScript:GetBoatIntersectingPhysics()
 end
 
 ---EntityScript: 
@@ -461,19 +461,19 @@ end
 ---@param fn idk # 
 ---@param ... idk # 
 ---author: 
-function entityscript:ResumeTask(time,fn,...)
+function EntityScript:ResumeTask(time,fn,...)
 end
 
 ---EntityScript: 
 ---@param brainfn idk # 
 ---author: 
-function entityscript:SetBrain(brainfn)
+function EntityScript:SetBrain(brainfn)
 end
 
 ---EntityScript: 
 ---@param time idk # 
 ---author: 
-function entityscript:GetTaskInfo(time)
+function EntityScript:GetTaskInfo(time)
 end
 
 ---EntityScript: 
@@ -481,7 +481,7 @@ end
 ---@param eventname eventID # 
 ---@param data idk # 
 ---author: 
-function entityscript:PushEventInTime(time,eventname,data)
+function EntityScript:PushEventInTime(time,eventname,data)
 end
 
 ---EntityScript: 倒计时
@@ -490,55 +490,55 @@ end
 ---@param ... idk # 
 ---@return Periodic
 ---author: lan
-function entityscript:DoTaskInTime(time,fn,...)
+function EntityScript:DoTaskInTime(time,fn,...)
 end
 
 ---EntityScript: 
 ---@param radius idk # 
 ---author: 
-function entityscript:SetGroundTargetBlockerRadius(radius)
+function EntityScript:SetGroundTargetBlockerRadius(radius)
 end
 
 ---EntityScript: 
 ---@param action idk # 
 ---author: 
-function entityscript:SetInherentSceneAltAction(action)
+function EntityScript:SetInherentSceneAltAction(action)
 end
 
 ---EntityScript: 
 ---@param child idk # 
 ---author: 
-function entityscript:RemovePlatformFollower(child)
+function EntityScript:RemovePlatformFollower(child)
 end
 
 ---EntityScript: 
 ---@param dest idk # 
 ---@param force idk # 
 ---author: 
-function entityscript:FaceAwayFromPoint(dest,force)
+function EntityScript:FaceAwayFromPoint(dest,force)
 end
 
 ---EntityScript: 修改实体的prefab, 保存后将以被设置的prefab加载
 ---@param name PrefabID # 
 ---author: Runar
-function entityscript:SetPrefabName(name)
+function EntityScript:SetPrefabName(name)
 end
 
 ---EntityScript: 
 ---@param tag tagID # 
 ---author: 
-function entityscript:AddTag(tag)
+function EntityScript:AddTag(tag)
 end
 
 ---EntityScript: 
 ---@param cmp idk # 
 ---author: 
-function entityscript:StopWallUpdatingComponent(cmp)
+function EntityScript:StopWallUpdatingComponent(cmp)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:CancelAllPendingTasks()
+function EntityScript:CancelAllPendingTasks()
 end
 
 ---EntityScript: 
@@ -547,46 +547,46 @@ end
 ---@param initialdelay idk # 
 ---@param ... idk # 
 ---author: 
-function entityscript:DoStaticPeriodicTask(time,fn,initialdelay,...)
+function EntityScript:DoStaticPeriodicTask(time,fn,initialdelay,...)
 end
 
 ---EntityScript: 
 ---@param isalive idk # 
 ---author: 
-function entityscript:GetDistanceSqToClosestPlayer(isalive)
+function EntityScript:GetDistanceSqToClosestPlayer(isalive)
 end
 
 ---EntityScript: 
 ---@param bufferedaction idk # 
 ---author: 
-function entityscript:PreviewBufferedAction(bufferedaction)
+function EntityScript:PreviewBufferedAction(bufferedaction)
 end
 
 ---EntityScript: 
 ---@param range idk # 
 ---@param isalive idk # 
 ---author: 
-function entityscript:IsNearPlayer(range,isalive)
+function EntityScript:IsNearPlayer(range,isalive)
 end
 
 ---EntityScript: 
 ---@param radius idk # 
 ---author: 
-function entityscript:SetPhysicsRadiusOverride(radius)
+function EntityScript:SetPhysicsRadiusOverride(radius)
 end
 
 ---EntityScript: 
 ---@return table, table
 ---@nodiscard
 ---author: 
-function entityscript:GetSaveRecord()
+function EntityScript:GetSaveRecord()
 end
 
 ---EntityScript: 
 ---@param otherinst idk # 
 ---@param dist idk # 
 ---author: 
-function entityscript:IsNear(otherinst,dist)
+function EntityScript:IsNear(otherinst,dist)
 end
 
 ---EntityScript: 
@@ -594,7 +594,7 @@ end
 ---@param y idk # 
 ---@param z idk # 
 ---author: 
-function entityscript:FacePoint(x,y,z)
+function EntityScript:FacePoint(x,y,z)
 end
 
 ---EntityScript: 获取物理半径
@@ -602,12 +602,12 @@ end
 ---@return number
 ---@nodiscard
 ---author: lan
-function entityscript:GetPhysicsRadius(default)
+function EntityScript:GetPhysicsRadius(default)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetDebugString()
+function EntityScript:GetDebugString()
 end
 
 ---EntityScript: 强制朝向点 <br>(贴地动画,例如飞刀,请在spriter中,将红点调至飞刀最左侧,放置原点,水平朝向x轴正方向) <br> 注意: 先设置位置,再设置朝向
@@ -615,13 +615,13 @@ end
 ---@param y number # 
 ---@param z number # 
 ---author: lan
-function entityscript:ForceFacePoint(x,y,z)
+function EntityScript:ForceFacePoint(x,y,z)
 end
 
 ---EntityScript: 
 ---@param isalive idk # 
 ---author: 
-function entityscript:GetNearestPlayer(isalive)
+function EntityScript:GetNearestPlayer(isalive)
 end
 
 ---EntityScript: 
@@ -630,14 +630,14 @@ end
 ---@param z idk # 
 ---@return number
 ---author: 
-function entityscript:GetDistanceSqToPoint(x,y,z)
+function EntityScript:GetDistanceSqToPoint(x,y,z)
 end
 
 ---EntityScript: 推送事件
 ---@param event eventID # 推送的事件
 ---@param data nil|table # 推送时传入的表,可不填
 ---author: lan
-function entityscript:PushEvent(event,data)
+function EntityScript:PushEvent(event,data)
 end
 
 ---EntityScript: 推送事件
@@ -645,59 +645,59 @@ end
 ---@param data nil|table # 推送时传入的表,可不填
 ---@param immdiate boolean|nil # 是否立即处理
 ---author: Runar
-function entityscript:PushEvent_Internal(event,data,immdiate)
+function EntityScript:PushEvent_Internal(event,data,immdiate)
 end
 
 ---EntityScript: 推送事件(立即处理)
 ---@param event eventID # 推送的事件
 ---@param data nil|table # 推送时传入的表,可不填
 ---author: Runar
-function entityscript:PushEventImmediate(event, data)
+function EntityScript:PushEventImmediate(event, data)
 end
 
 ---EntityScript: 获取当前皮肤所在的dyn包名, 可以获取同名贴图
 ---author: Runar
-function entityscript:GetSkinBuild()
+function EntityScript:GetSkinBuild()
 end
 
 ---EntityScript: 指定展示用的覆盖prefab, 不影响真实prefab
 ---@param nameoverride PrefabID # 
 ---author: Runar
-function entityscript:SetPrefabNameOverride(nameoverride)
+function EntityScript:SetPrefabNameOverride(nameoverride)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:Hide()
+function EntityScript:Hide()
 end
 
 ---EntityScript: 
 ---@param cmp idk # 
 ---author: 
-function entityscript:StopUpdatingComponent(cmp)
+function EntityScript:StopUpdatingComponent(cmp)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:IsOnValidGround()
+function EntityScript:IsOnValidGround()
 end
 
 ---EntityScript: 
 ---@param var idk # 
 ---@param fn idk # 
 ---author: 
-function entityscript:WatchWorldState(var,fn)
+function EntityScript:WatchWorldState(var,fn)
 end
 
 ---EntityScript: 
 ---@param cmp idk # 
 ---author: 
-function entityscript:StartWallUpdatingComponent(cmp)
+function EntityScript:StartWallUpdatingComponent(cmp)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetBrainString()
+function EntityScript:GetBrainString()
 end
 
 ---EntityScript: 移除监听器
@@ -705,57 +705,57 @@ end
 ---@param fn idk # 函数名
 ---@param source idk # 移除的对象,不填则是自身
 ---author: lan(显而易见,如果ListenForEvent中使用的是匿名函数,则无法移除)
-function entityscript:RemoveEventCallback(event,fn,source)
+function EntityScript:RemoveEventCallback(event,fn,source)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:ClearStateGraph()
+function EntityScript:ClearStateGraph()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:KillTasks()
+function EntityScript:KillTasks()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:__tostring()
+function EntityScript:__tostring()
 end
 
 ---EntityScript: 以原因reason停止Brain
 ---@param reason string|nil #
 ---author: Runar, lan
-function entityscript:StopBrain(reason)
+function EntityScript:StopBrain(reason)
 end
 
 ---EntityScript: 创建线程，线程事务崩溃不影响游戏进程
 ---@param fn function # 
 ---@return task #线程任务
 ---author: Runar
-function entityscript:StartThread(fn)
+function EntityScript:StartThread(fn)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetPlatformFollowers()
+function EntityScript:GetPlatformFollowers()
 end
 
 ---EntityScript: 停止并将实体从世界上隐藏, 可以恢复
 ---author: Runar
-function entityscript:RemoveFromScene()
+function EntityScript:RemoveFromScene()
 end
 
 ---EntityScript: 
 ---@param child idk # 
 ---author: 
-function entityscript:AddPlatformFollower(child)
+function EntityScript:AddPlatformFollower(child)
 end
 
 ---EntityScript: 
 ---@param name idk # 
 ---author: 
-function entityscript:SpawnChild(name)
+function EntityScript:SpawnChild(name)
 end
 
 ---EntityScript: 周期定时器
@@ -765,34 +765,34 @@ end
 ---@param ... idk # 
 ---@return Periodic
 ---author: lan
-function entityscript:DoPeriodicTask(time,fn,initialdelay,...)
+function EntityScript:DoPeriodicTask(time,fn,initialdelay,...)
 end
 
 ---EntityScript: 
 ---@param newents idk # 
 ---@param savedata idk # 
 ---author: 
-function entityscript:LoadPostPass(newents,savedata)
+function EntityScript:LoadPostPass(newents,savedata)
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetTimeAlive()
+function EntityScript:GetTimeAlive()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:IsAcidSizzling()
+function EntityScript:IsAcidSizzling()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:GetAdjective()
+function EntityScript:GetAdjective()
 end
 
 ---EntityScript: 
 ---author: 
-function entityscript:IsInLight()
+function EntityScript:IsInLight()
 end
 
 -----------------------------------
@@ -811,27 +811,25 @@ function EntityScript:ValidateReplicaComponent(name, cmp) end
 ---初始化复制组件
 ---@param name componentID #
 ---author: Runar
-function entityscript:ReplicateComponent(name) end
+function EntityScript:ReplicateComponent(name) end
 
 ---EntityScript(EntityReplica):
 ---取消复制组件
 ---author: Runar
-function entityscript:UnreplicateComponent(name) end
+function EntityScript:UnreplicateComponent(name) end
 
 ---EntityScript(EntityReplica):
 ---预始化复制组件
 ---@param name componentID # 
 ---author: Runar
-function entityscript:PrereplicateComponent(name) end
+function EntityScript:PrereplicateComponent(name) end
 
 ---EntityScript(EntityReplica):
 ---初始化复制实体
 ---author: Runar
-function entityscript:ReplicateEntity() end
+function EntityScript:ReplicateEntity() end
 
 ---EntityScript(EntityReplica):
 ---author:
-function entityscript:TryAttachClassifiedToReplicaComponent(classified, name) end
-
-EntityScript = entityscript
+function EntityScript:TryAttachClassifiedToReplicaComponent(classified, name) end
 

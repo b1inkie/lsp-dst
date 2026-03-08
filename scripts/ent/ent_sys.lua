@@ -1,208 +1,208 @@
 ---@meta
 
 ---@class ent_sys # 实体.entity
-local entity = {}
+Entity = {}
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetIsPredictingMovement(...)end
+function Entity:SetIsPredictingMovement(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddRoadManager(...)end
+function Entity:AddRoadManager(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddMiniMap(...)end
+function Entity:AddMiniMap(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddMiniMapEntity(...)end
+function Entity:AddMiniMapEntity(...)end
 
 ---@return Follower
 ---author: Runar
-function entity:AddFollower()end
+function Entity:AddFollower()end
 
 ---@return AnimState
 ---author: Runar
-function entity:AddAnimState()end
+function Entity:AddAnimState()end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetHistoryData(...)end
+function Entity:GetHistoryData(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddVideoWidget(...)end
+function Entity:AddVideoWidget(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddShardClient(...)end
+function Entity:AddShardClient(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:Show(...)end
+function Entity:Show(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetParent(...)end
+function Entity:SetParent(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddEnvelopeManager(...)end
+function Entity:AddEnvelopeManager(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetClickable(...)end
+function Entity:SetClickable(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:FrustumCheck(...)end
+function Entity:FrustumCheck(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetDebugString(...)end
+function Entity:GetDebugString(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:FlattenMovementPrediction(...)end
+function Entity:FlattenMovementPrediction(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddLabel(...)end
+function Entity:AddLabel(...)end
 
 ---@return Physics
 ---author: Runar
-function entity:AddPhysics()end
+function Entity:AddPhysics()end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddPhysicsWaker(...)end
+function Entity:AddPhysicsWaker(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetPlatform(...)end
+function Entity:GetPlatform(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetPrefabName(...)end
+function Entity:SetPrefabName(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:WorldToLocalSpace(...)end
+function Entity:WorldToLocalSpace(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:CanPredictMovement(...)end
+function Entity:CanPredictMovement(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:IsValid(...)end
+function Entity:IsValid(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetCanSleep(...)end
+function Entity:SetCanSleep(...)end
 
 ---@return Light
 ---author: Runar
-function entity:AddLight()end
+function Entity:AddLight()end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:LocalToWorldSpaceIncParent(...)end
+function Entity:LocalToWorldSpaceIncParent(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetPrefabName(...)end
+function Entity:GetPrefabName(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddTextEditWidget(...)end
+function Entity:AddTextEditWidget(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddNetwork(...)end
+function Entity:AddNetwork(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetSelected(...)end
+function Entity:SetSelected(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddTextWidget(...)end
+function Entity:AddTextWidget(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddPostProcessor(...)end
+function Entity:AddPostProcessor(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddTag(...)end
+function Entity:AddTag(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:EnableMovementPrediction(...)end
+function Entity:EnableMovementPrediction(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddWaveComponent(...)end
+function Entity:AddWaveComponent(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:Hide(...)end
+function Entity:Hide(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddGroundCreep(...)end
+function Entity:AddGroundCreep(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:IsVisible(...)end
+function Entity:IsVisible(...)end
 
 ---添加减速地面实体组件
 ---@return GroundCreepEntity
 ---author: Runar
-function entity:AddGroundCreepEntity()end
+function Entity:AddGroundCreepEntity()end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:Retire(...)end
+function Entity:Retire(...)end
 
 ---
 ---@param ... idk
@@ -210,217 +210,217 @@ function entity:Retire(...)end
 ---@return number
 ---@return number
 ---author: 
-function entity:LocalToWorldSpace(...)end
+function Entity:LocalToWorldSpace(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetName(...)end
+function Entity:GetName(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddMapGenSim(...)end
+function Entity:AddMapGenSim(...)end
 
 ---@return Transform
 ---author: Runar
-function entity:AddTransform(...)end
+function Entity:AddTransform(...)end
 
 ---@return ent
 ---author: Runar
-function entity:GetParent()end
+function Entity:GetParent()end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetName(...)end
+function Entity:SetName(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:RemoveTag(...)end
+function Entity:RemoveTag(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddMapExplorer(...)end
+function Entity:AddMapExplorer(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddDebugRender(...)end
+function Entity:AddDebugRender(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetAnimStateData(...)end
+function Entity:GetAnimStateData(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddSoundEmitter(...)end
+function Entity:AddSoundEmitter(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddFontManager(...)end
+function Entity:AddFontManager(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:MoveToBack(...)end
+function Entity:MoveToBack(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:HasAllTags(...)end
+function Entity:HasAllTags(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddDynamicShadow(...)end
+function Entity:AddDynamicShadow(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddStaticShadow(...)end
+function Entity:AddStaticShadow(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddClientSleepable(...)end
+function Entity:AddClientSleepable(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:MoveToFront(...)end
+function Entity:MoveToFront(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddUITransform(...)end
+function Entity:AddUITransform(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:GetGUID(...)end
+function Entity:GetGUID(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddImage(...)end
+function Entity:AddImage(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddPathfinder(...)end
+function Entity:AddPathfinder(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddShardNetwork(...)end
+function Entity:AddShardNetwork(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetAABB(...)end
+function Entity:SetAABB(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:CallPrefabConstructionComplete(...)end
+function Entity:CallPrefabConstructionComplete(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddShadowManager(...)end
+function Entity:AddShadowManager(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetInLimbo(...)end
+function Entity:SetInLimbo(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddMap(...)end
+function Entity:AddMap(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:HasAnyTag(...)end
+function Entity:HasAnyTag(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetPristine(...)end
+function Entity:SetPristine(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddAccountManager(...)end
+function Entity:AddAccountManager(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddParticleEmitter(...)end
+function Entity:AddParticleEmitter(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddImageWidget(...)end
+function Entity:AddImageWidget(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddServerNonSleepable(...)end
+function Entity:AddServerNonSleepable(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:SetPlatform(...)end
+function Entity:SetPlatform(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddLightWatcher(...)end
+function Entity:AddLightWatcher(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddTwitchOptions(...)end
+function Entity:AddTwitchOptions(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddGraphicsOptions(...)end
+function Entity:AddGraphicsOptions(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:AddMapLayerManager(...)end
+function Entity:AddMapLayerManager(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:HasTag(...)end
+function Entity:HasTag(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:FlushLocalDirtyNetVars(...)end
+function Entity:FlushLocalDirtyNetVars(...)end
 
 ---
 ---@param ... idk
 ---author: 
-function entity:IsAwake(...)end
+function Entity:IsAwake(...)end
 
 ---
 ---@return VFXEffect
 ---author: Runar
-function entity:AddVFXEffect()end
+function Entity:AddVFXEffect()end
 
 ---
 ---@param ... idk
 ---author:
-function entity:AddMap(...)end
+function Entity:AddMap(...)end
