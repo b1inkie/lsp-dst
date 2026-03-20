@@ -583,12 +583,13 @@ function TheSim:LoadFont(...) end
 ---@param ... any
 ---author:
 function TheSim:GetSaveFiles(...) end
+
 ---
----UNKNOWN
----
----@param ... any
----author:
-function TheSim:ToggleFrameProfiler(...) end
+---切换帧性能监测模式 \
+---使用Google Chrome Tracer打开日志文件夹中的帧性能数据文件查看 \
+---author: Runar
+function TheSim:ToggleFrameProfiler() end
+
 ---
 ---UNKNOWN
 ---
@@ -978,24 +979,27 @@ function TheSim:SetErosionTexture(...) end
 ---@param ... any
 ---author:
 function TheSim:GetDebugRenderEnabled(...) end
+
 ---
----UNKNOWN
+---结束上一个帧性能监测
 ---
----@param ... any
----author:
-function TheSim:ProfilerPop(...) end
+---author: Runar
+function TheSim:ProfilerPop() end
+
 ---
 ---UNKNOWN
 ---
 ---@param ... any
 ---author:
 function TheSim:DecodeKleiData(...) end
+
 ---
----UNKNOWN
+---以指定名称开始帧性能监测
 ---
----@param ... any
----author:
-function TheSim:ProfilerPush(...) end
+---@param name string
+---author: Runar
+function TheSim:ProfilerPush(name) end
+
 ---
 ---UNKNOWN
 ---
