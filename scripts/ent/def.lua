@@ -153,6 +153,7 @@
 ---@field WaveComponent nil|WaveComponent
 ---@field starting_inventory nil|table
 ---@field soundsname nil|string
+---@field CreateSanityBadge nil|widget_badge # 替换sanity的badge
 ---@field CreateHealthBadge nil|widget_badge # 替换health的badge
 ---@field resurrect_multiplier nil|number # 最终承伤比
 ---@field brain idk # 

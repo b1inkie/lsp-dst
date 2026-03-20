@@ -598,11 +598,11 @@ end
 
 ---客机宣告
 ---@param content string
----@param whisper boolean|nil
----@param talk boolean|nil
+---@param iswhisper true|nil
+---@param isemote true|nil
 ---
----author: lan
-function TheNet:Say(content,whisper,talk)
+---author: lan, Runar
+function TheNet:Say(content,iswhisper,isemote,...)
 end
 
 ---UNKNOWN

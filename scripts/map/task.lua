@@ -17,7 +17,7 @@
 ---@field cove_room_name string|nil # 海湾房间名。用于将地形边缘变为弯曲形状
 ---@field cove_room_chance number|nil # 海湾房间生成概率
 ---@field cove_room_max_edges integer|nil # 房间能被选为海湾房间的最大连接边数
----@field colour RGBA # [必须] 调试颜色，在地图上显示任务区域。
+---@field colour {r:number,g:number,b:number,a:number} # [必须] 调试颜色，在地图上显示任务区域。
 ---@field maze_tiles task_maze_tiles|nil # 迷宫地形设置。
 ---@field maze_tile_size integer|nil # (用途不明) 迷宫地块大小
 ---@field crosslink_factor integer|nil # 交叉连接因子。所有房间创建后，额外随机连接内部两个房间的次数。
@@ -30,4 +30,5 @@
 --- 注册一个任务（Task），用于地图生成
 ---@param id string # 任务的唯一ID
 ---@param def data_task # 任务的定义数据
+---所在文件: scripts/modutil.lua
 function AddTask(id, def) end

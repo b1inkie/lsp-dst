@@ -3078,8 +3078,9 @@ function Shard_StartVote(command_id,starter_id,target_id)
 end
 
 ---
----UNKNOWN
----
+---获取已连接的分世界
+---@return table
+---author: Runar
 ---所在文件: scripts/shardnetworking.lua
 function Shard_GetConnectedShards()
 end
@@ -4872,15 +4873,6 @@ end
 ---@param name idk 
 ---所在文件: scripts/modutil.lua
 function ModInfoname(name)
-end
-
----
----UNKNOWN
----
----@param arg1 idk 
----@param ... idk 
----所在文件: scripts/modutil.lua
-function AddTask(arg1,...)
 end
 
 ---

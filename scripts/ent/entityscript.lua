@@ -635,14 +635,14 @@ end
 
 ---EntityScript: 推送事件
 ---@param event eventID # 推送的事件
----@param data nil|table # 推送时传入的表,可不填
----author: lan
+---@param data any # 推送时传入的数据, 必须与对应的监听端匹配
+---author: lan, Runar
 function EntityScript:PushEvent(event,data)
 end
 
 ---EntityScript: 推送事件
 ---@param event eventID # 推送的事件
----@param data nil|table # 推送时传入的表,可不填
+---@param data any # 推送时传入的数据, 必须与对应的监听端匹配
 ---@param immdiate boolean|nil # 是否立即处理
 ---author: Runar
 function EntityScript:PushEvent_Internal(event,data,immdiate)
@@ -650,7 +650,7 @@ end
 
 ---EntityScript: 推送事件(立即处理)
 ---@param event eventID # 推送的事件
----@param data nil|table # 推送时传入的表,可不填
+---@param data any # 推送时传入的数据, 必须与对应的监听端匹配
 ---author: Runar
 function EntityScript:PushEventImmediate(event, data)
 end
