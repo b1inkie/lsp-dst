@@ -9,18 +9,18 @@ function Physics:CheckGridOffset()
 end
 
 ---UNKNOWN
----@param COLLISION number
+---@param COLLISION COLLISION_MASK
 ---author: 
 function Physics:ClearCollidesWith(COLLISION)
 end
 
----清除冲突面
----author: 不知名笔记
+---清除碰撞遮罩
+---author: 不知名笔记, Runar
 function Physics:ClearCollisionMask()
 end
 
----UNKNOWN
----author: 
+---清除本地碰撞遮罩
+---author: Runar
 function Physics:ClearLocalCollisionMask()
 end
 
@@ -134,13 +134,14 @@ function Physics:SetCollisionCallback(fn)
 end
 
 ---设置碰撞组
----@param idk idk # 
----author: 
-function Physics:SetCollisionGroup(idk)
+---@param COLLISION COLLISION_MASK # 
+---author: Runar
+function Physics:SetCollisionGroup(COLLISION)
 end
 
----UNKNOWN
----author: 
+---设置碰撞遮罩
+---@vararg COLLISION_MASK #
+---author: Runar
 function Physics:SetCollisionMask(...)
 end
 
@@ -175,9 +176,10 @@ end
 function Physics:SetFriction(F)
 end
 
----UNKNOWN
----author: 
-function Physics:SetLocalCollisionMask()
+---设置本地碰撞遮罩
+---@vararg COLLISION_MASK #
+---author: Runar
+function Physics:SetLocalCollisionMask(...)
 end
 
 ---自由落体速率 0为不掉落，默认1质量

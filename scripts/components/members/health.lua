@@ -90,7 +90,7 @@ end
 
 ---执行火焰伤害
 ---@param amount number # 火焰伤害的基础数值
----@param doer string|"fire" # 造成伤害的来源实体
+---@param doer ent|string|"fire" # 造成伤害的来源实体
 ---@param instant boolean|nil # 是否立即生效
 ---author:nullptr
 function health:DoFireDamage(amount,doer,instant)
