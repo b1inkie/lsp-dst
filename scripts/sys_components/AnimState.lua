@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class AnimState
-local AnimState = {}
+AnimState = {}
 
 ---添加新build
 ---@param buildname string|hashed_code # build名
@@ -301,7 +301,8 @@ end
 function AnimState:OverrideHue()
 end
 
----覆盖物品皮肤通道
+---覆盖物品皮肤通道 \
+---主客端均不支持字符串哈希
 ---@param oldsymbol string # 通道名
 ---@param skinbuild string # 皮肤build
 ---@param skinsymbol string # 覆盖通道
@@ -339,10 +340,10 @@ end
 function AnimState:OverrideSkinSymbol(oldsymbol,skin_build,newsymbol)
 end
 
----覆盖旧通道
----@param oldsymbol string # 通道名
----@param newbuild string # 覆盖通道所在的build
----@param newsymbol string # 覆盖通道
+---覆盖通道
+---@param oldsymbol string|hashed_code # 通道名
+---@param newbuild string|hashed_code # 覆盖通道所在的build
+---@param newsymbol string|hashed_code # 覆盖通道
 ---author: Runar
 function AnimState:OverrideSymbol(oldsymbol,newbuild,newsymbol)
 end

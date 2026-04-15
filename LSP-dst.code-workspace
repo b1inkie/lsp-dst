@@ -8,7 +8,7 @@
 		"editor.tabSize": 4,
 		"workbench.editor.showTabs": "none",
 		"explorer.openEditors.sortOrder": "alphabetical",
-		"workbench.colorTheme": "Activate SCARLET protocol (beta)",
+		"workbench.colorTheme": "Monokai",
 		"Lua.runtime.version": "Lua 5.1",
 		"Lua.completion.requireSeparator": "/"
 	}
