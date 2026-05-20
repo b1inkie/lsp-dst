@@ -238,6 +238,11 @@ end
 ---@return hashed_code|nil # overridesymbol
 ---@nodiscard
 ---author: Runar
+---```lua
+-----例如 用此方法生成一个和玩家手持一样武器的影子(但是没法覆盖所有情况 例如亮茄剑):
+---local build, symbol = player.AnimState:GetSymbolOverride('swap_object')
+---shadow.AnimState:OverrideSymbol('swap_object', build, symbol)
+---```
 function AnimState:GetSymbolOverride(symbol)
 end
 

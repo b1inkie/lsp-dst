@@ -32,3 +32,5 @@ prefabs = nil -- this is here so mods dont crash because one of our prefab scrip
 TheGlobalInstance = nil
 
 IsDynamicCloudShutdown = false
+
+AllRecipes = {}

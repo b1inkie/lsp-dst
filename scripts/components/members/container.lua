@@ -246,7 +246,7 @@ end
 
 ---丢出所有物品
 ---@param drop_pos Vector3 # 掉落位置
----@param keepoverstacked boolean # 保持物品堆叠状态
+---@param keepoverstacked boolean|nil # 保持物品堆叠状态
 ---author: lan(多在容器被摧毁时调用)
 function container:DropEverything(drop_pos,keepoverstacked)
 end

@@ -23,3 +23,29 @@ FALLBACK_FONT = "fallback_font"
 FALLBACK_FONT_FULL = "fallback_font_full"
 FALLBACK_FONT_OUTLINE = "fallback_font_outline"
 FALLBACK_FONT_FULL_OUTLINE = "fallback_font_full_outline"
+
+---@alias fonts string # 字体
+---| `DEFAULTFONT`
+---| `DIALOGFONT`
+---| `TITLEFONT`
+---| `UIFONT`
+---| `BUTTONFONT`
+---| `NEWFONT`
+---| `NEWFONT_SMALL`
+---| `NEWFONT_OUTLINE`
+---| `NEWFONT_OUTLINE_SMALL`
+---| `NUMBERFONT`
+---| `TALKINGFONT`
+---| `TALKINGFONT_WORMWOOD`
+---| `TALKINGFONT_TRADEIN`
+---| `TALKINGFONT_HERMIT`
+---| `CHATFONT`
+---| `HEADERFONT`
+---| `CHATFONT_OUTLINE`
+---| `SMALLNUMBERFONT`
+---| `BODYTEXTFONT`
+---| `CODEFONT`
+---| `FALLBACK_FONT`
+---| `FALLBACK_FONT_FULL`
+---| `FALLBACK_FONT_OUTLINE`
+---| `FALLBACK_FONT_FULL_OUTLINE`

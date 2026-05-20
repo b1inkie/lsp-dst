@@ -10,7 +10,7 @@
 ---@field ignoresound idk
 ---@field itemslots table<number,ent>
 ---@field maxslots idk
----@field equipslots table<EQUIPSLOTS, ent|nil>
+---@field equipslots table<equiptype_basic, ent|nil>
 ---@field heavylifting idk
 ---@field activeitem idk
 ---@field acceptsstacks idk

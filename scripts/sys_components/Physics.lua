@@ -196,7 +196,7 @@ end
 function Physics:SetMotorVel(x, y, z)
 end
 
----物理运行覆盖
+---物理运行覆盖(先调用 `实体:ForceFacePoint` 然后直接设置 `实体.Physics:SetMotorVelOverride(vx,0,0)` 即可)
 ---@param vx number # 
 ---@param vy number # 
 ---@param vz number # 
