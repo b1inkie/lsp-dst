@@ -2,7 +2,7 @@
 
 ---@class component_damagetypebonus: component_base
 ---@field inst idk
----@field tags idk
+---@field tags table<tagID,SourceModifierList>
 local damagetypebonus = {}
 
 ---

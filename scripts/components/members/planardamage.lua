@@ -26,7 +26,9 @@ function planardamage:AddMultiplier(src,mult,key)
 end
 
 ---获取基础位面伤害
----author:mango 
+---@return number
+---@nodiscard
+---author:mango, lan
 function planardamage:GetBaseDamage()
 end
 

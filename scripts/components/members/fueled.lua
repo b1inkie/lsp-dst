@@ -3,7 +3,7 @@
 ---@class component_fueled: component_base
 ---@field fueltype idk
 ---@field secondaryfueltype idk
----@field inst idk
+---@field inst ent
 ---@field consuming idk
 ---@field maxfuel idk
 ---@field currentfuel idk
@@ -45,13 +45,13 @@ end
 function fueled:IsEmpty()
 end
 
----
----author: 
+---停止消耗耐久
+---author: lan
 function fueled:StopConsuming()
 end
 
----
----author: 
+---开始消耗耐久
+---author: lan
 function fueled:StartConsuming()
 end
 

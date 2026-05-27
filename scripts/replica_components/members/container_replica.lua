@@ -172,7 +172,7 @@ function replica_container:TakeActiveItemFromHalfOfSlot(slot)
 end
 
 ---
----@param tag idk # 
+---@param tag tagID # 
 ---@param amount idk # 
 ---author: 
 function replica_container:HasItemWithTag(tag,amount)

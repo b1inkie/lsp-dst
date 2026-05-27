@@ -69,11 +69,11 @@ function image:GetSize() end
 ---author: 
 function image:GetScaledSize() end
 
+---缩放到指定宽高(**`推荐方法!!`**)
+---@param w number #
+---@param h number #
 ---
----@param w idk #
----@param h idk #
----
----author: 
+---author: lan
 function image:ScaleToSize(w, h) end
 
 ---

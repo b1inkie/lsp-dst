@@ -3,6 +3,7 @@
 ---@class widget_widget
 ---@overload fun(): widget_widget
 ---@field _ctor function #
+---@field _base widget_widget # 父类的引用, 后续有待完善每个widget的父类类型, 目前统一用基类替代
 ---@field inst ent #
 ---@field focus boolean # 
 ---@field shown boolean # 该ui是否在显示中
@@ -290,10 +291,10 @@ function widget:GetRotation() end
 ---author: 
 function widget:SetMaxPropUpscale(val) end
 
----
+---设置缩放模式<br>这个经常和`SetMaxPropUpscale`方法一起用,为了让窗口适配不同分辨率的时候,可以保持比例<br>当你的UI是居中的时候,可以这样做,很简单,但是当UI不居中时,这样简单的设置就没法实现想要的效果了(`有坑`)<br>但是游戏中已经有预设好的父类了,我们为这些父类addchild即可<br>例如我想把UI设置在右下角: `ThePlayer.HUD.controls.bottomright_root:AddChild`
 ---@param mode idk #
 ---
----author: 
+---author: lan
 function widget:SetScaleMode(mode) end
 
 ---
@@ -329,16 +330,16 @@ function widget:SetVAnchor(anchor) end
 ---author: lan
 function widget:SetHAnchor(anchor) end
 
+---显示时的回调函数
+---@param was_hidden boolean # 之前是隐藏的
 ---
----@param was_hidden idk #
----
----author: 
+---author: lan
 function widget:OnShow(was_hidden) end
 
+---隐藏时的回调函数
+---@param was_visible boolean # 之前是可见的
 ---
----@param was_visible idk #
----
----author: 
+---author: lan
 function widget:OnHide(was_visible) end
 
 ---

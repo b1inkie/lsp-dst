@@ -14,7 +14,7 @@
 ---@field OnRemoveEntity idk
 ---@field pendingtasks idk
 ---@field GetPocketDimensionContainer idk
----@field state idk
+---@field state WorldState
 ---@field spawntime idk
 ---@field SetPocketDimensionContainer idk
 ---@field watchingcycles idk
@@ -49,3 +49,75 @@
 ---@field topology idk
 ---@field minimap idk
 TheWorld = {}
+
+
+---------------------------------
+-- 世界状态相关
+
+---@class WorldState # 世界状态 `TheWorld.state`
+---@field time number # 一天中的时间进度 (0-1)
+---@field timeinphase number # 当前阶段内的时间进度 (0-1)
+---@field cycles integer # 已完成的完整天数
+---@field phase "day"|"dusk"|"night" # 当前时间段 <br> 硬编码这一块
+---@field isday boolean # 是否是白天
+---@field isdusk boolean # 是否是黄昏
+---@field isnight boolean # 是否是夜晚
+---@field moonphase "new"|"quarter"|"half"|"threequarter"|"full" # 月相
+---@field iswaxingmoon boolean # 月亮是否在盈（渐满）
+---@field isfullmoon boolean # 是否是满月且为夜晚
+---@field isnewmoon boolean # 是否是新月且为夜晚
+---@field isalterawake boolean # 远古祭坛是否激活
+
+-- 洞穴时钟相关
+---@class WorldState
+---@field cavephase "day"|"dusk"|"night" # 洞穴当前时间段
+---@field iscaveday boolean # 洞穴是否是白天
+---@field iscavedusk boolean # 洞穴是否是黄昏
+---@field iscavenight boolean # 洞穴是否是夜晚
+---@field iscavewaxingmoon boolean # 洞穴月亮是否在盈
+---@field cavemoonphase "new"|"quarter"|"half"|"threequarter"|"full" # 洞穴月相
+---@field iscavefullmoon boolean # 洞穴是否是满月且为夜晚
+---@field iscavenewmoon boolean # 洞穴是否是新月且为夜晚
+
+-- 梦魇时钟相关（洞穴）
+---@class WorldState
+---@field nightmarephase "none"|"calm"|"warn"|"wild"|"dawn" # 梦魇阶段
+---@field nightmaretime number # 梦魇时间进度
+---@field nightmaretimeinphase number # 梦魇当前阶段内时间进度
+---@field isnightmarecalm boolean # 是否是梦魇平静期
+---@field isnightmarewarn boolean # 是否是梦魇警告期
+---@field isnightmarewild boolean # 是否是梦魇狂暴期
+---@field isnightmaredawn boolean # 是否是梦魇黎明期
+
+-- 季节相关
+---@class WorldState
+---@field season "autumn"|"winter"|"spring"|"summer" # 当前季节
+---@field isspring boolean # 是否是春季
+---@field issummer boolean # 是否是夏季
+---@field isautumn boolean # 是否是秋季
+---@field iswinter boolean # 是否是冬季
+---@field elapseddaysinseason number # 当前季节已过的天数
+---@field seasonprogress number # 当前季节进度 (0-1)
+---@field remainingdaysinseason number # 当前季节剩余天数
+---@field autumnlength number # 秋季总长度（天数）
+---@field winterlength number # 冬季总长度（天数）
+---@field springlength number # 春季总长度（天数）
+---@field summerlength number # 夏季总长度（天数）
+
+-- 天气相关
+---@class WorldState
+---@field temperature number # 当前温度
+---@field moisture number # 湿度值
+---@field moistureceil number # 湿度上限值
+---@field pop number # 降水概率
+---@field precipitationrate number # 降水率
+---@field precipitation "none"|"rain"|"snow"|"lunarhail"|"acidrain" # 降水类型
+---@field israining boolean # 是否正在下雨
+---@field islunarhailing boolean # 是否正在下月雹
+---@field isacidraining boolean # 是否正在下酸雨
+---@field issnowing boolean # 是否正在下雪
+---@field issnowcovered boolean # 地面是否被雪覆盖
+---@field snowlevel number # 雪等级
+---@field lunarhaillevel number # 月雹等级
+---@field wetness number # 潮湿程度
+---@field iswet boolean # 是否处于潮湿状态
