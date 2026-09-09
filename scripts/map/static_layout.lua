@@ -1,0 +1,49 @@
+---@meta
+
+---@class static_layout
+---@field version "1.1"
+---@field luaversion "5.1"
+---@field orientation string
+---@field width integer
+---@field height integer
+---@field tilewidth integer
+---@field tileheight integer
+---@field properties table
+---@field tilesets table<string, static_layout_tileset>
+---@field layers static_layout_layer[]
+
+---@class static_layout_tileset
+---@field name string
+---@field firstgid integer
+---@field tilewidth integer
+---@field tileheight integer
+---@field spacing integer
+---@field margin integer
+---@field image string
+---@field imagewidth integer 
+---@field imageheight integer 
+---@field properties table
+---@field tiles table
+
+---@class static_layout_layer
+---@field name string
+---@field x integer|nil
+---@field y integer|nil
+---@field width integer|nil 
+---@field height integer|nil
+---@field visible boolean
+---@field opacity integer 
+---@field properties table
+---@field onjects static_layout_layer_object[]|nil
+---@field data integer[]|nil
+
+---@class static_layout_layer_object
+---@field name string
+---@field type string
+---@field shape string
+---@field x integer
+---@field y integer
+---@field width integer
+---@field height integer
+---@field visible boolean
+---@field properties table
