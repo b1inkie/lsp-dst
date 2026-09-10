@@ -3,7 +3,6 @@
 ---@class component_sharkboimanager: component_base
 ---@field updatenetvarstask idk
 ---@field arena idk
----@field inst idk
 ---@field fishingplayertasks idk
 ---@field defaultfishprefab idk
 ---@field MAX_ARENA_SIZE idk
@@ -31,12 +30,3 @@
 ---@field InitializeSharkBoiManager idk
 ---@field OnSeasonChange idk
 local sharkboimanager = {}
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sharkboimanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sharkboimanager:StopWatchingWorldState(var, fn) end

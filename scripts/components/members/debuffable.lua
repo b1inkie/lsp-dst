@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_debuffable: component_base
----@field inst idk
 ---@field enable idk
 ---@field followsymbol idk
 ---@field followoffset idk
@@ -11,22 +10,6 @@ local debuffable = {}
 ---
 ---author: 
 function debuffable:RemoveOnDespawn()
-end
-
----
----@param data idk # 
----author: 
-function debuffable:OnLoad(data)
-end
-
----
----author: 
-function debuffable:GetDebugString()
-end
-
----
----author: 
-function debuffable:OnSave()
 end
 
 ---
@@ -82,12 +65,3 @@ end
 ---author: lan
 function debuffable:GetDebuff(name)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function debuffable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function debuffable:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_inventoryitem: component_base
----@field inst ent
 ---@field owner ent|nil
 ---@field canbepickedup idk
 ---@field canbepickedupalive idk
@@ -63,12 +62,6 @@ end
 ---
 ---author: 
 function inventoryitem:DryMoisture()
-end
-
----
----@param dt idk # 
----author: 
-function inventoryitem:OnUpdate(dt)
 end
 
 ---
@@ -221,11 +214,6 @@ function inventoryitem:GetGrandOwner()
 end
 
 ---
----author: 
-function inventoryitem:OnRemoveEntity()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function inventoryitem:SetOnPickupFn(fn)
@@ -249,11 +237,3 @@ end
 function inventoryitem:DiluteMoisture(item,count)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventoryitem:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventoryitem:StopWatchingWorldState(var, fn) end

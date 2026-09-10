@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_rider: replica_base
----@field inst idk
 ---@field _isriding idk
 ---@field classified idk
 ---@field _onmounthealthdelta idk

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_bloomer: component_base
----@field inst idk
 ---@field bloomstack idk
 ---@field children idk
 ---@field _onremovesource idk
@@ -10,11 +9,6 @@ local bloomer = {}
 ---
 ---author: 
 function bloomer:GetCurrentFxAndPriority()
-end
-
----
----author: 
-function bloomer:GetDebugString()
 end
 
 ---
@@ -64,12 +58,3 @@ end
 ---author: 
 function bloomer:DetachChild(child)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function bloomer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function bloomer:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stormwatcher: component_base
----@field inst idk
 ---@field stormlevel idk
 ---@field delay idk
 ---@field currentstorm idk
@@ -28,12 +27,6 @@ function stormwatcher:GetStormLevel(stormtype)
 end
 
 ---
----@param dt idk # 
----author: 
-function stormwatcher:OnUpdate(dt)
-end
-
----
 ---author: 
 function stormwatcher:UpdateStormLevel()
 end
@@ -43,12 +36,3 @@ end
 ---author: 
 function stormwatcher:GetCurrentStorm(inst)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stormwatcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stormwatcher:StopWatchingWorldState(var, fn) end

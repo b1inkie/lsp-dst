@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_followerherder: component_base
----@field inst idk
 ---@field hostile idk
 ---@field canherdfn idk
 ---@field onherfn idk
@@ -37,12 +36,3 @@ end
 ---author: 
 function followerherder:Herd(leader)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function followerherder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function followerherder:StopWatchingWorldState(var, fn) end

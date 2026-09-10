@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lightningblocker: component_base
----@field inst ent
 ---@field block_rsq number
 ---@field on_strike nil|function
 local lightningblocker = {}
@@ -28,12 +27,3 @@ end
 ---author: lan
 function lightningblocker:SetBlockRange(newrange)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lightningblocker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lightningblocker:StopWatchingWorldState(var, fn) end

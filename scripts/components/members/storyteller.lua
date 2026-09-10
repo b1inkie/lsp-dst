@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_storyteller: component_base
----@field inst idk
 ---@field storytotellfn idk
 ---@field storytelling_dist idk
 ---@field storytelling_ticktime idk
@@ -61,12 +60,3 @@ end
 ---author: 
 function storyteller:AbortStory(reason)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function storyteller:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function storyteller:StopWatchingWorldState(var, fn) end

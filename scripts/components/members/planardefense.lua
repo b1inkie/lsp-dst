@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_planardefense: component_base
----@field inst ent #组件挂载的实体
 ---@field basedefense number #基础防御值
 ---@field externalmultipliers table #外部乘法加成列表（SourceModifierList）
 ---@field externalbonuses table #外部加法加成列表（SourceModifierList，additive模式）
@@ -19,12 +18,6 @@ end
 ---@param key string #标识
 ---author:星璃
 function planardefense:RemoveBonus(src, key)
-end
-
----获取调试字符串
----author:星璃
----@return string #调试信息
-function planardefense:GetDebugString()
 end
 
 ---添加外部乘法加成
@@ -76,12 +69,3 @@ end
 ---@nodiscard
 function planardefense:GetDefense()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function planardefense:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function planardefense:StopWatchingWorldState(var, fn) end

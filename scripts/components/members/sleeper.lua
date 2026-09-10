@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sleeper: component_base
----@field inst idk
 ---@field isasleep idk
 ---@field testperiod idk
 ---@field lasttransitiontime idk
@@ -24,12 +23,6 @@ local sleeper = {}
 ---
 ---author: 
 function sleeper:GetTimeAsleep()
-end
-
----
----@param data idk # 
----author: 
-function sleeper:OnLoad(data)
 end
 
 ---
@@ -90,11 +83,6 @@ function sleeper:SetExtraResist(resist)
 end
 
 ---
----author: 
-function sleeper:GetDebugString()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function sleeper:SetSleepTest(fn)
@@ -134,11 +122,6 @@ end
 
 ---
 ---author: 
-function sleeper:OnSave()
-end
-
----
----author: 
 function sleeper:GetTimeAwake()
 end
 
@@ -154,11 +137,3 @@ end
 function sleeper:SetWakeTest(fn,time)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleeper:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleeper:StopWatchingWorldState(var, fn) end

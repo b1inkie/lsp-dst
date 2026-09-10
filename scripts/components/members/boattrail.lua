@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boattrail: component_base
----@field inst idk
 ---@field anim_idx idk
 ---@field effect_spawn_rate idk
 ---@field radius idk
@@ -15,12 +14,6 @@
 local boattrail = {}
 
 ---
----@param dt idk # 
----author: 
-function boattrail:OnUpdate(dt)
-end
-
----
 ---@param x idk # 
 ---@param y idk # 
 ---@param z idk # 
@@ -29,12 +22,3 @@ end
 ---author: 
 function boattrail:SpawnEffectPrefab(x,y,z,dir_x,dir_z)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boattrail:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boattrail:StopWatchingWorldState(var, fn) end

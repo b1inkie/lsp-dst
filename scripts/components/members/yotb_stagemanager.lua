@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_yotb_stagemanager: component_base
----@field inst idk
 ---@field stages idk
 ---@field contest_enabled idk
 ---@field contest_active idk
@@ -22,21 +21,9 @@ function yotb_stagemanager:SetContestEnabled(setting)
 end
 
 ---
----@param newents idk # 
----@param savedata idk # 
----author: 
-function yotb_stagemanager:LoadPostPass(newents,savedata)
-end
-
----
 ---@param stage idk # 
 ---author: 
 function yotb_stagemanager:OnStageBuilt(stage)
-end
-
----
----author: 
-function yotb_stagemanager:OnSave()
 end
 
 ---
@@ -81,12 +68,3 @@ end
 ---author: 
 function yotb_stagemanager:OnStageDestroyed(stage)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_stagemanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_stagemanager:StopWatchingWorldState(var, fn) end

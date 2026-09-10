@@ -1,14 +1,8 @@
 ---@meta
 
 ---@class component_damagetypebonus: component_base
----@field inst idk
 ---@field tags table<tagID,SourceModifierList>
 local damagetypebonus = {}
-
----
----author: 
-function damagetypebonus:GetDebugString()
-end
 
 ---添加伤害加成
 ---@param tag tagID # 
@@ -32,12 +26,3 @@ end
 ---author: 
 function damagetypebonus:GetBonus(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function damagetypebonus:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function damagetypebonus:StopWatchingWorldState(var, fn) end

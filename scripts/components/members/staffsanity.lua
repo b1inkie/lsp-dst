@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_staffsanity: component_base
----@field inst idk
 ---@field multiplier idk
 local staffsanity = {}
 
@@ -16,12 +15,3 @@ end
 ---author: 
 function staffsanity:DoCastingDelta(amount)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function staffsanity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function staffsanity:StopWatchingWorldState(var, fn) end

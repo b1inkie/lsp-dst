@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_parryweapon: component_base
----@field inst idk
 ---@field arc idk
 ---@field onpreparryfn idk
 ---@field onparryfn idk
@@ -53,12 +52,3 @@ end
 ---author: 
 function parryweapon:SetOnPreParryFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function parryweapon:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function parryweapon:StopWatchingWorldState(var, fn) end

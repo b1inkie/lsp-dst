@@ -1,18 +1,11 @@
 ---@meta
 
 ---@class component_recallmark: component_base
----@field inst idk
 ---@field recall_x idk
 ---@field recall_y idk
 ---@field recall_z idk
 ---@field recall_worldid idk
 local recallmark = {}
-
----
----@param data idk # 
----author: 
-function recallmark:OnLoad(data)
-end
 
 ---
 ---author: 
@@ -22,11 +15,6 @@ end
 ---
 ---author: 
 function recallmark:IsMarked()
-end
-
----
----author: 
-function recallmark:OnSave()
 end
 
 ---
@@ -48,12 +36,3 @@ end
 ---author: 
 function recallmark:MarkPosition(recall_x,recall_y,recall_z,recall_worldid)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function recallmark:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function recallmark:StopWatchingWorldState(var, fn) end

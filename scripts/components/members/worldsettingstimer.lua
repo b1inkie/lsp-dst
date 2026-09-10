@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_worldsettingstimer: component_base
----@field inst idk
 ---@field timers idk
 ---@field saved_timers idk
 local worldsettingstimer = {}
@@ -48,25 +47,9 @@ function worldsettingstimer:StartTimer(name,time,paused,initialtime_override,blo
 end
 
 ---
----author: 
-function worldsettingstimer:GetDebugString()
-end
-
----
 ---@param name idk # 
 ---author: 
 function worldsettingstimer:ResumeTimer(name)
-end
-
----
----@param data idk # 
----author: 
-function worldsettingstimer:OnLoad(data)
-end
-
----
----author: 
-function worldsettingstimer:OnSave()
 end
 
 ---
@@ -80,12 +63,6 @@ end
 ---@param name idk # 
 ---author: 
 function worldsettingstimer:GetTimeLeft(name)
-end
-
----
----@param dt idk # 
----author: 
-function worldsettingstimer:LongUpdate(dt)
 end
 
 ---
@@ -127,12 +104,3 @@ end
 ---author: 
 function worldsettingstimer:GetMaxTime(name)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldsettingstimer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldsettingstimer:StopWatchingWorldState(var, fn) end

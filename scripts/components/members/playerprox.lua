@@ -6,7 +6,6 @@
 ---@field isclose idk
 ---@field target idk
 ---@field initialtargetmode idk
----@field inst idk
 ---@field near idk
 ---@field far idk
 ---@field period idk
@@ -35,11 +34,6 @@ end
 ---@param fn function # 方法
 ---author: 御坂十七号
 function playerprox:SetOnPlayerNear(fn)
-end
-
----打印日志，这里会返回玩家距离远还是近
----author: 御坂十七号
-function playerprox:GetDebugString()
 end
 
 ---
@@ -99,12 +93,3 @@ end
 ---author: 
 function playerprox:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playerprox:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playerprox:StopWatchingWorldState(var, fn) end

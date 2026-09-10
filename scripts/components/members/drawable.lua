@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_drawable: component_base
----@field inst idk
 ---@field candraw idk
 ---@field imagename idk
 ---@field atlasname idk
@@ -18,12 +17,6 @@ end
 ---
 ---author: 
 function drawable:GetImage()
-end
-
----
----@param data idk # 
----author: 
-function drawable:OnLoad(data)
 end
 
 ---
@@ -48,11 +41,6 @@ function drawable:GetBGAtlas()
 end
 
 ---
----author: 
-function drawable:OnSave()
-end
-
----
 ---@param candraw idk # 
 ---author: 
 function drawable:SetCanDraw(candraw)
@@ -72,12 +60,3 @@ end
 ---author: 
 function drawable:OnDrawn(imagename,imagesource,atlasname,bgimagename,bgatlasname)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drawable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drawable:StopWatchingWorldState(var, fn) end

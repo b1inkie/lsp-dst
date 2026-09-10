@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hauntable: component_base
----@field inst ent
 ---@field onhaunt idk
 ---@field onunhaunt idk
 ---@field haunted idk
@@ -45,12 +44,6 @@ function hauntable:SetHauntValue(val)
 end
 
 ---
----@param dt idk # 
----author: 
-function hauntable:OnUpdate(dt)
-end
-
----
 ---@param noflicker idk # 
 ---author: 
 function hauntable:StartFX(noflicker)
@@ -84,12 +77,3 @@ end
 ---author: 
 function hauntable:Panic(panictime)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hauntable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hauntable:StopWatchingWorldState(var, fn) end

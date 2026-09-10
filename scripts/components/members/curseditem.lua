@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_curseditem: component_base
----@field inst idk
 ---@field active idk
 ---@field cursed_target idk
 ---@field target idk
@@ -23,12 +22,6 @@ end
 function curseditem:lookforplayer()
 end
 
----更新，控制诅咒物品向目标玩家移动（一般不主动调用）
----@param dt number # 猜测是delta的简写，表示增量。此参数作为了math.min的参数，因此能确定类型
----author:nullptr
-function curseditem:OnUpdate(dt)
-end
-
 ---检查玩家物品栏是否有空间容纳诅咒物品
 ---@param player ent # 目标玩家实例
 ---@return boolean # true意味着物品栏有空位或者有不拥有nosteal标签的物品（这类物品在物品栏满时会被诅咒强制弹出）<br>或已经拥有未堆叠满的同类诅咒（此组件是加在物品上的，代表物品拥有诅咒性，所以不需要额外的参数表示何种诅咒）
@@ -42,12 +35,3 @@ end
 ---author:nullptr
 function curseditem:CheckForOwner()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function curseditem:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function curseditem:StopWatchingWorldState(var, fn) end

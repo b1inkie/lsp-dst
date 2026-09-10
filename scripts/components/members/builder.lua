@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_builder: component_base
----@field inst ent
 ---@field recipes idk
 ---@field station_recipes idk
 ---@field accessible_tech_trees idk
@@ -74,11 +73,6 @@ end
 function builder:ConsumeTempTechBonuses()
 end
 
----每帧更新，主要用于科技树的实时评估
----author:星璃
-function builder:OnUpdate()
-end
-
 ---检查各种条件后，调用 MakeRecipe 进行建造
 ---@param recname string #配方名
 ---@param pt Vector3|nil #建造位置
@@ -139,12 +133,6 @@ end
 function builder:KnowsRecipe(recipe, ignore_tempbonus)
 end
 
----读档，恢复存档数据
----@param data table #存档数据
----author:星璃
-function builder:OnLoad(data)
-end
-
 ---在指定位置建造建筑类物品
 ---@param recipe table #配方数据
 ---@param pt Vector3 #建造位置
@@ -171,12 +159,6 @@ end
 function builder:MakeRecipe(recipe, pt, rot, skin, onsuccess)
 end
 
----长时间未更新时的同步
----@param dt number #时间差
----author:星璃
-function builder:LongUpdate(dt)
-end
-
 ---获取材料湿度（用于继承到新物品）
 ---@param ingredients table #材料表
 ---author:星璃
@@ -188,12 +170,6 @@ end
 ---@param recname string #配方名
 ---author:星璃
 function builder:RemoveRecipe(recname)
-end
-
----存档，返回存档数据
----author:星璃
----@return table #存档数据
-function builder:OnSave()
 end
 
 ---从角色身上移除制作配方所需的材料，并处理特殊材料（如健康、理智消耗）
@@ -218,12 +194,3 @@ end
 ---author:星璃
 function builder:AddRecipe(recname)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function builder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function builder:StopWatchingWorldState(var, fn) end

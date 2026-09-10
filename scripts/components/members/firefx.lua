@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_firefx: component_base
----@field inst idk
 ---@field level idk
 ---@field playingsound idk
 ---@field playingsoundintensity idk
@@ -19,11 +18,6 @@
 ---@field isday idk
 ---@field controlled_burn idk
 local firefx = {}
-
----
----author: 
-function firefx:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -62,12 +56,6 @@ function firefx:AttachLightTo(target)
 end
 
 ---
----@param dt idk # 
----author: 
-function firefx:OnUpdate(dt)
-end
-
----
 ---@param percent idk # 
 ---author: 
 function firefx:SetPercentInLevel(percent)
@@ -77,12 +65,3 @@ end
 ---author: 
 function firefx:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function firefx:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function firefx:StopWatchingWorldState(var, fn) end

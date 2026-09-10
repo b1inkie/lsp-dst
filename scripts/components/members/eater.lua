@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_eater: component_base
----@field inst idk
 ---@field eater idk
 ---@field strongstomach idk
 ---@field preferseating idk
@@ -99,12 +98,6 @@ end
 function eater:TestFood(food,testvalues)
 end
 
----从保存数据中加载实体的状态信息
----@param data table # 加载的保存数据
----author: 764不是西红柿
-function eater:OnLoad(data)
-end
-
 ---获取自上次进食以来的时间
 ---@return number # 返回自上次进食以来的时间
 ---author: 764不是西红柿
@@ -142,12 +135,6 @@ end
 function eater:SetCanEatRawMeat(can_eat)
 end
 
----保存实体的状态信息
----@return table # 保存的数据表
----author: 764不是西红柿
-function eater:OnSave()
-end
-
 ---设置食物对健康、饥饿和理智的吸收倍率
 ---@param health number # 健康吸收倍率
 ---@param hunger number # 饥饿吸收倍率
@@ -166,12 +153,3 @@ end
 ---author: 764不是西红柿
 function eater:SetCanEatGears()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function eater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function eater:StopWatchingWorldState(var, fn) end

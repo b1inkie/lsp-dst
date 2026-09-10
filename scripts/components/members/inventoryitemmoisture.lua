@@ -2,29 +2,12 @@
 
 ---@class component_inventoryitemmoisture: component_base
 ---@field moistureupdatetask idk
----@field inst idk
 ---@field lastUpdate idk
 ---@field _replica idk
 ---@field moisture idk
 ---@field iswet idk
 ---@field _entitysleeptime idk
 local inventoryitemmoisture = {}
-
----
----author: 
-function inventoryitemmoisture:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function inventoryitemmoisture:OnLoad(data)
-end
-
----
----author: 
-function inventoryitemmoisture:OnSave()
-end
 
 ---
 ---@param delta idk # 
@@ -89,12 +72,3 @@ end
 ---author: 
 function inventoryitemmoisture:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventoryitemmoisture:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventoryitemmoisture:StopWatchingWorldState(var, fn) end

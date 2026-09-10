@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mapspotrevealer: component_base
----@field inst idk
 ---@field gettargetfn idk
 ---@field prerevealfn idk
 ---@field open_map_on_reveal idk
@@ -29,12 +28,3 @@ end
 ---author: 
 function mapspotrevealer:RevealMap(doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mapspotrevealer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mapspotrevealer:StopWatchingWorldState(var, fn) end

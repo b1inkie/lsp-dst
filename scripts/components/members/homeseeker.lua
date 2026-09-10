@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_homeseeker: component_base
----@field inst idk
 ---@field removecomponent idk
 ---@field onhomeremoved idk
 ---@field home idk
@@ -31,11 +30,6 @@ end
 
 ---
 ---author: 
-function homeseeker:GetDebugString()
-end
-
----
----author: 
 function homeseeker:GetHomePos()
 end
 
@@ -43,12 +37,3 @@ end
 ---author: 
 function homeseeker:GetHome()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function homeseeker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function homeseeker:StopWatchingWorldState(var, fn) end

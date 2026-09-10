@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_periodicspawner: component_base
----@field inst idk
 ---@field basetime idk
 ---@field randtime idk
 ---@field prefab idk
@@ -87,29 +86,7 @@ end
 
 ---
 ---author: 
-function periodicspawner:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function periodicspawner:OnLoad(data)
-end
-
----
----author: 
-function periodicspawner:OnSave()
-end
-
----
----author: 
 function periodicspawner:DoSpawn()
-end
-
----
----@param dt idk # 
----author: 
-function periodicspawner:LongUpdate(dt)
 end
 
 ---
@@ -117,12 +94,3 @@ end
 ---author: 
 function periodicspawner:SetSpawnTestFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function periodicspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function periodicspawner:StopWatchingWorldState(var, fn) end

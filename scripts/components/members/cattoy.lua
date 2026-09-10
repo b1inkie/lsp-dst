@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_cattoy: component_base
----@field inst idk
 ---@field onplay_fn idk
 local cattoy = {}
 
@@ -17,12 +16,3 @@ end
 ---author: 
 function cattoy:SetOnPlay(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cattoy:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cattoy:StopWatchingWorldState(var, fn) end

@@ -5,7 +5,6 @@
 ---@field physicsstate idk
 ---@field task idk
 ---@field ischaracterpassthrough idk
----@field inst idk
 ---@field maxradius idk
 ---@field issmall idk
 ---@field onphysicsstatechangedfn idk
@@ -85,12 +84,3 @@ end
 ---author: 
 function heavyobstaclephysics:IsObstacle()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function heavyobstaclephysics:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function heavyobstaclephysics:StopWatchingWorldState(var, fn) end

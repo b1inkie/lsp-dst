@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_witherable: component_base
----@field inst idk
 ---@field enabled idk
 ---@field withered idk
 ---@field wither_temp idk
@@ -23,17 +22,6 @@ end
 ---
 ---author: 
 function witherable:ForceWither()
-end
-
----
----author: 
-function witherable:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function witherable:OnLoad(data)
 end
 
 ---
@@ -75,11 +63,6 @@ end
 
 ---
 ---author: 
-function witherable:OnSave()
-end
-
----
----author: 
 function witherable:IsWithered()
 end
 
@@ -93,12 +76,3 @@ end
 ---author: 
 function witherable:Enable(enable)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function witherable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function witherable:StopWatchingWorldState(var, fn) end

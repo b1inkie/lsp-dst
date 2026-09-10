@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lock: component_base
----@field inst idk
 ---@field onlocked idk
 ---@field onunlocked idk
 ---@field unlocktest idk
@@ -34,27 +33,9 @@ function lock:IsStuck()
 end
 
 ---
----author: 
-function lock:GetDebugString()
-end
-
----
 ---@param key idk # 
 ---author: 
 function lock:TestForUnlock(key)
-end
-
----
----@param newents idk # 
----@param data idk # 
----author: 
-function lock:LoadPostPass(newents,data)
-end
-
----
----@param data idk # 
----author: 
-function lock:OnLoad(data)
 end
 
 ---
@@ -76,11 +57,6 @@ function lock:CompatableKey(keytype)
 end
 
 ---
----author: 
-function lock:OnSave()
-end
-
----
 ---@param key idk # 
 ---@param doer idk # 
 ---author: 
@@ -97,12 +73,3 @@ end
 ---author: 
 function lock:SetOnUnlockedFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lock:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lock:StopWatchingWorldState(var, fn) end

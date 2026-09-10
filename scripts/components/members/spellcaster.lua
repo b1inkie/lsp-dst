@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_spellcaster: component_base
----@field inst ent
 ---@field onspellcast idk
 ---@field canusefrominventory idk
 ---@field canuseontargets idk
@@ -56,12 +55,3 @@ end
 ---author: 
 function spellcaster:SetOnSpellCastFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spellcaster:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spellcaster:StopWatchingWorldState(var, fn) end

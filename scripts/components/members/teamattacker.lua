@@ -2,7 +2,6 @@
 
 ---@class component_teamattacker: component_base
 ---@field teamsearchtags idk
----@field inst idk
 ---@field inteam idk
 ---@field teamleader idk
 ---@field formationpos idk
@@ -26,18 +25,7 @@ end
 
 ---
 ---author: 
-function teamattacker:GetDebugString()
-end
-
----
----author: 
 function teamattacker:LeaveTeam()
-end
-
----
----@param dt idk # 
----author: 
-function teamattacker:OnUpdate(dt)
 end
 
 ---
@@ -64,12 +52,3 @@ end
 ---author: 
 function teamattacker:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teamattacker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teamattacker:StopWatchingWorldState(var, fn) end

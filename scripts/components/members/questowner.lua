@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_questowner: component_base
----@field inst idk
 ---@field on_begin_quest idk
 ---@field on_abandon_quest idk
 ---@field questing idk
@@ -36,12 +35,6 @@ function questowner:AbandonQuest(doer)
 end
 
 ---
----@param data idk # 
----author: 
-function questowner:OnLoad(data)
-end
-
----
 ---@param doer idk # 
 ---author: 
 function questowner:CanAbandonQuest(doer)
@@ -51,11 +44,6 @@ end
 ---@param doer idk # 
 ---author: 
 function questowner:BeginQuest(doer)
-end
-
----
----author: 
-function questowner:OnSave()
 end
 
 ---
@@ -73,12 +61,3 @@ end
 ---author: 
 function questowner:CompleteQuest()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function questowner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function questowner:StopWatchingWorldState(var, fn) end

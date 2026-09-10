@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_deployhelper: component_base
----@field inst idk
 ---@field recipefilters idk
 ---@field keyfilters idk
 ---@field delay idk
@@ -12,11 +11,6 @@ local deployhelper = {}
 ---@param recipename idk # 
 ---author: 
 function deployhelper:AddRecipeFilter(recipename)
-end
-
----
----author: 
-function deployhelper:OnWallUpdate()
 end
 
 ---
@@ -46,12 +40,3 @@ end
 ---author: 
 function deployhelper:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deployhelper:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deployhelper:StopWatchingWorldState(var, fn) end

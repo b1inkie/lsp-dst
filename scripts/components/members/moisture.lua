@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_moisture: component_base
----@field inst idk
 ---@field maxmoisture idk
 ---@field moisture idk
 ---@field numSegs idk
@@ -57,11 +56,6 @@ end
 function moisture:TransferComponent(newinst)
 end
 
----
----@param data idk # 
----author: 
-function moisture:OnLoad(data)
-end
 
 ---
 ---author: 
@@ -79,11 +73,6 @@ end
 function moisture:GetEquippedMoistureRate(dryingrate)
 end
 
----
----@param dt idk # 
----author: 
-function moisture:OnUpdate(dt)
-end
 
 ---
 ---@param num idk # 
@@ -133,10 +122,6 @@ end
 function moisture:GetSleepingBagDryingRate()
 end
 
----
----author: 
-function moisture:GetDebugString()
-end
 
 ---
 ---author: 
@@ -154,11 +139,6 @@ end
 function moisture:GetMoisturePercent()
 end
 
----
----@param dt idk # 
----author: 
-function moisture:LongUpdate(dt)
-end
 
 ---
 ---author: 
@@ -172,10 +152,6 @@ end
 function moisture:ForceDry(force,source)
 end
 
----
----author: 
-function moisture:OnSave()
-end
 
 ---
 ---@param oldSegs idk # 
@@ -196,11 +172,3 @@ end
 function moisture:DoDelta(num,no_announce)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moisture:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moisture:StopWatchingWorldState(var, fn) end

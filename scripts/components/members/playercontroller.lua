@@ -4,7 +4,6 @@
 ---@field HasItemSlots idk
 ---@field _hasitemslots idk
 ---@field gridplacer idk
----@field inst idk
 ---@field map idk
 ---@field ismastersim idk
 ---@field locomotor idk
@@ -95,12 +94,6 @@ end
 ---@param z idk # 
 ---author: 
 function playercontroller:OnRemoteDragWalking(x,z)
-end
-
----
----@param dt idk # 
----author: 
-function playercontroller:OnUpdate(dt)
 end
 
 ---
@@ -338,12 +331,6 @@ end
 ---@param mod_name idk # 
 ---author: 
 function playercontroller:OnRemoteRightClick(actioncode,position,target,rotation,isreleased,controlmodscode,noforce,mod_name)
-end
-
----
----@param dt idk # 
----author: 
-function playercontroller:OnWallUpdate(dt)
 end
 
 ---
@@ -968,12 +955,3 @@ end
 ---author: 
 function playercontroller:RemoteStopAllControls()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playercontroller:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playercontroller:StopWatchingWorldState(var, fn) end

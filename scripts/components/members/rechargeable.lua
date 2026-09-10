@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_rechargeable: component_base
----@field inst ent
 ---@field total number # 这个值,代表充能条的总长度,和倒计时没有关系,
 ---@field current number # 当前充能了多少量 
 ---@field chargetimemod SourceModifierList # 加算修饰
@@ -62,12 +61,6 @@ function rechargeable:GetTimeToCharge()
 end
 
 ---
----@param dt idk # 
----author: 
-function rechargeable:OnUpdate(dt)
-end
-
----
 ---author: 
 function rechargeable:OnRemoveFromEntity()
 end
@@ -78,22 +71,6 @@ end
 ---@param mod idk # 
 ---author: 
 function rechargeable:SetChargeTimeMod(source,key,mod)
-end
-
----
----author: 
-function rechargeable:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function rechargeable:OnLoad(data)
-end
-
----
----author: 
-function rechargeable:OnSave()
 end
 
 ---
@@ -147,12 +124,3 @@ end
 ---author: lan
 function rechargeable:SetChargeTime(t)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rechargeable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rechargeable:StopWatchingWorldState(var, fn) end

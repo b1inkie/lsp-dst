@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_setbonus: component_base
----@field inst idk
 ---@field setname idk
 ---@field enabled idk
 ---@field onenabledfn idk
@@ -9,11 +8,6 @@
 ---@field EnableBonusForEquip idk
 ---@field DisableBonusForEquip idk
 local setbonus = {}
-
----
----author: 
-function setbonus:GetDebugString()
-end
 
 ---
 ---@param fn idk # 
@@ -50,12 +44,3 @@ end
 ---author: 
 function setbonus:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function setbonus:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function setbonus:StopWatchingWorldState(var, fn) end

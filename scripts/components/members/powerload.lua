@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_powerload: component_base
----@field inst idk
 ---@field load idk
 ---@field isidle idk
 local powerload = {}
@@ -22,12 +21,3 @@ end
 ---author: 
 function powerload:GetLoad()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function powerload:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function powerload:StopWatchingWorldState(var, fn) end

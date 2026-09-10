@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_plantresearchable: component_base
----@field inst idk
 ---@field reasearchinfofn idk
 local plantresearchable = {}
 
@@ -26,12 +25,3 @@ end
 ---author: 
 function plantresearchable:SetResearchFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function plantresearchable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function plantresearchable:StopWatchingWorldState(var, fn) end

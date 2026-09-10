@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_moonbeastspawner: component_base
----@field inst idk
 ---@field started idk
 ---@field range idk
 ---@field period idk
@@ -29,12 +28,3 @@ end
 ---author: 
 function moonbeastspawner:ForcePetrify()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moonbeastspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moonbeastspawner:StopWatchingWorldState(var, fn) end

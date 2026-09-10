@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_projectile: component_base
----@field inst idk
 ---@field owner idk
 ---@field target idk
 ---@field start idk
@@ -121,17 +120,6 @@ function projectile:RotateToTarget(dest)
 end
 
 ---
----author: 
-function projectile:GetDebugString()
-end
-
----
----@param dt idk # 
----author: 
-function projectile:OnUpdate(dt)
-end
-
----
 ---@param catcher idk # 
 ---author: 
 function projectile:Catch(catcher)
@@ -184,12 +172,3 @@ end
 ---author: 
 function projectile:SetHitDist(dist)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function projectile:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function projectile:StopWatchingWorldState(var, fn) end

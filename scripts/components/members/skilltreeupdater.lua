@@ -2,7 +2,6 @@
 
 ---@class component_skilltreeupdater: component_base
 ---@field skilltree idk
----@field inst idk
 ---@field silent idk
 ---@field skilltreeblob idk
 ---@field skilltreeblobprefab idk
@@ -51,12 +50,6 @@ end
 ---
 ---author: 
 function skilltreeupdater:GetPlayerSkillSelection()
-end
-
----
----@param data idk # 
----author: 
-function skilltreeupdater:OnLoad(data)
 end
 
 ---
@@ -145,11 +138,6 @@ end
 
 ---
 ---author: 
-function skilltreeupdater:OnSave()
-end
-
----
----author: 
 function skilltreeupdater:GetSkillXP()
 end
 
@@ -167,11 +155,3 @@ end
 function skilltreeupdater:ActivateSkill(skill,prefab,fromrpc)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skilltreeupdater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skilltreeupdater:StopWatchingWorldState(var, fn) end

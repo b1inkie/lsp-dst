@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_klaussacklock: component_base
----@field inst idk
 ---@field onusekeyfn idk
 local klaussacklock = {}
 
@@ -22,12 +21,3 @@ end
 ---author: 
 function klaussacklock:SetOnUseKey(onusekeyfn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function klaussacklock:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function klaussacklock:StopWatchingWorldState(var, fn) end

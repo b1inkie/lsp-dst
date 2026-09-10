@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hideandseekgame: component_base
----@field inst idk
 ---@field seekers idk
 ---@field hiding_spots idk
 ---@field hiding_range idk
@@ -20,11 +19,6 @@
 local hideandseekgame = {}
 
 ---
----author: 
-function hideandseekgame:OnRemoveEntity()
-end
-
----
 ---@param seeker idk # 
 ---@param started_game idk # 
 ---author: 
@@ -34,11 +28,6 @@ end
 ---
 ---author: 
 function hideandseekgame:Abort()
-end
-
----
----author: 
-function hideandseekgame:GetDebugString()
 end
 
 ---
@@ -58,13 +47,6 @@ function hideandseekgame:GetNumHiding()
 end
 
 ---
----@param newents idk # 
----@param data idk # 
----author: 
-function hideandseekgame:LoadPostPass(newents,data)
-end
-
----
 ---author: 
 function hideandseekgame:IsActive()
 end
@@ -72,11 +54,6 @@ end
 ---
 ---author: 
 function hideandseekgame:_HideAndSeekOver()
-end
-
----
----author: 
-function hideandseekgame:OnSave()
 end
 
 ---
@@ -90,11 +67,3 @@ end
 function hideandseekgame:RegisterHidingSpot(hiding_spot)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hideandseekgame:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hideandseekgame:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatcannonuser: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field aim_range_fx idk
 ---@field aiming_cannon idk
@@ -16,12 +15,6 @@ local boatcannonuser = {}
 ---
 ---author: 
 function boatcannonuser:GetReticule()
-end
-
----
----@param dt idk # 
----author: 
-function boatcannonuser:OnWallUpdate(dt)
 end
 
 ---
@@ -67,12 +60,3 @@ end
 ---author: 
 function boatcannonuser:GetAimPos()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatcannonuser:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatcannonuser:StopWatchingWorldState(var, fn) end

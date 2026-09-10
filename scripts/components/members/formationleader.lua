@@ -3,7 +3,6 @@
 ---@class component_formationleader: component_base
 ---@field formationleadersearchtags idk
 ---@field formationsearchtags idk
----@field inst idk
 ---@field formation_type idk
 ---@field max_formation_size idk
 ---@field formation idk
@@ -38,12 +37,6 @@ end
 ---
 ---author: 
 function formationleader:DisbandFormation()
-end
-
----
----@param dt idk # 
----author: 
-function formationleader:OnUpdate(dt)
 end
 
 ---
@@ -95,12 +88,3 @@ end
 ---author: 
 function formationleader:IsFormationFull()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function formationleader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function formationleader:StopWatchingWorldState(var, fn) end

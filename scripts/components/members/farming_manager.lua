@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_farming_manager: component_base
----@field inst idk
 local farming_manager = {}
 
 ---私有方法,但是我就不标私有了,这样可以看到这个方法
@@ -13,12 +12,6 @@ end
 ---私有方法,但是我就不标私有了,这样可以看到这个方法
 ---author: lan
 function farming_manager:_UpdateWeedSpawning()
-end
-
----
----@param dt idk # 
----author: 
-function farming_manager:LongUpdate(dt)
 end
 
 ---获取耕地的当前养分,返回三个值(0~100)
@@ -83,28 +76,3 @@ end
 ---author: 
 function farming_manager:IsSoilMoistAtPoint(x, y, z)
 end
-
----
----author: 
-function farming_manager:OnSave()
-end
-
----
----@param data any
----author: 
-function farming_manager:OnLoad(data)
-end
-
----
----author: 
-function farming_manager:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function farming_manager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function farming_manager:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_decay: component_base
----@field inst idk
 ---@field maxhealth idk
 ---@field decayrate idk
 ---@field currenthealth idk
@@ -21,12 +20,3 @@ end
 ---author: 
 function decay:DoDelta(amount)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function decay:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function decay:StopWatchingWorldState(var, fn) end

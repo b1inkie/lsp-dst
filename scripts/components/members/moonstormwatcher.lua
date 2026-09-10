@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_moonstormwatcher: component_base
----@field inst idk
 ---@field enabled idk
 ---@field moonstormlevel idk
 ---@field moonstormspeedmult idk
@@ -45,12 +44,3 @@ end
 ---author: 
 function moonstormwatcher:UpdateMoonstormWalkSpeed()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moonstormwatcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moonstormwatcher:StopWatchingWorldState(var, fn) end

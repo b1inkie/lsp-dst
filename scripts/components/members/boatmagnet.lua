@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatmagnet: component_base
----@field inst idk
 ---@field boat idk
 ---@field beacon idk
 ---@field magnet_guid idk
@@ -20,23 +19,12 @@ local boatmagnet = {}
 
 ---
 ---author: 
-function boatmagnet:OnRemoveEntity()
-end
-
----
----author: 
 function boatmagnet:CalcMagnetForce()
 end
 
 ---
 ---author: 
 function boatmagnet:GetFollowTarget()
-end
-
----
----@param dt idk # 
----author: 
-function boatmagnet:OnUpdate(dt)
 end
 
 ---
@@ -52,17 +40,6 @@ end
 ---
 ---author: 
 function boatmagnet:UnpairWithBeacon()
-end
-
----
----@param data idk # 
----author: 
-function boatmagnet:OnLoad(data)
-end
-
----
----author: 
-function boatmagnet:GetDebugString()
 end
 
 ---
@@ -89,11 +66,6 @@ end
 
 ---
 ---author: 
-function boatmagnet:OnSave()
-end
-
----
----author: 
 function boatmagnet:CalcMagnetDirection()
 end
 
@@ -107,12 +79,3 @@ end
 ---author: 
 function boatmagnet:FindNearestBeacon()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatmagnet:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatmagnet:StopWatchingWorldState(var, fn) end

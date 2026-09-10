@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_healthsyncer: component_base
----@field inst idk
 ---@field _status idk
 ---@field _healthpct idk
 ---@field corrosives idk
@@ -13,12 +12,6 @@
 local healthsyncer = {}
 
 ---
----@param dt idk # 
----author: 
-function healthsyncer:OnUpdate(dt)
-end
-
----
 ---author: 
 function healthsyncer:GetPercent()
 end
@@ -28,11 +21,3 @@ end
 function healthsyncer:GetOverTime()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthsyncer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthsyncer:StopWatchingWorldState(var, fn) end

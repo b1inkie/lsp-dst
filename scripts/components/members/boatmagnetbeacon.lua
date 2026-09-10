@@ -4,7 +4,6 @@
 ---@field magnet idk
 ---@field magnet_guid idk
 ---@field _setup_boat_task idk
----@field inst idk
 ---@field turnedoff idk
 ---@field ispickedup idk
 ---@field boat idk
@@ -14,11 +13,6 @@
 ---@field OnBoatRemoved idk
 ---@field OnBoatDeath idk
 local boatmagnetbeacon = {}
-
----
----author: 
-function boatmagnetbeacon:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -41,19 +35,8 @@ function boatmagnetbeacon:TurnOffBeacon()
 end
 
 ---
----@param data idk # 
----author: 
-function boatmagnetbeacon:OnLoad(data)
-end
-
----
 ---author: 
 function boatmagnetbeacon:TurnOnBeacon()
-end
-
----
----author: 
-function boatmagnetbeacon:GetDebugString()
 end
 
 ---
@@ -78,11 +61,6 @@ function boatmagnetbeacon:IsTurnedOff()
 end
 
 ---
----author: 
-function boatmagnetbeacon:OnSave()
-end
-
----
 ---@param pickedup idk # 
 ---author: 
 function boatmagnetbeacon:SetIsPickedUp(pickedup)
@@ -98,12 +76,3 @@ end
 ---author: 
 function boatmagnetbeacon:SetBoat(boat)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatmagnetbeacon:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatmagnetbeacon:StopWatchingWorldState(var, fn) end

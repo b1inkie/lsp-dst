@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_groomer: component_base
----@field inst idk
 ---@field changers idk
 ---@field enabled idk
 ---@field canuseaction idk
@@ -50,15 +49,9 @@ function groomer:SetCanUseAction(canuseaction)
 end
 
 ---
----@param delay idk # 
+---@param doer idk # 
 ---author: 
 function groomer:SetChangeInDelay(delay)
-end
-
----
----@param dt idk # 
----author: 
-function groomer:OnUpdate(dt)
 end
 
 ---
@@ -73,12 +66,6 @@ function groomer:EndChanging(doer)
 end
 
 ---
----@param data idk # 
----author: 
-function groomer:OnLoad(data)
-end
-
----
 ---@param doer idk # 
 ---author: 
 function groomer:CanBeginChanging(doer)
@@ -88,11 +75,6 @@ end
 ---@param canbedressed idk # 
 ---author: 
 function groomer:SetCanBeDressed(canbedressed)
-end
-
----
----author: 
-function groomer:OnSave()
 end
 
 ---
@@ -133,12 +115,3 @@ end
 ---author: 
 function groomer:ActivateChanging(doer,skins)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groomer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groomer:StopWatchingWorldState(var, fn) end

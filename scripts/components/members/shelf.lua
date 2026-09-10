@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_shelf: component_base
----@field inst idk
 ---@field cantakeitemfn idk
 ---@field itemonshelf idk
 ---@field onitemtakenfn idk
@@ -38,17 +37,3 @@ end
 ---author: 
 function shelf:OnRemoveFromEntity()
 end
-
----
----author: 
-function shelf:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shelf:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shelf:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_circuitnode: component_base
----@field inst idk
 ---@field range idk
 ---@field footprint idk
 ---@field onconnectfn idk
@@ -11,11 +10,6 @@
 ---@field connectsacrossplatforms idk
 ---@field rangeincludesfootprint idk
 local circuitnode = {}
-
----
----author: 
-function circuitnode:OnRemoveEntity()
-end
 
 ---
 ---@param range idk # 
@@ -84,12 +78,3 @@ end
 ---author: 
 function circuitnode:IsConnected()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function circuitnode:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function circuitnode:StopWatchingWorldState(var, fn) end

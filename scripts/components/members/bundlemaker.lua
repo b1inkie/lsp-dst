@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_bundlemaker: component_base
----@field inst idk
 ---@field bundlingprefab idk
 ---@field bundledprefab idk
 ---@field onstartbundlingfn idk
@@ -35,11 +34,3 @@ end
 function bundlemaker:SetSkinData(skinname,skin_id)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function bundlemaker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function bundlemaker:StopWatchingWorldState(var, fn) end

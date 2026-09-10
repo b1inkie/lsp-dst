@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_incinerator: component_base
----@field inst idk
 ---@field onincineratefn idk
 ---@field shouldincinerateitemfn idk
 ---@field incinerate_doer idk
@@ -30,12 +29,3 @@ end
 ---author: 
 function incinerator:Incinerate(doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function incinerator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function incinerator:StopWatchingWorldState(var, fn) end

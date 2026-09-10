@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_repellent: component_base
----@field inst idk
 ---@field onlyfollowers idk
 ---@field repel_tags idk
 ---@field ignore_tags idk
@@ -63,12 +62,3 @@ end
 ---author: 
 function repellent:SetOnRepelFollowerFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function repellent:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function repellent:StopWatchingWorldState(var, fn) end

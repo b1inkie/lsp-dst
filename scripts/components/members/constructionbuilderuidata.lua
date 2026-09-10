@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_constructionbuilderuidata: component_base
----@field inst idk
 ---@field _containerinst idk
 ---@field _targetinst idk
 local constructionbuilderuidata = {}
@@ -44,12 +43,3 @@ end
 ---author: 
 function constructionbuilderuidata:SetContainer(containerinst)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function constructionbuilderuidata:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function constructionbuilderuidata:StopWatchingWorldState(var, fn) end

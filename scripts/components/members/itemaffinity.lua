@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_itemaffinity: component_base
----@field inst ent # 挂载了组件itemaffinity的实体，一般为角色，如鱼妹
 ---@field affinities table # 物品亲和表，如鱼妹带身上，生鱼加san光环，死鱼扣san光环
 local itemaffinity = {}
 
@@ -29,12 +28,3 @@ end
 ---author: nullptr
 function itemaffinity:AddAffinity(prefab,tag,sanity_bonus,priority)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function itemaffinity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function itemaffinity:StopWatchingWorldState(var, fn) end

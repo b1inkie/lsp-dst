@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_fishingrod: replica_base
----@field inst idk
 ---@field _target idk
 ---@field _hashookedfish idk
 ---@field _hascaughtfish idk

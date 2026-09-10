@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_firedetector: component_base
----@field inst idk
 ---@field range idk
 ---@field detectPeriod idk
 ---@field onfindfire idk
@@ -83,11 +82,6 @@ function firedetector:GetMaxEmergencyLevel()
 end
 
 ---
----author: 
-function firedetector:GetDebugString()
-end
-
----
 ---@param randomizedStartTime idk # 
 ---author: 
 function firedetector:Activate(randomizedStartTime)
@@ -125,12 +119,3 @@ end
 ---author: 
 function firedetector:IsEmergency()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function firedetector:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function firedetector:StopWatchingWorldState(var, fn) end

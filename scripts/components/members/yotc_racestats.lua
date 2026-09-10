@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_yotc_racestats: component_base
----@field inst idk
 ---@field speed idk
 ---@field direction idk
 ---@field reaction idk
@@ -15,11 +14,6 @@ local yotc_racestats = {}
 ---
 ---author: 
 function yotc_racestats:GetBestStats()
-end
-
----
----author: 
-function yotc_racestats:GetDebugString()
 end
 
 ---
@@ -37,12 +31,6 @@ end
 ---@param point_mod idk # 
 ---author: 
 function yotc_racestats:ModifyDirection(point_mod)
-end
-
----
----@param data idk # 
----author: 
-function yotc_racestats:OnLoad(data)
 end
 
 ---
@@ -79,11 +67,6 @@ end
 
 ---
 ---author: 
-function yotc_racestats:OnSave()
-end
-
----
----author: 
 function yotc_racestats:GetStaminaModifier()
 end
 
@@ -98,12 +81,3 @@ end
 ---author: 
 function yotc_racestats:ModifyReaction(point_mod)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotc_racestats:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotc_racestats:StopWatchingWorldState(var, fn) end

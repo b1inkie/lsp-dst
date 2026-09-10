@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_machine: component_base
----@field inst ent
 ---@field turnonfn nil|fun(inst: ent) 开机回调
 ---@field turnofffn nil|fun(inst: ent) 关机回调
 ---@field ison boolean 默认false 开关机状态指示
@@ -10,12 +9,6 @@
 ---@field enabled boolean 默认true，是否启用机器的标志符
 ---@field groundonly boolean 无默认值，是否只能在地面使用的标志符
 local machine = {}
-
----加载组件状态
----@param data table # 
----author: mango
-function machine:OnLoad(data)
-end
 
 ---检查机器是否处于开启状态
 ---@return boolean
@@ -32,16 +25,6 @@ end
 ---关闭机器，启动冷却时间，调用回调函数并触发事件
 ---author: mango
 function machine:TurnOff()
-end
-
----获取调试信息字符串：冷却时间+是否处于冷却状态
----author: mango
-function machine:GetDebugString()
-end
-
----保存组件状态
----author: mango
-function machine:OnSave()
 end
 
 ---检查机器是否可以交互
@@ -61,12 +44,3 @@ end
 ---author: mango
 function machine:SetGroundOnlyMachine(groundonly)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function machine:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function machine:StopWatchingWorldState(var, fn) end

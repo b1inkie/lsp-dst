@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_moisture: replica_base
----@field inst idk
 ---@field _iswet idk
 local replica_moisture = {}
 

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mermkingmanager: component_base
----@field inst idk
 ---@field main_throne idk
 ---@field thrones idk
 ---@field king idk
@@ -45,11 +44,6 @@ function mermkingmanager:IsCandidate(merm)
 end
 
 ---
----author: 
-function mermkingmanager:OnSave()
-end
-
----
 ---@param throne idk # 
 ---author: 
 function mermkingmanager:IsThroneValid(throne)
@@ -64,13 +58,6 @@ end
 ---
 ---author: 
 function mermkingmanager:HasPauldronAnywhere()
-end
-
----
----@param newents idk # 
----@param savedata idk # 
----author: 
-function mermkingmanager:LoadPostPass(newents,savedata)
 end
 
 ---
@@ -152,12 +139,3 @@ end
 ---author: 
 function mermkingmanager:IsCandidateAtThrone(candidate,throne)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mermkingmanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mermkingmanager:StopWatchingWorldState(var, fn) end

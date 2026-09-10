@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_trophyscale: component_base
----@field inst idk
 ---@field type idk
 ---@field item_data idk
 ---@field compare_postfn idk
@@ -30,31 +29,15 @@ function trophyscale:ClearItemData()
 end
 
 ---
----author: 
-function trophyscale:GetDebugString()
-end
-
----
 ---@param override_data idk # 
 ---author: 
 function trophyscale:SpawnItemFromData(override_data)
 end
 
 ---
----@param data idk # 
----author: 
-function trophyscale:OnLoad(data)
-end
-
----
 ---@param fn idk # 
 ---author: 
 function trophyscale:SetComparePostFn(fn)
-end
-
----
----author: 
-function trophyscale:OnSave()
 end
 
 ---
@@ -90,12 +73,3 @@ end
 ---author: 
 function trophyscale:SetTakeItemTestFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trophyscale:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trophyscale:StopWatchingWorldState(var, fn) end

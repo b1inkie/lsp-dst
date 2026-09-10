@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_positionalwarp: component_base
----@field inst idk
 ---@field showmarker idk
 ---@field markers idk
 ---@field cur_marker idk
@@ -20,11 +19,6 @@ local positionalwarp = {}
 
 ---
 ---author: 
-function positionalwarp:OnRemoveEntity()
-end
-
----
----author: 
 function positionalwarp:CachePosition()
 end
 
@@ -37,11 +31,6 @@ end
 ---@param num_cache_points idk # 
 ---author: 
 function positionalwarp:SetWarpBackDist(num_cache_points)
-end
-
----
----author: 
-function positionalwarp:GetDebugString()
 end
 
 ---
@@ -58,19 +47,8 @@ function positionalwarp:EnableMarker(enable)
 end
 
 ---
----@param data idk # 
----author: 
-function positionalwarp:OnLoad(data)
-end
-
----
 ---author: 
 function positionalwarp:Reset()
-end
-
----
----author: 
-function positionalwarp:OnSave()
 end
 
 ---
@@ -89,12 +67,3 @@ end
 ---author: 
 function positionalwarp:SetMarker(prefab)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function positionalwarp:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function positionalwarp:StopWatchingWorldState(var, fn) end

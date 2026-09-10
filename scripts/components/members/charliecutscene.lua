@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_charliecutscene: component_base
----@field inst idk
 ---@field gate_pos idk
 ---@field atrium_pillars idk
 ---@field _iscameralocked idk
@@ -12,11 +11,6 @@
 ---@field charlie idk
 ---@field hand idk
 local charliecutscene = {}
-
----
----author: 
-function charliecutscene:OnSave()
-end
 
 ---
 ---author: 
@@ -31,12 +25,6 @@ end
 ---
 ---author: 
 function charliecutscene:FindCharlieSpawnPoint()
-end
-
----
----@param data idk # 
----author: 
-function charliecutscene:OnLoad(data)
 end
 
 ---
@@ -91,12 +79,3 @@ end
 ---author: 
 function charliecutscene:Finish()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function charliecutscene:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function charliecutscene:StopWatchingWorldState(var, fn) end

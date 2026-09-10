@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_growable: component_base
----@field inst ent
 ---@field stages table
 ---@field stage idk
 ---@field pausereasons idk
@@ -68,24 +67,7 @@ end
 
 ---
 ---author: 
-function growable:GetDebugString()
-end
-
----
----author: 
 function growable:GetStage()
-end
-
----
----@param dt idk # 
----author: 
-function growable:LongUpdate(dt)
-end
-
----
----@param data idk # 
----author: 
-function growable:OnLoad(data)
 end
 
 ---
@@ -109,12 +91,3 @@ end
 ---author: 
 function growable:Pause(reason)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function growable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function growable:StopWatchingWorldState(var, fn) end

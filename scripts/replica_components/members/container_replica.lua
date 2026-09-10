@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_container: replica_base
----@field inst ent
 ---@field _cannotbeopened idk
 ---@field _skipopensnd idk
 ---@field _skipclosesnd idk
@@ -111,11 +110,6 @@ end
 ---@param item idk # 
 ---author: 
 function replica_container:GetSpecificSlotForItem(item)
-end
-
----
----author: 
-function replica_container:OnRemoveEntity()
 end
 
 ---

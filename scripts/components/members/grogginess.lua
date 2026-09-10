@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_grogginess: component_base
----@field inst idk
 ---@field resistance idk
 ---@field grog_amount idk
 ---@field knockouttime idk
@@ -68,12 +67,6 @@ end
 ---@param resistance idk # 
 ---author: 
 function grogginess:AddResistanceSource(source,resistance)
-end
-
----
----@param dt idk # 
----author: 
-function grogginess:OnUpdate(dt)
 end
 
 ---
@@ -160,11 +153,6 @@ function grogginess:MakeGrogginessAtLeast(min)
 end
 
 ---
----author: 
-function grogginess:GetDebugString()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function grogginess:SetComeToTest(fn)
@@ -181,12 +169,3 @@ end
 ---author: 
 function grogginess:SetSpeedModMultiplier(mult)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grogginess:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grogginess:StopWatchingWorldState(var, fn) end

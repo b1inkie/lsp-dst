@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_complexprojectile: component_base
----@field inst idk
 ---@field velocity idk
 ---@field gravity idk
 ---@field horizontalSpeed idk
@@ -48,11 +47,6 @@ function complexprojectile:Cancel()
 end
 
 ---
----author: 
-function complexprojectile:GetDebugString()
-end
-
----
 ---@param targetPos idk # 
 ---@param attacker idk # 
 ---@param owningweapon idk # 
@@ -93,12 +87,6 @@ function complexprojectile:SetTargetOffset(offset)
 end
 
 ---
----@param dt idk # 
----author: 
-function complexprojectile:OnUpdate(dt)
-end
-
----
 ---@param desired_horizontal_distance idk # 
 ---author: 
 function complexprojectile:CalculateMinimumSpeedForDistance(desired_horizontal_distance)
@@ -114,12 +102,3 @@ end
 ---author: 
 function complexprojectile:SetGravity(g)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function complexprojectile:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function complexprojectile:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_stackable: replica_base
----@field inst idk
 ---@field _stacksize idk
 ---@field _stacksizeupper idk
 ---@field _ignoremaxsize idk

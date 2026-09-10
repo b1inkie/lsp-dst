@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_minionspawner: component_base
----@field inst idk
 ---@field miniontype idk
 ---@field maxminions idk
 ---@field minionspawntime idk
@@ -55,13 +54,6 @@ function minionspawner:StartNextSpawn()
 end
 
 ---
----@param newents idk # 
----@param savedata idk # 
----author: 
-function minionspawner:LoadPostPass(newents,savedata)
-end
-
----
 ---author: 
 function minionspawner:SpawnNewMinion()
 end
@@ -73,12 +65,6 @@ function minionspawner:ResumeSpawn(time)
 end
 
 ---
----author: 
-function minionspawner:GetDebugString()
-end
-
----
----@param time idk # 
 ---author: 
 function minionspawner:SetSpawnInfo(time)
 end
@@ -95,12 +81,6 @@ function minionspawner:GetSpawnLocation(num)
 end
 
 ---
----@param dt idk # 
----author: 
-function minionspawner:LongUpdate(dt)
-end
-
----
 ---author: 
 function minionspawner:MakeMinion()
 end
@@ -108,12 +88,6 @@ end
 ---
 ---author: 
 function minionspawner:KillAllMinions()
-end
-
----
----@param data idk # 
----author: 
-function minionspawner:OnLoad(data)
 end
 
 ---
@@ -132,12 +106,3 @@ end
 ---author: 
 function minionspawner:RemovePosition(num)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function minionspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function minionspawner:StopWatchingWorldState(var, fn) end

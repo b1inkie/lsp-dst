@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_crop: component_base
----@field inst idk
 ---@field product_prefab idk
 ---@field growthpercent idk
 ---@field rate idk
@@ -51,23 +50,6 @@ end
 
 ---
 ---author: 
-function crop:LoadPostPass()
-end
-
----
----@param data idk # 
----author: 
-function crop:OnLoad(data)
-end
-
----
----@param dt idk # 
----author: 
-function crop:LongUpdate(dt)
-end
-
----
----author: 
 function crop:Mature()
 end
 
@@ -89,16 +71,6 @@ function crop:SetOnWitheredFn(fn)
 end
 
 ---
----author: 
-function crop:GetDebugString()
-end
-
----
----author: 
-function crop:OnSave()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function crop:SetOnHarvestFn(fn)
@@ -117,12 +89,3 @@ end
 ---author: 
 function crop:DoGrow(dt,nowither)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crop:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crop:StopWatchingWorldState(var, fn) end

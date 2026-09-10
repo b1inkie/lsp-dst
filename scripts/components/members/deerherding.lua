@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_deerherding: component_base
----@field inst idk
 ---@field herdhomelocation idk
 ---@field herdlocation idk
 ---@field herdheading idk
@@ -43,43 +42,14 @@ function deerherding:IsAnyEntityAsleep()
 end
 
 ---
----@param dt idk # 
----author: 
-function deerherding:OnUpdate(dt)
-end
-
----
 ---author: 
 function deerherding:UpdateDeerHerdingStatus()
-end
-
----
----@param newents idk # 
----@param data idk # 
----author: 
-function deerherding:LoadPostPass(newents,data)
 end
 
 ---
 ---@param radius idk # 
 ---author: 
 function deerherding:UpdateHerdLocation(radius)
-end
-
----
----@param data idk # 
----author: 
-function deerherding:OnLoad(data)
-end
-
----
----author: 
-function deerherding:GetDebugString()
-end
-
----
----author: 
-function deerherding:OnSave()
 end
 
 ---
@@ -115,12 +85,3 @@ end
 ---author: 
 function deerherding:IsGrazing()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deerherding:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deerherding:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_writeable: replica_base
----@field inst idk
 ---@field screen idk
 ---@field opentask idk
 ---@field classified idk
@@ -40,11 +39,6 @@ end
 ---
 ---author: 
 function replica_writeable:DetachClassified()
-end
-
----
----author: 
-function replica_writeable:OnRemoveEntity()
 end
 
 ---

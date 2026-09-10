@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_temperature: component_base
----@field inst ent
 ---@field settemp idk
 ---@field current idk
 ---@field maxtemp idk
@@ -65,13 +64,6 @@ function temperature:IsOverheating()
 end
 
 ---
----@param dt idk # 
----@param applyhealthdelta idk # 
----author: 
-function temperature:OnUpdate(dt,applyhealthdelta)
-end
-
----
 ---author: 
 function temperature:GetInsulation()
 end
@@ -120,19 +112,9 @@ function temperature:IsFreezing()
 end
 
 ---
----author: 
-function temperature:GetDebugString()
-end
-
----
 ---@param value idk # 
 ---author: 
 function temperature:SetTemperature(value)
-end
-
----
----author: 
-function temperature:OnSave()
 end
 
 ---
@@ -142,21 +124,7 @@ function temperature:IgnoreTags(...)
 end
 
 ---
----@param data idk # 
----author: 
-function temperature:OnLoad(data)
-end
-
----
 ---author: 
 function temperature:OnRemoveFromEntity()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperature:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperature:StopWatchingWorldState(var, fn) end

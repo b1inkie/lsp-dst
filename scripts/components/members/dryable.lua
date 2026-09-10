@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_dryable: component_base
----@field inst idk
 ---@field product idk
 ---@field drytime idk
 ---@field buildfile idk
@@ -56,12 +55,3 @@ end
 ---author: 
 function dryable:SetDriedBuildFile(dried_buildfile)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dryable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dryable:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fishingrod: component_base
----@field inst ent
 ---@field target idk
 ---@field fisherman ent|nil
 ---@field hookedfish idk
@@ -42,11 +41,6 @@ end
 
 ---
 ---author: 
-function fishingrod:GetDebugString()
-end
-
----
----author: 
 function fishingrod:HasCaughtFish()
 end
 
@@ -78,12 +72,6 @@ function fishingrod:Release()
 end
 
 ---
----@param dt idk # 
----author: 
-function fishingrod:OnUpdate(dt)
-end
-
----
 ---@param target idk # 
 ---@param fisherman idk # 
 ---author: 
@@ -99,12 +87,3 @@ end
 ---author: 
 function fishingrod:HasHookedFish()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingrod:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingrod:StopWatchingWorldState(var, fn) end

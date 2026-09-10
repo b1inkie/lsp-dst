@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_follower: replica_base
----@field inst idk
 ---@field _leader idk
 local replica_follower = {}
 

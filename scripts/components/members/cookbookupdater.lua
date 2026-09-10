@@ -2,7 +2,6 @@
 
 ---@class component_cookbookupdater: component_base
 ---@field cookbook idk
----@field inst idk
 local cookbookupdater = {}
 
 ---
@@ -17,12 +16,3 @@ end
 ---author: 
 function cookbookupdater:LearnFoodStats(product)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cookbookupdater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cookbookupdater:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_riftspawner: component_base
----@field inst idk
 ---@field _worldsettingstimer idk
 ---@field _map idk
 ---@field spawnmode idk
@@ -36,11 +35,6 @@ function riftspawner:GetDebugRiftString()
 end
 
 ---
----author: 
-function riftspawner:GetDebugString()
-end
-
----
 ---@param forced_pos idk # 
 ---author: 
 function riftspawner:TryToSpawnRift(forced_pos)
@@ -54,12 +48,6 @@ end
 ---
 ---author: 
 function riftspawner:IsXPortalActive()
-end
-
----
----@param data idk # 
----author: 
-function riftspawner:OnLoad(data)
 end
 
 ---
@@ -95,19 +83,7 @@ end
 
 ---
 ---author: 
-function riftspawner:OnSave()
-end
-
----
----author: 
 function riftspawner:GetXRiftsEnabled()
-end
-
----
----@param newents idk # 
----@param data idk # 
----author: 
-function riftspawner:LoadPostPass(newents,data)
 end
 
 ---
@@ -191,12 +167,3 @@ end
 ---author: 
 function riftspawner:SpawnRift(forced_pos)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function riftspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function riftspawner:StopWatchingWorldState(var, fn) end

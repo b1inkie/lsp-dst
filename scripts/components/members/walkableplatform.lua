@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_walkableplatform: component_base
----@field inst idk
 ---@field players_on_platform idk
 ---@field objects_on_platform idk
 ---@field platform_radius idk
@@ -9,11 +8,6 @@
 ---@field player_collision idk
 ---@field had_players idk
 local walkableplatform = {}
-
----
----author: 
-function walkableplatform:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -53,12 +47,6 @@ function walkableplatform:GetEntitiesOnPlatform()
 end
 
 ---
----@param data idk # 
----author: 
-function walkableplatform:OnLoad(data)
-end
-
----
 ---@param ent idk # 
 ---author: 
 function walkableplatform:AddEntityToPlatform(ent)
@@ -87,11 +75,6 @@ end
 
 ---
 ---author: 
-function walkableplatform:OnSave()
-end
-
----
----author: 
 function walkableplatform:GetPlayersOnPlatform()
 end
 
@@ -107,12 +90,3 @@ end
 ---author: 
 function walkableplatform:GetEmbarkPosition(embarker_x,embarker_z,embarker_min_dist)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatform:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatform:StopWatchingWorldState(var, fn) end

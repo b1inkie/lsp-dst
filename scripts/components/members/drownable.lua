@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_drownable: component_base
----@field inst idk
 ---@field enabled idk
 ---@field customtuningsfn idk
 ---@field ontakedrowningdamage idk
@@ -70,12 +69,3 @@ end
 ---author: 
 function drownable:Teleport()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drownable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drownable:StopWatchingWorldState(var, fn) end

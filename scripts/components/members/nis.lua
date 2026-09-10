@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_nis: component_base
----@field inst idk
 ---@field playing idk
 ---@field skippable idk
 ---@field data idk
@@ -15,16 +14,10 @@ local nis = {}
 
 ---
 ---author: 
-function nis:OnRemoveEntity()
-end
-
----
----author: 
 function nis:OnFinish()
 end
 
 ---
----@param name idk # 
 ---author: 
 function nis:SetName(name)
 end
@@ -62,12 +55,3 @@ end
 ---author: 
 function nis:SetInit(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function nis:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function nis:StopWatchingWorldState(var, fn) end

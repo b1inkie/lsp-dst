@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_useabletargeteditem: component_base
----@field inst idk
 ---@field inuse_targeted idk
 ---@field inventory_disableable idk
 ---@field useabletargetprefab idk
@@ -54,12 +53,3 @@ end
 ---author: 
 function useabletargeteditem:SetOnUseFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function useabletargeteditem:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function useabletargeteditem:StopWatchingWorldState(var, fn) end

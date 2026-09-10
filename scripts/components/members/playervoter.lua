@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_playervoter: component_base
----@field inst idk
 ---@field _refreshtask idk
 ---@field classified idk
 ---@field ondetachclassified idk
@@ -61,12 +60,3 @@ end
 ---author: 
 function playervoter:AttachClassified(classified)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playervoter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playervoter:StopWatchingWorldState(var, fn) end

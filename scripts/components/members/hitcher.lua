@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hitcher: component_base
----@field inst idk
 ---@field hitched idk
 ---@field canbehitched idk
 ---@field locked idk
@@ -28,23 +27,3 @@ end
 ---author: 
 function hitcher:Unhitch()
 end
-
----
----@param data idk # 
----author: 
-function hitcher:OnLoad(data)
-end
-
----
----author: 
-function hitcher:OnSave()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hitcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hitcher:StopWatchingWorldState(var, fn) end

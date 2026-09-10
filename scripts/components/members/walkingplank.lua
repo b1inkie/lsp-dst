@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_walkingplank: component_base
----@field inst idk
 ---@field doer idk
 local walkingplank = {}
 
@@ -36,12 +35,3 @@ end
 ---author: 
 function walkingplank:MountPlank(doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkingplank:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkingplank:StopWatchingWorldState(var, fn) end

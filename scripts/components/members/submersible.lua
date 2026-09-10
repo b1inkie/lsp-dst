@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_submersible: component_base
----@field inst idk
 ---@field force_no_repositioning idk
 local submersible = {}
 
@@ -26,17 +25,6 @@ end
 
 ---
 ---author: 
-function submersible:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function submersible:OnLoad(data)
-end
-
----
----author: 
 function submersible:OnRemoveFromEntity()
 end
 
@@ -44,12 +32,3 @@ end
 ---author: 
 function submersible:GetUnderwaterObject()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function submersible:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function submersible:StopWatchingWorldState(var, fn) end

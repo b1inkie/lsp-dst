@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_channelcastable: component_base
----@field inst idk
 ---@field user idk
 ---@field strafing idk
 ---@field onstartchannelingfn idk
@@ -51,19 +50,5 @@ end
 
 ---
 ---author: 
-function channelcastable:GetDebugString()
-end
-
----
----author: 
 function channelcastable:StopChanneling()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function channelcastable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function channelcastable:StopWatchingWorldState(var, fn) end

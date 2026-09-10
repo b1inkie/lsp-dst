@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_winchtarget: component_base
----@field inst idk
 ---@field depth idk
 ---@field salvagefn idk
 local winchtarget = {}
@@ -26,12 +25,3 @@ end
 ---author: 
 function winchtarget:GetSunkenObject()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winchtarget:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winchtarget:StopWatchingWorldState(var, fn) end

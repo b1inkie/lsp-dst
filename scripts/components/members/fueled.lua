@@ -3,7 +3,6 @@
 ---@class component_fueled: component_base
 ---@field fueltype idk
 ---@field secondaryfueltype idk
----@field inst ent
 ---@field consuming idk
 ---@field maxfuel idk
 ---@field currentfuel idk
@@ -56,12 +55,6 @@ function fueled:StartConsuming()
 end
 
 ---
----@param data idk # 
----author: 
-function fueled:OnLoad(data)
-end
-
----
 ---@param fn idk # 
 ---author: 
 function fueled:SetMultiplierFn(fn)
@@ -72,17 +65,6 @@ end
 ---@param doer idk # 
 ---author: 
 function fueled:DoDelta(amount,doer)
-end
-
----
----author: 
-function fueled:GetDebugString()
-end
-
----
----@param dt idk # 
----author: 
-function fueled:OnWallUpdate(dt)
 end
 
 ---
@@ -178,11 +160,6 @@ function fueled:ChangeSection(amount)
 end
 
 ---
----author: 
-function fueled:OnSave()
-end
-
----
 ---@param num idk # 
 ---author: 
 function fueled:SetSections(num)
@@ -199,12 +176,3 @@ end
 ---author: 
 function fueled:DoUpdate(dt)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fueled:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fueled:StopWatchingWorldState(var, fn) end

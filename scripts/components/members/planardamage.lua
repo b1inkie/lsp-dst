@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_planardamage: component_base
----@field inst idk
 ---@field basedamage idk
 ---@field externalmultipliers idk
 ---@field externalbonuses idk
@@ -10,11 +9,6 @@ local planardamage = {}
 ---最终位面伤害：基础位面伤害*乘法修饰总和+加法修饰总和
 ---author: mango
 function planardamage:GetDamage()
-end
-
----获取调试信息:最终伤害+基础伤害+乘法修饰总和+加法修饰总和
----author: mango
-function planardamage:GetDebugString()
 end
 
 ---添加伤害倍率（乘法）
@@ -69,12 +63,3 @@ end
 ---author: mango
 function planardamage:RemoveMultiplier(src,key)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function planardamage:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function planardamage:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_miasmawatcher: component_base
----@field inst ent
 ---@field enabled idk
 ---@field miasmaspeedmult idk
 ---@field hasmiasmasource idk
@@ -45,12 +44,3 @@ end
 ---author: 
 function miasmawatcher:IsInMiasma()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function miasmawatcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function miasmawatcher:StopWatchingWorldState(var, fn) end

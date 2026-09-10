@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatrace_proximitychecker: component_base
----@field inst idk
 ---@field proximity_check_must_flags idk
 ---@field range idk
 ---@field found_delay idk
@@ -25,12 +24,3 @@ end
 ---author: 
 function boatrace_proximitychecker:OnFinishRace()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatrace_proximitychecker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatrace_proximitychecker:StopWatchingWorldState(var, fn) end

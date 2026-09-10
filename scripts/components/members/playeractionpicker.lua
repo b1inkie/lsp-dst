@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_playeractionpicker: component_base
----@field inst idk
 ---@field map idk
 ---@field containers idk
 ---@field leftclickoverride idk
@@ -133,12 +132,3 @@ end
 ---author: 
 function playeractionpicker:UnregisterContainer(container)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playeractionpicker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playeractionpicker:StopWatchingWorldState(var, fn) end

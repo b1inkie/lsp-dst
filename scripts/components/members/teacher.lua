@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_teacher: component_base
----@field inst idk
 ---@field recipe idk
 local teacher = {}
 
@@ -16,12 +15,3 @@ end
 ---author: 
 function teacher:Teach(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teacher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teacher:StopWatchingWorldState(var, fn) end

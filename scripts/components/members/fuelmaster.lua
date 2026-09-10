@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fuelmaster: component_base
----@field inst idk
 ---@field bonusmult idk
 ---@field bonusfn idk
 local fuelmaster = {}
@@ -24,12 +23,3 @@ end
 ---author: 
 function fuelmaster:GetBonusMult(item,target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fuelmaster:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fuelmaster:StopWatchingWorldState(var, fn) end

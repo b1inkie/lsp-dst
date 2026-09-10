@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_saddler: component_base
----@field inst idk
 ---@field swapsymbol idk
 ---@field swapbuild idk
 ---@field bonusdamage idk
@@ -67,12 +66,3 @@ end
 ---author: 
 function saddler:GetAbsorption()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function saddler:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function saddler:StopWatchingWorldState(var, fn) end

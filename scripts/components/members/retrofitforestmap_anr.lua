@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_retrofitforestmap_anr: component_base
----@field inst idk
 ---@field retrofit_artsandcrafts idk
 ---@field retrofit_artsandcrafts2 idk
 ---@field retrofit_cutefuzzyanimals idk
@@ -32,12 +31,3 @@
 ---@field retrofit_junkyardv3_content idk
 ---@field retrofit_otterdens idk
 local retrofitforestmap_anr = {}
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function retrofitforestmap_anr:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function retrofitforestmap_anr:StopWatchingWorldState(var, fn) end

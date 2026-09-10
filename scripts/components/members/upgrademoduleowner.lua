@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_upgrademoduleowner: component_base
----@field inst idk
 ---@field modules idk
 ---@field charge_level idk
 ---@field max_charge idk
@@ -55,18 +54,6 @@ function upgrademoduleowner:GetModuleTypeCount(moduletype)
 end
 
 ---
----@param data idk # 
----@param newents idk # 
----author: 
-function upgrademoduleowner:OnLoad(data,newents)
-end
-
----
----author: 
-function upgrademoduleowner:GetDebugString()
-end
-
----
 ---author: 
 function upgrademoduleowner:IsChargeEmpty()
 end
@@ -96,11 +83,6 @@ end
 
 ---
 ---author: 
-function upgrademoduleowner:OnSave()
-end
-
----
----author: 
 function upgrademoduleowner:PopOneModule()
 end
 
@@ -113,12 +95,3 @@ end
 ---author: 
 function upgrademoduleowner:PopAllModules()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function upgrademoduleowner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function upgrademoduleowner:StopWatchingWorldState(var, fn) end

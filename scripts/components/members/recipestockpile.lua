@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_recipestockpile: component_base
----@field inst idk
 ---@field stock idk
 local recipestockpile = {}
 
@@ -32,20 +31,9 @@ end
 
 ---
 ---@param data idk # 
----author: 
-function recipestockpile:OnLoad(data)
-end
-
----
----@param data idk # 
 ---@param start_restock_timer idk # 
 ---author: 
 function recipestockpile:SetupItem(data,start_restock_timer)
-end
-
----
----author: 
-function recipestockpile:OnSave()
 end
 
 ---
@@ -58,17 +46,3 @@ end
 ---author: 
 function recipestockpile:OnRemoveFromEntity(data)
 end
-
----
----author: 
-function recipestockpile:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function recipestockpile:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function recipestockpile:StopWatchingWorldState(var, fn) end

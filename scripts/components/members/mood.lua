@@ -2,7 +2,6 @@
 
 ---@class component_mood: component_base
 ---@field daystomoodchange idk
----@field inst idk
 ---@field enabled idk
 ---@field moodtimeindays idk
 ---@field forcemood idk
@@ -20,22 +19,6 @@ local mood = {}
 ---
 ---author: 
 function mood:CheckForMoodChange()
-end
-
----
----author: 
-function mood:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function mood:OnLoad(data)
-end
-
----
----author: 
-function mood:OnSave()
 end
 
 ---
@@ -87,12 +70,3 @@ end
 ---author: 
 function mood:SetMoodTimeInDays(length,wait,forcemood,worldsettingsmultiplier_inmood,worldsettingsmultiplier_outmood,worldsettingsenabled)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mood:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mood:StopWatchingWorldState(var, fn) end

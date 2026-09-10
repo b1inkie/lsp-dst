@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lunarplant_tentacle_weapon: component_base
----@field inst idk
 ---@field spawn_chance idk
 ---@field tentacle_prefab idk
 ---@field should_do_tentacles_fn idk
@@ -29,12 +28,3 @@ end
 ---author: 
 function lunarplant_tentacle_weapon:OnAttack(owner,attack_data)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lunarplant_tentacle_weapon:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lunarplant_tentacle_weapon:StopWatchingWorldState(var, fn) end

@@ -1,22 +1,10 @@
 ---@meta
 
 ---@class component_craftingstation: component_base
----@field inst idk
 ---@field items idk
 ---@field recipes idk
 ---@field nosave idk
 local craftingstation = {}
-
----
----@param data idk # 
----author: 
-function craftingstation:OnLoad(data)
-end
-
----
----author: 
-function craftingstation:OnSave()
-end
 
 ---
 ---@param itemname idk # 
@@ -51,12 +39,3 @@ end
 ---author: 
 function craftingstation:GetRecipes()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function craftingstation:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function craftingstation:StopWatchingWorldState(var, fn) end

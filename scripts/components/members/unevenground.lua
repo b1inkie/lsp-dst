@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_unevenground: component_base
----@field inst idk
 ---@field enabled idk
 ---@field radius idk
 ---@field detectradius idk
@@ -33,12 +32,3 @@ end
 ---author: 
 function unevenground:Disable()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function unevenground:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function unevenground:StopWatchingWorldState(var, fn) end

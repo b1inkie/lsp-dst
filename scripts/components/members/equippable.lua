@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_equippable: component_base
----@field inst ent
 ---@field isequipped idk
 ---@field equipslot integer|equiptype # 设置装备槽位
 ---@field onequipfn fun(this: ent,owner: ent,from_ground: any,...: any): any # 穿戴回调函数
@@ -127,12 +126,3 @@ end
 ---author: lan
 function equippable:IsInsulated()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function equippable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function equippable:StopWatchingWorldState(var, fn) end

@@ -1,16 +1,10 @@
 ---@meta
 
 ---@class component_canopyshadows: component_base
----@field inst idk
 ---@field range idk
 ---@field canopy_positions idk
 ---@field spawned idk
 local canopyshadows = {}
-
----
----author: 
-function canopyshadows:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -42,12 +36,3 @@ end
 ---author: 
 function canopyshadows:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function canopyshadows:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function canopyshadows:StopWatchingWorldState(var, fn) end

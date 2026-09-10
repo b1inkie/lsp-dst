@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stunnable: component_base
----@field inst idk
 ---@field damage idk
 ---@field stun_threshold idk
 ---@field stun_period idk
@@ -26,12 +25,3 @@ end
 ---author: 
 function stunnable:GetDamageInPeriod()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stunnable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stunnable:StopWatchingWorldState(var, fn) end

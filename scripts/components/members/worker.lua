@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_worker: component_base
----@field inst idk
 ---@field actions idk
 local worker = {}
 
@@ -23,12 +22,3 @@ end
 ---author: 
 function worker:SetAction(action,effectiveness)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worker:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_teleporter: component_base
----@field inst ent #挂载该组件的实体
 ---@field targetTeleporter ent|nil #目标传送门实体
 ---@field onActivate fun(inst:ent,doer:ent,migration_data:table)|nil #激活传送门时的回调
 ---@field onActivateByOther fun(inst:ent,source:ent,doer:ent,item:ent)|nil #被其他对象激活时的回调,这里可以是人物也可以是物品，即只需要在doer和item之间选一个参数填上
@@ -62,32 +61,11 @@ end
 function teleporter:OnRemoveFromEntity()
 end
 
----存档后处理目标传送门
----@param newents table #新实体表
----@param savedata table #存档数据
----author: 星璃
-function teleporter:LoadPostPass(newents, savedata)
-end
-
 ---判断是否有对象正在传送
 ---@return boolean #是否有对象正在传送
 ---@nodiscard
 ---author: 星璃
 function teleporter:IsBusy()
-end
-
----获取调试字符串
----@return string #调试字符串
----@nodiscard
----author: 星璃
-function teleporter:GetDebugString()
-end
-
----读取存档
----@param data table #存档数据
----@param newents table #新实体表
----author: 星璃
-function teleporter:OnLoad(data, newents)
 end
 
 ---激活传送门，执行传送流程
@@ -96,13 +74,6 @@ end
 ---@nodiscard
 ---author: 星璃
 function teleporter:Activate(doer)
-end
-
----保存存档
----@return table,table #存档数据,引用表
----@nodiscard
----author: 星璃
-function teleporter:OnSave()
 end
 
 ---获取传送门启用状态
@@ -162,12 +133,3 @@ end
 ---author: 星璃
 function teleporter:UseTemporaryExit(doer, temporaryexit)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teleporter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teleporter:StopWatchingWorldState(var, fn) end

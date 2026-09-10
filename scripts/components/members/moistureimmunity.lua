@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_moistureimmunity: component_base
----@field inst ent
 ---@field sources idk
 ---@field _onremovesource idk
 local moistureimmunity = {}
@@ -28,12 +27,3 @@ end
 ---author: lan
 function moistureimmunity:AddSource(src)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moistureimmunity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moistureimmunity:StopWatchingWorldState(var, fn) end

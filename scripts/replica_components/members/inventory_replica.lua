@@ -2,7 +2,6 @@
 
 ---@class replica_inventory: replica_base
 ---@field opentask idk
----@field inst ent
 ---@field classified idk
 ---@field ondetachclassified idk
 local replica_inventory = {}
@@ -81,11 +80,6 @@ end
 ---
 ---author: 
 function replica_inventory:SwapEquipWithActiveItem()
-end
-
----
----author: 
-function replica_inventory:OnRemoveEntity()
 end
 
 ---

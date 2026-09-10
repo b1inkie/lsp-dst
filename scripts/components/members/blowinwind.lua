@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_blowinwind: component_base
----@field inst idk
 ---@field maxSpeedMult idk
 ---@field minSpeedMult idk
 ---@field averageSpeed idk
@@ -26,17 +25,6 @@ local blowinwind = {}
 ---@param vel idk # 
 ---author: 
 function blowinwind:ChangeDirection(ang,vel)
-end
-
----
----@param dt idk # 
----author: 
-function blowinwind:OnUpdate(dt)
-end
-
----
----author: 
-function blowinwind:GetDebugString()
 end
 
 ---
@@ -93,12 +81,3 @@ end
 ---author: 
 function blowinwind:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function blowinwind:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function blowinwind:StopWatchingWorldState(var, fn) end

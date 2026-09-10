@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_combat: replica_base
----@field inst idk
 ---@field _target idk
 ---@field _ispanic idk
 ---@field _attackrange idk

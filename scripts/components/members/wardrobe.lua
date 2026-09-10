@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_wardrobe: component_base
----@field inst idk
 ---@field changers idk
 ---@field enabled idk
 ---@field canuseaction idk
@@ -85,12 +84,6 @@ function wardrobe:ApplyTargetSkins(target,doer,skins)
 end
 
 ---
----@param dt idk # 
----author: 
-function wardrobe:OnUpdate(dt)
-end
-
----
 ---@param doer idk # 
 ---@param diff idk # 
 ---author: 
@@ -108,12 +101,3 @@ end
 ---author: 
 function wardrobe:SetChangeInDelay(delay)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wardrobe:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wardrobe:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatleak: component_base
----@field inst idk
 ---@field has_leaks idk
 ---@field leak_build idk
 ---@field leak_build_override idk
@@ -10,18 +9,6 @@
 ---@field current_state idk
 ---@field boat idk
 local boatleak = {}
-
----
----@param data idk # 
----author: 
-function boatleak:OnLoad(data)
-end
-
----
----@param dt idk # 
----author: 
-function boatleak:LongUpdate(dt)
-end
 
 ---
 ---@param state idk # 
@@ -56,12 +43,6 @@ function boatleak:IsFinishedSpawning()
 end
 
 ---
----@param data idk # 
----author: 
-function boatleak:OnSave(data)
-end
-
----
 ---author: 
 function boatleak:GetRemainingRepairedTime()
 end
@@ -77,12 +58,3 @@ end
 ---author: 
 function boatleak:SetPlugged(setting)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatleak:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatleak:StopWatchingWorldState(var, fn) end

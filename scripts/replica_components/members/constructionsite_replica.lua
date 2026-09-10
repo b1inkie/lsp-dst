@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_constructionsite: replica_base
----@field inst idk
 ---@field _enabled idk
 ---@field classified idk
 ---@field ondetachclassified idk
@@ -57,11 +56,6 @@ end
 ---@param guy idk # 
 ---author: 
 function replica_constructionsite:IsBuilder(guy)
-end
-
----
----author: 
-function replica_constructionsite:OnRemoveEntity()
 end
 
 ---

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_embarker: component_base
----@field inst idk
 ---@field embarkable idk
 ---@field start_z idk
 ---@field embark_speed idk
@@ -50,12 +49,6 @@ function embarker:HasDestination()
 end
 
 ---
----@param dt idk # 
----author: 
-function embarker:OnUpdate(dt)
-end
-
----
 ---author: 
 function embarker:Embark()
 end
@@ -70,11 +63,3 @@ end
 function embarker:StartMoving()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function embarker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function embarker:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_cookiecutterdrill: component_base
----@field inst idk
 ---@field drill_progress idk
 ---@field drill_duration idk
 ---@field leak_type idk
@@ -26,12 +25,6 @@ function cookiecutterdrill:FinishDrilling()
 end
 
 ---
----@param dt idk # 
----author: 
-function cookiecutterdrill:OnUpdate(dt)
-end
-
----
 ---author: 
 function cookiecutterdrill:ResumeDrilling()
 end
@@ -45,12 +38,3 @@ end
 ---author: 
 function cookiecutterdrill:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cookiecutterdrill:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cookiecutterdrill:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_pointofinterest: component_base
----@field inst idk
 ---@field _showinghud idk
 ---@field shouldshowfn idk
 ---@field _updating idk
@@ -14,11 +13,6 @@
 ---@field ring1 idk
 ---@field ring2 idk
 local pointofinterest = {}
-
----
----author: 
-function pointofinterest:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -39,12 +33,6 @@ end
 ---@param height idk # 
 ---author: 
 function pointofinterest:SetHeight(height)
-end
-
----
----@param dt idk # 
----author: 
-function pointofinterest:OnUpdate(dt)
 end
 
 ---
@@ -101,12 +89,3 @@ end
 ---author: 
 function pointofinterest:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pointofinterest:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pointofinterest:StopWatchingWorldState(var, fn) end

@@ -4,7 +4,6 @@
 ---@field checkownertask idk
 ---@field currentowner idk
 ---@field oncontainerpickedup idk
----@field inst idk
 ---@field revert_prefab idk
 ---@field revert_uses idk
 ---@field revert_fx idk
@@ -22,11 +21,6 @@ local possessedaxe = {}
 
 ---
 ---author: 
-function possessedaxe:GetDebugString()
-end
-
----
----author: 
 function possessedaxe:Drop()
 end
 
@@ -37,18 +31,7 @@ end
 
 ---
 ---author: 
-function possessedaxe:OnSave()
-end
-
----
----author: 
 function possessedaxe:Revert()
-end
-
----
----@param data idk # 
----author: 
-function possessedaxe:OnLoad(data)
 end
 
 ---
@@ -63,12 +46,3 @@ end
 ---author: 
 function possessedaxe:LinkToPlayer(player)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function possessedaxe:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function possessedaxe:StopWatchingWorldState(var, fn) end

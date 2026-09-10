@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_moonstormmanager: component_base
----@field inst idk
 ---@field metplayers idk
 ---@field wagstaff idk
 ---@field stormdays idk
@@ -19,12 +18,3 @@
 ---@field LongUpdate idk
 ---@field currentbasenodeindextemp idk
 local moonstormmanager = {}
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moonstormmanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moonstormmanager:StopWatchingWorldState(var, fn) end

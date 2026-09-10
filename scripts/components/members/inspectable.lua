@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_inspectable: component_base
----@field inst idk
 ---@field description idk
 ---@field getspecialdescription idk
 ---@field nameoverride idk
@@ -37,12 +36,3 @@ end
 ---author: 
 function inspectable:GetStatus(viewer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inspectable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inspectable:StopWatchingWorldState(var, fn) end

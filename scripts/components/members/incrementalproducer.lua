@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_incrementalproducer: component_base
----@field inst idk
 ---@field producefn idk
 ---@field countfn idk
 ---@field maxcount idk
@@ -25,19 +24,5 @@ end
 
 ---
 ---author: 
-function incrementalproducer:GetDebugString()
-end
-
----
----author: 
 function incrementalproducer:TryProduce()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function incrementalproducer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function incrementalproducer:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_foodaffinity: component_base
----@field inst idk
 ---@field tag_affinities idk
 ---@field prefab_affinities idk
 ---@field prefab_affinites idk
@@ -76,12 +75,3 @@ end
 ---author: 
 function foodaffinity:RemovePrefabAffinity(prefab)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function foodaffinity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function foodaffinity:StopWatchingWorldState(var, fn) end

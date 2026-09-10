@@ -3,7 +3,6 @@
 ---@class component_teamleader: component_base
 ---@field teamleadersearchtags idk
 ---@field teamsearchtags idk
----@field inst idk
 ---@field team_type idk
 ---@field min_team_size idk
 ---@field max_team_size idk
@@ -102,12 +101,6 @@ function teamleader:AllInState(state)
 end
 
 ---
----@param dt idk # 
----author: 
-function teamleader:OnUpdate(dt)
-end
-
----
 ---author: 
 function teamleader:ValidateTeam()
 end
@@ -153,12 +146,3 @@ end
 ---author: 
 function teamleader:GetFormationPositions()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teamleader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teamleader:StopWatchingWorldState(var, fn) end

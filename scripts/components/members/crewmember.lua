@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_crewmember: component_base
----@field inst idk
 ---@field enabled idk
 ---@field max_velocity idk
 ---@field max_target_dsq idk
@@ -19,11 +18,6 @@ end
 ---
 ---author: 
 function crewmember:GetBoat()
-end
-
----
----author: 
-function crewmember:GetDebugString()
 end
 
 ---
@@ -57,12 +51,3 @@ end
 ---author: 
 function crewmember:Row()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crewmember:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crewmember:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_yotc_racecompetitor: component_base
----@field inst idk
 ---@field racestate idk
 ---@field race_start_point idk
 ---@field race_begun_fn idk
@@ -29,11 +28,6 @@
 local yotc_racecompetitor = {}
 
 ---
----author: 
-function yotc_racecompetitor:OnRemoveEntity()
-end
-
----
 ---@param race_begun_fn idk # 
 ---author: 
 function yotc_racecompetitor:SetRaceBegunFn(race_begun_fn)
@@ -57,12 +51,6 @@ function yotc_racecompetitor:StartRace(delay)
 end
 
 ---
----@param dt idk # 
----author: 
-function yotc_racecompetitor:OnUpdate(dt)
-end
-
----
 ---author: 
 function yotc_racecompetitor:OnRemoveFromEntity()
 end
@@ -81,11 +69,6 @@ end
 ---@param prize_table idk # 
 ---author: 
 function yotc_racecompetitor:OnAllRacersFinished(prize_table)
-end
-
----
----author: 
-function yotc_racecompetitor:GetDebugString()
 end
 
 ---
@@ -137,12 +120,3 @@ end
 ---author: 
 function yotc_racecompetitor:_SetCheckPoint(checkpoint,is_starting_line)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotc_racecompetitor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotc_racecompetitor:StopWatchingWorldState(var, fn) end

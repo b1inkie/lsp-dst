@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_compostingbin: component_base
----@field inst idk
 ---@field max_materials idk
 ---@field greens idk
 ---@field browns idk
@@ -31,12 +30,6 @@ function compostingbin:IsComposting()
 end
 
 ---
----@param data idk # 
----author: 
-function compostingbin:OnLoad(data)
-end
-
----
 ---@param item idk # 
 ---author: 
 function compostingbin:AddCompostable(item)
@@ -62,19 +55,5 @@ end
 
 ---
 ---author: 
-function compostingbin:OnSave()
-end
-
----
----author: 
 function compostingbin:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function compostingbin:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function compostingbin:StopWatchingWorldState(var, fn) end

@@ -2,7 +2,6 @@
 
 ---@class component_ghostlybond: component_base
 ---@field ghost idk
----@field inst idk
 ---@field ghost_prefab idk
 ---@field bondleveltimer idk
 ---@field bondlevelmaxtime idk
@@ -20,18 +19,7 @@ local ghostlybond = {}
 
 ---
 ---author: 
-function ghostlybond:OnRemoveEntity()
-end
-
----
----author: 
 function ghostlybond:SummonComplete()
-end
-
----
----@param dt idk # 
----author: 
-function ghostlybond:OnUpdate(dt)
 end
 
 ---
@@ -53,24 +41,6 @@ function ghostlybond:RecallComplete()
 end
 
 ---
----@param newents idk # 
----@param data idk # 
----author: 
-function ghostlybond:LoadPostPass(newents,data)
-end
-
----
----@param data idk # 
----author: 
-function ghostlybond:OnLoad(data)
-end
-
----
----author: 
-function ghostlybond:GetDebugString()
-end
-
----
 ---author: 
 function ghostlybond:ChangeBehaviour()
 end
@@ -78,12 +48,6 @@ end
 ---
 ---author: 
 function ghostlybond:PauseBonding()
-end
-
----
----@param dt idk # 
----author: 
-function ghostlybond:LongUpdate(dt)
 end
 
 ---
@@ -96,11 +60,6 @@ end
 ---@param summoningitem idk # 
 ---author: 
 function ghostlybond:Summon(summoningitem)
-end
-
----
----author: 
-function ghostlybond:OnSave()
 end
 
 ---
@@ -122,12 +81,3 @@ end
 ---author: 
 function ghostlybond:SetBondTimeMultiplier(src,mult,key)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function ghostlybond:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function ghostlybond:StopWatchingWorldState(var, fn) end

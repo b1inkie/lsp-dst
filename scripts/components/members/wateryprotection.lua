@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_wateryprotection: component_base
----@field inst idk
 ---@field witherprotectiontime idk
 ---@field temperaturereduction idk
 ---@field addcoldness idk
@@ -36,12 +35,3 @@ end
 ---author: 
 function wateryprotection:SpreadProtection(inst,dist,noextinguish)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wateryprotection:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wateryprotection:StopWatchingWorldState(var, fn) end

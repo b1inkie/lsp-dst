@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_spellbook: component_base
----@field inst idk
 ---@field tag idk
 ---@field items idk
 ---@field bgdata idk
@@ -147,12 +146,3 @@ end
 ---@nodiscard
 function spellbook:ShouldOpen(user)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spellbook:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spellbook:StopWatchingWorldState(var, fn) end

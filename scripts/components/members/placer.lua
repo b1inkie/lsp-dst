@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_placer: component_base
----@field inst idk
 ---@field can_build idk
 ---@field mouse_blocked idk
 ---@field testfn idk
@@ -36,18 +35,6 @@ function placer:TestCanBuild()
 end
 
 ---
----@param dt idk # 
----author: 
-function placer:OnUpdate(dt)
-end
-
----
----@param dt idk # 
----author: 
-function placer:OnWallUpdate(dt)
-end
-
----
 ---author: 
 function placer:GetDeployAction()
 end
@@ -58,12 +45,3 @@ end
 ---author: 
 function placer:LinkEntity(ent,lightoverride)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function placer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function placer:StopWatchingWorldState(var, fn) end

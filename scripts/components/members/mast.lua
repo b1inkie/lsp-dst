@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mast: component_base
----@field inst idk
 ---@field is_sail_raised idk
 ---@field inverted idk
 ---@field sail_force idk
@@ -21,11 +20,6 @@
 ---@field boat_death idk
 ---@field is_sail_transitioning idk
 local mast = {}
-
----
----author: 
-function mast:OnRemoveEntity()
-end
 
 ---
 ---@param set idk # 
@@ -74,12 +68,6 @@ end
 ---
 ---author: 
 function mast:CalcSailForce()
-end
-
----
----@param dt idk # 
----author: 
-function mast:OnUpdate(dt)
 end
 
 ---
@@ -132,12 +120,3 @@ end
 ---author: 
 function mast:SetBoat(boat)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mast:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mast:StopWatchingWorldState(var, fn) end

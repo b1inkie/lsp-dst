@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_inventory: component_base
----@field inst ent
 ---@field isopen idk
 ---@field isvisible idk
 ---@field ignoreoverflow idk
@@ -101,13 +100,6 @@ end
 ---
 ---author:
 function inventory:CloseAllChestContainers()
-end
-
----
----@param data idk #
----@param newents idk #
----author:
-function inventory:OnLoad(data,newents)
 end
 
 ---
@@ -228,11 +220,6 @@ function inventory:GetEquippedItem(eslot)
 end
 
 ---
----author:
-function inventory:OnSave()
-end
-
----
 ---@param slot idk #
 ---author:
 function inventory:SelectActiveItemFromEquipSlot(slot)
@@ -242,13 +229,6 @@ end
 ---@return number # 物品总数【第1格物品数量 + 第2 + 第3 + ... + 第15】
 ---author: nullptr
 function inventory:NumStackedItems()
-end
-
----获取调试信息
----@return string # 调试信息，详见函数原型
----@nodiscard
----author: nullptr
-function inventory:GetDebugString()
 end
 
 ---
@@ -672,14 +652,6 @@ end
 function inventory:HasItemWithTag(tag,amount)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventory:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventory:StopWatchingWorldState(var, fn) end
 
 ---这个函数 制作的时候自定调用 <br> 返回的 crafting_items 包含以下来源的物品: <br> - 打开容器中的物品 <br> - OverflowContainer <br> - activeitem
 ---@param item PrefabID

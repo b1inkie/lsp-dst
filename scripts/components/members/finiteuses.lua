@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_finiteuses: component_base
----@field inst ent
 ---@field total number
 ---@field current number
 ---@field consumption idk
@@ -51,19 +50,6 @@ end
 function finiteuses:OnRemoveFromEntity()
 end
 
----当物品被作为物品使用时的耐久消耗
----@param action string # 动作类型
----@param doer ent # 执行动作实体
----@param target ent # 动作目标
----author: mango
-function finiteuses:OnUsedAsItem(action,doer,target)
-end
-
----获取调试信息：当前耐久+最大耐久
----author: mango
-function finiteuses:GetDebugString()
-end
-
 ---修复指定数值耐久
 ---@param repairvalue number # 
 ---author: mango
@@ -88,11 +74,6 @@ end
 function finiteuses:SetDoesNotStartFull(enabled)
 end
 
----存档当前耐久（不满时）
----author: mango
-function finiteuses:OnSave()
-end
-
 ---获取当前耐久百分比
 ---author: mango
 function finiteuses:GetPercent()
@@ -102,18 +83,3 @@ end
 ---author: mango
 function finiteuses:GetUses()
 end
-
----加载耐久
----@param data table # 
----author: mango
-function finiteuses:OnLoad(data)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function finiteuses:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function finiteuses:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_damagetyperesist: component_base
----@field inst idk
 ---@field tags idk
 local damagetyperesist = {}
 
@@ -12,11 +11,6 @@ local damagetyperesist = {}
 ---@param key idk # 
 ---author: 
 function damagetyperesist:AddResist(tag,src,pct,key)
-end
-
----
----author: 
-function damagetyperesist:GetDebugString()
 end
 
 ---
@@ -33,12 +27,3 @@ end
 ---author: 
 function damagetyperesist:GetResist(attacker,weapon)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function damagetyperesist:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function damagetyperesist:StopWatchingWorldState(var, fn) end

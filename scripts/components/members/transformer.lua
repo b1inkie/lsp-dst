@@ -3,7 +3,6 @@
 ---@class component_transformer: component_base
 ---@field queuedTransform idk
 ---@field queuedRevert idk
----@field inst idk
 ---@field transformPrefab idk
 ---@field objectData idk
 ---@field transformEvent idk
@@ -79,24 +78,6 @@ end
 
 ---
 ---author: 
-function transformer:GetDebugString()
-end
-
----
----@param ents idk # 
----@param data idk # 
----author: 
-function transformer:LoadPostPass(ents,data)
-end
-
----
----@param data idk # 
----author: 
-function transformer:OnLoad(data)
-end
-
----
----author: 
 function transformer:TransformOnSleep()
 end
 
@@ -116,11 +97,6 @@ function transformer:RevertOnSleep()
 end
 
 ---
----author: 
-function transformer:OnSave()
-end
-
----
 ---@param event idk # 
 ---@param target idk # 
 ---author: 
@@ -137,12 +113,3 @@ end
 ---author: 
 function transformer:SetOnTransformFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function transformer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function transformer:StopWatchingWorldState(var, fn) end

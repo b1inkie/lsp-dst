@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_workmultiplier: component_base
----@field inst idk
 ---@field actions idk
 ---@field specialfn idk
 local workmultiplier = {}
@@ -42,12 +41,3 @@ end
 ---author: 
 function workmultiplier:RemoveMultiplier(action,source)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function workmultiplier:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function workmultiplier:StopWatchingWorldState(var, fn) end

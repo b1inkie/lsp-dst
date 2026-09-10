@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fishingnet: component_base
----@field inst idk
 ---@field visualizer idk
 local fishingnet = {}
 
@@ -12,12 +11,3 @@ local fishingnet = {}
 ---author: 
 function fishingnet:CastNet(pos_x,pos_z,doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingnet:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingnet:StopWatchingWorldState(var, fn) end

@@ -4,7 +4,6 @@
 ---@field nightvision idk
 ---@field gogglevision idk
 ---@field nutrientsvision idk
----@field inst idk
 ---@field scrapmonolevision idk
 ---@field inspectaclesvision idk
 ---@field roseglassesvision idk
@@ -147,12 +146,3 @@ end
 ---author: 
 function playervision:HasInspectaclesVision()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playervision:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playervision:StopWatchingWorldState(var, fn) end

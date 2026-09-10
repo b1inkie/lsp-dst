@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_circler: component_base
----@field inst idk
 ---@field scale idk
 ---@field speed idk
 ---@field circleTarget idk
@@ -23,12 +22,6 @@
 local circler = {}
 
 ---
----@param dt idk # 
----author: 
-function circler:OnUpdate(dt)
-end
-
----
 ---author: 
 function circler:Stop()
 end
@@ -37,11 +30,6 @@ end
 ---@param tar idk # 
 ---author: 
 function circler:SetCircleTarget(tar)
-end
-
----
----author: 
-function circler:GetDebugString()
 end
 
 ---
@@ -64,12 +52,3 @@ end
 ---author: 
 function circler:GetMinSpeed()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function circler:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function circler:StopWatchingWorldState(var, fn) end

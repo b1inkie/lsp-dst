@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_tackler: component_base
----@field inst idk
 ---@field onstarttacklefn idk
 ---@field distance idk
 ---@field radius idk
@@ -78,12 +77,3 @@ end
 ---author: 
 function tackler:SetRadius(radius)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tackler:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tackler:StopWatchingWorldState(var, fn) end

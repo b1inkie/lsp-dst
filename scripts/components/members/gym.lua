@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_gym: component_base
----@field inst idk
 ---@field trainfn idk
 ---@field trainee idk
 ---@field traintime idk
@@ -19,13 +18,6 @@ function gym:SetOnRemoveTraineeFn(fn)
 end
 
 ---
----@param newents idk # 
----@param data idk # 
----author: 
-function gym:LoadPostPass(newents,data)
-end
-
----
 ---author: 
 function gym:PushMontage()
 end
@@ -39,11 +31,6 @@ end
 ---
 ---author: 
 function gym:RemoveTrainee()
-end
-
----
----author: 
-function gym:GetDebugString()
 end
 
 ---
@@ -77,11 +64,6 @@ end
 
 ---
 ---author: 
-function gym:OnSave()
-end
-
----
----author: 
 function gym:Train()
 end
 
@@ -90,12 +72,3 @@ end
 ---author: 
 function gym:SetTrainFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function gym:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function gym:StopWatchingWorldState(var, fn) end

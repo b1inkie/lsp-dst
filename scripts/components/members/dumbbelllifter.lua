@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_dumbbelllifter: component_base
----@field inst idk
 ---@field dumbbell idk
 local dumbbelllifter = {}
 
@@ -37,12 +36,3 @@ end
 ---author: 
 function dumbbelllifter:StopLifting()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dumbbelllifter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dumbbelllifter:StopWatchingWorldState(var, fn) end

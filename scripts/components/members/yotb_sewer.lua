@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_yotb_sewer: component_base
----@field inst idk
 ---@field done idk
 ---@field targettime idk
 ---@field task idk
@@ -18,20 +17,8 @@ function yotb_sewer:IsSewing()
 end
 
 ---
----@param data idk # 
----author: 
-function yotb_sewer:OnLoad(data)
-end
-
----
 ---author: 
 function yotb_sewer:IsDone()
-end
-
----
----@param dt idk # 
----author: 
-function yotb_sewer:LongUpdate(dt)
 end
 
 ---
@@ -43,16 +30,6 @@ end
 ---
 ---author: 
 function yotb_sewer:CanSew()
-end
-
----
----author: 
-function yotb_sewer:GetDebugString()
-end
-
----
----author: 
-function yotb_sewer:OnSave()
 end
 
 ---
@@ -70,12 +47,3 @@ end
 ---author: 
 function yotb_sewer:StopSewing(reason)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_sewer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_sewer:StopWatchingWorldState(var, fn) end

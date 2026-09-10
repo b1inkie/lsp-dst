@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_itemweigher: component_base
----@field inst idk
 ---@field type idk
 ---@field ondoweighinfn idk
 local itemweigher = {}
@@ -23,12 +22,3 @@ end
 ---author: 
 function itemweigher:SetOnDoWeighInFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function itemweigher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function itemweigher:StopWatchingWorldState(var, fn) end

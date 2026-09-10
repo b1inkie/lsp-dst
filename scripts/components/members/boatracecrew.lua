@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatracecrew: component_base
----@field inst idk
 ---@field members idk
 ---@field membertag idk
 ---@field captain idk
@@ -24,13 +23,6 @@ function boatracecrew:RemoveMember(member)
 end
 
 ---
----@param newents idk # 
----@param data idk # 
----author: 
-function boatracecrew:LoadPostPass(newents,data)
-end
-
----
 ---@param member idk # 
 ---author: 
 function boatracecrew:RemoveMemberListeners(member)
@@ -49,24 +41,9 @@ function boatracecrew:SetCaptain(captain)
 end
 
 ---
----author: 
-function boatracecrew:OnSave()
-end
-
----
 ---@param target idk # 
 ---author: 
 function boatracecrew:SetTarget(target)
-end
-
----
----author: 
-function boatracecrew:OnRemoveEntity()
-end
-
----
----author: 
-function boatracecrew:OnUpdate()
 end
 
 ---
@@ -85,12 +62,3 @@ end
 ---author: 
 function boatracecrew:AddMember(new_member,is_captain)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatracecrew:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatracecrew:StopWatchingWorldState(var, fn) end

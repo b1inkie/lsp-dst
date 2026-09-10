@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_domesticatable: component_base
----@field inst idk
 ---@field domesticated idk
 ---@field domestication idk
 ---@field domestication_latch idk
@@ -43,11 +42,6 @@ end
 
 ---
 ---author: 
-function domesticatable:GetDebugString()
-end
-
----
----author: 
 function domesticatable:GetDomestication()
 end
 
@@ -57,20 +51,8 @@ function domesticatable:CheckForChanges()
 end
 
 ---
----@param data idk # 
----@param newents idk # 
----author: 
-function domesticatable:OnLoad(data,newents)
-end
-
----
 ---author: 
 function domesticatable:CancelTask()
-end
-
----
----author: 
-function domesticatable:OnSave()
 end
 
 ---
@@ -125,12 +107,3 @@ end
 ---author: 
 function domesticatable:DeltaObedience(delta)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function domesticatable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function domesticatable:StopWatchingWorldState(var, fn) end

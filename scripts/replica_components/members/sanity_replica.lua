@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_sanity: replica_base
----@field inst idk
 ---@field _oldissane idk
 ---@field _oldisinsanitymode idk
 ---@field _issane idk

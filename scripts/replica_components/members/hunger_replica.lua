@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_hunger: replica_base
----@field inst idk
 ---@field classified idk
 ---@field ondetachclassified idk
 local replica_hunger = {}

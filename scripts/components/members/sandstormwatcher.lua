@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sandstormwatcher: component_base
----@field inst idk
 ---@field enabled idk
 ---@field sandstormspeedmult idk
 local sandstormwatcher = {}
@@ -43,12 +42,3 @@ end
 ---author: 
 function sandstormwatcher:UpdateSandstormWalkSpeed_Internal(level)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sandstormwatcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sandstormwatcher:StopWatchingWorldState(var, fn) end

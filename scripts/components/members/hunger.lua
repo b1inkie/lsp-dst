@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hunger: component_base
----@field inst idk
 ---@field max idk
 ---@field current idk
 ---@field hungerrate idk
@@ -49,12 +48,6 @@ end
 function hunger:SetPercent(p,overtime)
 end
 
----加载组件状态
----@param data table # 
----author: mango
-function hunger:OnLoad(data)
-end
-
 ---设置饥饿状态下受到的伤害
 ---@param rate number # 每秒伤害值
 ---author: mango
@@ -74,12 +67,6 @@ end
 function hunger:TransferComponent(newinst)
 end
 
----处理长时间更新
----@param dt number # 时间差(秒) 
----author: mango
-function hunger:LongUpdate(dt)
-end
-
 ---获取当前饥饿度百分比
 ---@return number # 0-1之间的值
 ---@nodiscard
@@ -95,22 +82,11 @@ end
 function hunger:DoDelta(delta,overtime,ignore_invincible)
 end
 
----保存组件状态
----author: mango
-function hunger:OnSave()
-end
-
 ---检查饥饿度是否暂停下降
 ---@return boolean # 是否暂停
 ---@nodiscard
 ---author: mango
 function hunger:IsPaused()
-end
-
----获取调试信息字符串
----@return string # 调试信息
----author: mango
-function hunger:GetDebugString()
 end
 
 ---暂停饥饿度下降
@@ -123,12 +99,3 @@ end
 ---@param overtime boolean|nil # 是否为随时间变化
 function hunger:SetCurrent(current, overtime)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hunger:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hunger:StopWatchingWorldState(var, fn) end

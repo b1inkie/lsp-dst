@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_halloweenmoonmutable: component_base
----@field inst idk
 ---@field prefab_mutated idk
 ---@field onmutatefn idk
 ---@field push_attacked_on_new_inst idk
@@ -36,12 +35,3 @@ end
 ---author: 
 function halloweenmoonmutable:SetConversionOverrideFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function halloweenmoonmutable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function halloweenmoonmutable:StopWatchingWorldState(var, fn) end

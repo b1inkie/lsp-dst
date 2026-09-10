@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_farmplantable: component_base
----@field inst idk
 ---@field plant idk
 local farmplantable = {}
 
@@ -11,12 +10,3 @@ local farmplantable = {}
 ---author: lan
 function farmplantable:Plant(target,planter)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function farmplantable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function farmplantable:StopWatchingWorldState(var, fn) end

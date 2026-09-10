@@ -3,7 +3,6 @@
 ---@class component_dryer: component_base
 ---@field product idk
 ---@field ingredient idk
----@field inst idk
 ---@field buildfile idk
 ---@field dried_buildfile idk
 ---@field foodtype idk
@@ -53,23 +52,7 @@ end
 
 ---
 ---author: 
-function dryer:GetDebugString()
-end
-
----
----author: 
 function dryer:IsDrying()
-end
-
----
----author: 
-function dryer:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function dryer:OnLoad(data)
 end
 
 ---
@@ -86,12 +69,6 @@ end
 ---
 ---author: 
 function dryer:DropItem()
-end
-
----
----@param dt idk # 
----author: 
-function dryer:LongUpdate(dt)
 end
 
 ---
@@ -126,12 +103,3 @@ end
 ---author: 
 function dryer:Pause()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dryer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dryer:StopWatchingWorldState(var, fn) end

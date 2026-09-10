@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_drawingtool: component_base
----@field inst idk
 ---@field ondrawfn idk
 local drawingtool = {}
 
@@ -27,12 +26,3 @@ end
 ---author: 
 function drawingtool:GetImageToDraw(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drawingtool:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drawingtool:StopWatchingWorldState(var, fn) end

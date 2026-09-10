@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fishingnetvisualizer: component_base
----@field inst idk
 ---@field velocity idk
 ---@field retrieve_velocity idk
 ---@field collect_radius idk
@@ -79,12 +78,3 @@ end
 ---author: 
 function fishingnetvisualizer:BeginOpening()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingnetvisualizer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingnetvisualizer:StopWatchingWorldState(var, fn) end

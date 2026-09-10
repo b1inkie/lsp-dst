@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_carnivalhostsummon: component_base
----@field inst idk
 local carnivalhostsummon = {}
 
 ---
@@ -9,12 +8,3 @@ local carnivalhostsummon = {}
 ---author: 
 function carnivalhostsummon:SetCanSummon(cansummon)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function carnivalhostsummon:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function carnivalhostsummon:StopWatchingWorldState(var, fn) end

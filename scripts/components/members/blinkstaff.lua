@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_blinkstaff: component_base
----@field inst idk
 ---@field onblinkfn idk
 ---@field blinktask idk
 ---@field frontfx idk
@@ -41,12 +40,3 @@ end
 ---author: 
 function blinkstaff:Blink(pt,caster)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function blinkstaff:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function blinkstaff:StopWatchingWorldState(var, fn) end

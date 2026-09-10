@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_repairable: component_base
----@field inst idk
 ---@field repairmaterial idk
 ---@field healthrepairable idk
 ---@field workrepairable idk
@@ -45,12 +44,3 @@ end
 ---author: 
 function repairable:Repair(doer,repair_item)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function repairable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function repairable:StopWatchingWorldState(var, fn) end

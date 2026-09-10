@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_wereness: component_base
----@field inst ent
 ---@field max idk
 ---@field current idk
 ---@field _old idk
@@ -26,34 +25,12 @@ end
 
 ---
 ---author: 
-function wereness:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function wereness:OnLoad(data)
-end
-
----
----author: 
 function wereness:GetWereMode()
 end
 
 ---
 ---author: 
-function wereness:OnSave()
-end
-
----
----author: 
 function wereness:StartDraining()
-end
-
----
----@param dt idk # 
----author: 
-function wereness:OnUpdate(dt)
 end
 
 ---
@@ -77,12 +54,3 @@ end
 ---author: 
 function wereness:GetPercent()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wereness:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wereness:StopWatchingWorldState(var, fn) end

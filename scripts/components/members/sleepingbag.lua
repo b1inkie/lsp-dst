@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sleepingbag: component_base
----@field inst idk
 ---@field healthsleep idk
 ---@field dryingrate idk
 ---@field sleeper idk
@@ -51,12 +50,3 @@ end
 ---author: 
 function sleepingbag:DoWakeUp(nostatechange)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleepingbag:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleepingbag:StopWatchingWorldState(var, fn) end

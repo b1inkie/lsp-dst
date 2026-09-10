@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lunarriftmutationsmanager: component_base
----@field inst idk
 ---@field task_completed idk
 ---@field _MUTATIONS_NAMES idk
 ---@field _MUTATIONS idk
@@ -13,22 +12,6 @@ local lunarriftmutationsmanager = {}
 ---
 ---author: 
 function lunarriftmutationsmanager:RefreshDefeatedMutationsTable()
-end
-
----
----author: 
-function lunarriftmutationsmanager:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function lunarriftmutationsmanager:OnLoad(data)
-end
-
----
----author: 
-function lunarriftmutationsmanager:OnSave()
 end
 
 ---
@@ -91,12 +74,3 @@ end
 ---author: 
 function lunarriftmutationsmanager:OnRewardGiven()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lunarriftmutationsmanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lunarriftmutationsmanager:StopWatchingWorldState(var, fn) end

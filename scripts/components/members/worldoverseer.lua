@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_worldoverseer: component_base
----@field inst idk
 ---@field data idk
 ---@field _seenplayers idk
 ---@field _cycles idk
@@ -152,12 +151,3 @@ end
 ---author: 
 function worldoverseer:OnItemCrafted(player,data)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldoverseer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldoverseer:StopWatchingWorldState(var, fn) end

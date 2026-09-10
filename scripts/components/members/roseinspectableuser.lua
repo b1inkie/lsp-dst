@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_roseinspectableuser: component_base
----@field inst idk
 ---@field cooldowntime idk
 ---@field cooldowntask idk
 ---@field target idk
@@ -49,37 +48,15 @@ function roseinspectableuser:TryToDoRoseInspectionOnPoint(pt)
 end
 
 ---
----author: 
-function roseinspectableuser:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function roseinspectableuser:OnLoad(data)
-end
-
----
 ---@param residue idk # 
 ---author: 
 function roseinspectableuser:OnCharlieResidueActivated(residue)
 end
 
 ---
----author: 
-function roseinspectableuser:OnSave()
-end
-
----
 ---@param target idk # 
 ---author: 
 function roseinspectableuser:TryToDoRoseInspectionOnTarget(target)
-end
-
----
----@param dt idk # 
----author: 
-function roseinspectableuser:LongUpdate(dt)
 end
 
 ---
@@ -115,12 +92,3 @@ end
 ---author: 
 function roseinspectableuser:SetRoseInpectionOnTarget(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function roseinspectableuser:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function roseinspectableuser:StopWatchingWorldState(var, fn) end

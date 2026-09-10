@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_playeravatardata: component_base
----@field inst idk
 ---@field hasdata idk
 ---@field allowemptyname idk
 ---@field allowburnt idk
@@ -26,12 +25,6 @@ end
 ---@param allow idk # 
 ---author: 
 function playeravatardata:SetAllowBurnt(allow)
-end
-
----
----@param data idk # 
----author: 
-function playeravatardata:OnLoad(data)
 end
 
 ---
@@ -64,11 +57,6 @@ function playeravatardata:GetData()
 end
 
 ---
----author: 
-function playeravatardata:OnSave()
-end
-
----
 ---@param save idk # 
 ---author: 
 function playeravatardata:AddEquipData(save)
@@ -85,12 +73,3 @@ end
 ---author: 
 function playeravatardata:AddClothingData(save)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playeravatardata:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playeravatardata:StopWatchingWorldState(var, fn) end

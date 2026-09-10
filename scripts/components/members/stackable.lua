@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stackable: component_base
----@field inst idk
 ---@field stacksize idk
 ---@field maxsize idk
 ---@field ondestack idk
@@ -30,20 +29,9 @@ function stackable:IsOverStacked()
 end
 
 ---
----author: 
-function stackable:GetDebugString()
-end
-
----
 ---@param sz idk # 
 ---author: 
 function stackable:SetStackSize(sz)
-end
-
----
----@param data idk # 
----author: 
-function stackable:OnLoad(data)
 end
 
 ---
@@ -72,21 +60,7 @@ function stackable:Get(num)
 end
 
 ---
----author: 
-function stackable:OnSave()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function stackable:SetOnDeStack(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stackable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stackable:StopWatchingWorldState(var, fn) end

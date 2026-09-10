@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_trader: component_base
----@field inst idk
 ---@field enabled idk
 ---@field deleteitemonaccept idk
 ---@field acceptnontradable idk
@@ -48,11 +47,6 @@ end
 function trader:SetOnAccept(fn)
 end
 
----调试时快速检查 Trader 对象的交易功能是否启用。
----author: 超能力拓芙铁拳
-function trader:GetDebugString()
-end
-
 ---检查是否能够和愿意接受物品，根据堆叠处理，最后根据配决定是否删除物品或放入库存。触发回调函数/交易失败回调函数
 ---@param giver idk # 
 ---@param item idk # 
@@ -96,12 +90,3 @@ end
 ---author: 超能力拓芙铁拳 
 function trader:IsTryingToTradeWithMe(inst)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trader:StopWatchingWorldState(var, fn) end

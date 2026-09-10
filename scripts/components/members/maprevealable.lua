@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_maprevealable: component_base
----@field inst idk
 ---@field refreshperiod idk
 ---@field iconname idk
 ---@field iconpriority idk
@@ -79,12 +78,3 @@ end
 ---author: 
 function maprevealable:SetIconPriority(priority)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maprevealable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maprevealable:StopWatchingWorldState(var, fn) end

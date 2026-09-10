@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_groundpounder: component_base
----@field inst idk
 ---@field numRings idk
 ---@field ringDelay idk
 ---@field initialRadius idk
@@ -55,11 +54,6 @@ end
 function groundpounder:UseRingMode()
 end
 
----
----author: 
-function groundpounder:GetDebugString()
-end
-
 ---根据传入的位置信息在每个撞击环上生成数个点
 ---<br>点的作用：1.特效的生成2.实体的摧毁、弹开、攻击（点模式）
 ---@param pt Vector3 # 震地攻击每个环上的撞击点
@@ -84,12 +78,3 @@ end
 ---author: KP
 function groundpounder:DestroyRing(pt,radius,points,breakobjects,dodamage,pushplatforms,pushinventoryitems,spawnfx,ents_hit,platforms_hit)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groundpounder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groundpounder:StopWatchingWorldState(var, fn) end

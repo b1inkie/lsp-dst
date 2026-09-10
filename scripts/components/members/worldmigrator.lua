@@ -2,7 +2,6 @@
 
 ---@class component_worldmigrator: component_base
 ---@field id idk
----@field inst idk
 ---@field auto idk
 ---@field enabled idk
 ---@field _status idk
@@ -57,20 +56,9 @@ function worldmigrator:SetEnabled(t)
 end
 
 ---
----@param data idk # 
----author: 
-function worldmigrator:OnLoad(data)
-end
-
----
 ---@param doer idk # 
 ---author: 
 function worldmigrator:Activate(doer)
-end
-
----
----author: 
-function worldmigrator:GetDebugString()
 end
 
 ---
@@ -87,11 +75,6 @@ end
 
 ---
 ---author: 
-function worldmigrator:OnSave()
-end
-
----
----author: 
 function worldmigrator:IsAvailableForLinking()
 end
 
@@ -104,12 +87,3 @@ end
 ---author: 
 function worldmigrator:IsBound()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldmigrator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldmigrator:StopWatchingWorldState(var, fn) end

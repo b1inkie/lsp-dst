@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_grouptargeter: component_base
----@field inst idk
 ---@field targets idk
 ---@field total_weight idk
 ---@field weight_change idk
@@ -84,12 +83,3 @@ end
 ---author: KP
 function grouptargeter:StopTracking(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grouptargeter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grouptargeter:StopWatchingWorldState(var, fn) end

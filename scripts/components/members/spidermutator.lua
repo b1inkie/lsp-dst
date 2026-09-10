@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_spidermutator: component_base
----@field inst idk
 ---@field mutation_target idk
 local spidermutator = {}
 
@@ -24,12 +23,3 @@ end
 ---author: 
 function spidermutator:CanMutate(spider)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spidermutator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spidermutator:StopWatchingWorldState(var, fn) end

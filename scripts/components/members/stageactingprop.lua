@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stageactingprop: component_base
----@field inst idk
 ---@field cast idk
 ---@field script idk
 ---@field performance_problem idk
@@ -44,12 +43,6 @@ function stageactingprop:AddPlay(playdata)
 end
 
 ---
----@param dt idk # 
----author: 
-function stageactingprop:OnUpdate(dt)
-end
-
----
 ---@param player idk # 
 ---author: 
 function stageactingprop:CheckCostume(player)
@@ -59,13 +52,6 @@ end
 ---@param fn idk # 
 ---author: 
 function stageactingprop:SetDisabledFn(fn)
-end
-
----
----@param newents idk # 
----@param data idk # 
----author: 
-function stageactingprop:LoadPostPass(newents,data)
 end
 
 ---
@@ -86,11 +72,6 @@ function stageactingprop:OnRemoveFromEntity()
 end
 
 ---
----author: 
-function stageactingprop:OnSave()
-end
-
----
 ---@param doer idk # 
 ---author: 
 function stageactingprop:ClearPerformance(doer)
@@ -100,12 +81,6 @@ end
 ---@param arch idk # 
 ---author: 
 function stageactingprop:SpawnBirds(arch)
-end
-
----
----@param dt idk # 
----author: 
-function stageactingprop:LongUpdate(dt)
 end
 
 ---
@@ -138,12 +113,3 @@ end
 ---author: 
 function stageactingprop:DoPerformance(doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stageactingprop:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stageactingprop:StopWatchingWorldState(var, fn) end

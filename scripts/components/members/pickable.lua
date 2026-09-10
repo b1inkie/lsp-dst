@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_pickable: component_base
----@field inst ent #实体对象
 ---@field canbepicked boolean #是否可采集
 ---@field regentime number|nil #再生时间
 ---@field baseregentime number|nil #基础再生时间
@@ -86,11 +85,6 @@ function pickable:ChangeProduct(newProduct) end
 ---author:星璃
 function pickable:MakeEmpty() end
 
----加载存档数据
----@param data table #存档数据
----author:星璃
-function pickable:OnLoad(data) end
-
 ---是否可采集
 ---author:星璃
 ---@return boolean #是否可采集 
@@ -104,12 +98,6 @@ function pickable:Regen() end
 ---移植时调用
 ---author:星璃
 function pickable:OnTransplant() end
-
----获取调试信息字符串
----author:星璃
----@return string #调试信息 
----@nodiscard
-function pickable:GetDebugString() end
 
 ---设置变为空回调函数
 ---@param fn fun(this:ent) #变为空回调
@@ -128,11 +116,6 @@ function pickable:SetOnRegenFn(fn) end
 ---@return ent|string|table|nil #采集获得的物品（实体、字符串或表）
 function pickable:Pick(picker) end
 
----长时间更新（如季节变化）
----@param dt number #时间差
----author:星璃
-function pickable:LongUpdate(dt) end
-
 ---施肥操作
 ---@param fertilizer ent #肥料
 ---@param doer ent #施肥者
@@ -144,12 +127,6 @@ function pickable:Fertilize(fertilizer, doer) end
 ---author:星璃,lan
 ---@return boolean #是否完成生长 
 function pickable:FinishGrowing() end
-
----保存存档数据
----author:星璃
----@return table|nil #存档数据 
----@nodiscard
-function pickable:OnSave() end
 
 ---初始化设置
 ---@param product string #产物prefab名
@@ -167,15 +144,6 @@ function pickable:Pause() end
 ---@return boolean #是否为野火起因 
 ---@nodiscard
 function pickable:IsWildfireStarter() end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pickable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pickable:StopWatchingWorldState(var, fn) end
 
 ---comment
 ---@param picker ent|nil

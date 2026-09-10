@@ -1,12 +1,11 @@
 ---@meta
 
 ---@class component_cookable: component_base
----@field inst idk
 ---@field product idk
 ---@field oncooked idk
 local cookable = {}
 
----
+
 ---@param fn idk # 
 ---author: 
 function cookable:SetOnCookedFn(fn)
@@ -25,12 +24,3 @@ end
 ---author: 
 function cookable:Cook(cooker,chef)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cookable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cookable:StopWatchingWorldState(var, fn) end

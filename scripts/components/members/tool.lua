@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_tool: component_base
----@field inst idk
 ---@field tough idk
 ---@field actions idk
 local tool = {}
@@ -42,12 +41,3 @@ end
 ---author: 御坂十七号
 function tool:SetAction(action,effectiveness)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tool:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tool:StopWatchingWorldState(var, fn) end

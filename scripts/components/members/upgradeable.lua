@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_upgradeable: component_base
----@field inst idk
 ---@field onstageadvancefn idk
 ---@field onupgradefn idk
 ---@field upgradetype idk
@@ -37,20 +36,9 @@ function upgradeable:GetStage()
 end
 
 ---
----@param data idk # 
----author: 
-function upgradeable:OnLoad(data)
-end
-
----
 ---@param fn idk # 
 ---author: 
 function upgradeable:SetOnUpgradeFn(fn)
-end
-
----
----author: 
-function upgradeable:OnSave()
 end
 
 ---
@@ -62,12 +50,3 @@ end
 ---author: 
 function upgradeable:AdvanceStage()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function upgradeable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function upgradeable:StopWatchingWorldState(var, fn) end

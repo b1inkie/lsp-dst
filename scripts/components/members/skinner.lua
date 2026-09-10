@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_skinner: component_base
----@field inst idk
 ---@field skin_name idk
 ---@field clothing idk
 ---@field skintype idk
@@ -22,17 +21,6 @@ end
 ---
 ---author: 
 function skinner:ClearMonkeyCurse()
-end
-
----
----author: 
-function skinner:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function skinner:OnLoad(data)
 end
 
 ---
@@ -95,11 +83,3 @@ end
 function skinner:HideAllClothing(anim_state)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skinner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skinner:StopWatchingWorldState(var, fn) end

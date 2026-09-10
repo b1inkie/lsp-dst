@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_rampingspawner: component_base
----@field inst idk
 ---@field spawn_prefab idk
 ---@field spawns idk
 ---@field num_spawns idk
@@ -64,12 +63,6 @@ function rampingspawner:SpawnEntity()
 end
 
 ---
----@param data idk # 
----author: 
-function rampingspawner:OnLoad(data)
-end
-
----
 ---author: 
 function rampingspawner:GetCurrentWave()
 end
@@ -95,24 +88,3 @@ end
 ---author: 
 function rampingspawner:OnSpawnDeath(spawn)
 end
-
----
----@param ents idk # 
----@param data idk # 
----author: 
-function rampingspawner:LoadPostPass(ents,data)
-end
-
----
----author: 
-function rampingspawner:OnSave()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rampingspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rampingspawner:StopWatchingWorldState(var, fn) end

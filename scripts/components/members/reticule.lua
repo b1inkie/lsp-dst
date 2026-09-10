@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_reticule: component_base
----@field inst idk
 ---@field ease idk
 ---@field smoothing idk
 ---@field reticuleprefab idk
@@ -72,12 +71,6 @@ end
 ---
 ---@param dt idk # 
 ---author: 
-function reticule:OnUpdate(dt)
-end
-
----
----@param dt idk # 
----author: 
 function reticule:UpdatePosition(dt)
 end
 
@@ -91,12 +84,3 @@ end
 ---author: 
 function reticule:UpdateColour()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function reticule:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function reticule:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_cursable: component_base
----@field inst idk
 ---@field curses idk
 local cursable = {}
 
@@ -20,21 +19,10 @@ end
 function cursable:ApplyCurse(item,curse)
 end
 
----
----author:
-function cursable:OnSave()
-end
-
 ---强制将诅咒物品放入角色物品栏，必要时弹出其他物品（无nosteal标签）腾出空间
 ---@param item ent # 诅咒物品实例
 ---author:nullptr
 function cursable:ForceOntoOwner(item)
-end
-
----
----@param data idk #
----author:
-function cursable:OnLoad(data)
 end
 
 ---角色死亡时，移除所有诅咒物品并生成掉落物
@@ -49,12 +37,3 @@ end
 ---author:nullptr
 function cursable:RemoveCurse(curse,numofitems,dropitems)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cursable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cursable:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_ghostlyelixirable: component_base
----@field inst ent # 通常玩家都会有这个组件，MakePlayerCharacter中默认加上的组件，阿比也有此组件
 local ghostlyelixirable = {}
 
 ---应用药剂【此组件一般为玩家和阿比所拥有，doer一般为玩家】
@@ -21,12 +20,3 @@ end
 ---author: nullptr
 function ghostlyelixirable:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function ghostlyelixirable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function ghostlyelixirable:StopWatchingWorldState(var, fn) end

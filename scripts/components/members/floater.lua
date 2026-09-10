@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_floater: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field size idk
 ---@field vert_offset idk
@@ -112,12 +111,3 @@ end
 ---author: 
 function floater:SetScale(scale)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function floater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function floater:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_kitcoonden: component_base
----@field inst idk
 ---@field kitcoons idk
 ---@field num_kitcoons idk
 ---@field OnAddKitcoon idk
@@ -24,11 +23,6 @@ end
 
 ---
 ---author: 
-function kitcoonden:GetDebugString()
-end
-
----
----author: 
 function kitcoonden:OnRemoveFromEntity()
 end
 
@@ -36,12 +30,3 @@ end
 ---author: 
 function kitcoonden:RemoveAllKitcoons()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function kitcoonden:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function kitcoonden:StopWatchingWorldState(var, fn) end

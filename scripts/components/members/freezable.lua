@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_freezable: component_base
----@field inst ent
 ---@field state idk
 ---@field coldness idk
 ---@field damagetotal idk
@@ -81,17 +80,6 @@ function freezable:SetDefaultWearOffTime(wearofftime)
 end
 
 ---
----@param data idk # 
----author: 
-function freezable:OnLoad(data)
-end
-
----
----author: 
-function freezable:GetDebugString()
-end
-
----
 ---@param resist idk # 
 ---author: 
 function freezable:SetResistance(resist)
@@ -128,11 +116,6 @@ end
 
 ---
 ---author: 
-function freezable:OnSave()
-end
-
----
----author: 
 function freezable:ResolveResistance()
 end
 
@@ -149,12 +132,3 @@ end
 ---author: 
 function freezable:AddShatterFX(prefab,offset,followsymbol)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function freezable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function freezable:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_giftreceiver: component_base
----@field inst idk
 ---@field giftcount idk
 ---@field giftmachine idk
 ---@field onclosepopup idk
@@ -43,12 +42,3 @@ end
 ---author: 
 function giftreceiver:RefreshGiftCount()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function giftreceiver:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function giftreceiver:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_watersource: component_base
----@field inst idk
 ---@field available idk
 ---@field onusefn fun(this:ent) # 当水源被使用时执行,例如`fillable`组件
 ---@field override_fill_uses idk
@@ -16,12 +15,3 @@ end
 ---author: KP
 function watersource:Use()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function watersource:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function watersource:StopWatchingWorldState(var, fn) end

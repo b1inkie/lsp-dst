@@ -1,19 +1,11 @@
 ---@meta
 
 ---@class component_hideandseekhider: component_base
----@field inst idk
 ---@field last_day_played idk
 ---@field gohide_timeout idk
 ---@field OnHide idk
 ---@field hiding_spot idk
 local hideandseekhider = {}
-
----
----@param newents idk # 
----@param data idk # 
----author: 
-function hideandseekhider:LoadPostPass(newents,data)
-end
 
 ---
 ---author: 
@@ -48,22 +40,3 @@ end
 ---author: 
 function hideandseekhider:Found(doer)
 end
-
----
----author: 
-function hideandseekhider:GetDebugString()
-end
-
----
----author: 
-function hideandseekhider:OnSave()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hideandseekhider:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hideandseekhider:StopWatchingWorldState(var, fn) end

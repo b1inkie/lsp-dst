@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatphysics: component_base
----@field inst idk
 ---@field velocity_x idk
 ---@field velocity_z idk
 ---@field has_speed idk
@@ -87,12 +86,6 @@ function boatphysics:StopUpdating()
 end
 
 ---
----@param data idk # 
----author: 
-function boatphysics:OnLoad(data)
-end
-
----
 ---author: 
 function boatphysics:GetTotalAnchorDrag()
 end
@@ -168,11 +161,6 @@ function boatphysics:SetCanSteeringRotate(can_rotate)
 end
 
 ---
----author: 
-function boatphysics:GetDebugString()
-end
-
----
 ---@param anchor idk # 
 ---author: 
 function boatphysics:AddAnchorCmp(anchor)
@@ -216,12 +204,6 @@ function boatphysics:ApplySailForce(dt,sail_force,cur_velocity,max_velocity)
 end
 
 ---
----@param dt idk # 
----author: 
-function boatphysics:OnUpdate(dt)
-end
-
----
 ---author: 
 function boatphysics:GetRudderTurnSpeed()
 end
@@ -237,11 +219,6 @@ end
 ---@param boatdraginst idk # 
 ---author: 
 function boatphysics:AddBoatDrag(boatdraginst)
-end
-
----
----author: 
-function boatphysics:OnSave()
 end
 
 ---
@@ -265,12 +242,3 @@ end
 ---author: 
 function boatphysics:ApplyForce(dir_x,dir_z,force)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatphysics:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatphysics:StopWatchingWorldState(var, fn) end

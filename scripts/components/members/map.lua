@@ -538,12 +538,3 @@ end
 ---author: 
 function map:IsTerraformingBlockedByAnObject(tile_x,tile_y)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function map:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function map:StopWatchingWorldState(var, fn) end

@@ -3,7 +3,6 @@
 ---@class component_childspawner: component_base
 ---@field numchildrenoutside idk
 ---@field numemergencychildrenoutside idk
----@field inst idk
 ---@field childrenoutside idk
 ---@field childreninside idk
 ---@field maxchildren idk
@@ -114,21 +113,9 @@ function childspawner:SetSpawnPeriod(period,variance)
 end
 
 ---
----@param data idk # 
----author: 
-function childspawner:OnLoad(data)
-end
-
----
 ---@param fn idk # 
 ---author: 
 function childspawner:SetGoHomeFn(fn)
-end
-
----
----@param dt idk # 
----author: 
-function childspawner:LongUpdate(dt)
 end
 
 ---
@@ -178,12 +165,6 @@ function childspawner:TryStopUpdate()
 end
 
 ---
----@param dt idk # 
----author: 
-function childspawner:OnUpdate(dt)
-end
-
----
 ---@param target idk # 
 ---@param prefab idk # 
 ---@param radius idk # 
@@ -211,13 +192,6 @@ end
 ---@param fn idk # 
 ---author: 
 function childspawner:SetSpawnedFn(fn)
-end
-
----
----@param newents idk # 
----@param savedata idk # 
----author: 
-function childspawner:LoadPostPass(newents,savedata)
 end
 
 ---
@@ -301,11 +275,6 @@ end
 
 ---
 ---author: 
-function childspawner:GetDebugString()
-end
-
----
----author: 
 function childspawner:QueueSpawnChild()
 end
 
@@ -336,11 +305,6 @@ function childspawner:UpdateMaxEmergencyCommit()
 end
 
 ---
----author: 
-function childspawner:OnSave()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function childspawner:SetOnTakeOwnershipFn(fn)
@@ -357,12 +321,3 @@ end
 ---author: 
 function childspawner:StartRegen()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function childspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function childspawner:StopWatchingWorldState(var, fn) end

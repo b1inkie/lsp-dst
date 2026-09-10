@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fan: component_base
----@field inst idk
 ---@field canusefn idk
 ---@field onusefn idk
 ---@field onchannelingfn idk
@@ -53,12 +52,3 @@ end
 ---author: 
 function fan:SetOverrideSymbol(symbol)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fan:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fan:StopWatchingWorldState(var, fn) end

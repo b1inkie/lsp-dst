@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatringdata: component_base
----@field inst idk
 ---@field radius idk
 ---@field segments idk
 ---@field _isrotating idk
@@ -39,12 +38,3 @@ end
 ---author: 
 function boatringdata:GetNumSegments()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatringdata:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatringdata:StopWatchingWorldState(var, fn) end

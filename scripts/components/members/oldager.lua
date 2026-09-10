@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_oldager: component_base
----@field inst idk
 ---@field base_rate idk
 ---@field rate idk
 ---@field year_timer idk
@@ -12,12 +11,6 @@
 local oldager = {}
 
 ---
----@param dt idk # 
----author: 
-function oldager:LongUpdate(dt)
-end
-
----
 ---author: 
 function oldager:GetCurrentYearPercent()
 end
@@ -26,17 +19,6 @@ end
 ---@param cause_name idk # 
 ---author: 
 function oldager:AddValidHealingCause(cause_name)
-end
-
----
----@param dt idk # 
----author: 
-function oldager:OnUpdate(dt)
-end
-
----
----author: 
-function oldager:GetDebugString()
 end
 
 ---
@@ -54,12 +36,3 @@ end
 ---author: 
 function oldager:OnTakeDamage(amount,overtime,cause,ignore_invincible,afflicter,ignore_absorb)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oldager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oldager:StopWatchingWorldState(var, fn) end

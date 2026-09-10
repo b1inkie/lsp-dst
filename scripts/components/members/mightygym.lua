@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mightygym: component_base
----@field inst idk
 ---@field strongman idk
 ---@field weight idk
 ---@field full_drop_slot idk
@@ -99,12 +98,3 @@ end
 ---author: 
 function mightygym:UnloadWeight()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mightygym:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mightygym:StopWatchingWorldState(var, fn) end

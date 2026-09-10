@@ -1,16 +1,10 @@
 ---@meta
 
 ---@class component_boatdrifter: component_base
----@field inst idk
 ---@field is_moving idk
 ---@field is_drifting idk
 ---@field stop_boat_physics_task idk
 local boatdrifter = {}
-
----
----author: 
-function boatdrifter:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -71,12 +65,3 @@ end
 ---author: 
 function boatdrifter:StartWakeTests()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatdrifter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatdrifter:StopWatchingWorldState(var, fn) end

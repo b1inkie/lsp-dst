@@ -2,7 +2,6 @@
 
 ---@class component_occupiable: component_base
 ---@field occupant idk
----@field inst idk
 ---@field occupanttype idk
 local occupiable = {}
 
@@ -14,18 +13,6 @@ end
 ---
 ---author: 
 function occupiable:IsOccupied()
-end
-
----
----@param data idk # 
----@param newents idk # 
----author: 
-function occupiable:OnLoad(data,newents)
-end
-
----
----author: 
-function occupiable:OnSave()
 end
 
 ---
@@ -49,12 +36,3 @@ end
 ---author: 
 function occupiable:CanOccupy(occupier)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function occupiable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function occupiable:StopWatchingWorldState(var, fn) end

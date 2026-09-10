@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_harvestable: component_base
----@field inst idk
 ---@field produce idk
 ---@field growtime idk
 ---@field product idk
@@ -83,26 +82,10 @@ function harvestable:PauseGrowing()
 end
 
 ---
----author: 
-function harvestable:GetDebugString()
-end
-
----
 ---@param product idk # 
 ---@param max idk # 
 ---author: 
 function harvestable:SetProduct(product,max)
-end
-
----
----@param data idk # 
----author: 
-function harvestable:OnLoad(data)
-end
-
----
----author: 
-function harvestable:OnSave()
 end
 
 ---
@@ -136,12 +119,3 @@ end
 ---author: 
 function harvestable:SetUp(product,max,time,onharvest,ongrow)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function harvestable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function harvestable:StopWatchingWorldState(var, fn) end

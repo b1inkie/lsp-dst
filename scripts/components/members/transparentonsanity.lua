@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_transparentonsanity: component_base
----@field inst idk
 ---@field offset idk
 ---@field osc_speed idk
 ---@field osc_amp idk
@@ -34,25 +33,5 @@ end
 
 ---
 ---author: 
-function transparentonsanity:GetDebugString()
-end
-
----
----@param dt idk # 
----author: 
-function transparentonsanity:OnUpdate(dt)
-end
-
----
----author: 
 function transparentonsanity:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function transparentonsanity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function transparentonsanity:StopWatchingWorldState(var, fn) end

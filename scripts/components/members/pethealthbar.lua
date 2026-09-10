@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_pethealthbar: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field _symbol idk
 ---@field _status idk
@@ -57,18 +56,7 @@ end
 
 ---
 ---author: 
-function pethealthbar:GetDebugString()
-end
-
----
----author: 
 function pethealthbar:GetMaxHealth()
-end
-
----
----@param dt idk # 
----author: 
-function pethealthbar:OnUpdate(dt)
 end
 
 ---
@@ -90,12 +78,3 @@ end
 ---author: 
 function pethealthbar:SetMaxHealth(max_health)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pethealthbar:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pethealthbar:StopWatchingWorldState(var, fn) end

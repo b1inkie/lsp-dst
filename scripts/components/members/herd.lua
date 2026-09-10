@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_herd: component_base
----@field inst idk
 ---@field maxsize idk
 ---@field members idk
 ---@field membercount idk
@@ -19,11 +18,6 @@
 ---@field _onmemberkilled idk
 ---@field membersearchtags idk
 local herd = {}
-
----
----author: 
-function herd:OnRemoveEntity()
-end
 
 ---
 ---@param size idk # 
@@ -57,11 +51,6 @@ end
 
 ---
 ---author: 
-function herd:OnUpdate()
-end
-
----
----author: 
 function herd:OnRemoveFromEntity()
 end
 
@@ -73,11 +62,6 @@ end
 ---
 ---author: 
 function herd:IsFull()
-end
-
----
----author: 
-function herd:GetDebugString()
 end
 
 ---
@@ -99,18 +83,6 @@ function herd:SetMemberTag(tag)
 end
 
 ---
----@param newents idk # 
----@param savedata idk # 
----author: 
-function herd:LoadPostPass(newents,savedata)
-end
-
----
----author: 
-function herd:OnSave()
-end
-
----
 ---@param range idk # 
 ---author: 
 function herd:SetGatherRange(range)
@@ -126,12 +98,3 @@ end
 ---author: 
 function herd:RemoveMember(inst)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function herd:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function herd:StopWatchingWorldState(var, fn) end

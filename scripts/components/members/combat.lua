@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_combat: component_base
----@field inst ent
 ---@field nextbattlecrytime idk
 ---@field battlecryenabled idk
 ---@field attackrange idk
@@ -90,12 +89,6 @@ end
 ---@param damage idk # 
 ---author: 
 function combat:SetDefaultDamage(damage)
-end
-
----
----@param dt idk # 
----author: 
-function combat:OnUpdate(dt)
 end
 
 ---
@@ -449,11 +442,6 @@ end
 
 ---
 ---author: 
-function combat:GetDebugString()
-end
-
----
----author: 
 function combat:ForceAttack()
 end
 
@@ -520,11 +508,3 @@ end
 function combat:ShareTarget(target,range,fn,maxnum,musttags)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function combat:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function combat:StopWatchingWorldState(var, fn) end

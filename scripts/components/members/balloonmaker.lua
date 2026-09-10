@@ -1,22 +1,13 @@
 ---@meta
 
 ---@class component_balloonmaker: component_base
----@field inst idk
 local balloonmaker = {}
 
----
----@param x idk # 
----@param y idk # 
----@param z idk # 
----author: 
-function balloonmaker:MakeBalloon(x,y,z)
+---生成一个气球并放置到指定坐标
+---@param x number # X 坐标
+---@param y number # Y 坐标
+---@param z number # Z 坐标
+---@return nil
+---author: Runar
+function balloonmaker:MakeBalloon(x, y, z)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function balloonmaker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function balloonmaker:StopWatchingWorldState(var, fn) end

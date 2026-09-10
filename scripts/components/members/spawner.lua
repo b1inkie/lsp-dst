@@ -2,7 +2,6 @@
 
 ---@class component_spawner: component_base
 ---@field task idk
----@field inst idk
 ---@field child idk
 ---@field delay idk
 ---@field onoccupied idk
@@ -68,27 +67,8 @@ function spawner:ReleaseChild()
 end
 
 ---
----@param data idk # 
----@param newents idk # 
----author: 
-function spawner:OnLoad(data,newents)
-end
-
----
----author: 
-function spawner:GetDebugString()
-end
-
----
 ---author: 
 function spawner:IsSpawnPending()
-end
-
----
----@param newents idk # 
----@param savedata idk # 
----author: 
-function spawner:LoadPostPass(newents,savedata)
 end
 
 ---
@@ -115,11 +95,6 @@ function spawner:SetOnVacateFn(fn)
 end
 
 ---
----author: 
-function spawner:OnSave()
-end
-
----
 ---@param delay idk # 
 ---author: 
 function spawner:SpawnWithDelay(delay)
@@ -135,12 +110,3 @@ end
 ---author: 
 function spawner:SetOnlySpawnOffscreen(offscreen)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spawner:StopWatchingWorldState(var, fn) end

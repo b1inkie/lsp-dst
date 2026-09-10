@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_herdmember: component_base
----@field inst idk
 ---@field enabled idk
 ---@field herd idk
 ---@field herdprefab idk
@@ -38,11 +37,6 @@ end
 
 ---
 ---author: 
-function herdmember:GetDebugString()
-end
-
----
----author: 
 function herdmember:OnRemoveFromEntity()
 end
 
@@ -50,12 +44,3 @@ end
 ---author: 
 function herdmember:CreateHerd()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function herdmember:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function herdmember:StopWatchingWorldState(var, fn) end

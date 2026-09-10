@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatring: component_base
----@field inst idk
 ---@field rotationdirection idk
 ---@field rotate_speed idk
 ---@field max_rotate_speed idk
@@ -52,23 +51,6 @@ function boatring:GetNumSegments()
 end
 
 ---
----@param data idk # 
----author: 
-function boatring:OnLoad(data)
-end
-
----
----author: 
-function boatring:OnSave()
-end
-
----
----@param dt idk # 
----author: 
-function boatring:OnUpdate(dt)
-end
-
----
 ---author: 
 function boatring:GetRadius()
 end
@@ -84,12 +66,3 @@ end
 ---author: 
 function boatring:GetBumperAtPoint(x,z)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatring:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatring:StopWatchingWorldState(var, fn) end

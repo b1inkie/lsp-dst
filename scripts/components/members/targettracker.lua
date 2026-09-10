@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_targettracker: component_base
----@field inst idk
 ---@field target idk
 ---@field timetracking idk
 ---@field pausetime idk
@@ -40,12 +39,6 @@ function targettracker:SetTimeTracking(time)
 end
 
 ---
----@param dt idk # 
----author: 
-function targettracker:OnUpdate(dt)
-end
-
----
 ---@param testtarget idk # 
 ---author: 
 function targettracker:IsTracking(testtarget)
@@ -55,11 +48,6 @@ end
 ---@param target idk # 
 ---author: 
 function targettracker:TrackTarget(target)
-end
-
----
----author: 
-function targettracker:GetDebugString()
 end
 
 ---
@@ -113,11 +101,3 @@ end
 function targettracker:GetTimeTracking()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function targettracker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function targettracker:StopWatchingWorldState(var, fn) end

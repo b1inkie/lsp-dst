@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lootdropper: component_base
----@field inst ent #组件所挂载的实体
 ---@field numrandomloot number|nil #默认nil,触发加权随机掉落后抽取随机掉落物的次数,大于0时才启用随机掉落
 ---@field randomloot nil|{prefab:PrefabID, weight:number}[] #默认nil,加权随机掉落表
 ---@field chancerandomloot number|nil #默认nil,0~1概率值，触发加权随机掉落的几率
@@ -167,11 +166,3 @@ end
 ---author: Runar
 function lootdropper:SetChanceLootTable(name)
 end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lootdropper:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lootdropper:StopWatchingWorldState(var, fn) end

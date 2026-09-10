@@ -4,7 +4,6 @@
 ---@field onicetile idk
 ---@field inittask idk
 ---@field checknearbyentitytask idk
----@field inst idk
 ---@field _sources idk
 ---@field _updating idk
 ---@field started idk
@@ -36,12 +35,6 @@ function slipperyfeet:StartSlipperySource(src,key)
 end
 
 ---
----@param dt idk # 
----author: 
-function slipperyfeet:OnUpdate(dt)
-end
-
----
 ---author: 
 function slipperyfeet:OnRemoveFromEntity()
 end
@@ -49,11 +42,6 @@ end
 ---
 ---author: 
 function slipperyfeet:GetSlipperyAndNearbyEnts()
-end
-
----
----author: 
-function slipperyfeet:OnLoad()
 end
 
 ---
@@ -66,17 +54,6 @@ end
 ---@param key idk # 
 ---author: 
 function slipperyfeet:StopSlipperySource(src,key)
-end
-
----
----author: 
-function slipperyfeet:GetDebugString()
-end
-
----
----@param dt idk # 
----author: 
-function slipperyfeet:LongUpdate(dt)
 end
 
 ---
@@ -113,12 +90,3 @@ end
 ---author: 
 function slipperyfeet:DoDelta(delta)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function slipperyfeet:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function slipperyfeet:StopWatchingWorldState(var, fn) end

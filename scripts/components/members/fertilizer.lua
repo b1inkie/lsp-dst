@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fertilizer: component_base
----@field inst idk
 ---@field fertilizervalue idk
 ---@field soil_cycles integer # 使用次数
 ---@field withered_cycles idk
@@ -40,12 +39,3 @@ end
 ---author: 
 function fertilizer:SetHealingAmount(health)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fertilizer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fertilizer:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_follower: component_base
----@field inst ent #组件挂载的实体
 ---@field leader ent|nil #当前跟随的跟随者实体
 ---@field targettime number|nil #雇佣到期时间
 ---@field maxfollowtime number|nil #最大雇佣时间
@@ -65,12 +64,6 @@ end
 function follower:GetLeader()
 end
 
----获取调试字符串
----author:星璃
----@return string #调试信息 ---@nodiscard
-function follower:GetDebugString()
-end
-
 ---判断是否靠近跟随者
 ---@param dist number #距离
 ---author:星璃
@@ -88,29 +81,11 @@ end
 function follower:KeepLeaderOnAttacked()
 end
 
----长时间未更新时的同步
----@param dt number #时间差
----author:星璃
-function follower:LongUpdate(dt)
-end
-
----加载数据(感觉没必要但还是写一下?)
----@param data table #存档数据
----author:星璃
-function follower:OnLoad(data)
-end
-
 ---判断跟随者是否相同
 ---@param otherfollower component_follower #另一个follower组件
 ---author:星璃
 ---@return boolean #是否相同 ---@nodiscard
 function follower:IsLeaderSame(otherfollower)
-end
-
----保存(感觉没必要但还是写一下?)
----author:星璃
----@return table|nil #存档数据 ---@nodiscard
-function follower:OnSave()
 end
 
 ---获取雇佣时间百分比
@@ -128,12 +103,3 @@ end
 ---author:星璃
 function follower:StartLeashing()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function follower:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function follower:StopWatchingWorldState(var, fn) end

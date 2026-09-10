@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_deciduoustreeupdater: component_base
----@field inst idk
 ---@field monster idk
 ---@field monster_target idk
 ---@field last_monster_target idk
@@ -37,12 +36,6 @@ function deciduoustreeupdater:OnEntityWake()
 end
 
 ---
----@param dt idk # 
----author: 
-function deciduoustreeupdater:OnUpdate(dt)
-end
-
----
 ---@param starttime idk # 
 ---author: 
 function deciduoustreeupdater:StartMonster(starttime)
@@ -52,12 +45,3 @@ end
 ---author: 
 function deciduoustreeupdater:OnEntitySleep()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deciduoustreeupdater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deciduoustreeupdater:StopWatchingWorldState(var, fn) end

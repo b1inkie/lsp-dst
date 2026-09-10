@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_markable: component_base
----@field inst idk
 ---@field marks idk
 ---@field markpool_reset idk
 ---@field markpool idk
@@ -31,17 +30,6 @@ function markable:getid()
 end
 
 ---
----@param data idk # 
----author: 
-function markable:OnLoad(data)
-end
-
----
----author: 
-function markable:OnSave()
-end
-
----
 ---@param doer idk # 
 ---author: 
 function markable:HasMarked(doer)
@@ -58,12 +46,3 @@ end
 ---author: 
 function markable:Mark(doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function markable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function markable:StopWatchingWorldState(var, fn) end

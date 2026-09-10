@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hudindicatable: component_base
----@field inst idk
 ---@field shouldtrackfn idk
 local hudindicatable = {}
 
@@ -31,12 +30,3 @@ end
 ---author: 
 function hudindicatable:RegisterWithWorldComponent()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hudindicatable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hudindicatable:StopWatchingWorldState(var, fn) end

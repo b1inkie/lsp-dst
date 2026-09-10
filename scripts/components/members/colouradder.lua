@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_colouradder: component_base
----@field inst idk
 ---@field colourstack idk
 ---@field children idk
 ---@field colour idk
@@ -12,11 +11,6 @@ local colouradder = {}
 ---@param source idk # 
 ---author: 
 function colouradder:PopColour(source)
-end
-
----
----author: 
-function colouradder:GetDebugString()
 end
 
 ---
@@ -64,12 +58,3 @@ end
 ---author: 
 function colouradder:OnSetColour(r,g,b,a)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function colouradder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function colouradder:StopWatchingWorldState(var, fn) end

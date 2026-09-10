@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_damagereflect: component_base
----@field inst idk
 ---@field reflectdamagefn idk
 ---@field defaultdamage idk
 local damagereflect = {}
@@ -27,12 +26,3 @@ end
 ---author: 
 function damagereflect:SetDefaultDamage(value)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function damagereflect:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function damagereflect:StopWatchingWorldState(var, fn) end

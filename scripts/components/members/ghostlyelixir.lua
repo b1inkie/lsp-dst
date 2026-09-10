@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_ghostlyelixir: component_base
----@field inst ent # 具有此组件的实体，如温蒂的各种药剂
 local ghostlyelixir = {}
 
 ---应用药效【此组件为药剂所拥有，调用方为药剂】
@@ -17,12 +16,3 @@ end
 ---author: nullptr
 function ghostlyelixir:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function ghostlyelixir:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function ghostlyelixir:StopWatchingWorldState(var, fn) end

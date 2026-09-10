@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatcrew: component_base
----@field inst idk
 ---@field members idk
 ---@field membercount idk
 ---@field membertag idk
@@ -22,12 +21,6 @@
 local boatcrew = {}
 
 ---
----author: 
-function boatcrew:OnRemoveEntity()
-end
-
----
----@param target idk # 
 ---author: 
 function boatcrew:checktinkertarget(target)
 end
@@ -68,24 +61,12 @@ end
 
 ---
 ---author: 
-function boatcrew:OnUpdate()
-end
-
----
----author: 
 function boatcrew:OnRemoveFromEntity()
 end
 
 ---
 ---author: 
 function boatcrew:areAllCrewOnBoat()
-end
-
----
----@param newents idk # 
----@param savedata idk # 
----author: 
-function boatcrew:LoadPostPass(newents,savedata)
 end
 
 ---
@@ -140,11 +121,6 @@ function boatcrew:SetUpdateRange(range)
 end
 
 ---
----author: 
-function boatcrew:OnSave()
-end
-
----
 ---@param target idk # 
 ---author: 
 function boatcrew:reserveinkertarget(target)
@@ -160,12 +136,3 @@ end
 ---author: 
 function boatcrew:SetHeading(heading)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatcrew:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatcrew:StopWatchingWorldState(var, fn) end

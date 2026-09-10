@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_locomotor: component_base
----@field inst ent
 ---@field pt idk
 ---@field buffered_action idk
 ---@field ismastersim idk
@@ -316,15 +315,6 @@ end
 ---@param dt idk # 
 ---@param arrive_check_only idk # 
 ---author: 
-function locomotor:OnUpdate(dt,arrive_check_only)
-end
-
----
----@param my_platform idk # 
----@param target_x idk # 
----@param target_z idk # 
----@param hop_distance idk # 
----author: 
 function locomotor:ScanForPlatform(my_platform,target_x,target_z,hop_distance)
 end
 
@@ -442,11 +432,6 @@ end
 function locomotor:StopStrafing()
 end
 
----
----author: 
-function locomotor:GetDebugString()
-end
-
 ---移动至目标地点
 ---@param pt Vector3 # 目标点坐标
 ---@param bufferedaction idk # 
@@ -515,12 +500,3 @@ end
 ---author: 
 function locomotor:RecalculateExternalSpeedMultiplier(sources)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function locomotor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function locomotor:StopWatchingWorldState(var, fn) end

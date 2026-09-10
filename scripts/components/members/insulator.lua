@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_insulator: component_base
----@field inst ent #组件挂载的实体
 ---@field insulation number #绝缘值
 ---@field type string #绝缘类型 winter或summer
 local insulator = {}
@@ -43,12 +42,3 @@ end
 ---@nodiscard
 function insulator:GetType()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function insulator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function insulator:StopWatchingWorldState(var, fn) end

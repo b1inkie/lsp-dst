@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stuckdetection: component_base
----@field inst idk
 ---@field timetostuck idk
 ---@field starttime idk
 ---@field lastx idk
@@ -23,12 +22,3 @@ end
 ---author: 
 function stuckdetection:Reset()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stuckdetection:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stuckdetection:StopWatchingWorldState(var, fn) end

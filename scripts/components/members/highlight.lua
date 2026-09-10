@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_highlight: component_base
----@field inst idk
 ---@field highlit idk
 ---@field base_add_colour_red idk
 ---@field base_add_colour_green idk
@@ -38,12 +37,6 @@ function highlight:OnRemoveFromEntity()
 end
 
 ---
----@param dt idk # 
----author: 
-function highlight:OnUpdate(dt)
-end
-
----
 ---@param r idk # 
 ---@param g idk # 
 ---@param b idk # 
@@ -61,11 +54,3 @@ end
 function highlight:UnHighlight()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function highlight:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function highlight:StopWatchingWorldState(var, fn) end

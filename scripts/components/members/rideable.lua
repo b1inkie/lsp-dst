@@ -2,7 +2,6 @@
 
 ---@class component_rideable: component_base
 ---@field riddentask idk
----@field inst idk
 ---@field saddleable idk
 ---@field canride idk
 ---@field saddle idk
@@ -83,11 +82,6 @@ function rideable:Buck(gentle)
 end
 
 ---
----author: 
-function rideable:GetDebugString()
-end
-
----
 ---@param data idk # 
 ---@param newents idk # 
 ---author: 
@@ -115,12 +109,3 @@ end
 ---author: 
 function rideable:TimeSinceLastRide()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rideable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rideable:StopWatchingWorldState(var, fn) end

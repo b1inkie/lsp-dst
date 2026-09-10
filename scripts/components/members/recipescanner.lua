@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_recipescanner: component_base
----@field inst idk
 ---@field onscanned idk
 local recipescanner = {}
 
@@ -22,12 +21,3 @@ end
 ---author: 
 function recipescanner:Scan(target,doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function recipescanner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function recipescanner:StopWatchingWorldState(var, fn) end

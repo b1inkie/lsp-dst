@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_edible: component_base
----@field inst idk
 ---@field healthvalue idk
 ---@field hungervalue idk
 ---@field sanityvalue idk
@@ -44,24 +43,11 @@ end
 function edible:GetWoodiness(eater)
 end
 
----获取调试信息（一般组件都会有，具体内容见函数体）
----@return string # debug字符串
----author:nullptr
-function edible:GetDebugString()
-end
-
 ---削减食物的寒意？（官方也少用）
 ---@param item ent # 一般是食物
 ---@param count number # item的数量
 ---author:nullptr
 function edible:DiluteChill(item,count)
-end
-
----加载（一般组件都会有的，具体加载了什么详见此函数，一般保存和加载都是成对的）
----<br>一般OnLoad和OnSave都是交由【官方代码】调用的
----@param data table # 一般为OnSave保存的data表
----author:nullptr
-function edible:OnLoad(data)
 end
 
 ---食物被吃（如设置了【食物被吃】回调，触发之，事件oneaten被推送）
@@ -93,12 +79,6 @@ end
 function edible:GetHealth(eater)
 end
 
----保存（一般组件都会有的，具体保存了什么详见此函数）
----<br>一般OnLoad和OnSave都是交由【官方代码】调用的
----author:nullptr
-function edible:OnSave()
-end
-
 ---设置【获取能回复的理智值】回调（感觉描述的好怪，大概是用于实现食物的动态回复值）
 ---<br>此回调仅存在于伍迪的三种动物像，伍迪【有cursemaster标签】食用不扣san，其他角色扣san
 ---@param fn function(inst, eater) # 诸如此类的回调函数(inst, eater:食用者) !! 一般回调函数的首参都代表【具有此组件的实体】
@@ -118,12 +98,3 @@ end
 ---author:nullptr
 function edible:SetGetHealthFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function edible:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function edible:StopWatchingWorldState(var, fn) end

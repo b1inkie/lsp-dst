@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_winch: component_base
----@field inst idk
 ---@field onfullyloweredfn idk
 ---@field onfullyraisedfn idk
 ---@field onstartloweringfn idk
@@ -52,12 +51,6 @@ function winch:StartDepthTesting(is_raising)
 end
 
 ---
----@param dt idk # 
----author: 
-function winch:OnUpdate(dt)
-end
-
----
 ---author: 
 function winch:OnRemoveFromEntity()
 end
@@ -81,17 +74,6 @@ function winch:StartRaising(loading_in)
 end
 
 ---
----@param data idk # 
----author: 
-function winch:OnLoad(data)
-end
-
----
----author: 
-function winch:GetDebugString()
-end
-
----
 ---author: 
 function winch:FullyLowered()
 end
@@ -105,11 +87,6 @@ end
 ---
 ---author: 
 function winch:FullyRaised()
-end
-
----
----author: 
-function winch:OnSave()
 end
 
 ---
@@ -128,12 +105,3 @@ end
 ---author: 
 function winch:SetRaisingSpeedMultiplier(mult)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winch:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winch:StopWatchingWorldState(var, fn) end

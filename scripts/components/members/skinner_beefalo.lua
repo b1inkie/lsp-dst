@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_skinner_beefalo: component_base
----@field inst idk
 ---@field clothing idk
 local skinner_beefalo = {}
 
@@ -28,11 +27,6 @@ function skinner_beefalo:GetClothing()
 end
 
 ---
----author: 
-function skinner_beefalo:OnSave()
-end
-
----
 ---@param skins idk # 
 ---@param player idk # 
 ---author: 
@@ -51,11 +45,3 @@ end
 function skinner_beefalo:SetClothing(name)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skinner_beefalo:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skinner_beefalo:StopWatchingWorldState(var, fn) end

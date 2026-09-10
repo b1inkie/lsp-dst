@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_inventoryitemholder: component_base
----@field inst idk
 ---@field item idk
 ---@field allowed_tags idk
 ---@field onitemgivenfn idk
@@ -42,30 +41,13 @@ end
 
 ---
 ---author: 
-function inventoryitemholder:GetDebugString()
-end
-
----
----author: 
 function inventoryitemholder:IsHolding()
-end
-
----
----@param data idk # 
----@param newents idk # 
----author: 
-function inventoryitemholder:OnLoad(data,newents)
 end
 
 ---
 ---@param fn idk # 
 ---author: 
 function inventoryitemholder:SetOnItemGivenFn(fn)
-end
-
----
----author: 
-function inventoryitemholder:OnSave()
 end
 
 ---
@@ -79,11 +61,3 @@ end
 function inventoryitemholder:SetOnItemTakenFn(fn)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventoryitemholder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inventoryitemholder:StopWatchingWorldState(var, fn) end

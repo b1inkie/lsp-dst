@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_crittertraits: component_base
----@field inst idk
 ---@field traitscore idk
 ---@field dominanttrait idk
 ---@field dominanttraitlocked idk
@@ -31,22 +30,6 @@ function crittertraits:StartTracking()
 end
 
 ---
----author: 
-function crittertraits:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function crittertraits:OnLoad(data)
-end
-
----
----author: 
-function crittertraits:OnSave()
-end
-
----
 ---@param name idk # 
 ---@param multiplier idk # 
 ---author: 
@@ -63,12 +46,3 @@ end
 ---author: 
 function crittertraits:IsDominantTrait(trait)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crittertraits:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crittertraits:StopWatchingWorldState(var, fn) end

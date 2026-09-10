@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_electricattacks: component_base
----@field inst idk
 ---@field _sources SourceModifierList
 local electricattacks = {}
 
@@ -17,11 +16,3 @@ end
 function electricattacks:RemoveSource(source)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function electricattacks:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function electricattacks:StopWatchingWorldState(var, fn) end

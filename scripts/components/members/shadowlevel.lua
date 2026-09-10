@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_shadowlevel: component_base
----@field inst idk
 ---@field level idk
 ---@field levelfn idk
 local shadowlevel = {}
@@ -31,12 +30,3 @@ end
 ---author: lan
 function shadowlevel:GetCurrentLevel()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shadowlevel:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shadowlevel:StopWatchingWorldState(var, fn) end

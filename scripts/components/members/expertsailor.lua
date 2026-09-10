@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_expertsailor: component_base
----@field inst idk
 ---@field row_force_mult idk
 ---@field extra_max_velocity idk
 ---@field anchor_raise_speed idk
@@ -51,12 +50,3 @@ end
 ---author: 
 function expertsailor:GetAnchorRaisingSpeed()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function expertsailor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function expertsailor:StopWatchingWorldState(var, fn) end

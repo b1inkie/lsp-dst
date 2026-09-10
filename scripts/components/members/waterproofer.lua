@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_waterproofer: component_base
----@field inst idk
 ---@field effectiveness idk
 local waterproofer = {}
 
@@ -22,12 +21,3 @@ end
 ---author: mango
 function waterproofer:GetEffectiveness()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function waterproofer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function waterproofer:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mightydumbbell: component_base
----@field inst idk
 ---@field efficiency_wimpy idk
 ---@field efficiency_normal idk
 ---@field efficiency_mighty idk
@@ -70,12 +69,3 @@ end
 ---author: 
 function mightydumbbell:StartWorkout(doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mightydumbbell:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mightydumbbell:StopWatchingWorldState(var, fn) end

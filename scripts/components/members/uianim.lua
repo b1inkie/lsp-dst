@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_uianim: component_base
----@field inst idk
 ---@field update_while_paused idk
 ---@field tint_t idk
 ---@field tint_whendone idk
@@ -25,12 +24,6 @@
 ---@field rot_duration idk
 ---@field rot_infinite idk
 local uianim = {}
-
----
----@param dt idk # 
----author: 
-function uianim:OnWallUpdate(dt)
-end
 
 ---
 ---author: 
@@ -108,12 +101,3 @@ end
 ---author: 
 function uianim:CancelTintTo(run_complete_fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function uianim:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function uianim:StopWatchingWorldState(var, fn) end

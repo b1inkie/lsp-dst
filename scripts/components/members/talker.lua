@@ -4,7 +4,6 @@
 ---@field message idk
 ---@field noanim idk
 ---@field duration idk
----@field inst idk
 ---@field task idk
 ---@field ignoring idk
 ---@field mod_str_fn idk
@@ -74,11 +73,3 @@ end
 function talker:SetOffsetFn(fn)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function talker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function talker:StopWatchingWorldState(var, fn) end

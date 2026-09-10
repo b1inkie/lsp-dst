@@ -2,7 +2,6 @@
 
 ---@class component_trap: component_base
 ---@field bait idk
----@field inst idk
 ---@field issprung idk
 ---@field isset idk
 ---@field range idk
@@ -70,12 +69,6 @@ function trap:OnEntityWake()
 end
 
 ---
----@param newents idk # 
----@param savedata idk # 
----author: 
-function trap:LoadPostPass(newents,savedata)
-end
-
 ---
 ---author: 
 function trap:OnRemoveFromEntity()
@@ -87,19 +80,8 @@ function trap:OnEntitySleep()
 end
 
 ---
----@param data idk # 
----author: 
-function trap:OnLoad(data)
-end
-
----
 ---author: 
 function trap:OnTrappedStarve()
-end
-
----
----author: 
-function trap:OnSave()
 end
 
 ---
@@ -110,11 +92,6 @@ end
 ---
 ---author: 
 function trap:AcceptingBait()
-end
-
----
----author: 
-function trap:GetDebugString()
 end
 
 ---
@@ -136,12 +113,6 @@ end
 ---
 ---author: 
 function trap:Set()
-end
-
----
----@param dt idk # 
----author: 
-function trap:OnUpdate(dt)
 end
 
 ---
@@ -170,12 +141,3 @@ end
 ---author: 
 function trap:IsFree()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trap:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trap:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_farmplantstress: component_base
----@field inst idk
 ---@field stressors idk
 ---@field stressors_testfns idk
 ---@field stressor_fns idk
@@ -53,11 +52,6 @@ end
 
 ---
 ---author: 
-function farmplantstress:GetDebugString()
-end
-
----
----author: 
 function farmplantstress:Reset()
 end
 
@@ -67,26 +61,6 @@ function farmplantstress:MakeCheckpoint()
 end
 
 ---
----@param data idk # 
----author: 
-function farmplantstress:OnLoad(data)
-end
-
----
----author: 
-function farmplantstress:OnSave()
-end
-
----
 ---author: 
 function farmplantstress:CalcFinalStressState()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function farmplantstress:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function farmplantstress:StopWatchingWorldState(var, fn) end

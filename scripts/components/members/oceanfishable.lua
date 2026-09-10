@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_oceanfishable: component_base
----@field inst idk
 ---@field rod idk
 ---@field rod_onremove idk
 ---@field catch_distance idk
@@ -41,12 +40,6 @@ end
 ---@param tunafish idk # 
 ---author: 
 function oceanfishable:WasEatenByA(tunafish)
-end
-
----
----@param dt idk # 
----author: 
-function oceanfishable:OnUpdate(dt)
 end
 
 ---
@@ -93,11 +86,6 @@ end
 
 ---
 ---author: 
-function oceanfishable:GetDebugString()
-end
-
----
----author: 
 function oceanfishable:ResetStruggling()
 end
 
@@ -112,12 +100,3 @@ end
 ---author: 
 function oceanfishable:SetRod(rod)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceanfishable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceanfishable:StopWatchingWorldState(var, fn) end

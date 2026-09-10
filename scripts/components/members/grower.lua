@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_grower: component_base
----@field inst idk
 ---@field crops idk
 ---@field level idk
 ---@field croppoints idk
@@ -19,13 +18,6 @@ end
 ---
 ---author: 
 function grower:IsEmpty()
-end
-
----
----@param data idk # 
----@param newents idk # 
----author: 
-function grower:OnLoad(data,newents)
 end
 
 ---
@@ -59,16 +51,6 @@ end
 
 ---
 ---author: 
-function grower:OnSave()
-end
-
----
----author: 
-function grower:GetDebugString()
-end
-
----
----author: 
 function grower:OnRemoveFromEntity()
 end
 
@@ -78,12 +60,3 @@ end
 ---author: 
 function grower:PlantItem(item,doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grower:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grower:StopWatchingWorldState(var, fn) end

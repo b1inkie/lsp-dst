@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_prototyper: component_base
----@field inst idk
 ---@field trees idk
 ---@field on idk
 ---@field onturnon idk
@@ -39,12 +38,3 @@ end
 ---author: 
 function prototyper:GetTechTrees()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function prototyper:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function prototyper:StopWatchingWorldState(var, fn) end

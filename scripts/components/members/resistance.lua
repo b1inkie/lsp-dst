@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_resistance: component_base
----@field inst idk
 ---@field tags idk
 ---@field onresistdamage idk
 ---@field shouldresistfn idk
@@ -23,11 +22,6 @@ end
 ---@param tag idk # 
 ---author: 
 function resistance:HasResistanceToTag(tag)
-end
-
----
----author: 
-function resistance:GetDebugString()
 end
 
 ---
@@ -59,12 +53,3 @@ end
 ---author: 
 function resistance:RemoveResistance(tag)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function resistance:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function resistance:StopWatchingWorldState(var, fn) end

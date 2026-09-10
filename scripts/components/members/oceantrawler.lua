@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_oceantrawler: component_base
----@field inst idk
 ---@field lowered idk
 ---@field range idk
 ---@field nearbytrawlerrange idk
@@ -45,11 +44,6 @@ function oceantrawler:OnEntitySleep()
 end
 
 ---
----author: 
-function oceantrawler:LoadPostPass()
-end
-
----
 ---@param eater idk # 
 ---author: 
 function oceantrawler:GetBait(eater)
@@ -58,18 +52,6 @@ end
 ---
 ---author: 
 function oceantrawler:Lower()
-end
-
----
----@param dt idk # 
----author: 
-function oceantrawler:OnUpdate(dt)
-end
-
----
----@param data idk # 
----author: 
-function oceantrawler:OnLoad(data)
 end
 
 ---
@@ -105,11 +87,6 @@ end
 
 ---
 ---author: 
-function oceantrawler:OnSave()
-end
-
----
----author: 
 function oceantrawler:ReleaseOverflowFish()
 end
 
@@ -122,12 +99,3 @@ end
 ---author: 
 function oceantrawler:IsLowered()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceantrawler:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceantrawler:StopWatchingWorldState(var, fn) end

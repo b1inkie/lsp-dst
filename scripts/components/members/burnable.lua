@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_burnable: component_base
----@field inst idk
 ---@field flammability idk
 ---@field fxdata idk
 ---@field fxlevel idk
@@ -28,11 +27,6 @@
 ---@field smoke idk
 ---@field controlled_burn { duration_creature: number, damage: number } # 在 `SpawnFX` 之前,传这个参数表,设置 `duration_creature` 为 `3` , 就可以和火女一样 用较小的火势点燃敌人, `damage` 传 `0` 就行, 一定要在 `SpawnFX` 之后置空这个表,注意是置空,也就是 `nil` ,而不是置成空表 `{}`, 否则生物死亡时,会点燃附近
 local burnable = {}
-
----
----author: 
-function burnable:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -157,17 +151,6 @@ function burnable:ExtendBurning()
 end
 
 ---
----@param dt idk # 
----author: 
-function burnable:LongUpdate(dt)
-end
-
----
----author: 
-function burnable:GetDebugString()
-end
-
----
 ---@param radius_levels idk # 
 ---author: 
 function burnable:OverrideBurnFXRadius(radius_levels)
@@ -207,12 +190,3 @@ end
 ---author: 
 function burnable:SetOnBurntFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function burnable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function burnable:StopWatchingWorldState(var, fn) end

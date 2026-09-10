@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_writeable: component_base
----@field inst ent #组件绑定的实体
 ---@field writeable_by_default boolean #是否默认可书写
 ---@field text string|nil #当前文本内容
 ---@field writer ent|nil #当前正在书写的玩家
@@ -79,31 +78,6 @@ function writeable:SetOnWrittenFn(fn) end
 ---author:星璃
 function writeable:SetOnWritingEndedFn(fn) end
 
----保存组件数据
----author:星璃
----@return table #保存的数据 
----@nodiscard
-function writeable:OnSave() end
-
----加载组件数据
----@param data table #加载的数据
----author:星璃
-function writeable:OnLoad(data) end
-
----组件更新（距离、骑乘等自动结束书写）
----@param dt number #时间差
----author:星璃
-function writeable:OnUpdate(dt) end
-
 ---移除组件时的清理
 ---author:星璃
 function writeable:OnRemoveFromEntity() end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function writeable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function writeable:StopWatchingWorldState(var, fn) end

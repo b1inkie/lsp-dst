@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_daywalkerspawner: component_base
----@field inst idk
 ---@field days_to_spawn idk
 ---@field power_level idk
 ---@field daywalker idk
@@ -12,19 +11,6 @@ local daywalkerspawner = {}
 ---@param spawnpoint idk # 
 ---author: 
 function daywalkerspawner:UnregisterDayWalkerSpawningPoint(spawnpoint)
-end
-
----
----@param ents idk # 
----@param data idk # 
----author: 
-function daywalkerspawner:LoadPostPass(ents,data)
-end
-
----
----@param data idk # 
----author: 
-function daywalkerspawner:OnLoad(data)
 end
 
 ---
@@ -78,11 +64,6 @@ end
 
 ---
 ---author: 
-function daywalkerspawner:OnSave()
-end
-
----
----author: 
 function daywalkerspawner:FindBestSpawningPoint()
 end
 
@@ -95,12 +76,3 @@ end
 ---author: 
 function daywalkerspawner:OnPostInit()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function daywalkerspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function daywalkerspawner:StopWatchingWorldState(var, fn) end

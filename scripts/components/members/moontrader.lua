@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_moontrader: component_base
----@field inst idk
 ---@field canaccept idk
 ---@field onaccept idk
 local moontrader = {}
@@ -24,12 +23,3 @@ end
 ---author: 
 function moontrader:AcceptOffering(giver,item)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moontrader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function moontrader:StopWatchingWorldState(var, fn) end

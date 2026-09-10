@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fishschool: component_base
----@field inst idk
 ---@field max_fish_level idk
 ---@field fish_level idk
 ---@field fish_prefab_name idk
@@ -35,12 +34,3 @@ end
 ---author: 
 function fishschool:OnPreNet(net)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishschool:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishschool:StopWatchingWorldState(var, fn) end

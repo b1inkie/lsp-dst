@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_nightlightmanager: component_base
----@field inst idk
 ---@field nightlights idk
 local nightlightmanager = {}
 
@@ -42,12 +41,3 @@ end
 ---author: 
 function nightlightmanager:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function nightlightmanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function nightlightmanager:StopWatchingWorldState(var, fn) end

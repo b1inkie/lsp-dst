@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_oceancolor: component_base
----@field inst idk
 ---@field start_color idk
 ---@field current_color idk
 ---@field end_color idk
@@ -21,12 +20,6 @@ function oceancolor:Initialize(has_ocean)
 end
 
 ---
----@param dt idk # 
----author: 
-function oceancolor:OnWallUpdate(dt)
-end
-
----
 ---@param src idk # 
 ---@param phase idk # 
 ---author: 
@@ -37,12 +30,3 @@ end
 ---author: 
 function oceancolor:OnPostInit()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceancolor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceancolor:StopWatchingWorldState(var, fn) end

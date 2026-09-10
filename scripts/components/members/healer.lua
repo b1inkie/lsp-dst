@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_healer: component_base
----@field inst idk
 ---@field health idk
 ---@field canhealfn idk
 ---@field onhealfn idk
@@ -31,12 +30,3 @@ end
 ---author: 御坂十七号
 function healer:Heal(target,doer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healer:StopWatchingWorldState(var, fn) end

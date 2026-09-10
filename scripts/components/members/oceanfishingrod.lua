@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_oceanfishingrod: component_base
----@field inst idk
 ---@field target idk
 ---@field casting_base idk
 ---@field casting_data idk
@@ -91,11 +90,6 @@ function oceanfishingrod:_LaunchCastingProjectile(source,targetpos,prefab)
 end
 
 ---
----author: 
-function oceanfishingrod:GetDebugString()
-end
-
----
 ---@param projectile idk # 
 ---@param srcpos idk # 
 ---@param targetpos idk # 
@@ -128,12 +122,6 @@ function oceanfishingrod:_CalcCastDest(src_pos,dest_pos)
 end
 
 ---
----@param dt idk # 
----author: 
-function oceanfishingrod:OnUpdate(dt)
-end
-
----
 ---@param reason idk # 
 ---@param lost_tackle idk # 
 ---author: 
@@ -157,12 +145,3 @@ end
 ---author: 
 function oceanfishingrod:CalcCatchDest(src_pos,dest_pos,catch_dist)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceanfishingrod:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oceanfishingrod:StopWatchingWorldState(var, fn) end

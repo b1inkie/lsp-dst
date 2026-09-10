@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_projectedeffects: component_base
----@field inst idk
 ---@field alpha idk
 ---@field targetalpha idk
 ---@field cutoffheight idk
@@ -14,12 +13,6 @@
 ---@field lockeddecay idk
 ---@field paused idk
 local projectedeffects = {}
-
----
----@param dt idk # 
----author: 
-function projectedeffects:OnUpdate(dt)
-end
 
 ---
 ---@param callback idk # 
@@ -84,12 +77,3 @@ end
 ---author: 
 function projectedeffects:MakeOpaque()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function projectedeffects:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function projectedeffects:StopWatchingWorldState(var, fn) end

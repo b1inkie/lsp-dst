@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_propagator: component_base
----@field inst idk
 ---@field flashpoint idk
 ---@field currentheat idk
 ---@field decayrate idk
@@ -51,11 +50,6 @@ end
 
 ---
 ---author: 
-function propagator:GetDebugString()
-end
-
----
----author: 
 function propagator:CalculateHeatCap()
 end
 
@@ -64,12 +58,6 @@ end
 ---@param source idk # 
 ---author: 
 function propagator:AddHeat(amount,source)
-end
-
----
----@param dt idk # 
----author: 
-function propagator:OnUpdate(dt)
 end
 
 ---
@@ -87,12 +75,3 @@ end
 ---author: 
 function propagator:SetOnFlashPoint(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function propagator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function propagator:StopWatchingWorldState(var, fn) end

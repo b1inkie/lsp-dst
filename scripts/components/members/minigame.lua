@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_minigame: component_base
----@field inst idk
 ---@field active idk
 ---@field activate_fn idk
 ---@field deactivate_fn idk
@@ -85,11 +84,6 @@ end
 
 ---
 ---author: 
-function minigame:GetDebugString()
-end
-
----
----author: 
 function minigame:GetIsOutro()
 end
 
@@ -117,12 +111,3 @@ end
 ---author: 
 function minigame:SetIsPlaying()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function minigame:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function minigame:StopWatchingWorldState(var, fn) end

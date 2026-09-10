@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fishable: component_base
----@field inst idk
 ---@field fish idk
 ---@field maxfish idk
 ---@field fishleft idk
@@ -19,25 +18,9 @@ function fishable:HookFish(fisherman)
 end
 
 ---
----@param data idk # 
----author: 
-function fishable:OnLoad(data)
-end
-
----
 ---@param fish idk # 
 ---author: 
 function fishable:RemoveFish(fish)
-end
-
----
----author: 
-function fishable:OnSave()
-end
-
----
----author: 
-function fishable:GetDebugString()
 end
 
 ---
@@ -93,12 +76,3 @@ end
 ---author: 
 function fishable:SetGetFishFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishable:StopWatchingWorldState(var, fn) end

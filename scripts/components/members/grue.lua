@@ -2,7 +2,6 @@
 
 ---@class component_grue: component_base
 ---@field inittask idk
----@field inst idk
 ---@field soundevent idk
 ---@field warndelay idk
 ---@field resistance idk
@@ -18,11 +17,6 @@ local grue = {}
 
 ---
 ---author: 
-function grue:OnRemoveEntity()
-end
-
----
----author: 
 function grue:Attack()
 end
 
@@ -31,12 +25,6 @@ end
 ---@param attack idk # 
 ---author: 
 function grue:SetSounds(warn,attack)
-end
-
----
----@param dt idk # 
----author: 
-function grue:OnUpdate(dt)
 end
 
 ---
@@ -77,12 +65,3 @@ end
 ---author: 
 function grue:SetResistance(resistance)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grue:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function grue:StopWatchingWorldState(var, fn) end

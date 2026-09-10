@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stageactor: component_base
----@field inst idk
 ---@field storytelling_dist idk
 ---@field storytelling_ticktime idk
 ---@field stage idk
@@ -65,17 +64,6 @@ function stageactor:GetStage(stage)
 end
 
 ---
----@param data idk # 
----author: 
-function stageactor:OnLoad(data)
-end
-
----
----author: 
-function stageactor:OnSave()
-end
-
----
 ---@param fn idk # 
 ---author: 
 function stageactor:SetOnStoryOverFn(fn)
@@ -91,12 +79,3 @@ end
 ---author: 
 function stageactor:AbortStory(reason)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stageactor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stageactor:StopWatchingWorldState(var, fn) end

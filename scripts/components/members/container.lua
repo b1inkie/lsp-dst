@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_container: component_base
----@field inst ent
 ---@field slots ent[]
 ---@field numslots idk
 ---@field canbeopened boolean|nil
@@ -80,13 +79,6 @@ end
 ---@return table # 满足条件的所有物品
 ---author: Runar
 function container:FindItems(fn)
-end
-
----
----@param data idk # 
----@param newents idk # 
----author: 
-function container:OnLoad(data,newents)
 end
 
 ---按数量扣除指名物品
@@ -264,12 +256,6 @@ end
 function container:PutAllOfActiveItemInSlot(slot,opener)
 end
 
----
----@param dt idk # 
----author: 
-function container:OnUpdate(dt)
-end
-
 ---为doer打开容器
 ---@param doer ent # 执行者
 ---author: Runar
@@ -434,11 +420,6 @@ end
 function container:RemoveAllItems()
 end
 
----
----author: 
-function container:OnSave()
-end
-
 ---丢出所有具有指定tag的物品
 ---@param tag string # 物品拥有的tag
 ---@param drop_pos Vector3 # 掉落位置
@@ -461,12 +442,3 @@ end
 ---author: Runar
 function container:HasItemWithTag(tag,amount)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function container:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function container:StopWatchingWorldState(var, fn) end

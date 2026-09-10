@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_replayproxy: component_base
----@field inst idk
 ---@field real_entity_guid idk
 ---@field real_entity_prefab_name idk
 local replayproxy = {}
@@ -27,12 +26,3 @@ end
 ---author: 
 function replayproxy:SetRealEntityGUID(guid)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function replayproxy:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function replayproxy:StopWatchingWorldState(var, fn) end

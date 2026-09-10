@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_constructionsite: component_base
----@field inst idk
 ---@field materials idk
 ---@field builder idk
 ---@field constructionprefab idk
@@ -58,18 +57,6 @@ end
 function constructionsite:SetOnConstructedFn(fn)
 end
 
----获取调试字符串
----author:星璃
----@return string #调试信息 ---@nodiscard
-function constructionsite:GetDebugString()
-end
-
----加载存档数据
----@param data table #存档数据
----author:星璃
-function constructionsite:OnLoad(data)
-end
-
 ---开始建造时调用
 ---@param doer ent #建造者
 ---author:星璃
@@ -123,12 +110,6 @@ end
 function constructionsite:RemoveMaterial(prefab, num)
 end
 
----保存存档数据
----author:星璃
----@return table|nil #存档数据 ---@nodiscard
-function constructionsite:OnSave()
-end
-
 ---判断是否有建造者
 ---author:星璃
 ---@return boolean #是否有建造者 ---@nodiscard
@@ -146,12 +127,3 @@ end
 ---@return number #已投入数量 ---@nodiscard
 function constructionsite:GetMaterialCount(prefab)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function constructionsite:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function constructionsite:StopWatchingWorldState(var, fn) end

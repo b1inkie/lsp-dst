@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_epicscare: component_base
----@field inst idk
 ---@field range idk
 ---@field defaultduration idk
 ---@field scaremusttags idk
@@ -26,12 +25,3 @@ end
 ---author: 
 function epicscare:Scare(duration)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function epicscare:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function epicscare:StopWatchingWorldState(var, fn) end

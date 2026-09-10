@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_upgrademodule: component_base
----@field inst idk
 ---@field slots idk
 ---@field activated idk
 ---@field target idk
@@ -37,12 +36,3 @@ end
 ---author: 
 function upgrademodule:RemoveFromOwner()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function upgrademodule:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function upgrademodule:StopWatchingWorldState(var, fn) end

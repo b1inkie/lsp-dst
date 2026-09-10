@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_luckuser: component_base
----@field inst ent #
 ---@field luck idk #
 ---@field luckmodifiers idk #
 local luckuser = {}
@@ -29,8 +28,4 @@ function luckuser:SetLuckSource(luck, source) end
 ---author: 
 function luckuser:RemoveLuckSource(source) end
 
----
----
----author: 
-function luckuser:GetDebugString() end
 

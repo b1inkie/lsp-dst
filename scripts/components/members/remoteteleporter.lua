@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_remoteteleporter: component_base
----@field inst idk
 ---@field canactivatefn idk
 ---@field checkdestinationfn idk
 ---@field onstartteleportfn idk
@@ -94,12 +93,3 @@ end
 ---author: 
 function remoteteleporter:SetItemTeleportRadius(radius)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function remoteteleporter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function remoteteleporter:StopWatchingWorldState(var, fn) end

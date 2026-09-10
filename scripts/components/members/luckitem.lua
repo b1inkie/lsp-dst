@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_luckitem: component_base
----@field inst ent #
 ---@field luck idk #
 ---@field equippedluck idk #
 local luckitem = {}
@@ -57,8 +56,4 @@ function luckitem:SetEquippedLuck(luck) end
 ---author: 
 function luckitem:GetEquippedLuck() end
 
----
----
----author: 
-function luckitem:GetDebugString() end
 

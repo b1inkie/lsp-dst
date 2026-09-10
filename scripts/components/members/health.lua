@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_health: component_base
----@field inst ent # 拥有此组件的实体（一般组件的属性inst都是此含义）
 ---@field maxhealth number|100 # 最大生命值
 ---@field minhealth number|0 # 最小生命值（需与组件的另一属性canmurder一同使用，才能实现锁血，至少单机是如此）
 ---@field currenthealth number # 当前生命值
@@ -48,12 +47,6 @@ end
 function health:ForceUpdateHUD(overtime)
 end
 
----
----@param dt idk #
----author:
-function health:OnUpdate(dt)
-end
-
 ---设置单次受击最大扣血
 ---@param maxdamagetakenperhit number #
 ---author:nullptr
@@ -73,12 +66,6 @@ end
 ---@nodiscard
 ---author:nullptr
 function health:GetPenaltyPercent()
-end
-
----
----@param data idk #
----author:
-function health:OnLoad(data)
 end
 
 ---移除生命回复源
@@ -184,12 +171,6 @@ end
 function health:SetMinHealth(amount)
 end
 
----用于调试，获取debug字符串
----@return string
----author:nullptr
-function health:GetDebugString()
-end
-
 ---获取黑血惩罚后的最大生命值
 ---@return number
 ---author:nullptr
@@ -224,11 +205,6 @@ end
 ---@nodiscard
 ---author:nullptr
 function health:IsDead()
-end
-
----
----author:
-function health:OnSave()
 end
 
 ---添加生命回复源
@@ -266,11 +242,3 @@ end
 ---author: lan
 function health:CanFadeOut(val)
 end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function health:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function health:StopWatchingWorldState(var, fn) end

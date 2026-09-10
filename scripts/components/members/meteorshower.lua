@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_meteorshower: component_base
----@field inst idk
 ---@field dt idk
 ---@field spawn_mod idk
 ---@field medium_remaining idk
@@ -12,12 +11,6 @@
 ---@field level idk
 ---@field should_have_rock_moon_shell idk
 local meteorshower = {}
-
----
----@param data idk # 
----author: 
-function meteorshower:OnLoad(data)
-end
 
 ---
 ---@param level idk # 
@@ -38,16 +31,6 @@ end
 
 ---
 ---author: 
-function meteorshower:GetDebugString()
-end
-
----
----author: 
-function meteorshower:OnSave()
-end
-
----
----author: 
 function meteorshower:StartCooldown()
 end
 
@@ -60,12 +43,3 @@ end
 ---author: 
 function meteorshower:IsShowering()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function meteorshower:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function meteorshower:StopWatchingWorldState(var, fn) end

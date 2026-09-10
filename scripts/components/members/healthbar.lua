@@ -3,7 +3,6 @@
 ---@class component_healthbar: component_base
 ---@field bg idk
 ---@field bar idk
----@field inst idk
 ---@field bar_atlas idk
 ---@field bar_image idk
 ---@field bar_width idk
@@ -29,12 +28,3 @@ end
 ---author: 
 function healthbar:SetValue(percent)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthbar:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthbar:StopWatchingWorldState(var, fn) end

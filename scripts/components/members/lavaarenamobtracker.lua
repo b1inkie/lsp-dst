@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lavaarenamobtracker: component_base
----@field inst idk
 ---@field ents idk
 ---@field count idk
 ---@field _onremovemob idk
@@ -47,12 +46,3 @@ end
 ---author: 
 function lavaarenamobtracker:GetAllMobs()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lavaarenamobtracker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lavaarenamobtracker:StopWatchingWorldState(var, fn) end

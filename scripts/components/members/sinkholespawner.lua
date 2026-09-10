@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sinkholespawner: component_base
----@field inst idk
 ---@field targets idk
 local sinkholespawner = {}
 
@@ -19,17 +18,6 @@ end
 
 ---
 ---author: 
-function sinkholespawner:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function sinkholespawner:OnLoad(data)
-end
-
----
----author: 
 function sinkholespawner:StopSinkholes()
 end
 
@@ -37,17 +25,6 @@ end
 ---@param targetinfo idk # 
 ---author: 
 function sinkholespawner:DoTargetAttack(targetinfo)
-end
-
----
----@param dt idk # 
----author: 
-function sinkholespawner:OnUpdate(dt)
-end
-
----
----author: 
-function sinkholespawner:OnSave()
 end
 
 ---
@@ -60,12 +37,3 @@ end
 ---author: 
 function sinkholespawner:DoTargetWarning(targetinfo)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sinkholespawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sinkholespawner:StopWatchingWorldState(var, fn) end

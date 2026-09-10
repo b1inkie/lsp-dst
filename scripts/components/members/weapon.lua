@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_weapon: component_base
----@field inst ent
 ---@field damage idk
 ---@field attackrange idk
 ---@field hitrange idk
@@ -113,12 +112,3 @@ end
 ---author: lan(攻击者到目标的方向向量乘以这个offset)
 function weapon:SetProjectileOffset(offset)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function weapon:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function weapon:StopWatchingWorldState(var, fn) end

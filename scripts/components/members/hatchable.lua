@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hatchable: component_base
----@field inst idk
 ---@field progress idk
 ---@field discomfort idk
 ---@field state idk
@@ -24,30 +23,8 @@ function hatchable:SetHatchTime(t)
 end
 
 ---
----@param data idk # 
----author: 
-function hatchable:OnLoad(data)
-end
-
----
----author: 
-function hatchable:OnSave()
-end
-
----
 ---author: 
 function hatchable:StopUpdating()
-end
-
----
----@param dt idk # 
----author: 
-function hatchable:OnUpdate(dt)
-end
-
----
----author: 
-function hatchable:GetDebugString()
 end
 
 ---
@@ -113,12 +90,3 @@ end
 ---author: 
 function hatchable:SetOnState(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hatchable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hatchable:StopWatchingWorldState(var, fn) end

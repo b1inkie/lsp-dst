@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_roseinspectable: component_base
----@field inst idk
 ---@field forcedinducedcooldown idk
 ---@field willinducecooldownonactivatefn idk
 ---@field onresidueactivatedfn idk
@@ -63,12 +62,3 @@ end
 ---author: 
 function roseinspectable:SetWillInduceCooldownOnActivate(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function roseinspectable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function roseinspectable:StopWatchingWorldState(var, fn) end

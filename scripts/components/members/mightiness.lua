@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mightiness: component_base
----@field inst idk
 ---@field max idk
 ---@field current idk
 ---@field rate idk
@@ -135,12 +134,6 @@ function mightiness:SetPercent(percent,force_update,delay_skin,forcesound)
 end
 
 ---
----@param data idk # 
----author: 
-function mightiness:OnLoad(data)
-end
-
----
 ---author: 
 function mightiness:GetOverMax()
 end
@@ -161,25 +154,9 @@ function mightiness:DoDelta(delta,force_update,delay_skin,forcesound,fromgym)
 end
 
 ---
----@param dt idk # 
----author: 
-function mightiness:LongUpdate(dt)
-end
-
----
 ---@param data idk # 
 ---author: 
 function mightiness:OnSetInvincible(data)
-end
-
----
----author: 
-function mightiness:GetDebugString()
-end
-
----
----author: 
-function mightiness:OnSave()
 end
 
 ---
@@ -196,12 +173,3 @@ end
 ---author: 
 function mightiness:Pause()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mightiness:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mightiness:StopWatchingWorldState(var, fn) end

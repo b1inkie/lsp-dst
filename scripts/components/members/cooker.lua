@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_cooker: component_base
----@field inst idk
 local cooker = {}
 
 ---
@@ -22,12 +21,3 @@ end
 ---author: 
 function cooker:CookItem(item,chef)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cooker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cooker:StopWatchingWorldState(var, fn) end

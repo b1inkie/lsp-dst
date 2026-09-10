@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_debuff: component_base
----@field inst idk
 ---@field name idk
 ---@field target idk
 ---@field onattachedfn idk
@@ -69,12 +68,3 @@ end
 ---author: 
 function debuff:OnDetach()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function debuff:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function debuff:StopWatchingWorldState(var, fn) end

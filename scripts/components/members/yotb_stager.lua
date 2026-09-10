@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_yotb_stager: component_base
----@field inst idk
 ---@field tasks idk
 ---@field choice idk
 ---@field queue idk
@@ -168,13 +167,6 @@ function yotb_stager:AbortContest(data)
 end
 
 ---
----@param ents idk # 
----@param data idk # 
----author: 
-function yotb_stager:LoadPostPass(ents,data)
-end
-
----
 ---author: 
 function yotb_stager:appraisedoll3()
 end
@@ -264,12 +256,3 @@ end
 ---author: 
 function yotb_stager:RemoveTempBeef(beefalo)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_stager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_stager:StopWatchingWorldState(var, fn) end

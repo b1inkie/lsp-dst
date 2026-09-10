@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_guardian: component_base
----@field inst idk
 ---@field prefab idk
 ---@field guardian idk
 ---@field onsummonfn idk
@@ -33,13 +32,6 @@ function guardian:OnGuardianDeath(data)
 end
 
 ---
----@param ents idk # 
----@param data idk # 
----author: 
-function guardian:LoadPostPass(ents,data)
-end
-
----
 ---@param d idk # 
 ---author: 
 function guardian:DoDelta(d)
@@ -48,17 +40,6 @@ end
 ---
 ---author: 
 function guardian:HasGuardian()
-end
-
----
----@param data idk # 
----author: 
-function guardian:OnLoad(data)
-end
-
----
----author: 
-function guardian:OnSave()
 end
 
 ---
@@ -97,12 +78,3 @@ end
 ---author: 
 function guardian:SummonsAtMax()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function guardian:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function guardian:StopWatchingWorldState(var, fn) end

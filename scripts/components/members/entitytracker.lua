@@ -1,21 +1,8 @@
 ---@meta
 
 ---@class component_entitytracker: component_base
----@field inst idk
 ---@field entities idk
 local entitytracker = {}
-
----
----@param ents idk # 
----@param data idk # 
----author: 
-function entitytracker:LoadPostPass(ents,data)
-end
-
----
----author: 
-function entitytracker:OnSave()
-end
 
 ---移除对传入的实体名称对应实体 onremove 事件的监听并将传入的实体名称键对应的值设为 nil
 ---@param name string # 需要移除的实体名称
@@ -31,11 +18,6 @@ end
 function entitytracker:GetEntity(name)
 end
 
----
----author: 
-function entitytracker:GetDebugString()
-end
-
 ---遍历实体目前拥有的实体表并将所有监听全部删除
 ---author: KP
 function entitytracker:OnRemoveFromEntity()
@@ -48,12 +30,3 @@ end
 ---author: KP
 function entitytracker:TrackEntity(name,inst)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function entitytracker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function entitytracker:StopWatchingWorldState(var, fn) end

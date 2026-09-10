@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_inventoryitem: replica_base
----@field inst idk
 ---@field overrideimage idk
 ---@field _cannotbepickedup idk
 ---@field _iswet idk
@@ -113,11 +112,6 @@ end
 ---@param restrictedtag idk # 
 ---author: 
 function replica_inventoryitem:SetDeployRestrictedTag(restrictedtag)
-end
-
----
----author: 
-function replica_inventoryitem:OnRemoveEntity()
 end
 
 ---

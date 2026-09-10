@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_frostybreather: component_base
----@field inst idk
 ---@field breath idk
 ---@field offset idk
 ---@field offset_fn idk
@@ -74,12 +73,3 @@ end
 ---author: 
 function frostybreather:SetOffsetFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function frostybreather:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function frostybreather:StopWatchingWorldState(var, fn) end

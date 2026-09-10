@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_revivablecorpse: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field canberevivedbyfn idk
 ---@field revive_health_percet idk
@@ -62,12 +61,3 @@ end
 ---author: 
 function revivablecorpse:SetCorpse(corpse)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function revivablecorpse:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function revivablecorpse:StopWatchingWorldState(var, fn) end

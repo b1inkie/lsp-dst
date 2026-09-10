@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_leader: component_base
----@field inst idk
 ---@field followers idk
 ---@field numfollowers idk
 ---@field loyaltyeffectiveness idk
@@ -21,13 +20,6 @@ function leader:OnNewTarget(target)
 end
 
 ---
----@param newents idk # 
----@param savedata idk # 
----author: 
-function leader:LoadPostPass(newents,savedata)
-end
-
----
 ---@param guy idk # 
 ---author: 
 function leader:IsFollower(guy)
@@ -41,11 +33,6 @@ end
 
 ---
 ---author: 
-function leader:GetDebugString()
-end
-
----
----author: 
 function leader:RemoveAllFollowers()
 end
 
@@ -53,11 +40,6 @@ end
 ---@param attacker idk # 
 ---author: 
 function leader:OnAttacked(attacker)
-end
-
----
----author: 
-function leader:OnSave()
 end
 
 ---
@@ -101,12 +83,3 @@ end
 ---author: 
 function leader:CountFollowers(tag)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function leader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function leader:StopWatchingWorldState(var, fn) end

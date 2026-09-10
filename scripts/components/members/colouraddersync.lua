@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_colouraddersync: component_base
----@field inst idk
 ---@field colour idk
 ---@field colourchangedfn idk
 local colouraddersync = {}
@@ -20,12 +19,3 @@ end
 ---author: 
 function colouraddersync:SyncColour(r,g,b,a)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function colouraddersync:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function colouraddersync:StopWatchingWorldState(var, fn) end

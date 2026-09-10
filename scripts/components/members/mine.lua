@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_mine: component_base
----@field inst idk
 ---@field radius idk
 ---@field onexplode idk
 ---@field onreset idk
@@ -83,12 +82,6 @@ function mine:SetOnExplodeFn(fn)
 end
 
 ---
----@param data idk # 
----author: 
-function mine:OnLoad(data)
-end
-
----
 ---@param reusable idk # 
 ---author: 
 function mine:SetReusable(reusable)
@@ -102,11 +95,6 @@ end
 ---
 ---author: 
 function mine:Reset()
-end
-
----
----author: 
-function mine:OnSave()
 end
 
 ---
@@ -124,12 +112,3 @@ end
 ---author: 
 function mine:StopTesting()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mine:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function mine:StopWatchingWorldState(var, fn) end

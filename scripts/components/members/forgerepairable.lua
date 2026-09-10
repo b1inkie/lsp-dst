@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_forgerepairable: component_base
----@field inst idk
 ---@field repairmaterial idk
 ---@field repairable idk
 ---@field onrepaired idk
@@ -36,12 +35,3 @@ end
 ---author: 
 function forgerepairable:SetOnRepaired(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function forgerepairable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function forgerepairable:StopWatchingWorldState(var, fn) end

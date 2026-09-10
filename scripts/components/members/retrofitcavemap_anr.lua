@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_retrofitcavemap_anr: component_base
----@field inst idk
 ---@field requiresreset idk
 ---@field retrofit_artsandcrafts idk
 ---@field retrofit_heartoftheruins idk
@@ -19,12 +18,3 @@
 ---@field retrofit_acientarchives_fixes idk
 ---@field retrofit_dispencer_fixes idk
 local retrofitcavemap_anr = {}
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function retrofitcavemap_anr:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function retrofitcavemap_anr:StopWatchingWorldState(var, fn) end

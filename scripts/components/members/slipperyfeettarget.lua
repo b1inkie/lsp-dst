@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_slipperyfeettarget: component_base
----@field inst idk
 ---@field isslipperyatfeetfn idk
 ---@field ratefn idk
 local slipperyfeettarget = {}
@@ -36,12 +35,3 @@ end
 ---author: 
 function slipperyfeettarget:IsSlipperyAtPosition(x,y,z)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function slipperyfeettarget:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function slipperyfeettarget:StopWatchingWorldState(var, fn) end

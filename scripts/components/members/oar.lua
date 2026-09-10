@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_oar: component_base
----@field inst idk
 ---@field fail_idx idk
 ---@field fail_string_count idk
 ---@field fail_wetness idk
@@ -21,12 +20,3 @@ end
 ---author: 
 function oar:Row(doer,pos)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oar:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function oar:StopWatchingWorldState(var, fn) end

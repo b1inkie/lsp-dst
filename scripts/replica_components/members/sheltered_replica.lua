@@ -4,7 +4,6 @@
 ---@field _task idk
 ---@field _targetshade idk
 ---@field _shade idk
----@field inst idk
 ---@field _updating idk
 ---@field _shelterspeed idk
 ---@field _exposespeed idk

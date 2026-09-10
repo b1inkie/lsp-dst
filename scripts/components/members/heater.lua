@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_heater: component_base
----@field inst idk
 ---@field heat number|nil # 
 ---@field heatfn fun(this:ent,observer:ent|nil):number
 ---@field equippedheat idk
@@ -30,11 +29,6 @@ end
 ---@param should_falloff idk # 
 ---author: 
 function heater:SetShouldFalloff(should_falloff)
-end
-
----
----author: 
-function heater:GetDebugString()
 end
 
 ---
@@ -82,11 +76,3 @@ end
 function heater:GetCarriedHeat(observer)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function heater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function heater:StopWatchingWorldState(var, fn) end

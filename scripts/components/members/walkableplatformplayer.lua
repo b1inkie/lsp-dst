@@ -8,17 +8,11 @@
 ---@field player_zooms idk
 ---@field player_zoom_task idk
 ---@field player_zoomout idk
----@field inst idk
 ---@field platform idk
 ---@field player_zoomed_out idk
 ---@field _doplatformcamerazoomdirty idk
 ---@field test_boat_speed_task idk
 local walkableplatformplayer = {}
-
----
----author: 
-function walkableplatformplayer:OnRemoveEntity()
-end
 
 ---
 ---author: 
@@ -65,12 +59,3 @@ end
 ---author: 
 function walkableplatformplayer:StartBoatCamera()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatformplayer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatformplayer:StopWatchingWorldState(var, fn) end

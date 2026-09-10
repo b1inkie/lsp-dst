@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_toggleableitem: component_base
----@field inst idk
 ---@field onusefn idk
 ---@field onstopusefn idk
 ---@field on idk
@@ -24,12 +23,3 @@ end
 ---author: 
 function toggleableitem:ToggleItem()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function toggleableitem:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function toggleableitem:StopWatchingWorldState(var, fn) end

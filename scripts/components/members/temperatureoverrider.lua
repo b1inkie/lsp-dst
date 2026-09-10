@@ -1,18 +1,12 @@
 ---@meta
 
 ---@class component_temperatureoverrider: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field _activeradius idk
 ---@field _temperature idk
 ---@field radius idk
 ---@field enabled idk
 local temperatureoverrider = {}
-
----
----author: 
-function temperatureoverrider:OnRemoveEntity()
-end
 
 ---
 ---@param radius idk # 
@@ -57,12 +51,3 @@ end
 ---author: 
 function temperatureoverrider:GetTemperature()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperatureoverrider:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperatureoverrider:StopWatchingWorldState(var, fn) end

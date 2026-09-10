@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_spell: component_base
----@field inst idk
 ---@field active idk
 ---@field spellname idk
 ---@field onstartfn idk
@@ -21,12 +20,6 @@ local spell = {}
 ---
 ---author: 
 function spell:OnFinish()
-end
-
----
----@param data idk # 
----author: 
-function spell:OnLoad(data)
 end
 
 ---
@@ -53,24 +46,6 @@ end
 
 ---
 ---author: 
-function spell:OnSave()
-end
-
----
----@param dt idk # 
----author: 
-function spell:OnUpdate(dt)
-end
-
----
----@param newents idk # 
----@param data idk # 
----author: 
-function spell:LoadPostPass(newents,data)
-end
-
----
----author: 
 function spell:ResumeSpell()
 end
 
@@ -78,12 +53,3 @@ end
 ---author: 
 function spell:OnStart()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spell:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function spell:StopWatchingWorldState(var, fn) end

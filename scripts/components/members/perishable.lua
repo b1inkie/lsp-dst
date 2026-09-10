@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_perishable: component_base
----@field inst ent
 ---@field perishfn idk
 ---@field perishtime idk
 ---@field frozenfiremult idk
@@ -13,11 +12,6 @@
 ---@field localPerishMultiplyer idk
 ---@field start_dt idk
 local perishable = {}
-
----
----author: 
-function perishable:OnRemoveEntity()
-end
 
 ---
 ---@param time idk # 
@@ -34,12 +28,6 @@ end
 ---@param newtime idk # 
 ---author: 
 function perishable:SetNewMaxPerishTime(newtime)
-end
-
----
----@param data idk # 
----author: 
-function perishable:OnLoad(data)
 end
 
 ---
@@ -90,20 +78,9 @@ function perishable:IsPerishing()
 end
 
 ---
----author: 
-function perishable:GetDebugString()
-end
-
----
 ---@param time idk # 
 ---author: 
 function perishable:SetPerishTime(time)
-end
-
----
----@param dt idk # 
----author: 
-function perishable:LongUpdate(dt)
 end
 
 ---
@@ -116,11 +93,6 @@ end
 ---@param fn idk # 
 ---author: 
 function perishable:SetOnPerishFn(fn)
-end
-
----
----author: 
-function perishable:OnSave()
 end
 
 ---
@@ -139,12 +111,3 @@ end
 ---author: 
 function perishable:IsFresh()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function perishable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function perishable:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_npc_talker: component_base
----@field inst idk
 ---@field queue idk
 ---@field soundqueue idk
 ---@field default_chatpriority idk
@@ -43,12 +42,3 @@ end
 ---author: 
 function npc_talker:Chatter(strtbl,index,chatpriority,override,stompable,sound)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function npc_talker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function npc_talker:StopWatchingWorldState(var, fn) end

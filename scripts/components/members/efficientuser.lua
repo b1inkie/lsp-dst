@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_efficientuser: component_base
----@field inst idk
 ---@field actions idk
 local efficientuser = {}
 
@@ -25,12 +24,3 @@ end
 ---author: 
 function efficientuser:RemoveMultiplier(action,source)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function efficientuser:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function efficientuser:StopWatchingWorldState(var, fn) end

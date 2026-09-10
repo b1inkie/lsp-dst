@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_erasablepaper: component_base
----@field inst idk
 ---@field erased_prefab idk
 ---@field stacksize idk
 local erasablepaper = {}
@@ -24,12 +23,3 @@ end
 ---author: 
 function erasablepaper:SetErasedPrefab(prefab)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function erasablepaper:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function erasablepaper:StopWatchingWorldState(var, fn) end

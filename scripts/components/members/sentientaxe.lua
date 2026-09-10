@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sentientaxe: component_base
----@field inst idk
 ---@field owner idk
 ---@field convo_task idk
 ---@field say_task idk
@@ -75,12 +74,3 @@ end
 ---author: 
 function sentientaxe:OnBecomeHuman()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sentientaxe:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sentientaxe:StopWatchingWorldState(var, fn) end

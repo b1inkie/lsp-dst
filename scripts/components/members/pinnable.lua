@@ -2,7 +2,6 @@
 
 ---@class component_pinnable: component_base
 ---@field attacks_since_pinned idk
----@field inst ent
 ---@field canbepinned idk
 ---@field stuck idk
 ---@field wearofftime idk
@@ -69,12 +68,3 @@ end
 ---author: 
 function pinnable:UpdateStuckStatus()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pinnable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pinnable:StopWatchingWorldState(var, fn) end

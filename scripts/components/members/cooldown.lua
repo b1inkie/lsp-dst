@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_cooldown: component_base
----@field inst idk
 ---@field charged idk
 ---@field cooldown_duration idk
 ---@field startchargingfn idk
@@ -23,34 +22,12 @@ end
 
 ---
 ---author: 
-function cooldown:GetDebugString()
-end
-
----
----@param dt idk # 
----author: 
-function cooldown:LongUpdate(dt)
-end
-
----
----author: 
 function cooldown:GetTimeToCharged()
-end
-
----
----@param data idk # 
----author: 
-function cooldown:OnLoad(data)
 end
 
 ---
 ---author: 
 function cooldown:IsCharged()
-end
-
----
----author: 
-function cooldown:OnSave()
 end
 
 ---
@@ -62,12 +39,3 @@ end
 ---author: 
 function cooldown:IsCharging()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cooldown:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function cooldown:StopWatchingWorldState(var, fn) end

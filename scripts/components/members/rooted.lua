@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_rooted: component_base
----@field inst idk
 ---@field sources idk
 ---@field _onremovesource idk
 local rooted = {}
@@ -22,12 +21,3 @@ end
 ---author: 
 function rooted:AddSource(src)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rooted:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rooted:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_petleash: component_base
----@field inst idk
 ---@field petprefab idk
 ---@field pets idk
 ---@field maxpets idk
@@ -78,12 +77,6 @@ function petleash:IsFullForPrefab(prefab)
 end
 
 ---
----@param data idk # 
----author: 
-function petleash:OnLoad(data)
-end
-
----
 ---@param fn idk # 
 ---author: 
 function petleash:SetOnDespawnFn(fn)
@@ -129,11 +122,6 @@ function petleash:SetOnRemovedFn(fn)
 end
 
 ---
----author: 
-function petleash:OnSave()
-end
-
----
 ---@param prefab idk # 
 ---@param maxpets idk # 
 ---author: 
@@ -155,12 +143,3 @@ end
 ---author: 
 function petleash:GetPetsWithPrefab(prefab)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function petleash:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function petleash:StopWatchingWorldState(var, fn) end

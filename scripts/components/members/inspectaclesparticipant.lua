@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_inspectaclesparticipant: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field GRIDSIZE idk
 ---@field VALIDVALUEMAX idk
@@ -56,12 +55,6 @@ function inspectaclesparticipant:IsUpgradedBox()
 end
 
 ---
----@param data idk # 
----author: 
-function inspectaclesparticipant:OnLoad(data)
-end
-
----
 ---author: 
 function inspectaclesparticipant:CanCreateGameInWorld()
 end
@@ -70,12 +63,6 @@ end
 ---@param puzzle idk # 
 ---author: 
 function inspectaclesparticipant:GetPuzzleData(puzzle)
-end
-
----
----@param dt idk # 
----author: 
-function inspectaclesparticipant:LongUpdate(dt)
 end
 
 ---
@@ -143,11 +130,6 @@ function inspectaclesparticipant:FindGameLocation(gameid)
 end
 
 ---
----author: 
-function inspectaclesparticipant:GetDebugString()
-end
-
----
 ---@param overridetime idk # 
 ---author: 
 function inspectaclesparticipant:ApplyCooldown(overridetime)
@@ -180,11 +162,6 @@ end
 
 ---
 ---author: 
-function inspectaclesparticipant:OnSave()
-end
-
----
----author: 
 function inspectaclesparticipant:CreateBox()
 end
 
@@ -198,12 +175,3 @@ end
 ---author: 
 function inspectaclesparticipant:OnSignalPulse()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inspectaclesparticipant:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function inspectaclesparticipant:StopWatchingWorldState(var, fn) end

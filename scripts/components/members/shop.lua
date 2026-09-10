@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_shop: component_base
----@field inst idk
 ---@field tab idk
 ---@field title idk
 local shop = {}
@@ -23,12 +22,3 @@ end
 ---author: 
 function shop:SetStartTab(tab)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shop:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shop:StopWatchingWorldState(var, fn) end

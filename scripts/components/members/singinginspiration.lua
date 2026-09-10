@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_singinginspiration: component_base
----@field inst idk
 ---@field max idk
 ---@field current idk
 ---@field active_songs idk
@@ -43,23 +42,6 @@ end
 ---@param fn idk # 
 ---author: 
 function singinginspiration:SetValidVictimFn(fn)
-end
-
----
----author: 
-function singinginspiration:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function singinginspiration:OnLoad(data)
-end
-
----
----@param dt idk # 
----author: 
-function singinginspiration:OnUpdate(dt)
 end
 
 ---
@@ -151,11 +133,6 @@ function singinginspiration:DoDelta(delta,forceupdate)
 end
 
 ---
----author: 
-function singinginspiration:OnSave()
-end
-
----
 ---@param percent idk # 
 ---author: 
 function singinginspiration:SetPercent(percent)
@@ -171,12 +148,3 @@ end
 ---author: 
 function singinginspiration:GetMaxInspiration()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function singinginspiration:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function singinginspiration:StopWatchingWorldState(var, fn) end

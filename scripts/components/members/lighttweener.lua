@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lighttweener: component_base
----@field inst idk
 ---@field light idk
 ---@field i_falloff idk
 ---@field i_intensity idk
@@ -16,18 +15,3 @@
 ---@field timepassed idk
 ---@field tweening idk
 local lighttweener = {}
-
----
----@param dt idk # 
----author: 
-function lighttweener:OnUpdate(dt)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lighttweener:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lighttweener:StopWatchingWorldState(var, fn) end

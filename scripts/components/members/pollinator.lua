@@ -1,18 +1,12 @@
 ---@meta
 
 ---@class component_pollinator: component_base
----@field inst idk
 ---@field flowers idk
 ---@field distance idk
 ---@field maxdensity idk
 ---@field collectcount idk
 ---@field target idk
 local pollinator = {}
-
----
----author: 
-function pollinator:GetDebugString()
-end
 
 ---
 ---author: 
@@ -45,12 +39,3 @@ end
 ---author: 
 function pollinator:Pollinate(flower)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pollinator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function pollinator:StopWatchingWorldState(var, fn) end

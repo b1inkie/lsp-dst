@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sleepingbaguser: component_base
----@field inst ent
 ---@field healthsleep idk
 ---@field dryingrate idk
 ---@field sleeper idk
@@ -60,12 +59,3 @@ end
 ---author: 
 function sleepingbaguser:SetSanityBonusMult(bonus)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleepingbaguser:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleepingbaguser:StopWatchingWorldState(var, fn) end

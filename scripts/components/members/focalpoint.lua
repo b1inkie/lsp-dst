@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_focalpoint: component_base
----@field inst idk
 ---@field targets idk
 ---@field _onsourceremoved idk
 ---@field current_focus idk
@@ -48,21 +47,7 @@ function focalpoint:PushTempFocus(target,minrange,maxrange,priority)
 end
 
 ---
----author: 
-function focalpoint:GetDebugString()
-end
-
----
 ---@param no_snap idk # 
 ---author: 
 function focalpoint:RemoveAllFocusSources(no_snap)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function focalpoint:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function focalpoint:StopWatchingWorldState(var, fn) end

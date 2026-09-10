@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sanity: component_base
----@field inst idk
 ---@field max idk
 ---@field current idk
 ---@field mode idk
@@ -72,12 +71,6 @@ end
 function sanity:SetMax(amount)
 end
 
----
----@param dt idk #
----author:
-function sanity:OnUpdate(dt)
-end
-
 ---判断是否处于启迪状态
 ---@return boolean # true代表处于启迪状态（启蒙值高于85%，这时人物闲置动画也会有变化）
 ---@nodiscard
@@ -97,13 +90,6 @@ end
 ---@nodiscard
 ---author:nullptr
 function sanity:GetPenaltyPercent()
-end
-
----组件的加载回调函数（一般不主动调用）
----<br>主要加载：sane(boolean，标志是否理智) mode(非0即1，标志模式，经典or启蒙) current(number，当前理智值)
----@param data table # 加载数据表
----author:nullptr
-function sanity:OnLoad(data)
 end
 
 ---移除对特定标签的理智光环的免疫
@@ -207,13 +193,6 @@ end
 function sanity:DoDelta(delta,overtime)
 end
 
----获取debug字符串
----@return string # debug字符串
----@nodiscard
----author:nullptr
-function sanity:GetDebugString()
-end
-
 ---设置是否免疫理智光环（包括正面，但不包括光源类如黄昏夜晚全黑）
 ---@param immunity boolean # true为免疫，例如面对怪物不扣san但在矮星附近也不回san
 ---author:nullptr
@@ -255,12 +234,6 @@ end
 function sanity:GetPercent()
 end
 
----组件的保存回调函数（一般不主动调用）
----<br>主要保存：current, sane, mode（一般对应save和load回调需要保存和加载的属性一致）
----author:nullptr
-function sanity:OnSave()
-end
-
 ---判断是否精神良好
 ---@return boolean #
 ---@nodiscard
@@ -281,12 +254,3 @@ end
 ---author:nullptr
 function sanity:IsCrazy()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sanity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sanity:StopWatchingWorldState(var, fn) end
