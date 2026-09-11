@@ -21,7 +21,8 @@ end
 ---@param position idk # 
 ---@param target idk # 
 ---@param spellbook idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetRightClickActions(position,target,spellbook)
 end
 
@@ -36,14 +37,16 @@ end
 ---@param target idk # 
 ---@param useitem idk # 
 ---@param right idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetEquippedItemActions(target,useitem,right)
 end
 
 ---
 ---@param position idk # 
 ---@param target idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetLeftClickActions(position,target)
 end
 
@@ -51,7 +54,8 @@ end
 ---@param target idk # 
 ---@param useitem idk # 
 ---@param right idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetUseItemActions(target,useitem,right)
 end
 
@@ -59,7 +63,8 @@ end
 ---@param inst idk # 
 ---@param pos idk # 
 ---@param right idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetCannonAimActions(inst,pos,right)
 end
 
@@ -69,7 +74,8 @@ function playeractionpicker:OnUpdateActionFilterStack()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playeractionpicker:HasContainerWidgetAction()
 end
 
@@ -84,7 +90,8 @@ end
 ---
 ---@param useitem idk # 
 ---@param right idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetInventoryActions(useitem,right)
 end
 
@@ -93,7 +100,8 @@ end
 ---@param useitem idk # 
 ---@param right idk # 
 ---@param usereticulepos idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetPointSpecialActions(pos,useitem,right,usereticulepos)
 end
 
@@ -102,7 +110,8 @@ end
 ---@param useitem idk # 
 ---@param right idk # 
 ---@param target idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetPointActions(pos,useitem,right,target)
 end
 
@@ -116,14 +125,16 @@ end
 ---@param inst idk # 
 ---@param pos idk # 
 ---@param right idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetSteeringActions(inst,pos,right)
 end
 
 ---
 ---@param useitem idk # 
 ---@param right idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function playeractionpicker:GetSceneActions(useitem,right)
 end
 

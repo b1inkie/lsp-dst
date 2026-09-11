@@ -12,16 +12,20 @@
 ---@field lastproduction idk
 local incrementalproducer = {}
 
+---执行一次生产(走 producefn)
 ---
 ---author: 
 function incrementalproducer:DoProduce()
 end
 
+---判断可否生产(未达上限, 走 maxcountfn)
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function incrementalproducer:CanProduce()
 end
 
+---可生产时执行一次
 ---
 ---author: 
 function incrementalproducer:TryProduce()

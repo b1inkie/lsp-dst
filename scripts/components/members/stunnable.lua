@@ -22,6 +22,7 @@ function stunnable:Stun()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function stunnable:GetDamageInPeriod()
 end

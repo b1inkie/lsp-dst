@@ -25,11 +25,13 @@ end
 ---
 ---@param pos_x idk # 
 ---@param pos_z idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function steeringwheeluser:Steer(pos_x,pos_z)
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function steeringwheeluser:GetBoat()
 end

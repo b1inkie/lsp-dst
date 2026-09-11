@@ -20,7 +20,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function useableitem:CanInteract(doer)
 end
 
@@ -36,6 +37,7 @@ function useableitem:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function useableitem:StartUsingItem()
 end

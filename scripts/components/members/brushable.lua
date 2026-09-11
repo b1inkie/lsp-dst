@@ -30,6 +30,7 @@ function brushable:Brush(doer,brush)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function brushable:CalculateNumPrizes()
 end

@@ -16,13 +16,15 @@ end
 
 ---
 ---@param reviver idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function revivablecorpse:GetReviveSpeedMult(reviver)
 end
 
 ---
 ---@param reviver idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function revivablecorpse:CanBeRevivedBy(reviver)
 end
 
@@ -34,7 +36,8 @@ function revivablecorpse:SetReviveSpeedMultForTag(tag,mult)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function revivablecorpse:GetReviveHealthPercent()
 end
 

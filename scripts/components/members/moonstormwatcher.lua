@@ -25,7 +25,8 @@ function moonstormwatcher:UpdateMoonstormWalkSpeed_Internal(level)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function moonstormwatcher:GetMoonStormLevel()
 end
 

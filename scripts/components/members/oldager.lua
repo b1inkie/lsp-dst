@@ -10,29 +10,35 @@
 ---@field _taking_time_damage idk
 local oldager = {}
 
+---取一年周期的进度(0~1)
 ---
+---@return number
 ---author: 
 function oldager:GetCurrentYearPercent()
 end
 
+---登记一个有效治疗原因
 ---
----@param cause_name idk # 
+---@param cause_name string# 
 ---author: 
 function oldager:AddValidHealingCause(cause_name)
 end
 
+---停止持续伤害计时
 ---
 ---author: 
 function oldager:StopDamageOverTime()
 end
 
+---受伤时登记(持续伤害中则忽略)
 ---
----@param amount idk # 
----@param overtime idk # 
----@param cause idk # 
----@param ignore_invincible idk # 
----@param afflicter idk # 
----@param ignore_absorb idk # 
----author: 
+---@param amount number# 
+---@param overtime boolean|nil# 
+---@param cause string|nil# 
+---@param ignore_invincible boolean|nil# 
+---@param afflicter ent|nil# 
+---@param ignore_absorb boolean|nil# 
+---@return boolean
+---author: Runar(Agent)
 function oldager:OnTakeDamage(amount,overtime,cause,ignore_invincible,afflicter,ignore_absorb)
 end

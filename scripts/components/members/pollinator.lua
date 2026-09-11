@@ -9,7 +9,8 @@
 local pollinator = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pollinator:HasCollectedEnough()
 end
 
@@ -19,13 +20,15 @@ function pollinator:CreateFlower()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pollinator:CheckFlowerDensity()
 end
 
 ---
 ---@param flower idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function pollinator:CanPollinate(flower)
 end
 

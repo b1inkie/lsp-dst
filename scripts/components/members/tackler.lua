@@ -20,7 +20,8 @@ function tackler:SetDistance(distance)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tackler:CheckEdge()
 end
 
@@ -57,12 +58,14 @@ end
 
 ---
 ---@param ignores idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tackler:CheckCollision(ignores)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tackler:StartTackle()
 end
 

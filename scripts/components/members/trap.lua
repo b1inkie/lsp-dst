@@ -25,7 +25,8 @@ function trap:StartStarvation()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:IsBaited()
 end
 
@@ -90,7 +91,8 @@ function trap:StopUpdating()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:AcceptingBait()
 end
 
@@ -122,7 +124,8 @@ function trap:Reset(sprung)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function trap:IsSprung()
 end
 
@@ -133,11 +136,13 @@ function trap:SetOnHarvestFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:HasLoot()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:IsFree()
 end

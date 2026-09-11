@@ -9,91 +9,110 @@
 ---@field skin_base_data idk
 local mightygym = {}
 
+---设置杠铃槽的举铁特效符号
 ---
----@param weight idk # 
----@param slot idk # 
+---@param weight number# 
+---@param slot number# 
 ---author: 
 function mightygym:SetWeightSymbol(weight,slot)
 end
 
+---检查杠铃重量(按当前负重)
 ---
 ---author: 
 function mightygym:CheckForWeight()
 end
 
+---设置等级外观
 ---
----@param level idk # 
----@param target idk # 
+---@param level number# 
+---@param target ent|nil# 
 ---author: 
 function mightygym:SetLevelArt(level,target)
 end
 
+---角色离开健身房(清皮肤缓存)
 ---
----@param player idk # 
+---@param player ent# 
 ---author: 
 function mightygym:CharacterExitGym(player)
 end
 
+---计算本次练铁力量值(可完美)
 ---
----@param perfect idk # 
+---@param perfect boolean|nil# 
+---@return number
 ---author: 
 function mightygym:CalculateMightiness(perfect)
 end
 
+---判断操作者可否在此练铁
 ---
----@param doer idk # 
+---@param doer ent|nil# 
+---@return boolean
 ---author: 
 function mightygym:CanWorkout(doer)
 end
 
+---停止练铁(还原皮肤)
 ---
 ---author: 
 function mightygym:StopWorkout()
 end
 
+---角色进入健身房(缓存外观)
 ---
----@param player idk # 
+---@param player ent# 
 ---author: 
 function mightygym:CharacterEnterGym(player)
 end
 
+---给操作者切健身房皮肤
 ---
----@param doer idk # 
----@param skin_mode idk # 
+---@param doer ent# 
+---@param skin_mode string# 
 ---author: 
 function mightygym:SetSkinModeOnGym(doer,skin_mode)
 end
 
+---返回是否有人在练
 ---
+---@return boolean
 ---author: 
 function mightygym:InUse()
 end
 
+---交换杠铃槽的重量
 ---
----@param item idk # 
----@param swapitem idk # 
+---@param item ent# 
+---@param swapitem ent|nil# 
 ---author: 
 function mightygym:SwapWeight(item,swapitem)
 end
 
+---把杠铃加载到某槽
 ---
----@param weight idk # 
----@param slot idk # 
+---@param weight ent# 
+---@param slot number# 
 ---author: 
 function mightygym:LoadWeight(weight,slot)
 end
 
+---开始练铁(限时)
 ---
----@param doer idk # 
+---@param doer ent|nil# 
 ---author: 
 function mightygym:StartWorkout(doer)
 end
 
+---计算当前杠铃总重
 ---
+---@return number
 ---author: 
 function mightygym:CalcWeight()
 end
 
+---清空杠铃槽
 ---
 ---author: 
 function mightygym:UnloadWeight()

@@ -103,7 +103,8 @@ function projectile:SetCanCatch(cancatch)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function projectile:IsBounced()
 end
 
@@ -151,7 +152,8 @@ function projectile:Throw(owner,target,attacker)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function projectile:IsThrown()
 end
 

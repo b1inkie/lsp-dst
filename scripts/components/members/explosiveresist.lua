@@ -8,17 +8,21 @@
 ---@field delayremaining idk
 local explosiveresist = {}
 
+---返回当前爆炸抗性
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function explosiveresist:GetResistance()
 end
 
+---对爆炸抗性做增量调整
 ---
 ---@param delta idk # 
 ---author: 
 function explosiveresist:DoDelta(delta)
 end
 
+---受到爆炸伤害时积累抗性与眩晕
 ---
 ---@param damage idk # 
 ---@param src idk # 
@@ -26,6 +30,7 @@ end
 function explosiveresist:OnExplosiveDamage(damage,src)
 end
 
+---设置爆炸抗性(0~1 内钳制)
 ---
 ---@param resistance idk # 
 ---author: 

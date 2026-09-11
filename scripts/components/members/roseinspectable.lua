@@ -16,7 +16,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function roseinspectable:CanResidueBeSpawnedBy(doer)
 end
 
@@ -41,7 +42,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function roseinspectable:WillInduceCooldownOnActivate(doer)
 end
 

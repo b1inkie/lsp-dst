@@ -10,13 +10,15 @@
 local bundler = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function bundler:FinishBundling()
 end
 
 ---
 ---@param item idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function bundler:StartBundling(item)
 end
 
@@ -27,12 +29,14 @@ end
 
 ---
 ---@param bundlinginst idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function bundler:IsBundling(bundlinginst)
 end
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function bundler:CanStartBundling()
 end
 

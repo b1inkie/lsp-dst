@@ -75,7 +75,9 @@ end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return boolean
+---@return number|nil
+---author: Runar(Agent)
 function periodicspawner:TrySpawn(prefab)
 end
 

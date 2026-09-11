@@ -6,6 +6,7 @@
 ---@field original_height idk
 local groundshadowhandler = {}
 
+---设置地面投影的宽高
 ---
 ---@param width idk # 
 ---@param height idk # 

@@ -6,6 +6,7 @@
 ---@field task idk
 local digester = {}
 
+---尝试消化: 检查容器内有可消化物则生成产物
 ---
 ---author: 
 function digester:TryDigest()

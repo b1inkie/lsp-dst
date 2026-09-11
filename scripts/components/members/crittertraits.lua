@@ -43,6 +43,7 @@ end
 
 ---
 ---@param trait idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function crittertraits:IsDominantTrait(trait)
 end

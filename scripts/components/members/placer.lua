@@ -30,12 +30,15 @@ function placer:SetBuilder(builder,recipe,invobject)
 end
 
 ---
----author: 
+---@return boolean
+---@return boolean
+---author: Runar(Agent)
 function placer:TestCanBuild()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function placer:GetDeployAction()
 end
 

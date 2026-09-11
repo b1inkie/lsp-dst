@@ -28,7 +28,8 @@ function seamlessplayerswapper:_StartSwap(new_prefab)
 end
 
 ---
----author: 
+---@return idk|nil
+---author: Runar(Agent)
 function seamlessplayerswapper:SaveForReroll()
 end
 

@@ -16,50 +16,60 @@
 ---@field seasonmood idk
 local mood = {}
 
+---检查情绪是否该切换(限时到点)
 ---
 ---author: 
 function mood:CheckForMoodChange()
 end
 
+---校验当前情绪有效性(非法则复位)
 ---
 ---author: 
 function mood:ValidateMood()
 end
 
+---设置进入情绪回调
 ---
----@param fn idk # 
+---@param fn fun(mood:string)# 
 ---author: 
 function mood:SetInMoodFn(fn)
 end
 
+---复位情绪(退出)
 ---
 ---author: 
 function mood:ResetMood()
 end
 
+---设置离开情绪回调
 ---
----@param fn idk # 
+---@param fn fun(mood:string)# 
 ---author: 
 function mood:SetLeaveMoodFn(fn)
 end
 
+---设置某情绪的季节
 ---
 ---@param activeseason idk # 
 ---author: 
 function mood:SetMoodSeason(activeseason)
 end
 
+---返回是否处于某情绪
 ---
+---@return boolean
 ---author: 
 function mood:IsInMood()
 end
 
+---开关情绪系统
 ---
----@param enabled idk # 
+---@param enabled boolean# 
 ---author: 
 function mood:Enable(enabled)
 end
 
+---设置情绪持续天数
 ---
 ---@param length idk # 
 ---@param wait idk # 

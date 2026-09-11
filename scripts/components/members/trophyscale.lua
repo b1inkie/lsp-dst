@@ -13,7 +13,9 @@ local trophyscale = {}
 ---
 ---@param inst_compare idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function trophyscale:Compare(inst_compare,doer)
 end
 
@@ -30,7 +32,8 @@ end
 
 ---
 ---@param override_data idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function trophyscale:SpawnItemFromData(override_data)
 end
 
@@ -42,12 +45,14 @@ end
 
 ---
 ---@param receiver idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trophyscale:TakeItem(receiver)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function trophyscale:GetItemData()
 end
 

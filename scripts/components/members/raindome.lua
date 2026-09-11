@@ -23,7 +23,8 @@ function raindome:Enable()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function raindome:GetActiveRadius()
 end
 

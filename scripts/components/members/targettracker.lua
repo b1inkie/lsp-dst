@@ -40,7 +40,8 @@ end
 
 ---
 ---@param testtarget idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function targettracker:IsTracking(testtarget)
 end
 
@@ -64,7 +65,8 @@ function targettracker:SetShouldKeepTrackingFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function targettracker:IsCloningTarget()
 end
 
@@ -87,17 +89,20 @@ function targettracker:SetOnResumeFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function targettracker:IsPaused()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function targettracker:HasTarget()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function targettracker:GetTimeTracking()
 end
 

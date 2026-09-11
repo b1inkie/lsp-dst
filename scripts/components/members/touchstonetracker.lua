@@ -18,6 +18,7 @@ end
 
 ---
 ---@param touchstone idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function touchstonetracker:IsUsed(touchstone)
 end

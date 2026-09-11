@@ -62,12 +62,14 @@ function spawner:Configure(childname,delay,startdelay)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function spawner:ReleaseChild()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function spawner:IsSpawnPending()
 end
 
@@ -78,13 +80,15 @@ function spawner:TakeOwnership(child)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function spawner:IsOccupied()
 end
 
 ---
 ---@param child idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function spawner:GoHome(child)
 end
 

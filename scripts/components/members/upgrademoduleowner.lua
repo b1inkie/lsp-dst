@@ -13,7 +13,8 @@
 local upgrademoduleowner = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function upgrademoduleowner:NumModules()
 end
 
@@ -32,7 +33,9 @@ end
 
 ---
 ---@param module_instance idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function upgrademoduleowner:CanUpgrade(module_instance)
 end
 
@@ -49,17 +52,20 @@ end
 
 ---
 ---@param moduletype idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function upgrademoduleowner:GetModuleTypeCount(moduletype)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function upgrademoduleowner:IsChargeEmpty()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function upgrademoduleowner:ChargeIsMaxed()
 end
 
@@ -71,7 +77,9 @@ end
 
 ---
 ---@param index idk # 
----author: 
+---@return idk
+---@return boolean
+---author: Runar(Agent)
 function upgrademoduleowner:PopModule(index)
 end
 
@@ -82,7 +90,8 @@ function upgrademoduleowner:GetModuleInSlot(slotnum)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function upgrademoduleowner:PopOneModule()
 end
 
@@ -92,6 +101,7 @@ function upgrademoduleowner:UsedSlotCount()
 end
 
 ---
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function upgrademoduleowner:PopAllModules()
 end

@@ -33,7 +33,8 @@ function temperatureoverrider:SetTemperature(temperature)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function temperatureoverrider:GetActiveRadius()
 end
 
@@ -48,6 +49,7 @@ function temperatureoverrider:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function temperatureoverrider:GetTemperature()
 end

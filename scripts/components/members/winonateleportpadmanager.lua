@@ -16,6 +16,7 @@ function winonateleportpadmanager:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function winonateleportpadmanager:GetAllWinonaTeleportPads()
 end

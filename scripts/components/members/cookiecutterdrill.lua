@@ -10,7 +10,8 @@
 local cookiecutterdrill = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function cookiecutterdrill:GetIsDoneDrilling()
 end
 

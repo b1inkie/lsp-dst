@@ -40,7 +40,9 @@ function slipperyfeet:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return ent|nil
+---@return ent[]
+---author: Runar(Agent)
 function slipperyfeet:GetSlipperyAndNearbyEnts()
 end
 
@@ -69,7 +71,8 @@ function slipperyfeet:SetCurrent(val)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function slipperyfeet:CalcAccumulatingSpeed()
 end
 

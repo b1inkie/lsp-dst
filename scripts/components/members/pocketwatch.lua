@@ -9,7 +9,8 @@ local pocketwatch = {}
 ---@param doer idk # 
 ---@param target idk # 
 ---@param pos idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function pocketwatch:CanCast(doer,target,pos)
 end
 

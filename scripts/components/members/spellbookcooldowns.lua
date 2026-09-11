@@ -8,7 +8,8 @@ local spellbookcooldowns = {}
 
 ---
 ---@param spellname idk # 
----author: 
+---@return number|nil
+---author: Runar(Agent)
 function spellbookcooldowns:GetSpellCooldownPercent(spellname)
 end
 

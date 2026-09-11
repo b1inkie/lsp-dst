@@ -19,7 +19,8 @@ end
 
 ---判断传入的目标是否存在于实体当前拥有的目标表内
 ---@param target ent # 需要判断的目标实体
----author: KP
+---@return boolean
+---author: KP, Runar(Agent)
 function grouptargeter:IsTargeting(target)
 end
 
@@ -73,6 +74,7 @@ end
 function grouptargeter:OnPickTarget(target)
 end
 
+---停止跟踪所有目标并移除监听
 ---
 ---author: 
 function grouptargeter:OnRemoveFromEntity()

@@ -12,7 +12,8 @@
 local storyteller = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function storyteller:IsTellingStory()
 end
 
@@ -46,7 +47,9 @@ end
 
 ---
 ---@param storyprop idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function storyteller:TellStory(storyprop)
 end
 

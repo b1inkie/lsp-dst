@@ -121,22 +121,26 @@ end
 
 ---设置法术对应的动作
 ---@param action string # ACTIONS 动作类型
+---author: Runar(Agent)
 function spellbook:SetSpellAction(action)
 end
 
 ---获取法术对应动作
 ---@return string|nil #ACTIONS
 ---@nodiscard
+---author: Runar(Agent)
 function spellbook:GetSpellAction()
 end
 
 ---设置检查能否使用的回调函数
 ---@param fn function #参数为（inst,user)
+---author: Runar(Agent)
 function spellbook:SetCanUseFn(fn)
 end
 
 ---设置检查是否应该打开的回调函数
 ---@param fn function #参数为（inst，user)
+---author: Runar(Agent)
 function spellbook:SetShouldOpenFn(fn)
 end
 
@@ -144,5 +148,6 @@ end
 ---@param user ent #使用者
 ---@return boolean #是否应该打开
 ---@nodiscard
+---author: Runar(Agent)
 function spellbook:ShouldOpen(user)
 end

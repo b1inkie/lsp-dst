@@ -16,7 +16,8 @@ function crewmember:OnLeftCrew()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function crewmember:GetBoat()
 end
 
@@ -26,7 +27,8 @@ function crewmember:Leave()
 end
 
 ---
----author: 
+---@return boolean|nil
+---author: Runar(Agent)
 function crewmember:Shouldrow()
 end
 

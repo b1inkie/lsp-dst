@@ -26,7 +26,8 @@ end
 
 ---
 ---@param action idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function tool:GetEffectiveness(action)
 end
 

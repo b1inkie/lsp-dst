@@ -33,7 +33,8 @@ function yotb_stagemanager:OnContestCheckPoint(stage)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_stagemanager:IsContestActive()
 end
 
@@ -49,7 +50,8 @@ function yotb_stagemanager:OnContestEnded()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_stagemanager:GetActiveStage()
 end
 
@@ -59,7 +61,8 @@ function yotb_stagemanager:EnableContest()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_stagemanager:IsContestEnabled()
 end
 

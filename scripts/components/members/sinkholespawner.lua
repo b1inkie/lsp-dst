@@ -6,7 +6,8 @@ local sinkholespawner = {}
 
 ---
 ---@param spawnpt idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sinkholespawner:SpawnSinkhole(spawnpt)
 end
 

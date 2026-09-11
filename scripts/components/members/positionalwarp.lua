@@ -53,7 +53,10 @@ end
 
 ---
 ---@param rewind idk # 
----author: 
+---@return number
+---@return number
+---@return number
+---author: Runar(Agent)
 function positionalwarp:GetHistoryPosition(rewind)
 end
 

@@ -20,7 +20,8 @@ function colouradder:AttachChild(child)
 end
 
 ---
----author: 
+---@return number,number,number,number
+---author: Runar(Agent)
 function colouradder:GetCurrentColour()
 end
 
@@ -41,7 +42,11 @@ function colouradder:DetachChild(child)
 end
 
 ---
----author: 
+---@return number
+---@return number
+---@return number
+---@return number
+---author: Runar(Agent)
 function colouradder:CalculateCurrentColour()
 end
 

@@ -30,7 +30,9 @@ function possessedaxe:StopWaitingForPlayer()
 end
 
 ---
----author: 
+---@return ent
+---@return ent|nil
+---author: Runar(Agent)
 function possessedaxe:Revert()
 end
 

@@ -13,6 +13,7 @@ local damagetypebonus = {}
 function damagetypebonus:AddBonus(tag,src,pct,key)
 end
 
+---移除某伤害类型指定来源的伤害加成
 ---
 ---@param tag idk # 
 ---@param src idk # 
@@ -21,8 +22,10 @@ end
 function damagetypebonus:RemoveBonus(tag,src,key)
 end
 
+---计算对目标(或全部)的伤害类型加成倍率
 ---
 ---@param target idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function damagetypebonus:GetBonus(target)
 end

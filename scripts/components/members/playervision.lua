@@ -23,22 +23,26 @@
 local playervision = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playervision:GetCCPhaseFn()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervision:HasRoseGlassesVision()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervision:HasGoggleVision()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervision:HasScrapMonoleVision()
 end
 
@@ -49,7 +53,8 @@ function playervision:ForceRoseGlassesVision(force)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playervision:HasNightmareVision()
 end
 
@@ -72,7 +77,8 @@ function playervision:UpdateCCTable()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playervision:HasGhostVision()
 end
 
@@ -98,7 +104,8 @@ function playervision:ForceScrapMonoleVision(force)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervision:HasNightVision()
 end
 
@@ -109,7 +116,8 @@ function playervision:SetNightmareVision(enabled)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervision:HasNutrientsVision()
 end
 
@@ -138,11 +146,13 @@ function playervision:ForceNightVision(force)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playervision:GetCCTable()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervision:HasInspectaclesVision()
 end

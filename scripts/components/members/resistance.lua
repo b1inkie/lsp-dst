@@ -9,18 +9,21 @@ local resistance = {}
 ---
 ---@param attacker idk # 
 ---@param weapon idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function resistance:HasResistance(attacker,weapon)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function resistance:ShouldResistDamage()
 end
 
 ---
 ---@param tag idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function resistance:HasResistanceToTag(tag)
 end
 

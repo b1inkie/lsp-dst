@@ -8,15 +8,18 @@
 ---@field force idk
 local oar = {}
 
+---划桨失败(报出轮换的失败台词)
 ---
----@param doer idk # 
----author: 
+---@param doer ent# 
+---@return string
+---author: Runar(Agent)
 function oar:RowFail(doer)
 end
 
+---划桨: 对操作者的船施加推力
 ---
----@param doer idk # 
----@param pos idk # 
+---@param doer ent# 
+---@param pos vector|nil# 
 ---author: 
 function oar:Row(doer,pos)
 end

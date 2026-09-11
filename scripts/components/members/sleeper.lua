@@ -21,17 +21,20 @@
 local sleeper = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function sleeper:GetTimeAsleep()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function sleeper:IsAsleep()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sleeper:IsInDeepSleep()
 end
 
@@ -65,7 +68,8 @@ function sleeper:GoToSleep(sleeptime)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sleeper:GetSleepTimeMultiplier()
 end
 
@@ -111,7 +115,8 @@ function sleeper:WakeUp()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function sleeper:IsHibernating()
 end
 
@@ -121,7 +126,8 @@ function sleeper:StopTesting()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function sleeper:GetTimeAwake()
 end
 

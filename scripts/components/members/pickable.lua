@@ -148,4 +148,5 @@ function pickable:IsWildfireStarter() end
 ---comment
 ---@param picker ent|nil
 ---@return nil|ent|ent[]
+---author: Runar(Agent)
 function pickable:SpawnProductLoot(picker) end

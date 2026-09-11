@@ -88,7 +88,8 @@ end
 
 ---
 ---@param desired_horizontal_distance idk # 
----author: 
+---@return number|nil
+---author: Runar(Agent)
 function complexprojectile:CalculateMinimumSpeedForDistance(desired_horizontal_distance)
 end
 

@@ -14,7 +14,9 @@ end
 ---@param attacker idk # 
 ---@param weapon idk # 
 ---@param spdmg idk # 
----author: 
+---@return number
+---@return idk
+---author: Runar(Agent)
 function planarentity:AbsorbDamage(damage,attacker,weapon,spdmg)
 end
 

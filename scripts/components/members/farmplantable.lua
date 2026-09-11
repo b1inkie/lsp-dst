@@ -7,6 +7,7 @@ local farmplantable = {}
 ---将种子种在农田的土堆上
 ---@param target ent # 土堆
 ---@param planter ent # 玩家
----author: lan
+---@return boolean
+---author: lan, Runar(Agent)
 function farmplantable:Plant(target,planter)
 end

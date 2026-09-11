@@ -6,7 +6,8 @@ local cooker = {}
 ---
 ---@param item idk # 
 ---@param chef idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function cooker:CanCook(item,chef)
 end
 
@@ -18,6 +19,7 @@ end
 ---
 ---@param item idk # 
 ---@param chef idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function cooker:CookItem(item,chef)
 end

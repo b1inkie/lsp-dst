@@ -12,12 +12,14 @@
 local yotb_sewer = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotb_sewer:IsSewing()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_sewer:IsDone()
 end
 
@@ -28,12 +30,14 @@ function yotb_sewer:StartSewing(doer)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotb_sewer:CanSew()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function yotb_sewer:GetTimeToSew()
 end
 

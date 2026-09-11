@@ -23,7 +23,8 @@ end
 ---添加建造材料
 ---@param prefab string #材料预制体名
 ---@param num number #数量
----author:星璃
+---@return number
+---author: 星璃, Runar(Agent)
 function constructionsite:AddMaterial(prefab, num)
 end
 

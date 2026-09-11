@@ -23,13 +23,16 @@ end
 
 ---
 ---@param inventory idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function setbonus:_HasSetBonus(inventory)
 end
 
 ---
 ---@param setname idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function setbonus:IsEnabled(setname)
 end
 

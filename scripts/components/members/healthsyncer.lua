@@ -11,13 +11,17 @@
 ---@field _onremovesmallhots idk
 local healthsyncer = {}
 
+---返回同步的健康百分比
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function healthsyncer:GetPercent()
 end
 
+---返回血量变化趋势(-2大降/-1小降/0/1小升/2大升)
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function healthsyncer:GetOverTime()
 end
 

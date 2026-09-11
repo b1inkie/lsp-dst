@@ -15,7 +15,8 @@
 local pinnable = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function pinnable:IsValidPinTarget()
 end
 
@@ -26,7 +27,8 @@ function pinnable:SetDefaultWearOffTime(wearofftime)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function pinnable:IsStuck()
 end
 
@@ -37,7 +39,8 @@ function pinnable:SpawnShatterFX(ratio)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pinnable:RemainingRatio()
 end
 

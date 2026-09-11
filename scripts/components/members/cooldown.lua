@@ -21,12 +21,14 @@ function cooldown:FinishCharging()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function cooldown:GetTimeToCharged()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function cooldown:IsCharged()
 end
 
@@ -36,6 +38,7 @@ function cooldown:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function cooldown:IsCharging()
 end

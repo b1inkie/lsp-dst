@@ -83,7 +83,8 @@ function rechargeable:GetChargeTime()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function rechargeable:GetPercent()
 end
 

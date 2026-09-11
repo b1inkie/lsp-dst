@@ -7,7 +7,8 @@ local klaussacklock = {}
 ---
 ---@param key idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function klaussacklock:UseKey(key,doer)
 end
 

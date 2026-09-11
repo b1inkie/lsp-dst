@@ -9,7 +9,8 @@ local toggleableitem = {}
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function toggleableitem:CanInteract(doer)
 end
 

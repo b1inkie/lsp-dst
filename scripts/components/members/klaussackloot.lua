@@ -6,6 +6,7 @@
 local klaussackloot = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function klaussackloot:GetLoot()
 end

@@ -9,67 +9,87 @@
 ---@field num_mutations idk
 local lunarriftmutationsmanager = {}
 
+---刷新已击败变异表(清 vagstaff 登记)
 ---
 ---author: 
 function lunarriftmutationsmanager:RefreshDefeatedMutationsTable()
 end
 
+---尝试让尸体变异(可生成 wagstaff)
 ---
----@param ent idk # 
----@param corpseprefab idk # 
----author: 
+---@param ent ent# 
+---@param corpseprefab string|nil# 
+---@return ent
+---author: Runar(Agent)
 function lunarriftmutationsmanager:TryMutate(ent,corpseprefab)
 end
 
+---返回已击败的变异数
 ---
+---@return number
 ---author: 
 function lunarriftmutationsmanager:GetNumDefeatedMutations()
 end
 
+---标记某变异体已被击败
 ---
----@param ent idk # 
+---@param ent ent# 
 ---author: 
 function lunarriftmutationsmanager:SetMutationDefeated(ent)
 end
 
+---返回是否击败了全部变异
 ---
+---@return boolean
 ---author: 
 function lunarriftmutationsmanager:HasDefeatedAllMutations()
 end
 
+---返回 vagstaff 是否已生成(未死)
 ---
+---@return boolean
 ---author: 
 function lunarriftmutationsmanager:IsWagstaffSpawned()
 end
 
+---判断是否击败过该 prefab 的变异
 ---
----@param prefab idk # 
+---@param prefab string# 
+---@return boolean
 ---author: 
 function lunarriftmutationsmanager:HasDefeatedThisMutation(prefab)
 end
 
+---返回任务是否已完成
 ---
+---@return boolean
 ---author: 
 function lunarriftmutationsmanager:IsTaskCompleted()
 end
 
+---在实体位置召唤 vagstaff
 ---
----@param ent idk # 
+---@param ent ent# 
 ---author: 
 function lunarriftmutationsmanager:TriggerWagstaffAppearance(ent)
 end
 
+---判断该给奖励(任务完成或击败全部)
 ---
+---@return boolean
 ---author: 
 function lunarriftmutationsmanager:ShouldGiveReward()
 end
 
+---判断该尸体可否发生变异
 ---
----@param ent idk # 
+---@param ent ent# 
+---@return boolean
 ---author: 
 function lunarriftmutationsmanager:_CanCorpseMutate(ent)
 end
 
+---奖励已发放, 标记任务完成
 ---
 ---author: 
 function lunarriftmutationsmanager:OnRewardGiven()

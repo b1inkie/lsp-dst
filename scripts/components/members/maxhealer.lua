@@ -4,14 +4,17 @@
 ---@field healamount idk
 local maxhealer = {}
 
+---设置治疗量
 ---
----@param health idk # 
+---@param health number# 
 ---author: 
 function maxhealer:SetHealthAmount(health)
 end
 
+---治疗目标(有 health 组件时)
 ---
----@param target idk # 
----author: 
+---@param target ent# 
+---@return boolean
+---author: Runar(Agent)
 function maxhealer:Heal(target)
 end

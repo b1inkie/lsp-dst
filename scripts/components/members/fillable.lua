@@ -8,8 +8,10 @@
 ---@field oceanwatererrorreason idk
 local fillable = {}
 
+---从来源(水等)给自己填充
 ---
 ---@param from_object idk # 
----author: 
+---@return idk|boolean
+---author: Runar(Agent)
 function fillable:Fill(from_object)
 end

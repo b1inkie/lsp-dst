@@ -29,7 +29,8 @@
 local boatphysics = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetVelocity()
 end
 
@@ -45,12 +46,14 @@ function boatphysics:AddMast(mast)
 end
 
 ---
----author: 
+---@return Vector3
+---author: Runar(Agent)
 function boatphysics:GetMoveDirection()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetForceDampening()
 end
 
@@ -60,7 +63,8 @@ end
 ---@param magnet_direction idk # 
 ---@param cur_velocity idk # 
 ---@param max_velocity idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:ApplyMagnetForce(dt,magnet_force,magnet_direction,cur_velocity,max_velocity)
 end
 
@@ -70,7 +74,9 @@ function boatphysics:OnEntitySleep()
 end
 
 ---
----author: 
+---@return idk
+---@return idk
+---author: Runar(Agent)
 function boatphysics:GetRudderDirection()
 end
 
@@ -86,7 +92,8 @@ function boatphysics:StopUpdating()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetTotalAnchorDrag()
 end
 
@@ -96,17 +103,20 @@ end
 ---@param cur_velocity idk # 
 ---@param velocity_normal_x idk # 
 ---@param velocity_normal_z idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:ApplyDrag(dt,total_drag,cur_velocity,velocity_normal_x,velocity_normal_z)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetMaxVelocity()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetAnchorSailForceModifier()
 end
 
@@ -150,7 +160,9 @@ function boatphysics:RemoveMagnet(magnet)
 end
 
 ---
----author: 
+---@return idk
+---@return idk
+---author: Runar(Agent)
 function boatphysics:GetTargetRudderDirection()
 end
 
@@ -184,7 +196,8 @@ function boatphysics:SetHalting(halt)
 end
 
 ---
----author: 
+---@return number,number
+---author: Runar(Agent)
 function boatphysics:GetNormalizedVelocities()
 end
 
@@ -199,19 +212,22 @@ end
 ---@param sail_force idk # 
 ---@param cur_velocity idk # 
 ---@param max_velocity idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:ApplySailForce(dt,sail_force,cur_velocity,max_velocity)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetRudderTurnSpeed()
 end
 
 ---
 ---@param velocity idk # 
 ---@param total_anchor_drag idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function boatphysics:GetBoatDrag(velocity,total_anchor_drag)
 end
 

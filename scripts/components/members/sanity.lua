@@ -216,7 +216,8 @@ function sanity:EnableLunacy(enable,source)
 end
 
 ---
----author:
+---@return idk
+---author: Runar(Agent)
 function sanity:GetRateScale()
 end
 

@@ -38,7 +38,9 @@ function sleepingbaguser:SetHealthBonusMult(bonus)
 end
 
 ---
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function sleepingbaguser:ShouldSleep()
 end
 

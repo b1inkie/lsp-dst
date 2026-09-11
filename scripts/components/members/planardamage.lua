@@ -7,7 +7,8 @@
 local planardamage = {}
 
 ---最终位面伤害：基础位面伤害*乘法修饰总和+加法修饰总和
----author: mango
+---@return number
+---author: mango, Runar(Agent)
 function planardamage:GetDamage()
 end
 
@@ -27,7 +28,8 @@ function planardamage:GetBaseDamage()
 end
 
 ---获取当前所有加法加成总和
----author: mango
+---@return number
+---author: mango, Runar(Agent)
 function planardamage:GetBonus()
 end
 
@@ -53,7 +55,8 @@ function planardamage:AddBonus(src,bonus,key)
 end
 
 ---获取当前所有乘法加成
----author: mango
+---@return number
+---author: mango, Runar(Agent)
 function planardamage:GetMultiplier()
 end
 

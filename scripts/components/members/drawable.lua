@@ -9,48 +9,62 @@
 ---@field ondrawnfn idk
 local drawable = {}
 
+---返回背景图名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetBGImage()
 end
 
+---返回已画内容图名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetImage()
 end
 
+---设置被画(绘画完成)时的回调
 ---
 ---@param fn idk # 
 ---author: 
 function drawable:SetOnDrawnFn(fn)
 end
 
+---返回当前是否可被画
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:CanDraw()
 end
 
+---返回图集名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetAtlas()
 end
 
+---返回背景图集名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetBGAtlas()
 end
 
+---设置可否被画
 ---
 ---@param candraw idk # 
 ---author: 
 function drawable:SetCanDraw(candraw)
 end
 
+---移除 drawable 标签
 ---
 ---author: 
 function drawable:OnRemoveFromEntity()
 end
 
+---应用绘画结果(可为空表示擦除)并触发回调
 ---
 ---@param imagename idk # 
 ---@param imagesource idk # 

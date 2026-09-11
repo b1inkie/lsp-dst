@@ -17,7 +17,8 @@ end
 
 ---
 ---@param player idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function worldoverseer:CalcIndividualPlayerStats(player)
 end
 
@@ -28,7 +29,8 @@ function worldoverseer:OnCyclesChanged(cycles)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function worldoverseer:GetWorldRecipeItems()
 end
 
@@ -54,7 +56,8 @@ function worldoverseer:OnEquipSkinnedItem(player,data)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function worldoverseer:CalcPlayerStats()
 end
 

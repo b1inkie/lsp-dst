@@ -8,6 +8,7 @@ local terraformer = {}
 ---
 ---@param pt idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function terraformer:Terraform(pt,doer)
 end

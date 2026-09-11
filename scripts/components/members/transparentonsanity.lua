@@ -10,7 +10,8 @@
 local transparentonsanity = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function transparentonsanity:CalcaulteTargetAlpha()
 end
 

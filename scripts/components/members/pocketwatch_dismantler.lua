@@ -13,6 +13,8 @@ end
 ---
 ---@param target idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function pocketwatch_dismantler:CanDismantle(target,doer)
 end

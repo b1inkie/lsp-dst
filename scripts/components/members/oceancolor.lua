@@ -13,19 +13,22 @@
 ---@field blend_speed idk
 local oceancolor = {}
 
+---按有无海洋初始化目标颜色
 ---
----@param has_ocean idk # 
+---@param has_ocean boolean# 
 ---author: 
 function oceancolor:Initialize(has_ocean)
 end
 
+---世界时相变化时设目标海色
 ---
----@param src idk # 
----@param phase idk # 
+---@param src any# 
+---@param phase string# 
 ---author: 
 function oceancolor:OnPhaseChanged(src,phase)
 end
 
+---初始化后置(强制脏刷新)
 ---
 ---author: 
 function oceancolor:OnPostInit()

@@ -17,6 +17,7 @@ function platformhopdelay:SetDelay(time)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function platformhopdelay:GetDelayTicks()
 end

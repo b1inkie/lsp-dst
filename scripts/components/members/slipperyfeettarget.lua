@@ -13,7 +13,8 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function slipperyfeettarget:GetSlipperyRate(target)
 end
 
@@ -32,6 +33,7 @@ end
 ---@param x idk # 
 ---@param y idk # 
 ---@param z idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function slipperyfeettarget:IsSlipperyAtPosition(x,y,z)
 end

@@ -6,7 +6,8 @@
 local powerload = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function powerload:IsIdle()
 end
 
@@ -18,6 +19,7 @@ function powerload:SetLoad(_load,idle)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function powerload:GetLoad()
 end

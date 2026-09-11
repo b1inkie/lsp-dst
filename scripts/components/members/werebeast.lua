@@ -11,7 +11,8 @@
 local werebeast = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function werebeast:IsInWereState()
 end
 

@@ -54,7 +54,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function remoteteleporter:CanActivate(doer)
 end
 
@@ -66,7 +67,9 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function remoteteleporter:Teleport(doer)
 end
 
@@ -84,7 +87,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return ent[]
+---author: Runar(Agent)
 function remoteteleporter:Teleport_GetNearbyItems(doer)
 end
 

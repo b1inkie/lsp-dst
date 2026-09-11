@@ -43,19 +43,22 @@ end
 
 ---
 ---@param category idk # 
----author: 
+---@return string[]
+---author: Runar(Agent)
 function yotb_stager:GetParameterLine(category)
 end
 
 ---
 ---@param category idk # 
----author: 
+---@return string[]
+---author: Runar(Agent)
 function yotb_stager:GetParameterLineDoll(category)
 end
 
 ---
 ---@param values idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_stager:GetFurthest(values)
 end
 
@@ -71,7 +74,8 @@ function yotb_stager:EnableContest()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_stager:GetRandom()
 end
 
@@ -82,7 +86,8 @@ end
 
 ---
 ---@param beef idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function yotb_stager:GetBeefScore(beef)
 end
 
@@ -108,7 +113,8 @@ end
 
 ---
 ---@param starter idk # 
----author: 
+---@return string|nil
+---author: Runar(Agent)
 function yotb_stager:TestStartContest(starter)
 end
 
@@ -125,7 +131,9 @@ end
 ---
 ---@param post idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function yotb_stager:CheckForMarks(post,doer)
 end
 
@@ -173,7 +181,8 @@ end
 
 ---
 ---@param post idk # 
----author: 
+---@return string
+---author: Runar(Agent)
 function yotb_stager:GetComment(post)
 end
 
@@ -184,7 +193,8 @@ end
 
 ---
 ---@param values idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_stager:GetClosest(values)
 end
 
@@ -207,7 +217,8 @@ function yotb_stager:RemoveTempTrainer(trainer)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotb_stager:DeclareWinner()
 end
 
@@ -219,7 +230,8 @@ end
 ---
 ---@param rank idk # 
 ---@param speech idk # 
----author: 
+---@return string
+---author: Runar(Agent)
 function yotb_stager:SpawnVoiceName(rank,speech)
 end
 

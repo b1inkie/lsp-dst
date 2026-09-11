@@ -19,36 +19,44 @@
 ---@field _onremovelistener idk
 local equippable = {}
 
+---设置是否禁止脱装备(锁定中)
 ---
 ---@param shouldprevent idk # 
 ---author: 
 function equippable:SetPreventUnequipping(shouldprevent)
 end
 
+---返回该装备的整洁度(可忽略湿度)
 ---
 ---@param owner idk # 
 ---@param ignore_wetness idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function equippable:GetDapperness(owner,ignore_wetness)
 end
 
+---判断目标(玩家/傀儡)能否装备该物品
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function equippable:IsRestricted(target)
 end
 
+---卸载装备(推 onunequip 事件并调 onunequipfn)
 ---
 ---@param owner idk # 
 ---author: 
 function equippable:Unequip(owner)
 end
 
+---实体移除时解除禁止脱装备
 ---
 ---author: 
 function equippable:OnRemoveFromEntity()
 end
 
+---设置整洁度变化回调
 ---
 ---@param fn idk # 
 ---author: 
@@ -61,33 +69,43 @@ end
 function equippable:SetOnEquip(fn)
 end
 
+---返回装备携带的湿气(含最大值)
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function equippable:GetEquippedMoisture()
 end
 
+---返回当前是否禁止脱装备
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function equippable:ShouldPreventUnequipping()
 end
 
+---存档加载时判断目标能否装备(放宽限制)
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function equippable:IsRestricted_FromLoad(target)
 end
 
+---设置装进口袋时的回调
 ---
 ---@param fn idk # 
 ---author: 
 function equippable:SetOnPocket(fn)
 end
 
+---返回该装备的行走速度倍率
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function equippable:GetWalkSpeedMult()
 end
 
+---装备到拥有者: 推 onequip 事件并调 onequipfn
 ---
 ---@param owner idk # 
 ---@param from_ground idk # 
@@ -95,6 +113,7 @@ end
 function equippable:Equip(owner,from_ground)
 end
 
+---收进口袋(调 onpocketfn)
 ---
 ---@param owner idk # 
 ---author: 

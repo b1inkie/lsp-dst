@@ -7,13 +7,15 @@ local worldsettingstimer = {}
 
 ---
 ---@param name idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldsettingstimer:TimerEnabled(name)
 end
 
 ---
 ---@param name idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function worldsettingstimer:GetTimeElapsed(name)
 end
 
@@ -73,19 +75,22 @@ end
 
 ---
 ---@param name idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldsettingstimer:ActiveTimerExists(name)
 end
 
 ---
 ---@param name idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldsettingstimer:TimerExists(name)
 end
 
 ---
 ---@param name idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldsettingstimer:IsPaused(name)
 end
 
@@ -101,6 +106,7 @@ end
 
 ---
 ---@param name idk # 
----author: 
+---@return number|nil
+---author: Runar(Agent)
 function worldsettingstimer:GetMaxTime(name)
 end

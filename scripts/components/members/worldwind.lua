@@ -12,7 +12,8 @@ function worldwind:Stop()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function worldwind:GetWindAngle()
 end
 

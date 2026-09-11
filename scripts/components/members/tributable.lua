@@ -10,7 +10,8 @@
 local tributable = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tributable:HasPendingReward()
 end
 

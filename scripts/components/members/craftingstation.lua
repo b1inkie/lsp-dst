@@ -19,7 +19,8 @@ function craftingstation:ForgetAllItems()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function craftingstation:GetItems()
 end
 
@@ -31,11 +32,13 @@ end
 
 ---
 ---@param itemname idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function craftingstation:KnowsItem(itemname)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function craftingstation:GetRecipes()
 end

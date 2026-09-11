@@ -23,17 +23,20 @@ function charliecutscene:RepairGate()
 end
 
 ---
----author: 
+---@return Vector3
+---author: Runar(Agent)
 function charliecutscene:FindCharlieSpawnPoint()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function charliecutscene:FindSceneCameraAngle()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function charliecutscene:IsGateRepaired()
 end
 
@@ -43,7 +46,8 @@ function charliecutscene:SpawnCharlieHand()
 end
 
 ---
----author: 
+---@return Vector3
+---author: Runar(Agent)
 function charliecutscene:FindCharlieHandSpawnPoint()
 end
 

@@ -7,7 +7,8 @@ local constructionbuilderuidata = {}
 
 ---
 ---@param prefab idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function constructionbuilderuidata:GetSlotForIngredient(prefab)
 end
 
@@ -18,23 +19,27 @@ function constructionbuilderuidata:SetTarget(targetinst)
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function constructionbuilderuidata:GetContainer()
 end
 
 ---
 ---@param slot idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function constructionbuilderuidata:GetIngredientForSlot(slot)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function constructionbuilderuidata:GetConstructionSite()
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function constructionbuilderuidata:GetTarget()
 end
 

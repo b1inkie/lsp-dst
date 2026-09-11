@@ -11,20 +11,23 @@
 ---@field _unequipped_callback idk
 local lunarplant_tentacle_weapon = {}
 
+---设置武器所有者(变化时清旧监听)
 ---
----@param owner idk # 
+---@param owner ent|nil# 
 ---author: 
 function lunarplant_tentacle_weapon:SetOwner(owner)
 end
 
+---移除 equipped 事件监听
 ---
 ---author: 
 function lunarplant_tentacle_weapon:OnRemoveFromEntity()
 end
 
+---攻击时(仅本武器命中)处理月植物鞭击
 ---
----@param owner idk # 
----@param attack_data idk # 
+---@param owner ent|nil# 
+---@param attack_data any|nil# 
 ---author: 
 function lunarplant_tentacle_weapon:OnAttack(owner,attack_data)
 end

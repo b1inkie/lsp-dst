@@ -19,7 +19,8 @@ function weighable:Initialize(min_weight,max_weight)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function weighable:GetWeightPercent()
 end
 
@@ -36,7 +37,8 @@ function weighable:SetPlayerAsOwner(owner)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function weighable:GetWeight()
 end
 

@@ -22,7 +22,8 @@ end
 
 ---
 ---@param stormtype idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stormwatcher:GetStormLevel(stormtype)
 end
 
@@ -33,6 +34,7 @@ end
 
 ---
 ---@param inst idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function stormwatcher:GetCurrentStorm(inst)
 end

@@ -14,7 +14,8 @@ function submersible:MakeSunken(x,z,ignore_boats,nosplash)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function submersible:OnLanded()
 end
 
@@ -29,6 +30,7 @@ function submersible:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function submersible:GetUnderwaterObject()
 end

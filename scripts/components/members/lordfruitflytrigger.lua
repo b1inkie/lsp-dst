@@ -7,16 +7,19 @@
 ---@field updating idk
 local lordfruitflytrigger = {}
 
+---启动触发器更新周期
 ---
 ---author: 
 function lordfruitflytrigger:StartUpdating()
 end
 
+---移除 lordfruitflytrigger 标签
 ---
 ---author: 
 function lordfruitflytrigger:OnRemoveFromEntity()
 end
 
+---停止触发器更新
 ---
 ---author: 
 function lordfruitflytrigger:StopUpdating()

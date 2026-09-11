@@ -38,7 +38,8 @@ function reticule:ClearTwinStickOverrides()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function reticule:ShouldHide()
 end
 

@@ -8,7 +8,8 @@
 local selfstacker = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function selfstacker:CanSelfStack()
 end
 
@@ -29,6 +30,7 @@ function selfstacker:DoStack()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function selfstacker:FindItemToStackWith()
 end

@@ -10,20 +10,23 @@
 ---@field groundonly boolean 无默认值，是否只能在地面使用的标志符
 local machine = {}
 
+---返回机器是否运行中
 ---检查机器是否处于开启状态
 ---@return boolean
 ---@nodiscard
----author: mango
+---author: mango, 
 function machine:IsOn()
 end
 
+---启动机器(开始冷却计时)
 ---打开机器，启动冷却时间,调用回调函数并触发事件
----author: mango
+---author: mango, 
 function machine:TurnOn()
 end
 
+---关闭机器(开始冷却计时)
 ---关闭机器，启动冷却时间，调用回调函数并触发事件
----author: mango
+---author: mango, 
 function machine:TurnOff()
 end
 
@@ -34,8 +37,9 @@ end
 function machine:CanInteract()
 end
 
+---移除 turnedon 标签
 ---从实体移除组件时清理相关标签
----author: mango
+---author: mango, 
 function machine:OnRemoveFromEntity()
 end
 

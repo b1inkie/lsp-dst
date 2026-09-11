@@ -24,7 +24,8 @@ function circuitnode:AddNode(node)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function circuitnode:NumConnectedNodes()
 end
 
@@ -64,7 +65,8 @@ function circuitnode:SetOnConnectFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function circuitnode:IsEnabled()
 end
 
@@ -75,6 +77,7 @@ function circuitnode:ConnectTo(tag)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function circuitnode:IsConnected()
 end

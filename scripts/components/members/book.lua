@@ -34,7 +34,8 @@ end
 
 ---
 ---@param reader idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function book:OnPeruse(reader)
 end
 

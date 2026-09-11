@@ -11,7 +11,8 @@ function sittable:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sittable:IsOccupied()
 end
 
@@ -23,6 +24,7 @@ end
 
 ---
 ---@param occupier idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sittable:IsOccupiedBy(occupier)
 end

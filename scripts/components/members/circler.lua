@@ -34,7 +34,8 @@ end
 
 ---
 ---@param dt idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function circler:GetSpeed(dt)
 end
 
@@ -44,11 +45,13 @@ function circler:Start()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function circler:GetMinScale()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function circler:GetMinSpeed()
 end

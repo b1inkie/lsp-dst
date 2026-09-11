@@ -17,12 +17,14 @@
 ---@field _healthpct idk
 local healthbar = {}
 
+---开关血条显示
 ---
 ---@param enable idk # 
 ---author: 
 function healthbar:Enable(enable)
 end
 
+---按比例设置血条值(>0 生效)
 ---
 ---@param percent idk # 
 ---author: 

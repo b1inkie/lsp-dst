@@ -5,12 +5,15 @@
 ---@field onpreventdrowningdamagefn idk
 local flotationdevice = {}
 
+---防止溺水伤害时走回调
 ---
 ---author: 
 function flotationdevice:OnPreventDrowningDamage()
 end
 
+---返回浮力装置是否启用
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function flotationdevice:IsEnabled()
 end

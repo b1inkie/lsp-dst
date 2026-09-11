@@ -97,5 +97,6 @@ end
 ---设置具体饥饿度值
 ---@param current number # 新的饥饿度值
 ---@param overtime boolean|nil # 是否为随时间变化
+---author: Runar(Agent)
 function hunger:SetCurrent(current, overtime)
 end

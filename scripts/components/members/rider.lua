@@ -28,17 +28,20 @@ function rider:StartTracking(mount)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rider:GetMount()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rider:IsRiding()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rider:GetSaddle()
 end
 

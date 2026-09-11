@@ -16,7 +16,8 @@ end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function commander:GetNumSoldiers(prefab)
 end
 
@@ -64,7 +65,8 @@ end
 
 ---
 ---@param ent idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function commander:IsSoldier(ent)
 end
 
@@ -74,7 +76,8 @@ function commander:DropAllSoldierTargets()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function commander:IsAnySoldierNotAlert()
 end
 

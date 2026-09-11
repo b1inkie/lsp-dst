@@ -18,6 +18,8 @@ end
 ---
 ---@param target idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function recipescanner:Scan(target,doer)
 end

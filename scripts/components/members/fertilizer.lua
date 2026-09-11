@@ -8,6 +8,7 @@
 ---@field nutrients idk
 local fertilizer = {}
 
+---对目标施放肥料(给作物加养分/浇水)
 ---
 ---@param doer idk # 
 ---@param target idk # 
@@ -15,12 +16,15 @@ local fertilizer = {}
 function fertilizer:OnApplied(doer,target)
 end
 
+---(已弃用) 是否可治疗目标
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function fertilizer:Heal(target)
 end
 
+---设置三种养分(或整体传入表)
 ---
 ---@param nutrient1 idk # 
 ---@param nutrient2 idk # 
@@ -29,11 +33,13 @@ end
 function fertilizer:SetNutrients(nutrient1,nutrient2,nutrient3)
 end
 
+---移除 fertilizer 标签
 ---
 ---author: 
 function fertilizer:OnRemoveFromEntity()
 end
 
+---(已弃用) 设置治疗量
 ---
 ---@param health idk # 
 ---author: 

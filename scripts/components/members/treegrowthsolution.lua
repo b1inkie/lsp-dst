@@ -6,6 +6,7 @@ local treegrowthsolution = {}
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function treegrowthsolution:GrowTarget(target)
 end

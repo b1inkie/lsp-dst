@@ -57,7 +57,8 @@ end
 
 ---
 ---@param loading_in idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function winch:StartLowering(loading_in)
 end
 
@@ -90,7 +91,8 @@ function winch:FullyRaised()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function winch:GetCurrentDepth()
 end
 

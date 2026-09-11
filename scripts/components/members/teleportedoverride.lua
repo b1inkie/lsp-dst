@@ -12,12 +12,14 @@ function teleportedoverride:SetDestPositionFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teleportedoverride:GetDestPosition()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teleportedoverride:GetDestTarget()
 end
 

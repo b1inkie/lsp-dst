@@ -13,7 +13,8 @@ function boatringdata:SetRadius(radius)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function boatringdata:IsRotating()
 end
 
@@ -24,7 +25,8 @@ function boatringdata:SetIsRotating(isrotating)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function boatringdata:GetRadius()
 end
 
@@ -35,6 +37,7 @@ function boatringdata:SetNumSegments(segments)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function boatringdata:GetNumSegments()
 end

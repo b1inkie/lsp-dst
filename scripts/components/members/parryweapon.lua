@@ -12,7 +12,8 @@ local parryweapon = {}
 ---@param damage idk # 
 ---@param weapon idk # 
 ---@param stimuli idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function parryweapon:TryParry(doer,attacker,damage,weapon,stimuli)
 end
 

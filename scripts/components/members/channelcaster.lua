@@ -21,22 +21,26 @@ end
 
 ---
 ---@param item idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function channelcaster:IsChannelingItem(item)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function channelcaster:StopChanneling()
 end
 
 ---
 ---@param item idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function channelcaster:StartChanneling(item)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function channelcaster:IsChanneling()
 end

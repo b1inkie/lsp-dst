@@ -6,12 +6,14 @@
 local replayproxy = {}
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function replayproxy:GetRealEntityPrefabName()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function replayproxy:GetRealEntityGUID()
 end
 

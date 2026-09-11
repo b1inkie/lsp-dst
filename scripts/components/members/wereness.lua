@@ -24,7 +24,8 @@ function wereness:DoDelta(delta,overtime)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function wereness:GetWereMode()
 end
 
@@ -51,6 +52,7 @@ function wereness:SetDrainRate(rate)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function wereness:GetPercent()
 end

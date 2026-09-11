@@ -5,6 +5,7 @@
 local raindomewatcher = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function raindomewatcher:IsUnderRainDome()
 end

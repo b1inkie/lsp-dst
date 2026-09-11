@@ -5,7 +5,8 @@
 local yotb_skinunlocker = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_skinunlocker:GetSkin()
 end
 

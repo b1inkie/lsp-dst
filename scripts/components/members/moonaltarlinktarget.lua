@@ -10,7 +10,8 @@
 local moonaltarlinktarget = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function moonaltarlinktarget:CanBeLinked()
 end
 

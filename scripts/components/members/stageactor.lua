@@ -19,7 +19,8 @@ function stageactor:performedplay(story_id)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stageactor:IsTellingStory()
 end
 
@@ -30,7 +31,8 @@ function stageactor:SetOnStoryBeginFn(fn)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function stageactor:performplay()
 end
 
@@ -43,7 +45,9 @@ end
 ---
 ---@param storyprop idk # 
 ---@param story idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function stageactor:TellStory(storyprop,story)
 end
 
@@ -59,7 +63,8 @@ end
 
 ---
 ---@param stage idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function stageactor:GetStage(stage)
 end
 

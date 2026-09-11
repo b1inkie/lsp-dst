@@ -12,6 +12,7 @@ end
 
 ---
 ---@param soul idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function souleater:EatSoul(soul)
 end

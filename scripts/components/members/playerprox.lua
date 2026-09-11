@@ -37,7 +37,8 @@ function playerprox:SetOnPlayerNear(fn)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playerprox:IsPlayerClose()
 end
 

@@ -49,22 +49,27 @@ end
 ---@param name string # buff名
 ---@param value number # 温度值
 ---
----author: lan
+---@return idk
+---author: lan, Runar(Agent)
 function temperature:SetModifier(name,value)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function temperature:GetMax()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function temperature:IsOverheating()
 end
 
 ---
----author: 
+---@return number
+---@return number
+---author: Runar(Agent)
 function temperature:GetInsulation()
 end
 
@@ -83,7 +88,8 @@ function temperature:GetCurrent()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function temperature:GetMoisturePenalty()
 end
 
@@ -107,7 +113,8 @@ function temperature:TransferComponent(newinst)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function temperature:IsFreezing()
 end
 

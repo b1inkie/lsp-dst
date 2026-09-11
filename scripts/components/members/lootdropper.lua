@@ -69,11 +69,12 @@ end
 
 ---按照当前耐久度(默认1)得到对应的配方材料的掉落表{PrefabID,...}
 ---@param recipe table #配方类,对于添加过配方的物品可以这么调用:AllRecipes["配方名字"]
----author: 观测分析思考
+---author: 观测分析思考, Runar(Agent)
 ---<br>对于建筑物，在满耐久没有被烧毁的情况下用锤子砸掉建筑会返还50%的材料，向上取整
 ---<br>满耐久烧毁的情况下会返还25%的材料,向上取整
 ---<br>若配方中有可继续分解的配方(木板,石砖),通常会分解然后按照相同规则递归计算数量
 ---<br>例外:木牌被锤会返还木板，应该是单独设置了?
+---@return idk[]
 function lootdropper:GetRecipeLoot(recipe)
 end
 
@@ -97,7 +98,8 @@ end
 ---@param linked_skinname idk # 
 ---@param skin_id idk # 
 ---@param userid idk # 
----author: lan
+---@return ent
+---author: lan, Runar(Agent)
 function lootdropper:SpawnLootPrefab(lootprefab,pt,linked_skinname,skin_id,userid)
 end
 
@@ -105,7 +107,8 @@ end
 ---<br>对可分解的材料同样会使用递归查询配方。
 ---<br>例如如果一个配方需要两个木头，那么返回的掉落表则是{"log","log"}
 ---@param recipe table #配方类,对于添加过配方的物品可以这么调用:AllRecipes["配方名字"]
----author:观测分析思考
+---@return idk
+---author: 观测分析思考, Runar(Agent)
 function lootdropper:GetFullRecipeLoot(recipe)
 end
 
@@ -137,18 +140,21 @@ end
 
 ---得到所有可能的掉落物表{PrefabID,...}
 ---@param setuploot boolean #是否需要初始化，true则会在计算表之前调用lootsetupfn()方法
----author: 观测分析思考
+---author: 观测分析思考, Runar(Agent)
 ---计算表的时候不会考虑具体设置的概率和权重，所以即便你设置的是0，只要相应的随机表里面有条目他都会添加
+---@return idk[]
 function lootdropper:GetAllPossibleLoot(setuploot)
 end
 
 ---生成最终掉落表的方法，此方法返回的表就是这次会掉落的物品表
----author: 观测分析思考
+---@return idk[]
+---author: 观测分析思考, Runar(Agent)
 function lootdropper:GenerateLoot()
 end
 
 ---返回一个掉落物名字，每次触发加权随机掉落的时候都会调用此方法
----author: 观测分析思考
+---@return string
+---author: 观测分析思考, Runar(Agent)
 function lootdropper:PickRandomLoot()
 end
 

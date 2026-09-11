@@ -24,25 +24,31 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function questowner:CanBeginQuest(doer)
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function questowner:AbandonQuest(doer)
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function questowner:CanAbandonQuest(doer)
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function questowner:BeginQuest(doer)
 end
 

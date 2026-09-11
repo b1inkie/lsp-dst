@@ -6,13 +6,15 @@ local worker = {}
 
 ---
 ---@param action idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worker:CanDoAction(action)
 end
 
 ---
 ---@param action idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function worker:GetEffectiveness(action)
 end
 

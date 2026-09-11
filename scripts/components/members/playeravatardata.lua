@@ -52,7 +52,8 @@ function playeravatardata:AddPlayerData(save)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playeravatardata:GetData()
 end
 

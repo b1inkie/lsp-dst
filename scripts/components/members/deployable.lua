@@ -36,7 +36,9 @@ end
 ---@param pt Vector3 #目标点
 ---@param deployer ent|nil #部署者
 ---@param rot number|nil #旋转角度
----author:星璃
+---@return boolean
+---@return idk
+---author: 星璃, Runar(Agent)
 function deployable:Deploy(pt, deployer, rot)
 end
 

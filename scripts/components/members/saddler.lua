@@ -11,13 +11,15 @@
 local saddler = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function saddler:GetBonusSpeedMult()
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function saddler:GetBonusDamage(target)
 end
 
@@ -58,11 +60,14 @@ end
 ---@param attacker idk # 
 ---@param weapon idk # 
 ---@param spdamage idk # 
----author: 
+---@return number
+---@return idk
+---author: Runar(Agent)
 function saddler:ApplyDamage(damage,attacker,weapon,spdamage)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function saddler:GetAbsorption()
 end

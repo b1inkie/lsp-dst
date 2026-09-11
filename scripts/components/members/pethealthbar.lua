@@ -24,7 +24,8 @@
 local pethealthbar = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pethealthbar:GetOverTime()
 end
 
@@ -34,12 +35,14 @@ function pethealthbar:ResetPulse()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pethealthbar:GetPercent()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function pethealthbar:GetSymbol()
 end
 
@@ -50,12 +53,14 @@ function pethealthbar:SetPetSkin(petskin)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pethealthbar:GetPulse()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function pethealthbar:GetMaxHealth()
 end
 

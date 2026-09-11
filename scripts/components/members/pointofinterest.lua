@@ -55,7 +55,8 @@ end
 
 ---
 ---@param distsq idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function pointofinterest:ShouldShowHudIndicator(distsq)
 end
 

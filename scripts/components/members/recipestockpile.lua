@@ -37,7 +37,8 @@ function recipestockpile:SetupItem(data,start_restock_timer)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function recipestockpile:HasAnyStock()
 end
 

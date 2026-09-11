@@ -38,7 +38,8 @@ end
 ---@param nutrient1 number # 0~100
 ---@param nutrient2 number # 0~100
 ---@param nutrient3 number # 0~100
----author: lan
+---@return boolean
+---author: lan, Runar(Agent)
 function farming_manager:AddTileNutrients(x, z, nutrient1, nutrient2, nutrient3)
 end
 
@@ -49,14 +50,16 @@ end
 ---@param consume any
 ---@param restore any
 ---@param test_only any
----author: 
+---@return boolean
+---author: Runar(Agent)
 function farming_manager:CycleNutrientsAtPoint(_x, _y, _z, consume, restore, test_only)
 end
 
 ---comment
 ---@param x any
 ---@param y any
----author: 
+---@return idk
+---author: Runar(Agent)
 function farming_manager:GetTileBelowSoil(x, y)
 end
 
@@ -73,6 +76,7 @@ end
 ---@param x any
 ---@param y any
 ---@param z any
----author: 
+---@return boolean
+---author: Runar(Agent)
 function farming_manager:IsSoilMoistAtPoint(x, y, z)
 end

@@ -13,7 +13,8 @@ end
 ---
 ---@param giver idk # 
 ---@param item idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function vase:Decorate(giver,item)
 end
 

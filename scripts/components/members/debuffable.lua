@@ -7,31 +7,37 @@
 ---@field debuffs table<string,{inst:ent,onremove:fun(debuff)}>
 local debuffable = {}
 
+---移除所有已脱落的 debuff 记录
 ---
 ---author: 
 function debuffable:RemoveOnDespawn()
 end
 
+---把 debuff 数据转移到新实体上(如变身)
 ---
 ---@param newinst idk # 
 ---author: 
 function debuffable:TransferComponent(newinst)
 end
 
+---按名称添加一个 debuff(受开关控制)
 ---
 ---@param name idk # 
 ---@param prefab idk # 
 ---@param data idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function debuffable:AddDebuff(name,prefab,data)
 end
 
+---按名称移除 debuff 并触发其脱落
 ---
 ---@param name idk # 
 ---author: 
 function debuffable:RemoveDebuff(name)
 end
 
+---设置 debuff 特效默认跟随的符号与坐标
 ---
 ---@param symbol idk # 
 ---@param x idk # 
@@ -41,17 +47,22 @@ end
 function debuffable:SetFollowSymbol(symbol,x,y,z)
 end
 
+---判断是否带有指定名称的 debuff
 ---
 ---@param name idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function debuffable:HasDebuff(name)
 end
 
+---返回 debuff 组件是否开启
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function debuffable:IsEnabled()
 end
 
+---开关 debuff 组件
 ---
 ---@param enable idk # 
 ---author: 

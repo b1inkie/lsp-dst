@@ -8,7 +8,8 @@
 local skilltreeupdater = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:GetAvailableSkillPoints()
 end
 
@@ -20,24 +21,28 @@ end
 
 ---
 ---@param skillxp idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:GetPointsForSkillXP(skillxp)
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function skilltreeupdater:IsValidSkill(skill)
 end
 
 ---
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function skilltreeupdater:GetActivatedSkills()
 end
 
 ---
 ---@param skillselection idk # 
----author: 
+---@return string[]
+---author: Runar(Agent)
 function skilltreeupdater:GetNamesFromSkillSelection(skillselection)
 end
 
@@ -48,7 +53,8 @@ function skilltreeupdater:ActivateSkill_Client(skill)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function skilltreeupdater:GetPlayerSkillSelection()
 end
 
@@ -60,7 +66,8 @@ end
 
 ---
 ---@param skill idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function skilltreeupdater:IsActivated(skill)
 end
 
@@ -132,18 +139,21 @@ end
 
 ---
 ---@param tag idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:CountSkillTag(tag)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:GetSkillXP()
 end
 
 ---
 ---@param tag idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function skilltreeupdater:HasSkillTag(tag)
 end
 

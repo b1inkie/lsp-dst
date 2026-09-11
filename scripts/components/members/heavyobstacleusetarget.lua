@@ -5,9 +5,11 @@
 ---@field on_use_fn idk
 local heavyobstacleusetarget = {}
 
+---对重障碍执行动作(走 on_use_fn)
 ---
 ---@param doer idk # 
 ---@param heavy_obstacle idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function heavyobstacleusetarget:UseHeavyObstacle(doer,heavy_obstacle)
 end

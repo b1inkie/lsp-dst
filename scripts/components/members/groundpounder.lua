@@ -32,12 +32,14 @@ local groundpounder = {}
 function groundpounder:GroundPound(pt,ents_hit)
 end
 
+---在指定点做场外冲击波(禁区域伤害)
 ---
 ---@param position idk # 
 ---author: 
 function groundpounder:GroundPound_Offscreen(position)
 end
 
+---对一组点执行破坏(破物/伤害/推平台/推物/特效)
 ---
 ---@param points idk # 
 ---@param breakobjects idk # 

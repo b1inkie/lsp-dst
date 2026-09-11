@@ -10,16 +10,19 @@
 ---@field _race_update_task idk
 local boatrace_proximitychecker = {}
 
+---赛事开始: 启动周期检测任务, 检查附近 proximitybeacon 是否全部被触发
 ---
 ---author: 
 function boatrace_proximitychecker:OnStartRace()
 end
 
+---取消周期检测任务
 ---
 ---author: 
 function boatrace_proximitychecker:OnRemoveFromEntity()
 end
 
+---赛事结束: 停止检测并清理已发现信标
 ---
 ---author: 
 function boatrace_proximitychecker:OnFinishRace()

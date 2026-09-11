@@ -20,7 +20,9 @@ end
 
 ---
 ---@param harvester idk # 
----author: 
+---@return boolean
+---@return ent|nil
+---author: Runar(Agent)
 function crop:Harvest(harvester)
 end
 
@@ -34,12 +36,14 @@ function crop:StartGrowing(prod,grow_time,grower,percent)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function crop:GetWorldGrowthRateMultiplier()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function crop:IsReadyForHarvest()
 end
 
@@ -79,13 +83,15 @@ end
 ---
 ---@param fertilizer idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function crop:Fertilize(fertilizer,doer)
 end
 
 ---
 ---@param dt idk # 
 ---@param nowither idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function crop:DoGrow(dt,nowither)
 end

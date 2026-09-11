@@ -52,7 +52,9 @@ function boatracecrew:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return number
+---@return number|nil
+---author: Runar(Agent)
 function boatracecrew:GetHeadingNormal()
 end
 

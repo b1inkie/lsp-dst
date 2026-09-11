@@ -5,7 +5,8 @@
 local wintertreegiftable = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function wintertreegiftable:GetDaysSinceLastGift()
 end
 

@@ -20,27 +20,32 @@
 ---@field ignitenumdrakes idk
 local deciduoustreeupdater = {}
 
+---停止怪物模式(落叶树被烧毁的冒烟阶段结束)
 ---
 ---author: 
 function deciduoustreeupdater:StopMonster()
 end
 
+---怪物模式下周期生成火焰特效波
 ---
 ---author: 
 function deciduoustreeupdater:SpawnIgniteWave()
 end
 
+---实体唤醒时恢复冒烟任务
 ---
 ---author: 
 function deciduoustreeupdater:OnEntityWake()
 end
 
+---进入怪物模式(记录开始时间)
 ---
 ---@param starttime idk # 
 ---author: 
 function deciduoustreeupdater:StartMonster(starttime)
 end
 
+---实体睡眠时暂停冒烟任务
 ---
 ---author: 
 function deciduoustreeupdater:OnEntitySleep()

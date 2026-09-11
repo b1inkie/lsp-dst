@@ -12,7 +12,8 @@
 local yotc_racestats = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotc_racestats:GetBestStats()
 end
 
@@ -23,7 +24,8 @@ function yotc_racestats:ModifyStamina(point_mod)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function yotc_racestats:GetSpeedModifier()
 end
 
@@ -45,12 +47,14 @@ function yotc_racestats:SaveCurrentStatsAsBaseline()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function yotc_racestats:GetNumStatPoints()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function yotc_racestats:GetReactionModifier()
 end
 
@@ -61,12 +65,14 @@ function yotc_racestats:DegradePoints(num_points)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function yotc_racestats:GetDirectionModifier()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function yotc_racestats:GetStaminaModifier()
 end
 

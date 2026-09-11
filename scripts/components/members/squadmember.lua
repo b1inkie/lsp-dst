@@ -8,12 +8,14 @@
 local squadmember = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function squadmember:GetSquadName()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function squadmember:IsInSquad()
 end
 
@@ -29,6 +31,7 @@ function squadmember:JoinSquad(squadname)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function squadmember:GetOtherMembers()
 end

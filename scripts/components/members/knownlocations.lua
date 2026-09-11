@@ -19,13 +19,15 @@ function knownlocations:DeserializeLocations(data)
 end
 
 ---
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function knownlocations:SerializeLocations()
 end
 
 ---
 ---@param name idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function knownlocations:GetLocation(name)
 end
 

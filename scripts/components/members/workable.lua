@@ -60,7 +60,9 @@ end
 ---@param worker idk # 
 ---@param tool idk # 
 ---@param numworks idk # 
----author: 
+---@return boolean
+---@return number
+---author: Runar(Agent)
 function workable:ShouldRecoil(worker,tool,numworks)
 end
 

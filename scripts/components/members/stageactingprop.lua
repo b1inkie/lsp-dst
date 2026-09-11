@@ -21,7 +21,8 @@ local stageactingprop = {}
 ---
 ---@param head idk # 
 ---@param body idk # 
----author: 
+---@return idk|nil
+---author: Runar(Agent)
 function stageactingprop:FindCostume(head,body)
 end
 
@@ -44,7 +45,8 @@ end
 
 ---
 ---@param player idk # 
----author: 
+---@return idk|nil
+---author: Runar(Agent)
 function stageactingprop:CheckCostume(player)
 end
 
@@ -56,7 +58,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return idk|string
+---author: Runar(Agent)
 function stageactingprop:FindScript(doer)
 end
 
@@ -110,6 +113,7 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stageactingprop:DoPerformance(doer)
 end

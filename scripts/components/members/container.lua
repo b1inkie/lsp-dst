@@ -59,7 +59,8 @@ end
 ---
 ---@param slot idk # 
 ---@param keepoverstacked idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function container:RemoveItemBySlot(slot,keepoverstacked)
 end
 
@@ -70,7 +71,8 @@ function container:EnableInfiniteStackSize(enable)
 end
 
 ---
----author: 
+---@return ent[]
+---author: Runar(Agent)
 function container:ReferenceAllItems()
 end
 
@@ -131,7 +133,9 @@ end
 ---@param slot idk # 
 ---@param wholestack idk # 
 ---@param keepoverstacked idk # 
----author: 
+---@return number
+---@return ent|nil
+---author: Runar(Agent)
 function container:RemoveItem_Internal(item,slot,wholestack,keepoverstacked)
 end
 
@@ -271,7 +275,8 @@ end
 
 ---
 ---@param item idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function container:ShouldPrioritizeContainer(item)
 end
 
@@ -359,7 +364,8 @@ function container:DropItemAt(itemtodrop,x,y,z)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function container:GetNumSlots()
 end
 
@@ -374,7 +380,8 @@ end
 ---@param wholestack idk # 
 ---@param _checkallcontainers_ idk # 
 ---@param keepoverstacked idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function container:RemoveItem(item,wholestack,_checkallcontainers_,keepoverstacked)
 end
 

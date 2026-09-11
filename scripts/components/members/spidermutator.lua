@@ -20,6 +20,7 @@ end
 
 ---
 ---@param spider idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function spidermutator:CanMutate(spider)
 end

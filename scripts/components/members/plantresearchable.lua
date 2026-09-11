@@ -11,12 +11,14 @@ function plantresearchable:LearnPlant(doer)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function plantresearchable:GetResearchInfo()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function plantresearchable:IsRandomSeed()
 end
 

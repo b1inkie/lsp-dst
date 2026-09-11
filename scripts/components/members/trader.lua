@@ -12,7 +12,8 @@
 local trader = {}
 
 ---检查self.acceptstacks的值
----author: 超能力拓芙铁拳
+---@return idk
+---author: 超能力拓芙铁拳, Runar(Agent)
 function trader:IsAcceptingStacks()
 end
 
@@ -25,7 +26,9 @@ end
 ---@param item idk # 交易物品
 ---@param giver idk # 
 ---@param count idk # 
----author: 超能力拓芙铁拳
+---@return boolean
+---@return string|nil
+---author: 超能力拓芙铁拳, Runar(Agent)
 function trader:AbleToAccept(item,giver,count)
 end
 
@@ -51,7 +54,8 @@ end
 ---@param giver idk # 
 ---@param item idk # 
 ---@param count idk # 
----author: 超能力拓芙铁拳
+---@return boolean
+---author: 超能力拓芙铁拳, Runar(Agent)
 function trader:AcceptGift(giver,item,count)
 end
 
@@ -64,7 +68,8 @@ end
 ---@param item idk # 
 ---@param giver idk # 
 ---@param count idk # 
----author: 超能力拓芙铁拳
+---@return boolean
+---author: 超能力拓芙铁拳, Runar(Agent)
 function trader:WantsToAccept(item,giver,count)
 end
 

@@ -15,7 +15,8 @@
 local witherable = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function witherable:CanRejuvenate()
 end
 
@@ -31,7 +32,8 @@ function witherable:DelayWither(delay)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function witherable:IsProtected()
 end
 
@@ -41,7 +43,8 @@ function witherable:Start()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function witherable:CanWither()
 end
 
@@ -62,7 +65,8 @@ function witherable:DelayRejuvenate(delay)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function witherable:IsWithered()
 end
 

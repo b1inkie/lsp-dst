@@ -6,7 +6,8 @@ local shadowsubmissive = {}
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function shadowsubmissive:TargetHasDominance(target)
 end
 
@@ -17,6 +18,7 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function shadowsubmissive:ShouldSubmitToTarget(target)
 end

@@ -30,7 +30,8 @@ function skinner:CopySkinsFromPlayer(player)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function skinner:GetSkinMode()
 end
 
@@ -47,7 +48,8 @@ function skinner:SetMonkeyCurse(monkey_curse)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function skinner:GetClothing()
 end
 
@@ -59,7 +61,8 @@ function skinner:SetSkinMode(skintype,default_build)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function skinner:GetMonkeyCurse()
 end
 

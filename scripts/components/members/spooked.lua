@@ -10,7 +10,8 @@
 local spooked = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function spooked:ShouldSpook()
 end
 

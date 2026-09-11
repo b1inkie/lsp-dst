@@ -12,7 +12,8 @@ function sandstormwatcher:SetSandstormSpeedMultiplier(mult)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function sandstormwatcher:GetSandstormLevel()
 end
 

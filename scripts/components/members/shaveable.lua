@@ -10,7 +10,9 @@ local shaveable = {}
 ---
 ---@param shaver idk # 
 ---@param shaving_implement idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function shaveable:CanShave(shaver,shaving_implement)
 end
 
@@ -29,6 +31,8 @@ end
 ---
 ---@param shaver idk # 
 ---@param shaving_implement idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function shaveable:Shave(shaver,shaving_implement)
 end

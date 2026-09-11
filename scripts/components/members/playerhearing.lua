@@ -5,7 +5,8 @@
 local playerhearing = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playerhearing:GetDSPTables()
 end
 

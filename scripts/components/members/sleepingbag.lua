@@ -24,7 +24,8 @@ function sleepingbag:DoSleep(doer)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function sleepingbag:GetSleepPhase()
 end
 
@@ -41,7 +42,8 @@ function sleepingbag:SetSleepPhase(phase)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sleepingbag:InUse()
 end
 

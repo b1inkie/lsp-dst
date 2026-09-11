@@ -30,7 +30,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function wardrobe:BeginChanging(doer)
 end
 
@@ -54,7 +55,8 @@ end
 ---
 ---@param doer idk # 
 ---@param skins idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function wardrobe:ActivateChanging(doer,skins)
 end
 
@@ -66,7 +68,9 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function wardrobe:CanBeginChanging(doer)
 end
 

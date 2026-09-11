@@ -16,7 +16,8 @@ function finiteuses:SetPercent(amount)
 end
 
 ---返回：战斗时是否正常消耗耐久（true or false）
----author: mango
+---@return idk
+---author: mango, Runar(Agent)
 function finiteuses:IgnoresCombatDurabilityLoss()
 end
 
@@ -75,11 +76,13 @@ function finiteuses:SetDoesNotStartFull(enabled)
 end
 
 ---获取当前耐久百分比
----author: mango
+---@return number
+---author: mango, Runar(Agent)
 function finiteuses:GetPercent()
 end
 
 ---获取当前耐久
----author: mango
+---@return number
+---author: mango, Runar(Agent)
 function finiteuses:GetUses()
 end

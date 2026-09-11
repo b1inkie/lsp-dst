@@ -7,7 +7,8 @@
 local constructionbuilder = {}
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function constructionbuilder:IsConstructingAny()
 end
 
@@ -18,18 +19,22 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function constructionbuilder:StartConstruction(target)
 end
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function constructionbuilder:CanStartConstruction()
 end
 
 ---
 ---@param constructioninst idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function constructionbuilder:IsConstructing(constructioninst)
 end
 
@@ -39,6 +44,7 @@ function constructionbuilder:StopConstruction()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function constructionbuilder:FinishConstruction()
 end

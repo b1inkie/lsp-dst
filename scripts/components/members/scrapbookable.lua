@@ -12,6 +12,7 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function scrapbookable:Teach(doer)
 end

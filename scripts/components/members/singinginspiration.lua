@@ -53,7 +53,8 @@ function singinginspiration:AddSong(songdata,skip_inspire,inst)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function singinginspiration:GetDetachRadius()
 end
 
@@ -65,12 +66,14 @@ end
 
 ---
 ---@param slot_num idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function singinginspiration:GetActiveSong(slot_num)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function singinginspiration:IsSinging()
 end
 
@@ -91,14 +94,16 @@ function singinginspiration:PopSong()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function singinginspiration:GetPercent()
 end
 
 ---
 ---@param songdata idk # 
 ---@param inst idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function singinginspiration:CanAddSong(songdata,inst)
 end
 
@@ -140,11 +145,13 @@ end
 
 ---
 ---@param songdata idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function singinginspiration:IsSongActive(songdata)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function singinginspiration:GetMaxInspiration()
 end

@@ -8,7 +8,8 @@
 local strafer = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function strafer:IsAiming()
 end
 

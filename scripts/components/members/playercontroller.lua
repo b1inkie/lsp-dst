@@ -68,7 +68,8 @@
 local playercontroller = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:IsControllerTargetLockEnabled()
 end
 
@@ -97,7 +98,8 @@ function playercontroller:OnRemoteDragWalking(x,z)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:EncodeControlMods()
 end
 
@@ -114,12 +116,14 @@ function playercontroller:ToggleController(val)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsMapControlsEnabled()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:TryAOETargeting()
 end
 
@@ -137,7 +141,8 @@ end
 
 ---
 ---@param control idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsControlPressed(control)
 end
 
@@ -148,7 +153,8 @@ function playercontroller:DoPredictWalking(dt)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetRemoteDirectVector()
 end
 
@@ -190,7 +196,8 @@ function playercontroller:AttachClassified(classified)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:IsControllerTargetingModifierDown()
 end
 
@@ -232,7 +239,8 @@ function playercontroller:RemoteActionButton(action,isreleased)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetControllerTarget()
 end
 
@@ -254,7 +262,8 @@ function playercontroller:OnRemoteActionButton(actioncode,target,isreleased,nofo
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetAOETargetingPos()
 end
 
@@ -264,7 +273,8 @@ function playercontroller:DoActionButton()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetCursorInventoryObject()
 end
 
@@ -310,7 +320,8 @@ end
 
 ---
 ---@param act idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function playercontroller:GetMapTarget(act)
 end
 
@@ -355,7 +366,10 @@ end
 ---
 ---@param absolute_x idk # 
 ---@param absolute_z idk # 
----author: 
+---@return ent|nil
+---@return number
+---@return number
+---author: Runar(Agent)
 function playercontroller:GetPlatformRelativePosition(absolute_x,absolute_z)
 end
 
@@ -365,7 +379,8 @@ function playercontroller:DoClientBusyOverrideLocomote()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:HasAOETargeting()
 end
 
@@ -421,7 +436,8 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetInspectButtonAction(target)
 end
 
@@ -432,12 +448,14 @@ function playercontroller:DoControllerAttackButton(target)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsDoingOrWorking()
 end
 
 ---
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function playercontroller:GetCombatTarget()
 end
 
@@ -453,7 +471,8 @@ function playercontroller:UpdateControllerTargets(dt)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsEnabled()
 end
 
@@ -494,7 +513,8 @@ function playercontroller:RemoteResurrectButton()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:CanLocomote()
 end
 
@@ -516,7 +536,8 @@ function playercontroller:DoDirectWalking(dt)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:GetRightMouseAction()
 end
 
@@ -527,14 +548,16 @@ function playercontroller:OnRemoteStopControl(control)
 end
 
 ---
----author: 
+---@return Vector3
+---author: Runar(Agent)
 function playercontroller:GetRemotePredictPosition()
 end
 
 ---
 ---@param recipe idk # 
 ---@param skin idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:StartBuildPlacementMode(recipe,skin)
 end
 
@@ -563,7 +586,8 @@ function playercontroller:RemoteBufferedAction(buffaction)
 end
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function playercontroller:GetHoverTextOverride()
 end
 
@@ -576,7 +600,9 @@ end
 ---
 ---@param position idk # 
 ---@param maptarget idk # 
----author: 
+---@return idk
+---@return idk
+---author: Runar(Agent)
 function playercontroller:UpdateActionsToMapActions(position,maptarget)
 end
 
@@ -603,19 +629,22 @@ function playercontroller:RemoteMakeRecipeAtPoint(recipe,pt,rot,skin)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsAOETargeting()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetActiveSpellBook()
 end
 
 ---
 ---@param position idk # 
 ---@param right idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetGroundUseSpecialAction(position,right)
 end
 
@@ -662,7 +691,8 @@ function playercontroller:RemoteControllerUseItemOnSceneFromInvTile(buffaction,i
 end
 
 ---
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function playercontroller:GetCombatRetarget()
 end
 
@@ -674,13 +704,15 @@ function playercontroller:RemoteUseItemFromInvTile(buffaction,item)
 end
 
 ---
----author: 
+---@return idk|nil
+---author: Runar(Agent)
 function playercontroller:GetResurrectButtonAction()
 end
 
 ---
 ---@param right idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function playercontroller:HasGroundUseSpecialAction(right)
 end
 
@@ -707,7 +739,8 @@ function playercontroller:RemotePausePrediction(frames)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:GetLeftMouseAction()
 end
 
@@ -727,19 +760,23 @@ function playercontroller:OnMapAction(actioncode,position,maptarget)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:GetCursorInventorySlotAndContainer()
 end
 
 ---
 ---@param position idk # 
 ---@param maptarget idk # 
----author: 
+---@return idk
+---@return idk
+---author: Runar(Agent)
 function playercontroller:GetMapActions(position,maptarget)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsControllerTargetLocked()
 end
 
@@ -776,7 +813,8 @@ function playercontroller:DoBoatSteering(dt)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:UsingMouse()
 end
 
@@ -805,7 +843,8 @@ end
 
 ---
 ---@param ... idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsAnyOfControlsPressed(...)
 end
 
@@ -866,24 +905,28 @@ function playercontroller:OnRemotePredictOverrideLocomote(dir)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetRemoteDragPosition()
 end
 
 ---
 ---@param act idk # 
 ---@param position idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function playercontroller:RemapMapAction(act,position)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsBusy()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:GetControllerAttackTarget()
 end
 
@@ -911,7 +954,8 @@ function playercontroller:DoAttackButton(retarget)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playercontroller:IsLocalOrRemoteHopping()
 end
 

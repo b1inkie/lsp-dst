@@ -7,6 +7,7 @@ local sewing = {}
 ---
 ---@param target idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sewing:DoSewing(target,doer)
 end

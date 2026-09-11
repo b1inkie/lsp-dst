@@ -8,12 +8,14 @@
 local playervoter = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervoter:HasVoted()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervoter:CanVote()
 end
 
@@ -30,12 +32,14 @@ function playervoter:SetSquelched(val)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervoter:IsSquelched()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playervoter:GetSelection()
 end
 

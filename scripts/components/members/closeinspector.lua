@@ -8,7 +8,8 @@ local closeinspector = {}
 ---
 ---@param doer idk # 
 ---@param pt idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function closeinspector:CloseInspectPoint(doer,pt)
 end
 
@@ -21,7 +22,8 @@ end
 ---
 ---@param doer idk # 
 ---@param target idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function closeinspector:CloseInspectTarget(doer,target)
 end
 

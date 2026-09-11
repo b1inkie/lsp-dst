@@ -10,7 +10,8 @@ local playertargetindicator = {}
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playertargetindicator:ShouldRemoveIndicator(target)
 end
 
@@ -21,6 +22,7 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function playertargetindicator:ShouldShowIndicator(target)
 end

@@ -17,7 +17,8 @@
 local rampingspawner = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rampingspawner:GetSpawnRot()
 end
 
@@ -28,12 +29,14 @@ function rampingspawner:StopTrackingSpawn(spawn)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function rampingspawner:GetWaveSize()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rampingspawner:GetSpawnPos()
 end
 
@@ -43,7 +46,8 @@ function rampingspawner:DoWave()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rampingspawner:IsActive()
 end
 
@@ -63,7 +67,8 @@ function rampingspawner:SpawnEntity()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rampingspawner:GetCurrentWave()
 end
 

@@ -14,7 +14,8 @@ end
 
 ---
 ---@param uid idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function walkableplatformmanager:GetPlatformWithUID(uid)
 end
 
@@ -31,7 +32,8 @@ function walkableplatformmanager:UnregisterPlatform(platform)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function walkableplatformmanager:GetNewUID()
 end
 

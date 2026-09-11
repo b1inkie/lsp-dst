@@ -10,7 +10,8 @@
 local walkableplatform = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function walkableplatform:GetUID()
 end
 
@@ -42,7 +43,8 @@ function walkableplatform:StopUpdating()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function walkableplatform:GetEntitiesOnPlatform()
 end
 
@@ -74,7 +76,8 @@ function walkableplatform:DespawnPlayerCollision()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function walkableplatform:GetPlayersOnPlatform()
 end
 
@@ -87,6 +90,8 @@ end
 ---@param embarker_x idk # 
 ---@param embarker_z idk # 
 ---@param embarker_min_dist idk # 
----author: 
+---@return number
+---@return number
+---author: Runar(Agent)
 function walkableplatform:GetEmbarkPosition(embarker_x,embarker_z,embarker_min_dist)
 end

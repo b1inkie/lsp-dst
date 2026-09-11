@@ -11,6 +11,8 @@ local searchable = {}
 
 ---
 ---@param searcher idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function searchable:Search(searcher)
 end

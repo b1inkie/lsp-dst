@@ -17,7 +17,8 @@ end
 ---@param tool idk # 
 ---@param numworks idk # 
 ---@param recoil idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function workmultiplier:ResolveSpecialWorkAmount(action,target,tool,numworks,recoil)
 end
 
@@ -31,7 +32,8 @@ end
 
 ---
 ---@param action idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function workmultiplier:GetMultiplier(action)
 end
 

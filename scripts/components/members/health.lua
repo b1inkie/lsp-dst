@@ -41,9 +41,10 @@ local health = {}
 function health:SetAbsorptionAmount(amount)
 end
 
+---强制刷新一次 HUD(0 增量)
 ---
 ---@param overtime idk #
----author:
+---author: 
 function health:ForceUpdateHUD(overtime)
 end
 
@@ -120,8 +121,9 @@ end
 function health:IsInvincible()
 end
 
+---停止再生
 ---
----author:
+---author: 
 function health:OnRemoveFromEntity()
 end
 
@@ -182,9 +184,10 @@ end
 function health:StopRegen()
 end
 
+---把健康数据转移到新实体
 ---
 ---@param newinst idk #
----author:
+---author: 
 function health:TransferComponent(newinst)
 end
 
@@ -239,6 +242,6 @@ end
 ---可以fadeout(消散)
 ---@return boolean
 ---@nodiscard
----author: lan
-function health:CanFadeOut(val)
+---author: lan, Runar(Agent)
+function health:CanFadeOut()
 end

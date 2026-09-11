@@ -21,7 +21,8 @@ end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function petleash:GetNumPetsForPrefab(prefab)
 end
 
@@ -33,7 +34,8 @@ end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function petleash:GetMaxPetsForPrefab(prefab)
 end
 
@@ -45,7 +47,8 @@ end
 
 ---
 ---@param pet idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function petleash:IsPet(pet)
 end
 
@@ -55,7 +58,8 @@ function petleash:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function petleash:GetNumPets()
 end
 
@@ -66,13 +70,15 @@ function petleash:DespawnPet(pet)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function petleash:IsFull()
 end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function petleash:IsFullForPrefab(prefab)
 end
 
@@ -83,18 +89,21 @@ function petleash:SetOnDespawnFn(fn)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function petleash:GetPets()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function petleash:GetMaxPets()
 end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function petleash:IsPetAPrefabLimitedOne(prefab)
 end
 
@@ -111,7 +120,8 @@ end
 
 ---
 ---@param tag idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function petleash:HasPetWithTag(tag)
 end
 
@@ -134,12 +144,14 @@ end
 ---@param z idk # 
 ---@param prefaboverride idk # 
 ---@param skin idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function petleash:SpawnPetAt(x,y,z,prefaboverride,skin)
 end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return ent[]|nil
+---author: Runar(Agent)
 function petleash:GetPetsWithPrefab(prefab)
 end

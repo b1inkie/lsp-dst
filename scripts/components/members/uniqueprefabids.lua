@@ -6,6 +6,7 @@ local uniqueprefabids = {}
 
 ---
 ---@param prefabname idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function uniqueprefabids:GetNextID(prefabname)
 end

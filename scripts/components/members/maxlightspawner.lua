@@ -9,12 +9,15 @@
 ---@field lightname idk
 local maxlightspawner = {}
 
+---在位置生成一盏麦斯威尔灯
 ---
----@param location idk # 
----author: 
+---@param location vector# 
+---@return ent
+---author: Runar(Agent)
 function maxlightspawner:SpawnLight(location)
 end
 
+---生成满额度的灯(未满时)
 ---
 ---author: 
 function maxlightspawner:SpawnAllLights()

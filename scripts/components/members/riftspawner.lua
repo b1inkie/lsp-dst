@@ -18,30 +18,35 @@ function riftspawner:EnableXRifts(src)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function riftspawner:GetShadowRiftsEnabled()
 end
 
 ---
 ---@param x idk # 
 ---@param z idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function riftspawner:IsPointNearPreviousSpawn(x,z)
 end
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function riftspawner:GetDebugRiftString()
 end
 
 ---
 ---@param forced_pos idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function riftspawner:TryToSpawnRift(forced_pos)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function riftspawner:GetEnabled()
 end
 
@@ -71,7 +76,8 @@ function riftspawner:TryToStartTimer(src)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function riftspawner:GetLunarRiftsEnabled()
 end
 
@@ -87,7 +93,8 @@ function riftspawner:GetXRiftsEnabled()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function riftspawner:IsLunarPortalActive()
 end
 
@@ -98,12 +105,14 @@ function riftspawner:OnRiftRemoved(rift)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function riftspawner:IsShadowPortalActive()
 end
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function riftspawner:GetNextRiftPrefab()
 end
 
@@ -128,7 +137,8 @@ end
 
 ---
 ---@param prefab idk # 
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function riftspawner:GetRiftsOfPrefab(prefab)
 end
 
@@ -138,7 +148,8 @@ function riftspawner:OnRiftTimerDone()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function riftspawner:GetRifts()
 end
 
@@ -164,6 +175,7 @@ end
 
 ---
 ---@param forced_pos idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function riftspawner:SpawnRift(forced_pos)
 end

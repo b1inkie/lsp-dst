@@ -21,7 +21,8 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function walkingplank:AbandonShip(doer)
 end
 
@@ -32,6 +33,7 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function walkingplank:MountPlank(doer)
 end

@@ -10,7 +10,8 @@ function wax:SetIsSpray()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function wax:GetIsSpray()
 end
 

@@ -11,7 +11,8 @@ function playerlightningtarget:DoStrike()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function playerlightningtarget:GetHitChance()
 end
 

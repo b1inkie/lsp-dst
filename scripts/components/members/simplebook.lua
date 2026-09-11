@@ -11,6 +11,7 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function simplebook:Read(doer)
 end

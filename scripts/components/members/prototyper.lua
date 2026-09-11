@@ -35,6 +35,7 @@ function prototyper:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function prototyper:GetTechTrees()
 end

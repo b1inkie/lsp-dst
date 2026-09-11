@@ -14,7 +14,8 @@
 local teamattacker = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamattacker:SearchForTeam()
 end
 
@@ -29,7 +30,8 @@ function teamattacker:LeaveTeam()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function teamattacker:GetOrders()
 end
 
@@ -39,7 +41,8 @@ function teamattacker:OnEntityWake()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamattacker:ShouldGoHome()
 end
 

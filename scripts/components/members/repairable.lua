@@ -29,7 +29,8 @@ function repairable:SetFiniteUsesRepairable(repairable)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function repairable:NeedsRepairs()
 end
 
@@ -41,6 +42,8 @@ end
 ---
 ---@param doer idk # 
 ---@param repair_item idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function repairable:Repair(doer,repair_item)
 end

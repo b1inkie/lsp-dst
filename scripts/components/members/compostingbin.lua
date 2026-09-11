@@ -20,23 +20,27 @@
 local compostingbin = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function compostingbin:IsFull()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function compostingbin:IsComposting()
 end
 
 ---
 ---@param item idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function compostingbin:AddCompostable(item)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function compostingbin:GetMaterialTotal()
 end
 

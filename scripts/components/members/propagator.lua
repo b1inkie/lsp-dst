@@ -61,7 +61,8 @@ function propagator:AddHeat(amount,source)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function propagator:GetHeatResistance()
 end
 

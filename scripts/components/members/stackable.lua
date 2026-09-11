@@ -7,12 +7,14 @@
 local stackable = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:IsStack()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function stackable:RoomLeft()
 end
 
@@ -24,7 +26,8 @@ function stackable:StackSize()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:IsOverStacked()
 end
 
@@ -37,12 +40,14 @@ end
 ---
 ---@param item idk # 
 ---@param source_pos idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:Put(item,source_pos)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:IsFull()
 end
 

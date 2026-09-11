@@ -12,6 +12,8 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function teacher:Teach(target)
 end

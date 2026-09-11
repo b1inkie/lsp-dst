@@ -9,7 +9,8 @@ local thief = {}
 ---@param victim idk # 
 ---@param itemtosteal idk # 
 ---@param attack idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function thief:StealItem(victim,itemtosteal,attack)
 end
 

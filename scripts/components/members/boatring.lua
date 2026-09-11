@@ -46,23 +46,27 @@ function boatring:RemoveBumper(bumper)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatring:GetNumSegments()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatring:GetRadius()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function boatring:GetRotationDirection()
 end
 
 ---
 ---@param x idk # 
 ---@param z idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function boatring:GetBumperAtPoint(x,z)
 end

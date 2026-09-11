@@ -4,8 +4,10 @@
 ---@field onfertlizedfn idk
 local fertilizable = {}
 
+---施用到该实体: 走 onfertlizedfn 回调(有则返回其结果)
 ---
 ---@param fertilizer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function fertilizable:Fertilize(fertilizer)
 end

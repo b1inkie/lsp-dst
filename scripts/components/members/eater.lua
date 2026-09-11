@@ -107,7 +107,8 @@ end
 ---实体吃掉指定的食物
 ---@param food table # 食物对象
 ---@param feeder table # 喂食者对象
----author: 764不是西红柿
+---@return boolean
+---author: 764不是西红柿, Runar(Agent)
 function eater:Eat(food,feeder)
 end
 
@@ -119,7 +120,8 @@ end
 
 ---应用食物的效果到实体
 ---@param food table # 食物对象
----author: 764不是西红柿
+---@return idk
+---author: 764不是西红柿, Runar(Agent)
 function eater:DoFoodEffects(food)
 end
 

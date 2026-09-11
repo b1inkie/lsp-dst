@@ -8,6 +8,7 @@ local upgrader = {}
 ---
 ---@param target idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function upgrader:CanUpgrade(target,doer)
 end

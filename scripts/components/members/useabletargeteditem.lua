@@ -9,14 +9,17 @@
 local useabletargeteditem = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function useabletargeteditem:CanInteract()
 end
 
 ---
 ---@param target idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function useabletargeteditem:StartUsingItem(target,doer)
 end
 

@@ -14,7 +14,8 @@ function stuckdetection:SetTimeToStuck(t)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stuckdetection:IsStuck()
 end
 

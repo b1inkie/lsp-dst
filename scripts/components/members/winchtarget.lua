@@ -12,7 +12,8 @@ function winchtarget:SetSalvageFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function winchtarget:Salvage()
 end
 
@@ -22,6 +23,7 @@ function winchtarget:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function winchtarget:GetSunkenObject()
 end

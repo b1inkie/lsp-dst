@@ -15,7 +15,8 @@
 local prophider = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function prophider:GenerateHideTime()
 end
 

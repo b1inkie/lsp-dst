@@ -19,7 +19,8 @@ end
 ---
 ---@param otherWorld idk # 
 ---@param otherPortal idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldmigrator:IsDestinationForPortal(otherWorld,otherPortal)
 end
 
@@ -29,12 +30,14 @@ function worldmigrator:ValidateAndPushEvents()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldmigrator:IsLinked()
 end
 
 ---
----author: 
+---@return string
+---author: Runar(Agent)
 function worldmigrator:GetStatusString()
 end
 
@@ -45,7 +48,8 @@ function worldmigrator:SetID(id)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldmigrator:IsFull()
 end
 
@@ -57,7 +61,9 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function worldmigrator:Activate(doer)
 end
 
@@ -74,16 +80,19 @@ function worldmigrator:ActivatedByOther()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldmigrator:IsAvailableForLinking()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldmigrator:IsActive()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function worldmigrator:IsBound()
 end

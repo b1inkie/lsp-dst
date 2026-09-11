@@ -43,7 +43,8 @@ end
 
 ---
 ---@param pt idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function roseinspectableuser:TryToDoRoseInspectionOnPoint(pt)
 end
 
@@ -55,7 +56,9 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---@return string
+---author: Runar(Agent)
 function roseinspectableuser:TryToDoRoseInspectionOnTarget(target)
 end
 
@@ -66,12 +69,15 @@ function roseinspectableuser:SetRoseInpectionOnPoint(point)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function roseinspectableuser:IsInCooldown()
 end
 
 ---
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function roseinspectableuser:DoRoseInspectionOnPoint()
 end
 

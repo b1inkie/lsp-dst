@@ -6,7 +6,8 @@ local worldsettings = {}
 
 ---
 ---@param setting idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function worldsettings:GetSetting(setting)
 end
 

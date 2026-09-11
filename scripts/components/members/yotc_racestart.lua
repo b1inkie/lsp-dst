@@ -11,7 +11,8 @@ function yotc_racestart:EndRace()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotc_racestart:CanInteract()
 end
 

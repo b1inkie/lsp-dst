@@ -15,7 +15,8 @@
 local rideable = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rideable:ShouldSave()
 end
 
@@ -26,18 +27,21 @@ function rideable:SetCustomRiderTest(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function rideable:OnSaveDomesticatable()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function rideable:IsSaddled()
 end
 
 ---
 ---@param potential_rider idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function rideable:TestRider(potential_rider)
 end
 
@@ -60,7 +64,8 @@ function rideable:SetSaddle(doer,newsaddle)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function rideable:IsBeingRidden()
 end
 
@@ -71,7 +76,8 @@ function rideable:SetRider(rider)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function rideable:TestObedience()
 end
 
@@ -101,11 +107,13 @@ function rideable:SetSaddleable(saddleable)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rideable:GetRider()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function rideable:TimeSinceLastRide()
 end

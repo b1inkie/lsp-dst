@@ -52,7 +52,8 @@ function perishable:Perish()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function perishable:GetLocalMultiplier()
 end
 
@@ -63,17 +64,20 @@ function perishable:ReducePercent(amount)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function perishable:IsStale()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function perishable:GetPercent()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function perishable:IsPerishing()
 end
 
@@ -96,7 +100,8 @@ function perishable:SetOnPerishFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function perishable:IsSpoiled()
 end
 
@@ -108,6 +113,7 @@ function perishable:Dilute(number,timeleft)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function perishable:IsFresh()
 end

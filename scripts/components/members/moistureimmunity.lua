@@ -5,6 +5,7 @@
 ---@field _onremovesource idk
 local moistureimmunity = {}
 
+---移除某来源的湿气免疫
 ---
 ---@param src idk # 
 ---author: 
@@ -17,6 +18,7 @@ end
 function moistureimmunity:RemoveSource(src)
 end
 
+---实体移除时清空全部免疫来源
 ---
 ---author: 
 function moistureimmunity:OnRemoveFromEntity()

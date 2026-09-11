@@ -73,7 +73,8 @@ function childspawner:AddEmergencyChildrenInside(count)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:CanSpawn()
 end
 
@@ -84,7 +85,8 @@ function childspawner:SetOnAddChildFn(fn)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function childspawner:GetTimeToNextSpawn()
 end
 
@@ -95,7 +97,8 @@ function childspawner:SetVacateFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:IsFull()
 end
 
@@ -144,18 +147,21 @@ function childspawner:OnChildKilled(child)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:CanSpawnOffscreenOrAwake()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:CanEmergencySpawn()
 end
 
 ---
 ---@param child idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:GoHome(child)
 end
 
@@ -174,7 +180,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function childspawner:CountChildrenOutside(fn)
 end
 
@@ -184,7 +191,8 @@ function childspawner:DoQueuedSpawn()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:IsEmergencyFull()
 end
 
@@ -206,7 +214,8 @@ function childspawner:TakeOwnership(child)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function childspawner:NumEmergencyChildren()
 end
 
@@ -256,7 +265,8 @@ function childspawner:SetMaxChildren(max)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function childspawner:GetTimeToNextRegen()
 end
 
@@ -264,12 +274,14 @@ end
 ---@param target idk # 
 ---@param prefab idk # 
 ---@param radius idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function childspawner:SpawnChild(target,prefab,radius)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function childspawner:NumChildren()
 end
 
@@ -290,12 +302,14 @@ function childspawner:DoTakeOwnership(child)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function childspawner:ShouldUpdate()
 end
 
 ---
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function childspawner:TrySpawnEmergencyChild()
 end
 

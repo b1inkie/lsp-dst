@@ -20,7 +20,8 @@ end
 ---
 ---@param obj idk # 
 ---@param upgrade_performer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function upgradeable:Upgrade(obj,upgrade_performer)
 end
 
@@ -31,7 +32,8 @@ function upgradeable:SetCanUpgradeFn(fn)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function upgradeable:GetStage()
 end
 
@@ -42,11 +44,14 @@ function upgradeable:SetOnUpgradeFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function upgradeable:CanUpgrade()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function upgradeable:AdvanceStage()
 end

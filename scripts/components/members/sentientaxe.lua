@@ -66,7 +66,8 @@ function sentientaxe:Say(list,sound_override,delay)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sentientaxe:ShouldMakeConversation()
 end
 

@@ -72,7 +72,8 @@ function yotc_racecompetitor:OnAllRacersFinished(prize_table)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotc_racecompetitor:GetRaceDistance()
 end
 
@@ -94,17 +95,20 @@ function yotc_racecompetitor:SetRaceOverFn(race_over_fn)
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function yotc_racecompetitor:CollectPrize()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotc_racecompetitor:IsExhausted()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotc_racecompetitor:IsStartingLate()
 end
 

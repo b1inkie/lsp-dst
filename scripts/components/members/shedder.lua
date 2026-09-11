@@ -12,7 +12,8 @@ function shedder:StopShedding()
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function shedder:DoSingleShed()
 end
 

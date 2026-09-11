@@ -22,7 +22,8 @@ function skinner_beefalo:reloadclothing(clothing)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function skinner_beefalo:GetClothing()
 end
 

@@ -24,12 +24,14 @@ local teamleader = {}
 
 ---
 ---@param member idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:ValidMember(member)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:CanAttack()
 end
 
@@ -39,7 +41,8 @@ function teamleader:DisbandTeam()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function teamleader:GetTeamSize()
 end
 
@@ -49,7 +52,8 @@ function teamleader:TeamSizeControl()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:IsTeamFull()
 end
 
@@ -78,7 +82,8 @@ function teamleader:NewTeammate(member)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:NumberToAttack()
 end
 
@@ -96,7 +101,8 @@ end
 
 ---
 ---@param state idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:AllInState(state)
 end
 
@@ -107,7 +113,8 @@ end
 
 ---
 ---@param dt idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function teamleader:GetTheta(dt)
 end
 
@@ -132,7 +139,8 @@ function teamleader:SetNewThreat(threat)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:IsTeamEmpty()
 end
 

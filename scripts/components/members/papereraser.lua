@@ -13,6 +13,7 @@ end
 ---
 ---@param paper idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function papereraser:DoErase(paper,doer)
 end

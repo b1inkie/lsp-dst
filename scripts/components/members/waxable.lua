@@ -6,7 +6,8 @@
 local waxable = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function waxable:NeedsSpray()
 end
 
@@ -25,7 +26,9 @@ end
 ---
 ---@param doer idk # 
 ---@param waxitem idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function waxable:Wax(doer,waxitem)
 end
 

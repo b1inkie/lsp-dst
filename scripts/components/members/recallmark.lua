@@ -8,12 +8,16 @@
 local recallmark = {}
 
 ---
----author: 
+---@return idk|nil
+---@return idk
+---@return idk
+---author: Runar(Agent)
 function recallmark:GetMarkedPosition()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function recallmark:IsMarked()
 end
 
@@ -24,7 +28,8 @@ function recallmark:Copy(rhs)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function recallmark:IsMarkedForSameShard()
 end
 
@@ -33,6 +38,8 @@ end
 ---@param recall_y idk # 
 ---@param recall_z idk # 
 ---@param recall_worldid idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function recallmark:MarkPosition(recall_x,recall_y,recall_z,recall_worldid)
 end

@@ -39,7 +39,8 @@ end
 ---<br>看名称应该是未改版的伍迪专属？不过现在已经无木头值了
 ---@param eater idk #
 ---@deprecated
----author:nullptr
+---@return number
+---author: nullptr, Runar(Agent)
 function edible:GetWoodiness(eater)
 end
 

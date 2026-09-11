@@ -34,6 +34,7 @@ end
 ---@param curse string # 要移除的诅咒类型（目前原版只有"MONKEY"，即猴子诅咒）
 ---@param numofitems number # 要移除的诅咒物品数量
 ---@param dropitems boolean # 标志位，是否生成掉落物。如死亡时此参为true，给猴子女王香蕉时此参为false
----author:nullptr
+---@return boolean
+---author: nullptr, Runar(Agent)
 function cursable:RemoveCurse(curse,numofitems,dropitems)
 end

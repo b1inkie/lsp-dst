@@ -20,6 +20,8 @@ end
 ---
 ---@param giver idk # 
 ---@param item idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function moontrader:AcceptOffering(giver,item)
 end

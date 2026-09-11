@@ -8,6 +8,7 @@ local ruinsshadelingspawner = {}
 
 ---
 ---@param chair idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function ruinsshadelingspawner:TrySpawnShadeling(chair)
 end

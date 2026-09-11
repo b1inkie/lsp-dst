@@ -55,7 +55,8 @@ local combat = {}
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:IsRecentTarget(target)
 end
 
@@ -69,7 +70,8 @@ end
 ---
 ---@param target idk # 
 ---@param weapon idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:CanExtinguishTarget(target,weapon)
 end
 
@@ -103,7 +105,8 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:TryAttack(target)
 end
 
@@ -116,14 +119,16 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:TargetHasFriendlyLeader(target)
 end
 
 ---
 ---@param target idk # 
 ---@param weapon idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:CanLightTarget(target,weapon)
 end
 
@@ -155,7 +160,8 @@ function combat:StartAttack()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:HasTarget()
 end
 
@@ -167,7 +173,8 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:SuggestTarget(target)
 end
 
@@ -188,7 +195,8 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function combat:CalcAttackRangeSq(target)
 end
 
@@ -222,7 +230,8 @@ function combat:GetGiveUpString(target)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:InCooldown()
 end
 
@@ -233,7 +242,8 @@ function combat:SetPlayerStunlock(stunlock)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:GetCooldown()
 end
 
@@ -258,7 +268,9 @@ end
 ---@param target idk # 
 ---@param weapon idk # 
 ---@param multiplier idk # 
----author: 
+---@return number
+---@return idk
+---author: Runar(Agent)
 function combat:CalcDamage(target,weapon,multiplier)
 end
 
@@ -283,13 +295,15 @@ function combat:EnableAreaDamage(enable)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:GetAttackRange()
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function combat:CalcHitRangeSq(target)
 end
 
@@ -300,7 +314,8 @@ end
 ---@param validfn idk # 
 ---@param stimuli idk # 
 ---@param excludetags idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function combat:DoAreaAttack(target,range,weapon,validfn,stimuli,excludetags)
 end
 
@@ -319,7 +334,9 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function combat:CanAttack(target)
 end
 
@@ -336,7 +353,8 @@ end
 
 ---
 ---@param attacker idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:CanBeAttacked(attacker)
 end
 
@@ -361,23 +379,28 @@ end
 ---@param stimuli idk # 
 ---@param reflect_list idk # 
 ---@param spdmg idk # 
----author: 
+---@return number
+---@return idk
+---author: Runar(Agent)
 function combat:CalcReflectedDamage(targ,dmg,weapon,stimuli,reflect_list,spdmg)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function combat:GetHitRange()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function combat:GetLastAttackedTime()
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:TargetIs(target)
 end
 
@@ -387,7 +410,8 @@ function combat:OnEntityWake()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:GetWeapon()
 end
 
@@ -399,7 +423,10 @@ end
 ---
 ---@param reached_dest idk # 
 ---@param target idk # 
----author: 
+---@return boolean
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function combat:LocomotorCanAttack(reached_dest,target)
 end
 
@@ -441,12 +468,14 @@ function combat:DoAttack(targ,weapon,projectile,stimuli,instancemult,instrangeov
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:ForceAttack()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:ValidateTarget()
 end
 
@@ -459,7 +488,8 @@ end
 ---
 ---@param target idk # 
 ---@param ignore_forbidden idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function combat:ShouldAggro(target,ignore_forbidden)
 end
 

@@ -9,11 +9,13 @@
 ---@field enabled idk
 local firebug = {}
 
+---关闭火灾虫(停止更新)
 ---
 ---author: 
 function firebug:Disable()
 end
 
+---开启火灾虫(进入更新周期)
 ---
 ---@param enable idk # 
 ---author: 
