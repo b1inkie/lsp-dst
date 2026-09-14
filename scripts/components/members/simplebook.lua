@@ -5,7 +5,8 @@
 local simplebook = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function simplebook:OnRemoveFromEntity()
 end
 
@@ -14,4 +15,4 @@ end
 ---@return boolean
 ---author: Runar(Agent)
 function simplebook:Read(doer)
-end
+end

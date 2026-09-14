@@ -32,18 +32,21 @@ end
 
 ---将共鸣关系从当前玩家转移到另一个玩家（仅主机端使用）
 ---@param newinst ent # 新的玩家实体
+---@return nil
 ---author: Runar
 function attuner:TransferComponent(newinst)
 end
 
 ---注册新的共鸣来源（客机端由 attunable_classified 代理触发，会推送 gotnewattunement 事件）
 ---@param proxy ent # attunable_classified 代理实体
+---@return nil
 ---author: Runar
 function attuner:RegisterAttunedSource(proxy)
 end
 
 ---注销共鸣来源（会推送 attunementlost 事件）
 ---@param proxy ent # attunable_classified 代理实体
+---@return nil
 ---author: Runar
 function attuner:UnregisterAttunedSource(proxy)
 end

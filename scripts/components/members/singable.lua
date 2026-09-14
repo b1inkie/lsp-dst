@@ -6,7 +6,8 @@ local singable = {}
 
 ---
 ---@param onsingfn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function singable:SetOnSing(onsingfn)
 end
 
@@ -14,4 +15,4 @@ end
 ---@param singer idk # 
 ---author: 
 function singable:Sing(singer)
-end
+end

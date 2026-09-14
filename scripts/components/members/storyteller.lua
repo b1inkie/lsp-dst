@@ -19,29 +19,34 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:SetOnStoryBeginFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:SetOnStoryOverFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:SetStoryToTellFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:OnStoryTick()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:OnDone()
 end
 
@@ -54,12 +59,14 @@ function storyteller:TellStory(storyprop)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:OnRemoveFromEntity()
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:AbortStory(reason)
-end
+end

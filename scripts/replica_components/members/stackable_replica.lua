@@ -24,6 +24,13 @@ end
 function replica_stackable:IsOverStacked()
 end
 
+---判断当前物品能否与目标物品叠加（检查 prefab、皮肤以及自定义叠加判定函数）
+---@param item ent # 目标物品实体
+---@return boolean # 是否可叠加
+---@nodiscard
+---author: Runar(Agent)
+function replica_stackable:CanStackWith(item) end
+
 ---
 ---author: 
 function replica_stackable:OriginalMaxSize()
@@ -41,12 +48,22 @@ end
 
 ---
 ---@param stacksize idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_stackable:SetStackSize(stacksize)
 end
 
+---客户端设置预览堆叠数量（按上下文键缓存，超时后自动清除；仅影响 UI 预览显示，不改变真实数量）
+---@param stacksize number|nil # 预览的堆叠数量
+---@param context string # 预览上下文键（对应 inst.stackable_preview_context）
+---@param timeout number|nil # 超时时间（秒），默认 2
+---@return nil
+---author: Runar(Agent)
+function replica_stackable:SetPreviewStackSize(stacksize, context, timeout) end
+
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_stackable:ClearPreviewStackSize()
 end
 
@@ -57,7 +74,8 @@ end
 
 ---
 ---@param maxsize idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_stackable:SetMaxSize(maxsize)
 end
 
@@ -68,6 +86,7 @@ end
 
 ---
 ---@param ignoremaxsize idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_stackable:SetIgnoreMaxSize(ignoremaxsize)
-end
+end

@@ -15,47 +15,56 @@
 local walkableplatformplayer = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StartBoatMusicTest()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StartBoatCameraZooms()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StopBoatCamera()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StopBoatMusicTest()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StopBoatCameraZooms()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:TestForPlatform()
 end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:GetOnPlatform(platform)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:GetOffPlatform()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StartBoatCamera()
-end
+end

@@ -10,25 +10,29 @@ local temperatureoverrider = {}
 
 ---
 ---@param radius idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:SetRadius(radius)
 end
 
 ---
 ---@param new idk # 
 ---@param old idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:SetActiveRadius_Internal(new,old)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:Disable()
 end
 
 ---
 ---@param temperature idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:SetTemperature(temperature)
 end
 
@@ -39,12 +43,14 @@ function temperatureoverrider:GetActiveRadius()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:Enable()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:OnRemoveFromEntity()
 end
 
@@ -52,4 +58,4 @@ end
 ---@return number
 ---author: Runar(Agent)
 function temperatureoverrider:GetTemperature()
-end
+end

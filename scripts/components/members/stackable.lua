@@ -31,9 +31,17 @@ end
 function stackable:IsOverStacked()
 end
 
+---判断指定物品能否与当前实体堆叠（要求 prefab 与皮肤名一致，且实体设置的 stackable_CanStackWithFn 校验回调（如有）返回通过）
+---@param item ent # 待比较的另一件物品实体
+---@return boolean # 是否可以堆叠
+---@nodiscard
+---author: Runar(Agent)
+function stackable:CanStackWith(item) end
+
 ---
 ---@param sz idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stackable:SetStackSize(sz)
 end
 
@@ -53,7 +61,8 @@ end
 
 ---
 ---@param ignoremaxsize idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stackable:SetIgnoreMaxSize(ignoremaxsize)
 end
 
@@ -66,6 +75,7 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stackable:SetOnDeStack(fn)
 end

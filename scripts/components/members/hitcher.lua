@@ -15,20 +15,23 @@ end
 
 ---设置拴绳是否锁定
 ---
----@param setting idk # 
----author: 
+---@param setting boolean # 是否锁定(锁定时带 hitcher_locked 标签)
+---@return nil
+---author: Runar(Agent)
 function hitcher:Lock(setting)
 end
 
 ---把实体拴过来(标记不可被拴)
 ---
----@param target idk # 
----author: 
+---@param target ent # 要拴住的目标实体(带 hitchable 组件)
+---@return nil
+---author: Runar(Agent)
 function hitcher:SetHitched(target)
 end
 
 ---解除拴绳(恢复可被拴)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hitcher:Unhitch()
 end

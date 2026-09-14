@@ -8,19 +8,22 @@ local boatdrifter = {}
 
 ---立即启动船体物理引擎, 并取消延迟停止任务
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:StartBoatPhysics()
 end
 
 ---实体唤醒时启动船体物理引擎
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:OnEntityWake()
 end
 
 ---实体睡眠且未移动时停止船体物理引擎
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:OnEntitySleep()
 end
 
@@ -33,7 +36,8 @@ end
 
 ---停止物理唤醒检测, 船体可进入睡眠
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:StopWakeTests()
 end
 
@@ -46,36 +50,42 @@ end
 
 ---开始移动: 漂移中则启动物理唤醒检测, 并启动船体物理
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:OnStartMoving()
 end
 
 ---停止移动: 船已睡眠则停止物理引擎, 并停止唤醒检测
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:OnStopMoving()
 end
 
 ---进入漂移状态, 移动中则启动物理唤醒检测
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:OnStartDrifting()
 end
 
 ---退出漂移状态并停止物理唤醒检测
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:OnStopDrifting()
 end
 
 ---延迟 1 秒后停止船体物理引擎(留给惯性滑行)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:StopBoatPhysics()
 end
 
 ---启动物理唤醒检测, 保持船体不睡眠
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatdrifter:StartWakeTests()
 end

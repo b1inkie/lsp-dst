@@ -6,7 +6,8 @@ local boatpatch = {}
 
 ---移除实体时的清理(船板补丁无额外资源)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatpatch:OnRemoveFromEntity()
 end
 
@@ -15,4 +16,4 @@ end
 ---@return idk
 ---author: Runar(Agent)
 function boatpatch:GetPatchType()
-end
+end

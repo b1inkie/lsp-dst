@@ -15,7 +15,8 @@ end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:DeactivateSkill_Server(skill)
 end
 
@@ -48,7 +49,8 @@ end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:ActivateSkill_Client(skill)
 end
 
@@ -60,7 +62,8 @@ end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:DeactivateSkill_Client(skill)
 end
 
@@ -74,7 +77,8 @@ end
 ---
 ---@param amount idk # 
 ---@param total idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:AddSkillXP_Client(amount,total)
 end
 
@@ -82,50 +86,58 @@ end
 ---@param amount idk # 
 ---@param prefab idk # 
 ---@param fromrpc idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:AddSkillXP(amount,prefab,fromrpc)
 end
 
 ---
 ---@param skillselection idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SetPlayerSkillSelection(skillselection)
 end
 
 ---
 ---@param amount idk # 
 ---@param total idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:AddSkillXP_Server(amount,total)
 end
 
 ---
 ---@param inst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SendFromSkillTreeBlob(inst)
 end
 
 ---
 ---@param skip idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SetSkipValidation(skip)
 end
 
 ---
 ---@param silent idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SetSilent(silent)
 end
 
 ---
 ---@param newinst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:TransferComponent(newinst)
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:ActivateSkill_Server(skill)
 end
 
@@ -164,4 +176,4 @@ end
 ---author: 
 function skilltreeupdater:ActivateSkill(skill,prefab,fromrpc)
 end
-
+

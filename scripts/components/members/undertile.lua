@@ -14,11 +14,13 @@ function undertile:GetTileUnderneath(x, y) end
 ---@param x number
 ---@param y number
 ---@param tile integer # WORLD_TILE
+---@return nil
 ---author: Runar(Agent)
 function undertile:SetTileUnderneath(x, y, tile) end
 
 ---清除指定地图坐标下方的地皮瓦
 ---@param x number
 ---@param y number
+---@return nil
 ---author: Runar(Agent)
 function undertile:ClearTileUnderneath(x, y) end

@@ -15,14 +15,21 @@ local tributable = {}
 function tributable:HasPendingReward()
 end
 
+---发放奖励后调用：清零当前贡品值、累计已发奖励次数、取消衰减任务并触发 ongivenrewardfn 回调
+---@return nil
+---author: Runar(Agent)
+function tributable:OnGivenReward() end
+
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function tributable:OnRefuse()
 end
 
 ---
 ---@param value idk # 
 ---@param tributer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tributable:OnAccept(value,tributer)
 end

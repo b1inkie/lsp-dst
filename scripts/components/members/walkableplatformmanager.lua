@@ -8,7 +8,8 @@ local walkableplatformmanager = {}
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:RemovePlatform(platform)
 end
 
@@ -21,13 +22,15 @@ end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:PostUpdate(dt)
 end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:UnregisterPlatform(platform)
 end
 
@@ -39,12 +42,14 @@ end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:AddPlatform(platform)
 end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:RegisterPlatform(platform)
-end
+end

@@ -6,7 +6,8 @@ local entitytracker = {}
 
 ---移除对传入的实体名称对应实体 onremove 事件的监听并将传入的实体名称键对应的值设为 nil
 ---@param name string # 需要移除的实体名称
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function entitytracker:ForgetEntity(name)
 end
 
@@ -19,7 +20,8 @@ function entitytracker:GetEntity(name)
 end
 
 ---遍历实体目前拥有的实体表并将所有监听全部删除
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function entitytracker:OnRemoveFromEntity()
 end
 
@@ -27,6 +29,7 @@ end
 ---<br>当实体触发了 onremove 事件后会触发在该函数内部定义的局部函数 onremove（即将实体表内该实体名称键对应的值设为 nil）
 ---@param name string # 需要添加的实体名称（键）
 ---@param inst ent # 需要添加的实体（值）
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function entitytracker:TrackEntity(name,inst)
-end
+end

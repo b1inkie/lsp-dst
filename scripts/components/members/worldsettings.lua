@@ -14,6 +14,7 @@ end
 ---
 ---@param setting idk # 
 ---@param value idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldsettings:SetSetting(setting,value)
 end

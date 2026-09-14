@@ -14,37 +14,42 @@ local embarker = {}
 
 ---设置下船动作位置(带距离计算)
 ---
----@param pos_x idk # 
----@param pos_z idk # 
----author: 
+---@param pos_x idk # 下船动作目标点 X 坐标(内部会换算为下船落点)
+---@param pos_z idk # 下船动作目标点 Z 坐标
+---@return nil
+---author: Runar(Agent)
 function embarker:SetDisembarkActionPos(pos_x,pos_z)
 end
 
 ---设置可登船的码头实体
 ---
----@param embarkable idk # 
----author: 
+---@param embarkable idk # 要登上的码头/平台实体(需带 walkableplatform 组件)
+---@return nil
+---author: Runar(Agent)
 function embarker:SetEmbarkable(embarkable)
 end
 
 ---设置下船落点坐标
 ---
----@param pos_x idk # 
----@param pos_z idk # 
----author: 
+---@param pos_x idk # 下船落点 X 坐标
+---@param pos_z idk # 下船落点 Z 坐标
+---@return nil
+---author: Runar(Agent)
 function embarker:SetDisembarkPos(pos_x,pos_z)
 end
 
 ---每帧朝当前登/下船目标位置移动
 ---
----@param dt idk # 
----author: 
+---@param dt idk # 帧间隔时间(秒)
+---@return nil
+---author: Runar(Agent)
 function embarker:UpdateEmbarkingPos(dt)
 end
 
 ---取消登船动作并停物理
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function embarker:Cancel()
 end
 
@@ -57,7 +62,8 @@ end
 
 ---开始登船: 停物理并登记下船位置
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function embarker:Embark()
 end
 
@@ -70,7 +76,8 @@ end
 
 ---启动向目标位置移动的物理
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function embarker:StartMoving()
 end
-
+

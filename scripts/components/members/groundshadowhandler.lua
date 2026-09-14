@@ -8,8 +8,9 @@ local groundshadowhandler = {}
 
 ---设置地面投影的宽高
 ---
----@param width idk # 
----@param height idk # 
----author: 
+---@param width number # 投影宽度
+---@param height number # 投影高度
+---@return nil
+---author: Runar(Agent)
 function groundshadowhandler:SetSize(width,height)
-end
+end

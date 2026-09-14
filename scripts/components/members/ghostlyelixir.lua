@@ -13,6 +13,7 @@ end
 
 ---实体移除组件时执行的善后工作（somePrefab:RemoveComponent("someComponent")==>此函数被调用）
 ---<br>如，此组件从实体移除，此函数被调用，主要逻辑为移除了ghostlyelixir标签
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function ghostlyelixir:OnRemoveFromEntity()
-end
+end

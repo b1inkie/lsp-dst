@@ -15,17 +15,20 @@ end
 
 ---执行石化
 ---@param immediate boolean # 是否立即石化
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function petrifiable:Petrify(immediate)
 end
 
----
----author:
+---从实体上移除本组件时清理：取消石化与苏醒定时任务并移除 entitywake 监听，未石化时向世界注销 petrifiable 并移除该标签
+---@return nil
+---author: Runar(Agent)
 function petrifiable:OnRemoveFromEntity()
 end
 
 ---注册石化回调函数
 ---@param fn function(inst: ent) # 实体石化时执行的函数
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function petrifiable:SetPetrifiedFn(fn)
 end

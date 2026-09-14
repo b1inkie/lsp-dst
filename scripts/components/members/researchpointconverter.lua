@@ -8,16 +8,19 @@
 local researchpointconverter = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function researchpointconverter:TurnOn()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function researchpointconverter:TurnOff()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function researchpointconverter:Activate()
-end
+end

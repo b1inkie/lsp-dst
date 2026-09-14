@@ -5,17 +5,20 @@
 local walkingplank = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:StopMounting()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:Retract()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:Extend()
 end
 
@@ -27,7 +30,8 @@ function walkingplank:AbandonShip(doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:OnRemoveFromEntity()
 end
 
@@ -36,4 +40,4 @@ end
 ---@return boolean
 ---author: Runar(Agent)
 function walkingplank:MountPlank(doer)
-end
+end

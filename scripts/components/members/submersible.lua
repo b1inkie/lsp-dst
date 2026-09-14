@@ -9,7 +9,8 @@ local submersible = {}
 ---@param z idk # 
 ---@param ignore_boats idk # 
 ---@param nosplash idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function submersible:MakeSunken(x,z,ignore_boats,nosplash)
 end
 
@@ -25,7 +26,8 @@ function submersible:Submerge()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function submersible:OnRemoveFromEntity()
 end
 
@@ -33,4 +35,4 @@ end
 ---@return ent
 ---author: Runar(Agent)
 function submersible:GetUnderwaterObject()
-end
+end

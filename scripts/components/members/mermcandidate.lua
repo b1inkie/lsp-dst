@@ -14,13 +14,15 @@ end
 
 ---给目标加卡路里(有 edible 时)
 ---
----@param food ent# 
----author: 
+---@param food ent # 计入卡路里的食物实体(需有 edible 组件)
+---@return nil
+---author: Runar(Agent)
 function mermcandidate:AddCalories(food)
 end
 
 ---清零卡路里
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mermcandidate:ResetCalories()
 end

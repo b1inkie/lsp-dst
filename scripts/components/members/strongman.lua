@@ -5,12 +5,14 @@
 local strongman = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function strongman:StopWorkout()
 end
 
 ---
 ---@param gym idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function strongman:DoWorkout(gym)
-end
+end

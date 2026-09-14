@@ -7,24 +7,28 @@
 local batteryuser = {}
 
 ---实体移除时的清理：移除 batteryuser 标签
+---@return nil
 ---author: Runar
 function batteryuser:OnRemoveFromEntity()
 end
 
 ---设置充电倍率计算回调
 ---@param fn fun(inst: ent, charge_target: ent):number|nil|nil # 充电倍率回调，返回倍率（nil 表示不充电）
+---@return nil
 ---author: Runar
 function batteryuser:SetChargeMultFn(fn)
 end
 
 ---设置电池使用后的回调
 ---@param fn fun(inst: ent, charge_target: ent, mult: number|nil):boolean,idk|nil # 使用后回调，返回是否成功及原因
+---@return nil
 ---author: Runar
 function batteryuser:SetOnBatteryUsedFn(fn)
 end
 
 ---设置是否允许部分充能
 ---@param allow boolean # true 表示允许部分充能
+---@return nil
 ---author: Runar
 function batteryuser:SetAllowPartialCharge(allow)
 end

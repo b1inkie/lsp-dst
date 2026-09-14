@@ -7,37 +7,44 @@
 ---@field point idk
 ---@field residue idk
 ---@field quipcooldowntime idk
+---@field OnCooldown_Bridge fun(inst: ent): nil # 冷却结束的桥接回调（用作 DoTaskInTime 的定时器函数），从实体转回组件并调用 OnCooldown
 local roseinspectableuser = {}
 
 ---
 ---@param cooldowntime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:SetCooldownTime(cooldowntime)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:SpawnResidue()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:OnCooldown()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:GoOnCooldown()
 end
 
 ---
 ---@param duration idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:ApplyCooldown(duration)
 end
 
@@ -64,7 +71,8 @@ end
 
 ---
 ---@param point idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:SetRoseInpectionOnPoint(point)
 end
 
@@ -89,12 +97,14 @@ function roseinspectableuser:DoQuip(reason,failed)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:ForceDecayResidue()
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectableuser:SetRoseInpectionOnTarget(target)
-end
+end

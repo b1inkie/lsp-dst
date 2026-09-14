@@ -22,8 +22,8 @@ It contains the directory map, universal format rules, type conventions, base-cl
 
 1. 首行必须 `---@meta`；函数体必须为空；注释中文写在 `#` 后。
    Every file starts with `---@meta`; function bodies stay empty; comments go after `#` in Chinese.
-2. 类前缀：`component_xxx` / `replica_xxx` / `widget_xxx` / `util_xxx`；组件与客机组件**必须显式继承** `component_base` / `replica_base`，且**不重复声明基类已有成员**（完整清单见 AGENT.md §5，如 `inst`、`WatchWorldState`、`OnSave()`、`OnLoad(data, newents)`、`OnUpdate`、`GetDebugString`、`LongUpdate`、`LoadPostPass`、`OnRemoveEntity` 等）。
-   Class prefixes: `component_xxx` / `replica_xxx` / `widget_xxx` / `util_xxx`; components & replicas MUST explicitly inherit `component_base` / `replica_base` and must NOT redeclare base-owned members (full list in AGENT.md §5, e.g. `inst`, `WatchWorldState`, `OnSave()`, `OnLoad(data, newents)`, `OnUpdate`, `GetDebugString`, `LongUpdate`, `LoadPostPass`, `OnRemoveEntity`, etc.).
+2. 类前缀：`component_xxx` / `replica_xxx` / `widget_xxx` / `util_xxx`；组件与客机组件**必须显式继承** `component_base` / `replica_base`，且**不重复声明基类已有成员**（完整清单见 AGENT.md §5，如 `inst`、`WatchWorldState`、`OnSave()`、`OnLoad(data, newents)`、`OnPostInit()`、`OnUpdate`、`GetDebugString`、`LongUpdate`、`LoadPostPass`、`OnRemoveEntity` 等）。
+   Class prefixes: `component_xxx` / `replica_xxx` / `widget_xxx` / `util_xxx`; components & replicas MUST explicitly inherit `component_base` / `replica_base` and must NOT redeclare base-owned members (full list in AGENT.md §5, e.g. `inst`, `WatchWorldState`, `OnSave()`, `OnLoad(data, newents)`, `OnPostInit()`, `OnUpdate`, `GetDebugString`, `LongUpdate`, `LoadPostPass`, `OnRemoveEntity`, etc.).
 3. 未知类型用 `idk`；可选参数加 `|nil`；多类型用 `|`。
    Use `idk` for unknown types, `|nil` for optional, `|` for unions.
 4. AI 理解源码后撰写注释时，author 写 `AGENT` + 操作者名称（如 `---author: Runar`）；**修改已有条目时不得删除原 author，在原 author 后追加操作者**（如 `---author: mango, Runar`）。

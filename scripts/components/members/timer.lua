@@ -30,7 +30,8 @@ end
 
 ---
 ---@param newinst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function timer:TransferComponent(newinst)
 end
 
@@ -72,7 +73,8 @@ function timer:IsPaused(name)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function timer:OnRemoveFromEntity()
 end
 

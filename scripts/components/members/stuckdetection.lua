@@ -9,7 +9,8 @@ local stuckdetection = {}
 
 ---
 ---@param t idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stuckdetection:SetTimeToStuck(t)
 end
 
@@ -19,7 +20,14 @@ end
 function stuckdetection:IsStuck()
 end
 
+---获取距离判定为卡住还需等待的剩余秒数
+---@return number # 剩余秒数；尚未开始计时（starttime 为空）时返回 -1
+---@nodiscard
+---author: Runar(Agent)
+function stuckdetection:GetRemainingTime() end
+
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stuckdetection:Reset()
-end
+end

@@ -21,12 +21,14 @@ end
 
 ---
 ---@param can_be_taken idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetItemCanBeTaken(can_be_taken)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:ClearItemData()
 end
 
@@ -39,7 +41,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetComparePostFn(fn)
 end
 
@@ -58,13 +61,15 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetOnSpawnItemFromDataFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetOnItemTakenFn(fn)
 end
 
@@ -75,6 +80,7 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetTakeItemTestFn(fn)
 end

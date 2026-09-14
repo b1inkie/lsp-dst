@@ -9,20 +9,23 @@ local boatrace_proximitybeacon = {}
 
 ---设置赛事开始时的回调函数
 ---
----@param fn idk # 
----author: 
+---@param fn fun(inst: ent, racestart: ent)|nil # 赛事开始回调，参数为信标实体与赛事起点实体
+---@return nil
+---author: Runar(Agent)
 function boatrace_proximitybeacon:SetBoatraceStartedFn(fn)
 end
 
 ---移除赛事开始/结束回调监听
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatrace_proximitybeacon:OnRemoveFromEntity()
 end
 
 ---设置赛事结束时的回调函数
 ---
----@param fn idk # 
----author: 
+---@param fn fun(inst: ent, racestart: ent, winner: ent|nil)|nil # 赛事结束回调，参数为信标实体、赛事起点实体与冠军实体
+---@return nil
+---author: Runar(Agent)
 function boatrace_proximitybeacon:SetBoatraceFinishedFn(fn)
 end

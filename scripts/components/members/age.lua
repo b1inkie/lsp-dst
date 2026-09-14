@@ -32,18 +32,22 @@ function age:GetDisplayAgeInDays() end
 
 ---暂停存活时长计数【人物死亡时调用】
 ---<br>记录暂停时刻last_pause_time并取消周期同步任务
+---@return nil
 ---author: nullptr, Runar
 function age:PauseAging() end
 
 ---恢复存活时长计数【人物复活时调用】
 ---<br>将暂停时长累加到paused_time并重启周期同步任务
+---@return nil
 ---author: nullptr, Runar
 function age:ResumeAging() end
 
 ---取消存活时长的周期同步任务_synctask，并立即同步一次存活天数
+---@return nil
 ---author: nullptr, Runar
 function age:CancelPeriodicSync() end
 
 ---重启存活时长的周期同步任务_synctask（先取消旧的，再创建每10秒一次的同步任务）
+---@return nil
 ---author: nullptr, Runar
 function age:RestartPeriodicSync() end

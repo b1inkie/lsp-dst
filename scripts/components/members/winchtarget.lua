@@ -7,7 +7,8 @@ local winchtarget = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winchtarget:SetSalvageFn(fn)
 end
 
@@ -18,7 +19,8 @@ function winchtarget:Salvage()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function winchtarget:OnRemoveFromEntity()
 end
 
@@ -26,4 +28,4 @@ end
 ---@return ent
 ---author: Runar(Agent)
 function winchtarget:GetSunkenObject()
-end
+end

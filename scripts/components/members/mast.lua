@@ -23,53 +23,61 @@ local mast = {}
 
 ---设置是否反转帆部署(倒挂)
 ---
----@param set boolean# 
----author: 
+---@param set boolean # 是否反转部署(倒挂桅杆)
+---@return nil
+---author: Runar(Agent)
 function mast:SetReveseDeploy(set)
 end
 
 ---设置船舵实体
 ---
----@param obj ent|nil# 
----author: 
+---@param obj ent|nil # 要挂载的船舵实体
+---@return nil
+---author: Runar(Agent)
 function mast:SetRudder(obj)
 end
 
 ---移除某操作者的收帆登记
 ---
----@param doer ent# 
----author: 
+---@param doer ent # 要移除收帆登记的操作者
+---@return nil
+---author: Runar(Agent)
 function mast:RemoveSailFurler(doer)
 end
 
 ---帆已放下(收卷单位清零)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mast:SailUnfurled()
 end
 
 ---设置帆最大速度修正
 ---
----@param set number|nil# 
----author: 
+---@param set number|nil # 最大速度修正值
+---@return nil
+---author: Runar(Agent)
 function mast:SetVelocityMod(set)
 end
 
 ---取消船只设置任务并清帆器
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mast:OnRemoveFromEntity()
 end
 
 ---合帆(按倒挂反转)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mast:CloseSail()
 end
 
 ---放出帆(降低帆)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mast:UnfurlSail()
 end
 
@@ -82,9 +90,10 @@ end
 
 ---给操作者登记一份收帆力量
 ---
----@param doer ent# 
----@param strength number# 
----author: 
+---@param doer ent # 登记收帆的操作者
+---@param strength number # 该操作者的收帆力量(收卷单位/秒)
+---@return nil
+---author: Runar(Agent)
 function mast:AddSailFurler(doer,strength)
 end
 
@@ -104,7 +113,8 @@ end
 
 ---船死亡时清理桅杆(清帆器)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mast:OnDeath()
 end
 
@@ -117,28 +127,32 @@ end
 
 ---设置船舵方向(按舵到桅杆方位)
 ---
----@param rudder_direction_x number# 
----@param rudder_direction_z number# 
----author: 
+---@param rudder_direction_x number # 舵向相对桅杆的 x 方向偏移
+---@param rudder_direction_z number # 舵向相对桅杆的 z 方向偏移
+---@return nil
+---author: Runar(Agent)
 function mast:SetRudderDirection(rudder_direction_x,rudder_direction_z)
 end
 
 ---帆已收起(收卷单位到顶)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function mast:SailFurled()
 end
 
 ---设置帆力
 ---
----@param set number|nil# 
----author: 
+---@param set number|nil # 帆力数值
+---@return nil
+---author: Runar(Agent)
 function mast:SetSailForce(set)
 end
 
 ---设置所属船体(变化时迁移物理)
 ---
----@param boat ent|nil# 
----author: 
+---@param boat ent|nil # 新的所属船体实体,为 nil 时脱离当前船
+---@return nil
+---author: Runar(Agent)
 function mast:SetBoat(boat)
 end

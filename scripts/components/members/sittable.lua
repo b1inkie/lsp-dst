@@ -6,7 +6,8 @@
 local sittable = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sittable:OnRemoveFromEntity()
 end
 
@@ -18,7 +19,8 @@ end
 
 ---
 ---@param occupier idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sittable:SetOccupier(occupier)
 end
 
@@ -28,3 +30,9 @@ end
 ---author: Runar(Agent)
 function sittable:IsOccupiedBy(occupier)
 end
+
+---弹出现任占有者（若有）：推送 becomeunsittable 事件，
+---<br>实际将占有者移下座椅的逻辑由监听该事件的调用方（如 sitstate 状态图）完成
+---@return nil
+---author: Runar(Agent)
+function sittable:EjectOccupier() end

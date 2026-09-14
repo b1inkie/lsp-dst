@@ -10,7 +10,8 @@ local revivablecorpse = {}
 
 ---
 ---@param reviver idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:Revive(reviver)
 end
 
@@ -31,7 +32,8 @@ end
 ---
 ---@param tag idk # 
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetReviveSpeedMultForTag(tag,mult)
 end
 
@@ -43,24 +45,28 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetCanBeRevivedByFn(fn)
 end
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetReviveSpeedMult(mult)
 end
 
 ---
 ---@param percent idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetReviveHealthPercent(percent)
 end
 
 ---
 ---@param corpse idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetCorpse(corpse)
-end
+end

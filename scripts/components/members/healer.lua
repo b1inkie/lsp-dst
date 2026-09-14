@@ -8,19 +8,22 @@ local healer = {}
 
 ---传入一个方法，用于判断是否可以触发治疗。例如：SetCanHealFn(function (inst, target, doer) return false,"不准治疗他") inst是有该组件的预制物，target是治疗目标,doer是使用者
 ---@param fn function # 方法
----author: 御坂十七号
+---@return nil
+---author: 御坂十七号, Runar(Agent)
 function healer:SetCanHealFn(fn)
 end
 
 ---设置一个方法，在触发治疗时，会触发该方法，例如：SetOnHealFn(function (inst, target,doer)  end)，inst是有该组件的预制物，target是治疗目标,doer是使用者
 ---@param fn function # 方法
----author: 御坂十七号
+---@return nil
+---author: 御坂十七号, Runar(Agent)
 function healer:SetOnHealFn(fn)
 end
 
 ---设置一个治疗量x，在触发治疗后，恢复玩家血量x 治疗量默认值为 TUNING.HEALING_SMALL = 3
 ---@param health number # 治疗量
----author: 御坂十七号
+---@return nil
+---author: 御坂十七号, Runar(Agent)
 function healer:SetHealthAmount(health)
 end
 

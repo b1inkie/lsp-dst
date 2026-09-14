@@ -6,7 +6,8 @@ local carnivaldecor = {}
 
 ---移除 carnivaldecor 标签, 并从附近所有装饰评级的计数中减去自身
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function carnivaldecor:OnRemoveFromEntity()
 end
 

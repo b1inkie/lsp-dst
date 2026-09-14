@@ -18,41 +18,47 @@
 local positionalwarp = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:CachePosition()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:UpdateMarker()
 end
 
 ---
----@param num_cache_points idk # 
----author: 
+---@param num_cache_points idk # 回退的历史位置点数（存入 history_rollback_dist）
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:SetWarpBackDist(num_cache_points)
 end
 
 ---
----@param i idk # 
----@param prefab idk # 
----author: 
+---@param i idk # 标记缓存槽位索引（1 起，对应 markers[i]）
+---@param prefab idk # 传送标记实体的 prefab 名
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:_MakeMarker(i,prefab)
 end
 
 ---
----@param enable idk # 
----author: 
+---@param enable idk # 是否显示传送标记（写入 showmarker）
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:EnableMarker(enable)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:Reset()
 end
 
 ---
----@param rewind idk # 
+---@param rewind idk # 是否回退历史游标（true 时将 history_cur 退至目标点并刷新标记）
 ---@return number
 ---@return number
 ---@return number
@@ -61,12 +67,14 @@ function positionalwarp:GetHistoryPosition(rewind)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:OnRemoveFromEntity()
 end
 
 ---
----@param prefab idk # 
----author: 
+---@param prefab idk # 传送标记实体的 prefab 名（创建 marker_cache_size 个缓存标记）
+---@return nil
+---author: Runar(Agent)
 function positionalwarp:SetMarker(prefab)
 end

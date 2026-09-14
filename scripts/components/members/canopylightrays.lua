@@ -8,12 +8,14 @@ local canopylightrays = {}
 
 ---释放所有光柱, 逐格减引用计数, 归零的格子移除光柱
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function canopylightrays:DespawnLightrays()
 end
 
 ---以自身为中心在半径内随机生成光柱, 同格共用一个光柱实体(引用计数)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function canopylightrays:SpawnLightrays()
 end

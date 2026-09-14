@@ -7,12 +7,23 @@
 ---@field updatedistsq number # 位置更新触发阈值（距离平方，默认 16 即 4*4）
 ---@field watch_tiles table<number, boolean>|nil # 正在监视的地块集合：key 为 tile_id，value 为是否位于该地块上；无监视时为 nil
 ---@field checkpositiontask idk # 周期性位置检查任务（由 StartCheckingPosition 创建）
+---@field _ForceUpdate fun() # 强制按实体当前位置立即刷新区域（done_embark_movement 事件回调）
 local areaaware = {}
 
 ---从实体上移除组件时停止更新并注销 done_embark_movement 事件回调
 ---@return nil
 ---author: Runar
 function areaaware:OnRemoveFromEntity() end
+
+---在以 (pt_x, pt_z) 为中心、步长 r 的 3x3 采样网格中，选出与 on_land 匹配且渲染层级最高的地块
+---@param pt_x number # 中心点 x 坐标
+---@param pt_z number # 中心点 z 坐标
+---@param on_land boolean # 是否查找陆地地块（false 为海洋地块）
+---@param r number # 采样步长
+---@return table|nil # 最佳地块信息表（含 tile_type/render_layer/x/z），无有效地块时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function areaaware:_TestArea(pt_x, pt_z, on_land, r) end
 
 ---根据指定坐标更新当前区域：节点索引变化时推送 changearea 事件，并同步各监视地块的 in/out 事件
 ---@param x number|nil # 世界坐标 x

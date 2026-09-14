@@ -25,8 +25,9 @@ local grogginess = {}
 
 ---把迷糊量设为抗性的一定比例
 ---
----@param percent idk # 
----author: 
+---@param percent number # 目标迷糊量占抗性的比例
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetPercent(percent)
 end
 
@@ -46,15 +47,17 @@ end
 
 ---移除某来源的抗迷糊
 ---
----@param source idk # 
----author: 
+---@param source idk # 抗性来源标识
+---@return nil
+---author: Runar(Agent)
 function grogginess:RemoveResistanceSource(source)
 end
 
 ---减少迷糊量(可免疫拦截)
 ---
----@param grogginess idk # 
----author: 
+---@param grogginess number # 减少的迷糊量
+---@return nil
+---author: Runar(Agent)
 function grogginess:SubtractGrogginess(grogginess)
 end
 
@@ -67,68 +70,90 @@ end
 
 ---把迷糊状态转移到新实体
 ---
----@param newinst idk # 
----author: 
+---@param newinst ent # 接收状态的新实体
+---@return nil
+---author: Runar(Agent)
 function grogginess:TransferComponent(newinst)
 end
 
 ---登记某来源的抗迷糊
 ---
----@param source idk # 
----@param resistance idk # 
----author: 
+---@param source idk # 抗性来源标识
+---@param resistance number # 追加的抗迷糊量
+---@return nil
+---author: Runar(Agent)
 function grogginess:AddResistanceSource(source,resistance)
 end
 
+---登记某来源的迷糊免疫（免疫期间新增/减少迷糊量均被拦截，且每帧清零迷糊量）
+---@param source idk # 免疫来源（作为修饰来源键）
+---@return nil
+---author: Runar(Agent)
+function grogginess:AddImmunitySource(source) end
+
+---移除某来源的迷糊免疫
+---@param source idk # 免疫来源（作为修饰来源键）
+---@return nil
+---author: Runar(Agent)
+function grogginess:RemoveImmunitySource(source) end
+
 ---清醒(退出昏厥)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:ComeTo()
 end
 
 ---清除迷糊/昏厥状态
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:OnRemoveFromEntity()
 end
 
 ---设置迷糊衰减速率
 ---
----@param rate idk # 
----author: 
+---@param rate number # 每秒衰减的迷糊量
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetDecayRate(rate)
 end
 
 ---触发昏厥(限时)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:KnockOut()
 end
 
 ---延长当前昏厥时长
 ---
----@param knockoutduration idk # 
----author: 
+---@param knockoutduration number # 新的昏厥时长(秒)
+---@return nil
+---author: Runar(Agent)
 function grogginess:ExtendKnockout(knockoutduration)
 end
 
 ---把迷糊量补到总抗性上限
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:MaximizeGrogginess()
 end
 
 ---增加迷糊量(可限时昏厥, 免疫拦截)
 ---
----@param grogginess idk # 
----@param knockoutduration idk # 
----author: 
+---@param grogginess number # 增加的迷糊量
+---@param knockoutduration number|nil # 触发昏厥时的昏厥时长(秒, 缺省用 TUNING.MIN_KNOCKOUT_TIME)
+---@return nil
+---author: Runar(Agent)
 function grogginess:AddGrogginess(grogginess,knockoutduration)
 end
 
 ---把迷糊量钳到基础抗性上限
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:CapToResistance()
 end
 
@@ -141,61 +166,70 @@ end
 
 ---设置基础抗迷糊量
 ---
----@param resist idk # 
----author: 
+---@param resist number # 基础抗迷糊量
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetResistance(resist)
 end
 
 ---设置默认的昏厥/清醒判断
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetDefaultTests()
 end
 
 ---设置迷糊消退时长
 ---
----@param duration idk # 
----author: 
+---@param duration number # 迷糊消退(恢复期)时长(秒)
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetWearOffDuration(duration)
 end
 
 ---清零迷糊量
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grogginess:ResetGrogginess()
 end
 
 ---设置昏厥判断回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(inst: ent): boolean # 昏厥判断回调
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetKnockOutTest(fn)
 end
 
 ---把迷糊量提升到至少指定值
 ---
----@param min idk # 
----author: 
+---@param min number # 迷糊量下限
+---@return nil
+---author: Runar(Agent)
 function grogginess:MakeGrogginessAtLeast(min)
 end
 
 ---设置清醒判断回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(inst: ent): boolean # 清醒判断回调
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetComeToTest(fn)
 end
 
 ---开关迷糊减速效果
 ---
----@param enable idk # 
----author: 
+---@param enable boolean # 是否启用迷糊减速
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetEnableSpeedMod(enable)
 end
 
 ---设置迷糊减速倍率
 ---
----@param mult idk # 
----author: 
+---@param mult number # 减速附加倍率
+---@return nil
+---author: Runar(Agent)
 function grogginess:SetSpeedModMultiplier(mult)
-end
+end

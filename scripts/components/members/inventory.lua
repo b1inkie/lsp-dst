@@ -26,7 +26,8 @@ local inventory = {}
 ---@param item ent # 物品
 ---@param slot integer|nil # 放入
 ---@param src_pos Vector3|nil # 来源坐标 箱子里的物品到背包会有一个动画显示物品移动轨迹。
----author: 
+---@return boolean|number|nil # 是否成功(放入背包格时返回槽位号, 放入容器/指针时为true, 失败为false/nil)
+---author: Runar(Agent)
 function inventory:GiveItem(item,slot,src_pos)
 end
 
@@ -39,8 +40,9 @@ end
 
 ---从某装备槽取走装备物(变当前)
 ---
----@param eslot idk #
----author: 
+---@param eslot equiptype # 要取走装备的槽位名(hands/body/head)
+---@return nil
+---author: Runar(Agent)
 function inventory:TakeActiveItemFromEquipSlot(eslot)
 end
 
@@ -50,17 +52,24 @@ end
 function inventory:IsHeavyLifting()
 end
 
+---返回手上装备是否为可漂浮物品（hand 栏装备含 playerfloater 组件时为 true）
+---@return boolean # 是否正持有可漂浮的物品
+---@nodiscard
+---author: Runar(Agent)
+function inventory:IsFloaterHeld() end
+
 ---寻找所有符合条件的物品
----@param fn fun(item:ent):boolean #
+---@param fn fun(item:ent):boolean # 筛选函数(参数为物品, 返回是否匹配)
 ---@return ent[]
----author: lan
+---author: lan, Runar(Agent)
 function inventory:FindItems(fn)
 end
 
 ---按装备槽 id 取走装备物
 ---
----@param eslotid idk #
----author: 
+---@param eslotid integer # 装备槽 id
+---@return nil
+---author: Runar(Agent)
 function inventory:TakeActiveItemFromEquipSlotID(eslotid)
 end
 
@@ -72,10 +81,10 @@ end
 
 ---让装备(护甲)吸收伤害
 ---
----@param damage idk #
----@param attacker idk #
----@param weapon idk #
----@param spdamage idk #
+---@param damage number # 受到的伤害值
+---@param attacker ent|nil # 攻击者实体
+---@param weapon ent|nil # 使用的武器实体
+---@param spdamage table|nil # 特殊伤害表(键为伤害类型, 值为数值)
 ---@return number
 ---@return idk
 ---author: Runar(Agent)
@@ -84,7 +93,7 @@ end
 
 ---取某装备槽的湿度
 ---
----@param slot idk #
+---@param slot number|nil # 物品栏下标索引(1-15), 传nil则统计全部装备栏
 ---@return number
 ---@return number
 ---author: Runar(Agent)
@@ -101,60 +110,71 @@ end
 
 ---把物品装到其装备槽
 ---
----@param item idk #
----author: 
+---@param item ent|nil # 要装备的物品(不传则取当前指针上的物品)
+---@return nil
+---author: Runar(Agent)
 function inventory:EquipActionItem(item)
 end
 
 ---关闭全部已开的箱柜容器
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventory:CloseAllChestContainers()
 end
 
 ---把某槽全部物品移到目标容器
 ---
----@param slot idk #
----@param container idk #
----author: 
+---@param slot number # 物品栏下标索引(1-15)
+---@param container ent # 目标容器实体(需要有 container 组件且被当前玩家打开)
+---@return nil
+---author: Runar(Agent)
 function inventory:MoveItemFromAllOfSlot(slot,container)
 end
 
 ---判断是否正持有该物品(含容器)
 ---
----@param item idk #
----@param checkcontainer idk #
+---@param item ent # 要查找的物品
+---@param checkcontainer boolean|nil # 是否递归检查物品所在容器的内部
 ---@return boolean
 ---author: Runar(Agent)
 function inventory:IsHolding(item,checkcontainer)
 end
 
 ---按prefab ID 找物品
----@param item PrefabID #
----@param amount integer #
----@param checkallcontainers boolean|nil #
+---@param item PrefabID # 物品的 prefab 名
+---@param amount integer # 需要的数量
+---@param checkallcontainers boolean|nil # 是否扫描所有打开的容器
 ---@return table<ent,integer>
 ---@nodiscard
----author: lan
+---author: lan, Runar(Agent)
 function inventory:GetItemByName(item,amount,checkallcontainers)
 end
 
 ---丢弃某物品(可整栈/随机方向/坐标)
 ---
----@param item ent|nil #
----@param wholestack boolean|nil #
----@param randomdir idk #
----@param pos idk #
----@param keepoverstacked idk #
----author: 
+---@param item ent|nil # 要丢弃的物品
+---@param wholestack boolean|nil # 是否丢弃整组(否则只丢一个)
+---@param randomdir boolean|nil # 是否随机方向扔出
+---@param pos Vector3|nil # 丢弃的目标坐标(不传则用宿主位置)
+---@param keepoverstacked boolean|nil # 是否保留超堆叠状态
+---@return ent|nil # 被丢弃的物品实体(失败时为nil)
+---author: Runar(Agent)
 function inventory:DropItem(item,wholestack,randomdir,pos,keepoverstacked)
 end
 
+---强制视为不绝缘（针对电击，而非温度）
+---@param force boolean|nil # 是否强制不绝缘；传 nil 取消强制
+---@return nil
+---author: Runar(Agent)
+function inventory:ForceNoInsulated(force) end
+
 ---从背包格子施放法术书
 ---
----@param item idk #
----@param spell_id idk #
----author: 
+---@param item ent # 法术书物品(或玩家自身)
+---@param spell_id integer|nil # 要选择的法术 id(不传则用默认法术)
+---@return nil
+---author: Runar(Agent)
 function inventory:CastSpellBookFromInv(item,spell_id)
 end
 
@@ -165,17 +185,31 @@ end
 function inventory:GetOverflowContainer()
 end
 
+---获取物品栏中所有有效的专属口袋容器（如弹药袋）
+---@return component_container[]|nil # 专属口袋容器组件数组，无则 nil
+---@nodiscard
+---author: Runar(Agent)
+function inventory:GetSpecializedContainers() end
+
+---判断某容器是否为当前有效的专属口袋容器
+---@param container component_container # 待判断的容器组件
+---@return boolean # 是否为当前有效的专属口袋容器
+---@nodiscard
+---author: Runar(Agent)
+function inventory:IsSpecializedContainer(container) end
+
 ---把当前物品全部加入某槽
 ---
----@param slot idk #
----author: 
+---@param slot number # 目标槽位(1-15)
+---@return nil
+---author: Runar(Agent)
 function inventory:AddAllOfActiveItemToSlot(slot)
 end
 
 ---判断某槽能否放入该物品
 ---
----@param item idk #
----@param slot idk #
+---@param item ent # 要放入的物品
+---@param slot number|nil # 目标槽位(1-15, 不传则只做物品校验)
 ---@return boolean
 ---author: Runar(Agent)
 function inventory:CanTakeItemInSlot(item,slot)
@@ -191,11 +225,12 @@ end
 
 ---手柄: 对场景目标使用格子物品
 ---
----@param item idk #
----@param target idk #
----@param actioncode idk #
----@param mod_name idk #
----author: 
+---@param item ent # 格子中的物品
+---@param target ent|nil # 场景目标实体
+---@param actioncode integer|nil # 指定执行的动作 code(不传则用首选动作)
+---@param mod_name string|nil # 动作所属 mod 名
+---@return nil
+---author: Runar(Agent)
 function inventory:ControllerUseItemOnSceneFromInvTile(item,target,actioncode,mod_name)
 end
 
@@ -208,15 +243,16 @@ end
 
 ---关闭容器(可保留当前物)
 ---
----@param keepactiveitem idk #
----author: 
+---@param keepactiveitem boolean|nil # 是否保留指针上的物品不退回
+---@return nil
+---author: Runar(Agent)
 function inventory:Close(keepactiveitem)
 end
 
 ---判断能否再收某数量该物品
 ---
----@param item idk #
----@param maxcount idk #
+---@param item ent # 要收下的物品
+---@param maxcount integer|nil # 最多收下的数量(不传则按整组计算)
 ---@return number
 ---author: Runar(Agent)
 function inventory:CanAcceptCount(item,maxcount)
@@ -224,7 +260,7 @@ end
 
 ---判断装备是否有该特殊防御
 ---
----@param sptype idk #
+---@param sptype spdamage_type # 特殊伤害类型
 ---@return boolean
 ---author: Runar(Agent)
 function inventory:EquipHasSpDefenseForType(sptype)
@@ -232,23 +268,24 @@ end
 
 ---把某槽物品退回当前手
 ---
----@param slot idk #
----@param stack_mod idk #
----author: 
+---@param slot number|nil # 放回的目标槽位(1-15, 不传则自动寻找)
+---@param stack_mod boolean|nil # 是否只退回单个(从整组拆出一个)
+---@return nil
+---author: Runar(Agent)
 function inventory:ReturnActiveItem(slot,stack_mod)
 end
 
 ---获取某个装备槽中的物品
----@param eslot idk #
+---@param eslot equiptype # 装备槽名(hands/body/head)
 ---@return ent|nil
 ---@nodiscard
----author: lan
+---author: lan, Runar(Agent)
 function inventory:GetEquippedItem(eslot)
 end
 
 ---选中某装备槽的物品为当前
 ---
----@param slot idk #
+---@param slot equiptype # 装备槽名(hands/body/head)
 ---@return idk
 ---author: Runar(Agent)
 function inventory:SelectActiveItemFromEquipSlot(slot)
@@ -262,8 +299,9 @@ end
 
 ---把背包数据转移到新实体
 ---
----@param newinst idk #
----author: 
+---@param newinst ent # 要转移到的目标实体
+---@return nil
+---author: Runar(Agent)
 function inventory:TransferComponent(newinst)
 end
 
@@ -296,61 +334,69 @@ end
 
 ---把当前物品与某槽合并(堆叠)
 ---
----@param slot idk #
----@param stack_mod idk #
----author: 
+---@param slot number|equiptype # 目标槽位(物品栏下标或装备槽名)
+---@param stack_mod boolean|nil # 是否只合并一个(从整组拆出一个放入)
+---@return nil
+---author: Runar(Agent)
 function inventory:CombineActiveStackWithSlot(slot,stack_mod)
 end
 
 ---烧掉容器内不可饮用的物品
 ---
----@param container idk #
----author: 
+---@param container component_container # 目标容器组件
+---@return nil
+---author: Runar(Agent)
 function inventory:BurnNonpotatableInContainer(container)
 end
 
 ---
 ---`注意:` `不要调用这个方法 !!!` <br> 想直接给玩家到指针上, 请调用 `GiveActiveItem` . 想把库存物品移动到指针上, 请调用 `SelectActiveItemFromSlot` .
----@param item ent # 
----author: lan
+---@param item ent|nil # 要放到指针上的物品(传nil则清空)
+---@return nil
+---author: lan, Runar(Agent)
 function inventory:SetActiveItem(item)
 end
 
 ---交换当前物品与装备槽
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventory:SwapEquipWithActiveItem()
 end
 
 ---从背包格子丢出物品
 ---
----@param item idk #
----@param single idk #
----author: 
+---@param item ent # 要丢弃的格子物品
+---@param single boolean|nil # 是否只丢一个(否则丢整组)
+---@return nil
+---author: Runar(Agent)
 function inventory:DropItemFromInvTile(item,single)
 end
 
 ---按名字消耗物品(合成)
 ---
----@param item idk #
----@param amount idk #
----author: 
+---@param item PrefabID # 要消耗的物品 prefab 名
+---@param amount integer|nil # 消耗数量(默认1)
+---@return nil
+---author: Runar(Agent)
 function inventory:ConsumeByName(item,amount)
 end
 
 ---把一个当前物品放入某槽
 ---
----@param slot idk #
----author: 
+---@param slot number # 目标槽位(1-15)
+---@return nil
+---author: Runar(Agent)
 function inventory:PutOneOfActiveItemInSlot(slot)
 end
 
 ---手柄: 对自己使用格子物品
 ---
----@param item idk #
----@param actioncode idk #
----@param mod_name idk #
----author: 
+---@param item ent # 格子中的物品
+---@param actioncode integer|nil # 指定执行的动作 code(不传则用首选动作)
+---@param mod_name string|nil # 动作所属 mod 名
+---@return nil
+---author: Runar(Agent)
 function inventory:ControllerUseItemOnSelfFromInvTile(item,actioncode,mod_name)
 end
 
@@ -371,10 +417,11 @@ end
 
 ---从背包格子使用物品
 ---
----@param item idk #
----@param actioncode idk #
----@param mod_name idk #
----author: 
+---@param item ent # 格子中的物品
+---@param actioncode integer|nil # 指定执行的动作 code(不传则用首选动作)
+---@param mod_name string|nil # 动作所属 mod 名
+---@return nil
+---author: Runar(Agent)
 function inventory:UseItemFromInvTile(item,actioncode,mod_name)
 end
 
@@ -386,7 +433,7 @@ end
 
 ---判断 UI 能否访问该物品
 ---
----@param item idk #
+---@param item ent # 待判断的物品
 ---@return boolean
 ---author: Runar(Agent)
 function inventory:CanAccessItem(item)
@@ -394,19 +441,21 @@ end
 
 ---交换当前物品与某槽
 ---
----@param slot idk #
----author: 
+---@param slot number # 目标槽位(1-15)
+---@return nil
+---author: Runar(Agent)
 function inventory:SwapActiveItemWithSlot(slot)
 end
 
 ---隐藏栏目【物品栏、装备栏、背包栏、制作栏】
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:Hide()
 end
 
 ---判断该玩家是否正开着容器
 ---
----@param guy idk #
+---@param guy ent # 待判断的实体(通常为玩家)
 ---@return boolean
 ---author: Runar(Agent)
 function inventory:IsOpenedBy(guy)
@@ -414,17 +463,26 @@ end
 
 ---从某槽取全部到当前手
 ---
----@param slot idk #
----author: 
+---@param slot number # 物品栏下标索引(1-15)
+---@return nil
+---author: Runar(Agent)
 function inventory:TakeActiveItemFromAllOfSlot(slot)
 end
 
 ---从某槽取一半到当前手
 ---
----@param slot idk #
----author: 
+---@param slot number # 物品栏下标索引(1-15)
+---@return nil
+---author: Runar(Agent)
 function inventory:TakeActiveItemFromHalfOfSlot(slot)
 end
+
+---从某槽取指定数量的物品到当前手
+---@param slot number # 物品栏下标索引(1-15)
+---@param count number # 要取的数量（会被 clamp 到 1~整栈大小）
+---@return nil
+---author: Runar(Agent)
+function inventory:TakeActiveItemFromCountOfSlot(slot,count) end
 
 ---丢弃拿在鼠标上的物品
 ---@return ent # 丢弃的物品，无则nil。此为执行类函数，返回值可舍弃，具体情况应具体分析
@@ -434,7 +492,8 @@ end
 
 ---将拿在鼠标上的所有物品放入指定下标索引slot的物品栏格子***
 ---@param slot number # 物品栏下标索引(1-15)
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:PutAllOfActiveItemInSlot(slot)
 end
 
@@ -448,7 +507,8 @@ end
 
 ---开启死亡掉落
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventory:EnableDropOnDeath()
 end
 
@@ -461,53 +521,65 @@ end
 
 ---查看背包格子物品
 ---
----@param item idk #
----author: 
+---@param item ent # 要查看的格子物品
+---@return nil
+---author: Runar(Agent)
 function inventory:InspectItemFromInvTile(item)
 end
 
 ---装备的物品中是否有该tag的装备
----@param tag tagID #
+---@param tag tagID # 标签
 ---@return boolean
 ---@nodiscard
----author: lan
+---author: lan, Runar(Agent)
 function inventory:EquipHasTag(tag)
 end
 
 ---把一个当前物品加入某槽
 ---
----@param slot idk #
----author: 
+---@param slot number # 目标槽位(1-15)
+---@return nil
+---author: Runar(Agent)
 function inventory:AddOneOfActiveItemToSlot(slot)
 end
 
 ---卸下所有装备
 ---@param keepBackpack boolean # 是否保留背包【伍迪？】
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:DropEquipped(keepBackpack)
 end
 
+---销毁背包内所有物品（含当前物与装备栏，并递归销毁其中容器内的物品）
+---@param onpredestroyitemcallbackfn fun(inst: ent, item: ent)|nil # 每件物品销毁前的回调，参数为(所有者, 物品)
+---@return nil
+---author: Runar(Agent)
+function inventory:DestroyContents(onpredestroyitemcallbackfn) end
+
 ---把全部物品转移给接收者
 ---
----@param receiver idk #
----author: 
+---@param receiver ent # 接收物品的目标实体
+---@return nil
+---author: Runar(Agent)
 function inventory:TransferInventory(receiver)
 end
 
 ---打开容器
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventory:Open()
 end
 
 ---解除Hide函数隐藏的栏目
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:Show()
 end
 
 ---取某容器已开的代理索引
 ---
----@param master idk #
+---@param master ent # 容器代理的主实体
 ---@return number
 ---author: Runar(Agent)
 function inventory:GetOpenContainerProxyFor(master)
@@ -515,28 +587,32 @@ end
 
 ---装备当前手持物品
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventory:EquipActiveItem()
 end
 
 ---掉落所有物品
 ---@param ondeath boolean|nil # 这个值不管是true,false,nil均会掉落所有物品(不涉及装备栏)。<br>但原函数注释中提到了旺达钟表与荒野模式，具体是否与旺达死亡不掉表相关还未验证
 ---@param keepequip boolean # 是否保留装备
----author: nullptr, lan
+---@return nil
+---author: nullptr, lan, Runar(Agent)
 function inventory:DropEverything(ondeath,keepequip)
 end
 
 ---
 ---将物品给到玩家的指针上
----@param item ent #
----author: lan
+---@param item ent # 要给到指针上的物品
+---@return nil
+---author: lan, Runar(Agent)
 function inventory:GiveActiveItem(item)
 end
 
 ---选中某槽物品为当前
 ---
----@param slot idk #
----author: 
+---@param slot number # 物品栏下标索引(1-15)
+---@return ent|nil # 选中后拿在指针上的物品(未选中时为nil)
+---author: Runar(Agent)
 function inventory:SelectActiveItemFromSlot(slot)
 end
 
@@ -549,39 +625,43 @@ end
 
 ---手柄: 用当前物对格子物品
 ---
----@param item idk #
----@param active_item idk #
----@param actioncode idk #
----@param mod_name idk #
----author: 
+---@param item ent # 目标格子物品(被作用的物品)
+---@param active_item ent # 指针上的物品(用来作用的物品)
+---@param actioncode integer|nil # 指定执行的动作 code(不传则用首选动作)
+---@param mod_name string|nil # 动作所属 mod 名
+---@return boolean|nil # 成功推入动作时为true
+---author: Runar(Agent)
 function inventory:ControllerUseItemOnItemFromInvTile(item,active_item,actioncode,mod_name)
 end
 
 ---归还动作物品到其槽
 ---
----@param item idk #
----@param instant idk #
----author: 
+---@param item ent # 要归还的物品(须为当前指针上的物品)
+---@param instant boolean|nil # 是否为即时动作(用于 bufferedaction 关联的 hack)
+---@return nil
+---author: Runar(Agent)
 function inventory:ReturnActiveActionItem(item,instant)
 end
 
 ---遍历所有可被弄湿的物品，并执行fn函数【范围：参照ForEachItem函数，除了背包栏，均可被弄湿】
 ---@param fn fun(item: ent, ...) # 处理函数，item为遍历到的物品，返回值不重要
 ---@param ... idk # 不定长的其他参数，可忽略
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:ForEachWetableItem(fn,...)
 end
 
 ---关闭死亡掉落
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventory:DisableDropOnDeath()
 end
 
 ---判断是否有匹配条件的物品(数量)
 ---
----@param fn idk #
----@param amount idk #
+---@param fn fun(item: ent): boolean # 匹配函数(参数为物品, 返回是否匹配)
+---@param amount integer # 需要的数量
 ---@return boolean
 ---@return number
 ---author: Runar(Agent)
@@ -590,11 +670,20 @@ end
 
 ---把某槽一半物品移到目标容器
 ---
----@param slot idk #
----@param container idk #
----author: 
+---@param slot number # 物品栏下标索引(1-15)
+---@param container ent # 目标容器实体(需要有 container 组件且被当前玩家打开)
+---@return nil
+---author: Runar(Agent)
 function inventory:MoveItemFromHalfOfSlot(slot,container)
 end
+
+---把某槽指定数量的物品移到目标容器
+---@param slot number # 物品栏下标索引(1-15)
+---@param container ent # 目标容器实体（需要有 container 组件且被当前玩家打开）
+---@param count number # 要移动的数量（会被 clamp 到 1~整栈大小）
+---@return nil
+---author: Runar(Agent)
+function inventory:MoveItemFromCountOfSlot(slot,container,count) end
 
 ---卸装
 ---@param equipslot string # 装备栏位置，hands|body|head
@@ -614,9 +703,17 @@ end
 ---遍历装备栏物品，并执行fn函数
 ---@param fn fun(item: ent, ...) # 处理函数，item为遍历到的物品，返回值不重要
 ---@param ... idk # 不定长的其他参数，可忽略
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:ForEachEquipment(fn,...)
 end
+
+---遍历物品栏（仅 itemslots，不含装备栏/当前物/背包），并执行fn函数
+---@param fn fun(item: ent, ...) # 处理函数，item为遍历到的物品，返回值不重要
+---@param ... idk # 不定长的其他参数，可忽略
+---@return nil
+---author: Runar(Agent)
+function inventory:ForEachItemSlot(fn,...) end
 
 ---获取物品栏格子数目(15)
 ---@return number # 物品栏格子数目(15)
@@ -627,7 +724,7 @@ end
 
 ---取下一个可用槽(含溢出容器)
 ---
----@param item idk #
+---@param item ent # 要放入的物品
 ---@return number
 ---@return ent|nil
 ---author: Runar(Agent)
@@ -636,19 +733,20 @@ end
 
 ---移除某物品(可整栈/全容器)
 ---
----@param item idk #
----@param wholestack idk #
----@param checkallcontainers idk #
----@param keepoverstacked idk #
+---@param item ent # 要移除的物品
+---@param wholestack boolean|nil # 是否移除整组(否则拆出一个)
+---@param checkallcontainers boolean|nil # 是否也搜索所有打开的容器
+---@param keepoverstacked boolean|nil # 是否保留超堆叠状态
 ---@return ent|nil
----author: 
+---author: Runar(Agent)
 function inventory:RemoveItem(item,wholestack,checkallcontainers,keepoverstacked)
 end
 
 ---遍历所有物品，并执行fn函数【范围：物品栏、装备栏、鼠标上拿着的、背包栏】
 ---@param fn fun(item: ent, ...) # 处理函数，item为遍历到的物品，返回值不重要
 ---@param ... idk # 不定长的其他参数，可忽略
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:ForEachItem(fn,...)
 end
 
@@ -658,6 +756,12 @@ end
 ---author: Runar(Agent)
 function inventory:IgnoresCanGoInContainer()
 end
+
+---返回是否防盗（thiefproof）
+---@return boolean|nil # 是否防偷窃，未设置时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function inventory:IsThiefProof() end
 
 ---获取物品栏中指定下标索引的物品
 ---@param slot number|equiptype # 物品栏格子有序索引`[1,15]`/类型键`EQUIPSLOTS[]`
@@ -669,8 +773,8 @@ end
 
 ---按槽移除物品
 ---
----@param slot idk #
----@param keepoverstacked idk #
+---@param slot number # 物品栏下标索引(1-15)
+---@param keepoverstacked boolean|nil # 是否保留超堆叠状态
 ---@return ent
 ---author: Runar(Agent)
 function inventory:RemoveItemBySlot(slot,keepoverstacked)
@@ -678,11 +782,12 @@ end
 
 ---装备某物品到其槽(可强设当前)
 ---
----@param item ent #
----@param old_to_active idk #
----@param no_animation idk #
----@param force_ui_anim idk #
----author: 
+---@param item ent # 要装备的物品
+---@param old_to_active boolean|nil # 是否把卸下的旧装备放到指针上
+---@param no_animation boolean|nil # 是否跳过装备动画(作为 equip 事件数据传递)
+---@param force_ui_anim boolean|nil # 是否强制触发 UI 物品移动动画
+---@return boolean|nil # 装备成功时为true
+---author: Runar(Agent)
 function inventory:Equip(item,old_to_active,no_animation,force_ui_anim)
 end
 
@@ -704,9 +809,17 @@ end
 ---丢弃所有指定标签tag的物品【范围：物品栏、装备栏、鼠标上的】
 ---<br>如果符合条件的物品【是一个容器】，则其中存放的具有指定标签的物品，也会被递归丢弃
 ---@param tag tagID # 标签ID，字符串类型
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function inventory:DropEverythingWithTag(tag)
 end
+
+---按过滤函数丢弃所有匹配的物品【范围：物品栏、装备栏、鼠标上的】
+---<br>匹配物品若是容器，其中的物品也会被递归丢弃
+---@param filterfn fun(owner: ent, item: ent): boolean # 过滤函数，参数为(所有者, 物品)，返回 true 则丢弃该物品
+---@return nil
+---author: Runar(Agent)
+function inventory:DropEverythingByFilter(filterfn) end
 
 ---与other对象交换equipslot_to_swap栏的装备【想到了假人】
 ---<br>某一方不能装备的物品，进入其物品栏
@@ -728,8 +841,8 @@ end
 
 
 ---这个函数 制作的时候自定调用 <br> 返回的 crafting_items 包含以下来源的物品: <br> - 打开容器中的物品 <br> - OverflowContainer <br> - activeitem
----@param item PrefabID
----@param amount integer
+---@param item PrefabID # 要查找的配方材料 prefab 名
+---@param amount integer # 需要的数量
 ---@return table<ent,integer> # 
 ---author: Runar(Agent)
 function inventory:GetCraftingIngredient(item, amount) end

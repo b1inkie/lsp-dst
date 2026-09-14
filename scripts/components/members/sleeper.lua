@@ -40,30 +40,35 @@ end
 
 ---
 ---@param b idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetNocturnal(b)
 end
 
 ---
 ---@param fn idk # 
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetTest(fn,time)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:OnEntitySleep()
 end
 
 ---
 ---@param sleeptime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:GoToSleep(sleeptime)
 end
 
@@ -76,41 +81,48 @@ end
 ---
 ---@param sleepiness idk # 
 ---@param sleeptime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:AddSleepiness(sleepiness,sleeptime)
 end
 
 ---
 ---@param resist idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetExtraResist(resist)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetSleepTest(fn)
 end
 
 ---
 ---@param resist idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetResistance(resist)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetDefaultTests()
 end
 
 ---
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:StartTesting(time)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:WakeUp()
 end
 
@@ -121,7 +133,8 @@ function sleeper:IsHibernating()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:StopTesting()
 end
 
@@ -132,14 +145,16 @@ function sleeper:GetTimeAwake()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:OnEntityWake()
 end
 
 ---
 ---@param fn idk # 
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetWakeTest(fn,time)
 end
-
+

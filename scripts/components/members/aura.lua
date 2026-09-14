@@ -9,6 +9,7 @@
 ---@field auratestfn fun(inst: ent, target: ent): boolean|nil # 光环命中判定函数，返回该目标是否受光环影响
 ---@field auraexcludetags string[] # 光环攻击排除的 tag 列表
 ---@field task idk # 光环周期任务（Enable 时创建，关闭时取消）
+---@field _fn fun(target: ent): boolean|nil # 内部：auratestfn 的单参包装，供 combat:DoAreaAttack 作为命中判定函数
 local aura = {}
 
 ---设置光环是否启用<br>传入 false 或 nil 以外的值均视为启用；启用时创建周期任务，关闭时取消任务并推送 stopaura 事件

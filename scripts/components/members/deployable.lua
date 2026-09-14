@@ -22,13 +22,15 @@ end
 
 ---设置是否使用网格放置器
 ---@param usegridplacer boolean #是否使用网格放置器
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetUseGridPlacer(usegridplacer)
 end
 
 ---设置部署间距
 ---@param spacing number #部署间距（DEPLOYSPACIN里的一个常量）
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetDeploySpacing(spacing)
 end
 
@@ -44,9 +46,16 @@ end
 
 ---设置部署模式<br>`lan`: 不调用这个方法设置一下的话,能种到船上去,会出bug
 ---@param mode number #部署模式（DEPLOYMODE里的一个常量）
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetDeployMode(mode)
 end
+
+---获取部署模式
+---@return number # 部署模式（DEPLOYMODE 里的一个常量）
+---@nodiscard
+---author: Runar(Agent)
+function deployable:GetDeployMode() end
 
 ---获取部署间距半径
 ---author:星璃
@@ -64,12 +73,14 @@ function deployable:IsDeployable(deployer)
 end
 
 ---组件被移除时的回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:OnRemoveFromEntity()
 end
 
 ---设置部署动画覆盖
 ---@param data any #动画数据
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetDeployTossSymbolOverride(data)
 end

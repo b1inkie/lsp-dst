@@ -17,17 +17,20 @@ local writeable = {}
 
 ---开始书写
 ---@param doer ent #书写者
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:BeginWriting(doer) end
 
 ---结束书写
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:EndWriting() end
 
 ---写入文本
 ---@param doer ent #书写者
 ---@param text string #写入的文本内容
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:Write(doer, text) end
 
 ---获取当前文本内容
@@ -38,7 +41,8 @@ function writeable:GetText() end
 
 ---设置文本内容
 ---@param text string #要设置的文本内容
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:SetText(text) end
 
 ---是否已被书写
@@ -55,29 +59,35 @@ function writeable:IsBeingWritten() end
 
 ---设置默认可书写状态
 ---@param writeable_by_default boolean #是否默认可书写
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:SetDefaultWriteable(writeable_by_default) end
 
 ---设置可书写距离
 ---@param dist number #可书写距离
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:SetWriteableDistance(dist) end
 
 ---设置自动描述功能
 ---@param ad_enabled boolean #是否启用自动描述
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:SetAutomaticDescriptionEnabled(ad_enabled) end
 
 ---设置书写完成回调
 ---@param fn fun(inst:ent, text:string, doer:ent) #书写完成回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:SetOnWrittenFn(fn) end
 
 ---设置书写结束回调
 ---@param fn fun(inst:ent) #书写结束回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:SetOnWritingEndedFn(fn) end
 
 ---移除组件时的清理
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function writeable:OnRemoveFromEntity() end

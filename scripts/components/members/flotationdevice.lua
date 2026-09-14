@@ -7,7 +7,8 @@ local flotationdevice = {}
 
 ---防止溺水伤害时走回调
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function flotationdevice:OnPreventDrowningDamage()
 end
 
@@ -16,4 +17,4 @@ end
 ---@return idk
 ---author: Runar(Agent)
 function flotationdevice:IsEnabled()
-end
+end

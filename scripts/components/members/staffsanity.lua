@@ -6,12 +6,14 @@ local staffsanity = {}
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function staffsanity:SetMultiplier(mult)
 end
 
 ---
 ---@param amount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function staffsanity:DoCastingDelta(amount)
 end

@@ -16,11 +16,13 @@ function moonaltarlinktarget:CanBeLinked()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function moonaltarlinktarget:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function moonaltarlinktarget:TryEstablishLink()
 end

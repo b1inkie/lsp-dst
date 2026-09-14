@@ -9,28 +9,33 @@ local steeringwheel = {}
 
 ---
 ---@param sailor idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:StartSteering(sailor)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:SetOnStartSteeringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:StopSteering()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:SetOnStopSteeringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:OnRemoveFromEntity()
-end
+end

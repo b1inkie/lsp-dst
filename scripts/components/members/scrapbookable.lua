@@ -6,7 +6,8 @@ local scrapbookable = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function scrapbookable:SetOnTeachFn(fn)
 end
 

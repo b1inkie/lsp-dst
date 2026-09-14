@@ -13,12 +13,14 @@ function klaussacklock:UseKey(key,doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function klaussacklock:OnRemoveFromEntity()
 end
 
 ---
 ---@param onusekeyfn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function klaussacklock:SetOnUseKey(onusekeyfn)
 end

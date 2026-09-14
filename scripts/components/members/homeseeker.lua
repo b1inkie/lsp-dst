@@ -15,15 +15,17 @@ end
 
 ---回家(可冲刺)
 ---
----@param shouldrun idk # 
----author: 
+---@param shouldrun boolean # 是否冲刺回家(true为跑, false为走)
+---@return nil
+---author: Runar(Agent)
 function homeseeker:GoHome(shouldrun)
 end
 
 ---设置巢/家实体
 ---
----@param home idk # 
----author: 
+---@param home ent|nil # 巢/家实体(传nil清除)
+---@return nil
+---author: Runar(Agent)
 function homeseeker:SetHome(home)
 end
 

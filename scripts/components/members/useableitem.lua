@@ -9,12 +9,14 @@ local useableitem = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:SetOnStopUseFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:StopUsingItem()
 end
 
@@ -27,12 +29,14 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:SetOnUseFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:OnRemoveFromEntity()
 end
 

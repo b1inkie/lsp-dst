@@ -12,13 +12,15 @@ local curseditem = {}
 ---诅咒物品被拾取（进入物品栏）的逻辑（诅咒生效，触发角色台词）
 ---@param item ent # 被拾取的诅咒物品
 ---@param data table # 包含owner（拾取者）等信息的表
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function curseditem:Given(item,data)
 end
 
 ---周期性搜索附近可被诅咒的玩家（在OnUpdate有调用）
 ---<br>被盯上的玩家会被保存在其属性target中，然后OnUpdate方法会控制诅咒物品接近target
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function curseditem:lookforplayer()
 end
 
@@ -32,6 +34,7 @@ end
 
 ---确保诅咒物品归属于目标玩家（在OnUpdate中有调用）
 ---<br>逻辑：若目标玩家死亡，清除诅咒关联；若物品无INLIMBO标签（如被丢弃），强制回到其物品栏
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function curseditem:CheckForOwner()
-end
+end

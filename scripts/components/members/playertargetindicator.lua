@@ -9,20 +9,21 @@
 local playertargetindicator = {}
 
 ---
----@param target idk # 
+---@param target ent # 待检测的玩家实体
 ---@return boolean
 ---author: Runar(Agent)
 function playertargetindicator:ShouldRemoveIndicator(target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playertargetindicator:OnRemoveFromEntity()
 end
 
 ---
----@param target idk # 
+---@param target ent # 待检测的玩家实体
 ---@return boolean
 ---author: Runar(Agent)
 function playertargetindicator:ShouldShowIndicator(target)
-end
+end

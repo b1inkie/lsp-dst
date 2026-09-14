@@ -5,16 +5,19 @@
 local treasuremarked = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function treasuremarked:TurnOn()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function treasuremarked:TurnOff()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function treasuremarked:OnRemoveFromEntity()
 end

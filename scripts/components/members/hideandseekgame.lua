@@ -16,19 +16,22 @@
 ---@field onremove_seeker idk
 ---@field dounregisterhidingspot idk
 ---@field pulse_task idk
+---@field pulse fun(inst: ent): nil # 脉冲回调（周期任务，每秒执行）：触发 OnHideAndSeekPulse 并把隐藏范围内可见的存活玩家加为寻找者
 local hideandseekgame = {}
 
 ---登记一个寻找者(可标记游戏已开始)
 ---
----@param seeker idk # 
----@param started_game idk # 
----author: 
+---@param seeker ent # 要登记的寻找者实体(自动补 hideandseeker 组件)
+---@param started_game boolean # 是否由该寻找者开启游戏(传入 OnAddSeeker)
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:AddSeeker(seeker,started_game)
 end
 
 ---中止游戏(通知所有藏匿点)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:Abort()
 end
 
@@ -41,8 +44,9 @@ end
 
 ---注销一个藏匿点
 ---
----@param hiding_spot idk # 
----author: 
+---@param hiding_spot ent # 要注销的藏匿点实体
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:UnregisterHidingSpot(hiding_spot)
 end
 
@@ -62,7 +66,8 @@ end
 
 ---游戏结束(停脉冲任务)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:_HideAndSeekOver()
 end
 
@@ -75,8 +80,9 @@ end
 
 ---登记一个藏匿点
 ---
----@param hiding_spot idk # 
----author: 
+---@param hiding_spot ent # 要登记的藏匿点实体
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:RegisterHidingSpot(hiding_spot)
 end
-
+

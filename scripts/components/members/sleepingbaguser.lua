@@ -16,24 +16,28 @@ local sleepingbaguser = {}
 
 ---
 ---@param bed idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:DoSleep(bed)
 end
 
 ---
 ---@param bonus idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetHungerBonusMult(bonus)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SleepTick()
 end
 
 ---
 ---@param bonus idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetHealthBonusMult(bonus)
 end
 
@@ -46,18 +50,21 @@ end
 
 ---
 ---@param nostatechange idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:DoWakeUp(nostatechange)
 end
 
 ---
 ---@param cansleepfn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetCanSleepFn(cansleepfn)
 end
 
 ---
 ---@param bonus idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetSanityBonusMult(bonus)
-end
+end

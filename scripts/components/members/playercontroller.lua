@@ -65,6 +65,7 @@
 ---@field wassteering idk
 ---@field lastrottime idk
 ---@field lastzoomtime idk
+---@field _clearinteractiontarget fun(): nil # 动作成功/失败回调：清除远端交互目标同步数据（仅客户端，会校验组件与实体有效性）
 local playercontroller = {}
 
 ---
@@ -74,9 +75,34 @@ function playercontroller:IsControllerTargetLockEnabled()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteBufferedAction()
 end
+
+---服务器端记录远端客户端同步来的交互目标数据（动作、目标与位置），<br>用于友方生物大脑等待远端玩家交互、以及 WX78 被附身时的动作跟随同步
+---@param actioncode number|nil # 动作码；nil 表示清除
+---@param target ent|nil # 交互目标实体
+---@param position Vector3|nil # 交互位置（划船等动作需要）
+---@return nil
+---author: Runar(Agent)
+function playercontroller:OnRemoteInteractionTarget(actioncode, target, position) end
+
+---客户端向服务器同步交互目标数据：与当前缓存不同时才发送 InteractionTarget RPC 并更新本地缓存
+---@param actioncode number|nil # 动作码；nil 表示清除
+---@param target ent|nil # 交互目标实体
+---@param position Vector3|nil # 交互位置
+---@return nil
+---author: Runar(Agent)
+function playercontroller:RemoteInteractionTarget(actioncode, target, position) end
+
+---获取最近一次同步的远端交互数据
+---@return idk|nil # 交互动作（Action）
+---@return ent|nil # 交互目标实体
+---@return Vector3|nil # 交互位置
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:GetRemoteInteraction() end
 
 ---
 ---author: 
@@ -93,7 +119,8 @@ end
 ---
 ---@param x idk # 
 ---@param z idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteDragWalking(x,z)
 end
 
@@ -105,13 +132,15 @@ end
 
 ---
 ---@param item idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DoControllerInspectItemFromInvTile(item)
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:ToggleController(val)
 end
 
@@ -129,7 +158,8 @@ end
 
 ---
 ---@param action idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteInspectButton(action)
 end
 
@@ -160,38 +190,56 @@ end
 
 ---
 ---@param code idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DecodeControlMods(code)
 end
 
 ---
 ---@param x idk # 
 ---@param z idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteDragWalking(x,z)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteStopAllControls()
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CooldownHeldAction(dt)
 end
 
 ---
 ---@param target idk # 
 ---@param force_attack idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteAttackButton(target,force_attack)
 end
 
+---服务器端设置玩家是否处于"覆盖攻击"状态（同步到 classified，配合状态图 overrideattack 标签使用）
+---@param val boolean # 是否覆盖攻击
+---@return nil
+---author: Runar(Agent)
+function playercontroller:SetIsOverrideAttack(val) end
+
+---查询是否处于覆盖攻击状态：优先看本地状态图是否带 overrideattack 标签，否则读取 classified 同步值
+---@return boolean # 是否覆盖攻击
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:IsOverrideAttack() end
+
 ---
 ---@param classified idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:AttachClassified(classified)
 end
 
@@ -206,7 +254,8 @@ end
 ---@param position idk # 
 ---@param rotation idk # 
 ---@param isreleased idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteControllerActionButtonDeploy(invobject,position,rotation,isreleased)
 end
 
@@ -216,7 +265,8 @@ function playercontroller:OnLeftUp()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CycleControllerAttackTargetForward()
 end
 
@@ -227,14 +277,16 @@ function playercontroller:DoControllerUseItemOnSceneFromInvTile(item)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:ClearControlMods()
 end
 
 ---
 ---@param action idk # 
 ---@param isreleased idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteActionButton(action,isreleased)
 end
 
@@ -247,7 +299,8 @@ end
 ---
 ---@param item idk # 
 ---@param spell_id idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteCastSpellBookFromInv(item,spell_id)
 end
 
@@ -257,7 +310,8 @@ end
 ---@param isreleased idk # 
 ---@param noforce idk # 
 ---@param mod_name idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteActionButton(actioncode,target,isreleased,noforce,mod_name)
 end
 
@@ -287,7 +341,8 @@ end
 ---@param isspecial idk # 
 ---@param spellbook idk # 
 ---@param spell_id idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteControllerActionButtonPoint(actioncode,position,isreleased,noforce,mod_name,isspecial,spellbook,spell_id)
 end
 
@@ -295,7 +350,8 @@ end
 ---@param target idk # 
 ---@param force_attack idk # 
 ---@param noforce idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteAttackButton(target,force_attack,noforce)
 end
 
@@ -306,7 +362,8 @@ end
 ---@param noforce idk # 
 ---@param isspecial idk # 
 ---@param mod_name idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteControllerAltActionButtonPoint(actioncode,position,isreleased,noforce,isspecial,mod_name)
 end
 
@@ -314,7 +371,8 @@ end
 ---@param x idk # 
 ---@param y idk # 
 ---@param z idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:EchoReticuleAt(x,y,z)
 end
 
@@ -325,9 +383,17 @@ end
 function playercontroller:GetMapTarget(act)
 end
 
+---客户端拉起（打开）地图并定位到指定目标：会先归还手持激活物品、关闭制作栏/法术轮盘/手柄物品栏，<br>然后打开地图并把视角聚焦到 maptarget（其定义了 map_remap_min_dist 时按玩家朝向偏移），<br>forced_actiondef 用于强制以 map_only 动作定义执行
+---@param maptarget ent|nil # 地图目标实体
+---@param forced_actiondef idk|nil # 强制使用的 map_only 动作定义（Action）；非 map_only 时传 nil
+---@return nil
+---author: Runar(Agent)
+function playercontroller:PullUpMap(maptarget, forced_actiondef) end
+
 ---
 ---@param item idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:StartAOETargetingUsing(item)
 end
 
@@ -374,9 +440,16 @@ function playercontroller:GetPlatformRelativePosition(absolute_x,absolute_z)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DoClientBusyOverrideLocomote()
 end
+
+---客户端忙状态下的左键点击版覆盖移动同步：当服务器标记 busyremoteoverridelocomoteclick 时，<br>把点击位置对应的朝向角通过覆盖移动 RPC 发给服务器（例如从温泉中点击离开）
+---@param pos Vector3 # 点击的世界位置
+---@return nil
+---author: Runar(Agent)
+function playercontroller:DoClientBusyOverrideLocomoteClick(pos) end
 
 ---
 ---@return boolean
@@ -403,23 +476,38 @@ end
 ---
 ---@param item idk # 
 ---@param single idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteDropItemFromInvTile(item,single)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CycleControllerAttackTargetBack()
 end
 
+---重置远端控制状态：清零 remote_vector 的移动标志、清空远端按键表并清除远端预测数据（组件激活/停用及服务器端同步重置时调用）
+---@return nil
+---author: Runar(Agent)
+function playercontroller:ResetRemoteController() end
+
+---清除远端移动预测缓存数据（预测方向与停止 tick）；若此前已收到客户端的明确停止通知，<br>或 force_reset_timer 为 true，则同时取消 locomotor 的预测移动计时器
+---@param force_reset_timer boolean|nil # 是否强制取消预测移动计时器
+---@return nil
+---author: Runar(Agent)
+function playercontroller:ClearRemotePredictData(force_reset_timer) end
+
 ---
 ---@param control idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteStopControl(control)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteStopWalking()
 end
 
@@ -433,6 +521,18 @@ end
 ---author: 
 function playercontroller:GetSceneItemControllerAction(item)
 end
+
+---查询当前建筑放置器或部署放置器是否处于轴对齐（网格）放置模式
+---@return boolean # 是否轴对齐放置
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:IsAxisAlignedPlacement() end
+
+---获取当前放置器的世界坐标位置（优先建筑放置器，其次部署放置器）
+---@return Vector3|nil # 放置器位置；两者都不存在时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:GetPlacerPosition() end
 
 ---
 ---@param target idk # 
@@ -487,7 +587,8 @@ end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:SetCanUseMap(val)
 end
 
@@ -497,20 +598,40 @@ function playercontroller:DoInspectButton()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DetachClassified()
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CooldownRemoteController(dt)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteResurrectButton()
 end
+
+---按下角色指令轮盘（法术书）按键：查找背包中可用的法术书物品，或角色自身/关联伙伴的法术书，<br>生成 USESPELLBOOK（该法术书界面已打开时为 CLOSESPELLBOOK）动作并执行；客户端会安排向服务器同步
+---@return nil
+---author: Runar(Agent)
+function playercontroller:DoCharacterCommandWheelButton() end
+
+---服务器端接收远端客户端的指令轮盘（法术书）使用请求：校验目标法术书可用后，<br>按其归属（物品/自身/关联实体）构造 USESPELLBOOK 缓冲动作并执行
+---@param target ent # 法术书目标（物品、角色自身或关联实体）
+---@return nil
+---author: Runar(Agent)
+function playercontroller:OnRemoteCharacterCommandWheelButton(target) end
+
+---客户端向服务器同步指令轮盘动作（仅 USESPELLBOOK 会发送 CharacterCommandWheelButton RPC，关闭动作无需同步）
+---@param action BufferedAction # 缓冲动作，其 target 或 invobject 为法术书
+---@return nil
+---author: Runar(Agent)
+function playercontroller:RemoteCharacterCommandWheelButton(action) end
 
 ---
 ---@return idk
@@ -520,12 +641,14 @@ end
 
 ---
 ---@param target idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteInspectButton(target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteResurrectButton()
 end
 
@@ -535,6 +658,11 @@ end
 function playercontroller:DoDirectWalking(dt)
 end
 
+---非预测客户端在忙状态期间停止移动：处于直接/拖拽行走、无 locomotor、摇杆已回中时，<br>清除行走标志并冷却远端控制、向服务器发送停止行走 RPC
+---@return nil
+---author: Runar(Agent)
+function playercontroller:DoDirectStopWalking() end
+
 ---
 ---@return idk
 ---author: Runar(Agent)
@@ -543,7 +671,8 @@ end
 
 ---
 ---@param control idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteStopControl(control)
 end
 
@@ -553,6 +682,19 @@ end
 function playercontroller:GetRemotePredictPosition()
 end
 
+---获取远端客户端预测行走的目标点（外部可用版本）：把平台相对坐标转换为世界绝对坐标后返回（y 为 0）
+---@return Vector3|nil # 世界坐标目标点；无有效预测数据时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:GetRemotePredictPositionExternal() end
+
+---服务器端获取远端客户端停止移动时的 x/z 坐标：仅在收到停止通知的下一 tick 且当前无移动指令时有效，<br>并已把平台相对坐标转换为绝对坐标
+---@return number|nil # x 坐标；无有效数据时为 nil
+---@return number|nil # z 坐标；无有效数据时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:GetRemotePredictStopXZ() end
+
 ---
 ---@param recipe idk # 
 ---@param skin idk # 
@@ -561,14 +703,22 @@ end
 function playercontroller:StartBuildPlacementMode(recipe,skin)
 end
 
+---查询当前是否处于双摇杆（twin stick）瞄准状态（委托给当前准星组件判断）
+---@return boolean # 是否正在双摇杆瞄准
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:IsTwinStickAiming() end
+
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoveFromEntity()
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:EnableMapControls(val)
 end
 
@@ -581,7 +731,8 @@ end
 
 ---
 ---@param buffaction idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteBufferedAction(buffaction)
 end
 
@@ -608,14 +759,21 @@ end
 
 ---
 ---@param enable idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:ControllerTargetLock(enable)
 end
+
+---切换手柄目标锁定开关：已锁定则解除，否则尝试锁定当前攻击目标
+---@return nil
+---author: Runar(Agent)
+function playercontroller:ControllerTargetLockToggle() end
 
 ---
 ---启用/禁用 玩家控制 <br> `注意:` 这个方法只有在服务器调用才生效 <br> 客机请用: `ThePlayer.components.playercontroller.classified.iscontrollerenabled:set_local(false)`
 ---@param val boolean # boolean
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function playercontroller:Enable(val)
 end
 
@@ -624,7 +782,8 @@ end
 ---@param pt idk # 
 ---@param rot idk # 
 ---@param skin idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteMakeRecipeAtPoint(recipe,pt,rot,skin)
 end
 
@@ -649,32 +808,37 @@ function playercontroller:GetGroundUseSpecialAction(position,right)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:Deactivate()
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteToggleMovementPrediction(val)
 end
 
 ---
 ---@param act idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnLocomotorBufferedAction(act)
 end
 
 ---
 ---@param recipe idk # 
 ---@param skin idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteMakeRecipeFromMenu(recipe,skin)
 end
 
 ---
 ---@param item idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteInspectItemFromInvTile(item)
 end
 
@@ -716,10 +880,39 @@ end
 function playercontroller:HasGroundUseSpecialAction(right)
 end
 
+---获取把指定物品使用到目标上的动作：先取右键再取左键的 UseItem 动作并过滤无效项（骑乘时临时允许 STORE），<br>无目标时退而尝试物品自身动作、魔法工具动作或可部署物品的部署动作
+---@param active_item ent # 激活（光标手持）物品
+---@param target ent|nil # 使用目标；为 nil 时取手柄当前交互目标
+---@return BufferedAction|nil # 缓冲动作；无可用动作时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:GetItemUseAction(active_item, target) end
+
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CancelAOETargeting()
 end
+
+---尝试为手中启用 aoecharging 的物品（如弹弓）开始 AOE 蓄力：校验忙状态与骑乘限制后设置起始旋转角<br>并进入 slingshot_charge 状态；本地调用时自动计算朝向，非主机客户端会向服务器发送 AOECharging RPC
+---@param force_rotation number|nil # 起始旋转角度（度）；服务器经 RPC 调用时传入，本地调用传 nil 自动计算
+---@param iscontroller boolean|nil # 是否由手柄按键触发（影响同步的控制键与 RPC 参数）
+---@return boolean # 是否成功开始蓄力
+---author: Runar(Agent)
+function playercontroller:TryAOECharging(force_rotation, iscontroller) end
+
+---服务器端接收远端客户端的 AOE 蓄力同步：startflag 非 0 时标记对应控制键并调用 TryAOECharging 开始蓄力，<br>否则若正处于蓄力状态则更新旋转角
+---@param rotation number # 蓄力起始/当前旋转角度（度）
+---@param startflag number|nil # nil/0 表示仅更新角度；1 为鼠标触发；2 为手柄触发
+---@return nil
+---author: Runar(Agent)
+function playercontroller:OnRemoteAOECharging(rotation, startflag) end
+
+---客户端向服务器发送 AOE 蓄力方向（旋转角）同步 RPC（蓄力过程中持续更新朝向）
+---@param rotation number # 旋转角度（度）
+---@return nil
+---author: Runar(Agent)
+function playercontroller:RemoteAOEChargingDir(rotation) end
 
 ---
 ---author: 
@@ -734,9 +927,18 @@ end
 
 ---
 ---@param frames idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemotePausePrediction(frames)
 end
+
+---判断某个按键控制是否应被 PlayerHUD 忽略（改由 PlayerController 接管）：当轴对齐放置或目标锁定激活，<br>且该键与其专用切换键（切换网格/循环锁定目标）映射相同时返回 true，以保证按键优先级正确
+---@param control number # 控制 ID（CONTROL_* 常量）
+---@param down boolean # 按键是否按下
+---@return boolean # true 表示 HUD 应忽略该控制事件
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:ShouldPlayerHUDControlBeIgnored(control, down) end
 
 ---
 ---@return idk
@@ -747,7 +949,8 @@ end
 ---
 ---@param x idk # 
 ---@param z idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteDirectWalking(x,z)
 end
 
@@ -788,7 +991,8 @@ end
 
 ---
 ---@param buffaction idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DoActionAutoEquip(buffaction)
 end
 
@@ -808,9 +1012,25 @@ end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DoBoatSteering(dt)
 end
+
+---处理手柄方向键/摇杆双击：跟踪摇杆按下方向与角度变化，双击成功且间隔小于双击超时则取动作选择器的<br>双击方向动作并执行（客户端会安排向服务器同步），否则仅记录本次点击时间
+---@param allowaction boolean # 是否允许本次双击立即触发动作（false 时只记录点击）
+---@return nil
+---author: Runar(Agent)
+function playercontroller:DoDoubleTapDir(allowaction) end
+
+---服务器端接收远端客户端的双击方向动作请求：按动作码与 mod 名匹配动作选择器的双击动作，<br>可强制时把动作点设为远端预测位置并执行
+---@param actioncode number # 动作码
+---@param position Vector3 # 双击对应的世界位置
+---@param noforce boolean|nil # 为 true 时不强制动作点
+---@param mod_name string|nil # mod 动作名（原版动作为 nil）
+---@return nil
+---author: Runar(Agent)
+function playercontroller:OnRemoteDoubleTapAction(actioncode, position, noforce, mod_name) end
 
 ---
 ---@return boolean
@@ -826,18 +1046,21 @@ end
 
 ---
 ---@param item idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RefreshReticule(item)
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DoPredictHopping(dt)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemotePredictOverrideLocomote()
 end
 
@@ -852,24 +1075,28 @@ end
 ---@param x idk # 
 ---@param z idk # 
 ---@param isstart idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemotePredictWalking(x,z,isstart)
 end
 
 ---
 ---@param x idk # 
 ---@param z idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteDirectWalking(x,z)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteStopHopping()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteStopWalking()
 end
 
@@ -888,7 +1115,8 @@ end
 ---@param z idk # 
 ---@param isdirectwalking idk # 
 ---@param isstart idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemotePredictWalking(x,z,isdirectwalking,isstart)
 end
 
@@ -900,7 +1128,8 @@ end
 
 ---
 ---@param dir idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemotePredictOverrideLocomote(dir)
 end
 
@@ -930,6 +1159,12 @@ end
 function playercontroller:GetControllerAttackTarget()
 end
 
+---查询是否可以使用手柄目标锁定功能（由玩家配置文件的 TargetLockingEnabled 决定）
+---@return boolean # 是否可启用目标锁定
+---@nodiscard
+---author: Runar(Agent)
+function playercontroller:CanLockTargets() end
+
 ---重复执行动作
 ---@param ... any # 
 ---@return ... any
@@ -938,12 +1173,14 @@ function playercontroller:RepeatHeldAction(...)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:Activate()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:ClearActionHold()
 end
 
@@ -960,20 +1197,23 @@ function playercontroller:IsLocalOrRemoteHopping()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CancelDeployPlacement()
 end
 
 ---
 ---@param cache idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:CancelPlacement(cache)
 end
 
 ---
 ---@param item idk # 
 ---@param single idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:DoControllerDropItemFromInvTile(item,single)
 end
 
@@ -981,7 +1221,8 @@ end
 ---@param target idk # 
 ---@param isreleased idk # 
 ---@param noforce idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:OnRemoteControllerAttackButton(target,isreleased,noforce)
 end
 
@@ -996,6 +1237,7 @@ function playercontroller:OnRemoteControllerActionButton(actioncode,target,isrel
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playercontroller:RemoteStopAllControls()
-end
+end

@@ -6,30 +6,34 @@
 local replica_equippable = {}
 
 ---
----author: 
+---@return equiptype # 装备槽位名(EQUIPSLOTS[] 中的值)
+---author: Runar(Agent)
 function replica_equippable:EquipSlot()
 end
 
 ---
----@param shouldprevent idk # 
----author: 
+---@param shouldprevent idk # 是否禁止脱下该装备
+---@return nil
+---author: Runar(Agent)
 function replica_equippable:SetPreventUnequipping(shouldprevent)
 end
 
 ---
----author: 
+---@return boolean # 是否禁止脱下该装备
+---author: Runar(Agent)
 function replica_equippable:ShouldPreventUnequipping()
 end
 
----
----@param target idk # 
----author: 
+---@param target idk # 要检查的玩家/傀儡实体
+---@return boolean # 是否限制装备(true 为不能装备)
+---author: Runar(Agent)
 function replica_equippable:IsRestricted(target)
 end
 
 ---
----@param eslot idk # 
----author: 
+---@param eslot idk # 要设置的装备槽位(EQUIPSLOTS[] 中的值)
+---@return nil
+---author: Runar(Agent)
 function replica_equippable:SetEquipSlot(eslot)
 end
 
@@ -39,4 +43,4 @@ end
 ---
 ---author: lan
 function replica_equippable:IsEquipped()
-end
+end

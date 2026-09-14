@@ -29,45 +29,53 @@ local yotc_racecompetitor = {}
 
 ---
 ---@param race_begun_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceBegunFn(race_begun_fn)
 end
 
 ---
 ---@param start_point_entity idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceStartPoint(start_point_entity)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:RecoverStamina()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:StartRace(delay)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:OnEntitySleep()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:FinishRace()
 end
 
 ---
 ---@param prize_table idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:OnAllRacersFinished(prize_table)
 end
 
@@ -79,7 +87,8 @@ end
 
 ---
 ---@param race_finished_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceFinishedFn(race_finished_fn)
 end
 
@@ -90,7 +99,8 @@ end
 
 ---
 ---@param race_over_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceOverFn(race_over_fn)
 end
 
@@ -114,13 +124,21 @@ end
 
 ---
 ---@param prize_table idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:AbortRace(prize_table)
 end
 
 ---
 ---@param checkpoint idk # 
 ---@param is_starting_line idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:_SetCheckPoint(checkpoint,is_starting_line)
 end
+
+---设置选手延迟起跑：安排 start_delay 秒后清除延迟起跑标记的任务（期间选手不移动、不消耗体力）
+---@param start_delay number # 延迟起跑时长（秒）
+---@return nil
+---author: Runar(Agent)
+function yotc_racecompetitor:SetLateStarter(start_delay) end

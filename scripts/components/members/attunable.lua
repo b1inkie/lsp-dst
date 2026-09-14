@@ -24,24 +24,28 @@ end
 
 ---设置本实体的共鸣分组标签
 ---@param tag string|nil # 共鸣分组标签，nil 表示清除分组
+---@return nil
 ---author: Runar
 function attunable:SetAttunableTag(tag)
 end
 
 ---设置共鸣代价判定回调
 ---@param fn fun(inst: ent, player: ent):boolean,string|nil # 回调返回是否允许共鸣以及失败原因
+---@return nil
 ---author: Runar
 function attunable:SetOnAttuneCostFn(fn)
 end
 
 ---设置建立共鸣回调（共鸣成功建立后调用）
 ---@param fn fun(inst: ent, player: ent, isloading: boolean)|nil # 参数依次为：实体、玩家、是否加载存档
+---@return nil
 ---author: Runar
 function attunable:SetOnLinkFn(fn)
 end
 
 ---设置解除共鸣回调（共鸣解除后调用）
 ---@param fn fun(inst: ent, player: ent, isloading: boolean)|nil # 参数依次为：实体、玩家、是否加载存档
+---@return nil
 ---author: Runar
 function attunable:SetOnUnlinkFn(fn)
 end
@@ -75,6 +79,7 @@ end
 ---解除玩家与当前实体的共鸣
 ---@param player ent # 目标玩家
 ---@param isloading boolean|nil # 是否在加载存档
+---@return nil
 ---author: Runar
 function attunable:UnlinkFromPlayer(player,isloading)
 end

@@ -5,12 +5,14 @@
 local scaler = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function scaler:ApplyScale()
 end
 
 ---
 ---@param scale idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function scaler:SetScale(scale)
 end

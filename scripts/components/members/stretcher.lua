@@ -7,29 +7,34 @@
 local stretcher = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stretcher:OnEntitySleep()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stretcher:OnEntityWake()
 end
 
 ---
 ---@param ratio idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stretcher:SetWidthRatio(ratio)
 end
 
 ---
 ---@param inst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stretcher:SetStretchTarget(inst)
 end
 
 ---
 ---@param length idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stretcher:SetRestingLength(length)
-end
+end

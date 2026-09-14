@@ -6,16 +6,19 @@
 local vanish_on_sleep = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function vanish_on_sleep:OnEntityWake()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function vanish_on_sleep:vanish()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function vanish_on_sleep:OnEntitySleep()
 end

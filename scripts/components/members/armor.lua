@@ -17,24 +17,28 @@ local armor = {}
 ---初始化耐久和吸收率, 若想要无限耐久 请用 `InitIndestructible`
 ---@param amount number # 初始耐久值
 ---@param absorb_percent number|nil # 伤害吸收比例
+---@return nil
 ---author: lan, Runar
 function armor:InitCondition(amount, absorb_percent)
 end
 
 ---初始化无限耐久的护甲(使用这个方法,还要给prefab `AddTag('hide_percentage')`)
 ---@param absorb_percent number # 伤害吸收比例
+---@return nil
 ---author: lan, Runar
 function armor:InitIndestructible(absorb_percent)
 end
 
 ---设置护甲耐久耗尽时的回调函数
 ---@param fn fun(inst: ent)|nil # 耐久耗尽回调
+---@return nil
 ---author: mango, Runar
 function armor:SetOnFinished(fn)
 end
 
 ---设置护甲耐久耗尽时是否保留物品实例（默认为true）
 ---@param keep boolean # 是否保留
+---@return nil
 ---author: mango, Runar
 function armor:SetKeepOnFinished(keep)
 end
@@ -62,6 +66,7 @@ end
 
 ---设置护甲能抵抗的攻击标签数组
 ---@param tags string[]|nil # 可抵抗的攻击标签列表
+---@return nil
 ---author: mango, Runar
 function armor:SetTags(tags)
 end
@@ -69,30 +74,35 @@ end
 ---添加弱点标签及其附加伤害（附加伤害小于等于0时会移除同名弱点）
 ---@param tag string # 弱点标签
 ---@param bonus_damage number # 该弱点造成的附加伤害
+---@return nil
 ---author: mango, Runar
 function armor:AddWeakness(tag, bonus_damage)
 end
 
 ---移除弱点标签
 ---@param tag string # 要移除的弱点标签
+---@return nil
 ---author: mango, Runar
 function armor:RemoveWeakness(tag)
 end
 
 ---设置护甲伤害吸收率
 ---@param absorb_percent number|nil # 伤害吸收比例
+---@return nil
 ---author: mango, Runar
 function armor:SetAbsorption(absorb_percent)
 end
 
 ---设置当前耐久百分比
 ---@param amount number # 目标耐久百分比
+---@return nil
 ---author: mango, Runar
 function armor:SetPercent(amount)
 end
 
 ---设置护甲耐久值（不超过最大耐久；降为0时触发破损事件与耗尽回调）
 ---@param amount number # 目标耐久值
+---@return nil
 ---author: mango, Runar
 function armor:SetCondition(amount)
 end
@@ -126,12 +136,14 @@ end
 
 ---处理护甲受到伤害时的耐久损失和事件触发
 ---@param damage_amount number # 对护甲造成的伤害
+---@return nil
 ---author: mango, Runar
 function armor:TakeDamage(damage_amount)
 end
 
 ---修复护甲耐久
 ---@param amount number # 修复的耐久度量
+---@return nil
 ---author: mango, Runar
 function armor:Repair(amount)
 end

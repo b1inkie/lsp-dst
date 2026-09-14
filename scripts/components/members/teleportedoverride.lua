@@ -7,7 +7,8 @@ local teleportedoverride = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teleportedoverride:SetDestPositionFn(fn)
 end
 
@@ -25,6 +26,7 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teleportedoverride:SetDestTargetFn(fn)
-end
+end

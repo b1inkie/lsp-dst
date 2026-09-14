@@ -6,7 +6,8 @@
 local yotc_racestart = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestart:EndRace()
 end
 
@@ -17,11 +18,13 @@ function yotc_racestart:CanInteract()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestart:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestart:StartRace()
 end

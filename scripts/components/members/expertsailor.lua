@@ -16,8 +16,9 @@ end
 
 ---设置放帆强度
 ---
----@param strength idk # 
----author: 
+---@param strength idk # 放帆强度值
+---@return nil
+---author: Runar(Agent)
 function expertsailor:SetLowerSailStrength(strength)
 end
 
@@ -30,15 +31,17 @@ end
 
 ---设置收锚速度
 ---
----@param speed idk # 
----author: 
+---@param speed idk # 收锚速度值
+---@return nil
+---author: Runar(Agent)
 function expertsailor:SetAnchorRaisingSpeed(speed)
 end
 
 ---设置划桨力倍率
 ---
----@param force idk # 
----author: 
+---@param force idk # 划桨力倍率值
+---@return nil
+---author: Runar(Agent)
 function expertsailor:SetRowForceMultiplier(force)
 end
 
@@ -51,8 +54,9 @@ end
 
 ---设置划桨额外最大速度
 ---
----@param vel idk # 
----author: 
+---@param vel idk # 划桨额外最大速度值
+---@return nil
+---author: Runar(Agent)
 function expertsailor:SetRowExtraMaxVelocity(vel)
 end
 

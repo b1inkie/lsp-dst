@@ -6,7 +6,8 @@ local souleater = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function souleater:SetOnEatSoulFn(fn)
 end
 
@@ -15,4 +16,4 @@ end
 ---@return boolean
 ---author: Runar(Agent)
 function souleater:EatSoul(soul)
-end
+end

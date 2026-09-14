@@ -38,7 +38,8 @@
 local pickable = {}
 
 ---恢复再生计时器
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:Resume() end
 
 ---是否贫瘠（不可采集且无果实）
@@ -49,17 +50,32 @@ function pickable:IsBarren() end
 
 ---设置采集回调函数
 ---@param fn fun(this:ent, picker:ent, loot:ent|table) #采集回调，loot可为实体或实体列表
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:SetOnPickedFn(fn) end
 
 ---变为贫瘠状态
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:MakeBarren() end
 
 ---消耗采集次数
 ---@param cycles number #消耗的次数
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:ConsumeCycles(cycles) end
+
+---设置是否卡住（卡住时无法被采集，状态会随存档保存）
+---@param stuck boolean # 是否卡住
+---@return nil
+---author: Runar(Agent)
+function pickable:SetStuck(stuck) end
+
+---查询是否卡住
+---@return boolean # 是否卡住
+---@nodiscard
+---author: Runar(Agent)
+function pickable:IsStuck() end
 
 ---是否可施肥
 ---author:星璃
@@ -69,20 +85,24 @@ function pickable:CanBeFertilized() end
 
 ---设置变为贫瘠回调函数
 ---@param fn fun(this:ent, wasempty:boolean) #变为贫瘠回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:SetMakeBarrenFn(fn) end
 
 ---组件移除时的清理
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:OnRemoveFromEntity() end
 
 ---更换采集产物
 ---@param newProduct string #新的产物prefab名
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:ChangeProduct(newProduct) end
 
 ---变为空状态
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:MakeEmpty() end
 
 ---是否可采集
@@ -92,21 +112,25 @@ function pickable:MakeEmpty() end
 function pickable:CanBePicked() end
 
 ---再生果实
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:Regen() end
 
 ---移植时调用
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:OnTransplant() end
 
 ---设置变为空回调函数
 ---@param fn fun(this:ent) #变为空回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:SetMakeEmptyFn(fn) end
 
 ---设置再生回调函数
 ---@param fn fun(this:ent) #再生回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:SetOnRegenFn(fn) end
 
 ---采集操作
@@ -132,11 +156,13 @@ function pickable:FinishGrowing() end
 ---@param product string #产物prefab名
 ---@param regen number|nil #再生时间
 ---@param number integer|nil #可采集数|无限
+---@return nil
 ---author:星璃|Runar
 function pickable:SetUp(product, regen, number) end
 
 ---暂停再生计时器
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function pickable:Pause() end
 
 ---是否为野火起因
@@ -146,7 +172,7 @@ function pickable:Pause() end
 function pickable:IsWildfireStarter() end
 
 ---comment
----@param picker ent|nil
+---@param picker ent|nil # 采摘者(有背包时产物入包,否则掉落在旁)
 ---@return nil|ent|ent[]
 ---author: Runar(Agent)
 function pickable:SpawnProductLoot(picker) end

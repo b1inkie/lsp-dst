@@ -16,7 +16,8 @@ end
 ---移除外部加成（加法）
 ---@param src ent|string #来源
 ---@param key string #标识
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function planardefense:RemoveBonus(src, key)
 end
 
@@ -24,7 +25,8 @@ end
 ---@param src ent|string #来源
 ---@param mult number #倍率
 ---@param key string #标识
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function planardefense:AddMultiplier(src, mult, key)
 end
 
@@ -39,7 +41,8 @@ end
 ---@param src ent|string #来源
 ---@param bonus number #加成值
 ---@param key string #标识
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function planardefense:AddBonus(src, bonus, key)
 end
 
@@ -52,14 +55,16 @@ end
 
 ---设置基础位面防御值
 ---@param defense number #基础位面防御
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function planardefense:SetBaseDefense(defense)
 end
 
 ---移除外部乘法加成
 ---@param src ent|string #来源
 ---@param key string #标识
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function planardefense:RemoveMultiplier(src, key)
 end
 
@@ -68,4 +73,4 @@ end
 ---@return number #最终位面防御
 ---@nodiscard
 function planardefense:GetDefense()
-end
+end

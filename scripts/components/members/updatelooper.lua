@@ -12,53 +12,62 @@ local updatelooper = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:RemoveOnWallUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:AddOnWallUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:RemovePostUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:AddOnUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:AddPostUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:RemoveLongUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:RemoveOnUpdateFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:OnRemoveFromEntity()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function updatelooper:AddLongUpdateFn(fn)
 end

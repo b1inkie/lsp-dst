@@ -12,20 +12,23 @@ local diseaseable = {}
 
 ---向附近实体传播疾病
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function diseaseable:Spread()
 end
 
 ---设置染病时的回调
 ---
----@param fn idk # 
----author: 
+---@param fn idk # 染病时调用的回调
+---@return nil
+---author: Runar(Agent)
 function diseaseable:SetDiseasedFn(fn)
 end
 
 ---使实体染病(播放动画, 记任务并推事件)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function diseaseable:Disease()
 end
 
@@ -38,13 +41,15 @@ end
 
 ---重启附近传播的周期任务
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function diseaseable:RestartNearbySpread()
 end
 
 ---取消传播/警告任务与特效
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function diseaseable:OnRemoveFromEntity()
 end
 

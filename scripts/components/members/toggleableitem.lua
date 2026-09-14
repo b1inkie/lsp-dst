@@ -16,11 +16,13 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function toggleableitem:SetOnToggleFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function toggleableitem:ToggleItem()
-end
+end

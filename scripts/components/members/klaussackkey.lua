@@ -6,12 +6,14 @@
 local klaussackkey = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function klaussackkey:OnRemoveFromEntity()
 end
 
 ---
 ---@param truekey idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function klaussackkey:SetTrueKey(truekey)
 end

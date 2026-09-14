@@ -8,8 +8,9 @@ local beefalometrics = {}
 
 ---记录最后驯化/投喂该牛毛犍的 player 实体, 并清空缓存的 user id
 ---
----@param player idk # 
----author: 
+---@param player ent # 最后驯化/投喂该牛毛犍的玩家实体
+---@return nil
+---author: Runar(Agent)
 function beefalometrics:SetLastDomesticator(player)
 end
 

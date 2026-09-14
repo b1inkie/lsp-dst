@@ -24,7 +24,8 @@ local yotb_stager = {}
 
 ---
 ---@param doll idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:appraisedoll(doll)
 end
 
@@ -32,12 +33,14 @@ end
 ---@param target idk # 
 ---@param pattern idk # 
 ---@param other idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Tossprize(target,pattern,other)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:AwardVictors()
 end
 
@@ -64,7 +67,8 @@ end
 
 ---
 ---@param trainer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:RemoveTrainer(trainer)
 end
 
@@ -80,7 +84,8 @@ function yotb_stager:GetRandom()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:appraisedoll2()
 end
 
@@ -95,19 +100,22 @@ end
 ---@param pos idk # 
 ---@param comment idk # 
 ---@param duration idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:SpawnVoice(pos,comment,duration)
 end
 
 ---
 ---@param post idk # 
 ---@param name idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:MakeRandomBeef(post,name)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Give_Patterns()
 end
 
@@ -119,12 +127,14 @@ function yotb_stager:TestStartContest(starter)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:EndContest_phase2()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:StateParameters()
 end
 
@@ -138,44 +148,58 @@ function yotb_stager:CheckForMarks(post,doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:DisableContest()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Start_phase3()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Tossprizes()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Endppraisedoll()
 end
 
 ---
 ---@param post idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:highlitepost(post)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Give_consoleprizes()
 end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:AbortContest(data)
 end
 
+---移除一头临时比赛牛：若其被拴住则先解开拴绳，生成出场特效后移除实体
+---@param beefalo ent|nil # 待移除的牛实体
+---@return nil
+---author: Runar(Agent)
+function yotb_stager:RemoveBeefalo(beefalo) end
+
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:appraisedoll3()
 end
 
@@ -187,7 +211,8 @@ function yotb_stager:GetComment(post)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:cleartimers()
 end
 
@@ -200,19 +225,22 @@ end
 
 ---
 ---@param result idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Start_fail(result)
 end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:AdvanceQueue(data)
 end
 
 ---
 ---@param trainer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:RemoveTempTrainer(trainer)
 end
 
@@ -223,7 +251,8 @@ function yotb_stager:DeclareWinner()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:Start_phase2()
 end
 
@@ -236,35 +265,41 @@ function yotb_stager:SpawnVoiceName(rank,speech)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:BuildSuspense()
 end
 
 ---
 ---@param post idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:unhighlitepost(post)
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:EndContest(reason)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:StateParameters_Phase2()
 end
 
 ---
 ---@param starter idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:StartContest(starter)
 end
 
 ---
 ---@param beefalo idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_stager:RemoveTempBeef(beefalo)
-end
+end

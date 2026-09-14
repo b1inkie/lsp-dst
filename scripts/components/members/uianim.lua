@@ -32,7 +32,8 @@ end
 
 ---
 ---@param run_complete_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:CancelMoveTo(run_complete_fn)
 end
 
@@ -47,7 +48,8 @@ end
 
 ---
 ---@param update_while_paused idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:UpdateWhilePaused(update_while_paused)
 end
 
@@ -57,7 +59,8 @@ end
 ---@param duration idk # 
 ---@param whendone idk # 
 ---@param infinite idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:RotateTo(start,dest,duration,whendone,infinite)
 end
 
@@ -68,7 +71,8 @@ end
 
 ---
 ---@param run_complete_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:CancelRotateTo(run_complete_fn)
 end
 
@@ -77,13 +81,15 @@ end
 ---@param dest idk # 
 ---@param duration idk # 
 ---@param whendone idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:MoveTo(start,dest,duration,whendone)
 end
 
 ---
 ---@param run_complete_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:CancelScaleTo(run_complete_fn)
 end
 
@@ -92,12 +98,14 @@ end
 ---@param dest idk # 
 ---@param duration idk # 
 ---@param whendone idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:ScaleTo(start,dest,duration,whendone)
 end
 
 ---
 ---@param run_complete_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function uianim:CancelTintTo(run_complete_fn)
-end
+end

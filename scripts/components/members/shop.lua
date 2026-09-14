@@ -7,18 +7,21 @@ local shop = {}
 
 ---
 ---@param title idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shop:SetTitle(title)
 end
 
 ---
 ---@param items idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shop:DeliverItems(items)
 end
 
 ---
 ---@param tab idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shop:SetStartTab(tab)
-end
+end

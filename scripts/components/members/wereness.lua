@@ -12,14 +12,16 @@ local wereness = {}
 ---
 ---@param percent idk # 
 ---@param overtime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:SetPercent(percent,overtime)
 end
 
 ---
 ---@param delta idk # 
 ---@param overtime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:DoDelta(delta,overtime)
 end
 
@@ -30,24 +32,28 @@ function wereness:GetWereMode()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:StartDraining()
 end
 
 ---
 ---@param weremode idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:SetWereMode(weremode)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:StopDraining()
 end
 
 ---
 ---@param rate idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:SetDrainRate(rate)
 end
 

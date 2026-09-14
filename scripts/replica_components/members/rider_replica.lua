@@ -10,7 +10,8 @@ local replica_rider = {}
 
 ---
 ---@param pct idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:OnMountHealth(pct)
 end
 
@@ -25,19 +26,28 @@ function replica_rider:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:DetachClassified()
 end
 
+---设置或移除骑乘状态的动作过滤器（骑乘时接管动作按钮逻辑，并限制只能执行对坐骑有效的动作）
+---@param riding boolean # 是否处于骑乘状态（true 添加过滤器，false 移除）
+---@return nil
+---author: Runar(Agent)
+function replica_rider:SetActionFilter(riding) end
+
 ---
 ---@param riding idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:OnIsRiding(riding)
 end
 
 ---
 ---@param classified idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:AttachClassified(classified)
 end
 
@@ -58,7 +68,8 @@ end
 
 ---
 ---@param saddle idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:SetSaddle(saddle)
 end
 
@@ -69,13 +80,15 @@ end
 
 ---
 ---@param riding idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:SetRiding(riding)
 end
 
 ---
 ---@param mount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_rider:SetMount(mount)
 end
 

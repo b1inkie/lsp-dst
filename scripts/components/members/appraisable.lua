@@ -14,5 +14,6 @@ function appraisable:CanAppraise(target) end
 
 ---对目标执行鉴定，若配置了 appraisefn 则调用它
 ---@param target ent # 被鉴定的目标实体
+---@return nil
 ---author: Runar
 function appraisable:Appraise(target) end

@@ -6,13 +6,16 @@
 local cookable = {}
 
 
----@param fn idk # 
----author: 
+---设置烹饪完成时的回调函数（由 Cook 在烹饪完成时以 (inst, cooker, chef) 调用）
+---@param fn idk # 烹饪完成时的回调函数
+---@return nil
+---author: Runar(Agent)
 function cookable:SetOnCookedFn(fn)
 end
 
----
----author: 
+---从实体上移除本组件时清理，移除 cookable 标签
+---@return nil
+---author: Runar(Agent)
 function cookable:OnRemoveFromEntity()
 end
 

@@ -18,45 +18,53 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:SetOnNormalFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:ResetTriggers()
 end
 
 ---
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:SetWere(time)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:SetOnWereFn(fn)
 end
 
 ---
 ---@param amount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:TriggerDelta(amount)
 end
 
 ---
 ---@param limit idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:SetTriggerLimit(limit)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function werebeast:SetNormal()
-end
+end

@@ -83,7 +83,7 @@
 
 | Base class | File | Public members owned by base |
 |---|---|---|
-| `component_base` | `components/members/_base.lua` | fields: `_ctor`(any, 构造函数), `inst`(ent)<br>methods: `WatchWorldState(var, fn)`, `StopWatchingWorldState(var, fn)`, `OnSave()`, `OnLoad(data, newents)`, `OnUpdate(dt)`, `GetDebugString()`, `LongUpdate(dt)`, `LoadPostPass(newents, savedata)`, `OnRemoveEntity()`, `OnWallUpdate(dt)`, `OnStaticUpdate(dt)`, `OnBuilt(builder)`, `OnUsedAsItem(action, doer, target)` |
+| `component_base` | `components/members/_base.lua` | fields: `_ctor`(any, 构造函数), `inst`(ent)<br>methods: `WatchWorldState(var, fn)`, `StopWatchingWorldState(var, fn)`, `OnSave()`, `OnLoad(data, newents)`, `OnPostInit()`, `OnUpdate(dt)`, `GetDebugString()`, `LongUpdate(dt)`, `LoadPostPass(newents, savedata)`, `OnRemoveEntity()`, `OnWallUpdate(dt)`, `OnStaticUpdate(dt)`, `OnBuilt(builder)`, `OnUsedAsItem(action, doer, target)` |
 | `replica_base` | `replica_components/members/_base.lua` | fields: `inst`(ent)<br>methods: `OnRemoveEntity()` |
 
 Rules:
@@ -96,7 +96,7 @@ Rules:
 
 | 基类 | 文件 | 基类拥有的公共成员 |
 |---|---|---|
-| `component_base` | `components/members/_base.lua` | 字段：`_ctor`(any, 构造函数)、`inst`(ent)<br>方法：`WatchWorldState(var, fn)`、`StopWatchingWorldState(var, fn)`、`OnSave()`、`OnLoad(data, newents)`、`OnUpdate(dt)`、`GetDebugString()`、`LongUpdate(dt)`、`LoadPostPass(newents, savedata)`、`OnRemoveEntity()`、`OnWallUpdate(dt)`、`OnStaticUpdate(dt)`、`OnBuilt(builder)`、`OnUsedAsItem(action, doer, target)` |
+| `component_base` | `components/members/_base.lua` | 字段：`_ctor`(any, 构造函数)、`inst`(ent)<br>方法：`WatchWorldState(var, fn)`、`StopWatchingWorldState(var, fn)`、`OnSave()`、`OnLoad(data, newents)`、`OnPostInit()`、`OnUpdate(dt)`、`GetDebugString()`、`LongUpdate(dt)`、`LoadPostPass(newents, savedata)`、`OnRemoveEntity()`、`OnWallUpdate(dt)`、`OnStaticUpdate(dt)`、`OnBuilt(builder)`、`OnUsedAsItem(action, doer, target)` |
 | `replica_base` | `replica_components/members/_base.lua` | 字段：`inst`(ent)<br>方法：`OnRemoveEntity()` |
 
 规则：

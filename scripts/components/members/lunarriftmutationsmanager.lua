@@ -11,7 +11,8 @@ local lunarriftmutationsmanager = {}
 
 ---刷新已击败变异表(清 vagstaff 登记)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function lunarriftmutationsmanager:RefreshDefeatedMutationsTable()
 end
 
@@ -34,7 +35,8 @@ end
 ---标记某变异体已被击败
 ---
 ---@param ent ent# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lunarriftmutationsmanager:SetMutationDefeated(ent)
 end
 
@@ -70,7 +72,8 @@ end
 ---在实体位置召唤 vagstaff
 ---
 ---@param ent ent# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lunarriftmutationsmanager:TriggerWagstaffAppearance(ent)
 end
 
@@ -91,6 +94,7 @@ end
 
 ---奖励已发放, 标记任务完成
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function lunarriftmutationsmanager:OnRewardGiven()
 end

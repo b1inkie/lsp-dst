@@ -9,30 +9,35 @@ local key = {}
 ---
 ---@param lock idk # 
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function key:OnUsed(lock,doer)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function key:SetOnUsedFn(fn)
 end
 
 ---
 ---@param lock idk # 
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function key:OnRemoved(lock,doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function key:OnRemoveFromEntity()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function key:SetOnRemovedFn(fn)
 end

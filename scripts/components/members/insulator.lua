@@ -6,18 +6,21 @@
 local insulator = {}
 
 ---设置为夏季绝缘类型(夏天保持凉爽)
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function insulator:SetSummer()
 end
 
 ---设置为冬季绝缘类型(冬天防寒)
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function insulator:SetWinter()
 end
 
 ---设置绝缘值
 ---@param val number #绝缘值
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function insulator:SetInsulation(val)
 end
 
@@ -41,4 +44,4 @@ end
 ---@return string #绝缘类型,一般返回'summer'或'winter'
 ---@nodiscard
 function insulator:GetType()
-end
+end

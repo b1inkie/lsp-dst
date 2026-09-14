@@ -9,9 +9,25 @@ local sanityaura = {}
 
 ---实体移除组件时执行的善后工作（somePrefab:RemoveComponent("someComponent")==>此函数被调用）
 ---<br>如，此组件从实体移除，此函数被调用，移除标签sanityaura
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanityaura:OnRemoveFromEntity()
 end
+
+---获取基础理智光环值（不计算距离衰减）
+---<br>aurafn 存在时返回 aurafn(self.inst, observer) 的结果，否则返回固定的 self.aura
+---@param observer ent # 观察者实体（一般为玩家）
+---@return number # 基础光环值（每秒增减的 san 值）
+---@nodiscard
+---author: Runar(Agent)
+function sanityaura:GetBaseAura(observer) end
+
+---设置基础光环的去重名称：同名的多个光环在 sanity:Recalc 中只会被计算一次
+---<br>（假定同名光环的强度相同），用于避免多个相同来源光环叠加
+---@param baseauraname string # 光环源名称标识
+---@return nil
+---author: Runar(Agent)
+function sanityaura:SetBaseAuraName(baseauraname) end
 
 ---获取对observer的理智光环，具体计算详见此函数
 ---<br>影响因素：距离平方distsq、动态光环函数aurafn、动态衰减函数fallofffn

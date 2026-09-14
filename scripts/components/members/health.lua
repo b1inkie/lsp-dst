@@ -33,32 +33,37 @@
 ---@field maxdamagetakenperhit number|nil # 单次受击最大扣血，建议使用SetMaxDamageTakenPerHit方法对其赋值。<br>需要注意：若选择直接修改，则应赋值一个负数，这样才能保持和对应Set方法的逻辑一致
 ---@field _ignore_maxdamagetakenperhit boolean|nil # 无视单次受击最大扣血，此属性无对应的Set方法，只能直接修改。<br>true为无视，maxdamagetakenperhit属性无效，false和nil为不无视。
 ---@field redirect fun(inst:ent, amount:number, overtime:(number|nil), cause, ignore_invincible:boolean, afflicter, ignore_absorb:boolean):(idk)|nil # 重定向
+---@field _onremovelunarburn fun(src:ent|string):nil # 月亮灼烧来源实体被移除时的事件回调，注销对应来源
 local health = {}
 
 ---设置伤害吸收值
 ---@param amount number # 最终受伤乘以(1 - amount)
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetAbsorptionAmount(amount)
 end
 
 ---强制刷新一次 HUD(0 增量)
 ---
----@param overtime idk #
----author: 
+---@param overtime boolean|nil # 是否为持续伤害(传入 healthdelta 事件)
+---@return nil
+---author: Runar(Agent)
 function health:ForceUpdateHUD(overtime)
 end
 
 ---设置单次受击最大扣血
----@param maxdamagetakenperhit number #
----author:nullptr
+---@param maxdamagetakenperhit number # 单次受击最大扣血(正值内部取负存储, nil 取消限制)
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetMaxDamageTakenPerHit(maxdamagetakenperhit)
 end
 
 ---变动血量 死亡也是在这里推的
 ---@param val number # 伤害值
----@param cause idk #
+---@param cause idk # 伤害/死亡原因标识(如 "fire"/"hunger", 推入死亡事件)
 ---@param afflicter ent|nil # 造成伤害的实体
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function health:SetVal(val,cause,afflicter)
 end
 
@@ -72,7 +77,8 @@ end
 ---移除生命回复源
 ---@param source ent # 实体或者字符串
 ---@param key string # 一个source可以有多个key，所以需要指定
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:RemoveRegenSource(source,key)
 end
 
@@ -80,12 +86,39 @@ end
 ---@param amount number # 火焰伤害的基础数值
 ---@param doer ent|string|"fire" # 造成伤害的来源实体
 ---@param instant boolean|nil # 是否立即生效
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:DoFireDamage(amount,doer,instant)
 end
 
+---获取当前月亮灼烧标志位
+---@return number # 当前标志位，无月亮灼烧时为 0
+---@nodiscard
+---author: Runar(Agent)
+function health:GetLunarBurnFlags() end
+
+---汇总计算所有月亮灼烧来源的标志位（按位或）
+---@return number # 全部来源标志位的按位或结果
+---@nodiscard
+---author: Runar(Agent)
+function health:CalcLunarBurnFlags() end
+
+---登记一个月亮灼烧来源并更新标志位（首次登记时推送 startlunarburn 事件；实体来源会监听其 onremove 以自动注销）
+---@param source ent # 来源，可以为实体也可以为字符串
+---@param flags number # 该来源的灼烧标志位（位掩码）
+---@return nil
+---author: Runar(Agent)
+function health:RegisterLunarBurnSource(source,flags) end
+
+---注销一个月亮灼烧来源并重算标志位（全部注销后推送 stoplunarburn 事件）
+---@param source ent # 来源，可以为实体也可以为字符串
+---@return nil
+---author: Runar(Agent)
+function health:UnregisterLunarBurnSource(source) end
+
 ---已弃用，保留函数，所以mod不会崩溃(有函数但函数体无内容)
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:RecalculatePenalty()
 end
 
@@ -98,19 +131,22 @@ end
 
 ---设置黑血百分比
 ---@param penalty number # 官方在别处有作限制，所以最多只会扣75%生命上限，区间[0, 0.75]
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetPenalty(penalty)
 end
 
 ---设置对来自玩家的伤害吸收百分比
 ---@param amount number # 最终受伤乘以(1 - amount)
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetAbsorptionAmountFromPlayer(amount)
 end
 
 ---增加或减少黑血百分比
 ---@param delta number # 官方在别处有作限制，所以最多只会扣75%生命上限，区间[-0.75, 0.75]
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:DeltaPenalty(delta)
 end
 
@@ -123,7 +159,8 @@ end
 
 ---停止再生
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function health:OnRemoveFromEntity()
 end
 
@@ -135,29 +172,36 @@ function health:GetFireDamageScale()
 end
 
 ---DoDelta
----@param amount number #
----@param overtime boolean|nil #
----@param cause idk #
----@param ignore_invincible boolean|nil #
----@param afflicter idk #
----@param ignore_absorb boolean|nil #
+---@param amount number # 生命变化量(负为受伤)
+---@param overtime boolean|nil # 是否为持续伤害(传入 healthdelta 事件)
+---@param cause idk # 伤害原因标识(如 "cold"/"hot"/"hunger", 用于不致命判断)
+---@param ignore_invincible boolean|nil # 为 true 时无视无敌状态
+---@param afflicter idk # 攻击来源实体(用于玩家吸收与减伤修正)
+---@param ignore_absorb boolean|nil # 为 true 时不计算伤害吸收
 ---@return number # 返回伤害值,注意 `符号`
----author: lan
+---author: lan, Runar(Agent)
 function health:DoDelta(amount,overtime,cause,ignore_invincible,afflicter,ignore_absorb)
 end
 
 ---设置生命值百分比
 ---@param percent number # 应为[0, 1]之间
----@param overtime idk #
----@param cause idk #
----author:nullptr
+---@param overtime boolean|nil # 是否为持续伤害(传入 healthdelta 事件)
+---@param cause idk # 伤害原因标识
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetPercent(percent,overtime,cause)
 end
 
 ---杀死调用的实体
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:Kill()
 end
+
+---强制杀死调用的实体（无视无敌状态）
+---@return nil
+---author: Runar(Agent)
+function health:ForceKill() end
 
 ---获取当前血量百分比
 ---@return number
@@ -168,8 +212,9 @@ function health:GetPercent()
 end
 
 ---设置最小生命值
----@param amount number #
----author:nullptr
+---@param amount number # 最小生命值下限
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetMinHealth(amount)
 end
 
@@ -180,20 +225,23 @@ function health:GetMaxWithPenalty()
 end
 
 ---停止回复任务
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:StopRegen()
 end
 
 ---把健康数据转移到新实体
 ---
----@param newinst idk #
----author: 
+---@param newinst ent # 接收数据的新实体
+---@return nil
+---author: Runar(Agent)
 function health:TransferComponent(newinst)
 end
 
 ---设置当前生命值
----@param amount number #
----author:nullptr
+---@param amount number # 目标生命值(直接赋值)
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetCurrentHealth(amount)
 end
 
@@ -214,8 +262,9 @@ end
 ---@param source ent # 来源，可以为实体也可以为字符串
 ---@param amount number # 单次回复的生命值
 ---@param period number # 回复生命值的间隔
----@param key string|"key" #
----author:nullptr
+---@param key string|"key" # 回复源内的任务键(缺省 "key")
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:AddRegenSource(source,amount,period,key)
 end
 
@@ -223,19 +272,22 @@ end
 ---@param amount number # 单次回复的生命值
 ---@param period number # 回复生命值的间隔
 ---@param interruptcurrentregen boolean|nil # 中断当前回复标志位
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:StartRegen(amount,period,interruptcurrentregen)
 end
 
 ---设置生命上限
 ---@param amount number # 最大生命值
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function health:SetMaxHealth(amount)
 end
 
 ---设置无敌
----@param val boolean #
----author: lan
+---@param val boolean # 是否无敌(推 invincibletoggle 事件)
+---@return nil
+---author: lan, Runar(Agent)
 function health:SetInvincible(val)
 end
 

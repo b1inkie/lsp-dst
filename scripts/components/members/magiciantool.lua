@@ -9,7 +9,8 @@ local magiciantool = {}
 ---设置停止使用时回调
 ---
 ---@param fn fun(doer:ent)# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function magiciantool:SetOnStopUsingFn(fn)
 end
 
@@ -29,19 +30,22 @@ end
 
 ---立即停止使用(清使用者)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function magiciantool:StopUsing()
 end
 
 ---实体移除时停止使用
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function magiciantool:OnRemoveFromEntity()
 end
 
 ---设置开始使用时回调
 ---
 ---@param fn fun(doer:ent)# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function magiciantool:SetOnStartUsingFn(fn)
-end
+end

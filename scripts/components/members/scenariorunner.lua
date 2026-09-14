@@ -7,22 +7,26 @@
 local scenariorunner = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:Reset()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:ClearScenario()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:Run()
 end
 
 ---
 ---@param name idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:SetScript(name)
 end

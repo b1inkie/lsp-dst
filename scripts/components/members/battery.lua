@@ -7,24 +7,28 @@
 local battery = {}
 
 ---实体移除时的清理：移除 battery 标签
+---@return nil
 ---author: Runar
 function battery:OnRemoveFromEntity()
 end
 
 ---设置电池可用性判定回调
 ---@param fn fun(inst: ent, user: ent, mult: number|nil):boolean,idk # 判定回调，返回是否成功及原因
+---@return nil
 ---author: Runar
 function battery:SetCanBeUsedFn(fn)
 end
 
 ---设置电池被成功使用后的回调
 ---@param fn fun(inst: ent, user: ent, mult: number|nil)|nil # 使用后回调
+---@return nil
 ---author: Runar
 function battery:SetOnUsedFn(fn)
 end
 
 ---设置部分充能倍率计算回调（电量不足以全量充能时可将倍率调低）
 ---@param fn fun(inst: ent, user: ent, mult: number|nil):number|nil|nil # 部分充能倍率回调
+---@return nil
 ---author: Runar
 function battery:SetResolvePartialChargeMultFn(fn)
 end
@@ -49,6 +53,7 @@ end
 ---触发电池被使用后的回调
 ---@param user ent # 使用电池的实体
 ---@param mult number|nil # 充能倍率
+---@return nil
 ---author: Runar
 function battery:OnUsed(user, mult)
 end

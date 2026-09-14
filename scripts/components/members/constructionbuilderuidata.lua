@@ -6,15 +6,16 @@
 local constructionbuilderuidata = {}
 
 ---
----@param prefab idk # 
+---@param prefab idk # 要查询的Ingredient（材料）prefab 名
 ---@return number
 ---author: Runar(Agent)
 function constructionbuilderuidata:GetSlotForIngredient(prefab)
 end
 
 ---
----@param targetinst idk # 
----author: 
+---@param targetinst idk # 要同步为修建目标的实体（施工工地）
+---@return nil
+---author: Runar(Agent)
 function constructionbuilderuidata:SetTarget(targetinst)
 end
 
@@ -25,7 +26,7 @@ function constructionbuilderuidata:GetContainer()
 end
 
 ---
----@param slot idk # 
+---@param slot idk # 要查询的施工格子编号（从 1 开始）
 ---@return boolean
 ---author: Runar(Agent)
 function constructionbuilderuidata:GetIngredientForSlot(slot)
@@ -44,7 +45,8 @@ function constructionbuilderuidata:GetTarget()
 end
 
 ---
----@param containerinst idk # 
----author: 
+---@param containerinst idk # 要同步的施工容器实体（constructioninst）
+---@return nil
+---author: Runar(Agent)
 function constructionbuilderuidata:SetContainer(containerinst)
 end

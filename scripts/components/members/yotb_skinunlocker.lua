@@ -12,6 +12,7 @@ end
 
 ---
 ---@param skin idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_skinunlocker:SetSkin(skin)
-end
+end

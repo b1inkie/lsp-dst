@@ -4,13 +4,15 @@
 local tacklesketch = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function tacklesketch:OnRemoveFromEntity()
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tacklesketch:Teach(target)
 end
-
+

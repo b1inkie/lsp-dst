@@ -21,8 +21,9 @@ function pinnable:IsValidPinTarget()
 end
 
 ---
----@param wearofftime idk # 
----author: 
+---@param wearofftime idk # 默认的粘液失效时长(秒)
+---@return nil
+---author: Runar(Agent)
 function pinnable:SetDefaultWearOffTime(wearofftime)
 end
 
@@ -33,8 +34,9 @@ function pinnable:IsStuck()
 end
 
 ---
----@param ratio idk # 
----author: 
+---@param ratio idk # 未使用(内部按 RemainingRatio 自动取值)
+---@return nil
+---author: Runar(Agent)
 function pinnable:SpawnShatterFX(ratio)
 end
 
@@ -45,29 +47,34 @@ function pinnable:RemainingRatio()
 end
 
 ---
----@param wearofftime idk # 
----author: 
+---@param wearofftime idk # 距失效的剩余时长(秒,≥1 的值按 1 秒处理)
+---@return nil
+---author: Runar(Agent)
 function pinnable:StartWearingOff(wearofftime)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function pinnable:Unstick()
 end
 
 ---
----@param goo_build idk # 
----@param splashfxlist idk # 
----author: 
+---@param goo_build idk # 粘液外观 build 名(覆盖 swap_goo 符号,缺省 "goo")
+---@param splashfxlist idk # 破碎飞溅特效 prefab 列表(缺省用内置列表)
+---@return nil
+---author: Runar(Agent)
 function pinnable:Stick(goo_build,splashfxlist)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function pinnable:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function pinnable:UpdateStuckStatus()
-end
+end

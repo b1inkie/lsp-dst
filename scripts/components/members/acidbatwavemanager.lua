@@ -101,11 +101,6 @@ function acidbatwavemanager:StopWatchingPlayers() end
 ---author: Runar
 function acidbatwavemanager:OnIsAcidRaining(isacidraining) end
 
----组件初始化后回调：按当前酸雨状态同步监视状态
----@return nil
----author: Runar
-function acidbatwavemanager:OnPostInit() end
-
 ---更新玩家的波次生成概率：死亡 / 幽灵 / 所在区域无法落酸雨时概率清零
 ---@param player ent # 玩家实体
 ---@param playermetadata idk # 玩家的波次元数据表

@@ -14,7 +14,8 @@ local incrementalproducer = {}
 
 ---执行一次生产(走 producefn)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function incrementalproducer:DoProduce()
 end
 
@@ -27,6 +28,7 @@ end
 
 ---可生产时执行一次
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function incrementalproducer:TryProduce()
-end
+end

@@ -25,8 +25,9 @@ end
 
 ---设置被画(绘画完成)时的回调
 ---
----@param fn idk # 
----author: 
+---@param fn idk # 被画（绘画完成）时的回调，参数为(inst, imagename, imagesource, atlasname, bgimagename, bgatlasname)
+---@return nil
+---author: Runar(Agent)
 function drawable:SetOnDrawnFn(fn)
 end
 
@@ -53,24 +54,27 @@ end
 
 ---设置可否被画
 ---
----@param candraw idk # 
----author: 
+---@param candraw idk # 是否可被画
+---@return nil
+---author: Runar(Agent)
 function drawable:SetCanDraw(candraw)
 end
 
 ---移除 drawable 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function drawable:OnRemoveFromEntity()
 end
 
 ---应用绘画结果(可为空表示擦除)并触发回调
 ---
----@param imagename idk # 
----@param imagesource idk # 
----@param atlasname idk # 
----@param bgimagename idk # 
----@param bgatlasname idk # 
----author: 
+---@param imagename idk # 画的图像名（空串视为擦除）
+---@param imagesource idk # 图像来源
+---@param atlasname idk # 图集名（空串视为擦除）
+---@param bgimagename idk # 背景图名（空串视为擦除）
+---@param bgatlasname idk # 背景图集名（空串视为擦除）
+---@return nil
+---author: Runar(Agent)
 function drawable:OnDrawn(imagename,imagesource,atlasname,bgimagename,bgatlasname)
-end
+end

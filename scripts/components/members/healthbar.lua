@@ -19,14 +19,16 @@ local healthbar = {}
 
 ---开关血条显示
 ---
----@param enable idk # 
----author: 
+---@param enable boolean # 是否显示(非 false 均视为启用)
+---@return nil
+---author: Runar(Agent)
 function healthbar:Enable(enable)
 end
 
 ---按比例设置血条值(>0 生效)
 ---
----@param percent idk # 
----author: 
+---@param percent number # 血量占比(0~1, 为 0 时隐藏血条)
+---@return nil
+---author: Runar(Agent)
 function healthbar:SetValue(percent)
 end

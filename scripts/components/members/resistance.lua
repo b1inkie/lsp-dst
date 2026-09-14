@@ -29,30 +29,35 @@ end
 
 ---
 ---@param tag idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:AddResistance(tag)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:SetOnResistDamageFn(fn)
 end
 
 ---
 ---@param damage_amount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:ResistDamage(damage_amount)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:SetShouldResistFn(fn)
 end
 
 ---
 ---@param tag idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:RemoveResistance(tag)
-end
+end

@@ -15,7 +15,3 @@ function ambientsound:SetReverbPreset(preset) end
 ---author: Runar
 function ambientsound:SetWavesEnabled(enabled) end
 
----组件初始化后回调：启动初始音效并立即执行一次更新以完成初始淡入
----@return nil
----author: Runar
-function ambientsound:OnPostInit() end

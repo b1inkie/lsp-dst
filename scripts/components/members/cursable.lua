@@ -15,18 +15,21 @@ end
 ---为角色施加诅咒，并处理相关物品和效果
 ---@param item ent # 诅咒物品实例（需拥有curseditem组件）
 ---@param curse string # 诅咒类型（目前原版只有"MONKEY"，即猴子诅咒）
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function cursable:ApplyCurse(item,curse)
 end
 
 ---强制将诅咒物品放入角色物品栏，必要时弹出其他物品（无nosteal标签）腾出空间
 ---@param item ent # 诅咒物品实例
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function cursable:ForceOntoOwner(item)
 end
 
 ---角色死亡时，移除所有诅咒物品并生成掉落物
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function cursable:Died()
 end
 
@@ -37,4 +40,4 @@ end
 ---@return boolean
 ---author: nullptr, Runar(Agent)
 function cursable:RemoveCurse(curse,numofitems,dropitems)
-end
+end

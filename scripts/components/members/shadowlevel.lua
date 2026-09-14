@@ -7,19 +7,22 @@ local shadowlevel = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shadowlevel:SetLevelFn(fn)
 end
 
 ---设置暗影等级 `level`属性
 ---@param level integer # 暗影等级
 ---
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function shadowlevel:SetDefaultLevel(level)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function shadowlevel:OnRemoveFromEntity()
 end
 

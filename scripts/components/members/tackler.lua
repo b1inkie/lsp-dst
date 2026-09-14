@@ -15,7 +15,8 @@ local tackler = {}
 
 ---
 ---@param distance idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetDistance(distance)
 end
 
@@ -27,32 +28,37 @@ end
 
 ---
 ---@param distance idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetEdgeDistance(distance)
 end
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetStructureDamageMultiplier(mult)
 end
 
 ---
 ---@param action idk # 
 ---@param amount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:AddWorkAction(action,amount)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetOnCollideFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetOnTrampleFn(fn)
 end
 
@@ -71,12 +77,14 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetOnStartTackleFn(fn)
 end
 
 ---
 ---@param radius idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetRadius(radius)
-end
+end

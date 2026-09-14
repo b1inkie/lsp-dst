@@ -19,12 +19,14 @@ end
 ---
 ---@param prize_prefab idk # 
 ---@param prize_count idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shaveable:SetPrize(prize_prefab,prize_count)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function shaveable:OnRemoveFromEntity()
 end
 

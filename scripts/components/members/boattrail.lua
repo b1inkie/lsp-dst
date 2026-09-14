@@ -13,12 +13,13 @@
 ---@field last_dir_z idk
 local boattrail = {}
 
----
----@param x idk # 
----@param y idk # 
----@param z idk # 
----@param dir_x idk # 
----@param dir_z idk # 
----author: 
+---在船尾按行进方向的反向偏移半径处生成船尾水波特效（boat_water_fx），随机轮换播放动画并配置其 boattrailmover 漂移参数
+---@param x number # 特效生成点世界坐标 x
+---@param y number # 特效生成点世界坐标 y
+---@param z number # 特效生成点世界坐标 z
+---@param dir_x number # 船行进方向单位向量 x 分量
+---@param dir_z number # 船行进方向单位向量 z 分量
+---@return nil
+---author: Runar(Agent)
 function boattrail:SpawnEffectPrefab(x,y,z,dir_x,dir_z)
 end

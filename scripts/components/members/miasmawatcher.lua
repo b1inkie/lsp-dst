@@ -8,41 +8,47 @@ local miasmawatcher = {}
 
 ---按瘴气减速刷新行走速度
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function miasmawatcher:UpdateMiasmaWalkSpeed()
 end
 
 ---开关瘴气(清来源并刷新)
 ---
----@param active boolean# 
----author: 
+---@param active boolean # 是否处于瘴气影响中
+---@return nil
+---author: Runar(Agent)
 function miasmawatcher:ToggleMiasma(active)
 end
 
 ---设置瘴气行走减速倍率(0~1 钳制)
 ---
----@param mult number# 
----author: 
+---@param mult number # 瘴气中的行走速度倍率(0~1)
+---@return nil
+---author: Runar(Agent)
 function miasmawatcher:SetMiasmaSpeedMultiplier(mult)
 end
 
 ---登记一个瘴气来源
 ---
----@param src any# 
----author: 
+---@param src any # 登记的瘴气来源(作为修正列表键)
+---@return nil
+---author: Runar(Agent)
 function miasmawatcher:AddMiasmaSource(src)
 end
 
 ---移除一个瘴气来源
 ---
----@param src any# 
----author: 
+---@param src any # 要移除的瘴气来源
+---@return nil
+---author: Runar(Agent)
 function miasmawatcher:RemoveMiasmaSource(src)
 end
 
 ---实体移除时恢复行走速度
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function miasmawatcher:OnRemoveFromEntity()
 end
 
@@ -51,4 +57,4 @@ end
 ---@return boolean
 ---author: 
 function miasmawatcher:IsInMiasma()
-end
+end

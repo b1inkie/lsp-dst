@@ -7,11 +7,13 @@ local walkingplankuser = {}
 
 ---
 ---@param plank idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplankuser:SetCurrentPlank(plank)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplankuser:Dismount()
-end
+end

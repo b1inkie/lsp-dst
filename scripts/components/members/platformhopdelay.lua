@@ -5,14 +5,16 @@
 local platformhopdelay = {}
 
 ---
----@param ticks idk # 
----author: 
+---@param ticks number # 跳跃检测延迟帧数
+---@return nil
+---author: Runar(Agent)
 function platformhopdelay:SetDelayTicks(ticks)
 end
 
 ---
----@param time idk # 
----author: 
+---@param time number # 跳跃检测延迟秒数（内部换算为帧）
+---@return nil
+---author: Runar(Agent)
 function platformhopdelay:SetDelay(time)
 end
 

@@ -21,21 +21,24 @@ end
 
 ---切换瞄准目标炮台, 旧炮台离开时停止其瞄准
 ---
----@param cannon idk # 
----author: 
+---@param cannon ent|nil # 要瞄准的目标大炮实体，nil 表示取消
+---@return nil
+---author: Runar(Agent)
 function boatcannonuser:SetCannon(cannon)
 end
 
 ---结束大炮瞄准状态
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatcannonuser:CancelAimingStateInternal()
 end
 
 ---设置目标炮台的隐藏标记开关
 ---
----@param classified idk # 
----author: 
+---@param classified ent # 玩家的 classified 隐藏实体
+---@return nil
+---author: Runar(Agent)
 function boatcannonuser:SetClassified(classified)
 end
 
@@ -48,21 +51,24 @@ end
 
 ---解除与隐藏实体的关联并触发 OnCannonChanged(nil)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatcannonuser:DetachClassified()
 end
 
 ---换船或换炮时刷新隐藏标记与瞄准状态
 ---
----@param cannon idk # 
----author: 
+---@param cannon ent|nil # 当前瞄准的大炮实体，nil 表示停止瞄准
+---@return nil
+---author: Runar(Agent)
 function boatcannonuser:OnCannonChanged(cannon)
 end
 
 ---记录客户端隐藏实体(classified), 监听其 onremove 自动解除
 ---
----@param classified idk # 
----author: 
+---@param classified ent # 玩家的 classified 隐藏实体
+---@return nil
+---author: Runar(Agent)
 function boatcannonuser:AttachClassified(classified)
 end
 

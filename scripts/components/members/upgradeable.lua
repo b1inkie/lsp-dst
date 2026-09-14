@@ -13,7 +13,8 @@ local upgradeable = {}
 
 ---
 ---@param num idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function upgradeable:SetStage(num)
 end
 
@@ -27,7 +28,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function upgradeable:SetCanUpgradeFn(fn)
 end
 
@@ -39,7 +41,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function upgradeable:SetOnUpgradeFn(fn)
 end
 

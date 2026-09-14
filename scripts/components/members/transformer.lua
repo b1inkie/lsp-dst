@@ -24,7 +24,8 @@ local transformer = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetOnRevertFn(fn)
 end
 
@@ -37,7 +38,8 @@ end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetObjectData(data)
 end
 
@@ -56,43 +58,51 @@ function transformer:SetTransformEvent(event,target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:Transform()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:StartTransform()
 end
 
 ---
 ---@param check idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetOnLoadCheck(check)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:Revert()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:TransformOnSleep()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:StartRevert()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:RemoveSleepEvents()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:RevertOnSleep()
 end
 
@@ -104,12 +114,14 @@ function transformer:SetRevertEvent(event,target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:GetObjectData()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetOnTransformFn(fn)
-end
+end

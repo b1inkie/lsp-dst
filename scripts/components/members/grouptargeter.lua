@@ -13,7 +13,8 @@
 local grouptargeter = {}
 
 ---获取当前实体拥有的目标表中，所有目标的权重值总和（该函数主要用于 debug  确保总和为1）
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function grouptargeter:GetTotalWeight()
 end
 
@@ -42,7 +43,8 @@ end
 ---为传入的目标添加“实体移除”事件的监听
 ---<br>主要用途：主要用于添加新目标至实体当前拥有的目标表内时为新目标添加该监听
 ---@param target ent # 需要添加监听的目标
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function grouptargeter:StartTracking(target)
 end
 
@@ -56,13 +58,15 @@ end
 
 ---移除一个实体当前拥有的目标表中已经包含的目标并更改其余目标的权重（与 AddTarget 相似）
 ---@param target ent # 需要移除的目标
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function grouptargeter:RemoveTarget(target)
 end
 
 ---添加一个实体当前拥有的目标表中没有的新目标并更改目标表中所有目标的权重（与 RemoveTarget 相似）
 ---@param target ent # 需要添加的新目标
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function grouptargeter:AddTarget(target)
 end
 
@@ -70,18 +74,21 @@ end
 ---<br>运行逻辑：如果当前实体拥有的目标表中只有一个目标就直接返回，如果不止一个就减小传入目标的权重并将减少的那部分值均等的分发给目标表中其余每个目标
 ---<br>主要用途：主要用于在调用 SelectTarget 函数选择了目标表中某个目标后调用该函数用以降低该目标下次再被选中的概率
 ---@param target ent # 需要降低权重的目标
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function grouptargeter:OnPickTarget(target)
 end
 
 ---停止跟踪所有目标并移除监听
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function grouptargeter:OnRemoveFromEntity()
 end
 
 ---为传入的目标移除“实体移除”事件的监听
 ---@param target ent # 需要移除监听的目标
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function grouptargeter:StopTracking(target)
-end
+end

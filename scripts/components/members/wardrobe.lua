@@ -18,13 +18,15 @@ local wardrobe = {}
 
 ---
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:EndChanging(doer)
 end
 
 ---
 ---@param range idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetRange(range)
 end
 
@@ -36,19 +38,22 @@ function wardrobe:BeginChanging(doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:OnRemoveFromEntity()
 end
 
 ---
 ---@param canbeshared idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetCanBeShared(canbeshared)
 end
 
 ---
 ---@param canuseaction idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetCanUseAction(canuseaction)
 end
 
@@ -62,7 +67,8 @@ end
 
 ---
 ---@param canbedressed idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetCanBeDressed(canbedressed)
 end
 
@@ -75,7 +81,8 @@ function wardrobe:CanBeginChanging(doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:EndAllChanging()
 end
 
@@ -83,25 +90,29 @@ end
 ---@param target idk # 
 ---@param doer idk # 
 ---@param skins idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:ApplyTargetSkins(target,doer,skins)
 end
 
 ---
 ---@param doer idk # 
 ---@param diff idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:ApplySkins(doer,diff)
 end
 
 ---
 ---@param enable idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:Enable(enable)
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetChangeInDelay(delay)
-end
+end

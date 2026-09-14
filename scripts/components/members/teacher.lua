@@ -6,7 +6,8 @@ local teacher = {}
 
 ---
 ---@param recipe idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teacher:SetRecipe(recipe)
 end
 
@@ -16,4 +17,4 @@ end
 ---@return string|nil
 ---author: Runar(Agent)
 function teacher:Teach(target)
-end
+end

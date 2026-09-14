@@ -17,12 +17,6 @@ end
 function beargerspawner:SetFirstBeargerChance(chance)
 end
 
----初始化：根据熊獾总生成几率计算生成延迟并注册世界计时器，同时处理存档残留的生成倒计时
----@return nil
----author: Runar
-function beargerspawner:OnPostInit()
-end
-
 ---让目标玩家及其附近范围内的玩家说出熊獾来袭的警告台词
 ---@param _targetplayer ent # 目标玩家
 ---@return nil

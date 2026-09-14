@@ -23,7 +23,8 @@ end
 
 ---
 ---@param mount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:StartTracking(mount)
 end
 
@@ -47,16 +48,19 @@ end
 
 ---
 ---@param mount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:StopTracking(mount)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:Dismount()
-end
+end

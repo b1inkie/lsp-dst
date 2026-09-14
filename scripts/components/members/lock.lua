@@ -13,14 +13,16 @@ local lock = {}
 ---设置锁的钥匙类型(变化时触发锁回调)
 ---
 ---@param key string|nil# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:SetKey(key)
 end
 
 ---设置上锁时回调
 ---
 ---@param fn fun(doer:ent)# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:SetOnLockedFn(fn)
 end
 
@@ -49,14 +51,16 @@ end
 ---上锁(给操作者)
 ---
 ---@param doer ent|nil# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:Lock(doer)
 end
 
 ---直接设置锁状态(带操作者)
 ---
 ---@param locked boolean# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:SetLocked(locked)
 end
 
@@ -72,19 +76,22 @@ end
 ---
 ---@param key ent|nil# 
 ---@param doer ent|nil# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:Unlock(key,doer)
 end
 
 ---清除锁类型等登记
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:OnRemoveFromEntity()
 end
 
 ---设置开锁时回调
 ---
 ---@param fn fun(doer:ent)# 
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:SetOnUnlockedFn(fn)
-end
+end

@@ -6,14 +6,15 @@ local dumbbelllifter = {}
 
 ---开始举该哑铃
 ---
----@param dumbbell idk # 
----author: 
+---@param dumbbell idk # 要开始举的哑铃实体
+---@return nil
+---author: Runar(Agent)
 function dumbbelllifter:StartLifting(dumbbell)
 end
 
 ---判断当前举的是否为该哑铃
 ---
----@param dumbbell idk # 
+---@param dumbbell idk # 要比对的哑铃实体
 ---@return boolean
 ---author: Runar(Agent)
 function dumbbelllifter:IsLifting(dumbbell)
@@ -35,7 +36,7 @@ end
 
 ---判断能否举该哑铃(默认 true)
 ---
----@param dumbbell idk # 
+---@param dumbbell idk # 要判断能否举起的哑铃实体
 ---@return boolean
 ---author: Runar(Agent)
 function dumbbelllifter:CanLift(dumbbell)
@@ -43,6 +44,7 @@ end
 
 ---停止举哑铃并清除
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function dumbbelllifter:StopLifting()
 end

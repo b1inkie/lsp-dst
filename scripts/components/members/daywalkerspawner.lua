@@ -9,23 +9,25 @@ local daywalkerspawner = {}
 
 ---从日间幽灵(日行者)出生点列表移除一个候选点
 ---
----@param spawnpoint idk # 
----author: 
+---@param spawnpoint idk # 要移除的出生点实体
+---@return nil
+---author: Runar(Agent)
 function daywalkerspawner:UnregisterDayWalkerSpawningPoint(spawnpoint)
 end
 
 ---注册一个日行者出生候选点(供模组调用)
 ---
----@param spawnpoint idk # 
----author: 
+---@param spawnpoint idk # 要注册的出生点实体
+---@return nil
+---author: Runar(Agent)
 function daywalkerspawner:RegisterDayWalkerSpawningPoint(spawnpoint)
 end
 
 ---判断某坐标是否为合法出生点(周围无障碍)
 ---
----@param x idk # 
----@param y idk # 
----@param z idk # 
+---@param x idk # 目标位置的 X 坐标
+---@param y idk # 目标位置的 Y 坐标
+---@param z idk # 目标位置的 Z 坐标
 ---@return boolean
 ---author: Runar(Agent)
 function daywalkerspawner:IsValidSpawningPoint(x,y,z)
@@ -33,7 +35,8 @@ end
 
 ---日行者强度等级 +1(上限 2)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function daywalkerspawner:IncrementPowerLevel()
 end
 
@@ -53,7 +56,7 @@ end
 
 ---尝试注册出生点(已在列表则跳过)
 ---
----@param spawnpoint idk # 
+---@param spawnpoint idk # 要注册的出生点实体
 ---@return boolean
 ---author: Runar(Agent)
 function daywalkerspawner:TryToRegisterSpawningPoint(spawnpoint)
@@ -61,16 +64,17 @@ end
 
 ---登记当前日行者实体
 ---
----@param daywalker idk # 
----author: 
+---@param daywalker idk # 要登记的日行者实体
+---@return nil
+---author: Runar(Agent)
 function daywalkerspawner:WatchDaywalker(daywalker)
 end
 
 ---在指定坐标生成日行者竞技场 prefab(供模组调用)
 ---
----@param x idk # 
----@param y idk # 
----@param z idk # 
+---@param x idk # 竞技场中心的 X 坐标
+---@param y idk # 竞技场中心的 Y 坐标
+---@param z idk # 竞技场中心的 Z 坐标
 ---@return ent|nil
 ---author: Runar(Agent)
 function daywalkerspawner:SpawnDayWalkerArena(x,y,z)
@@ -87,12 +91,7 @@ end
 
 ---白天时移除日行者, 否则按强度尝试重新生成
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function daywalkerspawner:OnDayChange()
-end
-
----初始化: 符合配置时尝试首次生成
----
----author: 
-function daywalkerspawner:OnPostInit()
 end

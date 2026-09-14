@@ -16,14 +16,16 @@ local sentientaxe = {}
 
 ---
 ---@param owner idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:SetOwner(owner)
 end
 
 ---
 ---@param target idk # 
 ---@param action idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:OnFinishedWork(target,action)
 end
 
@@ -36,13 +38,15 @@ function sentientaxe:OnWereEaterChanged(old,new,istransforming)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:OnBecomeWere()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:ScheduleConversation(delay)
 end
 
@@ -72,6 +76,7 @@ function sentientaxe:ShouldMakeConversation()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:OnBecomeHuman()
 end

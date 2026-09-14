@@ -10,7 +10,8 @@ local roseinspectable = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:SetOnResidueActivated(fn)
 end
 
@@ -23,20 +24,23 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:SetCanResidueBeSpawnedBy(fn)
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:DoRoseInspection(doer)
 end
 
 ---
 ---@param residueowner idk # 
 ---@param residue idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:HookupResidue(residueowner,residue)
 end
 
@@ -49,18 +53,21 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:SetOnResidueCreated(fn)
 end
 
 ---
 ---@param bool idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:SetForcedInduceCooldownOnActivate(bool)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function roseinspectable:SetWillInduceCooldownOnActivate(fn)
-end
+end

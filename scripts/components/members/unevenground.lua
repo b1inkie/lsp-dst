@@ -9,26 +9,31 @@
 local unevenground = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Stop()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:OnEntityWake()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Start()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Enable()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Disable()
-end
+end

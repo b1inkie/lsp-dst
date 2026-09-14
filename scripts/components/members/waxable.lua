@@ -13,13 +13,15 @@ end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function waxable:SetNeedsSpray(val)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function waxable:SetWaxfn(fn)
 end
 
@@ -33,6 +35,7 @@ function waxable:Wax(doer,waxitem)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function waxable:OnRemoveFromEntity()
-end
+end

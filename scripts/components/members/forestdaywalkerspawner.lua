@@ -30,14 +30,16 @@ end
 
 ---强度等级 +1(上限 2)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function forestdaywalkerspawner:IncrementPowerLevel()
 end
 
 ---登记日行者实体并清垃圾堆
 ---
----@param daywalker idk # 
----author: 
+---@param daywalker idk # 日行者实体(监听其 onremove 以提升强度等级)
+---@return nil
+---author: Runar(Agent)
 function forestdaywalkerspawner:WatchDaywalker(daywalker)
 end
 
@@ -57,12 +59,7 @@ end
 
 ---白天移除日行者, 夜间按需生成/摇晃垃圾堆
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function forestdaywalkerspawner:OnDayChange()
-end
-
----初始化: 符合配置时登记日行者任务
----
----author: 
-function forestdaywalkerspawner:OnPostInit()
 end

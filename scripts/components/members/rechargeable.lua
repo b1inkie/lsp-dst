@@ -11,28 +11,32 @@
 local rechargeable = {}
 
 ---设置充能百分比
----@param pct number # 
----author: lan
+---@param pct number # 充能百分比（0~1，按 total 折算后调用 SetCharge）
+---@return nil
+---author: lan, Runar(Agent)
 function rechargeable:SetPercent(pct)
     self:SetCharge(self.total * pct)
 end
 
----
----@param source idk # 
----@param key idk # 
----author: 
+---移除一条充能时间修饰；修饰总和变化时同步 replica 的充能时间并重启充能更新循环
+---@param source idk # 移除修饰的来源实体
+---@param key idk # 移除修饰的键（与 source 共同定位一条修饰）
+---@return nil
+---author: Runar(Agent)
 function rechargeable:RemoveChargeTimeMod(source,key)
 end
 
 ---设置充能完毕回调函数
----@param fn fun(this:ent,...:any):... # 
----author: lan
+---@param fn fun(this:ent,...:any):... # 充能完毕时触发的回调（参数为实体 inst）
+---@return nil
+---author: lan, Runar(Agent)
 function rechargeable:SetOnChargedFn(fn)
 end
 
 ---设置充能条总量 `total`
----@param val number # 
----author: 
+---@param val number # 充能条总量 total 的新值（当前充能量按原百分比换算）
+---@return nil
+---author: Runar(Agent)
 function rechargeable:SetMaxCharge(val)
 end
 
@@ -46,8 +50,9 @@ function rechargeable:GetCharge()
 end
 
 ---设置进入充能的回调函数
----@param fn fun(this:ent,...:any):... # 
----author: lan
+---@param fn fun(this:ent,...:any):... # 进入充能（CD 开始）时触发的回调（参数为实体 inst）
+---@return nil
+---author: lan, Runar(Agent)
 function rechargeable:SetOnDischargedFn(fn)
 end
 
@@ -60,16 +65,18 @@ function rechargeable:GetTimeToCharge()
     return self:IsCharged() and 0 or (1 - self:GetPercent()) * self:GetRechargeTime()
 end
 
----
----author: 
+---从实体上移除组件时，去掉实体的 rechargeable 标签
+---@return nil
+---author: Runar(Agent)
 function rechargeable:OnRemoveFromEntity()
 end
 
----
----@param source idk # 
----@param key idk # 
----@param mod idk # 
----author: 
+---添加/更新一条充能时间的加算修饰；mod 为 0 时等同于移除该修饰，修饰总和变化时同步 replica 的充能时间并重启充能更新循环
+---@param source idk # 添加修饰的来源实体
+---@param key idk # 修饰键（与 source 共同定位一条修饰）
+---@param mod idk # 充能时间加算修饰值（0 时等同于移除该修饰）
+---@return nil
+---author: Runar(Agent)
 function rechargeable:SetChargeTimeMod(source,key,mod)
 end
 
@@ -82,7 +89,7 @@ function rechargeable:GetChargeTime()
     return self.chargetime
 end
 
----
+---获取当前充能百分比（0~1，current / total）
 ---@return number
 ---author: Runar(Agent)
 function rechargeable:GetPercent()
@@ -90,7 +97,8 @@ end
 
 ---开始充能(可以理解成开始进入cd)
 ---@param chargetime number # cd时间
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function rechargeable:Discharge(chargetime)
 end
 
@@ -116,12 +124,14 @@ end
 ---设置当前的充能量,最大值是 `total`, 如果你想设置当前剩余cd的话: `total`*(`1`-(`剩余cd`/`chargetime`))
 ---@param val number # 如果你想设置当前剩余cd的话: `total`*(`1`-(`剩余cd`/`chargetime`))
 ---@param overtime boolean|nil # 填true就行
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function rechargeable:SetCharge(val,overtime)
 end
 
 ---设置`chargetime`,并开始`OnUpdate`
 ---@param t number # 设置cd
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function rechargeable:SetChargeTime(t)
-end
+end

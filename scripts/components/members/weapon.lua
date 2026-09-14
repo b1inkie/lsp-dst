@@ -20,13 +20,15 @@ local weapon = {}
 ---@param attacker ent # 
 ---@param target ent # 
 ---@param projectile idk # 
----author: lan(触发回调函数,扣耐久等)
+---@return nil
+---author: lan(触发回调函数,扣耐久等), Runar(Agent)
 function weapon:OnAttack(attacker,target,projectile)
 end
 
 ---设置武器攻击距离。若hit为nil，则hit = attack
 ---@param attack number # 攻击预备距离
 ---@param hit number|nil # 击中距离
+---@return nil
 ---author: Runar
 function weapon:SetRange(attack,hit)
 end
@@ -42,6 +44,7 @@ end
 
 ---设置武器击中回调函数, 同SetAttackCallback
 ---@param fn fun(this: ent,attacker: ent,target: ent) # 击中后执行的函数
+---@return nil
 ---author: Runar
 function weapon:SetOnAttack(fn)
 end
@@ -49,31 +52,48 @@ end
 ---发射投掷物(需先设置投射物)
 ---@param attacker ent # 攻击者
 ---@param target ent # 目标
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function weapon:LaunchProjectile(attacker,target)
 end
 
+---设置武器的"硬碰硬"攻击能力：装备此武器攻击带有 tough 战斗标记的目标时，攻击者不会被击退（不触发后仰硬直）
+---@param tough boolean|nil # 是否启用；仅当显式为 false 时关闭，其余值（含 nil）均视为开启
+---@return nil
+---author: Runar(Agent)
+function weapon:EnableToughFight(tough) end
+
+---查询武器是否具备"硬碰硬"攻击能力（攻击 tough 目标时不被击退）
+---@return boolean # 是否启用
+---@nodiscard
+---author: Runar(Agent)
+function weapon:CanDoToughFight() end
+
 ---设置武器伤害值。如果dmg为函数型参数，show me等信息模组无法显示正确的攻击力
 ---@param dmg number|(fun(damage:number,this:ent,attacker:ent|nil,target:ent|string):number) # 伤害值或伤害函数
+---@return nil
 ---author: Runar,lan
 function weapon:SetDamage(dmg)
 end
 
 ---发射投射物造成伤害前的回调函数
 ---@param fn fun(inst: ent,attacker: ent,target: ent) # 回调函数
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function weapon:SetOnProjectileLaunch(fn)
 end
 
 ---设置武器击中回调函数
 ---@param fn fun(inst: ent,attacker: ent,target: ent) # 击中后执行的函数
+---@return nil
 ---author: Runar
 function weapon:SetAttackCallback(fn)
 end
 
 ---发射投射物造成伤害后的回调函数
 ---@param fn fun(inst: ent,attacker: ent,target: ent,proj: idk) # 回调函数
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function weapon:SetOnProjectileLaunched(fn)
 end
 
@@ -85,30 +105,35 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function weapon:SetOverrideStimuliFn(fn)
 end
 
 ---
 ---@param damage_mult idk # 
 ---@param wet_damage_mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function weapon:SetElectric(damage_mult,wet_damage_mult)
 end
 
 ---设置投射物(添加远程攻击)
 ---@param projectile string|nil # 投射物prefab
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function weapon:SetProjectile(projectile)
 end
 
 ---移除weapon标签, 恢复装备者攻击范围
+---@return nil
 ---author: Runar
 function weapon:OnRemoveFromEntity()
 end
 
 ---设置投射物偏移
 ---@param offset Vector3|number # 偏移向量
----author: lan(攻击者到目标的方向向量乘以这个offset)
+---@return nil
+---author: lan(攻击者到目标的方向向量乘以这个offset), Runar(Agent)
 function weapon:SetProjectileOffset(offset)
-end
+end

@@ -10,6 +10,7 @@ local symbolswapdata = {}
 ---@param build idk # 
 ---@param symbol idk # 
 ---@param is_skinned idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function symbolswapdata:SetData(build,symbol,is_skinned)
-end
+end

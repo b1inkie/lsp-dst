@@ -23,22 +23,25 @@ end
 
 ---设置晒干所需时间
 ---
----@param time idk # 
----author: 
+---@param time idk # 晒干所需时间(秒)
+---@return nil
+---author: Runar(Agent)
 function dryable:SetDryTime(time)
 end
 
 ---设置晒干产物名
 ---
----@param product idk # 
----author: 
+---@param product idk # 晒干产物名
+---@return nil
+---author: Runar(Agent)
 function dryable:SetProduct(product)
 end
 
 ---设置(湿)建造文件
 ---
----@param buildfile idk # 
----author: 
+---@param buildfile idk # (湿)状态下的建造文件名
+---@return nil
+---author: Runar(Agent)
 function dryable:SetBuildFile(buildfile)
 end
 
@@ -58,13 +61,15 @@ end
 
 ---移除 dryable 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function dryable:OnRemoveFromEntity()
 end
 
 ---设置晒干后建造文件
 ---
----@param dried_buildfile idk # 
----author: 
+---@param dried_buildfile idk # 晒干后使用的建造文件名
+---@return nil
+---author: Runar(Agent)
 function dryable:SetDriedBuildFile(dried_buildfile)
 end

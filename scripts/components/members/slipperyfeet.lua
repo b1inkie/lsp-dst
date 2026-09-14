@@ -18,24 +18,28 @@ local slipperyfeet = {}
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:DoDecay(dt)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:Start_Internal()
 end
 
 ---
 ---@param src idk # 
 ---@param key idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StartSlipperySource(src,key)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:OnRemoveFromEntity()
 end
 
@@ -47,26 +51,30 @@ function slipperyfeet:GetSlipperyAndNearbyEnts()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:Stop_Internal()
 end
 
 ---
 ---@param src idk # 
 ---@param key idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StopSlipperySource(src,key)
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StopUpdating_Internal(reason)
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:SetCurrent(val)
 end
 
@@ -78,18 +86,21 @@ end
 
 ---
 ---@param accumulating idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:SetAccumulating_Internal(accumulating)
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StartUpdating_Internal(reason)
 end
 
 ---
 ---@param delta idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:DoDelta(delta)
-end
+end

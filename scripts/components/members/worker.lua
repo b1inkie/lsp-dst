@@ -21,6 +21,7 @@ end
 ---
 ---@param action idk # 
 ---@param effectiveness idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worker:SetAction(action,effectiveness)
 end

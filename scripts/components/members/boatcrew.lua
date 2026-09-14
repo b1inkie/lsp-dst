@@ -37,9 +37,10 @@ end
 
 ---把实体加入船员, 设置其 crewmember 所属船只并触发加入回调; setcaptain 为真时同时设为船长
 ---
----@param inst idk # 
----@param setcaptain idk # 
----author: 
+---@param inst ent # 要加入的船员实体
+---@param setcaptain boolean|nil # 为真时同时设为船长
+---@return nil
+---author: Runar(Agent)
 function boatcrew:AddMember(inst,setcaptain)
 end
 
@@ -52,15 +53,17 @@ end
 
 ---指定船长并监听其移除事件
 ---
----@param captain idk # 
----author: 
+---@param captain ent # 要指定的船长实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetCaptain(captain)
 end
 
 ---设置海盗队追击目标
 ---
----@param target idk # 
----author: 
+---@param target ent|nil # 追击目标实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetTarget(target)
 end
 
@@ -73,7 +76,8 @@ end
 
 ---取消周期任务并移除所有船员的死亡/移除监听
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatcrew:OnRemoveFromEntity()
 end
 
@@ -86,14 +90,16 @@ end
 
 ---让每名船员随机延迟喊出胜利宣言
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatcrew:CrewCheer()
 end
 
 ---移除船员并触发移除回调, 船员清零时移除船的 boatcrew 组件
 ---
----@param inst idk # 
----author: 
+---@param inst ent # 要移除的船员实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:RemoveMember(inst)
 end
 
@@ -106,8 +112,9 @@ end
 
 ---设置船员加入回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(boat: ent, member: ent)|nil # 船员加入回调，参数为船只与船员实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetAddMemberFn(fn)
 end
 
@@ -120,36 +127,41 @@ end
 
 ---设置船员移除回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(boat: ent, member: ent)|nil # 船员移除回调，参数为船只与船员实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetRemoveMemberFn(fn)
 end
 
 ---把目标从 tinkertargets 占位集合移除
 ---
----@param target idk # 
----author: 
+---@param target ent # 要从占位集合移除的目标实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:removeinkertarget(target)
 end
 
 ---设置船员搜索标签
 ---
----@param tag idk # 
----author: 
+---@param tag string|nil # 船员搜索标签，nil 表示清除
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetMemberTag(tag)
 end
 
 ---设置船员更新范围
 ---
----@param range idk # 
----author: 
+---@param range number # 船员更新范围（游戏单位）
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetUpdateRange(range)
 end
 
 ---把目标记入 tinkertargets 占位集合
 ---
----@param target idk # 
----author: 
+---@param target ent # 要记入占位集合的目标实体
+---@return nil
+---author: Runar(Agent)
 function boatcrew:reserveinkertarget(target)
 end
 
@@ -163,7 +175,8 @@ end
 
 ---设置船头朝向角度
 ---
----@param heading idk # 
----author: 
+---@param heading number # 船头朝向角度（度）
+---@return nil
+---author: Runar(Agent)
 function boatcrew:SetHeading(heading)
 end

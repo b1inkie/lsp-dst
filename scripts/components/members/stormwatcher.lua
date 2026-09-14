@@ -10,13 +10,15 @@ local stormwatcher = {}
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stormwatcher:CheckStorms(data)
 end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stormwatcher:UpdateStorms(data)
 end
 
@@ -28,7 +30,8 @@ function stormwatcher:GetStormLevel(stormtype)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stormwatcher:UpdateStormLevel()
 end
 
@@ -37,4 +40,4 @@ end
 ---@return idk
 ---author: Runar(Agent)
 function stormwatcher:GetCurrentStorm(inst)
-end
+end

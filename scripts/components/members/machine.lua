@@ -20,13 +20,15 @@ end
 
 ---启动机器(开始冷却计时)
 ---打开机器，启动冷却时间,调用回调函数并触发事件
----author: mango, 
+---@return nil
+---author: mango, Runar(Agent)
 function machine:TurnOn()
 end
 
 ---关闭机器(开始冷却计时)
 ---关闭机器，启动冷却时间，调用回调函数并触发事件
----author: mango, 
+---@return nil
+---author: mango, Runar(Agent)
 function machine:TurnOff()
 end
 
@@ -39,12 +41,24 @@ end
 
 ---移除 turnedon 标签
 ---从实体移除组件时清理相关标签
----author: mango, 
+---@return nil
+---author: mango, Runar(Agent)
 function machine:OnRemoveFromEntity()
 end
 
 ---设置机器是否只能在地面使用
----@param groundonly boolean # 
----author: mango
+---@param groundonly boolean # 是否只能在地面使用（netvar setter 同步为 groundonlymachine 标签）
+---@return nil
+---author: mango, Runar(Agent)
 function machine:SetGroundOnlyMachine(groundonly)
 end
+
+---开始冷却(冷却时长为 cooldowntime,期间 oncooldown 为 true 并带 cooldown 标签;时长<=0 时不生效)
+---@return nil
+---author: Runar(Agent)
+function machine:StartCooldown() end
+
+---停止冷却(取消冷却任务并清除 oncooldown 状态)
+---@return nil
+---author: Runar(Agent)
+function machine:StopCooldown() end

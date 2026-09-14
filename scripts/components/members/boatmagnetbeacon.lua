@@ -16,7 +16,8 @@ local boatmagnetbeacon = {}
 
 ---解除与磁铁的配对, 关闭信标并移除监听
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:UnpairWithMagnet()
 end
 
@@ -29,19 +30,22 @@ end
 
 ---关联船死亡时清除船只关联
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:OnDeath()
 end
 
 ---关闭信标: 切换图标, 转 deactivate 状态, 推 onturnoff 事件并加 turnedoff 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:TurnOffBeacon()
 end
 
 ---开启信标: 切换图标, 转 activate 状态, 推 onturnon 事件并移除 turnedoff 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:TurnOnBeacon()
 end
 
@@ -54,8 +58,9 @@ end
 
 ---与磁铁配对: 记录 GUID, 监听其移除/死亡, 开启信标并加 paired 标签
 ---
----@param magnet idk # 
----author: 
+---@param magnet ent|nil # 要配对的磁铁实体（须有 boatmagnet 组件）
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:PairWithMagnet(magnet)
 end
 
@@ -75,20 +80,23 @@ end
 
 ---标记拾起状态, 拾起时清除船只关联
 ---
----@param pickedup idk # 
----author: 
+---@param pickedup boolean # 是否被拾起，为 true 时清除船只关联
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:SetIsPickedUp(pickedup)
 end
 
 ---取消船只设置任务并移除拾起/放下事件监听
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:OnRemoveFromEntity()
 end
 
 ---设置信标关联船只, 监听其移除/死亡并清除监听
 ---
----@param boat idk # 
----author: 
+---@param boat ent|nil # 要关联的船只实体，nil 表示清除关联
+---@return nil
+---author: Runar(Agent)
 function boatmagnetbeacon:SetBoat(boat)
 end

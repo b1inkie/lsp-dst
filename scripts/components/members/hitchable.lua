@@ -7,14 +7,16 @@ local hitchable = {}
 
 ---被拴到目标(播放拴绳音)
 ---
----@param target idk # 
----author: 
+---@param target ent # 拴住此实体的拴绳者实体(带 hitcher 组件)
+---@return nil
+---author: Runar(Agent)
 function hitchable:SetHitched(target)
 end
 
 ---解除拴绳(播放音)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hitchable:Unhitch()
 end
 
@@ -24,4 +26,4 @@ end
 ---author: Runar(Agent)
 function hitchable:GetHitch()
 end
-
+

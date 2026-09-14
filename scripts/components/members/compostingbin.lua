@@ -32,7 +32,7 @@ function compostingbin:IsComposting()
 end
 
 ---
----@param item idk # 
+---@param item idk # 要投入堆肥的物品实体，会按 calcmaterialvalue 折算材料后移除
 ---@return boolean
 ---author: Runar(Agent)
 function compostingbin:AddCompostable(item)
@@ -45,19 +45,22 @@ function compostingbin:GetMaterialTotal()
 end
 
 ---
----@param greens idk # 
----@param browns idk # 
----author: 
+---@param greens idk # 要添加的绿色材料数量，缺省为 0
+---@param browns idk # 要添加的棕色材料数量，缺省为 0
+---@return nil
+---author: Runar(Agent)
 function compostingbin:AddMaterials(greens,browns)
 end
 
 ---
----@param cycle_completed idk # 
----author: 
+---@param cycle_completed idk # 是否因堆肥周期完成而刷新（透传给 onrefreshfn）
+---@return nil
+---author: Runar(Agent)
 function compostingbin:Refresh(cycle_completed)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function compostingbin:OnRemoveFromEntity()
 end

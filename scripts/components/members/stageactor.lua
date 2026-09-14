@@ -14,7 +14,8 @@ local stageactor = {}
 
 ---
 ---@param story_id idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:performedplay(story_id)
 end
 
@@ -26,7 +27,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:SetOnStoryBeginFn(fn)
 end
 
@@ -38,7 +40,8 @@ end
 
 ---
 ---@param stage idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:SetStage(stage)
 end
 
@@ -52,12 +55,14 @@ function stageactor:TellStory(storyprop,story)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:OnStoryTick()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:OnDone()
 end
 
@@ -70,17 +75,20 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:SetOnStoryOverFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:OnRemoveFromEntity()
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:AbortStory(reason)
-end
+end

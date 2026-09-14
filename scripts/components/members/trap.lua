@@ -20,7 +20,8 @@
 local trap = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StartStarvation()
 end
 
@@ -32,18 +33,21 @@ end
 
 ---
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:Harvest(doer)
 end
 
 ---
 ---@param bait idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetBait(bait)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:RemoveBait()
 end
 
@@ -54,39 +58,52 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetOnBaitedFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetOnSpringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnEntityWake()
 end
 
+---直接触发陷阱捕捉指定目标（目标不可捕捉则安全解除），停止检测并推送 springtrap 事件
+---@param target ent # 要捕捉的目标实体
+---@return nil
+---author: Runar(Agent)
+function trap:DoTriggerOn(target) end
+
 ---
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnEntitySleep()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnTrappedStarve()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StopUpdating()
 end
 
@@ -97,29 +114,34 @@ function trap:AcceptingBait()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StartUpdate()
 end
 
 ---
 ---@param eater idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:BaitTaken(eater)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StopStarvation()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:Set()
 end
 
 ---
 ---@param sprung idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:Reset(sprung)
 end
 
@@ -131,7 +153,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetOnHarvestFn(fn)
 end
 
@@ -145,4 +168,4 @@ end
 ---@return boolean
 ---author: Runar(Agent)
 function trap:IsFree()
-end
+end

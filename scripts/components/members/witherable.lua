@@ -21,13 +21,15 @@ function witherable:CanRejuvenate()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:ForceWither()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:DelayWither(delay)
 end
 
@@ -38,7 +40,8 @@ function witherable:IsProtected()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:Start()
 end
 
@@ -49,20 +52,29 @@ function witherable:CanWither()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:Stop()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:ForceRejuvenate()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:DelayRejuvenate(delay)
 end
+
+---为植物提供持续 duration 秒的枯萎保护：刷新保护截止时间并调度保护结束任务，<br>若当前处于枯萎状态则强制复苏，同时推迟枯萎
+---@param duration number # 保护时长（秒）
+---@return nil
+---author: Runar(Agent)
+function witherable:Protect(duration) end
 
 ---
 ---@return idk
@@ -71,12 +83,14 @@ function witherable:IsWithered()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:OnRemoveFromEntity()
 end
 
 ---
 ---@param enable idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:Enable(enable)
-end
+end

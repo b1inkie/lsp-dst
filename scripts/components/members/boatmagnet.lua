@@ -33,7 +33,8 @@ end
 
 ---取消船只设置任务并解除与信标的配对
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:OnRemoveFromEntity()
 end
 
@@ -46,7 +47,8 @@ end
 
 ---解除与信标的配对: 移除监听, 停止追踪, 清除 paired 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:UnpairWithBeacon()
 end
 
@@ -66,15 +68,16 @@ end
 
 ---与信标配对: 互挂监听, 启动追踪, 标记 paired
 ---
----@param beacon idk # 
----author: 
+---@param beacon ent|nil # 要配对的船体信标实体（须有 boatmagnetbeacon 组件）
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:PairWithBeacon(beacon)
 end
 
 ---判断信标是否与本磁铁同船
 ---
----@param beacon idk # 
----@return boolean
+---@param beacon ent|nil # 要判定的信标实体
+---@return boolean # true 表示信标与本磁铁在同一艘船上
 ---author: Runar(Agent)
 function boatmagnet:IsBeaconOnSameBoat(beacon)
 end
@@ -89,8 +92,9 @@ end
 
 ---设置所在船只: 从旧船物理移除磁铁, 在新船注册并监听其移除/死亡
 ---
----@param boat idk # 
----author: 
+---@param boat ent|nil # 目标船只实体，nil 表示从当前船移除
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:SetBoat(boat)
 end
 

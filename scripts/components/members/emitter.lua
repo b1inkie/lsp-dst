@@ -12,6 +12,7 @@ local emitter = {}
 
 ---触发一次信号发射(推 onemit 事件)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function emitter:Emit()
-end
+end

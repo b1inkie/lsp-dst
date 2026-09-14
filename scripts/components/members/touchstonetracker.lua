@@ -7,12 +7,14 @@ local touchstonetracker = {}
 
 ---
 ---@param newinst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function touchstonetracker:TransferComponent(newinst)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function touchstonetracker:OnRemoveFromEntity()
 end
 

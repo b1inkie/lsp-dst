@@ -10,16 +10,19 @@ local wintersfeasttable = {}
 
 ---
 ---@param feasters idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wintersfeasttable:DepleteFood(feasters)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wintersfeasttable:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wintersfeasttable:CancelFeasting()
-end
+end

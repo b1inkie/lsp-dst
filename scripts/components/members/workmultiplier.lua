@@ -7,7 +7,8 @@ local workmultiplier = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function workmultiplier:SetSpecialMultiplierFn(fn)
 end
 
@@ -26,7 +27,8 @@ end
 ---@param action idk # 
 ---@param multiplier idk # 
 ---@param source idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function workmultiplier:AddMultiplier(action,multiplier,source)
 end
 
@@ -40,6 +42,7 @@ end
 ---
 ---@param action idk # 
 ---@param source idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function workmultiplier:RemoveMultiplier(action,source)
 end

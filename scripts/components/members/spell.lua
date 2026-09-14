@@ -18,18 +18,21 @@
 local spell = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function spell:OnFinish()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function spell:OnTarget()
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function spell:SetTarget(target)
 end
 
@@ -45,11 +48,13 @@ function spell:StartSpell()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function spell:ResumeSpell()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function spell:OnStart()
-end
+end

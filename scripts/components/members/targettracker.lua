@@ -16,25 +16,29 @@ local targettracker = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:SetOnResetTarget(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:SetOnTimeUpdateFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:SetOnPauseFn(fn)
 end
 
 ---
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:SetTimeTracking(time)
 end
 
@@ -60,7 +64,8 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:SetShouldKeepTrackingFn(fn)
 end
 
@@ -72,19 +77,22 @@ end
 
 ---
 ---@param reset idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:StopTracking(reset)
 end
 
 ---
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:Pause(time)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function targettracker:SetOnResumeFn(fn)
 end
 
@@ -105,4 +113,4 @@ end
 ---author: Runar(Agent)
 function targettracker:GetTimeTracking()
 end
-
+

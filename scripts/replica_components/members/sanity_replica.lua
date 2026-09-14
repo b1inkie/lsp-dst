@@ -11,7 +11,8 @@ local replica_sanity = {}
 
 ---
 ---@param ratescale idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetRateScale(ratescale)
 end
 
@@ -22,13 +23,15 @@ end
 
 ---
 ---@param sane idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetIsSane(sane)
 end
 
 ---
 ---@param penalty idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetPenalty(penalty)
 end
 
@@ -38,13 +41,15 @@ function replica_sanity:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:DetachClassified()
 end
 
 ---
 ---@param classified idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:AttachClassified(classified)
 end
 
@@ -115,13 +120,15 @@ end
 
 ---
 ---@param mode idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetSanityMode(mode)
 end
 
 ---
 ---@param current idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetCurrent(current)
 end
 
@@ -137,12 +144,14 @@ end
 
 ---
 ---@param ghostdrainmult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetGhostDrainMult(ghostdrainmult)
 end
 
 ---
 ---@param max idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_sanity:SetMax(max)
 end

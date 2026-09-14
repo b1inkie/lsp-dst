@@ -8,16 +8,19 @@
 local singingshelltrigger = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function singingshelltrigger:StartUpdating()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function singingshelltrigger:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function singingshelltrigger:StopUpdating()
-end
+end

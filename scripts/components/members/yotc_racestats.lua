@@ -19,7 +19,8 @@ end
 
 ---
 ---@param point_mod idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestats:ModifyStamina(point_mod)
 end
 
@@ -31,7 +32,8 @@ end
 
 ---
 ---@param point_mod idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestats:ModifyDirection(point_mod)
 end
 
@@ -42,7 +44,8 @@ function yotc_racestats:AddRandomPointSpread(num_points)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestats:SaveCurrentStatsAsBaseline()
 end
 
@@ -78,12 +81,14 @@ end
 
 ---
 ---@param point_mod idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestats:ModifySpeed(point_mod)
 end
 
 ---
 ---@param point_mod idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racestats:ModifyReaction(point_mod)
 end

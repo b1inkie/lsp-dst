@@ -11,7 +11,8 @@
 local worldoverseer = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:DumpSessionStats()
 end
 
@@ -24,7 +25,8 @@ end
 
 ---
 ---@param cycles idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:OnCyclesChanged(cycles)
 end
 
@@ -44,7 +46,8 @@ end
 ---
 ---@param stat idk # 
 ---@param event idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:DumpIndividualPlayerStats(stat,event)
 end
 
@@ -63,40 +66,46 @@ end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:OnClockTick(data)
 end
 
 ---
 ---@param userid idk # 
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:SendClientJoin(userid,data)
 end
 
 ---
 ---@param userid idk # 
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:SendClientQuit(userid,data)
 end
 
 ---
 ---@param userid idk # 
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:SendClientHeartBeat(userid,data)
 end
 
 ---
 ---@param src idk # 
 ---@param player idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:OnPlayerJoined(src,player)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:DumpPlayerStats()
 end
 
@@ -110,12 +119,14 @@ end
 ---
 ---@param player idk # 
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:OnPlayerDeath(player,data)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:QuitAll()
 end
 
@@ -125,26 +136,30 @@ function worldoverseer:HeartbeatPoll()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:Heartbeat()
 end
 
 ---
 ---@param src idk # 
 ---@param player idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:OnPlayerLeft(src,player)
 end
 
 ---
 ---@param player idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:RecordPlayerJoined(player)
 end
 
 ---
 ---@param player idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldoverseer:RecordPlayerLeft(player)
 end
 
@@ -153,4 +168,4 @@ end
 ---@param data idk # 
 ---author: 
 function worldoverseer:OnItemCrafted(player,data)
-end
+end

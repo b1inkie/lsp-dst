@@ -12,27 +12,32 @@ local aoeweapon_lunge = {}
 
 ---设置横向判定范围
 ---@param range number # 目标横向范围值
+---@return nil
 ---author: Runar
 function aoeweapon_lunge:SetSideRange(range) end
 
 ---设置冲锋开始前回调
 ---@param fn fun(...) # 回调函数，参数为 (inst, doer, startingpos, targetpos)
+---@return nil
 ---author: Runar
 function aoeweapon_lunge:SetOnPreLungeFn(fn) end
 
 ---设置冲锋结束后回调
 ---@param fn fun(...) # 回调函数，参数为 (inst, doer, startingpos, targetpos)
+---@return nil
 ---author: Runar
 function aoeweapon_lunge:SetOnLungedFn(fn) end
 
 ---设置冲锋拖尾特效的预制体与生成间隔
 ---@param prefab string # 特效预制体名称
 ---@param spacing number # 沿路径生成特效的间隔
+---@return nil
 ---author: Runar
 function aoeweapon_lunge:SetTrailFX(prefab, spacing) end
 
 ---设置冲锋时播放的音效
 ---@param path string # 音效路径
+---@return nil
 ---author: Runar
 function aoeweapon_lunge:SetSound(path) end
 

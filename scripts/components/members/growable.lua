@@ -32,21 +32,24 @@ end
 
 ---延长生长时长(暂停中加到剩余)
 ---
----@param extra_time idk # 
----author: 
+---@param extra_time number # 延长的生长秒数
+---@return nil
+---author: Runar(Agent)
 function growable:ExtendGrowTime(extra_time)
 end
 
 ---开始生长(限时)
 ---
----@param time idk # 
----author: 
+---@param time number|nil # 生长时长(秒); 为 nil 时按当前阶段数据的 time/timefn 推导
+---@return nil
+---author: Runar(Agent)
 function growable:StartGrowing(time)
 end
 
 ---实体唤醒时恢复生长
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function growable:OnEntityWake()
 end
 
@@ -59,13 +62,14 @@ end
 
 ---实体睡眠时暂停生长
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function growable:OnEntitySleep()
 end
 
 ---魔法生长(走 domagicgrowthfn)
 ---
----@param doer idk # 
+---@param doer ent|nil # 施法者实体(传入 domagicgrowthfn)
 ---@return boolean
 ---author: Runar(Agent)
 function growable:DoMagicGrowth(doer)
@@ -73,8 +77,9 @@ end
 
 ---设置阶段(越界钳到末)
 ---
----@param stage idk # 
----author: 
+---@param stage number # 目标阶段序号(越界钳到最后)
+---@return nil
+---author: Runar(Agent)
 function growable:SetStage(stage)
 end
 
@@ -94,21 +99,35 @@ end
 
 ---恢复生长(可带原因)
 ---
----@param reason idk # 
+---@param reason idk # 要解除的暂停原因标识
 ---@return boolean
 ---author: Runar(Agent)
 function growable:Resume(reason)
 end
 
+---返回是否因暂停而挂起生长
+---@return boolean # 暂停中（存在剩余时间记录）时为 true
+---@nodiscard
+---author: Runar(Agent)
+function growable:IsPaused() end
+
 ---停止生长
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function growable:StopGrowing()
 end
 
 ---暂停生长(记录剩余, 带原因)
 ---
----@param reason idk # 
----author: 
+---@param reason idk # 暂停原因标识(登记到 pausereasons)
+---@return nil
+---author: Runar(Agent)
 function growable:Pause(reason)
 end
+
+---按指定时间开启生长定时任务（记录目标时间；实体休眠且未开启 growoffscreen 时不创建定时任务）
+---@param time number # 距离生长的秒数（负值会被钳为 0）
+---@return nil
+---author: Runar(Agent)
+function growable:StartGrowingTask(time) end

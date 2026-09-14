@@ -8,7 +8,8 @@
 local wereeater = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:ResetFoodMemory()
 end
 
@@ -20,17 +21,20 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:SetForceTransformFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:OnRemoveFromEntity()
 end
 
 ---
 ---@param mode idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:ForceTransformToWere(mode)
 end

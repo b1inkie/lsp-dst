@@ -12,7 +12,8 @@ local inventoryitemmoisture = {}
 ---对湿度做增量调整
 ---
 ---@param delta idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:DoDelta(delta)
 end
 
@@ -20,21 +21,24 @@ end
 ---
 ---@param item idk # 
 ---@param count idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:DiluteMoisture(item,count)
 end
 
 ---挂接该组件的副本(replica)
 ---
 ---@param replica idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:AttachReplica(replica)
 end
 
 ---把湿度提到至少某值
 ---
 ---@param min idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:MakeMoistureAtLeast(min)
 end
 
@@ -49,20 +53,41 @@ end
 ---
 ---@param moisture idk # 
 ---@param iswet idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:InheritMoisture(moisture,iswet)
 end
 
 ---设置湿度(触发变化回调)
 ---
 ---@param moisture idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:SetMoisture(moisture)
 end
 
+---设置是否由外部控制湿度（true 时 GetTargetMoisture 直接返回当前湿度，不再从环境/持有者取值）
+---@param externallycontrolled boolean|nil # 是否外部控制
+---@return nil
+---author: Runar(Agent)
+function inventoryitemmoisture:SetExternallyControlled(externallycontrolled) end
+
+---设置是否仅在湿度达到饱和（MAX_WETNESS）时才判定为湿
+---@param onlywetwhensaturated boolean|nil # 是否仅饱和才算湿
+---@return nil
+---author: Runar(Agent)
+function inventoryitemmoisture:SetOnlyWetWhenSaturated(onlywetwhensaturated) end
+
+---设置湿度变化回调（不用事件是因为同类组件数量过多，避免内存激增）
+---@param fn fun(inst: ent, oldmoisture: number, moisture: number)|nil # 湿度变化回调，参数为(物品实体, 旧湿度, 新湿度)
+---@return nil
+---author: Runar(Agent)
+function inventoryitemmoisture:SetOnMoistureDeltaCallback(fn) end
+
 ---实体唤醒时恢复湿度更新
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:OnEntityWake()
 end
 
@@ -76,12 +101,14 @@ end
 
 ---实体移除时清零湿度
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:OnRemoveFromEntity()
 end
 
 ---实体睡眠时暂停湿度更新
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function inventoryitemmoisture:OnEntitySleep()
-end
+end

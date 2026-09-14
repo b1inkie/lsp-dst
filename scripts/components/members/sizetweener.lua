@@ -10,7 +10,8 @@
 local sizetweener = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sizetweener:EndTween()
 end
 
@@ -18,6 +19,7 @@ end
 ---@param size idk # 
 ---@param time idk # 
 ---@param callback idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sizetweener:StartTween(size,time,callback)
 end

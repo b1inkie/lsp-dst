@@ -4,4 +4,3 @@
 ---@field conversation idk
 ---@field conv_index idk
 local talkable = {}
-
