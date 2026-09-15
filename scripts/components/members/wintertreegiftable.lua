@@ -1,36 +1,17 @@
 ---@meta
 
 ---@class component_wintertreegiftable: component_base
----@field inst idk
 ---@field previousgiftday idk
 local wintertreegiftable = {}
 
----
----author: 
-function wintertreegiftable:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function wintertreegiftable:OnLoad(data)
-end
-
----
----author: 
+---获取距离上次收到礼物经过的天数（当前世界周期减去 previousgiftday）
+---@return number
+---author: Runar(Agent)
 function wintertreegiftable:GetDaysSinceLastGift()
 end
 
----
----author: 
+---收到礼物时的记录回调，把 previousgiftday 更新为当前世界周期
+---@return nil
+---author: Runar(Agent)
 function wintertreegiftable:OnGiftGiven()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wintertreegiftable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wintertreegiftable:StopWatchingWorldState(var, fn) end
+end

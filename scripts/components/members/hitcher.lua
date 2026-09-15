@@ -1,50 +1,37 @@
 ---@meta
 
 ---@class component_hitcher: component_base
----@field inst idk
 ---@field hitched idk
 ---@field canbehitched idk
 ---@field locked idk
 local hitcher = {}
 
+---返回被拴的对象
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function hitcher:GetHitched()
 end
 
+---设置拴绳是否锁定
 ---
----@param setting idk # 
----author: 
+---@param setting boolean # 是否锁定(锁定时带 hitcher_locked 标签)
+---@return nil
+---author: Runar(Agent)
 function hitcher:Lock(setting)
 end
 
+---把实体拴过来(标记不可被拴)
 ---
----@param target idk # 
----author: 
+---@param target ent # 要拴住的目标实体(带 hitchable 组件)
+---@return nil
+---author: Runar(Agent)
 function hitcher:SetHitched(target)
 end
 
+---解除拴绳(恢复可被拴)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hitcher:Unhitch()
 end
-
----
----@param data idk # 
----author: 
-function hitcher:OnLoad(data)
-end
-
----
----author: 
-function hitcher:OnSave()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hitcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hitcher:StopWatchingWorldState(var, fn) end

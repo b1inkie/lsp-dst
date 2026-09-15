@@ -1,49 +1,32 @@
 ---@meta
 
 ---@class component_scenariorunner: component_base
----@field inst idk
 ---@field scriptname idk
 ---@field script idk
 ---@field hasrunonce idk
 local scenariorunner = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:Reset()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:ClearScenario()
 end
 
 ---
----author: 
-function scenariorunner:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function scenariorunner:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:Run()
 end
 
 ---
 ---@param name idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function scenariorunner:SetScript(name)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function scenariorunner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function scenariorunner:StopWatchingWorldState(var, fn) end

@@ -1,31 +1,25 @@
 ---@meta
 
 ---@class component_winonateleportpadmanager: component_base
----@field inst idk
 ---@field winonateleportpads idk
+---@field OnRegisterWinonaTeleportPad_Bridge fun(inst: ent, winonateleportpad: ent) # "ms_registerwinonateleportpad" 事件桥接回调，转调 OnRegisterWinonaTeleportPad 注册传送门
 local winonateleportpadmanager = {}
 
 ---
 ---@param winonateleportpad idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winonateleportpadmanager:OnRegisterWinonaTeleportPad(winonateleportpad)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function winonateleportpadmanager:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function winonateleportpadmanager:GetAllWinonaTeleportPads()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winonateleportpadmanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winonateleportpadmanager:StopWatchingWorldState(var, fn) end
+end

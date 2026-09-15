@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_toggleableitem: component_base
----@field inst idk
 ---@field onusefn idk
 ---@field onstopusefn idk
 ---@field on idk
@@ -10,26 +9,20 @@ local toggleableitem = {}
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function toggleableitem:CanInteract(doer)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function toggleableitem:SetOnToggleFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function toggleableitem:ToggleItem()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function toggleableitem:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function toggleableitem:StopWatchingWorldState(var, fn) end
+end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_tool: component_base
----@field inst idk
 ---@field tough idk
 ---@field actions idk
 local tool = {}
@@ -15,7 +14,8 @@ end
 
 ---是否可以在困难模式下工作，传入true就可以豁免workable组件中tough的影响，比如亮茄粉碎者就调用了inst.components.tool:EnableToughWork(true)
 ---@param tough boolean # 困难的
----author: 御坂十七号
+---@return nil
+---author: 御坂十七号, Runar(Agent)
 function tool:EnableToughWork(tough)
 end
 
@@ -27,27 +27,21 @@ end
 
 ---
 ---@param action idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function tool:GetEffectiveness(action)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function tool:OnRemoveFromEntity()
 end
 
 ---设置工作类型和效率，工具类型有:ACTIONS.CHOP、ACTIONS.DIG、ACTIONS.HAMMER、ACTIONS.MINE、ACTIONS.NET、ACTIONS.PLAY、ACTIONS.UNSADDLE、ACTIONS.REACH_HIGH、ACTIONS.SCYTHE, 比如粗壮常青树需要砍15次，普通斧效率为1，月光玻璃斧效率为2.5，普通斧头要砍15次，月光玻璃斧只要6次。
 ---@param action table # 工具动作类型
 ---@param effectiveness nil|number # 效率
----author: 御坂十七号
+---@return nil
+---author: 御坂十七号, Runar(Agent)
 function tool:SetAction(action,effectiveness)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tool:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tool:StopWatchingWorldState(var, fn) end

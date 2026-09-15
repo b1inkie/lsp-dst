@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_healthsyncer: component_base
----@field inst idk
 ---@field _status idk
 ---@field _healthpct idk
 ---@field corrosives idk
@@ -12,27 +11,17 @@
 ---@field _onremovesmallhots idk
 local healthsyncer = {}
 
+---返回同步的健康百分比
 ---
----@param dt idk # 
----author: 
-function healthsyncer:OnUpdate(dt)
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function healthsyncer:GetPercent()
 end
 
+---返回血量变化趋势(-2大降/-1小降/0/1小升/2大升)
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function healthsyncer:GetOverTime()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthsyncer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthsyncer:StopWatchingWorldState(var, fn) end

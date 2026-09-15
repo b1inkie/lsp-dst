@@ -1,43 +1,31 @@
 ---@meta
 
 ---@class component_worldwind: component_base
----@field inst idk
 ---@field velocity idk
 ---@field angle idk
 ---@field timeToWindChange idk
 local worldwind = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldwind:Stop()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function worldwind:GetWindAngle()
 end
 
----
----@param dt idk # 
----author: 
-function worldwind:OnUpdate(dt)
-end
+---获取当前风速
+---@return number # 风速值
+---@nodiscard
+---author: Runar(Agent)
+function worldwind:GetWindVelocity() end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function worldwind:Start()
 end
-
----
----author: 
-function worldwind:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldwind:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function worldwind:StopWatchingWorldState(var, fn) end

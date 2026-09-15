@@ -1,38 +1,32 @@
 ---@meta
 
 ---@class component_teleportedoverride: component_base
----@field inst idk
 ---@field target_fn idk
 ---@field pos_fn idk
 local teleportedoverride = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teleportedoverride:SetDestPositionFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teleportedoverride:GetDestPosition()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teleportedoverride:GetDestTarget()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teleportedoverride:SetDestTargetFn(fn)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teleportedoverride:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teleportedoverride:StopWatchingWorldState(var, fn) end
+end

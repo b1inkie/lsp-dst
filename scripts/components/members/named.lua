@@ -1,41 +1,24 @@
 ---@meta
 
 ---@class component_named: component_base
----@field inst idk
 ---@field possiblenames idk
 ---@field nameformat idk
 ---@field name idk
 ---@field name_author_netid idk
 local named = {}
 
+---从候选名列表随机取一个新名字
 ---
----author: 
-function named:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function named:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function named:PickNewName()
 end
 
+---直接设置名字(带作者署名)
 ---
----@param name idk # 
----@param author idk # 
----author: 
+---@param name string # 要设置的名称(nil 时恢复默认名)
+---@param author string|nil # 命名者的平台用户 ID(用于署名显示)
+---@return nil
+---author: Runar(Agent)
 function named:SetName(name,author)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function named:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function named:StopWatchingWorldState(var, fn) end

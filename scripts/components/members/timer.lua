@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_timer: component_base
----@field inst idk
 ---@field timers idk
 local timer = {}
 
@@ -21,28 +20,6 @@ end
 function timer:StartTimer(name,time,paused,initialtime_override)
 end
 
----
----@param dt idk # 
----author: 
-function timer:LongUpdate(dt)
-end
-
----
----@param data idk # 
----author: 
-function timer:OnLoad(data)
-end
-
----
----author: 
-function timer:GetDebugString()
-end
-
----
----author: 
-function timer:OnSave()
-end
-
 ---获取计时器剩余时间
 ---@param name string # 计时器名字
 ---@return number
@@ -53,7 +30,8 @@ end
 
 ---
 ---@param newinst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function timer:TransferComponent(newinst)
 end
 
@@ -95,7 +73,8 @@ function timer:IsPaused(name)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function timer:OnRemoveFromEntity()
 end
 
@@ -104,12 +83,3 @@ end
 ---author: KP
 function timer:PauseTimer(name)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function timer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function timer:StopWatchingWorldState(var, fn) end

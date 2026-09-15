@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class Follower
-local Follower = {}
+Follower = {}
 
 ---
 ---跟随到通道

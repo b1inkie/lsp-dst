@@ -1,14 +1,10 @@
 ---@meta
 
 ---@class component_shardstate: component_base
----@field inst idk
 local shardstate = {}
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shardstate:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shardstate:StopWatchingWorldState(var, fn) end
+---获取主模拟分片（master）的会话 ID（网络变量 _mastersessionid 的值，初始化为 world.meta.session_identifier）
+---@return string # 主分片会话 ID
+---@nodiscard
+---author: Runar(Agent)
+function shardstate:GetMasterSessionId() end

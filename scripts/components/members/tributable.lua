@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_tributable: component_base
----@field inst idk
 ---@field currenttributevalue idk
 ---@field rewardattributevalue idk
 ---@field numrewardsgiven idk
@@ -11,43 +10,26 @@
 local tributable = {}
 
 ---
----@param data idk # 
----author: 
-function tributable:OnLoad(data)
-end
-
----
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tributable:HasPendingReward()
 end
 
----
----author: 
-function tributable:OnSave()
-end
+---发放奖励后调用：清零当前贡品值、累计已发奖励次数、取消衰减任务并触发 ongivenrewardfn 回调
+---@return nil
+---author: Runar(Agent)
+function tributable:OnGivenReward() end
 
 ---
----author: 
-function tributable:GetDebugString()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function tributable:OnRefuse()
 end
 
 ---
 ---@param value idk # 
 ---@param tributer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tributable:OnAccept(value,tributer)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tributable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tributable:StopWatchingWorldState(var, fn) end

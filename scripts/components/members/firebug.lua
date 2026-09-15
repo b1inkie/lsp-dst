@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_firebug: component_base
----@field inst idk
 ---@field time_to_fire idk
 ---@field time_interval idk
 ---@field time_variance idk
@@ -10,33 +9,17 @@
 ---@field enabled idk
 local firebug = {}
 
+---关闭火灾虫(停止更新)
 ---
----@param dt idk # 
----author: 
-function firebug:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function firebug:Disable()
 end
 
+---开启火灾虫(进入更新周期)
 ---
----@param enable idk # 
----author: 
+---@param enable idk # 是否启用(方法体内未使用, 调用即开启更新)
+---@return nil
+---author: Runar(Agent)
 function firebug:Enable(enable)
-end
-
----
----author: 
-function firebug:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function firebug:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function firebug:StopWatchingWorldState(var, fn) end
+end

@@ -3,31 +3,19 @@
 ---@class component_despawnfader: component_base
 ---@field fadeval idk
 ---@field updating idk
----@field inst idk
 ---@field _fade idk
 local despawnfader = {}
 
+---移除实体时取消淡出同步(RPC 回调)
 ---
----@param dt idk # 
----author: 
-function despawnfader:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function despawnfader:OnRemoveFromEntity()
 end
 
+---客户端开始淡出该实体(消失前渐隐)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function despawnfader:FadeOut()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function despawnfader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function despawnfader:StopWatchingWorldState(var, fn) end
+end

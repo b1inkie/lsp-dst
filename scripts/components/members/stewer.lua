@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stewer: component_base
----@field inst ent # 挂载了组件stewer的实体，如烹饪锅
 ---@field done boolean # 是否完成烹饪
 ---@field targettime number|nil # 一个时刻，可用于表示烹饪完成的时刻，也可用于表示锅上食物腐烂的时刻
 ---@field task idk # 烹饪任务，腐烂任务等
@@ -17,13 +16,9 @@ local stewer = {}
 
 ---开始烹饪
 ---@param doer ent # 烹饪者
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function stewer:StartCooking(doer)
-end
-
----
----author:
-function stewer:GetDebugString()
 end
 
 ---获取食物配方
@@ -47,12 +42,6 @@ end
 function stewer:CanCook()
 end
 
----
----@param data idk #
----author:
-function stewer:OnLoad(data)
-end
-
 ---判断是否完成烹饪
 ---@return boolean #
 ---@nodiscard
@@ -67,12 +56,6 @@ end
 function stewer:IsCooking()
 end
 
----
----@param dt idk #
----author:
-function stewer:LongUpdate(dt)
-end
-
 ---获取锅上食物腐烂需要的时间
 ---@return number|0 # 为0可能是食物尚未烹饪完成
 ---@nodiscard
@@ -82,13 +65,9 @@ end
 
 ---停止烹饪
 ---@param reason string # 原因，此参为fire时可获得产物，即锅着火的情况(做个饭把锅点了很合理吧)
----author: nullptr
+---@return nil
+---author: nullptr, Runar(Agent)
 function stewer:StopCooking(reason)
-end
-
----
----author:
-function stewer:OnSave()
 end
 
 ---判断是否正在腐烂
@@ -98,8 +77,9 @@ end
 function stewer:IsSpoiling()
 end
 
----
----author:
+---从实体上移除本组件时清理，移除 stewer/donecooking/readytocook 标签
+---@return nil
+---author: Runar(Agent)
 function stewer:OnRemoveFromEntity()
 end
 
@@ -108,13 +88,4 @@ end
 ---@nodiscard
 ---author: nullptr
 function stewer:GetTimeToCook()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stewer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stewer:StopWatchingWorldState(var, fn) end
+end

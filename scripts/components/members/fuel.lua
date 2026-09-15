@@ -1,34 +1,30 @@
 ---@meta
 
 ---@class component_fuel: component_base
----@field inst idk
 ---@field fuelvalue idk
 ---@field fueltype idk
 ---@field ontaken idk
 local fuel = {}
 
+---设置燃料被取走回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(inst: ent, target: ent) # 燃料被取走回调
+---@return nil
+---author: Runar(Agent)
 function fuel:SetOnTakenFn(fn)
 end
 
+---从所属燃料容器注销该燃料类型
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function fuel:OnRemoveFromEntity()
 end
 
+---被取走时推 fueltaken 事件(记录取走者)
 ---
----@param target idk # 
----author: 
+---@param target ent # 取走燃料的实体
+---@return nil
+---author: Runar(Agent)
 function fuel:Taken(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fuel:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fuel:StopWatchingWorldState(var, fn) end

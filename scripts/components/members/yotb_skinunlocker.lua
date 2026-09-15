@@ -1,26 +1,18 @@
 ---@meta
 
 ---@class component_yotb_skinunlocker: component_base
----@field inst idk
 ---@field skin idk
 local yotb_skinunlocker = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotb_skinunlocker:GetSkin()
 end
 
 ---
 ---@param skin idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotb_skinunlocker:SetSkin(skin)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_skinunlocker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotb_skinunlocker:StopWatchingWorldState(var, fn) end
+end

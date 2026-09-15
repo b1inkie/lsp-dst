@@ -48,8 +48,9 @@ function SoundEmitter:KillAllSounds()
 end
 
 ---UNKNOWN
+---@param mute nil|boolean
 ---author: 
-function SoundEmitter:SetMute()
+function SoundEmitter:SetMute(mute)
 end
 
 ---获取实体实例

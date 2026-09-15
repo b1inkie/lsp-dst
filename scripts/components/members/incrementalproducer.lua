@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_incrementalproducer: component_base
----@field inst idk
 ---@field producefn idk
 ---@field countfn idk
 ---@field maxcount idk
@@ -13,31 +12,23 @@
 ---@field lastproduction idk
 local incrementalproducer = {}
 
+---执行一次生产(走 producefn)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function incrementalproducer:DoProduce()
 end
 
+---判断可否生产(未达上限, 走 maxcountfn)
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function incrementalproducer:CanProduce()
 end
 
+---可生产时执行一次
 ---
----author: 
-function incrementalproducer:GetDebugString()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function incrementalproducer:TryProduce()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function incrementalproducer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function incrementalproducer:StopWatchingWorldState(var, fn) end
+end

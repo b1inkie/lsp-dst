@@ -1,45 +1,41 @@
 ---@meta
 
 ---@class component_waxable: component_base
----@field inst idk
 ---@field needs_spray idk
 ---@field waxfn idk
 local waxable = {}
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function waxable:NeedsSpray()
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function waxable:SetNeedsSpray(val)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function waxable:SetWaxfn(fn)
 end
 
 ---
 ---@param doer idk # 
 ---@param waxitem idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function waxable:Wax(doer,waxitem)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function waxable:OnRemoveFromEntity()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function waxable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function waxable:StopWatchingWorldState(var, fn) end
+end

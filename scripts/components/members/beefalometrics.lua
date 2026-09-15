@@ -2,38 +2,21 @@
 
 ---@class component_beefalometrics: component_base
 ---@field ridestarttime idk
----@field inst idk
 ---@field lastdomesticator idk
 ---@field lastdomesticator_id idk
 local beefalometrics = {}
 
+---记录最后驯化/投喂该牛毛犍的 player 实体, 并清空缓存的 user id
 ---
----@param player idk # 
----author: 
+---@param player ent # 最后驯化/投喂该牛毛犍的玩家实体
+---@return nil
+---author: Runar(Agent)
 function beefalometrics:SetLastDomesticator(player)
 end
 
+---获取最后驯化该牛毛犍的 player; 无实体时尝试用缓存 id 经 UserToPlayer 还原, 均无则返回 nil
 ---
----@param data idk # 
----author: 
-function beefalometrics:OnLoad(data)
-end
-
----
----author: 
-function beefalometrics:OnSave()
-end
-
----
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function beefalometrics:GetLastDomesticator()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function beefalometrics:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function beefalometrics:StopWatchingWorldState(var, fn) end

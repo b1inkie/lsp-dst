@@ -1,35 +1,16 @@
 ---@meta
 
 ---@class component_groundshadowhandler: component_base
----@field inst idk
 ---@field ground_shadow idk
 ---@field original_width idk
 ---@field original_height idk
 local groundshadowhandler = {}
 
+---设置地面投影的宽高
 ---
----author: 
-function groundshadowhandler:OnRemoveEntity()
-end
-
----
----@param width idk # 
----@param height idk # 
----author: 
+---@param width number # 投影宽度
+---@param height number # 投影高度
+---@return nil
+---author: Runar(Agent)
 function groundshadowhandler:SetSize(width,height)
-end
-
----
----@param dt idk # 
----author: 
-function groundshadowhandler:OnUpdate(dt)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groundshadowhandler:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groundshadowhandler:StopWatchingWorldState(var, fn) end
+end

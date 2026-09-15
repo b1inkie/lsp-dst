@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_lock: component_base
----@field inst idk
 ---@field onlocked idk
 ---@field onunlocked idk
 ---@field unlocktest idk
@@ -11,98 +10,88 @@
 ---@field locktype idk
 local lock = {}
 
+---设置锁的钥匙类型(变化时触发锁回调)
 ---
----@param key idk # 
----author: 
+---@param key string|nil# 
+---@return nil
+---author: Runar(Agent)
 function lock:SetKey(key)
 end
 
+---设置上锁时回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(doer:ent)# 
+---@return nil
+---author: Runar(Agent)
 function lock:SetOnLockedFn(fn)
 end
 
+---返回是否已上锁
 ---
+---@return boolean
 ---author: 
 function lock:IsLocked()
 end
 
+---返回锁是否卡死(不可解锁)
 ---
+---@return boolean
 ---author: 
 function lock:IsStuck()
 end
 
+---测试某钥匙能否开该锁(不改状态)
 ---
----author: 
-function lock:GetDebugString()
-end
-
----
----@param key idk # 
+---@param key ent|nil# 
+---@return boolean
 ---author: 
 function lock:TestForUnlock(key)
 end
 
+---上锁(给操作者)
 ---
----@param newents idk # 
----@param data idk # 
----author: 
-function lock:LoadPostPass(newents,data)
-end
-
----
----@param data idk # 
----author: 
-function lock:OnLoad(data)
-end
-
----
----@param doer idk # 
----author: 
+---@param doer ent|nil# 
+---@return nil
+---author: Runar(Agent)
 function lock:Lock(doer)
 end
 
+---直接设置锁状态(带操作者)
 ---
----@param locked idk # 
----author: 
+---@param locked boolean# 
+---@return nil
+---author: Runar(Agent)
 function lock:SetLocked(locked)
 end
 
+---判断某钥匙类型是否匹配(未卡死时)
 ---
----@param keytype idk # 
+---@param keytype string|nil# 
+---@return boolean
 ---author: 
 function lock:CompatableKey(keytype)
 end
 
+---用钥匙开锁
 ---
----author: 
-function lock:OnSave()
-end
-
----
----@param key idk # 
----@param doer idk # 
----author: 
+---@param key ent|nil# 
+---@param doer ent|nil# 
+---@return nil
+---author: Runar(Agent)
 function lock:Unlock(key,doer)
 end
 
+---清除锁类型等登记
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function lock:OnRemoveFromEntity()
 end
 
+---设置开锁时回调
 ---
----@param fn idk # 
----author: 
+---@param fn fun(doer:ent)# 
+---@return nil
+---author: Runar(Agent)
 function lock:SetOnUnlockedFn(fn)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lock:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function lock:StopWatchingWorldState(var, fn) end
+end

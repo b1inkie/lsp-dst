@@ -1,26 +1,11 @@
 ---@meta
 
 ---@class component_raindomewatcher: component_base
----@field inst idk
 ---@field underdome idk
 local raindomewatcher = {}
 
----
----@param dt idk # 
----author: 
-function raindomewatcher:OnUpdate(dt)
-end
-
----
----author: 
+---获取实体当前是否处于雨 dome（防雨罩）覆盖之下（由 OnUpdate 每帧检测维护，进出时推送 enterraindome/exitraindome 事件）
+---@return idk
+---author: Runar(Agent)
 function raindomewatcher:IsUnderRainDome()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function raindomewatcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function raindomewatcher:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_walkableplatformmanager: component_base
----@field inst idk
 ---@field lastuid idk
 ---@field walkable_platforms idk
 ---@field walkable_platform_uids idk
@@ -9,61 +8,48 @@ local walkableplatformmanager = {}
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:RemovePlatform(platform)
 end
 
 ---
 ---@param uid idk # 
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function walkableplatformmanager:GetPlatformWithUID(uid)
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:PostUpdate(dt)
 end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:UnregisterPlatform(platform)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function walkableplatformmanager:GetNewUID()
 end
 
 ---
----author: 
-function walkableplatformmanager:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function walkableplatformmanager:OnLoad(data)
-end
-
----
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:AddPlatform(platform)
 end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformmanager:RegisterPlatform(platform)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatformmanager:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatformmanager:StopWatchingWorldState(var, fn) end
+end

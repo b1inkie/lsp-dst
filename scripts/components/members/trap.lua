@@ -2,7 +2,6 @@
 
 ---@class component_trap: component_base
 ---@field bait idk
----@field inst idk
 ---@field issprung idk
 ---@field isset idk
 ---@field range idk
@@ -21,29 +20,34 @@
 local trap = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StartStarvation()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:IsBaited()
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:Harvest(doer)
 end
 
 ---
 ---@param bait idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetBait(bait)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:RemoveBait()
 end
 
@@ -54,128 +58,114 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetOnBaitedFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetOnSpringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnEntityWake()
 end
 
----
----@param newents idk # 
----@param savedata idk # 
----author: 
-function trap:LoadPostPass(newents,savedata)
-end
+---直接触发陷阱捕捉指定目标（目标不可捕捉则安全解除），停止检测并推送 springtrap 事件
+---@param target ent # 要捕捉的目标实体
+---@return nil
+---author: Runar(Agent)
+function trap:DoTriggerOn(target) end
 
 ---
----author: 
+---
+---@return nil
+---author: Runar(Agent)
 function trap:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnEntitySleep()
 end
 
 ---
----@param data idk # 
----author: 
-function trap:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:OnTrappedStarve()
 end
 
 ---
----author: 
-function trap:OnSave()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StopUpdating()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:AcceptingBait()
 end
 
 ---
----author: 
-function trap:GetDebugString()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StartUpdate()
 end
 
 ---
 ---@param eater idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:BaitTaken(eater)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:StopStarvation()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:Set()
 end
 
 ---
----@param dt idk # 
----author: 
-function trap:OnUpdate(dt)
-end
-
----
 ---@param sprung idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:Reset(sprung)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function trap:IsSprung()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trap:SetOnHarvestFn(fn)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:HasLoot()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trap:IsFree()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trap:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trap:StopWatchingWorldState(var, fn) end
+end

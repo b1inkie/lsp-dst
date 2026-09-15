@@ -4,7 +4,6 @@
 ---@field message idk
 ---@field noanim idk
 ---@field duration idk
----@field inst idk
 ---@field task idk
 ---@field ignoring idk
 ---@field mod_str_fn idk
@@ -17,9 +16,16 @@
 local talker = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function talker:ShutUp()
 end
+
+---检查当前是否正在说话（说台词任务是否仍在进行中）
+---@return boolean # 是否正在说话
+---@nodiscard
+---author: Runar(Agent)
+function talker:IsTalking() end
 
 ---
 ---@param source idk # 
@@ -28,7 +34,8 @@ function talker:StopIgnoringAll(source)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function talker:MakeChatter()
 end
 
@@ -53,32 +60,28 @@ end
 ---@param time idk # 
 ---@param forcetext idk # 
 ---@param echotochatpriority idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function talker:Chatter(strtbl,strid,time,forcetext,echotochatpriority)
 end
 
 ---
 ---@param source idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function talker:IgnoreAll(source)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function talker:OnRemoveFromEntity()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function talker:SetOffsetFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function talker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function talker:StopWatchingWorldState(var, fn) end
+

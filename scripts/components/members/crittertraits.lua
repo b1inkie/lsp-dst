@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_crittertraits: component_base
----@field inst idk
 ---@field traitscore idk
 ---@field dominanttrait idk
 ---@field dominanttraitlocked idk
@@ -9,66 +8,54 @@
 local crittertraits = {}
 
 ---
----@param trait idk # 
----author: 
+---@param trait idk # 主特性名（添加 trait_ 前缀标签，为空时清除）
+---@return nil
+---author: Runar(Agent)
 function crittertraits:SetDominantTrait(trait)
 end
 
 ---
----@param petter idk # 
----author: 
+---@param petter idk # 抚摸者实体
+---@return nil
+---author: Runar(Agent)
 function crittertraits:OnPet(petter)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function crittertraits:DecayTraits()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function crittertraits:StartTracking()
 end
 
 ---
----author: 
-function crittertraits:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function crittertraits:OnLoad(data)
-end
-
----
----author: 
-function crittertraits:OnSave()
-end
-
----
----@param name idk # 
----@param multiplier idk # 
----author: 
+---@param name idk # 特性名
+---@param multiplier idk # 增量倍率（不填为 1）
+---@return nil
+---author: Runar(Agent)
 function crittertraits:IncTracker(name,multiplier)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function crittertraits:RefreshDominantTrait()
 end
 
 ---
----@param trait idk # 
----author: 
+---@param trait idk # 要检查的特性名
+---@return boolean
+---author: Runar(Agent)
 function crittertraits:IsDominantTrait(trait)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crittertraits:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function crittertraits:StopWatchingWorldState(var, fn) end
+---设置小宠物被抚摸时触发的回调
+---@param fn fun(inst: ent, petter: ent): nil # 回调, 参数为(宠物自身实体, 抚摸者)
+---@return nil
+---author: Runar(Agent)
+function crittertraits:SetOnPetFn(fn) end

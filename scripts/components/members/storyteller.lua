@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_storyteller: component_base
----@field inst idk
 ---@field storytotellfn idk
 ---@field storytelling_dist idk
 ---@field storytelling_ticktime idk
@@ -13,60 +12,61 @@
 local storyteller = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function storyteller:IsTellingStory()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:SetOnStoryBeginFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:SetOnStoryOverFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:SetStoryToTellFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:OnStoryTick()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:OnDone()
 end
 
 ---
 ---@param storyprop idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function storyteller:TellStory(storyprop)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:OnRemoveFromEntity()
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function storyteller:AbortStory(reason)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function storyteller:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function storyteller:StopWatchingWorldState(var, fn) end
+end

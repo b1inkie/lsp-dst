@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_wereeater: component_base
----@field inst idk
 ---@field duration idk
 ---@field monster_count idk
 ---@field forget_task idk
@@ -9,19 +8,9 @@
 local wereeater = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:ResetFoodMemory()
-end
-
----
----author: 
-function wereeater:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function wereeater:OnLoad(data)
 end
 
 ---
@@ -31,32 +20,21 @@ function wereeater:EatMosterFood(data)
 end
 
 ---
----author: 
-function wereeater:OnSave()
-end
-
----
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:SetForceTransformFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:OnRemoveFromEntity()
 end
 
 ---
 ---@param mode idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereeater:ForceTransformToWere(mode)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wereeater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wereeater:StopWatchingWorldState(var, fn) end

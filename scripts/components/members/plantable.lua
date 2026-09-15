@@ -1,16 +1,6 @@
 ---@meta
 
 ---@class component_plantable: component_base
----@field inst idk
----@field growtime idk
----@field product idk
+---@field growtime number # 生长时间（秒，默认 120）
+---@field product (string|fun(item: ent): string)|nil # 种植产物 prefab 名；也可为函数（参数为种子实体，返回产物 prefab 名）；两者皆无时回落为 item.prefab
 local plantable = {}
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function plantable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function plantable:StopWatchingWorldState(var, fn) end

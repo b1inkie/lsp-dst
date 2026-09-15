@@ -1,27 +1,21 @@
 ---@meta
 
 ---@class component_maxhealer: component_base
----@field inst idk
 ---@field healamount idk
 local maxhealer = {}
 
+---设置治疗量
 ---
----@param health idk # 
----author: 
+---@param health number # 治疗量(用于抵消生命上限惩罚)
+---@return nil
+---author: Runar(Agent)
 function maxhealer:SetHealthAmount(health)
 end
 
+---治疗目标(有 health 组件时)
 ---
----@param target idk # 
----author: 
+---@param target ent # 要治疗的目标实体(治疗后自身被移除)
+---@return boolean
+---author: Runar(Agent)
 function maxhealer:Heal(target)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maxhealer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maxhealer:StopWatchingWorldState(var, fn) end

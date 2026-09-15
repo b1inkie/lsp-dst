@@ -1,37 +1,12 @@
 ---@meta
 
 ---@class component_uniqueprefabids: component_base
----@field inst idk
 ---@field topprefabids idk
 local uniqueprefabids = {}
 
----
----author: 
-function uniqueprefabids:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function uniqueprefabids:OnLoad(data)
-end
-
----
----@param prefabname idk # 
----author: 
+---为指定 prefab 名取下一个自增唯一 ID（按 prefab 名分别计数，从 1 开始递增）
+---@param prefabname string # prefab 名（作为计数表的键）
+---@return number
+---author: Runar(Agent)
 function uniqueprefabids:GetNextID(prefabname)
 end
-
----
----author: 
-function uniqueprefabids:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function uniqueprefabids:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function uniqueprefabids:StopWatchingWorldState(var, fn) end

@@ -1,26 +1,20 @@
 ---@meta
 
 ---@class component_flotationdevice: component_base
----@field inst idk
 ---@field enabled idk
 ---@field onpreventdrowningdamagefn idk
 local flotationdevice = {}
 
+---防止溺水伤害时走回调
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function flotationdevice:OnPreventDrowningDamage()
 end
 
+---返回浮力装置是否启用
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function flotationdevice:IsEnabled()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function flotationdevice:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function flotationdevice:StopWatchingWorldState(var, fn) end
+end

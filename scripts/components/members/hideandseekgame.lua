@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_hideandseekgame: component_base
----@field inst idk
 ---@field seekers idk
 ---@field hiding_spots idk
 ---@field hiding_range idk
@@ -17,84 +16,73 @@
 ---@field onremove_seeker idk
 ---@field dounregisterhidingspot idk
 ---@field pulse_task idk
+---@field pulse fun(inst: ent): nil # 脉冲回调（周期任务，每秒执行）：触发 OnHideAndSeekPulse 并把隐藏范围内可见的存活玩家加为寻找者
 local hideandseekgame = {}
 
+---登记一个寻找者(可标记游戏已开始)
 ---
----author: 
-function hideandseekgame:OnRemoveEntity()
-end
-
----
----@param seeker idk # 
----@param started_game idk # 
----author: 
+---@param seeker ent # 要登记的寻找者实体(自动补 hideandseeker 组件)
+---@param started_game boolean # 是否由该寻找者开启游戏(传入 OnAddSeeker)
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:AddSeeker(seeker,started_game)
 end
 
+---中止游戏(通知所有藏匿点)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:Abort()
 end
 
+---返回寻找者数量
 ---
----author: 
-function hideandseekgame:GetDebugString()
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function hideandseekgame:GetNumSeekers()
 end
 
+---注销一个藏匿点
 ---
----@param hiding_spot idk # 
----author: 
+---@param hiding_spot ent # 要注销的藏匿点实体
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:UnregisterHidingSpot(hiding_spot)
 end
 
+---返回当前藏匿点数量
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function hideandseekgame:GetNumHiding()
 end
 
+---返回游戏是否进行中(有藏匿点)
 ---
----@param newents idk # 
----@param data idk # 
----author: 
-function hideandseekgame:LoadPostPass(newents,data)
-end
-
----
----author: 
+---@return boolean
+---author: Runar(Agent)
 function hideandseekgame:IsActive()
 end
 
+---游戏结束(停脉冲任务)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:_HideAndSeekOver()
 end
 
+---返回已被找到的躲藏者数
 ---
----author: 
-function hideandseekgame:OnSave()
-end
-
----
----author: 
+---@return idk
+---author: Runar(Agent)
 function hideandseekgame:GetNumFound()
 end
 
+---登记一个藏匿点
 ---
----@param hiding_spot idk # 
----author: 
+---@param hiding_spot ent # 要登记的藏匿点实体
+---@return nil
+---author: Runar(Agent)
 function hideandseekgame:RegisterHidingSpot(hiding_spot)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hideandseekgame:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hideandseekgame:StopWatchingWorldState(var, fn) end
+

@@ -3,7 +3,6 @@
 ---@class component_healthbar: component_base
 ---@field bg idk
 ---@field bar idk
----@field inst idk
 ---@field bar_atlas idk
 ---@field bar_image idk
 ---@field bar_width idk
@@ -18,23 +17,18 @@
 ---@field _healthpct idk
 local healthbar = {}
 
+---开关血条显示
 ---
----@param enable idk # 
----author: 
+---@param enable boolean # 是否显示(非 false 均视为启用)
+---@return nil
+---author: Runar(Agent)
 function healthbar:Enable(enable)
 end
 
+---按比例设置血条值(>0 生效)
 ---
----@param percent idk # 
----author: 
+---@param percent number # 血量占比(0~1, 为 0 时隐藏血条)
+---@return nil
+---author: Runar(Agent)
 function healthbar:SetValue(percent)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthbar:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function healthbar:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_temperatureoverrider: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field _activeradius idk
 ---@field _temperature idk
@@ -10,59 +9,53 @@
 local temperatureoverrider = {}
 
 ---
----author: 
-function temperatureoverrider:OnRemoveEntity()
-end
-
----
 ---@param radius idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:SetRadius(radius)
 end
 
 ---
 ---@param new idk # 
 ---@param old idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:SetActiveRadius_Internal(new,old)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:Disable()
 end
 
 ---
 ---@param temperature idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:SetTemperature(temperature)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function temperatureoverrider:GetActiveRadius()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:Enable()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperatureoverrider:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function temperatureoverrider:GetTemperature()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperatureoverrider:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperatureoverrider:StopWatchingWorldState(var, fn) end
+end

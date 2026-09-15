@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_deciduoustreeupdater: component_base
----@field inst idk
 ---@field monster idk
 ---@field monster_target idk
 ---@field last_monster_target idk
@@ -21,43 +20,38 @@
 ---@field ignitenumdrakes idk
 local deciduoustreeupdater = {}
 
+---停止怪物模式(落叶树被烧毁的冒烟阶段结束)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function deciduoustreeupdater:StopMonster()
 end
 
+---怪物模式下周期生成火焰特效波
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function deciduoustreeupdater:SpawnIgniteWave()
 end
 
+---实体唤醒时恢复冒烟任务
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function deciduoustreeupdater:OnEntityWake()
 end
 
+---进入怪物模式(记录开始时间)
 ---
----@param dt idk # 
----author: 
-function deciduoustreeupdater:OnUpdate(dt)
-end
-
----
----@param starttime idk # 
----author: 
+---@param starttime idk # 怪物模式开始时间（不填时取当前时间）
+---@return nil
+---author: Runar(Agent)
 function deciduoustreeupdater:StartMonster(starttime)
 end
 
+---实体睡眠时暂停冒烟任务
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function deciduoustreeupdater:OnEntitySleep()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deciduoustreeupdater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deciduoustreeupdater:StopWatchingWorldState(var, fn) end
+end

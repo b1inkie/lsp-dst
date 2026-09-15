@@ -1,19 +1,20 @@
 ---@meta
 
 ---@class component_stackable: component_base
----@field inst idk
 ---@field stacksize idk
 ---@field maxsize idk
 ---@field ondestack idk
 local stackable = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:IsStack()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function stackable:RoomLeft()
 end
 
@@ -25,42 +26,43 @@ function stackable:StackSize()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:IsOverStacked()
 end
 
----
----author: 
-function stackable:GetDebugString()
-end
+---判断指定物品能否与当前实体堆叠（要求 prefab 与皮肤名一致，且实体设置的 stackable_CanStackWithFn 校验回调（如有）返回通过）
+---@param item ent # 待比较的另一件物品实体
+---@return boolean # 是否可以堆叠
+---@nodiscard
+---author: Runar(Agent)
+function stackable:CanStackWith(item) end
 
 ---
 ---@param sz idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stackable:SetStackSize(sz)
-end
-
----
----@param data idk # 
----author: 
-function stackable:OnLoad(data)
 end
 
 ---
 ---@param item idk # 
 ---@param source_pos idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:Put(item,source_pos)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stackable:IsFull()
 end
 
 ---
 ---@param ignoremaxsize idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stackable:SetIgnoreMaxSize(ignoremaxsize)
 end
 
@@ -72,21 +74,8 @@ function stackable:Get(num)
 end
 
 ---
----author: 
-function stackable:OnSave()
-end
-
----
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stackable:SetOnDeStack(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stackable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stackable:StopWatchingWorldState(var, fn) end

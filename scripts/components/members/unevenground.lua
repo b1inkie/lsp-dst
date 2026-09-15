@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_unevenground: component_base
----@field inst idk
 ---@field enabled idk
 ---@field radius idk
 ---@field detectradius idk
@@ -10,35 +9,31 @@
 local unevenground = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Stop()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:OnEntityWake()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Start()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Enable()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function unevenground:Disable()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function unevenground:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function unevenground:StopWatchingWorldState(var, fn) end
+end

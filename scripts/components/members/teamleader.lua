@@ -3,7 +3,6 @@
 ---@class component_teamleader: component_base
 ---@field teamleadersearchtags idk
 ---@field teamsearchtags idk
----@field inst idk
 ---@field team_type idk
 ---@field min_team_size idk
 ---@field max_team_size idk
@@ -21,144 +20,157 @@
 ---@field chk_state idk
 ---@field maxchasetime idk
 ---@field chasetime idk
+---@field _onthreatremoved fun(): nil # 威胁目标被移除（onremove 事件）时的回调，解散队伍并清空威胁引用与自身
 local teamleader = {}
 
 ---
 ---@param member idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:ValidMember(member)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:CanAttack()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:DisbandTeam()
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function teamleader:GetTeamSize()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:TeamSizeControl()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:IsTeamFull()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:CenterLeader()
 end
 
 ---
 ---@param target idk # 
 ---@param first_member idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:SetUp(target,first_member)
 end
 
+---整编附近共享同一威胁目标的多个队伍：按各队伍领导者组件的存活时间排序，若自身是最久的领导者，<br>则统一为各队伍（含自身）依次分配队形半径（逐队 +5）、旋转方向（交替取反）、角度增量（逐队乘 0.6）与队伍人数上限（逐队 +6）
+---@return nil
+---author: Runar(Agent)
+function teamleader:OrganizeTeams() end
+
 ---
 ---@param member idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:OnLostTeammate(member)
 end
 
 ---
 ---@param member idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:NewTeammate(member)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:NumberToAttack()
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:SetAttackGrpSize(val)
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:ManageChase(dt)
 end
 
 ---
 ---@param state idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:AllInState(state)
 end
 
 ---
----@param dt idk # 
----author: 
-function teamleader:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:ValidateTeam()
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function teamleader:GetTheta(dt)
 end
 
 ---
 ---@param order idk # 
 ---@param num idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:GiveOrders(order,num)
 end
 
 ---
 ---@param order idk # 
 ---@param oldorder idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:GiveOrdersToAllWithOrder(order,oldorder)
 end
 
 ---
 ---@param threat idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:SetNewThreat(threat)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function teamleader:IsTeamEmpty()
 end
 
 ---
 ---@param member idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:BroadcastDistress(member)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function teamleader:GetFormationPositions()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teamleader:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teamleader:StopWatchingWorldState(var, fn) end
+end

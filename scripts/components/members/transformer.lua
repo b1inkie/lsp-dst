@@ -3,7 +3,6 @@
 ---@class component_transformer: component_base
 ---@field queuedTransform idk
 ---@field queuedRevert idk
----@field inst idk
 ---@field transformPrefab idk
 ---@field objectData idk
 ---@field transformEvent idk
@@ -25,7 +24,8 @@ local transformer = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetOnRevertFn(fn)
 end
 
@@ -38,7 +38,8 @@ end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetObjectData(data)
 end
 
@@ -57,67 +58,52 @@ function transformer:SetTransformEvent(event,target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:Transform()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:StartTransform()
 end
 
 ---
 ---@param check idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetOnLoadCheck(check)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:Revert()
 end
 
 ---
----author: 
-function transformer:GetDebugString()
-end
-
----
----@param ents idk # 
----@param data idk # 
----author: 
-function transformer:LoadPostPass(ents,data)
-end
-
----
----@param data idk # 
----author: 
-function transformer:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:TransformOnSleep()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:StartRevert()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:RemoveSleepEvents()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:RevertOnSleep()
-end
-
----
----author: 
-function transformer:OnSave()
 end
 
 ---
@@ -128,21 +114,14 @@ function transformer:SetRevertEvent(event,target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:GetObjectData()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function transformer:SetOnTransformFn(fn)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function transformer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function transformer:StopWatchingWorldState(var, fn) end
+end

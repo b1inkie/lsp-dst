@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_reticule: component_base
----@field inst idk
 ---@field ease idk
 ---@field smoothing idk
 ---@field reticuleprefab idk
@@ -29,22 +28,26 @@
 local reticule = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:Blip()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:ClearTwinStickOverrides()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function reticule:ShouldHide()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:UpdateTwinStickMode2()
 end
 
@@ -54,30 +57,34 @@ function reticule:CreateReticule()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:DestroyReticule()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:UpdateTwinStickMode1()
 end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:OnCameraUpdate(dt)
 end
 
----
----@param dt idk # 
----author: 
-function reticule:OnUpdate(dt)
-end
+---判断当前是否处于双摇杆瞄准状态（处于 twinstick 模式、未启用鼠标跟随、且目标函数与准星均存在）
+---@return boolean # 是否正在双摇杆瞄准
+---@nodiscard
+---author: Runar(Agent)
+function reticule:IsTwinStickAiming() end
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:UpdatePosition(dt)
 end
 
@@ -88,15 +95,7 @@ function reticule:PingReticuleAt(pos)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function reticule:UpdateColour()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function reticule:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function reticule:StopWatchingWorldState(var, fn) end
+end

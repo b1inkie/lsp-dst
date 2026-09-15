@@ -1,23 +1,15 @@
 ---@meta
 
 ---@class component_carnivalgamefeedable: component_base
----@field inst idk
 ---@field enabled idk
 ---@field OnFeed idk
 local carnivalgamefeedable = {}
 
+---执行投喂: 有 OnFeed 回调则调用之, 否则返回 false
 ---
----@param doer idk # 
----@param item idk # 
----author: 
+---@param doer ent|nil # 执行投喂的实体
+---@param item ent|nil # 投喂的物品实体
+---@return idk|boolean # OnFeed 回调的返回值，无回调时为 false
+---author: Runar(Agent)
 function carnivalgamefeedable:DoFeed(doer,item)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function carnivalgamefeedable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function carnivalgamefeedable:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sleeper: component_base
----@field inst idk
 ---@field isasleep idk
 ---@field testperiod idk
 ---@field lasttransitiontime idk
@@ -22,143 +21,140 @@
 local sleeper = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function sleeper:GetTimeAsleep()
 end
 
 ---
----@param data idk # 
----author: 
-function sleeper:OnLoad(data)
-end
-
----
----author: 
+---@return idk
+---author: Runar(Agent)
 function sleeper:IsAsleep()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sleeper:IsInDeepSleep()
 end
 
 ---
 ---@param b idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetNocturnal(b)
 end
 
 ---
 ---@param fn idk # 
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetTest(fn,time)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:OnEntitySleep()
 end
 
 ---
 ---@param sleeptime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:GoToSleep(sleeptime)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sleeper:GetSleepTimeMultiplier()
 end
 
 ---
 ---@param sleepiness idk # 
 ---@param sleeptime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:AddSleepiness(sleepiness,sleeptime)
 end
 
 ---
 ---@param resist idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetExtraResist(resist)
 end
 
 ---
----author: 
-function sleeper:GetDebugString()
-end
-
----
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetSleepTest(fn)
 end
 
 ---
 ---@param resist idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetResistance(resist)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetDefaultTests()
 end
 
 ---
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:StartTesting(time)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:WakeUp()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function sleeper:IsHibernating()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:StopTesting()
 end
 
 ---
----author: 
-function sleeper:OnSave()
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function sleeper:GetTimeAwake()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:OnEntityWake()
 end
 
 ---
 ---@param fn idk # 
 ---@param time idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleeper:SetWakeTest(fn,time)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleeper:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleeper:StopWatchingWorldState(var, fn) end
+

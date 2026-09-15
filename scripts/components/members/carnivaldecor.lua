@@ -1,30 +1,19 @@
 ---@meta
 
 ---@class component_carnivaldecor: component_base
----@field inst idk
 ---@field value idk
 local carnivaldecor = {}
 
+---移除 carnivaldecor 标签, 并从附近所有装饰评级的计数中减去自身
 ---
----author: 
-function carnivaldecor:OnRemoveEntity()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function carnivaldecor:OnRemoveFromEntity()
 end
 
+---返回该装饰的计数值
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function carnivaldecor:GetDecorValue()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function carnivaldecor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function carnivaldecor:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_wereness: component_base
----@field inst ent
 ---@field max idk
 ---@field current idk
 ---@field _old idk
@@ -13,76 +12,53 @@ local wereness = {}
 ---
 ---@param percent idk # 
 ---@param overtime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:SetPercent(percent,overtime)
 end
 
 ---
 ---@param delta idk # 
 ---@param overtime idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:DoDelta(delta,overtime)
 end
 
 ---
----author: 
-function wereness:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function wereness:OnLoad(data)
-end
-
----
----author: 
+---@return idk
+---author: Runar(Agent)
 function wereness:GetWereMode()
 end
 
 ---
----author: 
-function wereness:OnSave()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:StartDraining()
 end
 
 ---
----@param dt idk # 
----author: 
-function wereness:OnUpdate(dt)
-end
-
----
 ---@param weremode idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:SetWereMode(weremode)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:StopDraining()
 end
 
 ---
 ---@param rate idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wereness:SetDrainRate(rate)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function wereness:GetPercent()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wereness:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wereness:StopWatchingWorldState(var, fn) end

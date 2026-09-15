@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_useableitem: component_base
----@field inst idk
 ---@field onusefn idk
 ---@field onstopusefn idk
 ---@field inuse idk
@@ -10,42 +9,39 @@ local useableitem = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:SetOnStopUseFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:StopUsingItem()
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function useableitem:CanInteract(doer)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:SetOnUseFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function useableitem:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function useableitem:StartUsingItem()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function useableitem:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function useableitem:StopWatchingWorldState(var, fn) end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_maxlightspawner: component_base
----@field inst idk
 ---@field lights idk
 ---@field numlights idk
 ---@field maxlights idk
@@ -10,40 +9,23 @@
 ---@field lightname idk
 local maxlightspawner = {}
 
+---在位置生成一盏麦斯威尔灯
 ---
----@param newents idk # 
----@param savedata idk # 
----author: 
-function maxlightspawner:LoadPostPass(newents,savedata)
-end
-
----
----@param location idk # 
----author: 
+---@param location vector # 灯的生成位置(Vector3)
+---@return ent
+---author: Runar(Agent)
 function maxlightspawner:SpawnLight(location)
 end
 
+---生成满额度的灯(未满时)
 ---
----author: 
-function maxlightspawner:OnSave()
-end
-
----
----@param data idk # 
----author: 
-function maxlightspawner:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxlightspawner:SpawnAllLights()
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maxlightspawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maxlightspawner:StopWatchingWorldState(var, fn) end
+---登记拥有某盏麦斯威尔灯(计入 lights 表并累加 numlights)
+---@param light ent # 灯实体
+---@return nil
+---author: Runar(Agent)
+function maxlightspawner:TakeOwnership(light) end

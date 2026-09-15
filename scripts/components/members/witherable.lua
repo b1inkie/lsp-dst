@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_witherable: component_base
----@field inst idk
 ---@field enabled idk
 ---@field withered idk
 ---@field wither_temp idk
@@ -16,89 +15,82 @@
 local witherable = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function witherable:CanRejuvenate()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:ForceWither()
 end
 
 ---
----author: 
-function witherable:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function witherable:OnLoad(data)
-end
-
----
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:DelayWither(delay)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function witherable:IsProtected()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:Start()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function witherable:CanWither()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:Stop()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:ForceRejuvenate()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:DelayRejuvenate(delay)
 end
 
----
----author: 
-function witherable:OnSave()
-end
+---为植物提供持续 duration 秒的枯萎保护：刷新保护截止时间并调度保护结束任务，<br>若当前处于枯萎状态则强制复苏，同时推迟枯萎
+---@param duration number # 保护时长（秒）
+---@return nil
+---author: Runar(Agent)
+function witherable:Protect(duration) end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function witherable:IsWithered()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:OnRemoveFromEntity()
 end
 
 ---
 ---@param enable idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function witherable:Enable(enable)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function witherable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function witherable:StopWatchingWorldState(var, fn) end
+end

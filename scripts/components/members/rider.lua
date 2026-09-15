@@ -2,7 +2,6 @@
 
 ---@class component_rider: component_base
 ---@field _mountannouncetask idk
----@field inst idk
 ---@field target_mount idk
 ---@field mount idk
 ---@field saddle idk
@@ -23,58 +22,45 @@ function rider:Mount(target,instant)
 end
 
 ---
----@param data idk # 
----author: 
-function rider:OnLoad(data)
-end
-
----
----author: 
-function rider:OnSave()
-end
-
----
 ---@param mount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:StartTracking(mount)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rider:GetMount()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rider:IsRiding()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function rider:GetSaddle()
 end
 
 ---
 ---@param mount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:StopTracking(mount)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function rider:Dismount()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rider:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function rider:StopWatchingWorldState(var, fn) end
+end

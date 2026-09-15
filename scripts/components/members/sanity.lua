@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sanity: component_base
----@field inst idk
 ---@field max idk
 ---@field current idk
 ---@field mode idk
@@ -38,16 +37,18 @@
 ---@field get_equippable_dappernessfn fun(...):(number)|nil # 装备惩罚
 local sanity = {}
 
----
----@param dt idk #
----author:
+---重算理智变化速率并应用：汇总装备 dapperness、潮湿惩罚、光照变化、周围理智光环、鬼魂惩罚与外部修正得到 rate，更新 rate 与 ratescale 后按 rate*dt 调用 DoDelta
+---@param dt number # 帧间隔时间（秒）
+---@return nil
+---author: Runar(Agent)
 function sanity:Recalc(dt)
 end
 
 ---设置理智模式（已弃用，有定义但函数体为空）
----@param mode idk #
+---@param mode idk # 理智模式（已弃用，函数体为空，参数未被使用）
 ---@deprecated
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetSanityMode(mode)
 end
 
@@ -55,28 +56,31 @@ end
 ---<br>可认为非白天/洞穴/全黑环境都是光源不足，所以会掉san
 ---<br>入参为true则免疫上述掉san。但全黑的话，查理还是要来打你的
 ---@param immunity boolean|nil # true免疫，false|nil不免疫
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetLightDrainImmune(immunity)
 end
 
 ---添加对特定标签的理智光环的免疫
 ---@param tag string # 标签字符串，例如传入"hound"，则免疫来自猎犬的掉san光环
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:AddSanityAuraImmunity(tag)
 end
 
 ---设置理智值上限（以及将当前理智设为上限值）
 ---<br>一般只在初始化调用一次，因为调用后是满san状态
 ---@param amount number # 最大理智值
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetMax(amount)
 end
 
----
----@param dt idk #
----author:
-function sanity:OnUpdate(dt)
-end
+---直接设置当前理智值（随后调用 DoDelta(0) 刷新派生状态与事件）
+---@param amount number # 目标理智值
+---@return nil
+---author: Runar(Agent)
+function sanity:SetCurrent(amount) end
 
 ---判断是否处于启迪状态
 ---@return boolean # true代表处于启迪状态（启蒙值高于85%，这时人物闲置动画也会有变化）
@@ -92,6 +96,12 @@ end
 function sanity:GetSanityMode()
 end
 
+---内部更新理智模式：根据 _lunacy_sources 汇总结果重算模式
+---<br>若模式发生变化则更新 self.mode、推送 sanitymodechanged 事件并调用 DoDelta(0) 刷新状态
+---@return nil
+---author: Runar(Agent)
+function sanity:UpdateMode_Internal() end
+
 ---获取黑san惩罚百分比（损失的上限占总上限的比例）
 ---@return number # 一个小数表示百分比，取值在[0, 1]
 ---@nodiscard
@@ -99,16 +109,10 @@ end
 function sanity:GetPenaltyPercent()
 end
 
----组件的加载回调函数（一般不主动调用）
----<br>主要加载：sane(boolean，标志是否理智) mode(非0即1，标志模式，经典or启蒙) current(number，当前理智值)
----@param data table # 加载数据表
----author:nullptr
-function sanity:OnLoad(data)
-end
-
 ---移除对特定标签的理智光环的免疫
 ---@param tag string # 标签字符串，传参前应先确认sanity_aura_immunities表中是否有以tag为键的元素
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:RemoveSanityAuraImmunity(tag)
 end
 
@@ -135,21 +139,24 @@ end
 
 ---设置当前理智百分比
 ---@param per number # 介于[0, 1]间的小数，例如0.5，则当前理智值就是上限的50%
----@param overtime idk #
----author:nullptr
+---@param overtime boolean|nil # 是否为随时间产生的变化（透传给 DoDelta，最终写入 sanitydelta 事件）
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetPercent(per,overtime)
 end
 
 ---设置是否免疫怪物（如各种boss）的掉san光环
 ---@param immunity boolean # true为免疫，false|nil不免疫
 ---@param source ent|string|nil # 来源, 默认为 `self.inst`
----author:nullptr, lan
+---@return nil
+---author:nullptr, lan, Runar(Agent)
 function sanity:SetNegativeAuraImmunity(immunity,source)
 end
 
 ---根据指定key移除理智上限惩罚表self.sanity_penalties
 ---@param key string # 传参前还是需要确认以key为键的元素是否在sanity_penalties中存在
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:RemoveSanityPenalty(key)
 end
 
@@ -178,13 +185,15 @@ end
 ---添加键值对(key, mod)到理智上限惩罚表self.sanity_penalties
 ---@param key string # 键字符串
 ---@param mod number # 一个小数在[0, 1]间，在RecalculatePenalty方法中会将表中的mod值求和赋值给self.penalty
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:AddSanityPenalty(key,mod)
 end
 
----
----@param newinst idk #
----author:
+---将本组件的理智百分比转移到新实体的 sanity 组件（用于换人等场景）
+---@param newinst ent # 接收理智百分比的目标实体（其 components.sanity 会被调用）
+---@return nil
+---author: Runar(Agent)
 function sanity:TransferComponent(newinst)
 end
 
@@ -196,27 +205,23 @@ function sanity:GetAuraMultipliers()
 end
 
 ---动态计算并更新鬼魂理智值惩罚（队友变鬼魂后，自身会有持续掉san的负面）
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:RecalcGhostDrain()
 end
 
 ---对当前理智值做增量
 ---@param delta number # 增加或减少的数值，以符号表示增减
----@param overtime idk #
----author:nullptr
+---@param overtime boolean|nil # 是否为随时间产生的变化（写入 sanitydelta 事件的 overtime 字段）
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:DoDelta(delta,overtime)
-end
-
----获取debug字符串
----@return string # debug字符串
----@nodiscard
----author:nullptr
-function sanity:GetDebugString()
 end
 
 ---设置是否免疫理智光环（包括正面，但不包括光源类如黄昏夜晚全黑）
 ---@param immunity boolean # true为免疫，例如面对怪物不扣san但在矮星附近也不回san
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetFullAuraImmunity(immunity)
 end
 
@@ -225,19 +230,31 @@ end
 ---<br>大概可以认为此方法：令你的理智值强制为0
 ---@param src ent # 作为key更新inducedinsanity_sources表。从官方用例看，传进去过梦魇护符和骨头头盔的对象
 ---@param val boolean # 作为value更新inducedinsanity_sources表。true为新增，false为删除
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetInducedInsanity(src,val)
 end
 
----
----@param enable idk #
----@param source idk #
----author:
+---设置诱发型的启蒙状态（与 SetInducedInsanity 对应）
+---<br>以 src 为键维护 inducedlunacy_sources 表；val 为 true 时记录来源，为 false 时移除来源
+---<br>当诱发状态实际发生变化时调用 DoDelta(0) 并推送 inducedlunacy 事件
+---@param src ent|string # 作为键更新 inducedlunacy_sources 表的来源对象
+---@param val boolean # true 为新增来源进入诱发启蒙，false|nil 为移除该来源
+---@return nil
+---author: Runar(Agent)
+function sanity:SetInducedLunacy(src, val) end
+
+---启用/禁用一条启蒙模式来源：写入 _lunacy_sources 修饰表后调用 UpdateMode_Internal 重算理智模式
+---@param enable boolean # 是否启用该来源的启蒙效果
+---@param source string|nil # 修饰项的键（作为 SourceModifierList:SetModifier 的 key）
+---@return nil
+---author: Runar(Agent)
 function sanity:EnableLunacy(enable,source)
 end
 
----
----author:
+---获取理智变化速率档位（RATE_SCALE 枚举值，由 Recalc 根据当前速率计算）
+---@return idk
+---author: Runar(Agent)
 function sanity:GetRateScale()
 end
 
@@ -255,12 +272,6 @@ end
 function sanity:GetPercent()
 end
 
----组件的保存回调函数（一般不主动调用）
----<br>主要保存：current, sane, mode（一般对应save和load回调需要保存和加载的属性一致）
----author:nullptr
-function sanity:OnSave()
-end
-
 ---判断是否精神良好
 ---@return boolean #
 ---@nodiscard
@@ -270,7 +281,8 @@ end
 
 ---设置是否免疫（队友）鬼魂惩罚带来的负面掉san
 ---@param immunity boolean # true为免疫，队友死亡我不掉san
----author:nullptr
+---@return nil
+---author:nullptr, Runar(Agent)
 function sanity:SetPlayerGhostImmunity(immunity)
 end
 
@@ -281,12 +293,3 @@ end
 ---author:nullptr
 function sanity:IsCrazy()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sanity:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sanity:StopWatchingWorldState(var, fn) end

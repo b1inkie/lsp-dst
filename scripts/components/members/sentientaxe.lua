@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sentientaxe: component_base
----@field inst idk
 ---@field owner idk
 ---@field convo_task idk
 ---@field say_task idk
@@ -17,14 +16,16 @@ local sentientaxe = {}
 
 ---
 ---@param owner idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:SetOwner(owner)
 end
 
 ---
 ---@param target idk # 
 ---@param action idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:OnFinishedWork(target,action)
 end
 
@@ -37,13 +38,15 @@ function sentientaxe:OnWereEaterChanged(old,new,istransforming)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:OnBecomeWere()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:ScheduleConversation(delay)
 end
 
@@ -67,20 +70,13 @@ function sentientaxe:Say(list,sound_override,delay)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sentientaxe:ShouldMakeConversation()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sentientaxe:OnBecomeHuman()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sentientaxe:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sentientaxe:StopWatchingWorldState(var, fn) end

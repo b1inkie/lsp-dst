@@ -8,7 +8,6 @@
 ---@field player_zooms idk
 ---@field player_zoom_task idk
 ---@field player_zoomout idk
----@field inst idk
 ---@field platform idk
 ---@field player_zoomed_out idk
 ---@field _doplatformcamerazoomdirty idk
@@ -16,61 +15,56 @@
 local walkableplatformplayer = {}
 
 ---
----author: 
-function walkableplatformplayer:OnRemoveEntity()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StartBoatMusicTest()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StartBoatCameraZooms()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StopBoatCamera()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StopBoatMusicTest()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StopBoatCameraZooms()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:TestForPlatform()
 end
 
 ---
 ---@param platform idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:GetOnPlatform(platform)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:GetOffPlatform()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkableplatformplayer:StartBoatCamera()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatformplayer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkableplatformplayer:StopWatchingWorldState(var, fn) end
+end

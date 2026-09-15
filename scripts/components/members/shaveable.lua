@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_shaveable: component_base
----@field inst idk
 ---@field prize_prefab idk
 ---@field prize_count idk
 ---@field can_shave_test idk
@@ -9,52 +8,33 @@
 local shaveable = {}
 
 ---
----author: 
-function shaveable:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function shaveable:OnLoad(data)
-end
-
----
 ---@param shaver idk # 
 ---@param shaving_implement idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function shaveable:CanShave(shaver,shaving_implement)
-end
-
----
----author: 
-function shaveable:OnSave()
 end
 
 ---
 ---@param prize_prefab idk # 
 ---@param prize_count idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shaveable:SetPrize(prize_prefab,prize_count)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function shaveable:OnRemoveFromEntity()
 end
 
 ---
 ---@param shaver idk # 
 ---@param shaving_implement idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function shaveable:Shave(shaver,shaving_implement)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shaveable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shaveable:StopWatchingWorldState(var, fn) end

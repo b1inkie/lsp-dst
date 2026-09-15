@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_revivablecorpse: component_base
----@field inst idk
 ---@field ismastersim idk
 ---@field canberevivedbyfn idk
 ---@field revive_health_percet idk
@@ -11,63 +10,63 @@ local revivablecorpse = {}
 
 ---
 ---@param reviver idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:Revive(reviver)
 end
 
 ---
 ---@param reviver idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function revivablecorpse:GetReviveSpeedMult(reviver)
 end
 
 ---
 ---@param reviver idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function revivablecorpse:CanBeRevivedBy(reviver)
 end
 
 ---
 ---@param tag idk # 
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetReviveSpeedMultForTag(tag,mult)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function revivablecorpse:GetReviveHealthPercent()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetCanBeRevivedByFn(fn)
 end
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetReviveSpeedMult(mult)
 end
 
 ---
 ---@param percent idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetReviveHealthPercent(percent)
 end
 
 ---
 ---@param corpse idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function revivablecorpse:SetCorpse(corpse)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function revivablecorpse:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function revivablecorpse:StopWatchingWorldState(var, fn) end
+end

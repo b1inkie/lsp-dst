@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_resistance: component_base
----@field inst idk
 ---@field tags idk
 ---@field onresistdamage idk
 ---@field shouldresistfn idk
@@ -10,61 +9,55 @@ local resistance = {}
 ---
 ---@param attacker idk # 
 ---@param weapon idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function resistance:HasResistance(attacker,weapon)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function resistance:ShouldResistDamage()
 end
 
 ---
 ---@param tag idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function resistance:HasResistanceToTag(tag)
 end
 
 ---
----author: 
-function resistance:GetDebugString()
-end
-
----
 ---@param tag idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:AddResistance(tag)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:SetOnResistDamageFn(fn)
 end
 
 ---
 ---@param damage_amount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:ResistDamage(damage_amount)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:SetShouldResistFn(fn)
 end
 
 ---
 ---@param tag idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function resistance:RemoveResistance(tag)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function resistance:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function resistance:StopWatchingWorldState(var, fn) end
+end

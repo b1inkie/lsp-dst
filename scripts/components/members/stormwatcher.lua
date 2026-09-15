@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stormwatcher: component_base
----@field inst idk
 ---@field stormlevel idk
 ---@field delay idk
 ---@field currentstorm idk
@@ -11,44 +10,34 @@ local stormwatcher = {}
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stormwatcher:CheckStorms(data)
 end
 
 ---
 ---@param data idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stormwatcher:UpdateStorms(data)
 end
 
 ---
 ---@param stormtype idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stormwatcher:GetStormLevel(stormtype)
 end
 
 ---
----@param dt idk # 
----author: 
-function stormwatcher:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function stormwatcher:UpdateStormLevel()
 end
 
 ---
 ---@param inst idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function stormwatcher:GetCurrentStorm(inst)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stormwatcher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stormwatcher:StopWatchingWorldState(var, fn) end
+end

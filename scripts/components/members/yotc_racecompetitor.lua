@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_yotc_racecompetitor: component_base
----@field inst idk
 ---@field racestate idk
 ---@field race_start_point idk
 ---@field race_begun_fn idk
@@ -29,73 +28,67 @@
 local yotc_racecompetitor = {}
 
 ---
----author: 
-function yotc_racecompetitor:OnRemoveEntity()
-end
-
----
 ---@param race_begun_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceBegunFn(race_begun_fn)
 end
 
 ---
 ---@param start_point_entity idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceStartPoint(start_point_entity)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:RecoverStamina()
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:StartRace(delay)
 end
 
 ---
----@param dt idk # 
----author: 
-function yotc_racecompetitor:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:OnEntitySleep()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:FinishRace()
 end
 
 ---
 ---@param prize_table idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:OnAllRacersFinished(prize_table)
 end
 
 ---
----author: 
-function yotc_racecompetitor:GetDebugString()
-end
-
----
----author: 
+---@return idk
+---author: Runar(Agent)
 function yotc_racecompetitor:GetRaceDistance()
 end
 
 ---
 ---@param race_finished_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceFinishedFn(race_finished_fn)
 end
 
@@ -106,43 +99,46 @@ end
 
 ---
 ---@param race_over_fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:SetRaceOverFn(race_over_fn)
 end
 
 ---
----author: 
+---@return ent
+---author: Runar(Agent)
 function yotc_racecompetitor:CollectPrize()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotc_racecompetitor:IsExhausted()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function yotc_racecompetitor:IsStartingLate()
 end
 
 ---
 ---@param prize_table idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:AbortRace(prize_table)
 end
 
 ---
 ---@param checkpoint idk # 
 ---@param is_starting_line idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function yotc_racecompetitor:_SetCheckPoint(checkpoint,is_starting_line)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotc_racecompetitor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function yotc_racecompetitor:StopWatchingWorldState(var, fn) end
+---设置选手延迟起跑：安排 start_delay 秒后清除延迟起跑标记的任务（期间选手不移动、不消耗体力）
+---@param start_delay number # 延迟起跑时长（秒）
+---@return nil
+---author: Runar(Agent)
+function yotc_racecompetitor:SetLateStarter(start_delay) end

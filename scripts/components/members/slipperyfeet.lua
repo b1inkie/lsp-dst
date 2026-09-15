@@ -4,7 +4,6 @@
 ---@field onicetile idk
 ---@field inittask idk
 ---@field checknearbyentitytask idk
----@field inst idk
 ---@field _sources idk
 ---@field _updating idk
 ---@field started idk
@@ -19,106 +18,89 @@ local slipperyfeet = {}
 
 ---
 ---@param dt idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:DoDecay(dt)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:Start_Internal()
 end
 
 ---
 ---@param src idk # 
 ---@param key idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StartSlipperySource(src,key)
 end
 
 ---
----@param dt idk # 
----author: 
-function slipperyfeet:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return ent|nil
+---@return ent[]
+---author: Runar(Agent)
 function slipperyfeet:GetSlipperyAndNearbyEnts()
 end
 
 ---
----author: 
-function slipperyfeet:OnLoad()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:Stop_Internal()
 end
 
 ---
 ---@param src idk # 
 ---@param key idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StopSlipperySource(src,key)
 end
 
 ---
----author: 
-function slipperyfeet:GetDebugString()
-end
-
----
----@param dt idk # 
----author: 
-function slipperyfeet:LongUpdate(dt)
-end
-
----
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StopUpdating_Internal(reason)
 end
 
 ---
 ---@param val idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:SetCurrent(val)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function slipperyfeet:CalcAccumulatingSpeed()
 end
 
 ---
 ---@param accumulating idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:SetAccumulating_Internal(accumulating)
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:StartUpdating_Internal(reason)
 end
 
 ---
 ---@param delta idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function slipperyfeet:DoDelta(delta)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function slipperyfeet:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function slipperyfeet:StopWatchingWorldState(var, fn) end
+end

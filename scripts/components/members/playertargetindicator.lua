@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_playertargetindicator: component_base
----@field inst idk
 ---@field max_range idk
 ---@field offScreenPlayers idk
 ---@field onScreenPlayersLastTick idk
@@ -10,32 +9,21 @@
 local playertargetindicator = {}
 
 ---
----author: 
-function playertargetindicator:OnUpdate()
-end
-
----
----@param target idk # 
----author: 
+---@param target ent # 待检测的玩家实体
+---@return boolean
+---author: Runar(Agent)
 function playertargetindicator:ShouldRemoveIndicator(target)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function playertargetindicator:OnRemoveFromEntity()
 end
 
 ---
----@param target idk # 
----author: 
+---@param target ent # 待检测的玩家实体
+---@return boolean
+---author: Runar(Agent)
 function playertargetindicator:ShouldShowIndicator(target)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playertargetindicator:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function playertargetindicator:StopWatchingWorldState(var, fn) end
+end

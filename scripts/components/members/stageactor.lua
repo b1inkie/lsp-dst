@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_stageactor: component_base
----@field inst idk
 ---@field storytelling_dist idk
 ---@field storytelling_ticktime idk
 ---@field stage idk
@@ -15,88 +14,81 @@ local stageactor = {}
 
 ---
 ---@param story_id idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:performedplay(story_id)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function stageactor:IsTellingStory()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:SetOnStoryBeginFn(fn)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function stageactor:performplay()
 end
 
 ---
 ---@param stage idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:SetStage(stage)
 end
 
 ---
 ---@param storyprop idk # 
 ---@param story idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function stageactor:TellStory(storyprop,story)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:OnStoryTick()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:OnDone()
 end
 
 ---
 ---@param stage idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function stageactor:GetStage(stage)
 end
 
 ---
----@param data idk # 
----author: 
-function stageactor:OnLoad(data)
-end
-
----
----author: 
-function stageactor:OnSave()
-end
-
----
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:SetOnStoryOverFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:OnRemoveFromEntity()
 end
 
 ---
 ---@param reason idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function stageactor:AbortStory(reason)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stageactor:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function stageactor:StopWatchingWorldState(var, fn) end
+end

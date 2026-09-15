@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_singingshelltrigger: component_base
----@field inst idk
 ---@field trigger_range idk
 ---@field findentitiesfn idk
 ---@field updating idk
@@ -9,30 +8,19 @@
 local singingshelltrigger = {}
 
 ---
----author: 
-function singingshelltrigger:OnUpdate()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function singingshelltrigger:StartUpdating()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function singingshelltrigger:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function singingshelltrigger:StopUpdating()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function singingshelltrigger:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function singingshelltrigger:StopWatchingWorldState(var, fn) end
+end

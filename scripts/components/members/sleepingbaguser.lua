@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_sleepingbaguser: component_base
----@field inst ent
 ---@field healthsleep idk
 ---@field dryingrate idk
 ---@field sleeper idk
@@ -17,55 +16,55 @@ local sleepingbaguser = {}
 
 ---
 ---@param bed idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:DoSleep(bed)
 end
 
 ---
 ---@param bonus idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetHungerBonusMult(bonus)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SleepTick()
 end
 
 ---
 ---@param bonus idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetHealthBonusMult(bonus)
 end
 
 ---
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function sleepingbaguser:ShouldSleep()
 end
 
 ---
 ---@param nostatechange idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:DoWakeUp(nostatechange)
 end
 
 ---
 ---@param cansleepfn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetCanSleepFn(cansleepfn)
 end
 
 ---
 ---@param bonus idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sleepingbaguser:SetSanityBonusMult(bonus)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleepingbaguser:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sleepingbaguser:StopWatchingWorldState(var, fn) end
+end

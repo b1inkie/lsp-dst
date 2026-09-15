@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_temperature: component_base
----@field inst ent
 ---@field settemp idk
 ---@field current idk
 ---@field maxtemp idk
@@ -30,19 +29,22 @@ local temperature = {}
 ---
 ---@param delta idk # 
 ---@param duration idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:SetTemperatureInBelly(delta,duration)
 end
 
 ---
 ---@param temp idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:SetTemp(temp)
 end
 
 ---
 ---@param rate idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:SetOverheatHurtRate(rate)
 end
 
@@ -50,35 +52,34 @@ end
 ---@param name string # buff名
 ---@param value number # 温度值
 ---
----author: lan
+---@return idk
+---author: lan, Runar(Agent)
 function temperature:SetModifier(name,value)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function temperature:GetMax()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function temperature:IsOverheating()
 end
 
 ---
----@param dt idk # 
----@param applyhealthdelta idk # 
----author: 
-function temperature:OnUpdate(dt,applyhealthdelta)
-end
-
----
----author: 
+---@return number
+---@return number
+---author: Runar(Agent)
 function temperature:GetInsulation()
 end
 
 ---
 ---@param rate idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:SetFreezingHurtRate(rate)
 end
 
@@ -91,13 +92,15 @@ function temperature:GetCurrent()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function temperature:GetMoisturePenalty()
 end
 
 ---
 ---@param delta idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:DoDelta(delta)
 end
 
@@ -108,55 +111,53 @@ end
 function temperature:RemoveModifier(name)
 end
 
+---添加保温值修改器（按保温类型分组，结果叠加进 GetInsulation）
+---@param insulationtype string # 保温类型，SEASONS.WINTER 或 SEASONS.SUMMER
+---@param src idk # 修改器来源（用于移除时识别）
+---@param insulation number # 保温值
+---@param key idk|nil # 可选键，用于区分同一来源的多个修改器
+---@return nil
+---author: Runar(Agent)
+function temperature:SetInsulationModifier(insulationtype, src, insulation, key) end
+
+---移除指定来源的保温值修改器
+---@param insulationtype string # 保温类型，SEASONS.WINTER 或 SEASONS.SUMMER
+---@param src idk # 修改器来源
+---@param key idk|nil # 可选键，与设置时一致
+---@return nil
+---author: Runar(Agent)
+function temperature:RemoveInsulationModifier(insulationtype, src, key) end
+
 ---
 ---@param newinst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:TransferComponent(newinst)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function temperature:IsFreezing()
 end
 
 ---
----author: 
-function temperature:GetDebugString()
-end
-
----
 ---@param value idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:SetTemperature(value)
 end
 
 ---
----author: 
-function temperature:OnSave()
-end
-
----
 ---@param ... idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:IgnoreTags(...)
 end
 
 ---
----@param data idk # 
----author: 
-function temperature:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function temperature:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperature:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function temperature:StopWatchingWorldState(var, fn) end
+

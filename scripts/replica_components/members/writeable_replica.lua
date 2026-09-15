@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class replica_writeable: replica_base
----@field inst idk
 ---@field screen idk
 ---@field opentask idk
 ---@field classified idk
@@ -10,25 +9,29 @@ local replica_writeable = {}
 
 ---
 ---@param writer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_writeable:SetWriter(writer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_writeable:EndWriting()
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_writeable:BeginWriting(doer)
 end
 
 ---
 ---@param doer idk # 
 ---@param text idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_writeable:Write(doer,text)
 end
 
@@ -38,17 +41,14 @@ function replica_writeable:OnRemoveFromEntity()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_writeable:DetachClassified()
 end
 
 ---
----author: 
-function replica_writeable:OnRemoveEntity()
-end
-
----
 ---@param classified idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function replica_writeable:AttachClassified(classified)
-end
+end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_deployable: component_base
----@field inst ent #组件挂载的实体
 ---@field mode number #部署模式（DEPLOYMODE里的一个常量）
 ---@field spacing number #部署间距（DEPLOYSPACING里的一个常量）
 ---@field restrictedtag tagID|nil #限制部署的标签
@@ -23,13 +22,15 @@ end
 
 ---设置是否使用网格放置器
 ---@param usegridplacer boolean #是否使用网格放置器
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetUseGridPlacer(usegridplacer)
 end
 
 ---设置部署间距
 ---@param spacing number #部署间距（DEPLOYSPACIN里的一个常量）
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetDeploySpacing(spacing)
 end
 
@@ -37,15 +38,24 @@ end
 ---@param pt Vector3 #目标点
 ---@param deployer ent|nil #部署者
 ---@param rot number|nil #旋转角度
----author:星璃
+---@return boolean
+---@return idk
+---author: 星璃, Runar(Agent)
 function deployable:Deploy(pt, deployer, rot)
 end
 
 ---设置部署模式<br>`lan`: 不调用这个方法设置一下的话,能种到船上去,会出bug
 ---@param mode number #部署模式（DEPLOYMODE里的一个常量）
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetDeployMode(mode)
 end
+
+---获取部署模式
+---@return number # 部署模式（DEPLOYMODE 里的一个常量）
+---@nodiscard
+---author: Runar(Agent)
+function deployable:GetDeployMode() end
 
 ---获取部署间距半径
 ---author:星璃
@@ -63,21 +73,14 @@ function deployable:IsDeployable(deployer)
 end
 
 ---组件被移除时的回调
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:OnRemoveFromEntity()
 end
 
 ---设置部署动画覆盖
 ---@param data any #动画数据
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function deployable:SetDeployTossSymbolOverride(data)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deployable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function deployable:StopWatchingWorldState(var, fn) end

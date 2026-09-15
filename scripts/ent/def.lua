@@ -157,3 +157,4 @@
 ---@field CreateHealthBadge nil|widget_badge # 替换health的badge
 ---@field resurrect_multiplier nil|number # 最终承伤比
 ---@field brain idk # 
+---@field displaynamefn fun(inst:ent):(string|nil)|nil

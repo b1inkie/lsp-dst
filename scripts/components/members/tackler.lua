@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_tackler: component_base
----@field inst idk
 ---@field onstarttacklefn idk
 ---@field distance idk
 ---@field radius idk
@@ -16,74 +15,76 @@ local tackler = {}
 
 ---
 ---@param distance idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetDistance(distance)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tackler:CheckEdge()
 end
 
 ---
 ---@param distance idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetEdgeDistance(distance)
 end
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetStructureDamageMultiplier(mult)
 end
 
 ---
 ---@param action idk # 
 ---@param amount idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:AddWorkAction(action,amount)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetOnCollideFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetOnTrampleFn(fn)
 end
 
 ---
 ---@param ignores idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tackler:CheckCollision(ignores)
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function tackler:StartTackle()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetOnStartTackleFn(fn)
 end
 
 ---
 ---@param radius idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function tackler:SetRadius(radius)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tackler:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function tackler:StopWatchingWorldState(var, fn) end
+end

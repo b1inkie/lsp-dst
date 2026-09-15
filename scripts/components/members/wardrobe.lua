@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_wardrobe: component_base
----@field inst idk
 ---@field changers idk
 ---@field enabled idk
 ---@field canuseaction idk
@@ -19,60 +18,71 @@ local wardrobe = {}
 
 ---
 ---@param doer idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:EndChanging(doer)
 end
 
 ---
 ---@param range idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetRange(range)
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function wardrobe:BeginChanging(doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:OnRemoveFromEntity()
 end
 
 ---
 ---@param canbeshared idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetCanBeShared(canbeshared)
 end
 
 ---
 ---@param canuseaction idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetCanUseAction(canuseaction)
 end
 
 ---
 ---@param doer idk # 
 ---@param skins idk # 
----author: 
+---@return idk
+---author: Runar(Agent)
 function wardrobe:ActivateChanging(doer,skins)
 end
 
 ---
 ---@param canbedressed idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetCanBeDressed(canbedressed)
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function wardrobe:CanBeginChanging(doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:EndAllChanging()
 end
 
@@ -80,40 +90,29 @@ end
 ---@param target idk # 
 ---@param doer idk # 
 ---@param skins idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:ApplyTargetSkins(target,doer,skins)
-end
-
----
----@param dt idk # 
----author: 
-function wardrobe:OnUpdate(dt)
 end
 
 ---
 ---@param doer idk # 
 ---@param diff idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:ApplySkins(doer,diff)
 end
 
 ---
 ---@param enable idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:Enable(enable)
 end
 
 ---
 ---@param delay idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function wardrobe:SetChangeInDelay(delay)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wardrobe:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wardrobe:StopWatchingWorldState(var, fn) end
+end

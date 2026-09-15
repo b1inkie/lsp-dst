@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_drawable: component_base
----@field inst idk
 ---@field candraw idk
 ---@field imagename idk
 ---@field atlasname idk
@@ -10,74 +9,72 @@
 ---@field ondrawnfn idk
 local drawable = {}
 
+---返回背景图名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetBGImage()
 end
 
+---返回已画内容图名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetImage()
 end
 
+---设置被画(绘画完成)时的回调
 ---
----@param data idk # 
----author: 
-function drawable:OnLoad(data)
-end
-
----
----@param fn idk # 
----author: 
+---@param fn idk # 被画（绘画完成）时的回调，参数为(inst, imagename, imagesource, atlasname, bgimagename, bgatlasname)
+---@return nil
+---author: Runar(Agent)
 function drawable:SetOnDrawnFn(fn)
 end
 
+---返回当前是否可被画
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:CanDraw()
 end
 
+---返回图集名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetAtlas()
 end
 
+---返回背景图集名
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function drawable:GetBGAtlas()
 end
 
+---设置可否被画
 ---
----author: 
-function drawable:OnSave()
-end
-
----
----@param candraw idk # 
----author: 
+---@param candraw idk # 是否可被画
+---@return nil
+---author: Runar(Agent)
 function drawable:SetCanDraw(candraw)
 end
 
+---移除 drawable 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function drawable:OnRemoveFromEntity()
 end
 
+---应用绘画结果(可为空表示擦除)并触发回调
 ---
----@param imagename idk # 
----@param imagesource idk # 
----@param atlasname idk # 
----@param bgimagename idk # 
----@param bgatlasname idk # 
----author: 
+---@param imagename idk # 画的图像名（空串视为擦除）
+---@param imagesource idk # 图像来源
+---@param atlasname idk # 图集名（空串视为擦除）
+---@param bgimagename idk # 背景图名（空串视为擦除）
+---@param bgatlasname idk # 背景图集名（空串视为擦除）
+---@return nil
+---author: Runar(Agent)
 function drawable:OnDrawn(imagename,imagesource,atlasname,bgimagename,bgatlasname)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drawable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function drawable:StopWatchingWorldState(var, fn) end
+end

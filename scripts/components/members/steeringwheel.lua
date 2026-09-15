@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_steeringwheel: component_base
----@field inst idk
 ---@field onstartfn idk
 ---@field onstopfn idk
 ---@field onsailorremoved idk
@@ -10,42 +9,33 @@ local steeringwheel = {}
 
 ---
 ---@param sailor idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:StartSteering(sailor)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:SetOnStartSteeringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:StopSteering()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:SetOnStopSteeringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function steeringwheel:OnRemoveFromEntity()
-end
-
----
----author: 
-function steeringwheel:GetDebugString()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function steeringwheel:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function steeringwheel:StopWatchingWorldState(var, fn) end
+end

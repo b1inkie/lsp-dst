@@ -1,48 +1,50 @@
 ---@meta
 
 ---@class component_dumbbelllifter: component_base
----@field inst idk
 ---@field dumbbell idk
 local dumbbelllifter = {}
 
+---开始举该哑铃
 ---
----@param dumbbell idk # 
----author: 
+---@param dumbbell idk # 要开始举的哑铃实体
+---@return nil
+---author: Runar(Agent)
 function dumbbelllifter:StartLifting(dumbbell)
 end
 
+---判断当前举的是否为该哑铃
 ---
----@param dumbbell idk # 
----author: 
+---@param dumbbell idk # 要比对的哑铃实体
+---@return boolean
+---author: Runar(Agent)
 function dumbbelllifter:IsLifting(dumbbell)
 end
 
+---执行举哑铃动作(哑铃有效时)
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function dumbbelllifter:Lift()
 end
 
+---返回是否举着任意哑铃
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function dumbbelllifter:IsLiftingAny()
 end
 
+---判断能否举该哑铃(默认 true)
 ---
----@param dumbbell idk # 
----author: 
+---@param dumbbell idk # 要判断能否举起的哑铃实体
+---@return boolean
+---author: Runar(Agent)
 function dumbbelllifter:CanLift(dumbbell)
 end
 
+---停止举哑铃并清除
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function dumbbelllifter:StopLifting()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dumbbelllifter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function dumbbelllifter:StopWatchingWorldState(var, fn) end

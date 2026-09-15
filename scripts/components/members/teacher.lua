@@ -1,27 +1,20 @@
 ---@meta
 
 ---@class component_teacher: component_base
----@field inst idk
 ---@field recipe idk
 local teacher = {}
 
 ---
 ---@param recipe idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function teacher:SetRecipe(recipe)
 end
 
 ---
 ---@param target idk # 
----author: 
+---@return boolean
+---@return string|nil
+---author: Runar(Agent)
 function teacher:Teach(target)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teacher:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function teacher:StopWatchingWorldState(var, fn) end
+end

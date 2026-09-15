@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_emitter: component_base
----@field inst idk
 ---@field area_emitter idk
 ---@field config idk
 ---@field max_lifetime idk
@@ -11,16 +10,9 @@
 ---@field density_factor idk
 local emitter = {}
 
+---触发一次信号发射(推 onemit 事件)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function emitter:Emit()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function emitter:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function emitter:StopWatchingWorldState(var, fn) end
+end

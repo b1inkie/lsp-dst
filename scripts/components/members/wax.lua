@@ -1,25 +1,18 @@
 ---@meta
 
 ---@class component_wax: component_base
----@field inst idk
 ---@field is_spray idk
 local wax = {}
 
----
----author: 
+---把 is_spray 设为 true（netvar setter 同步为实体添加 waxspray 标签）
+---@return nil
+---author: Runar(Agent)
 function wax:SetIsSpray()
 end
 
----
----author: 
+---获取是否处于蜡喷洒状态（is_spray）
+---@return idk
+---author: Runar(Agent)
 function wax:GetIsSpray()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wax:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function wax:StopWatchingWorldState(var, fn) end
+

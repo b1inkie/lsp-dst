@@ -1,47 +1,43 @@
 ---@meta
 
 ---@class component_walkingplank: component_base
----@field inst idk
 ---@field doer idk
 local walkingplank = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:StopMounting()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:Retract()
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:Extend()
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function walkingplank:AbandonShip(doer)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function walkingplank:OnRemoveFromEntity()
 end
 
 ---
 ---@param doer idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function walkingplank:MountPlank(doer)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkingplank:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function walkingplank:StopWatchingWorldState(var, fn) end
+end

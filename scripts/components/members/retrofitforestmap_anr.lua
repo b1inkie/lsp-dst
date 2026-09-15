@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_retrofitforestmap_anr: component_base
----@field inst idk
 ---@field retrofit_artsandcrafts idk
 ---@field retrofit_artsandcrafts2 idk
 ---@field retrofit_cutefuzzyanimals idk
@@ -31,13 +30,14 @@
 ---@field retrofit_junkyardv2_content idk
 ---@field retrofit_junkyardv3_content idk
 ---@field retrofit_otterdens idk
+---@field retrofit_balatro_content boolean # Balatro 联动改造标记，为 true 时在地图节点中放置 balatro_machine（JIMBO）
+---@field retrofit_catcoonden_deextinction boolean # 猫鼬巢穴复育改造标记，为 true 时在 BGDeciduous 拓扑节点补足 catcoonden 至最少 3 个（由 savefileupgrades 写入存档标记）
+---@field sharkboi_ice_hazard_fix boolean # 冰面清理修复标记，移除不在海面上的 sharkboi_ice_hazard 实体
+---@field rifts6_add_whirlpool boolean # "From Beyond" 漩涡改造标记，在危险/波涛海域放置 oceanwhirlbigportal 大漩涡
+---@field fix_pearl_eating_everything boolean # Pearl 奖励修复标记，重置 hermitcrab 的 friendlevels 已完成任务并允许 Pearl 重新交付珍珠
+---@field floating_heavyobstaclephysics_fix boolean # 重物漂浮漏洞修复标记，为 true 时把所有带 heavyobstaclephysics 组件实体的 deprecated_floating_exploit 置为 true
+---@field retrofit_missing_retrofits_generated_densities boolean # 密度补全改造标记，为月岛改造节点按 retrofit_moonisland_large 静态布局重新生成 densities 分布
+---@field retrofit_enable_pearl_score boolean # Pearl 装饰评分启用标记，为处于有效装饰区的 hermithouse 启用 pearldecorationscore 组件
+---@field hermitcrab_relocation_change boolean # Pearl 配方修复标记，重新教授 hermitcrab_relocation_kit，并在珍珠已消失时解锁 shellweaver 配方
 local retrofitforestmap_anr = {}
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function retrofitforestmap_anr:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function retrofitforestmap_anr:StopWatchingWorldState(var, fn) end

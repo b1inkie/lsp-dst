@@ -2,79 +2,83 @@
 
 ---@class component_skilltreeupdater: component_base
 ---@field skilltree idk
----@field inst idk
 ---@field silent idk
 ---@field skilltreeblob idk
 ---@field skilltreeblobprefab idk
 local skilltreeupdater = {}
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:GetAvailableSkillPoints()
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:DeactivateSkill_Server(skill)
 end
 
 ---
 ---@param skillxp idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:GetPointsForSkillXP(skillxp)
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function skilltreeupdater:IsValidSkill(skill)
 end
 
 ---
----author: 
+---@return idk[]
+---author: Runar(Agent)
 function skilltreeupdater:GetActivatedSkills()
 end
 
 ---
 ---@param skillselection idk # 
----author: 
+---@return string[]
+---author: Runar(Agent)
 function skilltreeupdater:GetNamesFromSkillSelection(skillselection)
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:ActivateSkill_Client(skill)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function skilltreeupdater:GetPlayerSkillSelection()
 end
 
 ---
----@param data idk # 
----author: 
-function skilltreeupdater:OnLoad(data)
-end
-
----
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:DeactivateSkill_Client(skill)
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function skilltreeupdater:IsActivated(skill)
 end
 
 ---
 ---@param amount idk # 
 ---@param total idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:AddSkillXP_Client(amount,total)
 end
 
@@ -82,50 +86,58 @@ end
 ---@param amount idk # 
 ---@param prefab idk # 
 ---@param fromrpc idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:AddSkillXP(amount,prefab,fromrpc)
 end
 
 ---
 ---@param skillselection idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SetPlayerSkillSelection(skillselection)
 end
 
 ---
 ---@param amount idk # 
 ---@param total idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:AddSkillXP_Server(amount,total)
 end
 
 ---
 ---@param inst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SendFromSkillTreeBlob(inst)
 end
 
 ---
 ---@param skip idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SetSkipValidation(skip)
 end
 
 ---
 ---@param silent idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:SetSilent(silent)
 end
 
 ---
 ---@param newinst idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:TransferComponent(newinst)
 end
 
 ---
 ---@param skill idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function skilltreeupdater:ActivateSkill_Server(skill)
 end
 
@@ -139,23 +151,21 @@ end
 
 ---
 ---@param tag idk # 
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:CountSkillTag(tag)
 end
 
 ---
----author: 
-function skilltreeupdater:OnSave()
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function skilltreeupdater:GetSkillXP()
 end
 
 ---
 ---@param tag idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function skilltreeupdater:HasSkillTag(tag)
 end
 
@@ -166,12 +176,4 @@ end
 ---author: 
 function skilltreeupdater:ActivateSkill(skill,prefab,fromrpc)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skilltreeupdater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function skilltreeupdater:StopWatchingWorldState(var, fn) end
+

@@ -1,26 +1,18 @@
 ---@meta
 
 ---@class component_strongman: component_base
----@field inst idk
 ---@field gym idk
 local strongman = {}
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function strongman:StopWorkout()
 end
 
 ---
 ---@param gym idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function strongman:DoWorkout(gym)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function strongman:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function strongman:StopWatchingWorldState(var, fn) end
+end

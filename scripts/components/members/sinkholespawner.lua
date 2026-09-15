@@ -1,13 +1,13 @@
 ---@meta
 
 ---@class component_sinkholespawner: component_base
----@field inst idk
 ---@field targets idk
 local sinkholespawner = {}
 
 ---
 ---@param spawnpt idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function sinkholespawner:SpawnSinkhole(spawnpt)
 end
 
@@ -18,18 +18,8 @@ function sinkholespawner:UpdateTarget(targetinfo)
 end
 
 ---
----author: 
-function sinkholespawner:GetDebugString()
-end
-
----
----@param data idk # 
----author: 
-function sinkholespawner:OnLoad(data)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function sinkholespawner:StopSinkholes()
 end
 
@@ -40,32 +30,21 @@ function sinkholespawner:DoTargetAttack(targetinfo)
 end
 
 ---
----@param dt idk # 
----author: 
-function sinkholespawner:OnUpdate(dt)
-end
-
----
----author: 
-function sinkholespawner:OnSave()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function sinkholespawner:PushRemoteTargets()
 end
 
 ---
 ---@param targetinfo idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function sinkholespawner:DoTargetWarning(targetinfo)
 end
 
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sinkholespawner:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function sinkholespawner:StopWatchingWorldState(var, fn) end
+---开始蚁狮地裂攻击：按玩家游戏时长加权随机挑选目标玩家
+---<br>（玩家多于 3 人时选 2 个），依游玩年数计算每个目标的攻击波数，
+---<br>加入目标列表并开始警告流程，最后启动组件更新并推送 onsinkholesstarted 事件
+---@return nil
+---author: Runar(Agent)
+function sinkholespawner:StartSinkholes() end

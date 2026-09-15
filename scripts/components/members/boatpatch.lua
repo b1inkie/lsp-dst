@@ -1,25 +1,19 @@
 ---@meta
 
 ---@class component_boatpatch: component_base
----@field inst idk
 ---@field patch_type idk
 local boatpatch = {}
 
+---移除实体时的清理(船板补丁无额外资源)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatpatch:OnRemoveFromEntity()
 end
 
+---返回补丁类型(small/med 等, 无则返回 nil)
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function boatpatch:GetPatchType()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatpatch:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatpatch:StopWatchingWorldState(var, fn) end
+end

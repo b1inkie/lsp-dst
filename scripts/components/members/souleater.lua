@@ -1,27 +1,19 @@
 ---@meta
 
 ---@class component_souleater: component_base
----@field inst idk
 ---@field oneatsoulfn idk
 local souleater = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function souleater:SetOnEatSoulFn(fn)
 end
 
 ---
 ---@param soul idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function souleater:EatSoul(soul)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function souleater:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function souleater:StopWatchingWorldState(var, fn) end
+end

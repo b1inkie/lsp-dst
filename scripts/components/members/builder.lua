@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_builder: component_base
----@field inst ent
 ---@field recipes idk
 ---@field station_recipes idk
 ---@field accessible_tech_trees idk
@@ -27,9 +26,16 @@ function builder:GetTechBonuses()
 end
 
 ---切换自由建造模式
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:GiveAllRecipes()
 end
+
+---解锁所有科技等级不超过 tech 的有效配方
+---@param tech table #科技等级表
+---@return nil
+---author: Runar(Agent)
+function builder:UnlockRecipesForTech(tech) end
 
 ---检查角色是否有特殊材料（如健康、理智）
 ---@param ingredient table #材料信息
@@ -46,7 +52,8 @@ end
 
 ---解锁某个配方。解锁时会奖励理智并触发事件。
 ---@param recname string #配方名
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:UnlockRecipe(recname)
 end
 
@@ -59,25 +66,28 @@ end
 
 ---激活当前靠近的原型机，用于触发科技站动画和事件
 ---@param recipe table #配方数据
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:ActivateCurrentResearchMachine(recipe)
 end
 
 ---将配方缓存在建造栏，等待玩家选择位置后建造（如建筑类物品）
 ---@param recname string #配方名
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:BufferBuild(recname)
 end
 
 ---消耗临时科技加成
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:ConsumeTempTechBonuses()
 end
 
----每帧更新，主要用于科技树的实时评估
----author:星璃
-function builder:OnUpdate()
-end
+---评估当前可用科技树：查找附近（或手动指定）的原型机并激活、收集制作站配方、合并角色科技加成，变化时同步副本并触发 techtreechange 事件
+---@return nil
+---author: Runar(Agent)
+function builder:EvaluateTechTrees() end
 
 ---检查各种条件后，调用 MakeRecipe 进行建造
 ---@param recname string #配方名
@@ -106,7 +116,8 @@ end
 ---实际执行制作动作，消耗材料，生成物品或建筑，并处理装备、掉落、事件等
 ---@param recipe table #配方数据
 ---@param skin string|nil #皮肤
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:MakeRecipeFromMenu(recipe, skin)
 end
 
@@ -139,24 +150,27 @@ end
 function builder:KnowsRecipe(recipe, ignore_tempbonus)
 end
 
----读档，恢复存档数据
----@param data table #存档数据
----author:星璃
-function builder:OnLoad(data)
-end
-
 ---在指定位置建造建筑类物品
 ---@param recipe table #配方数据
 ---@param pt Vector3 #建造位置
 ---@param rot number|nil #旋转角度
 ---@param skin string|nil #皮肤
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:MakeRecipeAtPoint(recipe, pt, rot, skin)
 end
 
+---设置某配方是否缓存在建造栏，并同步到副本
+---@param recname string #配方名
+---@param boolval boolean #是否缓存
+---@return nil
+---author: Runar(Agent)
+function builder:SetBuildBuffered(recname, boolval) end
+
 ---增加临时科技加成
 ---@param tech table #科技加成表
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:GiveTempTechBonus(tech)
 end
 
@@ -171,12 +185,6 @@ end
 function builder:MakeRecipe(recipe, pt, rot, skin, onsuccess)
 end
 
----长时间未更新时的同步
----@param dt number #时间差
----author:星璃
-function builder:LongUpdate(dt)
-end
-
 ---获取材料湿度（用于继承到新物品）
 ---@param ingredients table #材料表
 ---author:星璃
@@ -186,21 +194,17 @@ end
 
 ---移除某个配方
 ---@param recname string #配方名
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:RemoveRecipe(recname)
-end
-
----存档，返回存档数据
----author:星璃
----@return table #存档数据
-function builder:OnSave()
 end
 
 ---从角色身上移除制作配方所需的材料，并处理特殊材料（如健康、理智消耗）
 ---@param ingredients table<PrefabID,table<ent,integer>> #材料表
 ---@param recname string #配方名
 ---@param discounted boolean #是否有折扣
----author:星璃, lan
+---@return nil
+---author:星璃, lan, Runar(Agent)
 function builder:RemoveIngredients(ingredients, recname, discounted)
 end
 
@@ -213,17 +217,22 @@ end
 function builder:GetIngredients(recname)
 end
 
+---检查制作材料中是否存在物品拟态（itemmimic），若有则将其转为恶意并返回 true
+---@param ingredients table<PrefabID,table<ent,integer>> #材料表
+---@return boolean #是否发现了拟态物品
+---@nodiscard
+---author: Runar(Agent)
+function builder:CheckIngredientsForMimic(ingredients) end
+
+---检查已装备的折扣道具（如绿护符）是否为物品拟态，若是则将其转为恶意并返回 true
+---@return boolean|nil #是否发现了拟态物品，未装备时为 nil
+---@nodiscard
+---author: Runar(Agent)
+function builder:CheckDiscountEquipsForMimic() end
+
 ---增加某个配方
 ---@param recname string #配方名
----author:星璃
+---@return nil
+---author:星璃, Runar(Agent)
 function builder:AddRecipe(recname)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function builder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function builder:StopWatchingWorldState(var, fn) end
+end

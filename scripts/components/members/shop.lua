@@ -1,34 +1,27 @@
 ---@meta
 
 ---@class component_shop: component_base
----@field inst idk
 ---@field tab idk
 ---@field title idk
 local shop = {}
 
 ---
 ---@param title idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shop:SetTitle(title)
 end
 
 ---
 ---@param items idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shop:DeliverItems(items)
 end
 
 ---
 ---@param tab idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function shop:SetStartTab(tab)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shop:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function shop:StopWatchingWorldState(var, fn) end
+end

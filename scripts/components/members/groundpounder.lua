@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_groundpounder: component_base
----@field inst idk
 ---@field numRings idk
 ---@field ringDelay idk
 ---@field initialRadius idk
@@ -29,35 +28,36 @@ local groundpounder = {}
 ---<br> 运行逻辑：根据传入的pt位置信息或者进行震地攻击的实体位置信息进行环内实体搜索（由内向外），然后调用组件内相关函数生成点并在每个环上调用相关攻击函数完成整个震地攻击行为，最终如果设置了groundpoundFn便执行该函数（若需要添加其他需求建议在此函数中添加）
 ---@param pt Vector3 # 震地攻击的中心撞击点/生物自身的世界位置
 ---@param ents_hit table # 已经攻击过的实体表（防止多个环造成多次攻击）
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function groundpounder:GroundPound(pt,ents_hit)
 end
 
+---在指定点做场外冲击波(禁区域伤害)
 ---
----@param position idk # 
----author: 
+---@param position Vector3 # 冲击波中心点坐标
+---@return nil
+---author: Runar(Agent)
 function groundpounder:GroundPound_Offscreen(position)
 end
 
+---对一组点执行破坏(破物/伤害/推平台/推物/特效)
 ---
----@param points idk # 
----@param breakobjects idk # 
----@param dodamage idk # 
----@param pushplatforms idk # 
----@param pushinventoryitems idk # 
----@param spawnfx idk # 
----author: 
+---@param points Vector3[] # 待处理的撞击点数组(每点检索周边实体)
+---@param breakobjects boolean # 是否破坏/点燃可工作实体
+---@param dodamage boolean # 是否对范围内目标发起攻击
+---@param pushplatforms boolean # 是否推开平台类实体(如船)
+---@param pushinventoryitems boolean # 是否弹开地上物品
+---@param spawnfx boolean # 是否在陆地生成震地特效
+---@return nil
+---author: Runar(Agent)
 function groundpounder:DestroyPoints(points,breakobjects,dodamage,pushplatforms,pushinventoryitems,spawnfx)
 end
 
 ---启用环模式（旧版是点模式，但现在已不建议使用点模式并且官方已经弃用点模式）
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function groundpounder:UseRingMode()
-end
-
----
----author: 
-function groundpounder:GetDebugString()
 end
 
 ---根据传入的位置信息在每个撞击环上生成数个点
@@ -81,15 +81,7 @@ end
 ---@param spawnfx boolean # 是否在震地攻击时播放对应的特效
 ---@param ents_hit table # 已经攻击过的实体表（防止多个环造成多次攻击）
 ---@param platforms_hit table # 已经推开过的平台类实体表（防止多个环造成多次推动）
----author: KP
+---@return nil
+---author: KP, Runar(Agent)
 function groundpounder:DestroyRing(pt,radius,points,breakobjects,dodamage,pushplatforms,pushinventoryitems,spawnfx,ents_hit,platforms_hit)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groundpounder:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function groundpounder:StopWatchingWorldState(var, fn) end
+end

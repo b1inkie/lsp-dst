@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_container: component_base
----@field inst ent
 ---@field slots ent[]
 ---@field numslots idk
 ---@field canbeopened boolean|nil
@@ -27,6 +26,7 @@
 ---@field onanyopenfn fun(this:ent,data:{doer:ent})
 ---@field onclosefn fun(this:ent,data:{doer:ent})
 ---@field onanyclosefn fun(this:ent,data:{doer:ent})
+---@field Close_Items_Internal fun(item: ent, doer: ent) # 关闭容器时对每个物品调用的回调，若物品自身也是容器则递归关闭其内部容器
 local container = {}
 
 ---把指定物品添加到容器中
@@ -58,20 +58,45 @@ function container:GetOpeners()
 end
 
 ---
----@param slot idk # 
----@param keepoverstacked idk # 
----author: 
+---@param slot idk # 栏序号
+---@param keepoverstacked idk # 是否保持超限堆叠（仅移除原始堆叠上限内的数量）
+---@return ent
+---author: Runar(Agent)
 function container:RemoveItemBySlot(slot,keepoverstacked)
 end
 
 ---启用或关闭容器无限堆叠
 ---@param enable boolean # 启用无限堆叠
+---@return nil
 ---author: Runar
 function container:EnableInfiniteStackSize(enable)
 end
 
+---启用或关闭容器只读模式：开启后禁止物品进出容器，并在容器没有保鲜组件时添加一个腐坏速率与温度变化均为 0 的保鲜组件
+---@param enable boolean # 是否启用只读模式
+---@return nil
+---author: Runar(Agent)
+function container:EnableReadOnlyContainer(enable)
+end
+
+---判断指定实体是否被本容器的限制标签（restrictedtag）禁止访问（仅对玩家生效）
+---@param target ent # 要检查的实体
+---@return boolean # 是否被限制访问
+---@nodiscard
+---author: Runar(Agent)
+function container:IsRestricted(target)
+end
+
+---判断容器是否防偷窃（thiefproof）
+---@return boolean # 是否防偷窃
+---@nodiscard
+---author: Runar(Agent)
+function container:IsThiefProof()
+end
+
 ---
----author: 
+---@return ent[]
+---author: Runar(Agent)
 function container:ReferenceAllItems()
 end
 
@@ -82,16 +107,10 @@ end
 function container:FindItems(fn)
 end
 
----
----@param data idk # 
----@param newents idk # 
----author: 
-function container:OnLoad(data,newents)
-end
-
 ---按数量扣除指名物品
 ---@param item string # 物品prefab名
 ---@param amount number # 扣除数量
+---@return nil
 ---author: Runar
 function container:ConsumeByName(item,amount)
 end
@@ -103,9 +122,10 @@ function container:GetWidget()
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:SwapOneOfActiveItemWithSlot(slot,opener)
 end
 
@@ -116,8 +136,9 @@ function container:NumItems()
 end
 
 ---
----@param numslots idk # 
----author: 
+---@param numslots idk # 栏位数量（只能增加，不能减少）
+---@return nil
+---author: Runar(Agent)
 function container:SetNumSlots(numslots)
 end
 
@@ -135,11 +156,13 @@ function container:IsFull()
 end
 
 ---
----@param item idk # 
----@param slot idk # 
----@param wholestack idk # 
----@param keepoverstacked idk # 
----author: 
+---@param item idk # 要移除的物品
+---@param slot idk # 物品所在栏序号
+---@param wholestack idk # 是否移除整堆（为 false 时只移除 1 个）
+---@param keepoverstacked idk # 是否保持超限堆叠（仅移除原始堆叠上限内的数量）
+---@return number
+---@return ent|nil
+---author: Runar(Agent)
 function container:RemoveItem_Internal(item,slot,wholestack,keepoverstacked)
 end
 
@@ -150,9 +173,10 @@ function container:GetAllItems()
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:TakeActiveItemFromAllOfSlot(slot,opener)
 end
 
@@ -164,17 +188,19 @@ function container:IsOpenedBy(guy)
 end
 
 ---
----@param slot idk # 
----@param container idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param container idk # 目标容器实体
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:MoveItemFromAllOfSlot(slot,container,opener)
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:AddOneOfActiveItemToSlot(slot,opener)
 end
 
@@ -189,7 +215,8 @@ end
 ---从容器中丢弃物品直到达到指定的最大堆数
 ---@param maxstacks number # 最大堆数
 ---@param drop_pos Vector3 # 掉落位置
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function container:DropEverythingUpToMaxStacks(maxstacks,drop_pos)
 end
 
@@ -209,45 +236,61 @@ end
 function container:GetItemByName(item,amount)
 end
 
+---按制作材料的取用规则（优先小堆，可反转搜索顺序）获取指定物品，返回以物品为键、可用数量为值的表
+---@param item string # 物品prefab名（忽略带 nocrafting 标签的物品）
+---@param amount number # 所需数量
+---@param reverse_search_order boolean|nil # 是否反转搜索顺序（栏号按从大到小计）
+---@return table # 以物品inst为键、取出数量为值的表
+---@nodiscard
+---author: Runar(Agent)
+function container:GetCraftingIngredient(item,amount,reverse_search_order)
+end
+
 ---
----@param slot idk # 
----@param drop_pos idk # 
----@param keepoverstacked idk # 
----author: 
+---@param slot idk # 栏序号
+---@param drop_pos idk # 掉落位置（不填时为容器位置）
+---@param keepoverstacked idk # 是否保持超限堆叠
+---@return ent|nil # 掉落的物品，无可掉落物品时为 nil
+---author: Runar(Agent)
 function container:DropItemBySlot(slot,drop_pos,keepoverstacked)
 end
 
 ---绑定容器UI
 ---@param prefab string # 需要绑定的容器UI
 ---@param data nil|table # 不用填(容器UI信息,不填则在params[prefab]里找)
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function container:WidgetSetup(prefab,data)
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:SwapActiveItemWithSlot(slot,opener)
 end
 
 ---无条件销毁容器内所有物品
 ---@param onpredestroyitemcallbackfn function|nil # 物品销毁预回调函数
+---@return nil
 ---author: Runar
 function container:DestroyContents(onpredestroyitemcallbackfn)
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:PutOneOfActiveItemInSlot(slot,opener)
 end
 
 ---丢出所有物品
 ---@param drop_pos Vector3 # 掉落位置
 ---@param keepoverstacked boolean|nil # 保持物品堆叠状态
----author: lan(多在容器被摧毁时调用)
+---@return nil
+---author: lan(多在容器被摧毁时调用), Runar(Agent)
 function container:DropEverything(drop_pos,keepoverstacked)
 end
 
@@ -258,34 +301,32 @@ function container:IsSideWidget()
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:PutAllOfActiveItemInSlot(slot,opener)
-end
-
----
----@param dt idk # 
----author: 
-function container:OnUpdate(dt)
 end
 
 ---为doer打开容器
 ---@param doer ent # 执行者
+---@return nil
 ---author: Runar
 function container:Open(doer)
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:AddAllOfActiveItemToSlot(slot,opener)
 end
 
 ---
----@param item idk # 
----author: 
+---@param item idk # 要判断的物品
+---@return boolean
+---author: Runar(Agent)
 function container:ShouldPrioritizeContainer(item)
 end
 
@@ -298,6 +339,7 @@ end
 
 ---原地抛出指定物品
 ---@param itemtodrop ent # 要抛出的物品
+---@return nil
 ---author: Runar
 function container:DropItem(itemtodrop)
 end
@@ -337,22 +379,44 @@ function container:Has(item,amount,iscrafting)
 end
 
 ---
----@param slot idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:TakeActiveItemFromHalfOfSlot(slot,opener)
 end
 
+---将指定栏位物品按指定数量取出并放到执行者的主动物品栏，数量会被 clamp 到 1 ~ 整堆大小
+---@param slot number # 栏序号
+---@param count number # 取出数量
+---@param opener ent # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
+function container:TakeActiveItemFromCountOfSlot(slot,count,opener)
+end
+
 ---
----@param slot idk # 
----@param container idk # 
----@param opener idk # 
----author: 
+---@param slot idk # 栏序号
+---@param container idk # 目标容器实体
+---@param opener idk # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
 function container:MoveItemFromHalfOfSlot(slot,container,opener)
+end
+
+---将指定栏位物品按指定数量转移到目标容器的合适栏位（优先匹配建造材料栏位），失败则放回原栏位
+---@param slot number # 源栏序号
+---@param container ent # 目标容器实体
+---@param count number # 转移数量
+---@param opener ent # 执行操作的打开者
+---@return nil
+---author: Runar(Agent)
+function container:MoveItemFromCountOfSlot(slot,container,count,opener)
 end
 
 ---由doer关闭容器
 ---@param doer ent|nil # 执行者
+---@return nil
 ---author: Runar, lan
 function container:Close(doer)
 end
@@ -365,15 +429,17 @@ end
 
 ---指定坐标抛出指定物品
 ---@param itemtodrop ent # 要抛出的物品
----@param x number # 
----@param y number # 
----@param z number # 
+---@param x number # 目标位置的 X 坐标
+---@param y number # 目标位置的 Y 坐标
+---@param z number # 目标位置的 Z 坐标
+---@return ent|nil # 被抛出的物品，无可抛出物品时为 nil
 ---author: Runar
 function container:DropItemAt(itemtodrop,x,y,z)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function container:GetNumSlots()
 end
 
@@ -384,19 +450,36 @@ function container:CanOpen()
 end
 
 ---
----@param item idk # 
----@param wholestack idk # 
----@param _checkallcontainers_ idk # 
----@param keepoverstacked idk # 
----author: 
+---@param item idk # 要移除的物品
+---@param wholestack idk # 是否移除整堆（为 false 时只移除 1 个）
+---@param _checkallcontainers_ idk # 未实现（仅为与 inventory 组件接口保持一致）
+---@param keepoverstacked idk # 是否保持超限堆叠（仅移除原始堆叠上限内的数量）
+---@return ent
+---author: Runar(Agent)
 function container:RemoveItem(item,wholestack,_checkallcontainers_,keepoverstacked)
 end
 
 ---对容器内所有物品执行fn, 传递可变参数
 ---@param fn fun(item: ent,...: any|nil) # 操作函数fn(item, ...)
 ---@param ... any|nil # 可变参数
+---@return nil
 ---author: Runar
 function container:ForEachItem(fn,...)
+end
+
+---获取容器内所有有效的专属溢出容器（如弹药袋等专用口袋容器）组件列表
+---@return component_container[]|nil # 专属容器组件列表，没有则返回 nil
+---@nodiscard
+---author: Runar(Agent)
+function container:GetSpecializedContainers()
+end
+
+---判断给定容器组件是否为本容器持有的有效专属溢出容器
+---@param container component_container # 要检查的容器组件
+---@return boolean # 是否为有效专属溢出容器
+---@nodiscard
+---author: Runar(Agent)
+function container:IsSpecializedContainer(container)
 end
 
 ---在【特定栏位指定物品】容器中寻找可放入指定物品的栏序号
@@ -416,6 +499,7 @@ end
 ---销毁容器内满足条件的所有物品
 ---@param filterfn function|nil # 销毁条件
 ---@param onpredestroyitemcallbackfn function|nil # 物品销毁预回调函数
+---@return nil
 ---author: Runar
 function container:DestroyContentsConditionally(filterfn,onpredestroyitemcallbackfn)
 end
@@ -434,22 +518,26 @@ end
 function container:RemoveAllItems()
 end
 
----
----author: 
-function container:OnSave()
-end
-
 ---丢出所有具有指定tag的物品
 ---@param tag string # 物品拥有的tag
 ---@param drop_pos Vector3 # 掉落位置
 ---@param keepoverstacked boolean # 保持物品堆叠状态
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function container:DropEverythingWithTag(tag,drop_pos,keepoverstacked)
+end
+
+---丢出所有满足过滤条件的物品（并递归处理容器内的内容容器）
+---@param filterfn fun(inst: ent, item: ent):boolean # 过滤函数（参数为容器实体与物品），返回 true 则丢弃该物品
+---@return nil
+---author: Runar(Agent)
+function container:DropEverythingByFilter(filterfn)
 end
 
 ---将超过最大堆叠数量的超出部分丢弃
 ---@param item ent # 指定物品
----author: lan
+---@return nil
+---author: lan, Runar(Agent)
 function container:DropOverstackedExcess(item)
 end
 
@@ -460,13 +548,4 @@ end
 ---@return number # 库存数量
 ---author: Runar
 function container:HasItemWithTag(tag,amount)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function container:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function container:StopWatchingWorldState(var, fn) end
+end

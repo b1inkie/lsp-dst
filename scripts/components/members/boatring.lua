@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatring: component_base
----@field inst idk
 ---@field rotationdirection idk
 ---@field rotate_speed idk
 ---@field max_rotate_speed idk
@@ -12,84 +11,68 @@
 local boatring = {}
 
 ---
----@param dir idk # 
----author: 
+---@param dir number # 旋转方向（-1 顺时针 / 1 逆时针，0 表示停止）
+---@return nil
+---author: Runar(Agent)
 function boatring:SetRotationDirection(dir)
 end
 
 ---
----@param rotator idk # 
----author: 
+---@param rotator ent # 要添加的旋转物实体（如船舵）
+---@return nil
+---author: Runar(Agent)
 function boatring:AddRotator(rotator)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatring:OnDeath()
 end
 
 ---
----@param rotator idk # 
----author: 
+---@param rotator ent # 要移除的旋转物实体
+---@return nil
+---author: Runar(Agent)
 function boatring:RemoveRotator(rotator)
 end
 
 ---
----@param bumper idk # 
----author: 
+---@param bumper ent # 要添加的船缘护垫实体
+---@return nil
+---author: Runar(Agent)
 function boatring:AddBumper(bumper)
 end
 
 ---
----@param bumper idk # 
----author: 
+---@param bumper ent # 要移除的船缘护垫实体
+---@return nil
+---author: Runar(Agent)
 function boatring:RemoveBumper(bumper)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function boatring:GetNumSegments()
 end
 
 ---
----@param data idk # 
----author: 
-function boatring:OnLoad(data)
-end
-
----
----author: 
-function boatring:OnSave()
-end
-
----
----@param dt idk # 
----author: 
-function boatring:OnUpdate(dt)
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function boatring:GetRadius()
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function boatring:GetRotationDirection()
 end
 
 ---
----@param x idk # 
----@param z idk # 
----author: 
+---@param x number # 世界坐标 x
+---@param z number # 世界坐标 z
+---@return ent|nil
+---author: Runar(Agent)
 function boatring:GetBumperAtPoint(x,z)
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatring:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatring:StopWatchingWorldState(var, fn) end
+end

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_machine: component_base
----@field inst ent
 ---@field turnonfn nil|fun(inst: ent) 开机回调
 ---@field turnofffn nil|fun(inst: ent) 关机回调
 ---@field ison boolean 默认false 开关机状态指示
@@ -11,37 +10,26 @@
 ---@field groundonly boolean 无默认值，是否只能在地面使用的标志符
 local machine = {}
 
----加载组件状态
----@param data table # 
----author: mango
-function machine:OnLoad(data)
-end
-
+---返回机器是否运行中
 ---检查机器是否处于开启状态
 ---@return boolean
 ---@nodiscard
----author: mango
+---author: mango, 
 function machine:IsOn()
 end
 
+---启动机器(开始冷却计时)
 ---打开机器，启动冷却时间,调用回调函数并触发事件
----author: mango
+---@return nil
+---author: mango, Runar(Agent)
 function machine:TurnOn()
 end
 
+---关闭机器(开始冷却计时)
 ---关闭机器，启动冷却时间，调用回调函数并触发事件
----author: mango
+---@return nil
+---author: mango, Runar(Agent)
 function machine:TurnOff()
-end
-
----获取调试信息字符串：冷却时间+是否处于冷却状态
----author: mango
-function machine:GetDebugString()
-end
-
----保存组件状态
----author: mango
-function machine:OnSave()
 end
 
 ---检查机器是否可以交互
@@ -51,22 +39,26 @@ end
 function machine:CanInteract()
 end
 
+---移除 turnedon 标签
 ---从实体移除组件时清理相关标签
----author: mango
+---@return nil
+---author: mango, Runar(Agent)
 function machine:OnRemoveFromEntity()
 end
 
 ---设置机器是否只能在地面使用
----@param groundonly boolean # 
----author: mango
+---@param groundonly boolean # 是否只能在地面使用（netvar setter 同步为 groundonlymachine 标签）
+---@return nil
+---author: mango, Runar(Agent)
 function machine:SetGroundOnlyMachine(groundonly)
 end
 
+---开始冷却(冷却时长为 cooldowntime,期间 oncooldown 为 true 并带 cooldown 标签;时长<=0 时不生效)
+---@return nil
+---author: Runar(Agent)
+function machine:StartCooldown() end
 
----@param var string
----@param fn fun(inst: ent, ...):any
-function machine:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function machine:StopWatchingWorldState(var, fn) end
+---停止冷却(取消冷却任务并清除 oncooldown 状态)
+---@return nil
+---author: Runar(Agent)
+function machine:StopCooldown() end

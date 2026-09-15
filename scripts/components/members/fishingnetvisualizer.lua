@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_fishingnetvisualizer: component_base
----@field inst idk
 ---@field velocity idk
 ---@field retrieve_velocity idk
 ---@field collect_radius idk
@@ -22,69 +21,78 @@
 ---@field last_dir_z idk
 local fishingnetvisualizer = {}
 
+---开始收网阶段
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:BeginRetrieving()
 end
 
+---网张开阶段的位置更新
 ---
----@param dt idk # 
----author: 
+---@param dt idk # 帧时间增量(秒)
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:UpdateWhenOpening(dt)
 end
 
+---按 x 跨度/缩放计算该点的抛物线高度
 ---
----@param x idk # 
----@param x_span idk # 
----@param scale idk # 
----author: 
+---@param x idk # 距抛物线中点的横向偏移
+---@param x_span idk # 抛物线总跨度
+---@param scale idk # 抛物线高度缩放
+---@return number
+---author: Runar(Agent)
 function fishingnetvisualizer:CalculateY(x,x_span,scale)
 end
 
+---网飞向目标阶段的位置更新
 ---
----@param dt idk # 
----author: 
+---@param dt idk # 帧时间增量(秒)
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:UpdateWhenMovingToTarget(dt)
 end
 
+---开始最终拾取阶段
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:BeginFinalPickup()
 end
 
+---开始抛网(记录投掷者与目标)
 ---
----@param thrower idk # 
----@param target_x idk # 
----@param target_z idk # 
----author: 
+---@param thrower idk # 抛网者实体
+---@param target_x idk # 目标点 X 坐标
+---@param target_z idk # 目标点 Z 坐标
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:BeginCast(thrower,target_x,target_z)
 end
 
+---收网阶段的位置更新
 ---
----@param dt idk # 
----author: 
+---@param dt idk # 帧时间增量(秒)
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:UpdateWhenRetrieving(dt)
 end
 
+---在末端放落捕获物
 ---
----@param item idk # 
----@param last_dir_x idk # 
----@param last_dir_z idk # 
----@param idx idk # 
----author: 
+---@param item idk # 要放落的捕获物实体
+---@param last_dir_x idk # 收网末段方向 X 分量(用于调整掉落方向)
+---@param last_dir_z idk # 收网末段方向 Z 分量(用于调整掉落方向)
+---@param idx idk # 捕获物序号(决定延迟放落时间)
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:DropItem(item,last_dir_x,last_dir_z,idx)
 end
 
+---网开始张开的过渡
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function fishingnetvisualizer:BeginOpening()
-end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingnetvisualizer:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function fishingnetvisualizer:StopWatchingWorldState(var, fn) end
+end

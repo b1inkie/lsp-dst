@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_maxwelltalker: component_base
----@field inst idk
 ---@field speech idk
 ---@field speeches idk
 ---@field canskip idk
@@ -9,52 +8,59 @@
 ---@field inputhandlers idk
 local maxwelltalker = {}
 
+---点击跳过台词(可跳过时)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:OnClick()
 end
 
+---设置台词组
 ---
----@param speech idk # 
----author: 
+---@param speech string|nil # 要使用的台词组键名,为 nil 时不设置
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:SetSpeech(speech)
 end
 
+---开始说指定台词
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:DoTalk()
 end
 
+---停止说话
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:StopTalking()
 end
 
+---返回是否正在说话
 ---
+---@return boolean
 ---author: 
 function maxwelltalker:IsTalking()
 end
 
+---取消说话
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:OnCancel()
 end
 
+---移除 maxwellnottalking 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:OnRemoveFromEntity()
 end
 
+---初始化台词组
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function maxwelltalker:Initialize()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maxwelltalker:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function maxwelltalker:StopWatchingWorldState(var, fn) end

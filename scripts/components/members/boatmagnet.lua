@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_boatmagnet: component_base
----@field inst idk
 ---@field boat idk
 ---@field beacon idk
 ---@field magnet_guid idk
@@ -18,101 +17,90 @@
 ---@field OnInventoryBeaconLoaded idk
 local boatmagnet = {}
 
+---计算磁铁吸力: 距离大于最小距离且信标开启时返回固定吸力, 否则返回 0
 ---
----author: 
-function boatmagnet:OnRemoveEntity()
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function boatmagnet:CalcMagnetForce()
 end
 
+---返回磁铁追踪的目标(信标所在船 > 拾起者 > 信标本体)
 ---
----author: 
+---@return ent|nil
+---author: Runar(Agent)
 function boatmagnet:GetFollowTarget()
 end
 
+---取消船只设置任务并解除与信标的配对
 ---
----@param dt idk # 
----author: 
-function boatmagnet:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:OnRemoveFromEntity()
 end
 
+---返回是否已配对信标(生效中)
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function boatmagnet:IsActivated()
 end
 
+---解除与信标的配对: 移除监听, 停止追踪, 清除 paired 标签
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:UnpairWithBeacon()
 end
 
+---计算最大追及速度: 距离越远追赶越快, 转向中降低极速
 ---
----@param data idk # 
----author: 
-function boatmagnet:OnLoad(data)
-end
-
----
----author: 
-function boatmagnet:GetDebugString()
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function boatmagnet:CalcMaxVelocity()
 end
 
+---返回已配对的信标(无则返回 nil)
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function boatmagnet:PairedBeacon()
 end
 
+---与信标配对: 互挂监听, 启动追踪, 标记 paired
 ---
----@param beacon idk # 
----author: 
+---@param beacon ent|nil # 要配对的船体信标实体（须有 boatmagnetbeacon 组件）
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:PairWithBeacon(beacon)
 end
 
+---判断信标是否与本磁铁同船
 ---
----@param beacon idk # 
----author: 
+---@param beacon ent|nil # 要判定的信标实体
+---@return boolean # true 表示信标与本磁铁在同一艘船上
+---author: Runar(Agent)
 function boatmagnet:IsBeaconOnSameBoat(beacon)
 end
 
+---计算指向信标的方向向量与距离(手持信标时用其持有船位置)
 ---
----author: 
-function boatmagnet:OnSave()
-end
-
----
----author: 
+---@return Vector3
+---@return number
+---author: Runar(Agent)
 function boatmagnet:CalcMagnetDirection()
 end
 
+---设置所在船只: 从旧船物理移除磁铁, 在新船注册并监听其移除/死亡
 ---
----@param boat idk # 
----author: 
+---@param boat ent|nil # 目标船只实体，nil 表示从当前船移除
+---@return nil
+---author: Runar(Agent)
 function boatmagnet:SetBoat(boat)
 end
 
+---在配对范围内查找最近的未配对船体信标
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function boatmagnet:FindNearestBeacon()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatmagnet:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function boatmagnet:StopWatchingWorldState(var, fn) end

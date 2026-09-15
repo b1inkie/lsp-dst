@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_winch: component_base
----@field inst idk
 ---@field onfullyloweredfn idk
 ---@field onfullyraisedfn idk
 ---@field onstartloweringfn idk
@@ -18,122 +17,107 @@ local winch = {}
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetOverrideGetCurrentDepthFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:StopDepthTesting()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetUnloadFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetOnFullyLoweredFn(fn)
 end
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetLoweringSpeedMultiplier(mult)
 end
 
 ---
 ---@param is_raising idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:StartDepthTesting(is_raising)
 end
 
 ---
----@param dt idk # 
----author: 
-function winch:OnUpdate(dt)
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:OnRemoveFromEntity()
 end
 
 ---
 ---@param loading_in idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function winch:StartLowering(loading_in)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetOnStartRaisingFn(fn)
 end
 
 ---
 ---@param loading_in idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:StartRaising(loading_in)
 end
 
 ---
----@param data idk # 
----author: 
-function winch:OnLoad(data)
-end
-
----
----author: 
-function winch:GetDebugString()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:FullyLowered()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetOnStartLoweringFn(fn)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:FullyRaised()
 end
 
 ---
----author: 
-function winch:OnSave()
-end
-
----
----author: 
+---@return number
+---author: Runar(Agent)
 function winch:GetCurrentDepth()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetOnFullyRaisedFn(fn)
 end
 
 ---
 ---@param mult idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function winch:SetRaisingSpeedMultiplier(mult)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winch:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function winch:StopWatchingWorldState(var, fn) end

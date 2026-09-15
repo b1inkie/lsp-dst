@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_trophyscale: component_base
----@field inst idk
 ---@field type idk
 ---@field item_data idk
 ---@field compare_postfn idk
@@ -14,69 +13,63 @@ local trophyscale = {}
 ---
 ---@param inst_compare idk # 
 ---@param doer idk # 
----author: 
+---@return boolean
+---@return idk
+---author: Runar(Agent)
 function trophyscale:Compare(inst_compare,doer)
 end
 
 ---
 ---@param can_be_taken idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetItemCanBeTaken(can_be_taken)
 end
 
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:ClearItemData()
 end
 
 ---
----author: 
-function trophyscale:GetDebugString()
-end
-
----
 ---@param override_data idk # 
----author: 
+---@return ent
+---author: Runar(Agent)
 function trophyscale:SpawnItemFromData(override_data)
 end
 
 ---
----@param data idk # 
----author: 
-function trophyscale:OnLoad(data)
-end
-
----
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetComparePostFn(fn)
 end
 
 ---
----author: 
-function trophyscale:OnSave()
-end
-
----
 ---@param receiver idk # 
----author: 
+---@return boolean
+---author: Runar(Agent)
 function trophyscale:TakeItem(receiver)
 end
 
 ---
----author: 
+---@return idk
+---author: Runar(Agent)
 function trophyscale:GetItemData()
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetOnSpawnItemFromDataFn(fn)
 end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetOnItemTakenFn(fn)
 end
 
@@ -87,15 +80,7 @@ end
 
 ---
 ---@param fn idk # 
----author: 
+---@return nil
+---author: Runar(Agent)
 function trophyscale:SetTakeItemTestFn(fn)
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trophyscale:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function trophyscale:StopWatchingWorldState(var, fn) end

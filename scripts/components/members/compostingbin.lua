@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class component_compostingbin: component_base
----@field inst idk
 ---@field max_materials idk
 ---@field greens idk
 ---@field browns idk
@@ -21,60 +20,47 @@
 local compostingbin = {}
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function compostingbin:IsFull()
 end
 
 ---
----author: 
+---@return boolean
+---author: Runar(Agent)
 function compostingbin:IsComposting()
 end
 
 ---
----@param data idk # 
----author: 
-function compostingbin:OnLoad(data)
-end
-
----
----@param item idk # 
----author: 
+---@param item idk # 要投入堆肥的物品实体，会按 calcmaterialvalue 折算材料后移除
+---@return boolean
+---author: Runar(Agent)
 function compostingbin:AddCompostable(item)
 end
 
 ---
----author: 
+---@return number
+---author: Runar(Agent)
 function compostingbin:GetMaterialTotal()
 end
 
 ---
----@param greens idk # 
----@param browns idk # 
----author: 
+---@param greens idk # 要添加的绿色材料数量，缺省为 0
+---@param browns idk # 要添加的棕色材料数量，缺省为 0
+---@return nil
+---author: Runar(Agent)
 function compostingbin:AddMaterials(greens,browns)
 end
 
 ---
----@param cycle_completed idk # 
----author: 
+---@param cycle_completed idk # 是否因堆肥周期完成而刷新（透传给 onrefreshfn）
+---@return nil
+---author: Runar(Agent)
 function compostingbin:Refresh(cycle_completed)
 end
 
 ---
----author: 
-function compostingbin:OnSave()
-end
-
----
----author: 
+---@return nil
+---author: Runar(Agent)
 function compostingbin:OnRemoveFromEntity()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function compostingbin:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function compostingbin:StopWatchingWorldState(var, fn) end

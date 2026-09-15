@@ -1,43 +1,29 @@
 ---@meta
 
 ---@class component_hitchable: component_base
----@field inst idk
 ---@field hitched idk
 ---@field canbehitched idk
 local hitchable = {}
 
+---被拴到目标(播放拴绳音)
 ---
----@param data idk # 
----author: 
-function hitchable:OnLoad(data)
-end
-
----
----@param target idk # 
----author: 
+---@param target ent # 拴住此实体的拴绳者实体(带 hitcher 组件)
+---@return nil
+---author: Runar(Agent)
 function hitchable:SetHitched(target)
 end
 
+---解除拴绳(播放音)
 ---
----author: 
+---@return nil
+---author: Runar(Agent)
 function hitchable:Unhitch()
 end
 
+---返回当前拴绳目标
 ---
----author: 
-function hitchable:OnSave()
-end
-
----
----author: 
+---@return idk
+---author: Runar(Agent)
 function hitchable:GetHitch()
 end
-
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hitchable:WatchWorldState(var, fn) end
-
----@param var string
----@param fn fun(inst: ent, ...):any
-function hitchable:StopWatchingWorldState(var, fn) end
+
