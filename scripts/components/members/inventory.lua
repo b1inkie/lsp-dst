@@ -325,7 +325,7 @@ end
 ---<br>范围：物品栏、背包栏、鼠标上的、你正在打开的容器如箱子(由形参3决定)
 ---@param item PrefabID # 字符串ID
 ---@param amount number # 下限数量
----@param checkallcontainers boolean # 是否扫描所有打开的容器
+---@param checkallcontainers boolean|nil # 是否扫描所有打开的容器
 ---@return boolean,number # num_found >= amount, num_found。是否至少有，以及有多少
 ---@nodiscard
 ---author: nullptr
